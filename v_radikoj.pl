@@ -2,2345 +2,2346 @@
  *  radikoj 
 *************/
 
-r('abel','best').
-r('abi','subst').
-r('abomen','tr').
-r('abon','tr').
-r('abrikot','subst').
-r('abrupt','adj').
-r('absolut','adj').
-r('abstin','ntr').
-r('absurd','adj').
-r('abund','adj').
-r('acid','adj').
-r('acxet','tr').
-r('adapt','tr').
-r('adici','tr').
-r('adjektiv','subst').
-r('administr','tr').
-r('admir','tr').
-r('admon','tr').
-r('adopt','tr').
-r('ador','tr').
-r('adres','subst').
-r('adverb','subst').
-r('advokat','best').
-r('aer','subst').
-r('afabl','adj').
-r('afer','subst').
-r('afisx','subst').
-r('aflikt','tr').
-r('afrank','tr').
-r('afrik','subst').
-r('ag','ntr').
-r('agent','best').
-r('agit','tr').
-r('agl','best').
-r('agord','tr').
-r('agrabl','adj').
-r('agx','subst').
-r('ajl','subst').
-r('akademi','subst').
-r('akcel','tr').
-r('akcent','tr').
-r('akcept','tr').
-r('akci','subst').
-r('akcident','subst').
-r('akir','tr').
-r('akn','subst').
-r('akompan','tr').
-r('akord','subst').
-r('akr','adj').
-r('akrid','best').
-r('aks','subst').
-r('akt','subst').
-r('aktiv','adj').
-r('aktor','best').
-r('aktual','adj').
-r('akurat','adj').
-r('akuz','tr').
-r('akv','subst').
-r('alarm','tr').
-r('alawd','best').
-r('album','subst').
-r('ale','subst').
-r('alfabet','subst').
-r('alg','best').
-r('ali','adj').
-r('alkohol','subst').
-r('almoz','subst').
-r('alt','adj').
-r('altern','ntr').
-r('alternativ','subst').
-r('alud','tr').
-r('alumet','subst').
-r('alumini','subst').
-r('am','tr').
-r('amar','adj').
-r('amas','subst').
-r('amator','best').
-r('ambasad','subst').
-r('ambasador','best').
-r('amerik','subst').
-r('amik','best').
-r('ampleks','subst').
-r('ampol','subst').
-r('amuz','tr').
-r('anas','best').
-r('anekdot','subst').
-r('angil','best').
-r('angul','subst').
-r('angxel','best').
-r('anim','subst').
-r('animal','best').
-r('anonc','tr').
-r('anser','best').
-r('aparat','subst').
-r('apart','adj').
-r('apartament','subst').
-r('aparten','ntr').
-r('aper','ntr').
-r('apertur','subst').
-r('apetit','subst').
-r('aplawd','tr').
-r('aplik','tr').
-r('apog','tr').
-r('apostol','best').
-r('apotek','subst').
-r('apr','best').
-r('april','subst').
-r('aprob','tr').
-r('arane','best').
-r('arangx','tr').
-r('arb','subst').
-r('arbitr','adj').
-r('arbust','subst').
-r('ard','ntr').
-r('argxent','subst').
-r('ark','subst').
-r('arm','subst').
-r('arme','subst').
-r('art','subst').
-r('arteri','subst').
-r('artik','subst').
-r('artikol','subst').
-r('asekur','tr').
-r('asemble','subst').
-r('asert','tr').
-r('asfalt','subst').
-r('asist','ntr').
-r('asoci','subst').
-r('aspekt','subst').
-r('atak','tr').
-r('atend','tr').
-r('atent','tr').
-r('atest','tr').
-r('ating','tr').
-r('atlantik','subst').
-r('atom','subst').
-r('av','parc').
-r('avantagx','subst').
-r('avar','adj').
-r('aven','subst').
-r('aventur','subst').
-r('avenu','subst').
-r('avert','tr').
-r('avid','adj').
-r('awd','tr').
-r('awdac','tr').
-r('awgust','subst').
-r('awskult','tr').
-r('awstrali','subst').
-r('awt','subst').
-r('awtobus','subst').
-r('awtomat','subst').
-r('awtomobil','subst').
-r('awtor','best').
-r('awtoritat','subst').
-r('awtun','subst').
-r('azen','best').
-r('azi','subst').
-r('babil','ntr').
-r('bacil','best').
-r('bagatel','subst').
-r('bak','tr').
-r('bakteri','best').
-r('bal','subst').
-r('bala','tr').
-r('balanc','tr').
-r('balbut','ntr').
-r('balon','subst').
-r('balot','ntr').
-r('bambu','subst').
-r('ban','tr').
-r('banan','subst').
-r('bandagx','subst').
-r('bank','subst').
-r('bant','subst').
-r('bapt','tr').
-r('bar','tr').
-r('barakt','ntr').
-r('barb','subst').
-r('barbir','best').
-r('barel','subst').
-r('bark','subst').
-r('bask','subst').
-r('baston','subst').
-r('bat','tr').
-r('batal','ntr').
-r('baz','subst').
-r('bazar','subst').
-r('beb','best').
-r('bedawr','tr').
-r('bek','subst').
-r('bel','adj').
-r('ben','tr').
-r('bend','subst').
-r('benk','subst').
-r('benzin','subst').
-r('ber','subst').
-r('best','best').
-r('bet','subst').
-r('betul','subst').
-r('bezon','tr').
-r('bibliotek','subst').
-r('bicikl','subst').
-r('bien','subst').
-r('bier','subst').
-r('bifstek','subst').
-r('bild','subst').
-r('bilet','subst').
-r('bind','tr').
-r('bird','best').
-r('blank','adj').
-r('blasfem','ntr').
-r('blek','ntr').
-r('blind','adj').
-r('blok','subst').
-r('blond','adj').
-r('blov','ntr').
-r('blu','adj').
-r('bluz','subst').
-r('boat','subst').
-r('boj','ntr').
-r('bol','ntr').
-r('bombon','subst').
-r('bon','adj').
-r('bor','tr').
-r('bord','subst').
-r('bors','subst').
-r('bot','subst').
-r('botel','subst').
-r('bov','best').
-r('bovl','subst').
-r('bracelet','subst').
-r('brak','subst').
-r('brancx','subst').
-r('brand','subst').
-r('brasik','subst').
-r('brav','adj').
-r('bred','tr').
-r('brems','subst').
-r('bret','subst').
-r('brid','tr').
-r('brik','subst').
-r('bril','ntr').
-r('brokant','ntr').
-r('bronz','subst').
-r('bros','subst').
-r('brosxur','subst').
-r('brov','subst').
-r('bru','ntr').
-r('brul','ntr').
-r('brun','adj').
-r('brust','subst').
-r('brut','subst').
-r('bub','subst').
-r('bucx','tr').
-r('bud','subst').
-r('bugxet','subst').
-r('buk','subst').
-r('buked','subst').
-r('bukl','subst').
-r('bul','subst').
-r('bulb','subst').
-r('bulk','subst').
-r('bulten','subst').
-r('bulvard','subst').
-r('burgx','subst').
-r('burgxon','subst').
-r('busx','subst').
-r('buter','subst').
-r('butik','subst').
-r('buton','subst').
-r('ced','ntr').
-r('cel','tr').
-r('cement','subst').
-r('centimetr','subst').
-r('centr','subst').
-r('central','subst').
-r('cep','subst').
-r('cerb','subst').
-r('cert','adj').
-r('cerv','best').
-r('ceter','adj').
-r('cifer','subst').
-r('cigar','subst').
-r('cigared','subst').
-r('cign','best').
-r('cikad','best').
-r('cikatr','subst').
-r('cikl','subst').
-r('cikoni','best').
-r('cinam','subst').
-r('cindr','subst').
-r('cir','subst').
-r('cirkel','subst').
-r('cirkl','subst').
-r('cirkonstanc','subst').
-r('cirkul','ntr').
-r('cirkuler','subst').
-r('cirkvit','subst').
-r('cit','tr').
-r('citron','subst').
-r('civil','adj').
-r('civiliz','tr').
-r('civit','subst').
-r('cxagren','tr').
-r('cxambr','subst').
-r('cxap','subst').
-r('cxapel','subst').
-r('cxapitr','subst').
-r('cxar','subst').
-r('cxarm','adj').
-r('cxas','tr').
-r('cxek','subst').
-r('cxel','subst').
-r('cxemiz','subst').
-r('cxen','subst').
-r('cxeriz','subst').
-r('cxerk','subst').
-r('cxerp','tr').
-r('cxes','ntr').
-r('cxeval','best').
-r('cxiel','subst').
-r('cxif','tr').
-r('cxifon','subst').
-r('cxokolad','subst').
-r('daktil','subst').
-r('danc','ntr').
-r('dand','subst').
-r('dangxer','subst').
-r('dank','tr').
-r('dat','subst').
-r('dawr','ntr').
-r('debet','subst').
-r('dec','adj').
-r('decembr','subst').
-r('decid','tr').
-r('dedicx','tr').
-r('defend','tr').
-r('deficit','subst').
-r('degel','ntr').
-r('dejxor','ntr').
-r('deklar','tr').
-r('dekliv','subst').
-r('dekoraci','subst').
-r('dekstr','adj').
-r('deleg','tr').
-r('delikat','adj').
-r('delir','ntr').
-r('demand','tr').
-r('dens','adj').
-r('dent','subst').
-r('denunc','tr').
-r('depon','tr').
-r('deput','tr').
-r('desegn','tr').
-r('desert','subst').
-r('destin','tr').
-r('detal','adj').
-r('determin','tr').
-r('detru','tr').
-r('dev','ntr').
-r('dezert','subst').
-r('dezir','tr').
-r('di','best').
-r('diabl','best').
-r('dialog','subst').
-r('diant','subst').
-r('diet','subst').
-r('difekt','tr').
-r('diferenc','subst').
-r('difin','tr').
-r('digest','tr').
-r('dik','adj').
-r('dikt','tr').
-r('diligent','adj').
-r('dimancx','subst').
-r('dimensi','subst').
-r('dir','tr').
-r('direkt','tr').
-r('direktor','best').
-r('disk','subst').
-r('diskut','ntr').
-r('dispon','ntr').
-r('disput','ntr').
-r('distanc','subst').
-r('disting','tr').
-r('distr','tr').
-r('distribu','tr').
-r('diven','tr').
-r('divers','adj').
-r('divid','tr').
-r('dogan','subst').
-r('doktor','best').
-r('dokument','subst').
-r('dolcx','adj').
-r('dolor','tr').
-r('dom','subst').
-r('domagx','subst').
-r('don','tr').
-r('donac','tr').
-r('dorlot','tr').
-r('dorm','ntr').
-r('dorn','subst').
-r('dors','subst').
-r('dot','tr').
-r('drak','best').
-r('dram','subst').
-r('drap','subst').
-r('drat','subst').
-r('dres','tr').
-r('dron','ntr').
-r('dub','ntr').
-r('dung','tr').
-r('dusx','subst').
-r('eben','adj').
-r('ebri','adj').
-r('eduk','tr').
-r('edz','best').
-r('efekt','subst').
-r('efektiv','adj').
-r('efik','ntr').
-r('egal','adj').
-r('egoist','best').
-r('ekip','tr').
-r('eklezi','subst').
-r('ekonomi','subst').
-r('ekran','subst').
-r('ekscit','tr').
-r('ekskurs','subst').
-r('eksped','tr').
-r('eksperiment','subst').
-r('eksplod','ntr').
-r('ekspluat','tr').
-r('eksport','tr').
-r('ekspozici','subst').
-r('ekstaz','subst').
-r('ekstrem','adj').
-r('ekvator','subst').
-r('ekvilibr','subst').
-r('ekzakt','adj').
-r('ekzamen','subst').
-r('ekzekut','tr').
-r('ekzempl','subst').
-r('ekzerc','tr').
-r('ekzist','ntr').
-r('elast','adj').
-r('elefant','best').
-r('elegant','adj').
-r('elekt','tr').
-r('elektr','subst').
-r('elektronik','subst').
-r('element','subst').
-r('emajl','subst').
-r('embaras','subst').
-r('emerit','best').
-r('eminent','adj').
-r('emoci','tr').
-r('energi','subst').
-r('enigm','subst').
-r('enket','subst').
-r('entrepren','tr').
-r('enu','ntr').
-r('envi','tr').
-r('epidemi','subst').
-r('epok','subst').
-r('erar','ntr').
-r('escept','tr').
-r('esenc','subst').
-r('eskap','ntr').
-r('esper','tr').
-r('esperant','subst').
-r('esplor','tr').
-r('esprim','tr').
-r('est','ntr').
-r('establ','tr').
-r('estim','tr').
-r('esting','tr').
-r('etagx','subst').
-r('etap','subst').
-r('etat','subst').
-r('etend','tr').
-r('etern','adj').
-r('event','subst').
-r('evident','adj').
-r('evit','tr').
-r('evolu','ntr').
-r('ewrop','subst').
-r('ezok','best').
-r('fab','subst').
-r('fabel','subst').
-r('fabrik','subst').
-r('fac','subst').
-r('facil','adj').
-r('faden','subst').
-r('fag','subst').
-r('fajenc','subst').
-r('fajf','ntr').
-r('fajr','subst').
-r('fak','subst').
-r('fakt','subst').
-r('fal','ntr').
-r('falcx','tr').
-r('fald','tr').
-r('fals','tr').
-r('fam','adj').
-r('famili','subst').
-r('familiar','adj').
-r('fand','tr').
-r('fanfaron','ntr').
-r('fantazi','subst').
-r('far','tr').
-r('farb','subst').
-r('farm','tr').
-r('fart','ntr').
-r('farun','subst').
-r('fasad','subst').
-r('fask','subst').
-r('fason','subst').
-r('fast','ntr').
-r('favor','tr').
-r('fawk','subst').
-r('fazan','subst').
-r('fazeol','subst').
-r('fe','best').
-r('febr','subst').
-r('februar','subst').
-r('fecx','subst').
-r('federaci','subst').
-r('fel','subst').
-r('felicx','adj').
-r('felt','subst').
-r('fend','subst').
-r('fenestr','subst').
-r('fenomen','subst').
-r('fer','subst').
-r('feri','subst').
-r('ferm','tr').
-r('fervor','subst').
-r('fest','tr').
-r('festen','subst').
-r('fiancx','parc').
-r('fid','tr').
-r('fidel','adj').
-r('fier','adj').
-r('fig','subst').
-r('figur','subst').
-r('fikci','subst').
-r('fiks','tr').
-r('fil','parc').
-r('film','subst').
-r('fin','tr').
-r('financ','subst').
-r('fingr','subst').
-r('firm','adj').
-r('fisx','best').
-r('fizik','subst').
-r('flag','subst').
-r('flagr','ntr').
-r('flam','subst').
-r('flan','subst').
-r('flank','subst').
-r('flar','tr').
-r('flat','tr').
-r('flav','adj').
-r('fleg','tr').
-r('fleks','tr').
-r('flik','tr').
-r('flirt','ntr').
-r('flor','subst').
-r('flos','subst').
-r('flu','ntr').
-r('flug','ntr').
-r('fluid','adj').
-r('flustr','tr').
-r('foir','subst').
-r('foj','subst').
-r('fojn','subst').
-r('foli','subst').
-r('fond','tr').
-r('fonograf','subst').
-r('font','subst').
-r('fontan','subst').
-r('forges','tr').
-r('forgx','tr').
-r('fork','subst').
-r('form','tr').
-r('formik','best').
-r('formul','subst').
-r('forn','subst').
-r('fort','adj').
-r('fortik','adj').
-r('fos','tr').
-r('fost','subst').
-r('fotel','subst').
-r('fotograf','best').
-r('frag','subst').
-r('frak','subst').
-r('frakas','tr').
-r('framb','subst').
-r('frand','tr').
-r('frangx','subst').
-r('frap','tr').
-r('frat','parc').
-r('frawl','best').
-r('fraz','subst').
-r('fremd','adj').
-r('frenez','adj').
-r('fresx','adj').
-r('fripon','best').
-r('frit','tr').
-r('friz','tr').
-r('fromagx','subst').
-r('front','subst').
-r('frost','subst').
-r('frot','tr').
-r('fru','adv').
-r('frukt','subst').
-r('frunt','subst').
-r('fugx','ntr').
-r('fulg','subst').
-r('fulm','subst').
-r('fum','subst').
-r('fund','subst').
-r('fundament','subst').
-r('funebr','subst').
-r('funel','subst').
-r('fung','subst').
-r('funkci','subst').
-r('funt','subst').
-r('furagx','subst').
-r('furioz','adj').
-r('fusx','tr').
-r('gaj','adj').
-r('gajn','tr').
-r('gal','subst').
-r('galosx','subst').
-r('gant','subst').
-r('garagx','subst').
-r('garanti','ntr').
-r('garb','subst').
-r('gard','tr').
-r('garn','tr').
-r('gas','subst').
-r('gast','subst').
-r('gazet','subst').
-r('gelaten','subst').
-r('generaci','subst').
-r('general','subst').
-r('geni','subst').
-r('gent','subst').
-r('genu','subst').
-r('geografi','subst').
-r('gest','subst').
-r('girland','subst').
-r('glaci','subst').
-r('glad','tr').
-r('glas','subst').
-r('glat','adj').
-r('glav','subst').
-r('glit','ntr').
-r('glob','subst').
-r('glor','tr').
-r('glu','tr').
-r('glut','tr').
-r('gobi','best').
-r('golf','subst').
-r('gorgx','subst').
-r('graci','adj').
-r('grad','subst').
-r('grajn','subst').
-r('gram','subst').
-r('gramatik','subst').
-r('grand','adj').
-r('grandioz','adj').
-r('gras','subst').
-r('grat','tr').
-r('gratul','tr').
-r('grav','adj').
-r('graved','adj').
-r('greg','subst').
-r('gren','subst').
-r('ges','subst').
-r('grimac','subst').
-r('grimp','ntr').
-r('grinc','ntr').
-r('grip','subst').
-r('griz','adj').
-r('grot','subst').
-r('gru','best').
-r('grumbl','ntr').
-r('grund','subst').
-r('grup','subst').
-r('gudr','subst').
-r('gum','subst').
-r('gust','subst').
-r('gut','subst').
-r('gvardi','subst').
-r('gvid','tr').
-r('gxarden','subst').
-r('gxem','ntr').
-r('gxemel','best').
-r('gxen','tr').
-r('gxendarm','best').
-r('gxeneral','adj').
-r('gxentil','adj').
-r('gxerm','subst').
-r('gxib','subst').
-r('gxoj','ntr').
-r('gxu','tr').
-r('gxust','adj').
-r('hajl','subst').
-r('hak','tr').
-r('hal','subst').
-r('halt','ntr').
-r('hangar','subst').
-r('har','subst').
-r('haring','best').
-r('harmoni','subst').
-r('hav','tr').
-r('haven','subst').
-r('hawt','subst').
-r('hazard','subst').
-r('hegx','subst').
-r('hejm','subst').
-r('hejt','tr').
-r('hektar','subst').
-r('hel','adj').
-r('helikopter','subst').
-r('help','tr').
-r('hepat','subst').
-r('herb','subst').
-r('hered','tr').
-r('hero','subst').
-r('herold','subst').
-r('hezit','ntr').
-r('higien','subst').
-r('himn','subst').
-r('hirund','best').
-r('histori','subst').
-r('hok','subst').
-r('hom','best').
-r('honest','adj').
-r('honor','tr').
-r('hont','ntr').
-r('hor','subst').
-r('horde','subst').
-r('horizont','subst').
-r('horizontal','adj').
-r('horlogx','subst').
-r('hospital','subst').
-r('hotel','subst').
-r('huf','subst').
-r('human','adj').
-r('humid','adj').
-r('humil','adj').
-r('humor','subst').
-r('hund','best').
-r('ide','subst').
-r('ideal','subst').
-r('ident','adj').
-r('ignor','tr').
-r('ilustr','tr').
-r('imag','tr').
-r('imit','tr').
-r('imperi','subst').
-r('impet','ntr').
-r('implik','tr').
-r('import','tr').
-r('impost','subst').
-r('impres','tr').
-r('impuls','subst').
-r('imun','adj').
-r('incit','tr').
-r('ind','adj').
-r('indiferent','adj').
-r('indign','tr').
-r('indik','tr').
-r('individu','subst').
-r('indulg','tr').
-r('industri','subst').
-r('infan','best').
-r('infekt','tr').
-r('infer','subst').
-r('influ','tr').
-r('inform','tr').
-r('ingxenier','best').
-r('iniciat','tr').
-r('injekt','tr').
-r('ink','subst').
-r('inklin','adj').
-r('insekt','best').
-r('insid','ntr').
-r('insign','subst').
-r('insist','ntr').
-r('inspektor','best').
-r('inspir','tr').
-r('instal','tr').
-r('instanc','subst').
-r('instig','tr').
-r('instinkt','subst').
-r('instru','tr').
-r('instrument','subst').
-r('insul','subst').
-r('insult','tr').
-r('intelekt','subst').
-r('inteligent','adj').
-r('intenc','tr').
-r('interes','tr').
-r('intern','adj').
-r('interpelaci','subst').
-r('interpret','tr').
-r('intest','subst').
-r('intim','adj').
-r('inund','subst').
-r('invalid','subst').
-r('invent','tr').
-r('invit','tr').
-r('ir','ntr').
-r('ironi','subst').
-r('izol','tr').
-r('jak','subst').
-r('januar','subst').
-r('jar','subst').
-r('jubile','subst').
-r('jug','subst').
-r('jugx','tr').
-r('juk','ntr').
-r('juli','subst').
-r('jun','adj').
-r('jung','tr').
-r('juni','subst').
-r('jup','subst').
-r('jur','subst').
-r('just','adj').
-r('juvel','subst').
-r('jxaluz','adj').
-r('jxawd','subst').
-r('jxet','tr').
-r('jxur','tr').
-r('jxurnal','subst').
-r('kaban','subst').
-r('kabinet','subst').
-r('kacx','subst').
-r('kadr','subst').
-r('kaduk','adj').
-r('kaf','subst').
-r('kagx','subst').
-r('kahel','subst').
-r('kaj','subst').
-r('kajer','subst').
-r('kajut','subst').
-r('kaka','subst').
-r('kakt','subst').
-r('kal','subst').
-r('kaldron','subst').
-r('kalendar','subst').
-r('kalkan','subst').
-r('kalkul','ntr').
-r('kalson','subst').
-r('kalumni','tr').
-r('kalv','adj').
-r('kamarad','best').
-r('kamel','best').
-r('kamen','subst').
-r('kamion','subst').
-r('kamp','subst').
-r('kanal','subst').
-r('kandel','subst').
-r('kandidat','best').
-r('kankr','best').
-r('kant','ntr').
-r('kanzon','subst').
-r('kap','subst').
-r('kapabl','adj').
-r('kapital','subst').
-r('kapr','best').
-r('kapric','subst').
-r('kapt','tr').
-r('kar','adj').
-r('karaf','subst').
-r('karakter','subst').
-r('karb','subst').
-r('kares','tr').
-r('karn','subst').
-r('karnaval','subst').
-r('karot','subst').
-r('karp','best').
-r('kart','subst').
-r('karton','subst').
-r('kas','subst').
-r('kaserol','subst').
-r('kasked','subst').
-r('kastel','subst').
-r('kasx','tr').
-r('kasxtan','subst').
-r('kat','best').
-r('katalog','subst').
-r('katar','subst').
-r('kategori','subst').
-r('katen','subst').
-r('kav','subst').
-r('kavern','subst').
-r('kawcxuk','subst').
-r('kawz','tr').
-r('kaz','subst').
-r('kejl','subst').
-r('kel','subst').
-r('kelk','adj').
-r('kelner','best').
-r('kemi','subst').
-r('kern','subst').
-r('kest','subst').
-r('kilogram','subst').
-r('kilometr','subst').
-r('kin','subst').
-r('kirurg','best').
-r('kirurgi','subst').
-r('kis','tr').
-r('kitel','subst').
-r('klar','adj').
-r('klas','subst').
-r('klasik','adj').
-r('kler','adj').
-r('klient','best').
-r('klimat','subst').
-r('klin','tr').
-r('kling','subst').
-r('klinik','subst').
-r('klopod','ntr').
-r('klub','subst').
-r('knab','best').
-r('kned','tr').
-r('kok','best').
-r('koket','adj').
-r('kokos','subst').
-r('kol','subst').
-r('kolegi','subst').
-r('kolekt','tr').
-r('kolektiv','subst').
-r('koler','ntr').
-r('kolizi','ntr').
-r('kolomb','best').
-r('kolon','subst').
-r('kolonel','best').
-r('kolor','subst').
-r('kolumn','subst').
-r('kom','subst').
-r('komand','subst').
-r('komb','tr').
-r('kombin','tr').
-r('komedi','subst').
-r('komenc','tr').
-r('komerc','ntr').
-r('komfort','adj').
-r('komik','adj').
-r('komisar','best').
-r('komisi','tr').
-r('komision','subst').
-r('komitat','subst').
-r('kompani','subst').
-r('kompar','tr').
-r('kompat','tr').
-r('kompens','tr').
-r('kompetent','adj').
-r('komplement','subst').
-r('komplet','adj').
-r('komplez','ntr').
-r('komplik','tr').
-r('kompon','tr').
-r('kompren','tr').
-r('kompromit','tr').
-r('komun','adj').
-r('komunik','tr').
-r('kon','tr').
-r('koncentr','tr').
-r('koncept','subst').
-r('koncern','tr').
-r('koncert','subst').
-r('kondamn','tr').
-r('kondicx','subst').
-r('konduk','tr').
-r('kondut','ntr').
-r('konferenc','subst').
-r('konfes','tr').
-r('konfid','tr').
-r('konfidenc','subst').
-r('konfirm','tr').
-r('konfit','tr').
-r('konfuz','tr').
-r('kongres','subst').
-r('konjekt','tr').
-r('konklud','tr').
-r('konkord','subst').
-r('konkur','ntr').
-r('konkurs','subst').
-r('konsci','tr').
-r('konscienc','subst').
-r('konsekvenc','subst').
-r('konsent','ntr').
-r('konserv','tr').
-r('konsider','tr').
-r('konsil','tr').
-r('konsist','ntr').
-r('konsol','tr').
-r('konstant','adj').
-r('konstat','tr').
-r('konstituci','subst').
-r('konstru','tr').
-r('konsul','best').
-r('konsult','tr').
-r('konsum','tr').
-r('kontant','adj').
-r('kontent','adj').
-r('kontest','tr').
-r('kontrakt','ntr').
-r('kontrol','tr').
-r('konval','subst').
-r('konven','ntr').
-r('konversaci','subst').
-r('konvink','tr').
-r('kopi','tr').
-r('kor','subst').
-r('korb','subst').
-r('kord','subst').
-r('korekt','tr').
-r('korespond','ntr').
-r('koridor','subst').
-r('kork','subst').
-r('korn','subst').
-r('kornik','best').
-r('korp','subst').
-r('kort','subst').
-r('korv','best').
-r('kosm','subst').
-r('kost','ntr').
-r('kostum','subst').
-r('kot','subst').
-r('koton','subst').
-r('kovert','subst').
-r('kovr','tr').
-r('kracx','ntr').
-r('krad','subst').
-r('krajon','subst').
-r('kran','subst').
-r('krani','subst').
-r('kravat','subst').
-r('kre','tr').
-r('kred','tr').
-r('kredit','subst').
-r('krem','subst').
-r('krepusk','subst').
-r('kresk','ntr').
-r('krest','subst').
-r('kret','subst').
-r('krev','ntr').
-r('kri','ntr').
-r('krim','subst').
-r('kripl','adj').
-r('kristal','subst').
-r('kritik','tr').
-r('kriz','subst').
-r('krocx','tr').
-r('krokodil','best').
-r('kron','subst').
-r('kruc','subst').
-r('krucx','subst').
-r('krud','adj').
-r('kruel','adj').
-r('krur','subst').
-r('krust','subst').
-r('krut','adj').
-r('kub','subst').
-r('kubut','subst').
-r('kudr','tr').
-r('kugl','subst').
-r('kuir','tr').
-r('kuk','subst').
-r('kukol','best').
-r('kukum','subst').
-r('kukurb','subst').
-r('kul','best').
-r('kuler','subst').
-r('kulp','adj').
-r('kult','subst').
-r('kultur','subst').
-r('kunikl','best').
-r('kupon','subst').
-r('kupr','subst').
-r('kur','ntr').
-r('kurac','tr').
-r('kuragx','adj').
-r('kurb','adj').
-r('kurent','subst').
-r('kurioz','adj').
-r('kurs','subst').
-r('kurten','subst').
-r('kusen','subst').
-r('kusx','ntr').
-r('kutim','ntr').
-r('kuv','subst').
-r('kuz','parc').
-r('kvadrat','subst').
-r('kvalit','subst').
-r('kvant','subst').
-r('kvartal','subst').
-r('kverk','subst').
-r('kviet','adj').
-r('labor','ntr').
-r('laboratori','subst').
-r('lac','adj').
-r('lacert','best').
-r('lacx','subst').
-r('lad','subst').
-r('lag','subst').
-r('lak','subst').
-r('lakt','subst').
-r('lam','adj').
-r('lamen','subst').
-r('lamp','subst').
-r('lan','subst').
-r('land','subst').
-r('lang','subst').
-r('lantern','subst').
-r('lap','subst').
-r('lard','subst').
-r('largx','adj').
-r('larm','subst').
-r('larv','subst').
-r('las','tr').
-r('last','adj').
-r('latitud','subst').
-r('latun','subst').
-r('lav','tr').
-r('lawb','subst').
-r('lawd','tr').
-r('lawt','adj').
-r('lecion','subst').
-r('led','subst').
-r('leg','tr').
-r('legom','subst').
-r('legx','subst').
-r('lek','tr').
-r('lekci','subst').
-r('leon','best').
-r('lepor','best').
-r('lern','tr').
-r('lert','adj').
-r('lesiv','subst').
-r('leter','subst').
-r('lev','tr').
-r('lewtenant','best').
-r('liber','adj').
-r('libr','subst').
-r('lice','subst').
-r('licenc','subst').
-r('lift','subst').
-r('lig','tr').
-r('lign','subst').
-r('likv','adj').
-r('lili','subst').
-r('lim','subst').
-r('limak','best').
-r('lin','subst').
-r('lingv','subst').
-r('lini','subst').
-r('lip','subst').
-r('list','subst').
-r('lit','subst').
-r('liter','subst').
-r('literatur','subst').
-r('litr','subst').
-r('liver','tr').
-r('log','tr').
-r('logik','subst').
-r('logx','ntr').
-r('lojal','adj').
-r('lok','subst').
-r('lokomotiv','subst').
-r('long','adj').
-r('longitud','subst').
-r('lot','ntr').
-r('lotus','subst').
-r('lu','tr').
-r('lubrik','tr').
-r('lud','tr').
-r('luk','subst').
-r('luks','subst').
-r('lukt','ntr').
-r('lul','tr').
-r('lum','subst').
-r('lun','subst').
-r('lund','subst').
-r('lup','best').
-r('macx','tr').
-r('magazen','subst').
-r('magi','subst').
-r('maiz','subst').
-r('maj','subst').
-r('majest','adj').
-r('majstr','best').
-r('maksimum','subst').
-r('makul','subst').
-r('maleol','subst').
-r('malic','adj').
-r('malv','subst').
-r('mam','subst').
-r('man','subst').
-r('mandat','subst').
-r('mangx','tr').
-r('manier','subst').
-r('manik','subst').
-r('manipul','tr').
-r('mank','ntr').
-r('manovr','ntr').
-r('mantel','subst').
-r('map','subst').
-r('mar','subst').
-r('marcx','subst').
-r('mard','subst').
-r('mark','subst').
-r('marmelad','subst').
-r('marsx','ntr').
-r('mart','subst').
-r('martel','subst').
-r('mas','subst').
-r('mason','tr').
-r('mast','subst').
-r('mastr','best').
-r('masxin','subst').
-r('mat','subst').
-r('matematik','subst').
-r('maten','subst').
-r('materi','subst').
-r('material','subst').
-r('matrac','subst').
-r('matur','adj').
-r('mebl','subst').
-r('medicin','subst').
-r('medikament','subst').
-r('medit','ntr').
-r('mediterane','sdubst').
-r('mekanik','subst').
-r('mekanism','subst').
-r('melk','tr').
-r('melon','subst').
-r('membr','subst').
-r('memor','ntr').
-r('menci','tr').
-r('mend','tr').
-r('mens','subst').
-r('mensog','ntr').
-r('menton','subst').
-r('menu','subst').
-r('meqanik','subst').
-r('meqanism','subst').
-r('merit','tr').
-r('merkred','subst').
-r('mesagx','subst').
-r('met','tr').
-r('metal','subst').
-r('metalurgi','subst').
-r('meti','subst').
-r('metod','subst').
-r('metr','subst').
-r('mez','subst').
-r('mezur','tr').
-r('miel','subst').
-r('mien','subst').
-r('migr','ntr').
-r('miks','tr').
-r('mild','adj').
-r('miliard','nombr').
-r('milimetr','subst').
-r('milion','nombr').
-r('milit','ntr').
-r('min','subst').
-r('minac','tr').
-r('mineral','subst').
-r('minimum','subst').
-r('ministeri','subst').
-r('ministr','best').
-r('minut','subst').
-r('mir','ntr').
-r('mirtel','subst').
-r('mister','subst').
-r('mistifik','tr').
-r('mizer','subst').
-r('mod','subst').
-r('model','subst').
-r('moder','adj').
-r('modern','adj').
-r('modest','adj').
-r('modif','tr').
-r('mok','tr').
-r('mol','adj').
-r('moment','subst').
-r('mon','subst').
-r('monat','subst').
-r('mond','subst').
-r('monstr','subst').
-r('mont','subst').
-r('montr','tr').
-r('monument','subst').
-r('mor','subst').
-r('moral','subst').
-r('mord','tr').
-r('mort','ntr').
-r('moskit','best').
-r('mosxt','best').
-r('motor','subst').
-r('mov','tr').
-r('mozaik','subst').
-r('muel','tr').
-r('mugx','ntr').
-r('mul','best').
-r('mult','adj').
-r('multiplik','tr').
-r('munt','tr').
-r('mur','subst').
-r('murmur','ntr').
-r('mus','best').
-r('musk','subst').
-r('muskol','subst').
-r('musx','best').
-r('mut','adj').
-r('muze','subst').
-r('muzel','subst').
-r('muzik','subst').
-r('naci','subst').
-r('nadl','subst').
-r('nagx','ntr').
-r('naiv','adj').
-r('najbar','best').
-r('najl','subst').
-r('najtingal','best').
-r('nask','tr').
-r('natur','subst').
-r('nawz','tr').
-r('naz','subst').
-r('nebul','subst').
-r('neces','adj').
-r('neglekt','tr').
-r('negx','subst').
-r('nep','parc').
-r('nepr','adv').
-r('nerv','subst').
-r('nervoz','adj').
-r('nest','subst').
-r('net','adj').
-r('nev','parc').
-r('nigr','adj').
-r('nilon','subst').
-r('nivel','subst').
-r('nobl','adj').
-r('nod','subst').
-r('nokt','subst').
-r('nom','tr').
-r('nombr','subst').
-r('nord','subst').
-r('normal','adj').
-r('not','tr').
-r('nov','adj').
-r('novembr','subst').
-r('nub','subst').
-r('nud','adj').
-r('nuk','subst').
-r('nuks','subst').
-r('numer','subst').
-r('nun','adv').
-r('nutr','tr').
-r('obe','tr').
-r('objekt','subst').
-r('oblikv','adj').
-r('observ','tr').
-r('obstakl','obst').
-r('obstin','adj').
-r('ocean','subst').
-r('odor','ntr').
-r('ofend','tr').
-r('ofer','tr').
-r('ofert','tr').
-r('ofic','subst').
-r('oficial','adj').
-r('oficir','best').
-r('oft','adv').
-r('okaz','ntr').
-r('okcident','subst').
-r('oktobr','subst').
-r('okul','subst').
-r('okup','tr').
-r('ole','subst').
-r('oliv','subst').
-r('ombr','subst').
-r('ombrel','subst').
-r('ond','subst').
-r('onkl','parc').
-r('oper','subst').
-r('operaci','subst').
-r('opini','tr').
-r('opon','ntr').
-r('oportun','adj').
-r('opozici','subst').
-r('or','subst').
-r('orakol','subst').
-r('orangx','subst').
-r('orator','subst').
-r('ord','subst').
-r('ordinar','adj').
-r('ordon','tr').
-r('orel','subst').
-r('orf','best').
-r('organ','subst').
-r('organiz','tr').
-r('orient','subst').
-r('origin','subst').
-r('original','adj').
-r('orkestr','subst').
-r('ornam','tr').
-r('ort','adj').
-r('ortografi','subst').
-r('osced','ntr').
-r('ost','subst').
-r('ov','subst').
-r('oval','adj').
-r('pac','subst').
-r('pacienc','subst').
-r('pacifik','subst').
-r('pacxj','subst').
-r('paf','tr').
-r('pag','tr').
-r('pagx','subst').
-r('pajl','subst').
-r('pak','tr').
-r('pal','adj').
-r('palac','subst').
-r('palat','subst').
-r('palis','subst').
-r('palm','subst').
-r('palp','tr').
-r('palpebr','subst').
-r('palt','subst').
-r('pan','subst').
-r('pane','subst').
-r('panj','subst').
-r('pantalon','subst').
-r('pantofl','subst').
-r('pap','best').
-r('papag','best').
-r('paper','subst').
-r('papili','best').
-r('par','subst').
-r('paradiz','subst').
-r('paralel','adj').
-r('parasxut','subst').
-r('pardon','tr').
-r('parenc','parc').
-r('parfum','subst').
-r('park','subst').
-r('park','tr').
-r('parlament','subst').
-r('parol','ntr').
-r('part','subst').
-r('parti','subst').
-r('pas','ntr').
-r('pasagxer','best').
-r('paser','best').
-r('pasi','subst').
-r('pask','subst').
-r('pasport','subst').
-r('past','subst').
-r('pastr','best').
-r('pasx','ntr').
-r('pasxt','tr').
-r('pat','subst').
-r('patr','parc').
-r('patron','best').
-r('pav','best').
-r('pawz','subst').
-r('pec','subst').
-r('pejzagx','subst').
-r('pek','ntr').
-r('pekl','tr').
-r('pel','tr').
-r('pelt','subst').
-r('pen','ntr').
-r('pend','ntr').
-r('pendol','subst').
-r('penetr','ntr').
-r('penik','subst').
-r('pens','tr').
-r('pensi','subst').
-r('pent','tr').
-r('pentr','tr').
-r('perd','tr').
-r('pere','ntr').
-r('perfekt','adj').
-r('perfid','tr').
-r('period','subst').
-r('perl','subst').
-r('permes','tr').
-r('peron','subst').
-r('persekut','tr').
-r('persik','subst').
-r('persist','ntr').
-r('person','best').
-r('perspektiv','subst').
-r('pes','tr').
-r('pet','tr').
-r('petol','ntr').
-r('petrol','subst').
-r('pez','adj').
-r('pi','adj').
-r('pian','subst').
-r('pice','subst').
-r('pied','subst').
-r('pig','best').
-r('pik','tr').
-r('pil','subst').
-r('pilk','subst').
-r('pilot','best').
-r('pin','subst').
-r('pincx','tr').
-r('pingl','subst').
-r('pint','subst').
-r('piocx','subst').
-r('pionir','best').
-r('pip','subst').
-r('pipr','subst').
-r('pir','subst').
-r('piz','subst').
-r('plac','subst').
-r('placx','ntr').
-r('plad','subst').
-r('plafon','subst').
-r('plag','subst').
-r('plan','subst').
-r('pland','subst').
-r('planed','subst').
-r('plank','subst').
-r('plant','tr').
-r('plast','subst').
-r('plastik','subst').
-r('plat','adj').
-r('platan','subst').
-r('plawd','ntr').
-r('plekt','tr').
-r('plen','adj').
-r('plend','ntr').
-r('plet','subst').
-r('plezur','subst').
-r('plongx','ntr').
-r('plor','ntr').
-r('plug','tr').
-r('plum','subst').
-r('plumb','subst').
-r('plur','adj').
-r('plural','subst').
-r('pluv','subst').
-r('poem','subst').
-r('poet','best').
-r('poezi','subst').
-r('polic','subst').
-r('politik','subst').
-r('polur','subst').
-r('polv','subst').
-r('pom','subst').
-r('pont','subst').
-r('popol','subst').
-r('popular','adj').
-r('porcelan','subst').
-r('porci','subst').
-r('pord','subst').
-r('pork','best').
-r('port','tr').
-r('portret','subst').
-r('posed','tr').
-r('posten','subst').
-r('postul','tr').
-r('posx','subst').
-r('posxt','subst').
-r('pot','subst').
-r('potenc','subst').
-r('pov','tr').
-r('pozici','subst').
-r('praktik','subst').
-r('prav','adj').
-r('precip','adv').
-r('preciz','adj').
-r('prefer','tr').
-r('pregx','ntr').
-r('preleg','subst').
-r('prem','tr').
-r('premi','subst').
-r('pren','tr').
-r('prepar','tr').
-r('pres','tr').
-r('preskrib','tr').
-r('pret','adj').
-r('pretekst','subst').
-r('pretend','tr').
-r('prez','subst').
-r('prezent','tr').
-r('prezid','ntr').
-r('princ','subst').
-r('princip','subst').
-r('printemp','subst').
-r('privat','adj').
-r('probabl','adj').
-r('problem','subst').
-r('proced','ntr').
-r('proces','subst').
-r('produkt','tr').
-r('profesi','subst').
-r('profesor','best').
-r('profet','best').
-r('profit','ntr').
-r('profund','adj').
-r('program','subst').
-r('progres','ntr').
-r('projekt','subst').
-r('prokrast','tr').
-r('proksim','adj').
-r('prolet','best').
-r('proletari','best').
-r('promen','ntr').
-r('promes','tr').
-r('pronom','subst').
-r('prononc','tr').
-r('propagand','subst').
-r('propon','tr').
-r('propozici','subst').
-r('propr','adj').
-r('prosper','ntr').
-r('protekt','tr').
-r('protest','ntr').
-r('prov','tr').
-r('proverb','subst').
-r('provinc','subst').
-r('proviz','tr').
-r('provok','tr').
-r('proz','subst').
-r('prudent','adj').
-r('prun','subst').
-r('prunt','tr').
-r('pruv','tr').
-r('psikologi','subst').
-r('publik','subst').
-r('pudr','subst').
-r('pugn','subst').
-r('pulm','subst').
-r('pulv','subst').
-r('pulvor','subst').
-r('pump','tr').
-r('pun','tr').
-r('punkt','subst').
-r('punt','subst').
-r('pup','subst').
-r('pupil','subst').
-r('pur','adj').
-r('pus','subst').
-r('pusx','tr').
-r('put','subst').
-r('putr','ntr').
-r('qemi','subst').
-r('qor','subst').
-r('rab','tr').
-r('rabat','subst').
-r('raci','subst').
-r('rad','subst').
-r('radi','subst').
-r('radiator','subst').
-r('radik','subst').
-r('rafan','subst').
-r('rajd','ntr').
-r('rajt','subst').
-r('rakont','tr').
-r('ramp','ntr').
-r('ran','best').
-r('rand','subst').
-r('rang','subst').
-r('rapid','adj').
-r('raport','tr').
-r('ras','subst').
-r('rat','best').
-r('rav','tr').
-r('rawk','adj').
-r('rawp','best').
-r('raz','tr').
-r('reakci','subst').
-r('real','adj').
-r('recenz','tr').
-r('recept','subst').
-r('reciprok','adj').
-r('redakt','tr').
-r('redukt','tr').
-r('reflekt','tr').
-r('reg','tr').
-r('regal','tr').
-r('regiment','subst').
-r('region','subst').
-r('registr','tr').
-r('regn','subst').
-r('regul','subst').
-r('regx','best').
-r('regxim','subst').
-r('reklam','subst').
-r('rekomend','tr').
-r('rekompenc','tr').
-r('rekord','subst').
-r('rekt','adj').
-r('rel','subst').
-r('relativ','adj').
-r('religi','subst').
-r('rem','ntr').
-r('ren','subst').
-r('rendevu','subst').
-r('renkont','tr').
-r('rent','subst').
-r('renvers','tr').
-r('respekt','subst').
-r('respond','tr').
-r('respublik','subst').
-r('rest','ntr').
-r('restoraci','subst').
-r('ret','subst').
-r('rev','ntr').
-r('revizi','tr').
-r('revoluci','subst').
-r('revu','subst').
-r('rezerv','tr').
-r('rezign','tr').
-r('rezist','ntr').
-r('rezon','ntr').
-r('rezult','ntr').
-r('rib','subst').
-r('ribel','ntr').
-r('ricev','tr').
-r('ricx','adj').
-r('rid','ntr').
-r('rifugx','ntr').
-r('rifuz','tr').
-r('rigard','tr').
-r('rigard','ntr').
-r('rigid','adj').
-r('rikolt','tr').
-r('rilat','ntr').
-r('rim','subst').
-r('rimark','tr').
-r('rimed','subst').
-r('rimen','subst').
-r('ring','subst').
-r('rip','subst').
-r('ripar','tr').
-r('ripet','tr').
-r('ripoz','ntr').
-r('riprocx','tr').
-r('risk','tr').
-r('ritm','subst').
-r('rivel','tr').
-r('river','subst').
-r('riverenc','subst').
-r('rivolu','subst').
-r('riz','subst').
-r('rob','subst').
-r('rok','subst').
-r('rol','subst').
-r('roman','subst').
-r('romp','tr').
-r('rond','subst').
-r('ronk','ntr').
-r('ros','subst').
-r('rost','tr').
-r('roz','subst').
-r('ruband','subst').
-r('ruben','subst').
-r('rugx','adj').
-r('ruin','subst').
-r('rul','tr').
-r('rust','subst').
-r('ruz','adj').
-r('sabat','subst').
-r('sabl','subst').
-r('sag','subst').
-r('sagac','adj').
-r('sagx','adj').
-r('sak','subst').
-r('sal','subst').
-r('salajr','subst').
-r('salat','subst').
-r('salik','subst').
-r('salon','subst').
-r('salt','ntr').
-r('salut','tr').
-r('sam','adj').
-r('san','adj').
-r('sandvicx','subst').
-r('sang','subst').
-r('sankt','adj').
-r('sap','subst').
-r('sark','tr').
-r('sat','adj').
-r('satir','subst').
-r('sav','tr').
-r('sawc','subst').
-r('scen','subst').
-r('sci','tr').
-r('scienc','subst').
-r('sciur','best').
-r('seg','tr').
-r('segx','subst').
-r('sek','adj').
-r('sekal','subst').
-r('sekc','tr').
-r('sekci','subst').
-r('sekret','subst').
-r('sekretari','best').
-r('seks','subst').
-r('sekund','subst').
-r('sekur','adj').
-r('sekv','tr').
-r('sem','tr').
-r('semajn','subst').
-r('senat','subst').
-r('senc','subst').
-r('send','tr').
-r('sens','subst').
-r('sent','tr').
-r('septembr','subst').
-r('sercx','tr').
-r('seren','adj').
-r('seri','subst').
-r('serioz','adj').
-r('serpent','best').
-r('serur','subst').
-r('serv','tnr').
-r('sever','adj').
-r('sezon','subst').
-r('sid','ntr').
-r('sign','subst').
-r('signal','subst').
-r('signif','tr').
-r('silent','ntr').
-r('silk','subst').
-r('simbol','subst').
-r('simi','best').
-r('simil','adj').
-r('simpati','subst').
-r('simpl','adj').
-r('sin','subst').
-r('sincer','adj').
-r('sindikat','subst').
-r('singular','subst').
-r('sinjor','best').
-r('sistem','subst').
-r('sitel','subst').
-r('situ','subst').
-r('situaci','subst').
-r('skal','subst').
-r('skatol','subst').
-r('ski','subst').
-r('sklav','best').
-r('skorpi','best').
-r('skrap','tr').
-r('skrib','tr').
-r('sku','tr').
-r('skulpt','tr').
-r('sled','subst').
-r('sobr','adj').
-r('soci','subst').
-r('social','adj').
-r('societ','subst').
-r('sof','subst').
-r('soif','ntr').
-r('sojl','subst').
-r('sol','adj').
-r('soldat','best').
-r('solen','adj').
-r('solid','adj').
-r('solidar','adj').
-r('solv','tr').
-r('somer','subst').
-r('son','ntr').
-r('songx','subst').
-r('sonor','ntr').
-r('sopir','ntr').
-r('sorb','tr').
-r('sorcx','tr').
-r('sorg','subst').
-r('sort','subst').
-r('sovagx','adj').
-r('spac','subst').
-r('spec','subst').
-r('special','adj').
-r('specimen','subst').
-r('spegul','subst').
-r('spektakl','subst').
-r('spert','adj').
-r('spez','subst').
-r('spic','subst').
-r('spik','subst').
-r('spinac','subst').
-r('spir','ntr').
-r('spirit','subst').
-r('spit','adv').
-r('split','subst').
-r('spong','subst').
-r('sport','subst').
-r('sprit','adj').
-r('spur','subst').
-r('staci','subst').
-r('stadi','subst').
-r('stadion','subst').
-r('stal','subst').
-r('stamen','subst').
-r('stamp','tr').
-r('stan','subst').
-r('standard','subst').
-r('stang','subst').
-r('star','ntr').
-r('start','ntr').
-r('stat','subst').
-r('statu','subst').
-r('statur','subst').
-r('stel','subst').
-r('sterk','subst').
-r('stern','tr').
-r('stil','subst').
-r('stomak','subst').
-r('strang','adj').
-r('strat','subst').
-r('strecx','tr').
-r('strek','tr').
-r('stri','subst').
-r('strig','best').
-r('strik','subst').
-r('struktur','subst').
-r('strut','best').
-r('stud','tr').
-r('student','best').
-r('stult','adj').
-r('stump','subst').
-r('subit','adv').
-r('subjekt','subst').
-r('substanc','subst').
-r('substantiv','subst').
-r('subtil','adj').
-r('subtrah','tr').
-r('sucx','tr').
-r('sud','subst').
-r('sufer','tr').
-r('sufer','ntr').
-r('suficx','adj').
-r('sufok','tr').
-r('suk','subst').
-r('sukces','ntr').
-r('suker','subst').
-r('sulk','subst').
-r('sultan','best').
-r('sum','subst').
-r('sun','subst').
-r('sup','subst').
-r('suplement','subst').
-r('supoz','tr').
-r('supr','adv').
-r('surd','adj').
-r('surfac','subst').
-r('surpriz','tr').
-r('surtut','subst').
-r('suspekt','tr').
-r('susur','ntr').
-r('svat','tr').
-r('sven','ntr').
-r('sving','tr').
-r('sxaf','best').
-r('sxajn','ntr').
-r('sxakal','best').
-r('sxanc','subst').
-r('sxancel','tr').
-r('sxangx','tr').
-r('sxarg','tr').
-r('sxargx','tr').
-r('sxat','tr').
-r('sxawm','subst').
-r('sxel','subst').
-r('sxerc','ntr').
-r('sxink','subst').
-r('sxip','subst').
-r('sxir','tr').
-r('sxirm','tr').
-r('sxlos','tr').
-r('sxmir','tr').
-r('sxnur','subst').
-r('sxofor','best').
-r('sxov','tr').
-r('sxovel','tr').
-r('sxpar','tr').
-r('sxpin','tr').
-r('sxpruc','ntr').
-r('sxrank','subst').
-r('sxrawb','subst').
-r('sxtal','subst').
-r('sxtat','subst').
-r('sxtel','tr').
-r('sxtip','subst').
-r('sxtof','subst').
-r('sxton','subst').
-r('sxtop','tr').
-r('sxtrump','subst').
-r('sxtup','subst').
-r('sxu','subst').
-r('sxuld','tr').
-r('sxultr','subst').
-r('sxut','tr').
-r('sxveb','ntr').
-r('sxvel','ntr').
-r('sxvit','ntr').
-r('tabak','subst').
-r('tabel','subst').
-r('tabl','subst').
-r('tabul','subst').
-r('tag','subst').
-r('tajl','tr').
-r('tajlor','best').
-r('tajp','tr').
-r('taks','tr').
-r('takt','subst').
-r('tali','subst').
-r('tapet','subst').
-r('tapisx','subst').
-r('tarif','subst').
-r('tas','subst').
-r('task','subst').
-r('tawg','ntr').
-r('te','subst').
-r('teatr','subst').
-r('ted','tr').
-r('teg','tr').
-r('tegment','subst').
-r('tegol','subst').
-r('teknik','subst').
-r('teks','tr').
-r('tekst','subst').
-r('telefon','subst').
-r('telegraf','subst').
-r('telegram','subst').
-r('teler','subst').
-r('televid','subst').
-r('tem','subst').
-r('temp','subst').
-r('temperatur','subst').
-r('tempest','subst').
-r('ten','tr').
-r('tend','subst').
-r('tendenc','subst').
-r('tener','adj').
-r('tent','tr').
-r('teori','subst').
-r('teqnik','subst').
-r('ter','subst').
-r('teras','subst').
-r('teren','subst').
-r('teritori','subst').
-r('termometr','subst').
-r('tern','ntr').
-r('terur','subst').
-r('testud','best').
-r('tig','subst').
-r('tigr','best').
-r('tikl','tr').
-r('tim','tr').
-r('tim','ntr').
-r('tinktur','subst').
-r('tint','ntr').
-r('tip','subst').
-r('tir','tr').
-r('titol','subst').
-r('tol','subst').
-r('toler','tr').
-r('tomat','subst').
-r('tomb','subst').
-r('ton','subst').
-r('tond','tr').
-r('tondr','ntr').
-r('tord','tr').
-r('torent','subst').
-r('tort','subst').
-r('tradici','subst').
-r('traduk','tr').
-r('traf','tr').
-r('trafik','subst').
-r('tragedi','subst').
-r('tragik','adj').
-r('trajn','subst').
-r('trajt','subst').
-r('trakt','tr').
-r('traktat','subst').
-r('traktor','subst').
-r('tram','subst').
-r('trancx','tr').
-r('trankvil','adj').
-r('trejn','tr').
-r('trem','ntr').
-r('tremp','tr').
-r('tren','tr').
-r('trezor','subst').
-r('tribunal','subst').
-r('trik','tr').
-r('trikot','subst').
-r('trink','tr').
-r('tritik','subst').
-r('tromp','tr').
-r('trotuar','subst').
-r('trov','tr').
-r('tru','subst').
-r('trud','tr').
-r('trumpet','subst').
-r('trunk','subst').
-r('trup','subst').
-r('tualet','subst').
-r('tub','subst').
-r('tuber','subst').
-r('tuf','subst').
-r('tuk','subst').
-r('tumult','subst').
-r('tun','subst').
-r('tunel','subst').
-r('tur','subst').
-r('turism','subst').
-r('turist','best').
-r('turment','tr').
-r('turn','tr').
-r('tus','ntr').
-r('tusx','tr').
-r('tut','adj').
-r('ung','subst').
-r('uniform','subst').
-r('unik','adj').
-r('universal','adj').
-r('universitat','subst').
-r('urb','subst').
-r('urgx','tr').
-r('urs','best').
-r('util','adj').
-r('uz','tr').
-r('vad','ntr').
-r('vag','ntr').
-r('vagon','subst').
-r('vakcin','subst').
-r('vaks','subst').
-r('val','subst').
-r('valid','adj').
-r('valiz','subst').
-r('valor','subst').
-r('van','adj').
-r('vang','subst').
-r('vant','adj').
-r('vapor','subst').
-r('var','subst').
-r('vari','ntr').
-r('varm','adj').
-r('vart','tr').
-r('vast','adj').
-r('vat','subst').
-r('vaz','subst').
-r('vegetal','subst').
-r('vegetar','adj').
-r('vejn','subst').
-r('vek','tr').
-r('vel','subst').
-r('velk','ntr').
-r('velur','subst').
-r('ven','ntr').
-r('vend','tr').
-r('vendred','subst').
-r('venen','subst').
-r('vengx','tr').
-r('venk','tr').
-r('vent','subst').
-r('ventr','subst').
-r('ver','subst').
-r('verb','subst').
-r('verd','adj').
-r('verg','subst').
-r('verk','tr').
-r('verm','best').
-r('vers','subst').
-r('versx','tr').
-r('vert','subst').
-r('vertic','subst').
-r('vertikal','adj').
-r('veruk','subst').
-r('vesp','best').
-r('vesper','subst').
-r('vest','subst').
-r('vesxt','subst').
-r('vet','ntr').
-r('veter','subst').
-r('vetur','ntr').
-r('vezik','subst').
-r('viadukt','subst').
-r('viand','subst').
-r('vic','subst').
-r('vid','tr').
-r('vidv','best').
-r('vigl','adj').
-r('viktim','subst').
-r('vilagx','subst').
-r('vin','subst').
-r('vind','tr').
-r('vintr','subst').
-r('viol','subst').
-r('violon','subst').
-r('vip','subst').
-r('vir','best').
-r('virg','adj').
-r('virt','adj').
-r('visx','tr').
-r('vit','subst').
-r('vitr','subst').
-r('viv','ntr').
-r('vizagx','subst').
-r('vizit','tr').
-r('vocx','subst').
-r('voj','subst').
-r('vojagx','ntr').
-r('vok','tr').
-r('vol','tr').
-r('volb','subst').
-r('volont','adv').
-r('volum','subst').
-r('volumen','subst').
-r('volv','tr').
-r('vom','tr').
-r('vort','subst').
-r('vost','subst').
-r('vual','subst').
-r('vulkan','subst').
-r('vulp','best').
-r('vultur','best').
-r('vund','tr').
-r('zink','subst').
-r('zon','subst').
-r('zoologi','subst').
-r('zorg','ntr').
-r('zum','ntr').
+r('abel','best') --> "abel".
+r('abi','subst') --> "abi".
+r('abomen','tr') --> "abomen".
+r('abon','tr') --> "abon".
+r('abrikot','subst') --> "abrikot".
+r('abrupt','adj') --> "abrupt".
+r('absolut','adj') --> "absolut".
+r('abstin','ntr') --> "abstin".
+r('absurd','adj') --> "absurd".
+r('abund','adj') --> "abund".
+r('acid','adj') --> "acid".
+r('aĉet','tr') --> "aĉet".
+r('adapt','tr') --> "adapt".
+r('adici','tr') --> "adici".
+r('adjektiv','subst') --> "adjektiv".
+r('administr','tr') --> "administr".
+r('admir','tr') --> "admir".
+r('admon','tr') --> "admon".
+r('adopt','tr') --> "adopt".
+r('ador','tr') --> "ador".
+r('adres','subst') --> "adres".
+r('adverb','subst') --> "adverb".
+r('advokat','best') --> "advokat".
+r('aer','subst') --> "aer".
+r('afabl','adj') --> "afabl".
+r('afer','subst') --> "afer".
+r('afiŝ','subst') --> "afiŝ".
+r('aflikt','tr') --> "aflikt".
+r('afrank','tr') --> "afrank".
+r('afrik','subst') --> "afrik".
+r('ag','ntr') --> "ag".
+r('agent','best') --> "agent".
+r('agit','tr') --> "agit".
+r('agl','best') --> "agl".
+r('agord','tr') --> "agord".
+r('agrabl','adj') --> "agrabl".
+r('aĝ','subst') --> "aĝ".
+r('ajl','subst') --> "ajl".
+r('akademi','subst') --> "akademi".
+r('akcel','tr') --> "akcel".
+r('akcent','tr') --> "akcent".
+r('akcept','tr') --> "akcept".
+r('akci','subst') --> "akci".
+r('akcident','subst') --> "akcident".
+r('akir','tr') --> "akir".
+r('akn','subst') --> "akn".
+r('akompan','tr') --> "akompan".
+r('akord','subst') --> "akord".
+r('akr','adj') --> "akr".
+r('akrid','best') --> "akrid".
+r('aks','subst') --> "aks".
+r('akt','subst') --> "akt".
+r('aktiv','adj') --> "aktiv".
+r('aktor','best') --> "aktor".
+r('aktual','adj') --> "aktual".
+r('akurat','adj') --> "akurat".
+r('akuz','tr') --> "akuz".
+r('akv','subst') --> "akv".
+r('alarm','tr') --> "alarm".
+r('alaŭd','best') --> "alaŭd".
+r('album','subst') --> "album".
+r('ale','subst') --> "ale".
+r('alfabet','subst') --> "alfabet".
+r('alg','best') --> "alg".
+r('ali','adj') --> "ali".
+r('alkohol','subst') --> "alkohol".
+r('almoz','subst') --> "almoz".
+r('alt','adj') --> "alt".
+r('altern','ntr') --> "altern".
+r('alternativ','subst') --> "alternativ".
+r('alud','tr') --> "alud".
+r('alumet','subst') --> "alumet".
+r('alumini','subst') --> "alumini".
+r('am','tr') --> "am".
+r('amar','adj') --> "amar".
+r('amas','subst') --> "amas".
+r('amator','best') --> "amator".
+r('ambasad','subst') --> "ambasad".
+r('ambasador','best') --> "ambasador".
+r('amerik','subst') --> "amerik".
+r('amik','best') --> "amik".
+r('ampleks','subst') --> "ampleks".
+r('ampol','subst') --> "ampol".
+r('amuz','tr') --> "amuz".
+r('anas','best') --> "anas".
+r('anekdot','subst') --> "anekdot".
+r('angil','best') --> "angil".
+r('angul','subst') --> "angul".
+r('anĝel','best') --> "anĝel".
+r('anim','subst') --> "anim".
+r('animal','best') --> "animal".
+r('anonc','tr') --> "anonc".
+r('anser','best') --> "anser".
+r('aparat','subst') --> "aparat".
+r('apart','adj') --> "apart".
+r('apartament','subst') --> "apartament".
+r('aparten','ntr') --> "aparten".
+r('aper','ntr') --> "aper".
+r('apertur','subst') --> "apertur".
+r('apetit','subst') --> "apetit".
+r('aplaŭd','tr') --> "aplaŭd".
+r('aplik','tr') --> "aplik".
+r('apog','tr') --> "apog".
+r('apostol','best') --> "apostol".
+r('apotek','subst') --> "apotek".
+r('apr','best') --> "apr".
+r('april','subst') --> "april".
+r('aprob','tr') --> "aprob".
+r('arane','best') --> "arane".
+r('aranĝ','tr') --> "aranĝ".
+r('arb','subst') --> "arb".
+r('arbitr','adj') --> "arbitr".
+r('arbust','subst') --> "arbust".
+r('ard','ntr') --> "ard".
+r('arĝent','subst') --> "arĝent".
+r('ark','subst') --> "ark".
+r('arm','subst') --> "arm".
+r('arme','subst') --> "arme".
+r('art','subst') --> "art".
+r('arteri','subst') --> "arteri".
+r('artik','subst') --> "artik".
+r('artikol','subst') --> "artikol".
+r('asekur','tr') --> "asekur".
+r('asemble','subst') --> "asemble".
+r('asert','tr') --> "asert".
+r('asfalt','subst') --> "asfalt".
+r('asist','ntr') --> "asist".
+r('asoci','subst') --> "asoci".
+r('aspekt','subst') --> "aspekt".
+r('atak','tr') --> "atak".
+r('atend','tr') --> "atend".
+r('atent','tr') --> "atent".
+r('atest','tr') --> "atest".
+r('ating','tr') --> "ating".
+r('atlantik','subst') --> "atlantik".
+r('atom','subst') --> "atom".
+r('av','parc') --> "av".
+r('avantaĝ','subst') --> "avantaĝ".
+r('avar','adj') --> "avar".
+r('aven','subst') --> "aven".
+r('aventur','subst') --> "aventur".
+r('avenu','subst') --> "avenu".
+r('avert','tr') --> "avert".
+r('avid','adj') --> "avid".
+r('aŭd','tr') --> "aŭd".
+r('aŭdac','tr') --> "aŭdac".
+r('aŭgust','subst') --> "aŭgust".
+r('aŭskult','tr') --> "aŭskult".
+r('aŭstrali','subst') --> "aŭstrali".
+r('aŭt','subst') --> "aŭt".
+r('aŭtobus','subst') --> "aŭtobus".
+r('aŭtomat','subst') --> "aŭtomat".
+r('aŭtomobil','subst') --> "aŭtomobil".
+r('aŭtor','best') --> "aŭtor".
+r('aŭtoritat','subst') --> "aŭtoritat".
+r('aŭtun','subst') --> "aŭtun".
+r('azen','best') --> "azen".
+r('azi','subst') --> "azi".
+r('babil','ntr') --> "babil".
+r('bacil','best') --> "bacil".
+r('bagatel','subst') --> "bagatel".
+r('bak','tr') --> "bak".
+r('bakteri','best') --> "bakteri".
+r('bal','subst') --> "bal".
+r('bala','tr') --> "bala".
+r('balanc','tr') --> "balanc".
+r('balbut','ntr') --> "balbut".
+r('balon','subst') --> "balon".
+r('balot','ntr') --> "balot".
+r('bambu','subst') --> "bambu".
+r('ban','tr') --> "ban".
+r('banan','subst') --> "banan".
+r('bandaĝ','subst') --> "bandaĝ".
+r('bank','subst') --> "bank".
+r('bant','subst') --> "bant".
+r('bapt','tr') --> "bapt".
+r('bar','tr') --> "bar".
+r('barakt','ntr') --> "barakt".
+r('barb','subst') --> "barb".
+r('barbir','best') --> "barbir".
+r('barel','subst') --> "barel".
+r('bark','subst') --> "bark".
+r('bask','subst') --> "bask".
+r('baston','subst') --> "baston".
+r('bat','tr') --> "bat".
+r('batal','ntr') --> "batal".
+r('baz','subst') --> "baz".
+r('bazar','subst') --> "bazar".
+r('beb','best') --> "beb".
+r('bedaŭr','tr') --> "bedaŭr".
+r('bek','subst') --> "bek".
+r('bel','adj') --> "bel".
+r('ben','tr') --> "ben".
+r('bend','subst') --> "bend".
+r('benk','subst') --> "benk".
+r('benzin','subst') --> "benzin".
+r('ber','subst') --> "ber".
+r('best','best') --> "best".
+r('bet','subst') --> "bet".
+r('betul','subst') --> "betul".
+r('bezon','tr') --> "bezon".
+r('bibliotek','subst') --> "bibliotek".
+r('bicikl','subst') --> "bicikl".
+r('bien','subst') --> "bien".
+r('bier','subst') --> "bier".
+r('bifstek','subst') --> "bifstek".
+r('bild','subst') --> "bild".
+r('bilet','subst') --> "bilet".
+r('bind','tr') --> "bind".
+r('bird','best') --> "bird".
+r('blank','adj') --> "blank".
+r('blasfem','ntr') --> "blasfem".
+r('blek','ntr') --> "blek".
+r('blind','adj') --> "blind".
+r('blok','subst') --> "blok".
+r('blond','adj') --> "blond".
+r('blov','ntr') --> "blov".
+r('blu','adj') --> "blu".
+r('bluz','subst') --> "bluz".
+r('boat','subst') --> "boat".
+r('boj','ntr') --> "boj".
+r('bol','ntr') --> "bol".
+r('bombon','subst') --> "bombon".
+r('bon','adj') --> "bon".
+r('bor','tr') --> "bor".
+r('bord','subst') --> "bord".
+r('bors','subst') --> "bors".
+r('bot','subst') --> "bot".
+r('botel','subst') --> "botel".
+r('bov','best') --> "bov".
+r('bovl','subst') --> "bovl".
+r('bracelet','subst') --> "bracelet".
+r('brak','subst') --> "brak".
+r('branĉ','subst') --> "branĉ".
+r('brand','subst') --> "brand".
+r('brasik','subst') --> "brasik".
+r('brav','adj') --> "brav".
+r('bred','tr') --> "bred".
+r('brems','subst') --> "brems".
+r('bret','subst') --> "bret".
+r('brid','tr') --> "brid".
+r('brik','subst') --> "brik".
+r('bril','ntr') --> "bril".
+r('brokant','ntr') --> "brokant".
+r('bronz','subst') --> "bronz".
+r('bros','subst') --> "bros".
+r('broŝur','subst') --> "broŝur".
+r('brov','subst') --> "brov".
+r('bru','ntr') --> "bru".
+r('brul','ntr') --> "brul".
+r('brun','adj') --> "brun".
+r('brust','subst') --> "brust".
+r('brut','subst') --> "brut".
+r('bub','subst') --> "bub".
+r('buĉ','tr') --> "buĉ".
+r('bud','subst') --> "bud".
+r('buĝet','subst') --> "buĝet".
+r('buk','subst') --> "buk".
+r('buked','subst') --> "buked".
+r('bukl','subst') --> "bukl".
+r('bul','subst') --> "bul".
+r('bulb','subst') --> "bulb".
+r('bulk','subst') --> "bulk".
+r('bulten','subst') --> "bulten".
+r('bulvard','subst') --> "bulvard".
+r('burĝ','subst') --> "burĝ".
+r('burĝon','subst') --> "burĝon".
+r('buŝ','subst') --> "buŝ".
+r('buter','subst') --> "buter".
+r('butik','subst') --> "butik".
+r('buton','subst') --> "buton".
+r('ced','ntr') --> "ced".
+r('cel','tr') --> "cel".
+r('cement','subst') --> "cement".
+r('centimetr','subst') --> "centimetr".
+r('centr','subst') --> "centr".
+r('central','subst') --> "central".
+r('cep','subst') --> "cep".
+r('cerb','subst') --> "cerb".
+r('cert','adj') --> "cert".
+r('cerv','best') --> "cerv".
+r('ceter','adj') --> "ceter".
+r('cifer','subst') --> "cifer".
+r('cigar','subst') --> "cigar".
+r('cigared','subst') --> "cigared".
+r('cign','best') --> "cign".
+r('cikad','best') --> "cikad".
+r('cikatr','subst') --> "cikatr".
+r('cikl','subst') --> "cikl".
+r('cikoni','best') --> "cikoni".
+r('cinam','subst') --> "cinam".
+r('cindr','subst') --> "cindr".
+r('cir','subst') --> "cir".
+r('cirkel','subst') --> "cirkel".
+r('cirkl','subst') --> "cirkl".
+r('cirkonstanc','subst') --> "cirkonstanc".
+r('cirkul','ntr') --> "cirkul".
+r('cirkuler','subst') --> "cirkuler".
+r('cirkvit','subst') --> "cirkvit".
+r('cit','tr') --> "cit".
+r('citron','subst') --> "citron".
+r('civil','adj') --> "civil".
+r('civiliz','tr') --> "civiliz".
+r('civit','subst') --> "civit".
+r('ĉagren','tr') --> "ĉagren".
+r('ĉambr','subst') --> "ĉambr".
+r('ĉap','subst') --> "ĉap".
+r('ĉapel','subst') --> "ĉapel".
+r('ĉapitr','subst') --> "ĉapitr".
+r('ĉar','subst') --> "ĉar".
+r('ĉarm','adj') --> "ĉarm".
+r('ĉas','tr') --> "ĉas".
+r('ĉek','subst') --> "ĉek".
+r('ĉel','subst') --> "ĉel".
+r('ĉemiz','subst') --> "ĉemiz".
+r('ĉen','subst') --> "ĉen".
+r('ĉeriz','subst') --> "ĉeriz".
+r('ĉerk','subst') --> "ĉerk".
+r('ĉerp','tr') --> "ĉerp".
+r('ĉes','ntr') --> "ĉes".
+r('ĉeval','best') --> "ĉeval".
+r('ĉiel','subst') --> "ĉiel".
+r('ĉif','tr') --> "ĉif".
+r('ĉifon','subst') --> "ĉifon".
+r('ĉokolad','subst') --> "ĉokolad".
+r('daktil','subst') --> "daktil".
+r('danc','ntr') --> "danc".
+r('dand','subst') --> "dand".
+r('danĝer','subst') --> "danĝer".
+r('dank','tr') --> "dank".
+r('dat','subst') --> "dat".
+r('daŭr','ntr') --> "daŭr".
+r('debet','subst') --> "debet".
+r('dec','adj') --> "dec".
+r('decembr','subst') --> "decembr".
+r('decid','tr') --> "decid".
+r('dediĉ','tr') --> "dediĉ".
+r('defend','tr') --> "defend".
+r('deficit','subst') --> "deficit".
+r('degel','ntr') --> "degel".
+r('deĵor','ntr') --> "deĵor".
+r('deklar','tr') --> "deklar".
+r('dekliv','subst') --> "dekliv".
+r('dekoraci','subst') --> "dekoraci".
+r('dekstr','adj') --> "dekstr".
+r('deleg','tr') --> "deleg".
+r('delikat','adj') --> "delikat".
+r('delir','ntr') --> "delir".
+r('demand','tr') --> "demand".
+r('dens','adj') --> "dens".
+r('dent','subst') --> "dent".
+r('denunc','tr') --> "denunc".
+r('depon','tr') --> "depon".
+r('deput','tr') --> "deput".
+r('desegn','tr') --> "desegn".
+r('desert','subst') --> "desert".
+r('destin','tr') --> "destin".
+r('detal','adj') --> "detal".
+r('determin','tr') --> "determin".
+r('detru','tr') --> "detru".
+r('dev','ntr') --> "dev".
+r('dezert','subst') --> "dezert".
+r('dezir','tr') --> "dezir".
+r('di','best') --> "di".
+r('diabl','best') --> "diabl".
+r('dialog','subst') --> "dialog".
+r('diant','subst') --> "diant".
+r('diet','subst') --> "diet".
+r('difekt','tr') --> "difekt".
+r('diferenc','subst') --> "diferenc".
+r('difin','tr') --> "difin".
+r('digest','tr') --> "digest".
+r('dik','adj') --> "dik".
+r('dikt','tr') --> "dikt".
+r('diligent','adj') --> "diligent".
+r('dimanĉ','subst') --> "dimanĉ".
+r('dimensi','subst') --> "dimensi".
+r('dir','tr') --> "dir".
+r('direkt','tr') --> "direkt".
+r('direktor','best') --> "direktor".
+r('disk','subst') --> "disk".
+r('diskut','ntr') --> "diskut".
+r('dispon','ntr') --> "dispon".
+r('disput','ntr') --> "disput".
+r('distanc','subst') --> "distanc".
+r('disting','tr') --> "disting".
+r('distr','tr') --> "distr".
+r('distribu','tr') --> "distribu".
+r('diven','tr') --> "diven".
+r('divers','adj') --> "divers".
+r('divid','tr') --> "divid".
+r('dogan','subst') --> "dogan".
+r('doktor','best') --> "doktor".
+r('dokument','subst') --> "dokument".
+r('dolĉ','adj') --> "dolĉ".
+r('dolor','tr') --> "dolor".
+r('dom','subst') --> "dom".
+r('domaĝ','subst') --> "domaĝ".
+r('don','tr') --> "don".
+r('donac','tr') --> "donac".
+r('dorlot','tr') --> "dorlot".
+r('dorm','ntr') --> "dorm".
+r('dorn','subst') --> "dorn".
+r('dors','subst') --> "dors".
+r('dot','tr') --> "dot".
+r('drak','best') --> "drak".
+r('dram','subst') --> "dram".
+r('drap','subst') --> "drap".
+r('drat','subst') --> "drat".
+r('dres','tr') --> "dres".
+r('dron','ntr') --> "dron".
+r('dub','ntr') --> "dub".
+r('dung','tr') --> "dung".
+r('duŝ','subst') --> "duŝ".
+r('eben','adj') --> "eben".
+r('ebri','adj') --> "ebri".
+r('eduk','tr') --> "eduk".
+r('edz','best') --> "edz".
+r('efekt','subst') --> "efekt".
+r('efektiv','adj') --> "efektiv".
+r('efik','ntr') --> "efik".
+r('egal','adj') --> "egal".
+r('egoist','best') --> "egoist".
+r('ekip','tr') --> "ekip".
+r('eklezi','subst') --> "eklezi".
+r('ekonomi','subst') --> "ekonomi".
+r('ekran','subst') --> "ekran".
+r('ekscit','tr') --> "ekscit".
+r('ekskurs','subst') --> "ekskurs".
+r('eksped','tr') --> "eksped".
+r('eksperiment','subst') --> "eksperiment".
+r('eksplod','ntr') --> "eksplod".
+r('ekspluat','tr') --> "ekspluat".
+r('eksport','tr') --> "eksport".
+r('ekspozici','subst') --> "ekspozici".
+r('ekstaz','subst') --> "ekstaz".
+r('ekstrem','adj') --> "ekstrem".
+r('ekvator','subst') --> "ekvator".
+r('ekvilibr','subst') --> "ekvilibr".
+r('ekzakt','adj') --> "ekzakt".
+r('ekzamen','subst') --> "ekzamen".
+r('ekzekut','tr') --> "ekzekut".
+r('ekzempl','subst') --> "ekzempl".
+r('ekzerc','tr') --> "ekzerc".
+r('ekzist','ntr') --> "ekzist".
+r('elast','adj') --> "elast".
+r('elefant','best') --> "elefant".
+r('elegant','adj') --> "elegant".
+r('elekt','tr') --> "elekt".
+r('elektr','subst') --> "elektr".
+r('elektronik','subst') --> "elektronik".
+r('element','subst') --> "element".
+r('emajl','subst') --> "emajl".
+r('embaras','subst') --> "embaras".
+r('emerit','best') --> "emerit".
+r('eminent','adj') --> "eminent".
+r('emoci','tr') --> "emoci".
+r('energi','subst') --> "energi".
+r('enigm','subst') --> "enigm".
+r('enket','subst') --> "enket".
+r('entrepren','tr') --> "entrepren".
+r('enu','ntr') --> "enu".
+r('envi','tr') --> "envi".
+r('epidemi','subst') --> "epidemi".
+r('epok','subst') --> "epok".
+r('erar','ntr') --> "erar".
+r('escept','tr') --> "escept".
+r('esenc','subst') --> "esenc".
+r('eskap','ntr') --> "eskap".
+r('esper','tr') --> "esper".
+r('esperant','subst') --> "esperant".
+r('esplor','tr') --> "esplor".
+r('esprim','tr') --> "esprim".
+r('est','ntr') --> "est".
+r('establ','tr') --> "establ".
+r('estim','tr') --> "estim".
+r('esting','tr') --> "esting".
+r('etaĝ','subst') --> "etaĝ".
+r('etap','subst') --> "etap".
+r('etat','subst') --> "etat".
+r('etend','tr') --> "etend".
+r('etern','adj') --> "etern".
+r('event','subst') --> "event".
+r('evident','adj') --> "evident".
+r('evit','tr') --> "evit".
+r('evolu','ntr') --> "evolu".
+r('eŭrop','subst') --> "eŭrop".
+r('ezok','best') --> "ezok".
+r('fab','subst') --> "fab".
+r('fabel','subst') --> "fabel".
+r('fabrik','subst') --> "fabrik".
+r('fac','subst') --> "fac".
+r('facil','adj') --> "facil".
+r('faden','subst') --> "faden".
+r('fag','subst') --> "fag".
+r('fajenc','subst') --> "fajenc".
+r('fajf','ntr') --> "fajf".
+r('fajr','subst') --> "fajr".
+r('fak','subst') --> "fak".
+r('fakt','subst') --> "fakt".
+r('fal','ntr') --> "fal".
+r('falĉ','tr') --> "falĉ".
+r('fald','tr') --> "fald".
+r('fals','tr') --> "fals".
+r('fam','adj') --> "fam".
+r('famili','subst') --> "famili".
+r('familiar','adj') --> "familiar".
+r('fand','tr') --> "fand".
+r('fanfaron','ntr') --> "fanfaron".
+r('fantazi','subst') --> "fantazi".
+r('far','tr') --> "far".
+r('farb','subst') --> "farb".
+r('farm','tr') --> "farm".
+r('fart','ntr') --> "fart".
+r('farun','subst') --> "farun".
+r('fasad','subst') --> "fasad".
+r('fask','subst') --> "fask".
+r('fason','subst') --> "fason".
+r('fast','ntr') --> "fast".
+r('favor','tr') --> "favor".
+r('faŭk','subst') --> "faŭk".
+r('fazan','subst') --> "fazan".
+r('fazeol','subst') --> "fazeol".
+r('fe','best') --> "fe".
+r('febr','subst') --> "febr".
+r('februar','subst') --> "februar".
+r('feĉ','subst') --> "feĉ".
+r('federaci','subst') --> "federaci".
+r('fel','subst') --> "fel".
+r('feliĉ','adj') --> "feliĉ".
+r('felt','subst') --> "felt".
+r('fend','subst') --> "fend".
+r('fenestr','subst') --> "fenestr".
+r('fenomen','subst') --> "fenomen".
+r('fer','subst') --> "fer".
+r('feri','subst') --> "feri".
+r('ferm','tr') --> "ferm".
+r('fervor','subst') --> "fervor".
+r('fest','tr') --> "fest".
+r('festen','subst') --> "festen".
+r('fianĉ','parc') --> "fianĉ".
+r('fid','tr') --> "fid".
+r('fidel','adj') --> "fidel".
+r('fier','adj') --> "fier".
+r('fig','subst') --> "fig".
+r('figur','subst') --> "figur".
+r('fikci','subst') --> "fikci".
+r('fiks','tr') --> "fiks".
+r('fil','parc') --> "fil".
+r('film','subst') --> "film".
+r('fin','tr') --> "fin".
+r('financ','subst') --> "financ".
+r('fingr','subst') --> "fingr".
+r('firm','adj') --> "firm".
+r('fiŝ','best') --> "fiŝ".
+r('fizik','subst') --> "fizik".
+r('flag','subst') --> "flag".
+r('flagr','ntr') --> "flagr".
+r('flam','subst') --> "flam".
+r('flan','subst') --> "flan".
+r('flank','subst') --> "flank".
+r('flar','tr') --> "flar".
+r('flat','tr') --> "flat".
+r('flav','adj') --> "flav".
+r('fleg','tr') --> "fleg".
+r('fleks','tr') --> "fleks".
+r('flik','tr') --> "flik".
+r('flirt','ntr') --> "flirt".
+r('flor','subst') --> "flor".
+r('flos','subst') --> "flos".
+r('flu','ntr') --> "flu".
+r('flug','ntr') --> "flug".
+r('fluid','adj') --> "fluid".
+r('flustr','tr') --> "flustr".
+r('foir','subst') --> "foir".
+r('foj','subst') --> "foj".
+r('fojn','subst') --> "fojn".
+r('foli','subst') --> "foli".
+r('fond','tr') --> "fond".
+r('fonograf','subst') --> "fonograf".
+r('font','subst') --> "font".
+r('fontan','subst') --> "fontan".
+r('forges','tr') --> "forges".
+r('forĝ','tr') --> "forĝ".
+r('fork','subst') --> "fork".
+r('form','tr') --> "form".
+r('formik','best') --> "formik".
+r('formul','subst') --> "formul".
+r('forn','subst') --> "forn".
+r('fort','adj') --> "fort".
+r('fortik','adj') --> "fortik".
+r('fos','tr') --> "fos".
+r('fost','subst') --> "fost".
+r('fotel','subst') --> "fotel".
+r('fotograf','best') --> "fotograf".
+r('frag','subst') --> "frag".
+r('frak','subst') --> "frak".
+r('frakas','tr') --> "frakas".
+r('framb','subst') --> "framb".
+r('frand','tr') --> "frand".
+r('franĝ','subst') --> "franĝ".
+r('frap','tr') --> "frap".
+r('frat','parc') --> "frat".
+r('fraŭl','best') --> "fraŭl".
+r('fraz','subst') --> "fraz".
+r('fremd','adj') --> "fremd".
+r('frenez','adj') --> "frenez".
+r('freŝ','adj') --> "freŝ".
+r('fripon','best') --> "fripon".
+r('frit','tr') --> "frit".
+r('friz','tr') --> "friz".
+r('fromaĝ','subst') --> "fromaĝ".
+r('front','subst') --> "front".
+r('frost','subst') --> "frost".
+r('frot','tr') --> "frot".
+r('fru','adv') --> "fru".
+r('frukt','subst') --> "frukt".
+r('frunt','subst') --> "frunt".
+r('fuĝ','ntr') --> "fuĝ".
+r('fulg','subst') --> "fulg".
+r('fulm','subst') --> "fulm".
+r('fum','subst') --> "fum".
+r('fund','subst') --> "fund".
+r('fundament','subst') --> "fundament".
+r('funebr','subst') --> "funebr".
+r('funel','subst') --> "funel".
+r('fung','subst') --> "fung".
+r('funkci','subst') --> "funkci".
+r('funt','subst') --> "funt".
+r('furaĝ','subst') --> "furaĝ".
+r('furioz','adj') --> "furioz".
+r('fuŝ','tr') --> "fuŝ".
+r('gaj','adj') --> "gaj".
+r('gajn','tr') --> "gajn".
+r('gal','subst') --> "gal".
+r('galoŝ','subst') --> "galoŝ".
+r('gant','subst') --> "gant".
+r('garaĝ','subst') --> "garaĝ".
+r('garanti','ntr') --> "garanti".
+r('garb','subst') --> "garb".
+r('gard','tr') --> "gard".
+r('garn','tr') --> "garn".
+r('gas','subst') --> "gas".
+r('gast','subst') --> "gast".
+r('gazet','subst') --> "gazet".
+r('gelaten','subst') --> "gelaten".
+r('generaci','subst') --> "generaci".
+r('general','subst') --> "general".
+r('geni','subst') --> "geni".
+r('gent','subst') --> "gent".
+r('genu','subst') --> "genu".
+r('geografi','subst') --> "geografi".
+r('gest','subst') --> "gest".
+r('girland','subst') --> "girland".
+r('glaci','subst') --> "glaci".
+r('glad','tr') --> "glad".
+r('glas','subst') --> "glas".
+r('glat','adj') --> "glat".
+r('glav','subst') --> "glav".
+r('glit','ntr') --> "glit".
+r('glob','subst') --> "glob".
+r('glor','tr') --> "glor".
+r('glu','tr') --> "glu".
+r('glut','tr') --> "glut".
+r('gobi','best') --> "gobi".
+r('golf','subst') --> "golf".
+r('gorĝ','subst') --> "gorĝ".
+r('graci','adj') --> "graci".
+r('grad','subst') --> "grad".
+r('grajn','subst') --> "grajn".
+r('gram','subst') --> "gram".
+r('gramatik','subst') --> "gramatik".
+r('grand','adj') --> "grand".
+r('grandioz','adj') --> "grandioz".
+r('gras','subst') --> "gras".
+r('grat','tr') --> "grat".
+r('gratul','tr') --> "gratul".
+r('grav','adj') --> "grav".
+r('graved','adj') --> "graved".
+r('greg','subst') --> "greg".
+r('gren','subst') --> "gren".
+r('ges','subst') --> "ges".
+r('grimac','subst') --> "grimac".
+r('grimp','ntr') --> "grimp".
+r('grinc','ntr') --> "grinc".
+r('grip','subst') --> "grip".
+r('griz','adj') --> "griz".
+r('grot','subst') --> "grot".
+r('gru','best') --> "gru".
+r('grumbl','ntr') --> "grumbl".
+r('grund','subst') --> "grund".
+r('grup','subst') --> "grup".
+r('gudr','subst') --> "gudr".
+r('gum','subst') --> "gum".
+r('gust','subst') --> "gust".
+r('gut','subst') --> "gut".
+r('gvardi','subst') --> "gvardi".
+r('gvid','tr') --> "gvid".
+r('ĝarden','subst') --> "ĝarden".
+r('ĝem','ntr') --> "ĝem".
+r('ĝemel','best') --> "ĝemel".
+r('ĝen','tr') --> "ĝen".
+r('ĝendarm','best') --> "ĝendarm".
+r('ĝeneral','adj') --> "ĝeneral".
+r('ĝentil','adj') --> "ĝentil".
+r('ĝerm','subst') --> "ĝerm".
+r('ĝib','subst') --> "ĝib".
+r('ĝoj','ntr') --> "ĝoj".
+r('ĝu','tr') --> "ĝu".
+r('ĝust','adj') --> "ĝust".
+r('hajl','subst') --> "hajl".
+r('hak','tr') --> "hak".
+r('hal','subst') --> "hal".
+r('halt','ntr') --> "halt".
+r('hangar','subst') --> "hangar".
+r('har','subst') --> "har".
+r('haring','best') --> "haring".
+r('harmoni','subst') --> "harmoni".
+r('hav','tr') --> "hav".
+r('haven','subst') --> "haven".
+r('haŭt','subst') --> "haŭt".
+r('hazard','subst') --> "hazard".
+r('heĝ','subst') --> "heĝ".
+r('hejm','subst') --> "hejm".
+r('hejt','tr') --> "hejt".
+r('hektar','subst') --> "hektar".
+r('hel','adj') --> "hel".
+r('helikopter','subst') --> "helikopter".
+r('help','tr') --> "help".
+r('hepat','subst') --> "hepat".
+r('herb','subst') --> "herb".
+r('hered','tr') --> "hered".
+r('hero','subst') --> "hero".
+r('herold','subst') --> "herold".
+r('hezit','ntr') --> "hezit".
+r('higien','subst') --> "higien".
+r('himn','subst') --> "himn".
+r('hirund','best') --> "hirund".
+r('histori','subst') --> "histori".
+r('hok','subst') --> "hok".
+r('hom','best') --> "hom".
+r('honest','adj') --> "honest".
+r('honor','tr') --> "honor".
+r('hont','ntr') --> "hont".
+r('hor','subst') --> "hor".
+r('horde','subst') --> "horde".
+r('horizont','subst') --> "horizont".
+r('horizontal','adj') --> "horizontal".
+r('horloĝ','subst') --> "horloĝ".
+r('hospital','subst') --> "hospital".
+r('hotel','subst') --> "hotel".
+r('huf','subst') --> "huf".
+r('human','adj') --> "human".
+r('humid','adj') --> "humid".
+r('humil','adj') --> "humil".
+r('humor','subst') --> "humor".
+r('hund','best') --> "hund".
+r('ide','subst') --> "ide".
+r('ideal','subst') --> "ideal".
+r('ident','adj') --> "ident".
+r('ignor','tr') --> "ignor".
+r('ilustr','tr') --> "ilustr".
+r('imag','tr') --> "imag".
+r('imit','tr') --> "imit".
+r('imperi','subst') --> "imperi".
+r('impet','ntr') --> "impet".
+r('implik','tr') --> "implik".
+r('import','tr') --> "import".
+r('impost','subst') --> "impost".
+r('impres','tr') --> "impres".
+r('impuls','subst') --> "impuls".
+r('imun','adj') --> "imun".
+r('incit','tr') --> "incit".
+r('ind','adj') --> "ind".
+r('indiferent','adj') --> "indiferent".
+r('indign','tr') --> "indign".
+r('indik','tr') --> "indik".
+r('individu','subst') --> "individu".
+r('indulg','tr') --> "indulg".
+r('industri','subst') --> "industri".
+r('infan','best') --> "infan".
+r('infekt','tr') --> "infekt".
+r('infer','subst') --> "infer".
+r('influ','tr') --> "influ".
+r('inform','tr') --> "inform".
+r('inĝenier','best') --> "inĝenier".
+r('iniciat','tr') --> "iniciat".
+r('injekt','tr') --> "injekt".
+r('ink','subst') --> "ink".
+r('inklin','adj') --> "inklin".
+r('insekt','best') --> "insekt".
+r('insid','ntr') --> "insid".
+r('insign','subst') --> "insign".
+r('insist','ntr') --> "insist".
+r('inspektor','best') --> "inspektor".
+r('inspir','tr') --> "inspir".
+r('instal','tr') --> "instal".
+r('instanc','subst') --> "instanc".
+r('instig','tr') --> "instig".
+r('instinkt','subst') --> "instinkt".
+r('instru','tr') --> "instru".
+r('instrument','subst') --> "instrument".
+r('insul','subst') --> "insul".
+r('insult','tr') --> "insult".
+r('intelekt','subst') --> "intelekt".
+r('inteligent','adj') --> "inteligent".
+r('intenc','tr') --> "intenc".
+r('interes','tr') --> "interes".
+r('intern','adj') --> "intern".
+r('interpelaci','subst') --> "interpelaci".
+r('interpret','tr') --> "interpret".
+r('intest','subst') --> "intest".
+r('intim','adj') --> "intim".
+r('inund','subst') --> "inund".
+r('invalid','subst') --> "invalid".
+r('invent','tr') --> "invent".
+r('invit','tr') --> "invit".
+r('ir','ntr') --> "ir".
+r('ironi','subst') --> "ironi".
+r('izol','tr') --> "izol".
+r('jak','subst') --> "jak".
+r('januar','subst') --> "januar".
+r('jar','subst') --> "jar".
+r('jubile','subst') --> "jubile".
+r('jug','subst') --> "jug".
+r('juĝ','tr') --> "juĝ".
+r('juk','ntr') --> "juk".
+r('juli','subst') --> "juli".
+r('jun','adj') --> "jun".
+r('jung','tr') --> "jung".
+r('juni','subst') --> "juni".
+r('jup','subst') --> "jup".
+r('jur','subst') --> "jur".
+r('just','adj') --> "just".
+r('juvel','subst') --> "juvel".
+r('ĵaluz','adj') --> "ĵaluz".
+r('ĵaŭd','subst') --> "ĵaŭd".
+r('ĵet','tr') --> "ĵet".
+r('ĵur','tr') --> "ĵur".
+r('ĵurnal','subst') --> "ĵurnal".
+r('kaban','subst') --> "kaban".
+r('kabinet','subst') --> "kabinet".
+r('kaĉ','subst') --> "kaĉ".
+r('kadr','subst') --> "kadr".
+r('kaduk','adj') --> "kaduk".
+r('kaf','subst') --> "kaf".
+r('kaĝ','subst') --> "kaĝ".
+r('kahel','subst') --> "kahel".
+r('kaj','subst') --> "kaj".
+r('kajer','subst') --> "kajer".
+r('kajut','subst') --> "kajut".
+r('kaka','subst') --> "kaka".
+r('kakt','subst') --> "kakt".
+r('kal','subst') --> "kal".
+r('kaldron','subst') --> "kaldron".
+r('kalendar','subst') --> "kalendar".
+r('kalkan','subst') --> "kalkan".
+r('kalkul','ntr') --> "kalkul".
+r('kalson','subst') --> "kalson".
+r('kalumni','tr') --> "kalumni".
+r('kalv','adj') --> "kalv".
+r('kamarad','best') --> "kamarad".
+r('kamel','best') --> "kamel".
+r('kamen','subst') --> "kamen".
+r('kamion','subst') --> "kamion".
+r('kamp','subst') --> "kamp".
+r('kanal','subst') --> "kanal".
+r('kandel','subst') --> "kandel".
+r('kandidat','best') --> "kandidat".
+r('kankr','best') --> "kankr".
+r('kant','ntr') --> "kant".
+r('kanzon','subst') --> "kanzon".
+r('kap','subst') --> "kap".
+r('kapabl','adj') --> "kapabl".
+r('kapital','subst') --> "kapital".
+r('kapr','best') --> "kapr".
+r('kapric','subst') --> "kapric".
+r('kapt','tr') --> "kapt".
+r('kar','adj') --> "kar".
+r('karaf','subst') --> "karaf".
+r('karakter','subst') --> "karakter".
+r('karb','subst') --> "karb".
+r('kares','tr') --> "kares".
+r('karn','subst') --> "karn".
+r('karnaval','subst') --> "karnaval".
+r('karot','subst') --> "karot".
+r('karp','best') --> "karp".
+r('kart','subst') --> "kart".
+r('karton','subst') --> "karton".
+r('kas','subst') --> "kas".
+r('kaserol','subst') --> "kaserol".
+r('kasked','subst') --> "kasked".
+r('kastel','subst') --> "kastel".
+r('kaŝ','tr') --> "kaŝ".
+r('kaŝtan','subst') --> "kaŝtan".
+r('kat','best') --> "kat".
+r('katalog','subst') --> "katalog".
+r('katar','subst') --> "katar".
+r('kategori','subst') --> "kategori".
+r('katen','subst') --> "katen".
+r('kav','subst') --> "kav".
+r('kavern','subst') --> "kavern".
+r('kaŭĉuk','subst') --> "kaŭĉuk".
+r('kaŭz','tr') --> "kaŭz".
+r('kaz','subst') --> "kaz".
+r('kejl','subst') --> "kejl".
+r('kel','subst') --> "kel".
+r('kelk','adj') --> "kelk".
+r('kelner','best') --> "kelner".
+r('kemi','subst') --> "kemi".
+r('kern','subst') --> "kern".
+r('kest','subst') --> "kest".
+r('kilogram','subst') --> "kilogram".
+r('kilometr','subst') --> "kilometr".
+r('kin','subst') --> "kin".
+r('kirurg','best') --> "kirurg".
+r('kirurgi','subst') --> "kirurgi".
+r('kis','tr') --> "kis".
+r('kitel','subst') --> "kitel".
+r('klar','adj') --> "klar".
+r('klas','subst') --> "klas".
+r('klasik','adj') --> "klasik".
+r('kler','adj') --> "kler".
+r('klient','best') --> "klient".
+r('klimat','subst') --> "klimat".
+r('klin','tr') --> "klin".
+r('kling','subst') --> "kling".
+r('klinik','subst') --> "klinik".
+r('klopod','ntr') --> "klopod".
+r('klub','subst') --> "klub".
+r('knab','best') --> "knab".
+r('kned','tr') --> "kned".
+r('kok','best') --> "kok".
+r('koket','adj') --> "koket".
+r('kokos','subst') --> "kokos".
+r('kol','subst') --> "kol".
+r('kolegi','subst') --> "kolegi".
+r('kolekt','tr') --> "kolekt".
+r('kolektiv','subst') --> "kolektiv".
+r('koler','ntr') --> "koler".
+r('kolizi','ntr') --> "kolizi".
+r('kolomb','best') --> "kolomb".
+r('kolon','subst') --> "kolon".
+r('kolonel','best') --> "kolonel".
+r('kolor','subst') --> "kolor".
+r('kolumn','subst') --> "kolumn".
+r('kom','subst') --> "kom".
+r('komand','subst') --> "komand".
+r('komb','tr') --> "komb".
+r('kombin','tr') --> "kombin".
+r('komedi','subst') --> "komedi".
+r('komenc','tr') --> "komenc".
+r('komerc','ntr') --> "komerc".
+r('komfort','adj') --> "komfort".
+r('komik','adj') --> "komik".
+r('komisar','best') --> "komisar".
+r('komisi','tr') --> "komisi".
+r('komision','subst') --> "komision".
+r('komitat','subst') --> "komitat".
+r('kompani','subst') --> "kompani".
+r('kompar','tr') --> "kompar".
+r('kompat','tr') --> "kompat".
+r('kompens','tr') --> "kompens".
+r('kompetent','adj') --> "kompetent".
+r('komplement','subst') --> "komplement".
+r('komplet','adj') --> "komplet".
+r('komplez','ntr') --> "komplez".
+r('komplik','tr') --> "komplik".
+r('kompon','tr') --> "kompon".
+r('kompren','tr') --> "kompren".
+r('kompromit','tr') --> "kompromit".
+r('komun','adj') --> "komun".
+r('komunik','tr') --> "komunik".
+r('kon','tr') --> "kon".
+r('koncentr','tr') --> "koncentr".
+r('koncept','subst') --> "koncept".
+r('koncern','tr') --> "koncern".
+r('koncert','subst') --> "koncert".
+r('kondamn','tr') --> "kondamn".
+r('kondiĉ','subst') --> "kondiĉ".
+r('konduk','tr') --> "konduk".
+r('kondut','ntr') --> "kondut".
+r('konferenc','subst') --> "konferenc".
+r('konfes','tr') --> "konfes".
+r('konfid','tr') --> "konfid".
+r('konfidenc','subst') --> "konfidenc".
+r('konfirm','tr') --> "konfirm".
+r('konfit','tr') --> "konfit".
+r('konfuz','tr') --> "konfuz".
+r('kongres','subst') --> "kongres".
+r('konjekt','tr') --> "konjekt".
+r('konklud','tr') --> "konklud".
+r('konkord','subst') --> "konkord".
+r('konkur','ntr') --> "konkur".
+r('konkurs','subst') --> "konkurs".
+r('konsci','tr') --> "konsci".
+r('konscienc','subst') --> "konscienc".
+r('konsekvenc','subst') --> "konsekvenc".
+r('konsent','ntr') --> "konsent".
+r('konserv','tr') --> "konserv".
+r('konsider','tr') --> "konsider".
+r('konsil','tr') --> "konsil".
+r('konsist','ntr') --> "konsist".
+r('konsol','tr') --> "konsol".
+r('konstant','adj') --> "konstant".
+r('konstat','tr') --> "konstat".
+r('konstituci','subst') --> "konstituci".
+r('konstru','tr') --> "konstru".
+r('konsul','best') --> "konsul".
+r('konsult','tr') --> "konsult".
+r('konsum','tr') --> "konsum".
+r('kontant','adj') --> "kontant".
+r('kontent','adj') --> "kontent".
+r('kontest','tr') --> "kontest".
+r('kontrakt','ntr') --> "kontrakt".
+r('kontrol','tr') --> "kontrol".
+r('konval','subst') --> "konval".
+r('konven','ntr') --> "konven".
+r('konversaci','subst') --> "konversaci".
+r('konvink','tr') --> "konvink".
+r('kopi','tr') --> "kopi".
+r('kor','subst') --> "kor".
+r('korb','subst') --> "korb".
+r('kord','subst') --> "kord".
+r('korekt','tr') --> "korekt".
+r('korespond','ntr') --> "korespond".
+r('koridor','subst') --> "koridor".
+r('kork','subst') --> "kork".
+r('korn','subst') --> "korn".
+r('kornik','best') --> "kornik".
+r('korp','subst') --> "korp".
+r('kort','subst') --> "kort".
+r('korv','best') --> "korv".
+r('kosm','subst') --> "kosm".
+r('kost','ntr') --> "kost".
+r('kostum','subst') --> "kostum".
+r('kot','subst') --> "kot".
+r('koton','subst') --> "koton".
+r('kovert','subst') --> "kovert".
+r('kovr','tr') --> "kovr".
+r('kraĉ','ntr') --> "kraĉ".
+r('krad','subst') --> "krad".
+r('krajon','subst') --> "krajon".
+r('kran','subst') --> "kran".
+r('krani','subst') --> "krani".
+r('kravat','subst') --> "kravat".
+r('kre','tr') --> "kre".
+r('kred','tr') --> "kred".
+r('kredit','subst') --> "kredit".
+r('krem','subst') --> "krem".
+r('krepusk','subst') --> "krepusk".
+r('kresk','ntr') --> "kresk".
+r('krest','subst') --> "krest".
+r('kret','subst') --> "kret".
+r('krev','ntr') --> "krev".
+r('kri','ntr') --> "kri".
+r('krim','subst') --> "krim".
+r('kripl','adj') --> "kripl".
+r('kristal','subst') --> "kristal".
+r('kritik','tr') --> "kritik".
+r('kriz','subst') --> "kriz".
+r('kroĉ','tr') --> "kroĉ".
+r('krokodil','best') --> "krokodil".
+r('kron','subst') --> "kron".
+r('kruc','subst') --> "kruc".
+r('kruĉ','subst') --> "kruĉ".
+r('krud','adj') --> "krud".
+r('kruel','adj') --> "kruel".
+r('krur','subst') --> "krur".
+r('krust','subst') --> "krust".
+r('krut','adj') --> "krut".
+r('kub','subst') --> "kub".
+r('kubut','subst') --> "kubut".
+r('kudr','tr') --> "kudr".
+r('kugl','subst') --> "kugl".
+r('kuir','tr') --> "kuir".
+r('kuk','subst') --> "kuk".
+r('kukol','best') --> "kukol".
+r('kukum','subst') --> "kukum".
+r('kukurb','subst') --> "kukurb".
+r('kul','best') --> "kul".
+r('kuler','subst') --> "kuler".
+r('kulp','adj') --> "kulp".
+r('kult','subst') --> "kult".
+r('kultur','subst') --> "kultur".
+r('kunikl','best') --> "kunikl".
+r('kupon','subst') --> "kupon".
+r('kupr','subst') --> "kupr".
+r('kur','ntr') --> "kur".
+r('kurac','tr') --> "kurac".
+r('kuraĝ','adj') --> "kuraĝ".
+r('kurb','adj') --> "kurb".
+r('kurent','subst') --> "kurent".
+r('kurioz','adj') --> "kurioz".
+r('kurs','subst') --> "kurs".
+r('kurten','subst') --> "kurten".
+r('kusen','subst') --> "kusen".
+r('kuŝ','ntr') --> "kuŝ".
+r('kutim','ntr') --> "kutim".
+r('kuv','subst') --> "kuv".
+r('kuz','parc') --> "kuz".
+r('kvadrat','subst') --> "kvadrat".
+r('kvalit','subst') --> "kvalit".
+r('kvant','subst') --> "kvant".
+r('kvartal','subst') --> "kvartal".
+r('kverk','subst') --> "kverk".
+r('kviet','adj') --> "kviet".
+r('labor','ntr') --> "labor".
+r('laboratori','subst') --> "laboratori".
+r('lac','adj') --> "lac".
+r('lacert','best') --> "lacert".
+r('laĉ','subst') --> "laĉ".
+r('lad','subst') --> "lad".
+r('lag','subst') --> "lag".
+r('lak','subst') --> "lak".
+r('lakt','subst') --> "lakt".
+r('lam','adj') --> "lam".
+r('lamen','subst') --> "lamen".
+r('lamp','subst') --> "lamp".
+r('lan','subst') --> "lan".
+r('land','subst') --> "land".
+r('lang','subst') --> "lang".
+r('lantern','subst') --> "lantern".
+r('lap','subst') --> "lap".
+r('lard','subst') --> "lard".
+r('larĝ','adj') --> "larĝ".
+r('larm','subst') --> "larm".
+r('larv','subst') --> "larv".
+r('las','tr') --> "las".
+r('last','adj') --> "last".
+r('latitud','subst') --> "latitud".
+r('latun','subst') --> "latun".
+r('lav','tr') --> "lav".
+r('laŭb','subst') --> "laŭb".
+r('laŭd','tr') --> "laŭd".
+r('laŭt','adj') --> "laŭt".
+r('lecion','subst') --> "lecion".
+r('led','subst') --> "led".
+r('leg','tr') --> "leg".
+r('legom','subst') --> "legom".
+r('leĝ','subst') --> "leĝ".
+r('lek','tr') --> "lek".
+r('lekci','subst') --> "lekci".
+r('leon','best') --> "leon".
+r('lepor','best') --> "lepor".
+r('lern','tr') --> "lern".
+r('lert','adj') --> "lert".
+r('lesiv','subst') --> "lesiv".
+r('leter','subst') --> "leter".
+r('lev','tr') --> "lev".
+r('leŭtenant','best') --> "leŭtenant".
+r('liber','adj') --> "liber".
+r('libr','subst') --> "libr".
+r('lice','subst') --> "lice".
+r('licenc','subst') --> "licenc".
+r('lift','subst') --> "lift".
+r('lig','tr') --> "lig".
+r('lign','subst') --> "lign".
+r('likv','adj') --> "likv".
+r('lili','subst') --> "lili".
+r('lim','subst') --> "lim".
+r('limak','best') --> "limak".
+r('lin','subst') --> "lin".
+r('lingv','subst') --> "lingv".
+r('lini','subst') --> "lini".
+r('lip','subst') --> "lip".
+r('list','subst') --> "list".
+r('lit','subst') --> "lit".
+r('liter','subst') --> "liter".
+r('literatur','subst') --> "literatur".
+r('litr','subst') --> "litr".
+r('liver','tr') --> "liver".
+r('log','tr') --> "log".
+r('logik','subst') --> "logik".
+r('loĝ','ntr') --> "loĝ".
+r('lojal','adj') --> "lojal".
+r('lok','subst') --> "lok".
+r('lokomotiv','subst') --> "lokomotiv".
+r('long','adj') --> "long".
+r('longitud','subst') --> "longitud".
+r('lot','ntr') --> "lot".
+r('lotus','subst') --> "lotus".
+r('lu','tr') --> "lu".
+r('lubrik','tr') --> "lubrik".
+r('lud','tr') --> "lud".
+r('luk','subst') --> "luk".
+r('luks','subst') --> "luks".
+r('lukt','ntr') --> "lukt".
+r('lul','tr') --> "lul".
+r('lum','subst') --> "lum".
+r('lun','subst') --> "lun".
+r('lund','subst') --> "lund".
+r('lup','best') --> "lup".
+r('maĉ','tr') --> "maĉ".
+r('magazen','subst') --> "magazen".
+r('magi','subst') --> "magi".
+r('maiz','subst') --> "maiz".
+r('maj','subst') --> "maj".
+r('majest','adj') --> "majest".
+r('majstr','best') --> "majstr".
+r('maksimum','subst') --> "maksimum".
+r('makul','subst') --> "makul".
+r('maleol','subst') --> "maleol".
+r('malic','adj') --> "malic".
+r('malv','subst') --> "malv".
+r('mam','subst') --> "mam".
+r('man','subst') --> "man".
+r('mandat','subst') --> "mandat".
+r('manĝ','tr') --> "manĝ".
+r('manier','subst') --> "manier".
+r('manik','subst') --> "manik".
+r('manipul','tr') --> "manipul".
+r('mank','ntr') --> "mank".
+r('manovr','ntr') --> "manovr".
+r('mantel','subst') --> "mantel".
+r('map','subst') --> "map".
+r('mar','subst') --> "mar".
+r('marĉ','subst') --> "marĉ".
+r('mard','subst') --> "mard".
+r('mark','subst') --> "mark".
+r('marmelad','subst') --> "marmelad".
+r('marŝ','ntr') --> "marŝ".
+r('mart','subst') --> "mart".
+r('martel','subst') --> "martel".
+r('mas','subst') --> "mas".
+r('mason','tr') --> "mason".
+r('mast','subst') --> "mast".
+r('mastr','best') --> "mastr".
+r('maŝin','subst') --> "maŝin".
+r('mat','subst') --> "mat".
+r('matematik','subst') --> "matematik".
+r('maten','subst') --> "maten".
+r('materi','subst') --> "materi".
+r('material','subst') --> "material".
+r('matrac','subst') --> "matrac".
+r('matur','adj') --> "matur".
+r('mebl','subst') --> "mebl".
+r('medicin','subst') --> "medicin".
+r('medikament','subst') --> "medikament".
+r('medit','ntr') --> "medit".
+r('mediterane','sdubst') --> "mediterane".
+r('mekanik','subst') --> "mekanik".
+r('mekanism','subst') --> "mekanism".
+r('melk','tr') --> "melk".
+r('melon','subst') --> "melon".
+r('membr','subst') --> "membr".
+r('memor','ntr') --> "memor".
+r('menci','tr') --> "menci".
+r('mend','tr') --> "mend".
+r('mens','subst') --> "mens".
+r('mensog','ntr') --> "mensog".
+r('menton','subst') --> "menton".
+r('menu','subst') --> "menu".
+r('meqanik','subst') --> "meqanik".
+r('meqanism','subst') --> "meqanism".
+r('merit','tr') --> "merit".
+r('merkred','subst') --> "merkred".
+r('mesaĝ','subst') --> "mesaĝ".
+r('met','tr') --> "met".
+r('metal','subst') --> "metal".
+r('metalurgi','subst') --> "metalurgi".
+r('meti','subst') --> "meti".
+r('metod','subst') --> "metod".
+r('metr','subst') --> "metr".
+r('mez','subst') --> "mez".
+r('mezur','tr') --> "mezur".
+r('miel','subst') --> "miel".
+r('mien','subst') --> "mien".
+r('migr','ntr') --> "migr".
+r('miks','tr') --> "miks".
+r('mild','adj') --> "mild".
+r('miliard','nombr') --> "miliard".
+r('milimetr','subst') --> "milimetr".
+r('milion','nombr') --> "milion".
+r('milit','ntr') --> "milit".
+r('min','subst') --> "min".
+r('minac','tr') --> "minac".
+r('mineral','subst') --> "mineral".
+r('minimum','subst') --> "minimum".
+r('ministeri','subst') --> "ministeri".
+r('ministr','best') --> "ministr".
+r('minut','subst') --> "minut".
+r('mir','ntr') --> "mir".
+r('mirtel','subst') --> "mirtel".
+r('mister','subst') --> "mister".
+r('mistifik','tr') --> "mistifik".
+r('mizer','subst') --> "mizer".
+r('mod','subst') --> "mod".
+r('model','subst') --> "model".
+r('moder','adj') --> "moder".
+r('modern','adj') --> "modern".
+r('modest','adj') --> "modest".
+r('modif','tr') --> "modif".
+r('mok','tr') --> "mok".
+r('mol','adj') --> "mol".
+r('moment','subst') --> "moment".
+r('mon','subst') --> "mon".
+r('monat','subst') --> "monat".
+r('mond','subst') --> "mond".
+r('monstr','subst') --> "monstr".
+r('mont','subst') --> "mont".
+r('montr','tr') --> "montr".
+r('monument','subst') --> "monument".
+r('mor','subst') --> "mor".
+r('moral','subst') --> "moral".
+r('mord','tr') --> "mord".
+r('mort','ntr') --> "mort".
+r('moskit','best') --> "moskit".
+r('moŝt','best') --> "moŝt".
+r('motor','subst') --> "motor".
+r('mov','tr') --> "mov".
+r('mozaik','subst') --> "mozaik".
+r('muel','tr') --> "muel".
+r('muĝ','ntr') --> "muĝ".
+r('mul','best') --> "mul".
+r('mult','adj') --> "mult".
+r('multiplik','tr') --> "multiplik".
+r('munt','tr') --> "munt".
+r('mur','subst') --> "mur".
+r('murmur','ntr') --> "murmur".
+r('mus','best') --> "mus".
+r('musk','subst') --> "musk".
+r('muskol','subst') --> "muskol".
+r('muŝ','best') --> "muŝ".
+r('mut','adj') --> "mut".
+r('muze','subst') --> "muze".
+r('muzel','subst') --> "muzel".
+r('muzik','subst') --> "muzik".
+r('naci','subst') --> "naci".
+r('nadl','subst') --> "nadl".
+r('naĝ','ntr') --> "naĝ".
+r('naiv','adj') --> "naiv".
+r('najbar','best') --> "najbar".
+r('najl','subst') --> "najl".
+r('najtingal','best') --> "najtingal".
+r('nask','tr') --> "nask".
+r('natur','subst') --> "natur".
+r('naŭz','tr') --> "naŭz".
+r('naz','subst') --> "naz".
+r('nebul','subst') --> "nebul".
+r('neces','adj') --> "neces".
+r('neglekt','tr') --> "neglekt".
+r('neĝ','subst') --> "neĝ".
+r('nep','parc') --> "nep".
+r('nepr','adv') --> "nepr".
+r('nerv','subst') --> "nerv".
+r('nervoz','adj') --> "nervoz".
+r('nest','subst') --> "nest".
+r('net','adj') --> "net".
+r('nev','parc') --> "nev".
+r('nigr','adj') --> "nigr".
+r('nilon','subst') --> "nilon".
+r('nivel','subst') --> "nivel".
+r('nobl','adj') --> "nobl".
+r('nod','subst') --> "nod".
+r('nokt','subst') --> "nokt".
+r('nom','tr') --> "nom".
+r('nombr','subst') --> "nombr".
+r('nord','subst') --> "nord".
+r('normal','adj') --> "normal".
+r('not','tr') --> "not".
+r('nov','adj') --> "nov".
+r('novembr','subst') --> "novembr".
+r('nub','subst') --> "nub".
+r('nud','adj') --> "nud".
+r('nuk','subst') --> "nuk".
+r('nuks','subst') --> "nuks".
+r('numer','subst') --> "numer".
+r('nun','adv') --> "nun".
+r('nutr','tr') --> "nutr".
+r('obe','tr') --> "obe".
+r('objekt','subst') --> "objekt".
+r('oblikv','adj') --> "oblikv".
+r('observ','tr') --> "observ".
+r('obstakl','obst') --> "obstakl".
+r('obstin','adj') --> "obstin".
+r('ocean','subst') --> "ocean".
+r('odor','ntr') --> "odor".
+r('ofend','tr') --> "ofend".
+r('ofer','tr') --> "ofer".
+r('ofert','tr') --> "ofert".
+r('ofic','subst') --> "ofic".
+r('oficial','adj') --> "oficial".
+r('oficir','best') --> "oficir".
+r('oft','adv') --> "oft".
+r('okaz','ntr') --> "okaz".
+r('okcident','subst') --> "okcident".
+r('oktobr','subst') --> "oktobr".
+r('okul','subst') --> "okul".
+r('okup','tr') --> "okup".
+r('ole','subst') --> "ole".
+r('oliv','subst') --> "oliv".
+r('ombr','subst') --> "ombr".
+r('ombrel','subst') --> "ombrel".
+r('ond','subst') --> "ond".
+r('onkl','parc') --> "onkl".
+r('oper','subst') --> "oper".
+r('operaci','subst') --> "operaci".
+r('opini','tr') --> "opini".
+r('opon','ntr') --> "opon".
+r('oportun','adj') --> "oportun".
+r('opozici','subst') --> "opozici".
+r('or','subst') --> "or".
+r('orakol','subst') --> "orakol".
+r('oranĝ','subst') --> "oranĝ".
+r('orator','subst') --> "orator".
+r('ord','subst') --> "ord".
+r('ordinar','adj') --> "ordinar".
+r('ordon','tr') --> "ordon".
+r('orel','subst') --> "orel".
+r('orf','best') --> "orf".
+r('organ','subst') --> "organ".
+r('organiz','tr') --> "organiz".
+r('orient','subst') --> "orient".
+r('origin','subst') --> "origin".
+r('original','adj') --> "original".
+r('orkestr','subst') --> "orkestr".
+r('ornam','tr') --> "ornam".
+r('ort','adj') --> "ort".
+r('ortografi','subst') --> "ortografi".
+r('osced','ntr') --> "osced".
+r('ost','subst') --> "ost".
+r('ov','subst') --> "ov".
+r('oval','adj') --> "oval".
+r('pac','subst') --> "pac".
+r('pacienc','subst') --> "pacienc".
+r('pacifik','subst') --> "pacifik".
+r('paĉj','subst') --> "paĉj".
+r('paf','tr') --> "paf".
+r('pag','tr') --> "pag".
+r('paĝ','subst') --> "paĝ".
+r('pajl','subst') --> "pajl".
+r('pak','tr') --> "pak".
+r('pal','adj') --> "pal".
+r('palac','subst') --> "palac".
+r('palat','subst') --> "palat".
+r('palis','subst') --> "palis".
+r('palm','subst') --> "palm".
+r('palp','tr') --> "palp".
+r('palpebr','subst') --> "palpebr".
+r('palt','subst') --> "palt".
+r('pan','subst') --> "pan".
+r('pane','subst') --> "pane".
+r('panj','subst') --> "panj".
+r('pantalon','subst') --> "pantalon".
+r('pantofl','subst') --> "pantofl".
+r('pap','best') --> "pap".
+r('papag','best') --> "papag".
+r('paper','subst') --> "paper".
+r('papili','best') --> "papili".
+r('par','subst') --> "par".
+r('paradiz','subst') --> "paradiz".
+r('paralel','adj') --> "paralel".
+r('paraŝut','subst') --> "paraŝut".
+r('pardon','tr') --> "pardon".
+r('parenc','parc') --> "parenc".
+r('parfum','subst') --> "parfum".
+r('park','subst') --> "park".
+r('park','tr') --> "park".
+r('parlament','subst') --> "parlament".
+r('parol','ntr') --> "parol".
+r('part','subst') --> "part".
+r('parti','subst') --> "parti".
+r('pas','ntr') --> "pas".
+r('pasaĝer','best') --> "pasaĝer".
+r('paser','best') --> "paser".
+r('pasi','subst') --> "pasi".
+r('pask','subst') --> "pask".
+r('pasport','subst') --> "pasport".
+r('past','subst') --> "past".
+r('pastr','best') --> "pastr".
+r('paŝ','ntr') --> "paŝ".
+r('paŝt','tr') --> "paŝt".
+r('pat','subst') --> "pat".
+r('patr','parc') --> "patr".
+r('patron','best') --> "patron".
+r('pav','best') --> "pav".
+r('paŭz','subst') --> "paŭz".
+r('pec','subst') --> "pec".
+r('pejzaĝ','subst') --> "pejzaĝ".
+r('pek','ntr') --> "pek".
+r('pekl','tr') --> "pekl".
+r('pel','tr') --> "pel".
+r('pelt','subst') --> "pelt".
+r('pen','ntr') --> "pen".
+r('pend','ntr') --> "pend".
+r('pendol','subst') --> "pendol".
+r('penetr','ntr') --> "penetr".
+r('penik','subst') --> "penik".
+r('pens','tr') --> "pens".
+r('pensi','subst') --> "pensi".
+r('pent','tr') --> "pent".
+r('pentr','tr') --> "pentr".
+r('perd','tr') --> "perd".
+r('pere','ntr') --> "pere".
+r('perfekt','adj') --> "perfekt".
+r('perfid','tr') --> "perfid".
+r('period','subst') --> "period".
+r('perl','subst') --> "perl".
+r('permes','tr') --> "permes".
+r('peron','subst') --> "peron".
+r('persekut','tr') --> "persekut".
+r('persik','subst') --> "persik".
+r('persist','ntr') --> "persist".
+r('person','best') --> "person".
+r('perspektiv','subst') --> "perspektiv".
+r('pes','tr') --> "pes".
+r('pet','tr') --> "pet".
+r('petol','ntr') --> "petol".
+r('petrol','subst') --> "petrol".
+r('pez','adj') --> "pez".
+r('pi','adj') --> "pi".
+r('pian','subst') --> "pian".
+r('pice','subst') --> "pice".
+r('pied','subst') --> "pied".
+r('pig','best') --> "pig".
+r('pik','tr') --> "pik".
+r('pil','subst') --> "pil".
+r('pilk','subst') --> "pilk".
+r('pilot','best') --> "pilot".
+r('pin','subst') --> "pin".
+r('pinĉ','tr') --> "pinĉ".
+r('pingl','subst') --> "pingl".
+r('pint','subst') --> "pint".
+r('pioĉ','subst') --> "pioĉ".
+r('pionir','best') --> "pionir".
+r('pip','subst') --> "pip".
+r('pipr','subst') --> "pipr".
+r('pir','subst') --> "pir".
+r('piz','subst') --> "piz".
+r('plac','subst') --> "plac".
+r('plaĉ','ntr') --> "plaĉ".
+r('plad','subst') --> "plad".
+r('plafon','subst') --> "plafon".
+r('plag','subst') --> "plag".
+r('plan','subst') --> "plan".
+r('pland','subst') --> "pland".
+r('planed','subst') --> "planed".
+r('plank','subst') --> "plank".
+r('plant','tr') --> "plant".
+r('plast','subst') --> "plast".
+r('plastik','subst') --> "plastik".
+r('plat','adj') --> "plat".
+r('platan','subst') --> "platan".
+r('plaŭd','ntr') --> "plaŭd".
+r('plekt','tr') --> "plekt".
+r('plen','adj') --> "plen".
+r('plend','ntr') --> "plend".
+r('plet','subst') --> "plet".
+r('plezur','subst') --> "plezur".
+r('plonĝ','ntr') --> "plonĝ".
+r('plor','ntr') --> "plor".
+r('plug','tr') --> "plug".
+r('plum','subst') --> "plum".
+r('plumb','subst') --> "plumb".
+r('plur','adj') --> "plur".
+r('plural','subst') --> "plural".
+r('pluv','subst') --> "pluv".
+r('poem','subst') --> "poem".
+r('poet','best') --> "poet".
+r('poezi','subst') --> "poezi".
+r('polic','subst') --> "polic".
+r('politik','subst') --> "politik".
+r('polur','subst') --> "polur".
+r('polv','subst') --> "polv".
+r('pom','subst') --> "pom".
+r('pont','subst') --> "pont".
+r('popol','subst') --> "popol".
+r('popular','adj') --> "popular".
+r('porcelan','subst') --> "porcelan".
+r('porci','subst') --> "porci".
+r('pord','subst') --> "pord".
+r('pork','best') --> "pork".
+r('port','tr') --> "port".
+r('portret','subst') --> "portret".
+r('posed','tr') --> "posed".
+r('posten','subst') --> "posten".
+r('postul','tr') --> "postul".
+r('poŝ','subst') --> "poŝ".
+r('poŝt','subst') --> "poŝt".
+r('pot','subst') --> "pot".
+r('potenc','subst') --> "potenc".
+r('pov','tr') --> "pov".
+r('pozici','subst') --> "pozici".
+r('praktik','subst') --> "praktik".
+r('prav','adj') --> "prav".
+r('precip','adv') --> "precip".
+r('preciz','adj') --> "preciz".
+r('prefer','tr') --> "prefer".
+r('preĝ','ntr') --> "preĝ".
+r('preleg','subst') --> "preleg".
+r('prem','tr') --> "prem".
+r('premi','subst') --> "premi".
+r('pren','tr') --> "pren".
+r('prepar','tr') --> "prepar".
+r('pres','tr') --> "pres".
+r('preskrib','tr') --> "preskrib".
+r('pret','adj') --> "pret".
+r('pretekst','subst') --> "pretekst".
+r('pretend','tr') --> "pretend".
+r('prez','subst') --> "prez".
+r('prezent','tr') --> "prezent".
+r('prezid','ntr') --> "prezid".
+r('princ','subst') --> "princ".
+r('princip','subst') --> "princip".
+r('printemp','subst') --> "printemp".
+r('privat','adj') --> "privat".
+r('probabl','adj') --> "probabl".
+r('problem','subst') --> "problem".
+r('proced','ntr') --> "proced".
+r('proces','subst') --> "proces".
+r('produkt','tr') --> "produkt".
+r('profesi','subst') --> "profesi".
+r('profesor','best') --> "profesor".
+r('profet','best') --> "profet".
+r('profit','ntr') --> "profit".
+r('profund','adj') --> "profund".
+r('program','subst') --> "program".
+r('progres','ntr') --> "progres".
+r('projekt','subst') --> "projekt".
+r('prokrast','tr') --> "prokrast".
+r('proksim','adj') --> "proksim".
+r('prolet','best') --> "prolet".
+r('proletari','best') --> "proletari".
+r('promen','ntr') --> "promen".
+r('promes','tr') --> "promes".
+r('pronom','subst') --> "pronom".
+r('prononc','tr') --> "prononc".
+r('propagand','subst') --> "propagand".
+r('propon','tr') --> "propon".
+r('propozici','subst') --> "propozici".
+r('propr','adj') --> "propr".
+r('prosper','ntr') --> "prosper".
+r('protekt','tr') --> "protekt".
+r('protest','ntr') --> "protest".
+r('prov','tr') --> "prov".
+r('proverb','subst') --> "proverb".
+r('provinc','subst') --> "provinc".
+r('proviz','tr') --> "proviz".
+r('provok','tr') --> "provok".
+r('proz','subst') --> "proz".
+r('prudent','adj') --> "prudent".
+r('prun','subst') --> "prun".
+r('prunt','tr') --> "prunt".
+r('pruv','tr') --> "pruv".
+r('psikologi','subst') --> "psikologi".
+r('publik','subst') --> "publik".
+r('pudr','subst') --> "pudr".
+r('pugn','subst') --> "pugn".
+r('pulm','subst') --> "pulm".
+r('pulv','subst') --> "pulv".
+r('pulvor','subst') --> "pulvor".
+r('pump','tr') --> "pump".
+r('pun','tr') --> "pun".
+r('punkt','subst') --> "punkt".
+r('punt','subst') --> "punt".
+r('pup','subst') --> "pup".
+r('pupil','subst') --> "pupil".
+r('pur','adj') --> "pur".
+r('pus','subst') --> "pus".
+r('puŝ','tr') --> "puŝ".
+r('put','subst') --> "put".
+r('putr','ntr') --> "putr".
+r('qemi','subst') --> "qemi".
+r('qor','subst') --> "qor".
+r('rab','tr') --> "rab".
+r('rabat','subst') --> "rabat".
+r('raci','subst') --> "raci".
+r('rad','subst') --> "rad".
+r('radi','subst') --> "radi".
+r('radiator','subst') --> "radiator".
+r('radik','subst') --> "radik".
+r('rafan','subst') --> "rafan".
+r('rajd','ntr') --> "rajd".
+r('rajt','subst') --> "rajt".
+r('rakont','tr') --> "rakont".
+r('ramp','ntr') --> "ramp".
+r('ran','best') --> "ran".
+r('rand','subst') --> "rand".
+r('rang','subst') --> "rang".
+r('rapid','adj') --> "rapid".
+r('raport','tr') --> "raport".
+r('ras','subst') --> "ras".
+r('rat','best') --> "rat".
+r('rav','tr') --> "rav".
+r('raŭk','adj') --> "raŭk".
+r('raŭp','best') --> "raŭp".
+r('raz','tr') --> "raz".
+r('reakci','subst') --> "reakci".
+r('real','adj') --> "real".
+r('recenz','tr') --> "recenz".
+r('recept','subst') --> "recept".
+r('reciprok','adj') --> "reciprok".
+r('redakt','tr') --> "redakt".
+r('redukt','tr') --> "redukt".
+r('reflekt','tr') --> "reflekt".
+r('reg','tr') --> "reg".
+r('regal','tr') --> "regal".
+r('regiment','subst') --> "regiment".
+r('region','subst') --> "region".
+r('registr','tr') --> "registr".
+r('regn','subst') --> "regn".
+r('regul','subst') --> "regul".
+r('reĝ','best') --> "reĝ".
+r('reĝim','subst') --> "reĝim".
+r('reklam','subst') --> "reklam".
+r('rekomend','tr') --> "rekomend".
+r('rekompenc','tr') --> "rekompenc".
+r('rekord','subst') --> "rekord".
+r('rekt','adj') --> "rekt".
+r('rel','subst') --> "rel".
+r('relativ','adj') --> "relativ".
+r('religi','subst') --> "religi".
+r('rem','ntr') --> "rem".
+r('ren','subst') --> "ren".
+r('rendevu','subst') --> "rendevu".
+r('renkont','tr') --> "renkont".
+r('rent','subst') --> "rent".
+r('renvers','tr') --> "renvers".
+r('respekt','subst') --> "respekt".
+r('respond','tr') --> "respond".
+r('respublik','subst') --> "respublik".
+r('rest','ntr') --> "rest".
+r('restoraci','subst') --> "restoraci".
+r('ret','subst') --> "ret".
+r('rev','ntr') --> "rev".
+r('revizi','tr') --> "revizi".
+r('revoluci','subst') --> "revoluci".
+r('revu','subst') --> "revu".
+r('rezerv','tr') --> "rezerv".
+r('rezign','tr') --> "rezign".
+r('rezist','ntr') --> "rezist".
+r('rezon','ntr') --> "rezon".
+r('rezult','ntr') --> "rezult".
+r('rib','subst') --> "rib".
+r('ribel','ntr') --> "ribel".
+r('ricev','tr') --> "ricev".
+r('riĉ','adj') --> "riĉ".
+r('rid','ntr') --> "rid".
+r('rifuĝ','ntr') --> "rifuĝ".
+r('rifuz','tr') --> "rifuz".
+r('rigard','tr') --> "rigard".
+r('rigard','ntr') --> "rigard".
+r('rigid','adj') --> "rigid".
+r('rikolt','tr') --> "rikolt".
+r('rilat','ntr') --> "rilat".
+r('rim','subst') --> "rim".
+r('rimark','tr') --> "rimark".
+r('rimed','subst') --> "rimed".
+r('rimen','subst') --> "rimen".
+r('ring','subst') --> "ring".
+r('rip','subst') --> "rip".
+r('ripar','tr') --> "ripar".
+r('ripet','tr') --> "ripet".
+r('ripoz','ntr') --> "ripoz".
+r('riproĉ','tr') --> "riproĉ".
+r('risk','tr') --> "risk".
+r('ritm','subst') --> "ritm".
+r('rivel','tr') --> "rivel".
+r('river','subst') --> "river".
+r('riverenc','subst') --> "riverenc".
+r('rivolu','subst') --> "rivolu".
+r('riz','subst') --> "riz".
+r('rob','subst') --> "rob".
+r('rok','subst') --> "rok".
+r('rol','subst') --> "rol".
+r('roman','subst') --> "roman".
+r('romp','tr') --> "romp".
+r('rond','subst') --> "rond".
+r('ronk','ntr') --> "ronk".
+r('ros','subst') --> "ros".
+r('rost','tr') --> "rost".
+r('roz','subst') --> "roz".
+r('ruband','subst') --> "ruband".
+r('ruben','subst') --> "ruben".
+r('ruĝ','adj') --> "ruĝ".
+r('ruin','subst') --> "ruin".
+r('rul','tr') --> "rul".
+r('rust','subst') --> "rust".
+r('ruz','adj') --> "ruz".
+r('sabat','subst') --> "sabat".
+r('sabl','subst') --> "sabl".
+r('sag','subst') --> "sag".
+r('sagac','adj') --> "sagac".
+r('saĝ','adj') --> "saĝ".
+r('sak','subst') --> "sak".
+r('sal','subst') --> "sal".
+r('salajr','subst') --> "salajr".
+r('salat','subst') --> "salat".
+r('salik','subst') --> "salik".
+r('salon','subst') --> "salon".
+r('salt','ntr') --> "salt".
+r('salut','tr') --> "salut".
+r('sam','adj') --> "sam".
+r('san','adj') --> "san".
+r('sandviĉ','subst') --> "sandviĉ".
+r('sang','subst') --> "sang".
+r('sankt','adj') --> "sankt".
+r('sap','subst') --> "sap".
+r('sark','tr') --> "sark".
+r('sat','adj') --> "sat".
+r('satir','subst') --> "satir".
+r('sav','tr') --> "sav".
+r('saŭc','subst') --> "saŭc".
+r('scen','subst') --> "scen".
+r('sci','tr') --> "sci".
+r('scienc','subst') --> "scienc".
+r('sciur','best') --> "sciur".
+r('seg','tr') --> "seg".
+r('seĝ','subst') --> "seĝ".
+r('sek','adj') --> "sek".
+r('sekal','subst') --> "sekal".
+r('sekc','tr') --> "sekc".
+r('sekci','subst') --> "sekci".
+r('sekret','subst') --> "sekret".
+r('sekretari','best') --> "sekretari".
+r('seks','subst') --> "seks".
+r('sekund','subst') --> "sekund".
+r('sekur','adj') --> "sekur".
+r('sekv','tr') --> "sekv".
+r('sem','tr') --> "sem".
+r('semajn','subst') --> "semajn".
+r('senat','subst') --> "senat".
+r('senc','subst') --> "senc".
+r('send','tr') --> "send".
+r('sens','subst') --> "sens".
+r('sent','tr') --> "sent".
+r('septembr','subst') --> "septembr".
+r('serĉ','tr') --> "serĉ".
+r('seren','adj') --> "seren".
+r('seri','subst') --> "seri".
+r('serioz','adj') --> "serioz".
+r('serpent','best') --> "serpent".
+r('serur','subst') --> "serur".
+r('serv','tnr') --> "serv".
+r('sever','adj') --> "sever".
+r('sezon','subst') --> "sezon".
+r('sid','ntr') --> "sid".
+r('sign','subst') --> "sign".
+r('signal','subst') --> "signal".
+r('signif','tr') --> "signif".
+r('silent','ntr') --> "silent".
+r('silk','subst') --> "silk".
+r('simbol','subst') --> "simbol".
+r('simi','best') --> "simi".
+r('simil','adj') --> "simil".
+r('simpati','subst') --> "simpati".
+r('simpl','adj') --> "simpl".
+r('sin','subst') --> "sin".
+r('sincer','adj') --> "sincer".
+r('sindikat','subst') --> "sindikat".
+r('singular','subst') --> "singular".
+r('sinjor','best') --> "sinjor".
+r('sistem','subst') --> "sistem".
+r('sitel','subst') --> "sitel".
+r('situ','subst') --> "situ".
+r('situaci','subst') --> "situaci".
+r('skal','subst') --> "skal".
+r('skatol','subst') --> "skatol".
+r('ski','subst') --> "ski".
+r('sklav','best') --> "sklav".
+r('skorpi','best') --> "skorpi".
+r('skrap','tr') --> "skrap".
+r('skrib','tr') --> "skrib".
+r('sku','tr') --> "sku".
+r('skulpt','tr') --> "skulpt".
+r('sled','subst') --> "sled".
+r('sobr','adj') --> "sobr".
+r('soci','subst') --> "soci".
+r('social','adj') --> "social".
+r('societ','subst') --> "societ".
+r('sof','subst') --> "sof".
+r('soif','ntr') --> "soif".
+r('sojl','subst') --> "sojl".
+r('sol','adj') --> "sol".
+r('soldat','best') --> "soldat".
+r('solen','adj') --> "solen".
+r('solid','adj') --> "solid".
+r('solidar','adj') --> "solidar".
+r('solv','tr') --> "solv".
+r('somer','subst') --> "somer".
+r('son','ntr') --> "son".
+r('sonĝ','subst') --> "sonĝ".
+r('sonor','ntr') --> "sonor".
+r('sopir','ntr') --> "sopir".
+r('sorb','tr') --> "sorb".
+r('sorĉ','tr') --> "sorĉ".
+r('sorg','subst') --> "sorg".
+r('sort','subst') --> "sort".
+r('sovaĝ','adj') --> "sovaĝ".
+r('spac','subst') --> "spac".
+r('spec','subst') --> "spec".
+r('special','adj') --> "special".
+r('specimen','subst') --> "specimen".
+r('spegul','subst') --> "spegul".
+r('spektakl','subst') --> "spektakl".
+r('spert','adj') --> "spert".
+r('spez','subst') --> "spez".
+r('spic','subst') --> "spic".
+r('spik','subst') --> "spik".
+r('spinac','subst') --> "spinac".
+r('spir','ntr') --> "spir".
+r('spirit','subst') --> "spirit".
+r('spit','adv') --> "spit".
+r('split','subst') --> "split".
+r('spong','subst') --> "spong".
+r('sport','subst') --> "sport".
+r('sprit','adj') --> "sprit".
+r('spur','subst') --> "spur".
+r('staci','subst') --> "staci".
+r('stadi','subst') --> "stadi".
+r('stadion','subst') --> "stadion".
+r('stal','subst') --> "stal".
+r('stamen','subst') --> "stamen".
+r('stamp','tr') --> "stamp".
+r('stan','subst') --> "stan".
+r('standard','subst') --> "standard".
+r('stang','subst') --> "stang".
+r('star','ntr') --> "star".
+r('start','ntr') --> "start".
+r('stat','subst') --> "stat".
+r('statu','subst') --> "statu".
+r('statur','subst') --> "statur".
+r('stel','subst') --> "stel".
+r('sterk','subst') --> "sterk".
+r('stern','tr') --> "stern".
+r('stil','subst') --> "stil".
+r('stomak','subst') --> "stomak".
+r('strang','adj') --> "strang".
+r('strat','subst') --> "strat".
+r('streĉ','tr') --> "streĉ".
+r('strek','tr') --> "strek".
+r('stri','subst') --> "stri".
+r('strig','best') --> "strig".
+r('strik','subst') --> "strik".
+r('struktur','subst') --> "struktur".
+r('strut','best') --> "strut".
+r('stud','tr') --> "stud".
+r('student','best') --> "student".
+r('stult','adj') --> "stult".
+r('stump','subst') --> "stump".
+r('subit','adv') --> "subit".
+r('subjekt','subst') --> "subjekt".
+r('substanc','subst') --> "substanc".
+r('substantiv','subst') --> "substantiv".
+r('subtil','adj') --> "subtil".
+r('subtrah','tr') --> "subtrah".
+r('suĉ','tr') --> "suĉ".
+r('sud','subst') --> "sud".
+r('sufer','tr') --> "sufer".
+r('sufer','ntr') --> "sufer".
+r('sufiĉ','adj') --> "sufiĉ".
+r('sufok','tr') --> "sufok".
+r('suk','subst') --> "suk".
+r('sukces','ntr') --> "sukces".
+r('suker','subst') --> "suker".
+r('sulk','subst') --> "sulk".
+r('sultan','best') --> "sultan".
+r('sum','subst') --> "sum".
+r('sun','subst') --> "sun".
+r('sup','subst') --> "sup".
+r('suplement','subst') --> "suplement".
+r('supoz','tr') --> "supoz".
+r('supr','adv') --> "supr".
+r('surd','adj') --> "surd".
+r('surfac','subst') --> "surfac".
+r('surpriz','tr') --> "surpriz".
+r('surtut','subst') --> "surtut".
+r('suspekt','tr') --> "suspekt".
+r('susur','ntr') --> "susur".
+r('svat','tr') --> "svat".
+r('sven','ntr') --> "sven".
+r('sving','tr') --> "sving".
+r('ŝaf','best') --> "ŝaf".
+r('ŝajn','ntr') --> "ŝajn".
+r('ŝakal','best') --> "ŝakal".
+r('ŝanc','subst') --> "ŝanc".
+r('ŝancel','tr') --> "ŝancel".
+r('ŝanĝ','tr') --> "ŝanĝ".
+r('ŝarg','tr') --> "ŝarg".
+r('ŝarĝ','tr') --> "ŝarĝ".
+r('ŝat','tr') --> "ŝat".
+r('ŝaŭm','subst') --> "ŝaŭm".
+r('ŝel','subst') --> "ŝel".
+r('ŝerc','ntr') --> "ŝerc".
+r('ŝink','subst') --> "ŝink".
+r('ŝip','subst') --> "ŝip".
+r('ŝir','tr') --> "ŝir".
+r('ŝirm','tr') --> "ŝirm".
+r('ŝlos','tr') --> "ŝlos".
+r('ŝmir','tr') --> "ŝmir".
+r('ŝnur','subst') --> "ŝnur".
+r('ŝofor','best') --> "ŝofor".
+r('ŝov','tr') --> "ŝov".
+r('ŝovel','tr') --> "ŝovel".
+r('ŝpar','tr') --> "ŝpar".
+r('ŝpin','tr') --> "ŝpin".
+r('ŝpruc','ntr') --> "ŝpruc".
+r('ŝrank','subst') --> "ŝrank".
+r('ŝraŭb','subst') --> "ŝraŭb".
+r('ŝtal','subst') --> "ŝtal".
+r('ŝtat','subst') --> "ŝtat".
+r('ŝtel','tr') --> "ŝtel".
+r('ŝtip','subst') --> "ŝtip".
+r('ŝtof','subst') --> "ŝtof".
+r('ŝton','subst') --> "ŝton".
+r('ŝtop','tr') --> "ŝtop".
+r('ŝtrump','subst') --> "ŝtrump".
+r('ŝtup','subst') --> "ŝtup".
+r('ŝu','subst') --> "ŝu".
+r('ŝuld','tr') --> "ŝuld".
+r('ŝultr','subst') --> "ŝultr".
+r('ŝut','tr') --> "ŝut".
+r('ŝveb','ntr') --> "ŝveb".
+r('ŝvel','ntr') --> "ŝvel".
+r('ŝvit','ntr') --> "ŝvit".
+r('tabak','subst') --> "tabak".
+r('tabel','subst') --> "tabel".
+r('tabl','subst') --> "tabl".
+r('tabul','subst') --> "tabul".
+r('tag','subst') --> "tag".
+r('tajl','tr') --> "tajl".
+r('tajlor','best') --> "tajlor".
+r('tajp','tr') --> "tajp".
+r('taks','tr') --> "taks".
+r('takt','subst') --> "takt".
+r('tali','subst') --> "tali".
+r('tapet','subst') --> "tapet".
+r('tapiŝ','subst') --> "tapiŝ".
+r('tarif','subst') --> "tarif".
+r('tas','subst') --> "tas".
+r('task','subst') --> "task".
+r('taŭg','ntr') --> "taŭg".
+r('te','subst') --> "te".
+r('teatr','subst') --> "teatr".
+r('ted','tr') --> "ted".
+r('teg','tr') --> "teg".
+r('tegment','subst') --> "tegment".
+r('tegol','subst') --> "tegol".
+r('teknik','subst') --> "teknik".
+r('teks','tr') --> "teks".
+r('tekst','subst') --> "tekst".
+r('telefon','subst') --> "telefon".
+r('telegraf','subst') --> "telegraf".
+r('telegram','subst') --> "telegram".
+r('teler','subst') --> "teler".
+r('televid','subst') --> "televid".
+r('tem','subst') --> "tem".
+r('temp','subst') --> "temp".
+r('temperatur','subst') --> "temperatur".
+r('tempest','subst') --> "tempest".
+r('ten','tr') --> "ten".
+r('tend','subst') --> "tend".
+r('tendenc','subst') --> "tendenc".
+r('tener','adj') --> "tener".
+r('tent','tr') --> "tent".
+r('teori','subst') --> "teori".
+r('teqnik','subst') --> "teqnik".
+r('ter','subst') --> "ter".
+r('teras','subst') --> "teras".
+r('teren','subst') --> "teren".
+r('teritori','subst') --> "teritori".
+r('termometr','subst') --> "termometr".
+r('tern','ntr') --> "tern".
+r('terur','subst') --> "terur".
+r('testud','best') --> "testud".
+r('tig','subst') --> "tig".
+r('tigr','best') --> "tigr".
+r('tikl','tr') --> "tikl".
+r('tim','tr') --> "tim".
+r('tim','ntr') --> "tim".
+r('tinktur','subst') --> "tinktur".
+r('tint','ntr') --> "tint".
+r('tip','subst') --> "tip".
+r('tir','tr') --> "tir".
+r('titol','subst') --> "titol".
+r('tol','subst') --> "tol".
+r('toler','tr') --> "toler".
+r('tomat','subst') --> "tomat".
+r('tomb','subst') --> "tomb".
+r('ton','subst') --> "ton".
+r('tond','tr') --> "tond".
+r('tondr','ntr') --> "tondr".
+r('tord','tr') --> "tord".
+r('torent','subst') --> "torent".
+r('tort','subst') --> "tort".
+r('tradici','subst') --> "tradici".
+r('traduk','tr') --> "traduk".
+r('traf','tr') --> "traf".
+r('trafik','subst') --> "trafik".
+r('tragedi','subst') --> "tragedi".
+r('tragik','adj') --> "tragik".
+r('trajn','subst') --> "trajn".
+r('trajt','subst') --> "trajt".
+r('trakt','tr') --> "trakt".
+r('traktat','subst') --> "traktat".
+r('traktor','subst') --> "traktor".
+r('tram','subst') --> "tram".
+r('tranĉ','tr') --> "tranĉ".
+r('trankvil','adj') --> "trankvil".
+r('trejn','tr') --> "trejn".
+r('trem','ntr') --> "trem".
+r('tremp','tr') --> "tremp".
+r('tren','tr') --> "tren".
+r('trezor','subst') --> "trezor".
+r('tribunal','subst') --> "tribunal".
+r('trik','tr') --> "trik".
+r('trikot','subst') --> "trikot".
+r('trink','tr') --> "trink".
+r('tritik','subst') --> "tritik".
+r('tromp','tr') --> "tromp".
+r('trotuar','subst') --> "trotuar".
+r('trov','tr') --> "trov".
+r('tru','subst') --> "tru".
+r('trud','tr') --> "trud".
+r('trumpet','subst') --> "trumpet".
+r('trunk','subst') --> "trunk".
+r('trup','subst') --> "trup".
+r('tualet','subst') --> "tualet".
+r('tub','subst') --> "tub".
+r('tuber','subst') --> "tuber".
+r('tuf','subst') --> "tuf".
+r('tuk','subst') --> "tuk".
+r('tumult','subst') --> "tumult".
+r('tun','subst') --> "tun".
+r('tunel','subst') --> "tunel".
+r('tur','subst') --> "tur".
+r('turism','subst') --> "turism".
+r('turist','best') --> "turist".
+r('turment','tr') --> "turment".
+r('turn','tr') --> "turn".
+r('tus','ntr') --> "tus".
+r('tuŝ','tr') --> "tuŝ".
+r('tut','adj') --> "tut".
+r('ung','subst') --> "ung".
+r('uniform','subst') --> "uniform".
+r('unik','adj') --> "unik".
+r('universal','adj') --> "universal".
+r('universitat','subst') --> "universitat".
+r('urb','subst') --> "urb".
+r('urĝ','tr') --> "urĝ".
+r('urs','best') --> "urs".
+r('util','adj') --> "util".
+r('uz','tr') --> "uz".
+r('vad','ntr') --> "vad".
+r('vag','ntr') --> "vag".
+r('vagon','subst') --> "vagon".
+r('vakcin','subst') --> "vakcin".
+r('vaks','subst') --> "vaks".
+r('val','subst') --> "val".
+r('valid','adj') --> "valid".
+r('valiz','subst') --> "valiz".
+r('valor','subst') --> "valor".
+r('van','adj') --> "van".
+r('vang','subst') --> "vang".
+r('vant','adj') --> "vant".
+r('vapor','subst') --> "vapor".
+r('var','subst') --> "var".
+r('vari','ntr') --> "vari".
+r('varm','adj') --> "varm".
+r('vart','tr') --> "vart".
+r('vast','adj') --> "vast".
+r('vat','subst') --> "vat".
+r('vaz','subst') --> "vaz".
+r('vegetal','subst') --> "vegetal".
+r('vegetar','adj') --> "vegetar".
+r('vejn','subst') --> "vejn".
+r('vek','tr') --> "vek".
+r('vel','subst') --> "vel".
+r('velk','ntr') --> "velk".
+r('velur','subst') --> "velur".
+r('ven','ntr') --> "ven".
+r('vend','tr') --> "vend".
+r('vendred','subst') --> "vendred".
+r('venen','subst') --> "venen".
+r('venĝ','tr') --> "venĝ".
+r('venk','tr') --> "venk".
+r('vent','subst') --> "vent".
+r('ventr','subst') --> "ventr".
+r('ver','subst') --> "ver".
+r('verb','subst') --> "verb".
+r('verd','adj') --> "verd".
+r('verg','subst') --> "verg".
+r('verk','tr') --> "verk".
+r('verm','best') --> "verm".
+r('vers','subst') --> "vers".
+r('verŝ','tr') --> "verŝ".
+r('vert','subst') --> "vert".
+r('vertic','subst') --> "vertic".
+r('vertikal','adj') --> "vertikal".
+r('veruk','subst') --> "veruk".
+r('vesp','best') --> "vesp".
+r('vesper','subst') --> "vesper".
+r('vest','subst') --> "vest".
+r('veŝt','subst') --> "veŝt".
+r('vet','ntr') --> "vet".
+r('veter','subst') --> "veter".
+r('vetur','ntr') --> "vetur".
+r('vezik','subst') --> "vezik".
+r('viadukt','subst') --> "viadukt".
+r('viand','subst') --> "viand".
+r('vic','subst') --> "vic".
+r('vid','tr') --> "vid".
+r('vidv','best') --> "vidv".
+r('vigl','adj') --> "vigl".
+r('viktim','subst') --> "viktim".
+r('vilaĝ','subst') --> "vilaĝ".
+r('vin','subst') --> "vin".
+r('vind','tr') --> "vind".
+r('vintr','subst') --> "vintr".
+r('viol','subst') --> "viol".
+r('violon','subst') --> "violon".
+r('vip','subst') --> "vip".
+r('vir','best') --> "vir".
+r('virg','adj') --> "virg".
+r('virt','adj') --> "virt".
+r('viŝ','tr') --> "viŝ".
+r('vit','subst') --> "vit".
+r('vitr','subst') --> "vitr".
+r('viv','ntr') --> "viv".
+r('vizaĝ','subst') --> "vizaĝ".
+r('vizit','tr') --> "vizit".
+r('voĉ','subst') --> "voĉ".
+r('voj','subst') --> "voj".
+r('vojaĝ','ntr') --> "vojaĝ".
+r('vok','tr') --> "vok".
+r('vol','tr') --> "vol".
+r('volb','subst') --> "volb".
+r('volont','adv') --> "volont".
+r('volum','subst') --> "volum".
+r('volumen','subst') --> "volumen".
+r('volv','tr') --> "volv".
+r('vom','tr') --> "vom".
+r('vort','subst') --> "vort".
+r('vost','subst') --> "vost".
+r('vual','subst') --> "vual".
+r('vulkan','subst') --> "vulkan".
+r('vulp','best') --> "vulp".
+r('vultur','best') --> "vultur".
+r('vund','tr') --> "vund".
+r('zink','subst') --> "zink".
+r('zon','subst') --> "zon".
+r('zoologi','subst') --> "zoologi".
+r('zorg','ntr') --> "zorg".
+r('zum','ntr') --> "zum".
+
 
 /*****************
   personaj pronomoj kiel rad. 
 *****************/
 
-r('mi','adj').
-r('ci','adj').
-r('li','adj').
-r('sxi','adj').
-r('gxi','adj').
-r('oni','adj').
-r('ni','adj').
-r('vi','adj').
-r('ili','adj').
-r('si','adj').
+r('mi','adj') --> "mi".
+r('ci','adj') --> "ci".
+r('li','adj') --> "li".
+r('ŝi','adj') --> "ŝi".
+r('ĝi','adj') --> "ĝi".
+r('oni','adj') --> "oni".
+r('ni','adj') --> "ni".
+r('vi','adj') --> "vi".
+r('ili','adj') --> "ili".
+r('si','adj') --> "si".
 
 /**************
  * nombroj kiel radiko 
 **************/
-r('unu','nombr').
-r('du','nombr').
-r('tri','nombr').
-r('kvar','nombr').
-r('kvin','nombr').
-r('ses','nombr').
-r('sep','nombr').
-r('ok','nombr').
-r('naw','nombr').
-r('dek','nombr').
-r('cent','nombr').
-r('mil','nombr').
+r('unu','nombr') --> "unu".
+r('du','nombr') --> "du".
+r('tri','nombr') --> "tri".
+r('kvar','nombr') --> "kvar".
+r('kvin','nombr') --> "kvin".
+r('ses','nombr') --> "ses".
+r('sep','nombr') --> "sep".
+r('ok','nombr') --> "ok".
+r('naŭ','nombr') --> "naŭ".
+r('dek','nombr') --> "dek".
+r('cent','nombr') --> "cent".
+r('mil','nombr') --> "mil".
 
 /*****************
  * kelkaj prepozicioj kaj prim. adv, 
    kiuj estas uzeblaj radike 
 ******************/
 
-r('cxirkaw','adv').
-r('anstataw','adv').
-r('al','adv').
-r('antaw','adv').
-r('apud','adv').
-r('cxirkaw','adv').
-r('ekster','adv').
-r('el','adv').
-r('en','adv').
-r('gxis','adv').
-r('inter','adv').
-r('kontraw','adv').
-r('krom','adv').
-r('kun','adv').
-r('post','adv').
-r('preter','adv').
-r('pri','adv').
-r('sub','adv').
-r('super','adv').
-r('sur','adv').
-r('trans','adv').
-r('jxus','adj').
-r('for','adj').
-r('hodiaw','adj').
-r('hieraw','adj').
-r('morgaw','adj').
+r('ĉirkaŭ','adv') --> "ĉirkaŭ".
+r('anstataŭ','adv') --> "anstataŭ".
+r('al','adv') --> "al".
+r('antaŭ','adv') --> "antaŭ".
+r('apud','adv') --> "apud".
+r('ĉirkaŭ','adv') --> "ĉirkaŭ".
+r('ekster','adv') --> "ekster".
+r('el','adv') --> "el".
+r('en','adv') --> "en".
+r('ĝis','adv') --> "ĝis".
+r('inter','adv') --> "inter".
+r('kontraŭ','adv') --> "kontraŭ".
+r('krom','adv') --> "krom".
+r('kun','adv') --> "kun".
+r('post','adv') --> "post".
+r('preter','adv') --> "preter".
+r('pri','adv') --> "pri".
+r('sub','adv') --> "sub".
+r('super','adv') --> "super".
+r('sur','adv') --> "sur".
+r('trans','adv') --> "trans".
+r('ĵus','adj') --> "ĵus".
+r('for','adj') --> "for".
+r('hodiaŭ','adj') --> "hodiaŭ".
+r('hieraŭ','adj') --> "hieraŭ".
+r('morgaŭ','adj') --> "morgaŭ".
 
 /**********
  * afiksoj kiel radikoj
 **********/
 
-r('acx','adj').
-r('ajx','subst').
-r('an','best').
-r('ar','subst').
-r('dis','adv').
-r('ebl','adv').
-r('ec','subst').
-r('eg','adj').
-r('ej','subst').
-r('ek','intj').
-r('eks','adj').
-r('em','adj').
-r('er','subst').
-r('estr','best').
-r('et','adj').
-r('id','best').
-r('ig','tr').
-r('igx','ntr').
-r('il','subst').
-r('in','best').
-r('ing','subst').
-r('mal','subst').
-r('re','adv').
-r('uj','subst').
-r('ul','best').
-r('um','ntr').
+r('aĉ','adj') --> "aĉ".
+r('aĵ','subst') --> "aĵ".
+r('an','best') --> "an".
+r('ar','subst') --> "ar".
+r('dis','adv') --> "dis".
+r('ebl','adv') --> "ebl".
+r('ec','subst') --> "ec".
+r('eg','adj') --> "eg".
+r('ej','subst') --> "ej".
+r('ek','intj') --> "ek".
+r('eks','adj') --> "eks".
+r('em','adj') --> "em".
+r('er','subst') --> "er".
+r('estr','best') --> "estr".
+r('et','adj') --> "et".
+r('id','best') --> "id".
+r('ig','tr') --> "ig".
+r('iĝ','ntr') --> "iĝ".
+r('il','subst') --> "il".
+r('in','best') --> "in".
+r('ing','subst') --> "ing".
+r('mal','subst') --> "mal".
+r('re','adv') --> "re".
+r('uj','subst') --> "uj".
+r('ul','best') --> "ul".
+r('um','ntr') --> "um".
 
 
 

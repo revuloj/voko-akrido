@@ -3,7 +3,7 @@
 :-consult('v_radikoj.pl').
 
 
-/********************* sercxo en la vortaro ******************/
+/********************* sercxo en la vortaro ******************
 
 % sercxas radikon en la vortaro
 % ekz. arb -> [arb, subst]
@@ -60,4 +60,4 @@ int(Sercxajxo,Resto,[Litero,Speco]) :-
 	c(Litero,Speco),
 	atom_concat(Resto,Litero,Sercxajxo).
 
-
+************************************/
