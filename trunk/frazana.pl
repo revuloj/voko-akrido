@@ -182,7 +182,7 @@ infinitivo([V1|Vortoj]) :-
 /********************* frazo ****************/
 
 % frazo estas vico de iuj frazpartoj kiel subjekto, objekto, ktp.
-% do eblas ankaý nekompletaj frazoj. Oni poste povas kontroli, æu
+% do eblas ankaÃ½ nekompletaj frazoj. Oni poste povas kontroli, Ã¦u
 % la frazo estas kompleta. Skribitaj frazoj normale estu kompletaj
 % parolitaj ne nepre.
 
@@ -257,6 +257,8 @@ frazo(Vortoj,Rezulto) :-
 
 /********************* vortigo der litervico ***********************/
 
+% FARENDA: anstatauigu per nova "legilo.pl"
+/**
 litero(C,C1) :-
         C >= 97, C =< 122, C1=C.         % 'a'...'z'
 litero(C,C1) :-
@@ -287,6 +289,8 @@ legu_vortojn(_,[]).
 vortigu(Str,Vortoj) :-
 	name(Str,LStr),
 	legu_vortojn(LStr,Vortoj).
+**/
+
 
 /******************** elig-funkcioj ********************/
 
@@ -310,24 +314,5 @@ eligu_strukturon(Frazstrukt) :-
 	nl, write_ln('Solvo:'),
 	maplist(eligu_frazeron,Frazstrukt,_), !, nl.
 
-/********************* analizaj funkcioj ******************/
 
-povorta_analizo(Signoj,Vortoj) :-
-	vortigu(Signoj,Frazo),!,
-	maplist(vortanalizo,Frazo,Vortoj).
-
-frazanalizo(Signoj,Rezulto) :-
-	vortigu(Signoj,Frazo),!,
-	maplist(vortanalizo,Frazo,Vortoj),
-	frazo(Vortoj,Rezulto),
-	eligu_strukturon(Rezulto).
-
-% tio funkcias nur, æar "vortigu" permesas
-% æesi jam antaý la fino de la frazo
-% eble tio estas iom neeleganta maniero
-parta_frazanalizo(Signoj,Rezulto) :-
-	vortigu(Signoj,Frazo),
-	maplist(vortanalizo,Frazo,Vortoj),
-	frazo(Vortoj,Rezulto),!,
-	eligu_strukturon(Rezulto).
 

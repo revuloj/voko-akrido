@@ -1,129 +1,129 @@
 /************ literoj, kiuj povas 
  * esti ene de vorto 
 ************/
-c('o','subst').
-c('a','adj').
+c(o,subst) --> "o".
+c(a,adj) --> "a".
 
 /********** finajxoj de radikoj, prefere ordigu la
  * vortaron law la ofteco de la vortoj 
 ***********/
 
-f('ojn','subst').
-f('oj','subst').
-f('on','subst').
-f('o','subst').
-f('''','subst').
-f('ajn','adj').
-f('aj','adj').
-f('an','adj').
-f('a','adj').
-f('as','verb').
-f('is','verb').
-f('os','verb').
-f('us','verb').
-f('i','verb').
-f('u','verb').
-f('en','adv').
-f('e','adv').
+f(ojn,subst) --> "ojn".
+f(oj,subst) --> "oj".
+f(on,subst) --> "on".
+f(o,subst) --> "o".
+f('''',subst) --> "'".
+f(ajn,adj) --> "ajn".
+f(aj,adj) --> "aj".
+f(an,adj) --> "an".
+f(a,adj) --> "a".
+f(as,verb) --> "as".
+f(is,verb) --> "is".
+f(os,verb) --> "os".
+f(us,verb) --> "us".
+f(i,verb) --> "i".
+f(u,verb) --> "u".
+f(en,adv) --> "en".
+f(e,adv) --> "e".
 
 
 /************** sufiksoj
  * (2)=rezulto de derivado,
  * (3)=radikspeco, al kiu gxi estas aplikebla
 **************/
-s('ant','best','verb').
-s('int','best','verb').
-s('ont','best','verb').
-s('at','best','tr').
-s('it','best','tr').
-s('ot','best','tr').
-s('acx',_,_).
-s('ad','subst','verb').
-s('ajx','subst','adj').
-s('ajx','subst','verb').
-s('ajx','subst','subst').
-s('an','best','subst').
-s('ar','subst','subst').
-s('ebl','adj','tr').
-s('ec','subst','adj').
-s('eg',_,_).
-s('ej','subst','verb').
-s('ej','subst','subst').
-s('em','adj','verb').
-s('end','adj','tr').
-s('er','subst','subst').
-s('estr','best','subst').
-s('et',_,_).
-s('id','best','best').
-s('ig','tr','subst').
-s('ig','tr','ntr').
-s('ig','tr','adj').
-s('igx','ntr','subst').
-s('igx','ntr','tr').
-s('igx','ntr','adj').
-s('il','subst','verb').
-s('in',_,'best').
-s('ind','adj','tr').
-s('ing','subst','subst').
-s('ism','subst',_).
-s('ist','best',_).
-s('obl','subst','nombr').
-s('on','subst','nombr').
-s('op','subst','nombr').
-s('uj','subst','subst').
-s('ul','best','adj').
-s('um',_,_).
+s(ant,best,verb) --> "ant".
+s(int,best,verb) --> "int".
+s(ont,best,verb) --> "ont".
+s(at,best,tr) --> "at".
+s(it,best,tr) --> "it".
+s(ot,best,tr) --> "ot".
+s('aĉ',_,_) --> "aĉ".
+s(ad,subst,verb) --> "ad".
+s('aĵ',subst,adj) --> "aĵ".
+s('aĵ',subst,verb) --> "aĵ".
+s('aĵ',subst,subst) --> "aĵ".
+s(an,best,subst) --> "an".
+s(ar,subst,subst) --> "ar".
+s(ebl,adj,tr) --> "ebl".
+s(ec,subst,adj) --> "ec".
+s(eg,_,_) --> "eg".
+s(ej,subst,verb) --> "ej".
+s(ej,subst,subst) --> "ej".
+s(em,adj,verb) --> "em".
+s(end,adj,tr) --> "end".
+s(er,subst,subst) --> "er".
+s(estr,best,subst) --> "estr".
+s(et,_,_) --> "et".
+s(id,best,best) --> "id".
+s(ig,tr,subst) --> "ig".
+s(ig,tr,ntr) --> "ig".
+s(ig,tr,adj) --> "ig".
+s('iĝ',ntr,subst) --> "iĝ".
+s('iĝ',ntr,tr) --> "iĝ".
+s('iĝ',ntr,adj) --> "iĝ".
+s(il,subst,verb) --> "il".
+s(in,_,best) --> "in".
+s(ind,adj,tr) --> "ind".
+s(ing,subst,subst) --> "ing".
+s(ism,subst,_) --> "ism".
+s(ist,best,_) --> "ist".
+s(obl,subst,nombr) --> "obl".
+s(on,subst,nombr) --> "on".
+s(op,subst,nombr) --> "op".
+s(uj,subst,subst) --> "uj".
+s(ul,best,adj) --> "ul".
+s(um,_,_) --> "um".
 
 /************ prefiksoj 
  (2) vortspeco, al kiu ghi estas aplikebla,
      (prefiskoj ne shanghas la vortspecon)
 ************/
-p('bo','parc').
-p('dis','verb').
-p('ek','verb').
-p('eks','subst').
-p('ge','best').
-p('mal',_).
-p('mis','verb').
-p('pra','subst').
-p('psewdo',_).
-p('re','verb').
+p(bo,parc) --> "bo".
+p(dis,verb) --> "dis".
+p(ek,verb) --> "ek".
+p(eks,subst) --> "eks".
+p(ge,best) --> "ge".
+p(mal,_) --> "mal".
+p(mis,verb) --> "mis".
+p(pra,subst) --> "pra".
+p('pseŭdo',_) --> "pseŭdo".
+p(re,verb) --> "re".
 
 /*************** 
  * prepozicioj kiel prefiksoj
 ****************/
-p('al','verb').
-p('antaw','verb').
-p('apud','verb').
-p('cxe','verb').
-p('cxirkaw','verb').
-p('de','verb').
-p('ekster','verb').
-p('el','verb').
-p('en','verb').
-p('gxis','verb').
-p('inter','verb').
-p('kontraw','verb').
-p('krom','verb').
-p('kun','verb').
-p('law','verb').
-p('post','verb').
-p('preter','verb').
-% p('pri','verb').
-p('sub','verb').
-p('super','verb').
-p('sur','verb').
-p('tra','verb').
-p('trans','verb').
+p(al,verb) --> "al".
+p('antaŭ',verb) --> "antaŭ".
+p(apud,verb) --> "apud".
+p('ĉe',verb) --> "ĉe".
+p('ĉirkaŭ',verb) --> "ĉirkaŭ".
+p(de,verb) --> "de".
+p(ekster,verb) --> "ekster".
+p(el,verb) --> "el".
+p(en,verb) --> "en".
+p('ĝis',verb) --> "ĝis".
+p(inter,verb) --> "inter".
+p('kontraŭ',verb) --> "kontraŭ".
+p(krom,verb) --> "krom".
+p(kun,verb) --> "kun".
+p('laŭ',verb) --> "laŭ".
+p(post,verb) --> "post".
+p(preter,verb) --> "preter".
+% p(pri,verb) --> "".
+p(sub,verb) --> "sub".
+p(super,verb) --> "super".
+p(sur,verb) --> "sur".
+p(tra,verb) --> "tra".
+p(trans,verb) --> "trans".
 
 /*************
  * adverboj kiel prefiksoj
 **************/
-p('pli','adj').
-p('for','verb').
-p('ne','adj').
-p('ne','subst').
-p('tiel','adj'). %???
+p(pli,adj) --> "pli".
+p(for,verb) --> "for".
+p(ne,adj) --> "ne".
+p(ne,subst) --> "ne".
+p(tiel,adj) --> "tiel". %???
 
 /**************
  * la sekvaj fakte ne estas prefiksoj,
@@ -132,72 +132,72 @@ p('tiel','adj'). %???
  * ...)  
 **************/
 
-p('sen','adj',_).
-p('pri','adj','subst').
-p('law','adj','adv').
-p('sen','adj','subst').
-p('law','adj','adj').
-p('super','adj','adj').
-p('super','adj','adv').
-p('kontraw','adj','subst').
-p('en','adj','subst').
-p('ekster','adj','subst').
-p('inter','adj','subst').
-p('antaw','adj','subst').
-p('apud','adj','subst').
-p('cxe','adj','subst').
-p('cxirkaw','adj','subst').
+p(sen,adj,_) --> "sen".
+p(pri,adj,subst) --> "pri".
+p('laŭ',adj,adv) --> "laŭ".
+p(sen,adj,subst) --> "sen".
+p('laŭ',adj,adj) --> "laŭ".
+p(super,adj,adj) --> "super".
+p(super,adj,adv) --> "super".
+p('kontraŭ',adj,subst) --> "kontraŭ".
+p(en,adj,subst) --> "en".
+p(ekster,adj,subst) --> "ekster".
+p(inter,adj,subst) --> "inter".
+p('antaŭ',adj,subst) --> "antaŭ".
+p(apud,adj,subst) --> "apud".
+p('ĉe',adj,subst) --> "ĉe".
+p('ĉirkaŭ',adj,subst) --> "ĉirkaŭ".
 
-p('pri','tr','verb').
+p(pri,tr,verb) --> "pri".
 
 /**************
  *  j-pronomoj 
 ***************/
-u('kiu','pron').
-u('tiu','pron').
-u('iu','pron').
-u('neniu','pron').
-u('cxiu','pron').
-u('kia','adj').
-u('tia','adj').
-u('ia','adj').
-u('nenia','adj').
-u('cxia','adj').
+u(kiu,pron) --> "kiu".
+u(tiu,pron) --> "tiu".
+u(iu,pron) --> "iu".
+u(neniu,pron) --> "neniu".
+u('ĉiu',pron) --> "ĉiu".
+u(kia,adj) --> "kia".
+u(tia,adj) --> "tia".
+u(ia,adj) --> "ia".
+u(nenia,adj) --> "nenia".
+u('ĉia',adj) --> "ĉia".
 
 /**************
  *  finajxoj de j-pronomoj 
 **************/
-fu('jn',_).
-fu('j',_).
-fu('n',_).
+fu(jn,_) --> "jn".
+fu(j,_) --> "j".
+fu(n,_) --> "n".
 
 /**************
  *  n-pronomoj, la personaj pronomoj ekz. ankaux kiel adj. rad. 
 **************/
-i('mi','perspron').
-i('ci','perspron').
-i('li','perspron').
-i('sxi','perspron').
-i('gxi','perspron').
-i('oni','perspron').
-i('ni','perspron').
-i('vi','perspron').
-i('ili','perspron').
-i('si','perspron').
-i('cxio','pron').
-i('kio','pron').
-i('tio','pron').
-i('io','pron').
-i('nenio','pron').
-i('cxie','adv').
-i('kie','adv').
-i('nenie','adv').
-i('ie','adv').
-i('tie','adv').
+i(mi,perspron) --> "mi".
+i(ci,perspron) --> "ci".
+i(li,perspron) --> "li".
+i('ŝi',perspron) --> "ŝi".
+i('ĝi',perspron) --> "ĝi".
+i(oni,perspron) --> "oni".
+i(ni,perspron) --> "ni".
+i(vi,perspron) --> "vi".
+i(ili,perspron) --> "ili".
+i(si,perspron) --> "si".
+i('ĉio',pron) --> "ĉio".
+i(kio,pron) --> "kio".
+i(tio,pron) --> "tio".
+i(io,pron) --> "io".
+i(nenio,pron) --> "nenio".
+i('ĉie',adv) --> "ĉie".
+i(kie,adv) --> "kie".
+i(nenie,adv) --> "nenie".
+i(ie,adv) --> "ie".
+i(tie,adv) --> "tie".
 
 /****************
  *  finajxo de n-pronomoj 
 *****************/
-fi('n',_).
+fi(n,_) --> "n".
 
 
