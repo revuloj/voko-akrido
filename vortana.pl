@@ -139,17 +139,9 @@ radv_sen_suf(V,S) -->
     atomic_list_concat([Pref,Rvss],'/',V) }.
 
 
-
-% radika vorto sen finajxo (sed kun afiksoj)
-radv_sen_fin(V,S,N) --> { N>=0 }, radv_sen_suf(V,S).
-% KOREKTU: ne funkcias che pli ol unu sufikso, kial?
-radv_sen_fin(V,S,N) --> { N>0, N_1 is N-1 }, % evitu senfinan ciklon
-  radv_sen_fin(Rvsf,Spc,N_1),
-  [s(Suf,Al,De)],
-  { sub(Spc,De),!,
-    atomic_list_concat([Rvsf,Suf],'/',V),
-
-	% Se temas pri sufikso kun nedifinita DeSpeco, 
+drv_per_suf(Spc,Al,De,Speco) :- 
+  sub(Spc,De),!,
+  	% Se temas pri sufikso kun nedifinita DeSpeco, 
 	% ekz. s(acx,_,_) aw s(ist,best,_) la afero funkcias tiel:
 	% sub(X,X) identigas DeSpeco kun Speco
 	% Se AlSpeco ankau ne estas difinita ghi estu
@@ -163,9 +155,19 @@ radv_sen_fin(V,S,N) --> { N>0, N_1 is N-1 }, % evitu senfinan ciklon
 
 	(Spc=Al,!, % se temas pri sufiksoj kiel s(acx,_,_),
                    % fakte suficxus ekzameni, cxu AlSpeco = _
-          S=Spc;
-	  S=Al 
-        )
+          Speco=Spc;
+	  Speco=Al 
+        ).
+
+
+% radika vorto sen finajxo (sed kun afiksoj)
+radv_sen_fin(V,S,N) --> { N>=0 }, radv_sen_suf(V,S).
+% KOREKTU: ne funkcias che pli ol unu sufikso, tial: "!" 
+radv_sen_fin(V,S,N) --> { N>0, N_1 is N-1 }, % evitu senfinan ciklon
+  radv_sen_fin(Rvsf,Spc,N_1),
+  [s(Suf,Al,De)],
+  { drv_per_suf(Spc,Al,De,S),
+    atomic_list_concat([Rvsf,Suf],'/',V)
   }.
 
 kunderiv(V,Al) --> 
