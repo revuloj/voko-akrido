@@ -6,262 +6,236 @@
  * tie cxi al cxiaj vortspecoj.
 ****************************************************/
 
-% helpfunkcio por eviti senfinajn ciklojn
-divido([H1|T1],[H2|T2]) -->
-  [H1|T1], [H2|T2].
+radika_vorto_sen_fino(Partoj) --> prefiksoj(Prefiksoj), radiko(Radiko), sufiksoj(Sufiksoj),
+  { append([Prefiksoj,[Radiko],Sufiksoj],Partoj) }.
 
-% radiko
-vort_sen_fin_malstrikta(Radiko,Speco) -->
+radika_vorto(Partoj) -->
+  radika_vorto_sen_fino(RvsfPartoj),
+  finajxo(Fino),
+  { append(RvsfPartoj,Fino,Partoj) }.
+
+prefiksoj([]) --> [].
+prefiksoj([p(Prefikso,DeSpeco)|Prefiksoj]) -->
+  p(Prefikso,DeSpeco),
+  prefiksoj(Prefiksoj).
+prefiksoj([p(Prefikso,AlSpeco,DeSpeco)|Prefiksoj]) -->
+  p(Prefikso,AlSpeco,DeSpeco),
+  prefiksoj(Prefiksoj).
+
+radiko(r(Radiko,Speco)) -->
   r(Radiko,Speco).  
 
-% prefikso
-vort_sen_fin_malstrikta(Vorto,Speco) -->
-  p(Prefikso,_),
-  vort_sen_fin_malstrikta(Vsf,Speco),
-  { kunigi(Prefikso,Vsf,Vorto) }.
-
-
-/****
-% sufikso
-vort_sen_fin_malstrikta(Vorto,SufSpeco) -->
-% KOREKTU: se iu ne estas analizebla, tio kondukas al senfina ciklo... 
-  vort_sen_fin_malstrikta(Vsf,_),          
-  s(Sufikso,SufSpeco,_),
-  kunigi(Vsf,Sufikso,Vorto).
-****/
-
-% sufikso
-vort_sen_fin_malstrikta(Vorto,SufSpeco) -->
-  % evitu senfinan ciklon...
-  divido(Vrt,Suf),
-  { 
-    phrase(vort_sen_fin_malstrikta(Vsf,_),Vrt), 
-    phrase(s(Sufikso,SufSpeco,_),Suf),
-    kunigi(Vsf,Sufikso,Vorto) 
-  }.
-
-% kunderivajho
-vort_sen_fin_malstrikta(Vorto,PreSpeco) -->
-  p(Prefikso,PreSpeco,_),  
-  vort_sen_fin_malstrikta(Vsf,_),
-  { kunigi(Prefikso,Vsf,Vorto) }.          
-
-% vorteto
-vorto_malstrikta(Vorto,Speco) -->             
-  v(Vorto,Speco).
-
-% j-pronomo, eble kun finajxo
-vorto_malstrikta(Pronomo,Speco) -->
-  u(Pronomo,Speco).        
-
-vorto_malstrikta(Vorto,Speco) -->
-  u(Pronomo,Speco),
-  fu(Fino,_),
-  { kunigi(Pronomo,Fino,Vorto) }.
-
-% n-pronomo
-vorto_malstrikta(Pronomo,Speco) --> 
-  i(Pronomo,Speco).
-  
-vorto_malstrikta(Pronomo/Fino,Speco) -->
-  i(Pronomo,Speco),
-  fi(Fino,_).
-  
-% iu vorto derivita el radiko kaj kun finajxo
-vorto_malstrikta(Vorto,Speco) -->               
-  vort_sen_fin_malstrikta(Vsf,VSpeco),
-  f(Fino,FSpeco),
-  { derivado_per_finajxo(Vsf,VSpeco,Fino,FSpeco,Vorto,Speco) }.
-
-/********* malstrikte kunmetitaj vortoj *****/
-
-% pronomoj
-unua_vortparto_malstrikta(Pronomo,Speco) -->
-  u(Pronomo,Speco).
-
-unua_vortparto_malstrikta(Pronomo,Speco) -->             
-  i(Pronomo,Speco).
-
-% iu vorto derivita el radiko
-unua_vortparto_malstrikta(Vorto,Speco) -->             
-  vort_sen_fin_malstrikta(Vorto,Speco).
-
-% iu vorto derivita el radiko kaj kun inter-litero (o,a)
-unua_vortparto_malstrikta(Vorto,Speco) -->  
-  vort_sen_fin_malstrikta(Vsf,VSpeco),    
-  c(Litero,LSpeco),
-  { derivado_per_finajxo(Vsf,VSpeco,Litero,LSpeco,Vorto,Speco) }.
-
-% pluraj kunmetitaj vortoj
-/**********
-unua_vortparto_malstrikta(Vort1/Vort2,Speco) --> 
-% KOREKTU: senfina ciklo...
-  unua_vortparto_malstrikta(Vort1,_),
-  unua_vortparto_malstrikta(Vort2,Speco).
-***/
-
-unua_vortparto_malstrikta(Vorto,Speco) --> 
-  % eviti ciklon...
-  divido(V1,V2),
-  {           
-    phrase(unua_vortparto_malstrikta(Vort1,_),V1),
-    phrase(unua_vortparto_malstrikta(Vort2,Speco),V2),
-    kunigi(Vort1,Vort2,Vorto) 
-  }.
-
-% analizi kunmetitan vorton	                   
-kunmetita_vorto_malstrikta(Vorto,Speco) -->
-  unua_vortparto_malstrikta(Vort1,_),
-  vorto_malstrikta(Vort2,Speco),
-  { kunigi(Vort1,Vort2,Vorto) }.
-
-
-/********************* strikta vortanalizo ****************
- * cxe tio la afiksoj aplikigxas nur al certaj vortspecoj
- * kiel difinita en la vortaro.
-*/
-
-
-% radiko
-vort_sen_fin(Vorto,Speco) --> 
-  r(Vorto,Speco).
-
-% prefikso
-vort_sen_fin(Vorto,Speco) -->
-  p(Prefikso,DeSpeco),
-  vort_sen_fin(Vsf,VSpeco),
-  { derivado_per_prefikso(Prefikso,DeSpeco,Vsf,VSpeco,Vorto,Speco) }.
-
-% sufikso
-/****
-vort_sen_fin(Vorto,Speco) -->
-% KOREKTU: tio kondukas al senfina ciklo...    
-  vort_sen_fin(Vsf,VSpeco),  
+sufiksoj([]) --> [].
+sufiksoj([s(Sufikso,AlSpeco,DeSpeco)|Sufiksoj]) -->
   s(Sufikso,AlSpeco,DeSpeco),
-  { derivado_per_sufikso(Vsf,VSpeco,Sufikso,AlSpeco,DeSpeco,Vorto,Speco) }.
-***/
+  sufiksoj(Sufiksoj).
 
-% sufikso
-vort_sen_fin(Vorto,Speco) -->
-  % evitu senfinan ciklon...
-  divido(Vrt,Suf),
-  { 
-    phrase(vort_sen_fin(Vsf,VSpeco),Vrt), 
-    phrase(s(Sufikso,AlSpeco,DeSpeco),Suf),
-    derivado_per_sufikso(Vsf,VSpeco,Sufikso,AlSpeco,DeSpeco,Vorto,Speco) 
-  }.
+finajxo([f(Fino,FSpeco)]) -->               
+  f(Fino,FSpeco).
 
-
-
-
-% kunderivajxo
-vort_sen_fin(Vorto,Speco) -->   
-  p(Prefikso,AlSpeco,DeSpeco),
-  vort_sen_fin(Vsf,VSpeco),         
-  { kunderivado([Prefikso,AlSpeco,DeSpeco],[Vsf,VSpeco],[Vorto,Speco]) }.
-
-% vorteto
-vorto(Vorto,Speco) -->              
-  v(Vorto,Speco).
-
-% j-pronomo
-
-vorto(Pronomo,Speco) -->      
+pronomo_sen_fino([u(Pronomo,Speco)]) -->
   u(Pronomo,Speco).
 
-vorto(Vorto,Speco) -->      
-  u(Pronomo,Speco),
-  fu(Fino,_),
-  { kunigi(Pronomo,Fino,Vorto) }.
-       
-% n-pronomo
-vorto(Pronomo,Speco) -->            
+pronomo_sen_fino([i(Pronomo,Speco)]) -->
   i(Pronomo,Speco).
 
-vorto(Vorto,Speco) -->              
+simpla_vorto([v(Vorto,Speco)]) -->
+  v(Vorto,Speco).
+
+simpla_vorto(Pronomo) --> 
+  pronomo_sen_fino(Pronomo).
+
+simpla_vorto([u(Pronomo,Speco),fu(Fino,FSpeco)]) -->
+  u(Pronomo,Speco),        
+  fu(Fino,FSpeco).
+
+simpla_vorto([i(Pronomo,Speco)]) -->
+  i(Pronomo,Speco).
+  
+simpla_vorto([i(Pronomo,Speco),fi(Fino,FSpeco)]) -->
   i(Pronomo,Speco),
-  fi(Fino,_),
-  { kunigi(Pronomo,Fino,Vorto) }.
+  fi(Fino,FSpeco).
 
 % mal+prep, mal+adv
-vorto(Vorto,Speco) -->
-  "mal", v(Vrt,VSpeco),
+simpla_vorto([p(mal,_),v(Vorto,VSpeco)]) -->
+  "mal", v(Vorto,VSpeco),
   {
-    (VSpeco='adv'; VSpeco='prep'),
-    derivado_per_prefikso('mal',_,Vrt,VSpeco,Vorto,Speco) 
+    (VSpeco='adv'; VSpeco='prep')
   }.
 
-% vorto derivita el radiko kaj kun finajxo
-vorto(Vorto,Speco) -->
-  vort_sen_fin(Vsf,VSpeco), 
-  f(Fino,FSpeco), 
-  { derivado_per_finajxo(Vsf,VSpeco,Fino,FSpeco,Vorto,Speco) }.
+kunmetita_vorto(Partoj) -->
+  antau_partoj(APartoj),
+  post_parto(PParto),
+  { APartoj \= [], append(APartoj,[PParto],Partoj) }.
 
-%test: phrase(vorto(V,S),"abelujo").
+antau_partoj([]) --> [].
+antau_partoj([P1|P2]) -->
+  antau_parto(P1),
+  antau_partoj(P2).
+
+antau_parto(Partoj) -->
+  pronomo_sen_fino(Partoj).
+
+antau_parto(Partoj) -->
+  radika_vorto_sen_fino(Partoj).
+
+% kun interfino (a,o)
+antau_parto(Partoj) -->
+  radika_vorto_sen_fino(P),
+  c(InterFino,Speco),
+  { append(P,[c(InterFino,Speco)],Partoj) }.
+
+post_parto(Partoj) --> radika_vorto(Partoj).
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+% aplikado der derivadreguloj...
+
+/*******  hierarkieto  de vortspecoj ****************/
+
+sub(X,X).
+% sub(X,Z) :- sub(X,Y), sub(Y,Z).
+sub(best,subst).
+sub(parc,best).
+sub(parc,subst).
+sub(ntr,verb).
+sub(tr,verb).
+sub(perspron,pron).
+
+/********
+drv_per_prefikso(p(Pre,Spc),X), p/2+v, p/2+rvsf
+drv_per_finajxo(X,f(Fin,Spc), rvsf+f, rvsf+c
+drv_per_sufikso(X,s()), rvsf+s
+kunigi: i+fi, u+fu
+kunderivado: p/3+rvsf
+kunmetado "-"
+
+kunmeto() --> antauvortoj, postvorto.
+antauvortoj --> [].
+antauvortoj --> antauvorto, antauvortoj.
+antauvorto --> rvsf; rvc; psf.
+postvorto --> vorto.
+
+rvsf --> ...?
+rvc --> rvsf + c.
+
+vorto --> kunigo(i,fi); kunigo(u,fu).
+vorto -> kunderivajxo(p/3+rvsf)+f
+***********/
+
+kunigo(V,Ps) -->
+  [i(P,Ps)], [fi(F,_)],
+  { atomic_list_concat([P,F],'/',V) }.
+
+kunigo(V,Ps) -->
+  [u(P,Ps)], [fu(F,_)],
+  { atomic_list_concat([P,F],'/',V) }.
+
+% radika vorto sen finajxo kaj sufiksoj (sed kun prefiksoj)
+radv_sen_suf(V,S) --> [r(V,S)].
+radv_sen_suf(V,S) --> 
+  [p(Pref,De)], radv_sen_suf(Rvss,S),
+  { sub(S,De), !, 
+    atomic_list_concat([Pref,Rvss],'/',V) }.
 
 
-/************ kunmetitaj vortoj **********/
 
-% pronomoj
-unua_vortparto(Pronomo,Speco) -->            
-  u(Pronomo,Speco).
+% radika vorto sen finajxo (sed kun afiksoj)
+radv_sen_fin(V,S,N) --> { N>=0 }, radv_sen_suf(V,S).
+% KOREKTU: ne funkcias che pli ol unu sufikso, kial?
+radv_sen_fin(V,S,N) --> { N>0, N_1 is N-1 }, % evitu senfinan ciklon
+  radv_sen_fin(Rvsf,Spc,N_1),
+  [s(Suf,Al,De)],
+  { sub(Spc,De),!,
+    atomic_list_concat([Rvsf,Suf],'/',V),
 
-unua_vortparto(Pronomo,Speco) -->
-  i(Pronomo,Speco).
+	% Se temas pri sufikso kun nedifinita DeSpeco, 
+	% ekz. s(acx,_,_) aw s(ist,best,_) la afero funkcias tiel:
+	% sub(X,X) identigas DeSpeco kun Speco
+	% Se AlSpeco ankau ne estas difinita ghi estu
+	% la sama kiel Speco, tion certigas la sekva
+	% identigo, se AlSpeco estas difinita kaj alia
+	% ol Speco la rezulta vorto estu de AlSpeco
 
-% vorto derivita el radiko sen finajxo
-unua_vortparto(Vorto,Speco) -->
-  vort_sen_fin(Vorto,Speco).
+	% Se nur AlSpeco ne estas difinita, ekz s(in,_,best)
+	% la sekva identigo donas la rezultan Specon, tiel
+	% frat'in estas "parc" kaj ne nur "best".
 
-% vorto derivita el radiko kaj inter-litero (o,a)
-unua_vortparto(Vorto,Speco) -->
-  c(Litero,LSpeco),     
-  vort_sen_fin(Vsf,VSpeco),
-  { derivado_per_finajxo(Vsf,VSpeco,Litero,LSpeco,Vorto,Speco) }.
-
-% pluraj vortoj
-unua_vortparto(Vorto,Speco) --> 
-  % eviti ciklon...
-  divido(V1,V2),
-  {           
-    phrase(unua_vortparto(Vorto1,_),V1),
-    phrase(unua_vortparto(Vorto2,Speco),V2),
-    kunigi_(Vorto1,Vorto2,Vorto) 
+	(Spc=Al,!, % se temas pri sufiksoj kiel s(acx,_,_),
+                   % fakte suficxus ekzameni, cxu AlSpeco = _
+          S=Spc;
+	  S=Al 
+        )
   }.
 
-% analizi kunmetitan vorton                        
-kunmetita_vorto(Vorto,Speco) -->
-  unua_vortparto(V1,_),
-  vorto(V2,Speco),
-  { kunigi_(V1,V2,Vorto) }.
+kunderiv(V,Al) --> 
+  [p(Pre,Al,De)], radv_sen_fin(Vsf,VSpc,3), % apliku maks. 3 sufiksojn, ĉu sufiĉas?
+  { sub(VSpc,De), !, 
+    atomic_list_concat([Pre,Vsf],'+',V) }.
 
+vrt_sen_fin(V,S) --> kunderiv(V,S).
+vrt_sen_fin(V,S) --> radv_sen_fin(V,S,3). % apliku maks. 3 sufiksojn, ĉu sufiĉas?
 
-/*********** analizfunkcioj ******/
+vorto(V,S) --> [v(V,S)]; [u(V,S)]; [i(V,S)].
+vorto(V,S) --> kunigo(V,S).
+vorto(V,S) --> 
+  vrt_sen_fin(Vsf,Vs), [f(F,Fs)], 
+  { (sub(Vs,Fs), S=Vs, !; S=Fs), 
+    atomic_list_concat([Vsf,F],'/',V) }.
 
-vortanalizo_strikta(Vorto,Analizita,Speco) :-
-  call_with_depth_limit(phrase(vorto(Analizita,Speco),Vorto),100,_).
+vorto(V,S) --> 
+  [p(mal,_)], [v(Vrt,S)],
+  {
+    (S='adv'; S='prep'),
+    atomic_list_concat([mal,Vrt],'/',V) 
+  }.
 
-vortanalizo_strikta(Vorto,Analizita,Speco) :-
-  call_with_depth_limit(phrase(kunmetita_vorto(Analizita,Speco),Vorto),100,_).
+% kunmetita vorto...
 
-vortanalizo_malstrikta(Vorto,Analizita,Speco) :-
-  call_with_depth_limit(phrase(vorto_malstrikta(Analizita,Speco),Vorto),100,_).
+vorto(V,S) --> antauvortoj(A), postvorto(P,S),
+ { atomic_list_concat([A,P],'-',V) }.
 
-vortanalizo_malstrikta(Vorto,Analizita,Speco) :-
-  call_with_depth_limit(phrase(kunmetita_vorto_malstrikta(Analizita,Speco),Vorto),100,_).
+antauvortoj('') --> [].
+antauvortoj(A) --> antauvorto(Av), antauvortoj(Avj),
+  { Avj \= '' -> atomic_list_concat([Av,Avj],'-',A); A= Av }.
+
+antauvorto(A) --> [Rsf],
+  { phrase(radv_sen_fin(A,_,3),Rsf) }.  % apliku maks. 3 sufiksojn, ĉu sufiĉas?
+antauvorto(A) --> [Rsf],
+  { phrase((radv_sen_fin(Vsf,_,3),  % apliku maks. 3 sufiksojn, ĉu sufiĉas?
+           [c(F,_)]),Rsf),
+    atomic_list_concat([Vsf,F],'/',A) }.
+antauvorto(A) --> [[v(A,_)]]; [[u(A,_)]]; [[i(A,_)]].
+
+postvorto(P,S) --> [V],
+  { phrase(vorto(P,S),V) }.
+
+%%%%%%%%%%%%%%%%%%%%%%
+  
+vortpartoj(Vorto,Partoj) :-
+  phrase(simpla_vorto(Partoj),Vorto).
+
+vortpartoj(Vorto,Partoj) :-
+  phrase(radika_vorto(Partoj),Vorto).
+
+vortpartoj(Vorto,Partoj) :-
+  phrase(kunmetita_vorto(Partoj),Vorto).
 
 vortanalizo(Vorto,Analizita,Speco) :-
-	% trovu cxiujn strikte analizeblajn eblecojn
-	vortanalizo_strikta(Vorto,Analizita,Speco),!.
-vortanalizo(Vorto,Analizita,Speco) :-
-	% se ne ekzistas strikta ebleco, trovu malstriktajn
-	vortanalizo_malstrikta(Vorto,Ana,Speco),
-	atom_concat('!',Ana,Analizita).
-
-% por neinteraga regximo kun fina marko (???)
-vortanalizo_markita(Vorto,Rezulto) :-
-	vortanalizo(Vorto,Ana,Spec),
-	term_to_atom([Ana,Spec],Str),
-	atom_concat(Str,'###',Rezulto).
+  vortpartoj(Vorto,Partoj),
+  (
+    phrase(vorto(Analizita,Speco),Partoj)%;
+    %phrase(kunmetita_vorto(Analizita,Speco),Partoj)
+  ).
 
 
+
+testo(Vorto) :-
+  vortpartoj(Vorto,Partoj),
+  maplist(writeln,Partoj).
+
+% ekz. grandegul
+testo_suf(Vorto,N) :-
+  phrase(radika_vorto_sen_fino(Partoj),Vorto),
+  phrase(radv_sen_fin(V,S,N),Partoj),
+  format('~w ~w~n',[V,S]).
