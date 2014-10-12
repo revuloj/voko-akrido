@@ -1,17 +1,17 @@
 :-consult('vortaro.pl').
-:-consult('derivado.pl').
+%%:-consult('derivado.pl').
 :-consult('vortana.pl').
-:-consult('frazana.pl').
+%:-consult('frazana.pl').
 :-consult('legilo.pl').
 
 /********** analizi unuopajn vortoj aw tutajn tekstojn ***************/
 
 % analizas unuopan vorton
 analizu_vorton(N) :-
-	not(N = ''),
+	not(N = ''), atom_codes(N,C),
 	(
-	    vortanalizo_strikta(N,[V,S]), format('~w (~w)~n',[V,S]);
-	    vortanalizo_malstrikta(N,[V,S]), format('~w (~w) - malstrikte!~n',[V,S]);
+	    vortanalizo(C,V,S), format('~w (~w)~n',[V,S]);
+	    vortpartoj(C,P), format('~w - malstrikte!~n',[P]);
 	    format('~w - NE analizebla!~n',[N])
 	),!.
 
@@ -29,8 +29,8 @@ analizu_tekston(Txt) :-
 
 /********************* analizaj funkcioj por frazoj ******************/
 
-analizu_elementon(v(Vorto),Rezulto) :-
-  vortanalizo(Vorto,Rezulto).
+analizu_elementon(v(Vorto),Analizita,Speco) :-
+  vortanalizo(Vorto,Analizita,Speco).
 
 analizu_elementon(s(Signoj),[]) :-
   Rezulto=Signoj.
@@ -61,3 +61,4 @@ parta_frazanalizo(Signoj,Rezulto) :-
         %%% KOREKTU: necesas adapti "frazo" tiel, ke ĝi akzeptas la alternadon de analizita vorto kaj signoj en la listo...
 	frazo(Vortoj,Rezulto),!,
 	eligu_strukturon(Rezulto).
+
