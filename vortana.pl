@@ -102,6 +102,9 @@ sub(ntr,verb).
 sub(tr,verb).
 sub(perspron,pron).
 
+subspc(S1,S2) :-
+  sub(S1,S2),!.
+
 /********
 drv_per_prefikso(p(Pre,Spc),X), p/2+v, p/2+rvsf
 drv_per_finajxo(X,f(Fin,Spc), rvsf+f, rvsf+c
@@ -135,12 +138,12 @@ kunigo(V,Ps) -->
 radv_sen_suf(V,S) --> [r(V,S)].
 radv_sen_suf(V,S) --> 
   [p(Pref,De)], radv_sen_suf(Rvss,S),
-  { sub(S,De), !, 
+  { subspc(S,De), % !, 
     atomic_list_concat([Pref,Rvss],'/',V) }.
 
 
 drv_per_suf(Spc,Al,De,Speco) :- 
-  sub(Spc,De),!,
+  subspc(Spc,De), %!,
   	% Se temas pri sufikso kun nedifinita DeSpeco, 
 	% ekz. s(acx,_,_) aw s(ist,best,_) la afero funkcias tiel:
 	% sub(X,X) identigas DeSpeco kun Speco
@@ -167,12 +170,13 @@ radv_sen_fin(V,S,N) --> { N>0, N_1 is N-1 }, % evitu senfinan ciklon
   radv_sen_fin(Rvsf,Spc,N_1),
   [s(Suf,Al,De)],
   { drv_per_suf(Spc,Al,De,S),
+%format('spc ~w~n',S),
     atomic_list_concat([Rvsf,Suf],'/',V)
   }.
 
 kunderiv(V,Al) --> 
   [p(Pre,Al,De)], radv_sen_fin(Vsf,VSpc,3), % apliku maks. 3 sufiksojn, ĉu sufiĉas?
-  { sub(VSpc,De), !, 
+  { subspc(VSpc,De), %!, 
     atomic_list_concat([Pre,Vsf],'+',V) }.
 
 vrt_sen_fin(V,S) --> kunderiv(V,S).
@@ -182,7 +186,9 @@ vorto(V,S) --> [v(V,S)]; [u(V,S)]; [i(V,S)].
 vorto(V,S) --> kunigo(V,S).
 vorto(V,S) --> 
   vrt_sen_fin(Vsf,Vs), [f(F,Fs)], 
-  { (sub(Vs,Fs), S=Vs, !; S=Fs), 
+  { (subspc(Vs,Fs), 
+       S=Vs %,!
+     ; S=Fs), 
     atomic_list_concat([Vsf,F],'/',V) }.
 
 vorto(V,S) --> 

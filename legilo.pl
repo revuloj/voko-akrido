@@ -34,17 +34,30 @@ neliteroj([N]) --> nelitero(N).
 vorto(V) --> minuskloj(V).
 vorto([M|V]) --> majusklo(M), minuskloj(V).
 
+
 vortoj([V]) --> vorto(C), { atom_codes(V,C) }.
 vortoj([V|Vj]) --> vorto(C), { atom_codes(V,C) }, spaco, vortoj(Vj).
 
+/**
+vortoj([V]) --> vorto(V).
+vortoj([V|Vj]) --> vorto(V), spaco, vortoj(Vj).
+**/
+
 % teksto kiel alternado de vortoj kaj intersignoj
+/**
 vteksto([v(V),s(N)|T]) --> vorto(C), { atom_codes(V,C) }, 
                      neliteroj(C1), { atom_codes(N,C1) }, vteksto(T).
 vteksto([v(V)]) --> vorto(C), { atom_codes(V,C) }.
 vteksto([]) --> [].
+**/
+vteksto([v(V),s(N)|T]) --> vorto(V),
+                     neliteroj(N), vteksto(T).
+vteksto([v(V)]) --> vorto(V).
+vteksto([]) --> [].
 
 teksto(T) --> vteksto(T).
-teksto([s(N)|T]) --> neliteroj(C), { atom_codes(N,C) }, vteksto(T).
+%%teksto([s(N)|T]) --> neliteroj(C), { atom_codes(N,C) }, vteksto(T).
+teksto([s(N)|T]) --> neliteroj(N), vteksto(T).
 
 % frazoj ...
 frazeto([Vj,I]) --> vortoj(Vj), intersigno(I).
