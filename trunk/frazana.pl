@@ -187,14 +187,42 @@ infprep([_,'infprep']).
 intj([_,'intj']).
 **/
 
-/******************* vortgrupo **********/
+/******************* vortgrupoj **********/
+
+%  senlime 
+g_adv([Adv]) --> v_adv(Adv).
+
+%  tute senlime 
+g_adv([Adv|Vortoj]) --> v_adv(Adv), g_adv(Vortoj).
+
+% tute kaj senlime 
+g_adv([Adv,Konj|Vortoj]) --> v_adv(Adv), v_konj(Konj), g_adv(Vortoj).
+
+
+
+% granda
+g_adj_([Adj],Kazo) --> v_adj(Adj,Kazo).
+
+% tute kaj senlime granda 
+g_adj_(Vortoj,Kazo) --> g_adv(Adv), g_adj_(Adj,Kazo),
+  { append(Adv,Adj,Vortoj) }.
+
+
+g_adj(Vortoj,Kazo) --> g_adj_(Vortoj, Kazo).
+
+% tute kaj senlime granda kaj ege stulta
+g_adj(Vortoj,Kazo) --> g_adj_(Adj1, Kazo), v_konj(Konj), g_adj_(Adj2,Kazo),
+  { append([Adj1,[Konj],Adj2],Vortoj) }.
+
+
 
 % oni kontrolu, chu ne nur kazo sed ankau nombro
 % kongruas inter atributoj kaj subst-oj
 
 g_subst_([Vorto],Kazo) --> v_subst(Vorto,Kazo).
 
-g_subst_([Vorto|Vortoj],Kazo) --> v_adj(Vorto,Kazo), g_subst_(Vortoj,Kazo).
+g_subst_(Vortoj,Kazo) --> g_adj(Adj,Kazo), g_subst_(Subst,Kazo),
+  { append(Adj,Subst,Vortoj) }.
 
 % KOREKTU: senfina ciklo...
 %%g_subst_(Vortoj,Kazo) --> g_subst_(Vj,Kazo), v_adj(V,Kazo),
@@ -203,33 +231,50 @@ g_subst_([Vorto|Vortoj],Kazo) --> v_adj(Vorto,Kazo), g_subst_(Vortoj,Kazo).
 g_subst_([Nombro|Vortoj],Kazo) --> v_nombr(Nombro), g_subst_(Vortoj,Kazo).
 
 
-% KOREKTU: permesu plurajn adjektivojn (g_adj...)
-g_subst(Vortoj,Kazo) --> g_subst_(Vj,Kazo), v_adj(V,Kazo),
-  { append(Vj,[V],Vortoj) }.
+g_subst__(Vortoj,Kazo) --> g_subst_(Vortoj,Kazo).
+
+% KOREKTU: la adverbo rilatas al la adjektivo, ekz. "tute alia parto",
+% do necesas difino de adjhektiva grupo g_adj...
+%g_subst__([Adv|Vortoj],Kazo) --> v_adv(Adv), g_subst_(Vortoj,Kazo).
 
 
-g_subst(Vortoj,Kazo) --> g_subst_(Vortoj,Kazo).
+% postpendigita adjektivogrupo
+g_subst(Vortoj,Kazo) --> g_subst_(Subst,Kazo), g_adj(Adj,Kazo),
+  { append(Subst,Adj,Vortoj) }.
 
-g_subst([Art|Vortoj],Kazo) --> v_art(Art), g_subst_(Vortoj,Kazo).
+g_subst(Vortoj,Kazo) --> g_subst__(Vortoj,Kazo).
+
+g_subst([Art|Vortoj],Kazo) --> v_art(Art), g_subst__(Vortoj,Kazo).
 
 
 
 /******************** subjekto *************/
 
+% la granda urso
 r_subjekto_(Vortoj) -->
   g_subst(Vortoj,'').
 
+% li
 r_subjekto_([Pron]) -->
   v_pron(Pron,'').
 
-r_subjekto_([Adv|Vortoj]) --> v_adv(Adv), g_subst(Vortoj,'').
+% tiuj uloj
+r_subjekto_([Pron|Vortoj]) -->
+  v_pron(Pron,''),
+  g_subst(Vortoj,'').
+
+
+r_subjekto__(Vortoj) --> r_subjekto_(Vortoj).
+
+% ankau li, ne la granda urso, ankau tiuj uloj
+r_subjekto__([Adv|Vortoj]) --> v_adv(Adv), r_subjekto_(Vortoj).
 
 
 r_subjekto(Vortoj) -->
-  r_subjekto_(Vortoj).
+  r_subjekto__(Vortoj).
 
 r_subjekto(Vortoj) -->
-  r_subjekto_(Vortoj1),
+  r_subjekto__(Vortoj1),
   v_konj(Konj),
   r_subjekto(Vortoj2),
   { append([Vortoj1,[Konj],Vortoj2],Vortoj) }.
@@ -248,7 +293,16 @@ r_objekto_([Pron]) --> v_pron(Pron,'n').
 
 r_objekto_(Vortoj) --> g_subst(Vortoj,'n').
 
-r_objekto_([Adv|Vortoj]) --> v_adv(Adv), g_subst(Vortoj,'n').
+% tiujn ulojn
+r_objekto_([Pron|Vortoj]) -->
+  v_pron(Pron,'n'),
+  g_subst(Vortoj,'n').
+
+
+r_objekto__(Vortoj) --> r_objekto_(Vortoj).
+
+% ankau lin, ne la grandan urson, ankau tiujn ulojn
+r_objekto__([Adv|Vortoj]) --> v_adv(Adv), r_objekto_(Vortoj).
 
 
 r_objekto(Vortoj) -->
@@ -293,12 +347,6 @@ adjektivo([Adv|Vortoj],Akuz) :-
 	adjektivo(Vortoj,Akuz).
 **/
 
-g_adj([Vorto],Kazo) -->
-  v_adj(Vorto,Kazo).
-
-g_adj([Adv|Vortoj],Kazo) --> 
-  v_adv(Adv),
-  g_adj(Vortoj,Kazo). 
 
 % li estas "granda"
 r_predikativo([Adj]) -->
@@ -370,7 +418,7 @@ f_frazeto([inf(Vortoj)|Resto]) --> r_infinitivo(Vortoj), f_frazeto(Resto).
 f_frazo(Vortoj) -->
   f_frazeto(Vortoj).
 
-f_frazo([Konj|Vortoj]) -->
+f_frazo([konj(Konj)|Vortoj]) -->
   v_konj(Konj),
   f_frazeto(Vortoj).
 
@@ -450,12 +498,17 @@ eligu_strukturon(Frazstrukt) :-
 test_subj(1,F) :-
   phrase(r_subjekto(F), [perspron(li),konj(kaj),art(la),adj('grand/a'),best('urs/o')]).
 
+test_subj(2,F) :-
+  phrase(r_subjekto(F), [pron('tiu/j'),best('ul/oj')]).
+
 test_obj(1,F) :-
   phrase(r_objekto(F),[pron('tiu/jn'),konj('aŭ'),art(la),subst('hund/on')]).
 
 test_obj(2,F) :-
   phrase(r_objekto(F),[pron('tiu/jn'),konj('sed'),adv(ne),art(la),subst('hund/on')]).
 
+test_prep(1,F) :-
+  phrase(r_prepozitivo(F), [prep(en), adv('tut/e'), adj('ali/a'), subst('part/o')]).
 
 test(1,F) :-
   phrase(f_frazo(F), [perspron(li), ntr('ir/is')]).
