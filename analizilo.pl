@@ -55,7 +55,7 @@ frazanalizo(Signoj,Rezulto) :-
         %%% KOREKTU: necesas adapti "frazo" tiel, ke ĝi akzeptas la alternadon de analizita vorto kaj signoj en la listo...
         %%% alternative eble uzu dcg "frazo", char ghi kunigas chion ghis signo (komo ktp.) en unu listo...
         exclude(s_filter,Vortoj,NurVortoj),!,
-        phrase(f_frazeto(Rezulto),NurVortoj). 
+        phrase(f_frazo(Rezulto),NurVortoj). 
 	%frazo(Vortoj,Rezulto),
 	%eligu_strukturon(Rezulto).
 
@@ -71,4 +71,29 @@ parta_frazanalizo(Signoj,Rezulto) :-
         %%% KOREKTU: necesas adapti "frazo" tiel, ke ĝi akzeptas la alternadon de analizita vorto kaj signoj en la listo...
 	frazo(Vortoj,Rezulto),!,
 	eligu_strukturon(Rezulto).
+
+fraz_test(1) :-
+  frazanalizo("Tamen li kaj la granda urso volis karesi tiujn sed ne la hundon.",R),
+  writeln(R).
+
+fraz_test(2) :-
+  frazanalizo("Sed loĝis tiuj uloj en tute alia parto de la senlima fantazia regno.",R),
+  writeln(R).
+
+fraz_test(3) :-
+  frazanalizo("Sed loĝis tiuj uloj en tute alia parto de la senlima fantazia regno, ankoraŭ pli pli malproksime de tie ĉi ol la rokmordantoj.",R),
+  writeln(R).
+
+fraz_test(4) :-
+  frazanalizo("Des pli mirinde estis, ke la rajdbesto, kiun la tie ĉi estanta malgrandegulo havis kun si, fakte estis heliko.",R), 
+  writeln(R).
+
+fraz_test(5) :-
+  frazanalizo("Ĝi sidis malantaŭ li.",R), 
+  writeln(R).
+
+fraz_test(6) :-
+  frazanalizo("Sur ĝia rozkolora konko glimis malgranda arĝenta selo, kaj same la rimenoj kaj la bridoj, kiuj estis fiksitaj ĉe ĝiaj tentakloj brilis kiel arĝentofadenoj.",R),
+  writeln(R).
+
 
