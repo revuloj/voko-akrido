@@ -1,5 +1,39 @@
+/***
+
+% una pasho: transformu liston da vortoj en analizitajn vortojn, ekz. tiel
+% vortanalizo("kiuj",V,S),functor(F,S,1), term_variables(F,[V]).
+% F = pron('kiu/j')
+% alternative al dunivela listo [['kiu/j',pron],['ir/is',verb]...]
+
+% dua pasho: frazanalizo sur la listo de analizitaj vortoj
+***/
+
 /******************* vortspecoj kaj kazoj *************/
 
+v_pron(Pron) --> [pron(Pron)].
+
+v_pron(Pron) --> [perspron(Pron)].
+
+v_subst(Vorto) --> [subst(Vorto)].
+
+v_subst(Vorto) --> [best(Vorto)].
+
+v_subst(Vorto) --> [parc(Vorto)].
+
+v_adj(Vorto) --> [adj(Vorto)].
+
+v_adv(Vorto) --> [adv(Vorto)].
+
+v_prep(Vorto) --> [prep(Vorto)].
+
+v_nombr(Vorto) --> [nombr(Vorto)].
+
+v_art(Vorto) --> [art(Vorto)].
+
+v_konj(Vorto) --> [konj(Vorto)].
+
+
+/**
 pron([_,Speco]) :-
 	sub(Speco,'pron').
 
@@ -13,12 +47,67 @@ art([_,'art']).
 prep([_,'prep']).
 
 nombr([_,'nombr']).
+**/
 
 % last ne funkcias kiel antau 30 jaroj, do mir redifinis
-lasta(Fin,V) :-
-  atomic_list_concat(L,',',V),
-  lists:last(L,Fin).
+%lasta(Fin,V) :-
+%  atomic_list_concat(L,',',V),
+%  lists:last(L,Fin).
 
+subst_kazo(Vorto,'n') :-
+  atomic_list_concat(Partoj,'/',Vorto),
+  last(Partoj,Fin),
+  memberchk(Fin,[on,ojn]).
+
+subst_kazo(Vorto,'') :-
+  atomic_list_concat(Partoj,'/',Vorto),
+  last(Partoj,Fin),
+  memberchk(Fin,[o,oj]).
+
+adj_kazo(Vorto,'n') :-
+  atomic_list_concat(Partoj,'/',Vorto),
+  last(Partoj,Fin),
+  memberchk(Fin,[an,ajn]).
+
+adj_kazo(Vorto,'') :-
+  atomic_list_concat(Partoj,'/',Vorto),
+  last(Partoj,Fin),
+  memberchk(Fin,[a,aj]).
+
+adv_kazo(Vorto,'n') :-
+  atomic_list_concat(Partoj,'/',Vorto),
+  last(Partoj,Fin),
+  Fin = en.
+
+adv_kazo(Vorto,'') :-
+  atomic_list_concat(Partoj,'/',Vorto),
+  last(Partoj,Fin),
+  Fin = e.
+
+pron_kazo(Pron,'n') :-
+  atomic_list_concat(Partoj,'/',Pron),
+  last(Partoj,Fin),
+  memberchk(Fin,[n,jn]).
+
+pron_kazo(Pron,'') :-
+  atomic_list_concat(Partoj,'/',Pron),
+  last(Partoj,Fin),
+  \+ memberchk(Fin,[n,jn]).
+
+v_subst(Vorto,Kazo) --> v_subst(Vorto),
+  { subst_kazo(Vorto,Kazo) }.
+
+v_pron(Vorto,Kazo) --> v_pron(Vorto),
+  { pron_kazo(Vorto,Kazo) }.
+
+v_adj(Vorto,Kazo) --> v_adj(Vorto),
+  { adj_kazo(Vorto,Kazo) }.
+
+v_adv(Vorto,Kazo) --> v_adv(Vorto),
+  { adv_kazo(Vorto,Kazo) }.
+
+
+/**
 subst_nomin([V,Speco]) :-
 	sub(Speco,'subst'),
 	lasta(Fin,V),
@@ -47,102 +136,154 @@ adj_nomin(Vorto) :-
 adj_akuz([V,'adj']) :-
 	lasta(Fin,V),
 	memberchk(Fin,['an','ajn']).
+**/
 
+konj_verb(Verbo) :-
+  atomic_list_concat(Partoj,'/',Verbo),
+  last(Partoj,Fin),
+  memberchk(Fin,[as,is,os,us,u]).
+
+inf_verb(Verbo) :-
+  atomic_list_concat(Partoj,'/',Verbo),
+  last(Partoj,Fin),
+  Fin = i.
+
+verbo(Vorto,tr) --> [tr(Vorto)].
+verbo(Vorto,ntr) --> [ntr(Vorto)].
+verbo(Vorto,verb) --> [verb(Vorto)].
+
+v_asisosusu(Vorto,Speco) -->
+  verbo(Vorto,Speco),
+  { konj_verb(Vorto) }.
+
+v_inf(Vorto,Speco) -->
+  verbo(Vorto,Speco),
+  { inf_verb(Vorto) }.
+
+
+/**
 verbo([_,Speco]) :-
 	sub(Speco,'verb').
 
 asisosusu([V,Speco]) :-
-	sub(Speco,'verb'),
+	21sub(Speco,'verb'),
 	lasta(Fin,V),
 	memberchk(Fin,['as','is','os','us','u']).
 
 inf([V,Speco]) :-
 	sub(Speco,'verb'),
 	lasta('i',V).
+**/
 
+
+v_infprep(Vorto) --> [infprep(Vorto)].
+
+v_intj(Vorto) --> [intj(Vorto)].
+
+
+/**
 infprep([_,'infprep']).
 
 intj([_,'intj']).
-
-/******************** subjekto *************/
-
-nominativo([Vorto]) :-
-	pron_nomin(Vorto).
-
-nominativo(Vortoj) :-
-	substgrupo(Vortoj,'').
-
-/********************* predikato ***********/
-
-predikato([Vorto]) :-
-	asisosusu(Vorto).
+**/
 
 /******************* vortgrupo **********/
 
 % oni kontrolu, chu ne nur kazo sed ankau nombro
 % kongruas inter atributoj kaj subst-oj
 
-substgrp([Vorto],Akuz) :-
-	subst_akuz(Vorto), Akuz='n';
-	subst_nomin(Vorto), Akuz=''.
+g_subst_([Vorto],Kazo) --> v_subst(Vorto,Kazo).
 
-substgrp(Vortoj,Akuz) :-
-	append(Adj,Resto,Vortoj),
-	adjektivo(Adj,Akuz),
-	substgrp(Resto,Akuz).
+g_subst_([Vorto|Vortoj],Kazo) --> v_adj(Vorto,Kazo), g_subst_(Vortoj,Kazo).
 
-substgrp(Vortoj,Akuz) :-
-	append(Resto,Adj,Vortoj),
-	adjektivo(Adj,Akuz),
-	substgrp(Resto,Akuz).
+% KOREKTU: senfina ciklo...
+%%g_subst_(Vortoj,Kazo) --> g_subst_(Vj,Kazo), v_adj(V,Kazo),
+%%  { append(Vj,[V],Vortoj) }.
+
+g_subst_([Nombro|Vortoj],Kazo) --> v_nombr(Nombro), g_subst_(Vortoj,Kazo).
 
 
-%substgrp([Pron|Vortoj],Akuz) :-
-%        (pron_nomin(Pron), Akuz='';
-%        pron_akuz(Pron), Akuz='n'),
-%        substgrp(Vortoj,Akuz).
+% KOREKTU: permesu plurajn adjektivojn (g_adj...)
+g_subst(Vortoj,Kazo) --> g_subst_(Vj,Kazo), v_adj(V,Kazo),
+  { append(Vj,[V],Vortoj) }.
 
 
-substgrp([Nombr|Vortoj],Akuz) :-
-	nombr(Nombr),
-	substgrp(Vortoj,Akuz).
+g_subst(Vortoj,Kazo) --> g_subst_(Vortoj,Kazo).
 
-% la artikolo povas esti
-% nur unue, ne ene de subst-grupo
+g_subst([Art|Vortoj],Kazo) --> v_art(Art), g_subst_(Vortoj,Kazo).
 
-substgrupo(Vortoj,Akuz) :-
-	substgrp(Vortoj,Akuz).
 
-substgrupo([Art|Vortoj],Akuz) :-
-	art(Art),
-	substgrp(Vortoj,Akuz).
+
+/******************** subjekto *************/
+
+r_subjekto_(Vortoj) -->
+  g_subst(Vortoj,'').
+
+r_subjekto_([Pron]) -->
+  v_pron(Pron,'').
+
+r_subjekto_([Adv|Vortoj]) --> v_adv(Adv), g_subst(Vortoj,'').
+
+
+r_subjekto(Vortoj) -->
+  r_subjekto_(Vortoj).
+
+r_subjekto(Vortoj) -->
+  r_subjekto_(Vortoj1),
+  v_konj(Konj),
+  r_subjekto(Vortoj2),
+  { append([Vortoj1,[Konj],Vortoj2],Vortoj) }.
+
+
+/********************* predikato ***********/
+
+r_predikato([Vorto]) -->
+	v_asisosusu(Vorto,_).
+
 
 /****************** objekto ****************/
 
 % fakte oni permesu ankau -ion/iun-pronomoj
-akuzativo([Vorto]) :-
-	pron_akuz(Vorto).
+r_objekto_([Pron]) --> v_pron(Pron,'n').
 
-akuzativo(Vortoj) :-
-	substgrupo(Vortoj,'n').
+r_objekto_(Vortoj) --> g_subst(Vortoj,'n').
+
+r_objekto_([Adv|Vortoj]) --> v_adv(Adv), g_subst(Vortoj,'n').
+
+
+r_objekto(Vortoj) -->
+  r_objekto_(Vortoj).
+
+r_objekto(Vortoj) -->
+  r_objekto_(Vortoj1),
+  v_konj(Konj),
+  r_objekto(Vortoj2),
+  { append([Vortoj1,[Konj],Vortoj2],Vortoj) }.
+
 
 /******************* nerekta objekto ********/
 
-prepozitivo([Prep|[Pron]]) :-
-	prep(Prep),
-	pron(Pron).
+% ekz. antaŭ li
+r_prepozitivo([Prep,Pron]) -->
+  v_prep(Prep),
+  v_pron(Pron).
 
-prepozitivo([Prep|Vortoj]) :-
-	prep(Prep),
-	substgrupo(Vortoj,_).
+% ekz. pri la granda urso; en la altan domon
+r_prepozitivo([Prep|Vortoj]) -->
+  v_prep(Prep),
+  g_subst(Vortoj,_).
 
 /******************* adverbo ****************/
 
-adverbo([Vorto]) :-
-	adv(Vorto).
+% ekz. ne; hodiaŭ; rapide...
+r_adverbo(Adv) -->
+  v_adv(Adv).
 
-/******************** adjektivo ***********/
 
+/****************** predikativo **************/
+
+
+/**
 adjektivo([Vorto],Akuz) :-
 	adj_akuz(Vorto), Akuz='n'; 
 	adj_nomin(Vorto), Akuz=''.
@@ -150,34 +291,49 @@ adjektivo([Vorto],Akuz) :-
 adjektivo([Adv|Vortoj],Akuz) :-
 	adv(Adv),
 	adjektivo(Vortoj,Akuz).
+**/
 
-/****************** predikativo **************/
+g_adj([Vorto],Kazo) -->
+  v_adj(Vorto,Kazo).
 
-predikativo(Vortoj) :-
-	adjektivo(Vortoj,'').
+g_adj([Adv|Vortoj],Kazo) --> 
+  v_adv(Adv),
+  g_adj(Vortoj,Kazo). 
+
+% li estas "granda"
+r_predikativo([Adj]) -->
+  v_adj(Adj,'').
+
+% li estas "aparte granda"
+% KOREKTU: g_adj anst. v_adj?
+r_predikativo([Adv,Adj]) -->
+  v_adv(Adv),
+  v_adj(Adj,'').
 
 /******************* nombro ******************/
 
-nombro([Vorto]) :-
-	nombr(Vorto).
+g_nombr([Nombro]) -->
+  v_nombr(Nombro).
 
-nombro([V1|Vortoj]) :-
-	nombr(V1),
-	nombro(Vortoj).
+g_nombr([N|Nj]) -->
+  v_nombr(N),
+  g_nombr(Nj).
 
 /******************** interjekcio *************/
 
-interjekcio([Vorto]) :-
-	intj(Vorto).
+r_interjekcio([Vorto]) -->
+	v_intj(Vorto).
 
 /********************* infinitivo *************/
 
-infinitivo([Vorto]) :-
-	inf(Vorto).
+% rajdi
+r_infinitivo([Vorto]) -->
+	v_inf(Vorto,_).
 
-infinitivo([V1|Vortoj]) :-
-	infprep(V1),
-	infinitivo(Vortoj).
+% for rajdi
+r_infinitivo([V1|Vortoj]) -->
+	v_infprep(V1),
+	r_infinitivo(Vortoj).
 
 /********************* frazo ****************/
 
@@ -190,60 +346,35 @@ infinitivo([V1|Vortoj]) :-
 % kio, kiu, kion faras, sed tiukaze necesas ankau
 % analizi iomete la sencon
 
-frazeto([],[]).
 
-frazeto(Vortoj,Rezulto) :-
-	append(F1,F2,Vortoj),
-	nominativo(F1),
-	write('nomi '), write_ln(F1),
-	frazeto(F2,Rez),
-	Rezulto = [[F1,'nomi']|Rez].
 
-frazeto(Vortoj,Rezulto) :-
-	append(F1,F2,Vortoj),
-	predikato(F1),
-	write('pred '), write_ln(F1),
-	frazeto(F2,Rez),
-	Rezulto = [[F1,'pred']|Rez].
 
-frazeto(Vortoj,Rezulto) :-
-	append(F1,F2,Vortoj),
-	akuzativo(F1),
-	write('akuz '), write_ln(F1),
-	frazeto(F2,Rez),
-	Rezulto = [[F1,'akuz']|Rez].
+f_frazeto([]) --> [].
 
-frazeto(Vortoj,Rezulto) :-
-	append(F1,F2,Vortoj),
-	prepozitivo(F1),
-	write('prep '), write_ln(F1),
-	frazeto(F2,Rez),
-	Rezulto = [[F1,'prep']|Rez].
+f_frazeto([subj(Vortoj)|Resto]) --> r_subjekto(Vortoj), f_frazeto(Resto).
 
-frazeto(Vortoj,Rezulto) :-
-	append(F1,F2,Vortoj),
-	adverbo(F1),
-	write('advb '), write_ln(F1),
-	frazeto(F2,Rez),
-	Rezulto = [[F1,'advb']|Rez].
+f_frazeto([obj(Vortoj)|Resto]) --> r_objekto(Vortoj), f_frazeto(Resto).
 
-frazeto(Vortoj,Rezulto) :-
-	append(F1,F2,Vortoj),
-	predikativo(F1),
-	write('prdk '), write_ln(F1),
-	frazeto(F2,Rez),
-	Rezulto = [[F1,'prdk']|Rez].
+f_frazeto([pred(Vortoj)|Resto]) --> r_predikato(Vortoj), f_frazeto(Resto).
 
-frazeto(Vortoj,Rezulto) :-
-	append(F1,F2,Vortoj),
-	infinitivo(F1),
-	write('infn '), write_ln(F1),
-	frazeto(F2,Rez),
-	Rezulto = [[F1,'infn']|Rez].
+f_frazeto([prep(Vortoj)|Resto]) --> r_prepozitivo(Vortoj), f_frazeto(Resto).
 
+f_frazeto([adv(Vortoj)|Resto]) --> r_adverbo(Vortoj), f_frazeto(Resto).
+
+f_frazeto([prdk(Vortoj)|Resto]) --> r_predikativo(Vortoj), f_frazeto(Resto).
+
+f_frazeto([inf(Vortoj)|Resto]) --> r_infinitivo(Vortoj), f_frazeto(Resto).
 
 %%%%%%%%%
 
+f_frazo(Vortoj) -->
+  f_frazeto(Vortoj).
+
+f_frazo([Konj|Vortoj]) -->
+  v_konj(Konj),
+  f_frazeto(Vortoj).
+
+/***
 frazo(Vortoj,Rezulto) :-
 	frazeto(Vortoj,Rezulto).
 
@@ -253,7 +384,7 @@ frazo(Vortoj,Rezulto) :-
 	write('intj '), write_ln(F1),
 	frazeto(F2,Rez),
 	Rezulto = [[F1,'intj']|Rez].
-
+***/
 
 /********************* vortigo der litervico ***********************/
 
@@ -313,6 +444,38 @@ eligu_frazeron([Frazero,Tipo],_) :-
 eligu_strukturon(Frazstrukt) :-
 	nl, write_ln('Solvo:'),
 	maplist(eligu_frazeron,Frazstrukt,_), !, nl.
+
+/********************** testoj ****************/
+
+test_subj(1,F) :-
+  phrase(r_subjekto(F), [perspron(li),konj(kaj),art(la),adj('grand/a'),best('urs/o')]).
+
+test_obj(1,F) :-
+  phrase(r_objekto(F),[pron('tiu/jn'),konj('aŭ'),art(la),subst('hund/on')]).
+
+test_obj(2,F) :-
+  phrase(r_objekto(F),[pron('tiu/jn'),konj('sed'),adv(ne),art(la),subst('hund/on')]).
+
+
+test(1,F) :-
+  phrase(f_frazo(F), [perspron(li), ntr('ir/is')]).
+
+test(2,F) :-
+  phrase(f_frazo(F), [art(la),adj('grand/a'),best('urs/o'),adv('long/e'),ntr('dorm/is')]).
+
+test(3,F) :-
+  phrase(f_frazo(F), [art(la),adj('grand/a'),best('urs/o'),ntr('dorm/is'),prep('ĝis'),art(la),subst('maten/o')]).
+
+test(4,F) :-
+  phrase(f_frazo(F), [perspron(li),ntr('vol/is'),tr('kares/i'),art(la),subst('hund/on')]).
+
+test(5,F) :-
+  phrase(f_frazo(F), [perspron(li),konj(kaj),art(la),adj('grand/a'),best('urs/o'),ntr('vol/is'),tr('kares/i'),
+    pron('tiu/jn'),konj('aŭ'),art(la),subst('hund/on')]).
+
+test(6,F) :-
+  phrase(f_frazo(F), [konj(tamen),perspron(li),konj(kaj),art(la),adj('grand/a'),best('urs/o'),ntr('vol/is'),tr('kares/i'),
+    pron('tiu/jn'),konj('sed'),adv(ne),art(la),subst('hund/on')]).
 
 
 
