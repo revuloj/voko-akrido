@@ -72,28 +72,18 @@ parta_frazanalizo(Signoj,Rezulto) :-
 	frazo(Vortoj,Rezulto),!,
 	eligu_strukturon(Rezulto).
 
-fraz_test(1) :-
-  frazanalizo("Tamen li kaj la granda urso volis karesi tiujn sed ne la hundon.",R),
-  writeln(R).
+fraz_test(No,Frazo) :-
+  atom_codes(A,Frazo),
+  format('~w: ~w~n',[No,A]),
+  frazanalizo(Frazo,R) *-> writeln(R); writeln('ANALIZO FIASKIS!').
 
-fraz_test(2) :-
-  frazanalizo("Sed loĝis tiuj uloj en tute alia parto de la senlima fantazia regno.",R),
-  writeln(R).
+fraz_test :-
+  fraz_test(1,"Tamen li kaj la granda urso volis karesi tiujn sed ne la hundon.");
+  fraz_test(2,"Sed loĝis tiuj uloj en tute alia parto de la senlima fantazia regno.");
+  fraz_test(3,"Sed loĝis tiuj uloj en tute alia parto de la senlima fantazia regno, ankoraŭ pli pli malproksime de tie ĉi ol la rokmordantoj.");
+  fraz_test(4,"Des pli mirinde estis, ke la rajdbesto, kiun la tie ĉi estanta malgrandegulo havis kun si, fakte estis heliko."); 
+  fraz_test(5,"Ĝi sidis malantaŭ li.");
+  fraz_test(6,"Sur ĝia rozkolora konko glimis malgranda arĝenta selo, kaj same la rimenoj kaj la bridoj, kiuj estis fiksitaj ĉe ĝiaj tentakloj brilis kiel arĝentofadenoj.").
 
-fraz_test(3) :-
-  frazanalizo("Sed loĝis tiuj uloj en tute alia parto de la senlima fantazia regno, ankoraŭ pli pli malproksime de tie ĉi ol la rokmordantoj.",R),
-  writeln(R).
-
-fraz_test(4) :-
-  frazanalizo("Des pli mirinde estis, ke la rajdbesto, kiun la tie ĉi estanta malgrandegulo havis kun si, fakte estis heliko.",R), 
-  writeln(R).
-
-fraz_test(5) :-
-  frazanalizo("Ĝi sidis malantaŭ li.",R), 
-  writeln(R).
-
-fraz_test(6) :-
-  frazanalizo("Sur ĝia rozkolora konko glimis malgranda arĝenta selo, kaj same la rimenoj kaj la bridoj, kiuj estis fiksitaj ĉe ĝiaj tentakloj brilis kiel arĝentofadenoj.",R),
-  writeln(R).
 
 

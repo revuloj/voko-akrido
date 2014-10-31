@@ -306,10 +306,10 @@ r_objekto__([Adv|Vortoj]) --> v_adv(Adv), r_objekto_(Vortoj).
 
 
 r_objekto(Vortoj) -->
-  r_objekto_(Vortoj).
+  r_objekto__(Vortoj).
 
 r_objekto(Vortoj) -->
-  r_objekto_(Vortoj1),
+  r_objekto__(Vortoj1),
   v_konj(Konj),
   r_objekto(Vortoj2),
   { append([Vortoj1,[Konj],Vortoj2],Vortoj) }.
@@ -506,6 +506,9 @@ test_obj(1,F) :-
 
 test_obj(2,F) :-
   phrase(r_objekto(F),[pron('tiu/jn'),konj('sed'),adv(ne),art(la),subst('hund/on')]).
+
+test_obj(3,F) :-
+  phrase(r_objekto(F),[adv(ne),art(la),subst('hund/on')]).
 
 test_prep(1,F) :-
   phrase(r_prepozitivo(F), [prep(en), adv('tut/e'), adj('ali/a'), subst('part/o')]).
