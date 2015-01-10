@@ -1,7 +1,7 @@
 :-consult('v_elementoj.pl').
 :-consult('v_vortoj.pl').
 :-consult('v_radikoj.pl').
-
+:-consult('v_revo_radikoj.pl').
 
 /********************* sercxo en la vortaro ******************
 

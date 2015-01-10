@@ -58,9 +58,11 @@ s(id,best,best) --> "id".
 s(ig,tr,subst) --> "ig".
 s(ig,tr,ntr) --> "ig".
 s(ig,tr,adj) --> "ig".
+s(ig,tr,nombr) --> "ig".
 s('iĝ',ntr,subst) --> "iĝ".
 s('iĝ',ntr,tr) --> "iĝ".
 s('iĝ',ntr,adj) --> "iĝ".
+s('iĝ',ntr,nombr) --> "iĝ".
 s(il,subst,verb) --> "il".
 s(in,_,best) --> "in".
 s(ind,adj,tr) --> "ind".
