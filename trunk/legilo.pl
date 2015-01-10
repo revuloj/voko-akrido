@@ -1,3 +1,4 @@
+:- ensure_loaded(library(http/dcg_basics)).
 
 minusklo(C) --> [C], { C>=97, C=<122 }. % 'a'...'z'
 minusklo(C) --> [C], { memberchk(C,[265,285,309,349,293,365]) }. % 'ĉ'...'ŭ'
@@ -55,7 +56,7 @@ vteksto([v(V),s(N)|T]) --> vorto(V),
 vteksto([v(V)]) --> vorto(V).
 vteksto([]) --> [].
 
-teksto(T) --> vteksto(T).
+teksto(T) --> blanks, vteksto(T).
 %%teksto([s(N)|T]) --> neliteroj(C), { atom_codes(N,C) }, vteksto(T).
 teksto([s(N)|T]) --> neliteroj(N), vteksto(T).
 
