@@ -1,3 +1,5 @@
+:- multifile r/4.
+
 :-consult('v_elementoj.pl').
 :-consult('v_vortoj.pl').
 :-consult('v_radikoj.pl').
