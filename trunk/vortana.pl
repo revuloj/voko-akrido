@@ -238,6 +238,36 @@ vortanalizo(Vorto,Analizita,Speco) :-
 
 
 
+spc_fin_(Spc,Fin) :-
+ (
+    sub(Spc,subst), Fin=f(o,subst);
+    sub(Spc,adj), Fin=f(a,adj),!;
+    sub(Spc,verb), Fin=f(i,vrb);
+    sub(Spc,adv), Fin=f(e,adv)
+  ).
+
+derivajho(Radiko,Derivajho,Speco) :-
+  atom_codes(Radiko,RadCodes),
+  phrase(r(Rad,Spc),RadCodes),
+  phrase(s(Suf,AlSpc,DeSpc),_),
+  spc_fin_(AlSpc,Fin),
+  %member(Fin,[f(o,subst),f(a,adj),f(i,verb),f(e,adv)]),
+  %member(Fin,[f(o,subst)]),
+  phrase(vorto(Derivajho,Speco),[r(Rad,Spc),s(Suf,AlSpc,DeSpc),Fin]).
+
+derivajho(Radiko,Derivajho,Speco) :-
+  atom_codes(Radiko,RadCodes),
+  phrase(r(Rad,Spc),RadCodes),
+  phrase(p(Pref,AlSpc),_),
+  spc_fin_(AlSpc,Fin),
+  %member(Fin,[f(o,subst),f(a,adj),f(i,verb),f(e,adv)]),
+  %member(Fin,[f(o,subst)]),
+  phrase(vorto(Derivajho,Speco),[p(Pref,AlSpc),r(Rad,Spc),Fin]).
+%test: derivajho(abel,D,_), writeln(D),fail.
+
+derivajhoj(Radiko,Derivajhoj) :-
+  setof(D,Spc^derivajho(Radiko,D,Spc),Derivajhoj).
+
 testo(Vorto) :-
   vortpartoj(Vorto,Partoj),
   maplist(writeln,Partoj).
