@@ -68,7 +68,7 @@ r('hieraŭ','adj') --> "hieraŭ".
 r('morgaŭ','adj') --> "morgaŭ".
 
 /**********
- * afiksoj kiel radikoj
+ * afiksoj kaj interjekcioj kiel radikoj
 **********/
 
 r('aĉ','adj') --> "aĉ".
@@ -86,6 +86,7 @@ r('em','adj') --> "em".
 r('er','subst') --> "er".
 r('estr','best') --> "estr".
 r('et','adj') --> "et".
+r('fi','intj') --> "fi".
 r('id','best') --> "id".
 r('ig','tr') --> "ig".
 r('iĝ','ntr') --> "iĝ".
