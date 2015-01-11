@@ -1,6 +1,6 @@
 
 /******************** malstrikta vortanalizo ******
- * analizas vorton sen konsideri
+ * komence analizas vorton sen konsideri
  * striktajn derivadregulojn law la funkcioj
  * derivado_per_*. Do afiksoj povas aplikigxi
  * tie cxi al cxiaj vortspecoj.
@@ -68,6 +68,11 @@ kunmetita_vorto(Partoj) -->
   post_parto(PParto),
   { APartoj \= [], append(APartoj,[PParto],Partoj) }.
 
+prefikso([p(Prefikso,DeSpeco)]) --> p(Prefikso,DeSpeco).
+pref_kunmetita_vorto([Pref|Partoj]) --> 
+  prefikso(Pref),
+  kunmetita_vorto(Partoj).
+
 antau_partoj([]) --> [].
 antau_partoj([P1|P2]) -->
   antau_parto(P1),
@@ -87,9 +92,11 @@ antau_parto(Partoj) -->
 
 post_parto(Partoj) --> radika_vorto(Partoj).
 
-%%%%%%%%%%%%%%%%%%%%%%
 
+/******************** strikta vortanalizo ******
 % aplikado der derivadreguloj...
+***********************************************/
+
 
 /*******  hierarkieto  de vortspecoj ****************/
 
@@ -136,6 +143,7 @@ pron_kunigo(V,Ps) -->          % pron + fin, ekz. "kiujn"
 
 % radika vorto sen finajxo kaj sufiksoj (sed kun prefiksoj)
 radv_sen_suf(V,S) --> [r(V,S)].
+
 radv_sen_suf(V,S) --> 
   [p(Pref,De)], radv_sen_suf(Rvss,S),
   { subspc(S,De), % !, 
@@ -164,9 +172,12 @@ drv_per_suf(Spc,Al,De,Speco) :-
 
 
 % radika vorto sen finajxo (sed kun afiksoj)
-radv_sen_fin(V,S,N) --> { N>=0 }, radv_sen_suf(V,S).
-% KOREKTU: ne funkcias che pli ol unu sufikso, tial: "!" 
-radv_sen_fin(V,S,N) --> { N>0, N_1 is N-1 }, % evitu senfinan ciklon
+radv_sen_fin(V,S,N) --> { N>=0 }, 
+  radv_sen_suf(V,S).
+
+
+radv_sen_fin(V,S,N) --> 
+  { N>0, N_1 is N-1 }, % evitu senfinan ciklon
   radv_sen_fin(Rvsf,Spc,N_1),
   [s(Suf,Al,De)],
   { drv_per_suf(Spc,Al,De,S),
@@ -174,8 +185,16 @@ radv_sen_fin(V,S,N) --> { N>0, N_1 is N-1 }, % evitu senfinan ciklon
     atomic_list_concat([Rvsf,Suf],'/',V)
   }.
 
+% foje funkcias apliki prefiksojn nur post sufiksoj, ekz. ne/(venk/ebl)
+radv_sen_fin(V,S,N) -->
+  [p(Pref,De)], 
+  radv_sen_fin(Rvsf,S,N),
+  { subspc(S,De), % !, 
+    atomic_list_concat([Pref,Rvsf],'/',V) }.
+
 kunderiv(V,Al) --> 
-  [p(Pre,Al,De)], radv_sen_fin(Vsf,VSpc,3), % apliku maks. 3 sufiksojn, ĉu sufiĉas?
+  [p(Pre,Al,De)], % kunderivado per prepozicioj (ekz. sur+strat/a)
+  radv_sen_fin(Vsf,VSpc,3), % apliku maks. 3 sufiksojn, ĉu sufiĉas?
   { subspc(VSpc,De), %!, 
     atomic_list_concat([Pre,Vsf],'+',V) }.
 
@@ -198,12 +217,23 @@ vorto(V,S) -->
     atomic_list_concat([mal,Vrt],'/',V) 
   }.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % kunmetita vorto...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 vorto(V,S) --> antauvortoj(A), postvorto(P,S),
  { atomic_list_concat([A,P],'-',V) }.
+
+% foje funkcias apliki prefiksojn nur al jam kunmetita vorto, ekz. ne/(progres-pov/a)
+vorto(V,S) -->
+  %%%pref_kunm(Pref,De), 
+  [[p(Pref,De)]], 
+  antauvortoj(A), 
+  postvorto(P,S),
+  { subspc(S,De), % !, 
+    atomic_list_concat([A,P],'-',K),
+    atomic_list_concat([Pref,K],'/',V) }.
 
 antauvortoj('') --> [].
 antauvortoj(A) --> antauvorto(Av), antauvortoj(Avj),
@@ -228,6 +258,10 @@ vortpartoj(Vorto,Partoj) :-
 vortpartoj(Vorto,Partoj) :-
   phrase(radika_vorto(Partoj),Vorto).
 
+% foje funkcias apliki prefiksojn nur al jam kunmetita vorto, ekz. ne/(progres-pov/a)
+vortpartoj(Vorto,Partoj) :-
+  phrase(pref_kunmetita_vorto(Partoj),Vorto).
+
 vortpartoj(Vorto,Partoj) :-
 %  length(Partoj,2), % preferu dupartajn kunmetojn
   phrase(kunmetita_vorto(Partoj),Vorto).
@@ -235,6 +269,8 @@ vortpartoj(Vorto,Partoj) :-
 %vortpartoj(Vorto,Partoj) :-
 %  phrase(kunmetita_vorto(Partoj),Vorto),
 %  length(Partoj,L), L>2.
+
+
 
 vortanalizo(Vorto,Analizita,Speco) :-
   vortpartoj(Vorto,Partoj),

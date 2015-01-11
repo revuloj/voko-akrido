@@ -113,7 +113,9 @@ p(post,verb) --> "post".
 p(preter,verb) --> "preter".
 % p(pri,verb) --> "".
 p(sub,verb) --> "sub".
+p(sub,subst) --> "sub". 
 p(super,verb) --> "super".
+p(super,subst) --> "super".
 p(sur,verb) --> "sur".
 p(tra,verb) --> "tra".
 p(trans,verb) --> "trans".
@@ -146,8 +148,12 @@ p('laŭ',adj,adv) --> "laŭ".
 p(sen,adj,subst) --> "sen".
 p('laŭ',adj,adj) --> "laŭ".
 p('laŭ',adj,subst) --> "laŭ".
+
+% chu super/sub estas kunderivado au prefikso au ambau: komparu super/bela, super+rigarda
 p(super,adj,adj) --> "super".
 p(super,adj,adv) --> "super".
+%p(super,_,subst) --> "super". 
+
 p('kontraŭ',adj,subst) --> "kontraŭ".
 p(en,adj,subst) --> "en".
 p(ekster,adj,subst) --> "ekster".
