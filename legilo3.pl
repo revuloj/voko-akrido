@@ -48,6 +48,8 @@ vorto([M|V]) --> majusklo(M), minuskloj(V).
 vortoj([V]) --> vorto(C), { atom_codes(V,C) }.
 vortoj([V|Vj]) --> vorto(C), { atom_codes(V,C) }, spaco, vortoj(Vj).
 
+fremdvorto(V) --> string_without(".;, \t\r\n!?[]{}",V).
+
 /**
 vortoj([V]) --> vorto(V).
 vortoj([V|Vj]) --> vorto(V), spaco, vortoj(Vj).
@@ -63,13 +65,18 @@ vteksto([v(V),s(N)|T]) --> vorto(C), { atom_codes(V,C) },
 vteksto([v(V)]) --> vorto(C), { atom_codes(V,C) }.
 vteksto([]) --> [].
 **/
-vteksto([v(V),s(N)|T]) --> vorto(V),
+vteksto([v(V),s(N)|T]) --> vorto(V), 
+                     { format('~s ',[V]) }, %for debugging
                      neliteroj(N), vteksto(T).
 
 vteksto([n(V),s(N)|T]) --> numero(V),
                      neliteroj(N), vteksto(T).
 
-vteksto([v(V)]) --> vorto(V).
+vteksto([f(V),s(N)|T]) --> fremdvorto(V),
+                     neliteroj(N), vteksto(T).
+
+vteksto([v(V)]) --> vorto(V),
+    { format('~s ',[V]) }. %for debugging
 vteksto([]) --> [].
 
 teksto(T) --> blanks, vteksto(T).

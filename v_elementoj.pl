@@ -127,6 +127,12 @@ p(ne,adj) --> "ne".
 p(ne,subst) --> "ne".
 p(tiel,adj) --> "tiel". %???
 
+p(nun,subst) --> "nun".
+p(mem,verb) --> "mem".
+p(mem,adj) --> "mem".
+p('kvazaŭ',_) --> "kvazaŭ". % simile al pseŭdo
+
+
 /**************
  * la sekvaj fakte ne estas prefiksoj,
  * sed uzataj en kunderivado (ekz. sen-dom-a, sed ne
@@ -139,6 +145,7 @@ p(pri,adj,subst) --> "pri".
 p('laŭ',adj,adv) --> "laŭ".
 p(sen,adj,subst) --> "sen".
 p('laŭ',adj,adj) --> "laŭ".
+p('laŭ',adj,subst) --> "laŭ".
 p(super,adj,adj) --> "super".
 p(super,adj,adv) --> "super".
 p('kontraŭ',adj,subst) --> "kontraŭ".

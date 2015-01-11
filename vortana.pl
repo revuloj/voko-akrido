@@ -76,14 +76,14 @@ antau_partoj([P1|P2]) -->
 antau_parto(Partoj) -->
   pronomo_sen_fino(Partoj).
 
-antau_parto(Partoj) -->
-  radika_vorto_sen_fino(Partoj).
-
 % kun interfino (a,o)
 antau_parto(Partoj) -->
   radika_vorto_sen_fino(P),
   c(InterFino,Speco),
   { append(P,[c(InterFino,Speco)],Partoj) }.
+
+antau_parto(Partoj) -->
+  radika_vorto_sen_fino(Partoj).
 
 post_parto(Partoj) --> radika_vorto(Partoj).
 
@@ -122,15 +122,15 @@ postvorto --> vorto.
 rvsf --> ...?
 rvc --> rvsf + c.
 
-vorto --> kunigo(i,fi); kunigo(u,fu).
+vorto --> pron_kunigo(i,fi); pron_kunigo(u,fu).
 vorto -> kunderivajxo(p/3+rvsf)+f
 ***********/
 
-kunigo(V,Ps) -->
+pron_kunigo(V,Ps) -->          % pron + fin ekz. "min"
   [i(P,Ps)], [fi(F,_)],
   { atomic_list_concat([P,F],'/',V) }.
 
-kunigo(V,Ps) -->
+pron_kunigo(V,Ps) -->          % pron + fin, ekz. "kiujn"
   [u(P,Ps)], [fu(F,_)],
   { atomic_list_concat([P,F],'/',V) }.
 
@@ -182,23 +182,25 @@ kunderiv(V,Al) -->
 vrt_sen_fin(V,S) --> kunderiv(V,S).
 vrt_sen_fin(V,S) --> radv_sen_fin(V,S,3). % apliku maks. 3 sufiksojn, ĉu sufiĉas?
 
-vorto(V,S) --> [v(V,S)]; [u(V,S)]; [i(V,S)].
-vorto(V,S) --> kunigo(V,S).
+vorto(V,S) --> [v(V,S)]; [u(V,S)]; [i(V,S)]. % vorteto aŭ pronomo
+vorto(V,S) --> pron_kunigo(V,S).                  % pronomo kun finaĵo
 vorto(V,S) --> 
-  vrt_sen_fin(Vsf,Vs), [f(F,Fs)], 
-  { (subspc(Vs,Fs), 
+  vrt_sen_fin(Vsf,Vs), [f(F,Fs)],  % senfinaĵa vorto + finaĵo
+  { (subspc(Vs,Fs),                % derivado per finaĵo
        S=Vs %,!
      ; S=Fs), 
     atomic_list_concat([Vsf,F],'/',V) }.
 
 vorto(V,S) --> 
-  [p(mal,_)], [v(Vrt,S)],
+  [p(mal,_)], [v(Vrt,S)],          % simplaj mal-vortoj (malfor, malantaŭ, maltro...)
   {
     (S='adv'; S='prep'),
     atomic_list_concat([mal,Vrt],'/',V) 
   }.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % kunmetita vorto...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 vorto(V,S) --> antauvortoj(A), postvorto(P,S),
  { atomic_list_concat([A,P],'-',V) }.
@@ -227,7 +229,12 @@ vortpartoj(Vorto,Partoj) :-
   phrase(radika_vorto(Partoj),Vorto).
 
 vortpartoj(Vorto,Partoj) :-
+%  length(Partoj,2), % preferu dupartajn kunmetojn
   phrase(kunmetita_vorto(Partoj),Vorto).
+
+%vortpartoj(Vorto,Partoj) :-
+%  phrase(kunmetita_vorto(Partoj),Vorto),
+%  length(Partoj,L), L>2.
 
 vortanalizo(Vorto,Analizita,Speco) :-
   vortpartoj(Vorto,Partoj),

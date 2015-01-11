@@ -38,6 +38,7 @@ v('eĉ','adv') --> "eĉ".
 v('ekster','prep') --> "ekster".
 v('el','prep') --> "el".
 v('en','prep') --> "en".
+v('fi','intj') --> "fi".
 v('for','adv') --> "for".
 v('ĝis','prep') --> "ĝis".
 v('ho','intj') --> "ho".
