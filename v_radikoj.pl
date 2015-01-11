@@ -54,6 +54,8 @@ r('inter','adv') --> "inter".
 r('kontraŭ','adv') --> "kontraŭ".
 r('krom','adv') --> "krom".
 r('kun','adv') --> "kun".
+r('nun','adv') --> "nun".
+r('nur','adv') --> "nur".
 r('post','adv') --> "post".
 r('preter','adv') --> "preter".
 r('pri','adv') --> "pri".
@@ -92,6 +94,7 @@ r('ig','tr') --> "ig".
 r('iĝ','ntr') --> "iĝ".
 r('il','subst') --> "il".
 r('in','best') --> "in".
+r('ind','adj') --> "ind".
 r('ing','subst') --> "ing".
 r('mal','subst') --> "mal".
 r('re','adv') --> "re".
