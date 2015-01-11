@@ -251,6 +251,9 @@ postvorto(P,S) --> [V],
   { phrase(vorto(P,S),V) }.
 
 %%%%%%%%%%%%%%%%%%%%%%
+
+% https://lalingvisto.wordpress.com/2010/12/05/kiel-krei-vortfaradilon-dua-parto/
+% malboneco = (kvanto de radikoj) – 0.5 * (kvanto de afiksoj)
   
 vortpartoj(Vorto,Partoj) :-
   phrase(simpla_vorto(Partoj),Vorto).
