@@ -24,7 +24,9 @@ r('si','adj') --> "si".
 **********/
 r('kial','subst') --> "kial".
 r('ĉiam','adv') --> "ĉiam".
+r('tiam','adv') --> "tiam".
 r('iom','adv') --> "iom".
+r('tiom','adv') --> "tiom".
 
 /**************
  * nombroj kiel radiko 
@@ -48,6 +50,7 @@ r('mil','nombr') --> "mil".
    kiuj estas uzeblaj radike 
 ******************/
 
+r('ajn','adj') --> "ajn".
 r('anstataŭ','adv') --> "anstataŭ".
 r('anstataŭ','tr') --> "anstataŭ".
 r('al','adv') --> "al".
@@ -62,15 +65,18 @@ r('en','adv') --> "en".
 r('ĝis','adv') --> "ĝis".
 r('inter','adv') --> "inter".
 r('jam','adv') --> "jam".
+r('jes','tr') --> "jes".
 r('kontraŭ','adv') --> "kontraŭ".
 r('kontraŭ','tr') --> "kontraŭ".
 r('krom','adv') --> "krom".
 r('kun','adv') --> "kun".
+r('ne','tr') --> "ne".
 r('nun','adv') --> "nun".
 r('nur','adv') --> "nur".
 r('post','adv') --> "post".
 r('preter','adv') --> "preter".
 r('per','tr') --> "per".
+r('pli','adv') --> "pli".
 r('pri','adv') --> "pri".
 r('sub','adv') --> "sub".
 r('super','adv') --> "super".
@@ -82,6 +88,7 @@ r('for','adj') --> "for".
 r('hodiaŭ','adj') --> "hodiaŭ".
 r('hieraŭ','adj') --> "hieraŭ".
 r('morgaŭ','adj') --> "morgaŭ".
+r('plus','subst') --> "plus".
 
 /**********
  * afiksoj kaj interjekcioj kiel radikoj
@@ -113,6 +120,7 @@ r('in','best') --> "in".
 r('ind','adj') --> "ind".
 r('ing','subst') --> "ing".
 r('mal','subst') --> "mal".
+r('obl','subst') --> "obl".
 r('re','adv') --> "re".
 r('uj','subst') --> "uj".
 r('ul','best') --> "ul".
