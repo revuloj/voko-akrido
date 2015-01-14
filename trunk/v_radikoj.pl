@@ -27,6 +27,8 @@ r('ĉiam','adv') --> "ĉiam".
 r('tiam','adv') --> "tiam".
 r('iom','adv') --> "iom".
 r('tiom','adv') --> "tiom".
+r('ĉiom','adv') --> "ĉiom".
+r('tie','adj') --> "tie".
 
 /**************
  * nombroj kiel radiko 
@@ -65,6 +67,7 @@ r('en','adv') --> "en".
 r('ĝis','adv') --> "ĝis".
 r('inter','adv') --> "inter".
 r('jam','adv') --> "jam".
+r('jen','adv') --> "jen".
 r('jes','tr') --> "jes".
 r('kontraŭ','adv') --> "kontraŭ".
 r('kontraŭ','tr') --> "kontraŭ".
