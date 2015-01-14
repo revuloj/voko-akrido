@@ -19,9 +19,17 @@ r('vi','adj') --> "vi".
 r('ili','adj') --> "ili".
 r('si','adj') --> "si".
 
+/**********
+ * aliaj pronomoj/tabelvortoj kiel radikoj
+**********/
+r('kial','subst') --> "kial".
+r('ĉiam','adv') --> "ĉiam".
+r('iom','adv') --> "iom".
+
 /**************
  * nombroj kiel radiko 
 **************/
+r('nul','nombr') --> "nul".
 r('unu','nombr') --> "unu".
 r('du','nombr') --> "du".
 r('tri','nombr') --> "tri".
@@ -40,27 +48,33 @@ r('mil','nombr') --> "mil".
    kiuj estas uzeblaj radike 
 ******************/
 
-r('ĉirkaŭ','adv') --> "ĉirkaŭ".
 r('anstataŭ','adv') --> "anstataŭ".
+r('anstataŭ','tr') --> "anstataŭ".
 r('al','adv') --> "al".
 r('antaŭ','adv') --> "antaŭ".
+r('antaŭ','tr') --> "antaŭ".
 r('apud','adv') --> "apud".
 r('ĉirkaŭ','adv') --> "ĉirkaŭ".
+r('ĉirkaŭ','tr') --> "ĉirkaŭ".
 r('ekster','adv') --> "ekster".
 r('el','adv') --> "el".
 r('en','adv') --> "en".
 r('ĝis','adv') --> "ĝis".
 r('inter','adv') --> "inter".
+r('jam','adv') --> "jam".
 r('kontraŭ','adv') --> "kontraŭ".
+r('kontraŭ','tr') --> "kontraŭ".
 r('krom','adv') --> "krom".
 r('kun','adv') --> "kun".
 r('nun','adv') --> "nun".
 r('nur','adv') --> "nur".
 r('post','adv') --> "post".
 r('preter','adv') --> "preter".
+r('per','tr') --> "per".
 r('pri','adv') --> "pri".
 r('sub','adv') --> "sub".
 r('super','adv') --> "super".
+r('super','tr') --> "super".
 r('sur','adv') --> "sur".
 r('trans','adv') --> "trans".
 r('ĵus','adj') --> "ĵus".
@@ -74,9 +88,11 @@ r('morgaŭ','adj') --> "morgaŭ".
 **********/
 
 r('aĉ','adj') --> "aĉ".
+r('adiaŭ','subst') --> "adiaŭ".
 r('aĵ','subst') --> "aĵ".
 r('an','best') --> "an".
 r('ar','subst') --> "ar".
+r('ĉef','subst') --> "ĉef".
 r('dis','adv') --> "dis".
 r('ebl','adv') --> "ebl".
 r('ec','subst') --> "ec".

@@ -66,7 +66,7 @@ vteksto([v(V)]) --> vorto(C), { atom_codes(V,C) }.
 vteksto([]) --> [].
 **/
 vteksto([v(V),s(N)|T]) --> vorto(V), 
-                     { format('~s ',[V]) }, %for debugging
+%                     { format('~s ',[V]) }, %for debugging
                      neliteroj(N), vteksto(T).
 
 vteksto([n(V),s(N)|T]) --> numero(V),
@@ -75,8 +75,9 @@ vteksto([n(V),s(N)|T]) --> numero(V),
 vteksto([f(V),s(N)|T]) --> fremdvorto(V),
                      neliteroj(N), vteksto(T).
 
-vteksto([v(V)]) --> vorto(V),
-    { format('~s ',[V]) }. %for debugging
+vteksto([v(V)]) --> vorto(V).
+%    { format('~s ',[V]) }. %for debugging
+
 vteksto([]) --> [].
 
 teksto(T) --> blanks, vteksto(T).

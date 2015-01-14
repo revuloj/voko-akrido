@@ -97,6 +97,18 @@ post_parto(Partoj) --> radika_vorto(Partoj).
 % aplikado der derivadreguloj...
 ***********************************************/
 
+/******
+TODO - KOREKTENDAJ:
+
+ne estu permesata:
+    'art-i-kol/o',
+
+verbigo de substantivoj estu iel permesata:
+  planado, muzikado, spicado, kau'zanta, kau'zata (nur por transitivaj)
+***/
+
+
+
 
 /*******  hierarkieto  de vortspecoj ****************/
 
