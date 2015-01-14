@@ -56,6 +56,7 @@ vortoj([V|Vj]) --> vorto(V), spaco, vortoj(Vj).
 **/
 
 numero(N) --> digits(D), ".", { append(D,".",N) }.
+numero(N) --> digits(D), "a", { append(D,"a",N) }.
 numero(N) --> digits(N).
 
 % teksto kiel alternado de vortoj kaj intersignoj
@@ -77,6 +78,7 @@ vteksto([f(V),s(N)|T]) --> fremdvorto(V),
 
 vteksto([v(V)]) --> vorto(V).
 %    { format('~s ',[V]) }. %for debugging
+vteksto([n(N)]) --> numero(N).
 
 vteksto([]) --> [].
 

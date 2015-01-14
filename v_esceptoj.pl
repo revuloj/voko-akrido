@@ -3,5 +3,6 @@
 ************/
 r('post/e/ul',subst) --> "posteul",!.
 r('mult/e/kost',adj) --> "multekost",!.
-
+r('art/e/far',tr) --> "artefar",!.
+v('unu/j',subst) --> "unuj".
 
