@@ -56,6 +56,10 @@ simpla_vorto([i(Pronomo,Speco),fi(Fino,FSpeco)]) -->
   i(Pronomo,Speco),
   fi(Fino,FSpeco).
 
+simpla_vorto([v(N1,nombr),v(N2,nombr)]) -->
+  v(N1,nombr),
+  v(N2,nombr).
+
 % mal+prep, mal+adv
 simpla_vorto([p(mal,_),v(Vorto,VSpeco)]) -->
   "mal", v(Vorto,VSpeco),
@@ -153,6 +157,10 @@ pron_kunigo(V,Ps) -->          % pron + fin, ekz. "kiujn"
   [u(P,Ps)], [fu(F,_)],
   { atomic_list_concat([P,F],'/',V) }.
 
+nombr_kunigo(N,nombr) -->          % dudek -> du*dek
+  [v(N1,nombr)], [v(N2,nombr)],
+  { atomic_list_concat([N1,N2],'*',N) }.
+
 % radika vorto sen finajxo kaj sufiksoj (sed kun prefiksoj)
 radv_sen_suf(V,S) --> [r(V,S)].
 
@@ -215,6 +223,7 @@ vrt_sen_fin(V,S) --> radv_sen_fin(V,S,3). % apliku maks. 3 sufiksojn, ĉu sufiĉ
 
 vorto(V,S) --> [v(V,S)]; [u(V,S)]; [i(V,S)]. % vorteto aŭ pronomo
 vorto(V,S) --> pron_kunigo(V,S).                  % pronomo kun finaĵo
+vorto(V,S) --> nombr_kunigo(V,S).
 vorto(V,S) --> 
   vrt_sen_fin(Vsf,Vs), [f(F,Fs)],  % senfinaĵa vorto + finaĵo
   { (subspc(Vs,Fs),                % derivado per finaĵo

@@ -12,3 +12,5 @@ v('kp',adj) --> "kp".
 v('km',subst) --> "km".
 v('mm',subst) --> "mm".
 v('Rim',subst) --> "Rim".
+v('proks',subst) --> "proks".
+v('vd',subst) --> "vd".

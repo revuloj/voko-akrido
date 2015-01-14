@@ -126,6 +126,7 @@ p(trans,verb) --> "trans".
 **************/
 p(ĉiam,adj) --> "ĉiam". % ekz. ĉiamverda
 p(pli,adj) --> "pli".
+p(plu,verb) --> "plu".
 p(for,verb) --> "for".
 p(ne,adj) --> "ne".
 p(ne,subst) --> "ne".
