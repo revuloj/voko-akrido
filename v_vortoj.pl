@@ -1,7 +1,7 @@
 /*************
    pretaj vortoj 
 *************/
-
+v('aĉ','intj') --> "aĉ".
 v('adiaŭ','intj') --> "adiaŭ".
 v('ajn','advpart') --> "ajn".
 v('al','prep') --> "al".

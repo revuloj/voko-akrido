@@ -16,12 +16,13 @@ output(html).
 analizu_vorton(N) :-
 	not(N = ''), 
         ( atom(N) -> atom_codes(N,C); C=N ),
-        minuskligo(C,Cm),
+        minuskligo(C,Cmin), majuskligo(C,Cmaj),
 	once(
           (
 	    vortanalizo(C,V,S), format('~w (~w)~n',[V,S]);
-            vortanalizo(Cm,V,S), format('~w (~w)~n',[V,S]);
-	    vortpartoj(Cm,P), format('~w - malstrikte!~n',[P]);
+            vortanalizo(Cmin,V,S), format('~w (~w)~n',[V,S]);
+            vortanalizo(Cmaj,V,S), format('~w (~w)~n',[V,S]);
+	    vortpartoj(Cmin,P), format('~w - malstrikte!~n',[P]);
 	    format('~s - NE analizebla!~n',[C])
 	  )
         ).
@@ -29,17 +30,24 @@ analizu_vorton(N) :-
 analizu_vorton(Neanalizita,Vorto,Speco,Partoj,Rez) :-
 	not(Neanalizita = ''), 
         ( atom(Neanalizita) -> atom_codes(Neanalizita,C); C=Neanalizita ),
-        minuskligo(C,Cm),
+        minuskligo(C,Cmin), majuskligo(C,Cmaj),
 	once(
           (
 	    vortanalizo(C,Vorto,Speco), Rez=bone;
-            vortanalizo(Cm,Vorto,Speco), Rez=minuskle;
-	    vortpartoj(Cm,Partoj), Rez=malstrikte;
+            vortanalizo(Cmin,Vorto,Speco), Rez=minuskle;
+            vortanalizo(Cmaj,Vorto,Speco), Rez=majuskle; 
+	    vortpartoj(Cmin,Partoj), Rez=malstrikte;
             Rez = neanalizebla
 	  )
         ).
 
+minuskligo_atom(Vorto,Minuskle):-
+  atom_codes(Vorto,[V|Vosto]),
+  to_lower(V,M),
+  atom_codes(Minuskle,[M|Vosto]).
+
 minuskligo([V|Vosto],[M|Vosto]) :- to_lower(V,M).
+
 
 majuskligo_atom(Vorto,Majuskle):-
   atom_codes(Vorto,[V|Vosto]),
@@ -56,6 +64,16 @@ parto_nombro(Vorto,Signo,Nombro) :-
 analizu_tekston_kopie(FileName,OutFileName) :-
   atom(FileName),
   phrase_from_file(teksto(T),FileName,[encoding(utf8)]),!,
+  setup_call_cleanup(
+     open(OutFileName,write,Out),
+     with_output_to(Out,
+       analizu_tekston_kopie_(T)),
+     close(Out)
+  ).
+
+analizu_tekston_kopie(InCodes,OutFileName) :-
+  is_list(InCodes),
+  phrase(teksto(T),InCodes),!,
   setup_call_cleanup(
      open(OutFileName,write,Out),
      with_output_to(Out,
@@ -91,7 +109,7 @@ analizu_tekston_kopie_(T) :-
                 skribu_vorton(Rez,V,Vorto,Spc,Partoj),
                 (
                   nonvar(Vorto), parto_nombro(Vorto,'-',Nv), Nv>2 
-                    *-> format('(?)') % TODO: se analizu_vorton redonus ankau partojn
+                    *-> marku_dubebla % TODO: se analizu_vorton redonus ankau partojn
                     ; true            % pli facilus trakti tion ankau en skribu_vorton
                 )
 /****
@@ -124,11 +142,8 @@ skribu_kapon :-
   output(html) 
   -> format('<html><head>'),
      format('<meta http-equiv="content-type" content="text/html; charset=utf-8">'),
-     format('<style type="text/css">~n'),
-     format('.malstrikte { color: brown }'),
-     format('.neanaliz { color:red; font-weight: bold}'),
-     format('</style>'),
-     format('</head><body><pre>~n')
+     format('<link title="stilo" type="text/css" rel="stylesheet" href="../stilo.css">'),
+     format('</head><body><a href="../klarigoj.html">vidu ankaŭ la klarigojn</a><pre>~n')
   ; true.
 
 skribu_voston :-
@@ -149,6 +164,10 @@ skribu_vorton(minuskle,_,Analizita,_,_) :-
   majuskligo_atom(Analizita,Majuskla),
   format('~w',Majuskla).
 
+skribu_vorton(majuskle,_,Analizita,_,_) :-
+  minuskligo_atom(Analizita,Minuskla),
+  format('~w',Minuskla).
+
 skribu_vorton(neanalizebla,Vorto,_,_,_) :-
   output(html)
   -> format('<span class="neanaliz">~s</span>',[Vorto])
@@ -163,6 +182,11 @@ skribu_fremdvorton(f(F)) :-
   output(html)
   -> atom_codes(Sgn,F), xml_quote_cdata(Sgn,Quoted,utf8), format(Quoted)
   ; format('>>>~s<<<',[F]).
+
+marku_dubebla :-
+  output(html)
+  -> format('<span class="dubebla">(?)</span>')
+  ; format('(?)').
 
 
 % analizas tutan tekstodosieron kaj donas la rezulton kiel listo

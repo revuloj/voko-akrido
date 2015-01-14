@@ -81,6 +81,7 @@ s(um,_,_) --> "um".
      (prefiskoj ne shanghas la vortspecon)
 ************/
 p(bo,parc) --> "bo".
+p('ĉef',subst) --> "ĉef".
 p(dis,verb) --> "dis".
 p(ek,verb) --> "ek".
 p(eks,subst) --> "eks".
@@ -123,6 +124,7 @@ p(trans,verb) --> "trans".
 /*************
  * adverboj kiel prefiksoj
 **************/
+p(ĉiam,adj) --> "ĉiam". % ekz. ĉiamverda
 p(pli,adj) --> "pli".
 p(for,verb) --> "for".
 p(ne,adj) --> "ne".
@@ -133,7 +135,7 @@ p(nun,subst) --> "nun".
 p(mem,verb) --> "mem".
 p(mem,adj) --> "mem".
 p('kvazaŭ',_) --> "kvazaŭ". % simile al pseŭdo
-
+p(tro,adj) --> "tro". % troabundeco
 
 /**************
  * la sekvaj fakte ne estas prefiksoj,
@@ -163,7 +165,10 @@ p(apud,adj,subst) --> "apud".
 p('ĉe',adj,subst) --> "ĉe".
 p('ĉirkaŭ',adj,subst) --> "ĉirkaŭ".
 
-p(pri,tr,verb) --> "pri".
+p(pri,tr,verb) --> "pri". % ekz. priskribi
+
+p(dum,adj,subst) --> "dum".
+p(dum,adv,verb) --> "dum".
 
 /**************
  *  j-pronomoj 

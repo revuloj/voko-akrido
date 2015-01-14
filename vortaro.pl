@@ -1,9 +1,15 @@
-:- multifile r/4.
+:- multifile r/4, v/4.
 
+:-consult('v_esceptoj.pl').
+:-consult('v_mallongigoj.pl').
 :-consult('v_elementoj.pl').
 :-consult('v_vortoj.pl').
 :-consult('v_radikoj.pl').
 :-consult('v_revo_radikoj.pl').
+
+% ĝeneralaj transformoj de vorspeco 
+r(Rad,tr) --> r(Rad,subst).
+r(Rad,subst) --> r(Rad,nombr).
 
 /********************* sercxo en la vortaro ******************
 
