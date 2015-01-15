@@ -168,6 +168,7 @@ p(apud,adj,subst) --> "apud".
 p('ĉe',adj,subst) --> "ĉe".
 p('ĉirkaŭ',adj,subst) --> "ĉirkaŭ".
 
+p(per,adv,subst) --> "per".
 p(pri,tr,verb) --> "pri". % ekz. priskribi
 
 p(dum,adj,subst) --> "dum".
