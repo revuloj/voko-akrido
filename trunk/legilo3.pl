@@ -1,5 +1,7 @@
 :- ensure_loaded(library(http/dcg_basics)).
 
+% PLIBONIGENDA: uzu disjunktajn literklasojn!
+
 /****
 enlegas tekston kiel vico de v(Vorto); n(Numbero); s(Neliteroj)
 ****/
@@ -22,7 +24,8 @@ tekstofino --> \+ [_].
 % literoj, literchenoj
 litero(L) --> minusklo(L); majusklo(L); apostrofo(L).
 nelitero(L) --> [L], { 
-         ( L<65, L\=39, L\=47 ) ; % eksludu '/ , eksludi ankau streketon (45) kauzas problemo ekz. en soldat.xml...
+         between(1,46,L), L\=39;  % eksludu '/ , eksludi ankau streketon (45) kauzas problemo ekz en soldat.xml...
+         between(58,64,L);
          between(91,96,L) ; 
          ( L>=123 , \+ memberchk(L,[264,265,284,285,308,309,348,349,292,293]) )
                      }.
@@ -55,8 +58,9 @@ vortoj([V]) --> vorto(V).
 vortoj([V|Vj]) --> vorto(V), spaco, vortoj(Vj).
 **/
 
-numero(N) --> digits(D), ".", { append(D,".",N) }.
-numero(N) --> digits(D), "a", { append(D,"a",N) }.
+numero(N) --> digit(D1), digits(D), ".", { append([[D1],D,"."],N) }.
+numero(N) --> digit(D1), digits(D), "a", { append([[D1],D,"a"],N) }.
+numero(N) --> digit(D1), digits(D), "-a", { append([[D1],D,"-a"],N) }.
 numero(N) --> digits(N).
 
 % teksto kiel alternado de vortoj kaj intersignoj

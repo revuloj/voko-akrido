@@ -124,6 +124,8 @@ p(trans,verb) --> "trans".
 /*************
  * adverboj kiel prefiksoj
 **************/
+
+p(ĉi,adj) --> "ĉi".
 p(ĉiam,adj) --> "ĉiam". % ekz. ĉiamverda
 p(pli,adj) --> "pli".
 p(plu,verb) --> "plu".
