@@ -25,6 +25,7 @@ r('si','adj') --> "si".
 r('kial','subst') --> "kial".
 r('ĉiam','adv') --> "ĉiam".
 r('tiam','adv') --> "tiam".
+r('tiel','adv') --> "tiel".
 r('iom','adv') --> "iom".
 r('tiom','adv') --> "tiom".
 r('ĉiom','adv') --> "ĉiom".
