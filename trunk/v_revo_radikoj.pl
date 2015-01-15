@@ -10947,7 +10947,7 @@ r('vultu',adj) --> "vultu".
 r('vulv',subst) --> "vulv".
 r('vund',tr) --> "vund".
 r('vu',subst) --> "vu".
-r('v',subst) --> "v".
+%r('v',subst) --> "v".
 r('zakusk',subst) --> "zakusk".
 r('Zambi',subst) --> "Zambi".
 r('Zamenhof',best) --> "Zamenhof".
