@@ -81,6 +81,7 @@ r('post','adv') --> "post".
 r('preter','adv') --> "preter".
 r('per','tr') --> "per".
 r('pli','adv') --> "pli".
+r('plu','adv') --> "plu".
 r('pri','adv') --> "pri".
 r('sub','adv') --> "sub".
 r('super','adv') --> "super".

@@ -104,31 +104,17 @@ analizu_tekston_kopie_(T) :-
       once(
 	(
 	   (
-	      M = v(V) *->  
-                analizu_vorton(V,Vorto,Spc,Partoj,Rez), 
-                skribu_vorton(Rez,V,Vorto,Spc,Partoj),
-                (
-                  nonvar(Vorto), parto_nombro(Vorto,'-',Nv), Nv>2 
-                    *-> marku_dubebla % TODO: se analizu_vorton redonus ankau partojn
-                    ; true            % pli facilus trakti tion ankau en skribu_vorton
-                )
-/****
-	      once(
-		(
-		  Rez=malstrikte *-> format('?~s: ~w?',[V,Partoj]);
-		  Rez=neanalizebla *-> format('>>>~s<<<',[V]);
-		  parto_nombro(Vorto,'-',Nv), 
-		  (
-		    (Nv>2 *-> format('?'); true),
+	      M = v(V), length(V,L), 
+                ( L>1 *->  
+		    analizu_vorton(V,Vorto,Spc,Partoj,Rez), 
+		    skribu_vorton(Rez,V,Vorto,Spc,Partoj),
 		    (
-		      Rez=minuskle *-> majuskligo_atom(Vorto,Maj), format('~w',Maj);
-		      format('~w',Vorto)
-		    ),
-		    (Nv>2 *-> format('?'); true)
-		  )
-		)
-	     )
-****/
+		      nonvar(Vorto), parto_nombro(Vorto,'-',Nv), Nv>2 
+			*-> marku_dubebla % TODO: se analizu_vorton redonus ankau partojn
+			; true            % pli facilus trakti tion ankau en skribu_vorton
+		    );
+                  skribu_signojn(s(V))
+                )
 	   );
            skribu_signojn(M);
            skribu_nombron(M);
