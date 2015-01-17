@@ -27,6 +27,7 @@ r('ĉiam','adv') --> "ĉiam".
 r('tiam','adv') --> "tiam".
 r('tiel','adv') --> "tiel".
 r('iom','adv') --> "iom".
+r('kiom','adv') --> "kiom".
 r('tiom','adv') --> "tiom".
 r('ĉiom','adv') --> "ĉiom".
 r('tie','adj') --> "tie".
@@ -56,6 +57,7 @@ r('mil','nombr') --> "mil".
 r('ajn','adj') --> "ajn".
 r('anstataŭ','adv') --> "anstataŭ".
 r('anstataŭ','tr') --> "anstataŭ".
+r('antaŭ','adv') --> "antaŭ".
 r('al','adv') --> "al".
 r('antaŭ','adv') --> "antaŭ".
 r('antaŭ','tr') --> "antaŭ".
@@ -102,6 +104,7 @@ r('plus','subst') --> "plus".
 r('aĉ','adj') --> "aĉ".
 r('adiaŭ','subst') --> "adiaŭ".
 r('aĵ','subst') --> "aĵ".
+r('aĥ','ntr') --> "aĥ".
 r('an','best') --> "an".
 r('ar','subst') --> "ar".
 r('ĉef','subst') --> "ĉef".

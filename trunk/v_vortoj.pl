@@ -4,6 +4,7 @@
 v('aĉ','intj') --> "aĉ".
 v('adiaŭ','intj') --> "adiaŭ".
 v('ajn','advpart') --> "ajn".
+v('aĥ','intj') --> "aĥ".
 v('al','prep') --> "al".
 v('almenaŭ','adv') --> "almenaŭ".
 v('ambaŭ','pron') --> "ambaŭ".
@@ -20,7 +21,7 @@ v('baldaŭ','adv') --> "baldaŭ".
 v('cent','nombr') --> "cent".
 v('ĉar','konj') --> "ĉar".
 v('ĉe','prep') --> "ĉe".
-v('ĉi','adv') --> "ĉi".
+v('ĉi','advpart') --> "ĉi".
 v('ĉial','adv') --> "ĉial".
 v('ĉiam','adv') --> "ĉiam".
 v('ĉiel','adv') --> "ĉiel".

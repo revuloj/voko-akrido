@@ -101,28 +101,28 @@ analizu_tekston_kopie(Txt) :-
 analizu_tekston_kopie_(T) :-
   skribu_kapon,
   forall(member(M,T),
-      once(
-	(
-	   (
-	      M = v(V), length(V,L), 
-                ( L>1 *->  
-		    analizu_vorton(V,Vorto,Spc,Partoj,Rez), 
-		    skribu_vorton(Rez,V,Vorto,Spc,Partoj),
-		    (
-		      nonvar(Vorto), parto_nombro(Vorto,'-',Nv), Nv>2 
-			*-> marku_dubebla % TODO: se analizu_vorton redonus ankau partojn
-			; true            % pli facilus trakti tion ankau en skribu_vorton
-		    );
-                  skribu_signojn(s(V))
-                )
-	   );
-           skribu_signojn(M);
-           skribu_nombron(M);
-           skribu_fremdvorton(M);
-	   format(atom(Exc),'nekonata tekstparto ~w~n',[M]), throw(Exc)
-	)
-      )
-    ),!,skribu_voston.
+      once(analizu_teksteron(M))
+  ),!,
+  skribu_voston.
+
+analizu_teksteron(Tekstero) :-
+      Tekstero = v(V), length(V,L), 
+	( L>1 *->  
+	    analizu_vorton(V,Vorto,Spc,Partoj,Rez), 
+	    skribu_vorton(Rez,V,Vorto,Spc,Partoj),
+	    (
+	      nonvar(Vorto), parto_nombro(Vorto,'-',Nv), Nv>2 
+		*-> marku_dubebla % TODO: se analizu_vorton redonus ankau partojn
+		; true            % pli facilus trakti tion ankau en skribu_vorton
+	    );
+	  skribu_signojn(s(V))
+	);
+
+       skribu_signojn(Tekstero);
+       skribu_nombron(Tekstero);
+       skribu_fremdvorton(Tekstero);
+       format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), throw(Exc).
+
 
 skribu_kapon :-
   output(html) 
@@ -203,11 +203,15 @@ analizu_tekston2(Txt) :-
 
 /********************* analizaj funkcioj por frazoj ******************/
 
+/***********************
+
 analizu_elementon(v(Vorto),Analizita,Speco) :-
   vortanalizo(Vorto,Analizita,Speco).
 
+
 analizu_elementon(s(Signoj),[]) :-
   Rezulto=Signoj.
+
 
 povorta_analizo(Signoj,Vortoj) :-
 %	vortigu(Signoj,Frazo),!,
@@ -236,3 +240,5 @@ parta_frazanalizo(Signoj,Rezulto) :-
 	frazo(Vortoj,Rezulto),!,
 	eligu_strukturon(Rezulto).
 
+
+*******************/

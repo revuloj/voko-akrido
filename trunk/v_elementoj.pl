@@ -97,6 +97,7 @@ p(re,verb) --> "re".
 ****************/
 p(al,verb) --> "al".
 p('antaŭ',verb) --> "antaŭ".
+%p('antaŭ',adv) --> "antaŭ". % chu prefikso au kunderivado?
 p(apud,verb) --> "apud".
 p('ĉe',verb) --> "ĉe".
 p('ĉirkaŭ',verb) --> "ĉirkaŭ".
