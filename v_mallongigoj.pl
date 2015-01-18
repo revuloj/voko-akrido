@@ -10,6 +10,7 @@ v('kg',subst) --> "kg".
 v('ktp',adv) --> "ktp".
 v('ks',adj) --> "ks".
 v('kp',verb) --> "kp".
+v('km',resp) --> "km".
 v('km',subst) --> "km".
 v('mm',subst) --> "mm".
 v('Rim',subst) --> "Rim".

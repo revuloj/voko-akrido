@@ -109,12 +109,13 @@ analizu_teksteron(Tekstero) :-
       Tekstero = v(V), length(V,L), 
 	( L>1 *->  
 	    analizu_vorton(V,Vorto,Spc,Partoj,Rez), 
-	    skribu_vorton(Rez,V,Vorto,Spc,Partoj),
 	    (
-	      nonvar(Vorto), parto_nombro(Vorto,'-',Nv), Nv>2 
-		*-> marku_dubebla % TODO: se analizu_vorton redonus ankau partojn
-		; true            % pli facilus trakti tion ankau en skribu_vorton
-	    );
+	       nonvar(Vorto), parto_nombro(Vorto,'-',Nv), Nv>2 
+	       *-> skribu_vorton(dubebla,V,Vorto,Spc,Partoj)
+				% TODO: se analizu_vorton redonus jen ankau partojn pli facilus trakti...
+		; skribu_vorton(Rez,V,Vorto,Spc,Partoj)
+	     );
+	  % unuopan literon skribu kiel signo...
 	  skribu_signojn(s(V))
 	);
 
@@ -159,14 +160,19 @@ skribu_vorton(neanalizebla,Vorto,_,_,_) :-
   -> format('<span class="neanaliz">~s</span>',[Vorto])
   ; format('>>>~s<<<',[Vorto]).
 
+skribu_vorton(dubebla,_,Analizita,_,_) :-
+  output(html)
+  -> format('<span class="dubebla">~w</span>(?)',[Analizita])
+  ; format('~w(?)',[Analizita]).
+
 skribu_signojn(s(S)) :-  
  output(html)
- -> atom_codes(Sgn,S), xml_quote_cdata(Sgn,Quoted,utf8), format(Quoted)
+ -> atom_codes(Sgn,S), xml_quote_cdata(Sgn,Quoted,utf8), write(Quoted)
  ; format('~s',[S]).
 skribu_nombron(n(N)) :-  format('~s',[N]).
 skribu_fremdvorton(f(F)) :-  
   output(html)
-  -> atom_codes(Sgn,F), xml_quote_cdata(Sgn,Quoted,utf8), format(Quoted)
+  -> atom_codes(Sgn,F), xml_quote_cdata(Sgn,Quoted,utf8), write(Quoted)
   ; format('>>>~s<<<',[F]).
 
 marku_dubebla :-
