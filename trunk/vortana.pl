@@ -159,7 +159,7 @@ pron_kunigo(V,Ps) -->          % pron + fin, ekz. "kiujn"
 
 nombr_kunigo(N,nombr) -->          % dudek -> du*dek
   [v(N1,nombr)], [v(N2,nombr)],
-  { atomic_list_concat([N1,N2],'*',N) }.
+  { atomic_list_concat([N1,N2],'/',N) }.
 
 % radika vorto sen finajxo kaj sufiksoj (sed kun prefiksoj)
 radv_sen_suf(V,S) --> [r(V,S)].
