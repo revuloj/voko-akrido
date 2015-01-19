@@ -4,8 +4,12 @@
 :-consult('v_mallongigoj.pl').
 :-consult('v_elementoj.pl').
 :-consult('v_vortoj.pl').
-:-consult('v_radikoj.pl').
+
+% vicordo gravas, vortelementoj kiel radikoj
+% rekoniĝu nur post la pli longaj "normalaj" radikoj
 :-consult('v_revo_radikoj.pl').
+:-consult('v_radikoj.pl').
+
 
 % ĝeneralaj transformoj de vorspeco 
 r(Rad,tr) --> r(Rad,subst).
