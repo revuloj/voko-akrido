@@ -23,7 +23,11 @@ prefiksoj([p(Prefikso,AlSpeco,DeSpeco)|Prefiksoj]) -->
   prefiksoj(Prefiksoj).
 
 radiko(r(Radiko,Speco)) -->
-  r(Radiko,Speco).  
+  r(Radiko,Speco), 
+  % ne traktu afiksojn kiel radikoj
+  % por teĥnikaj prefiksoj kiel nitro-, kilo- k.a. difinu
+  % apartajn regulojn por predikatoj "prefikso" kaj "sufikso"
+  { Speco \= suf, Speco \= pref}.  
 
 sufiksoj([]) --> [].
 sufiksoj([s(Sufikso,AlSpeco,DeSpeco)|Sufiksoj]) -->
@@ -66,6 +70,12 @@ simpla_vorto([p(mal,_),v(Vorto,VSpeco)]) -->
   {
     (VSpeco='adv'; VSpeco='prep')
   }.
+
+% preferu dupartaj kunmetoj
+kunmetita_vorto([AParto,PParto]) -->
+  antau_parto(AParto),
+  post_parto(PParto).
+ 
 
 kunmetita_vorto(Partoj) -->
   antau_partoj(APartoj),
@@ -220,6 +230,15 @@ kunderiv(V,Al) -->
 
 vrt_sen_fin(V,S) --> kunderiv(V,S).
 vrt_sen_fin(V,S) --> radv_sen_fin(V,S,3). % apliku maks. 3 sufiksojn, ĉu sufiĉas?
+
+% foje funkcias apliki sufiksojn nur post kunderivado, ekz. (sen+pied)/ul
+vrt_sen_fin(V,S) -->
+  kunderiv(KDrv,Spc),
+  [s(Suf,Al,De)],
+  { drv_per_suf(Spc,Al,De,S),
+%format('spc ~w~n',S),
+    atomic_list_concat([KDrv,Suf],'/',V)
+  }.
 
 vorto(V,S) --> [v(V,S)]; [u(V,S)]; [i(V,S)]. % vorteto aŭ pronomo
 vorto(V,S) --> pron_kunigo(V,S).                  % pronomo kun finaĵo

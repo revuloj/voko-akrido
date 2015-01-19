@@ -129,6 +129,7 @@ r('ind','adj') --> "ind".
 r('ing','subst') --> "ing".
 r('mal','subst') --> "mal".
 r('obl','subst') --> "obl".
+r('pra',adj) --> "pra".
 r('re','adv') --> "re".
 r('uj','subst') --> "uj".
 r('ul','best') --> "ul".
