@@ -4,7 +4,7 @@
 %%:-consult('derivado.pl').
 :-consult('vortana.pl').
 %:-consult('frazana.pl').
-:-consult('legilo3.pl').
+:-consult('legilo4.pl').
 
 output(html).
 
@@ -36,7 +36,7 @@ analizu_vorton(Neanalizita,Vorto,Speco,Partoj,Rez) :-
 	    vortanalizo(C,Vorto,Speco), Rez=bone;
             vortanalizo(Cmin,Vorto,Speco), Rez=minuskle;
             vortanalizo(Cmaj,Vorto,Speco), Rez=majuskle; 
-	    vortpartoj(Cmin,Partoj), Rez=malstrikte;
+	    vortpartoj(C,Partoj), Rez=malstrikte;
             Rez = neanalizebla
 	  )
         ).
@@ -121,7 +121,7 @@ analizu_teksteron(Tekstero) :-
 
        skribu_signojn(Tekstero);
        skribu_nombron(Tekstero);
-       skribu_fremdvorton(Tekstero);
+       %skribu_fremdvorton(Tekstero);
        format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), throw(Exc).
 
 
@@ -138,6 +138,12 @@ skribu_voston :-
   -> format('~n</pre></body></html>~n')
   ; true.
 
+% fremdvorto...
+skribu_vorton(malstrikte,_,_,_,[fv(F,_)]) :-
+ output(html)
+  -> format(atom(Sgn),'"~s"',[F]), xml_quote_cdata(Sgn,Quoted,utf8), 
+  format('<span class="malstrikte">~s</span>',[Quoted])
+  ; format('"~s"',[F]).
 
 skribu_vorton(malstrikte,Vorto,_,_,Partoj) :-
   output(html) 
@@ -170,10 +176,13 @@ skribu_signojn(s(S)) :-
  -> atom_codes(Sgn,S), xml_quote_cdata(Sgn,Quoted,utf8), write(Quoted)
  ; format('~s',[S]).
 skribu_nombron(n(N)) :-  format('~s',[N]).
-skribu_fremdvorton(f(F)) :-  
+
+/***
+skribu_fremdvorton(fv(F)) :-  
   output(html)
-  -> atom_codes(Sgn,F), xml_quote_cdata(Sgn,Quoted,utf8), write(Quoted)
-  ; format('>>>~s<<<',[F]).
+  -> format(atom(Sgn),'"~s"',[F]), xml_quote_cdata(Sgn,Quoted,utf8), write(Quoted)
+  ; format('"~s"',[F]).
+***/
 
 marku_dubebla :-
   output(html)
