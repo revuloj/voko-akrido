@@ -3,6 +3,9 @@
 %:- use_module(library(memfile)).
 :- consult(analizilo2).
 
+info :-
+  format('revo_art_txt(XmlInput,Txt); analizu_revo_art(Art); analizu_revo_art_litero(Komenco)').
+
 %%% revo_xml('http://retavortaro.de/revo/xml').
 revo_xml('/home/revo/revo/xml').
 txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
