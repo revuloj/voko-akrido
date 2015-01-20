@@ -5,6 +5,8 @@
 :-consult('v_elementoj.pl').
 :-consult('v_vortoj.pl').
 
+:-consult('v_fremdvortoj.pl').
+
 % vicordo gravas, vortelementoj kiel radikoj
 % rekoniĝu nur post la pli longaj "normalaj" radikoj
 :-consult('v_revo_radikoj.pl').

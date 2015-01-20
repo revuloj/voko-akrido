@@ -71,6 +71,9 @@ simpla_vorto([p(mal,_),v(Vorto,VSpeco)]) -->
     (VSpeco='adv'; VSpeco='prep')
   }.
 
+fremda_vorto([fv(Vorto,Speco)]) -->
+  fv(Vorto,Speco).
+
 % preferu dupartaj kunmetoj
 kunmetita_vorto([AParto,PParto]) -->
   antau_parto(AParto),
@@ -292,11 +295,11 @@ postvorto(P,S) --> [V],
 
 %%%%%%%%%%%%%%%%%%%%%%
 
-% https://lalingvisto.wordpress.com/2010/12/05/kiel-krei-vortfaradilon-dua-parto/
-% malboneco = (kvanto de radikoj) – 0.5 * (kvanto de afiksoj)
-  
 vortpartoj(Vorto,Partoj) :-
   phrase(simpla_vorto(Partoj),Vorto).
+
+vortpartoj(Vorto,Partoj) :-
+  phrase(fremda_vorto(Partoj),Vorto).
 
 vortpartoj(Vorto,Partoj) :-
   phrase(radika_vorto(Partoj),Vorto).
