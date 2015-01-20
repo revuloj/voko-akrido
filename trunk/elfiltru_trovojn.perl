@@ -2,6 +2,8 @@
 
 $outhtml = 1;
 
+$REVO = "http://retavortaro.de/revo";
+
 @files = @ARGV;
 
 if ($outhtml) {
@@ -38,7 +40,10 @@ for $file (@files) {
     if (@eraroj) {
 
         if ($outhtml) {
-	    print "<a href='$file'>$file</a>: ";
+	    $fileref = $file; $fileref =~ s|^.*/(.*?)\.html|$1|;
+	    print "<a href='$file'>$fileref</a> ";
+	    print "<a href='$REVO/art/$fileref.html' class='redakti' ";
+	    print "title='artikolo' target='_new'>&#x270E;</a>: ";
 	} else {
 	    print "$file: ";
 	}
