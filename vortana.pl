@@ -40,6 +40,25 @@ finajxo([f(Fino,FSpeco)]) -->
 finajxo([f(Fino,FSpeco)]) -->  "/", % glutu "/" ĉe /a /o ktp.        
   f(Fino,FSpeco).
 
+kunderivita_sen_fino([r(Adv,adv),r(Verb,VSpc)]) -->
+  (radiko(r(Adv,adv)); radiko(r(Adv,adj))),
+  radiko(r(Verb,VSpc)), { subspc(VSpc,verb) }. 
+
+kunderivita_sen_fino([r(Adv,adj),r(Subst,SSpc)]) -->
+  (radiko(r(Adv,adv)); radiko(r(Adv,adj))),
+  radiko(r(Subst,SSpc)), { subspc(SSpc,subst) }. 
+
+kunderivita_vorto(Partoj) -->
+  kunderivita_sen_fino(Kdsf),
+  finajxo(Fino),
+  { append(Kdsf,Fino,Partoj) }.
+
+kunderivita_vorto(Partoj) -->
+  kunderivita_sen_fino(Kdsf),
+  sufiksoj(Sufiksoj),
+  finajxo(Fino),
+  { append([Kdsf,Sufiksoj,Fino],Partoj) }.
+
 pronomo_sen_fino([u(Pronomo,Speco)]) -->
   u(Pronomo,Speco).
 
@@ -236,6 +255,16 @@ kunderiv(V,Al) -->
   { subspc(VSpc,De), %!, 
     atomic_list_concat([Pre,Vsf],'+',V) }.
 
+kunderiv(V,adj) --> % altkreska, longdaura, plenkreska
+  ([r(Adv,adv)];[r(Adv,adj)]),
+  [r(Verb,VSpc)], 
+  { subspc(VSpc,verb), atomic_list_concat([Adv,Verb],'+',V) }.
+
+kunderiv(V,adj) --> % multlingva
+  [r(Adj,adj)],
+  [r(Subst,SSpc)],
+  { subspc(SSpc,subst), atomic_list_concat([Adj,Subst],'+',V) }.
+
 vrt_sen_fin(V,S) --> kunderiv(V,S).
 vrt_sen_fin(V,S) --> radv_sen_fin(V,S,3). % apliku maks. 3 sufiksojn, ĉu sufiĉas?
 
@@ -308,6 +337,9 @@ vortpartoj(Vorto,Partoj) :-
 
 vortpartoj(Vorto,Partoj) :-
   phrase(radika_vorto(Partoj),Vorto).
+
+vortpartoj(Vorto,Partoj) :-
+  phrase(kunderivita_vorto(Partoj),Vorto).
 
 % foje funkcias apliki prefiksojn nur al jam kunmetita vorto, ekz. ne/(progres-pov/a)
 vortpartoj(Vorto,Partoj) :-
