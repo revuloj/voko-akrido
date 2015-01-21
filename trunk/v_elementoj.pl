@@ -75,6 +75,7 @@ s(op,subst,nombr) --> "op".
 s(uj,subst,subst) --> "uj".
 s(ul,best,adj) --> "ul".
 s(um,_,_) --> "um".
+s(um,tr,_) --> "um". % plenumi, brakumi, krucumi, lavumi ktp.
 
 /************ prefiksoj 
  (2) vortspeco, al kiu ghi estas aplikebla,

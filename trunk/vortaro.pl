@@ -14,8 +14,9 @@
 
 
 % ĝeneralaj transformoj de vorspeco 
-r(Rad,tr) --> r(Rad,subst).
-r(Rad,subst) --> r(Rad,nombr).
+r(Rad,tr) --> r(Rad,subst). % kauzo -> kauzi
+r(Rad,subst) --> r(Rad,nombr). % tri -> trio
+r(Rad,adj) --> r(Rad,adv). % super -> super/a -> superulo
 
 /********************* sercxo en la vortaro ******************
 
