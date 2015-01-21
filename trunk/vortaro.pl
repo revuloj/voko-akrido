@@ -17,6 +17,7 @@
 r(Rad,tr) --> r(Rad,subst). % kauzo -> kauzi
 r(Rad,subst) --> r(Rad,nombr). % tri -> trio
 r(Rad,adj) --> r(Rad,adv). % super -> super/a -> superulo
+%r(Rad,adv) --> r(Rad,adj). % alt/a -> alt/e -> altkreska
 
 /********************* sercxo en la vortaro ******************
 

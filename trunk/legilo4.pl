@@ -33,10 +33,15 @@ minuskloj([M]) --> minusklo(M).
 neliteroj([N|Nj]) --> nelitero(N), neliteroj(Nj).
 neliteroj([N]) --> nelitero(N).
 
-% vortoj ...
-vorto(V) --> minuskloj(V).
-vorto([M|V]) --> majusklo(M), minuskloj(V).
+literoj([L|Lj]) --> litero(L), literoj(Lj).
+literoj([L,O|Lj]) --> litero(L), oblikvo(O), literoj(Lj). % ne permesu / enn la komenco
+literoj([L,S|Lj]) --> litero(L), streketo(S), literoj(Lj). % ne permesu - en la komenco (?)
+literoj([L]) --> litero(L).
 
+% vortoj ...
+%%%vorto(V) --> minuskloj(V).
+%%%vorto([M|V]) --> majusklo(M), minuskloj(V).
+vorto(V) --> literoj(V).
 
 vortoj([V]) --> vorto(C), { atom_codes(V,C) }.
 vortoj([V|Vj]) --> vorto(C), { atom_codes(V,C) }, spaco, vortoj(Vj).
@@ -67,11 +72,12 @@ vteksto([v(V),s(N)|T]) --> vorto(V),
 vteksto([n(V),s(N)|T]) --> numero(V),
                      neliteroj(N), vteksto(T).
 
-%%vteksto([f(V),s(N)|T]) --> fremdvorto(V),
+%    { format('~s ',[V]) }. %for debugging%%vteksto([f(V),s(N)|T]) --> fremdvorto(V),
 %%                     neliteroj(N), vteksto(T).
 
-vteksto([v(V)]) --> vorto(V).
-%    { format('~s ',[V]) }. %for debugging
+vteksto([v(V)]) --> vorto(V),
+   { debug(V) }.
+
 vteksto([n(N)]) --> numero(N).
 
 vteksto([]) --> [].
@@ -92,3 +98,5 @@ fraz_analizo(Frazo) :-
   phrase(frazo(F),Frazo),
   format('~q~n',[F]).
 
+debug(Str) :-
+  format('~s ',[Str]), !. 
