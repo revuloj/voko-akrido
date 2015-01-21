@@ -37,6 +37,9 @@ sufiksoj([s(Sufikso,AlSpeco,DeSpeco)|Sufiksoj]) -->
 finajxo([f(Fino,FSpeco)]) -->               
   f(Fino,FSpeco).
 
+finajxo([f(Fino,FSpeco)]) -->  "/", % glutu "/" ĉe /a /o ktp.        
+  f(Fino,FSpeco).
+
 pronomo_sen_fino([u(Pronomo,Speco)]) -->
   u(Pronomo,Speco).
 
@@ -74,14 +77,16 @@ simpla_vorto([p(mal,_),v(Vorto,VSpeco)]) -->
 fremda_vorto([fv(Vorto,Speco)]) -->
   fv(Vorto,Speco).
 
+interkunmeto --> []; "-". % glutu strektetojn en kunmetitaj vortoj
+
 % preferu dupartaj kunmetoj
 kunmetita_vorto([AParto,PParto]) -->
-  antau_parto(AParto),
+  antau_parto(AParto), interkunmeto,
   post_parto(PParto).
  
 
 kunmetita_vorto(Partoj) -->
-  antau_partoj(APartoj),
+  antau_partoj(APartoj), interkunmeto,
   post_parto(PParto),
   { APartoj \= [], append(APartoj,[PParto],Partoj) }.
 
@@ -92,7 +97,7 @@ pref_kunmetita_vorto([Pref|Partoj]) -->
 
 antau_partoj([]) --> [].
 antau_partoj([P1|P2]) -->
-  antau_parto(P1),
+  antau_parto(P1), interkunmeto,
   antau_partoj(P2).
 
 antau_parto(Partoj) -->
