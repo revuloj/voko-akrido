@@ -26,3 +26,6 @@ v('SAT',subst) --> "SAT".
 v('PIV',subst) --> "PIV".
 v('PIV-oj',subst) --> "PIV-oj".
 v('UEA',subst) --> "UEA".
+v('n-a',adj) --> "n-a".
+v('s-ro',best) --> "s-ro".
+v('d-ro',best) --> "d-ro".

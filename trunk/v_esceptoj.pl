@@ -20,3 +20,6 @@ r(fripon,best) --> "fripon".
 r('x-aks',subst) --> "x-aks".
 r('y-aks',subst) --> "y-aks".
 r('z-aks',subst) --> "z-aks".
+r('σ-algebr',subst) --> "σ-algebr".
+r('C-maĵor',adj) --> "C-maĵor".
+r('n-fin/aĵ',subst) --> "n-finaĵ".
