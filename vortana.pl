@@ -96,7 +96,7 @@ simpla_vorto([p(mal,_),v(Vorto,VSpeco)]) -->
 fremda_vorto([fv(Vorto,Speco)]) -->
   fv(Vorto,Speco).
 
-interkunmeto --> []; "-". % glutu strektetojn en kunmetitaj vortoj
+interkunmeto --> "-"; []. % glutu strektetojn en kunmetitaj vortoj
 
 % preferu dupartaj kunmetoj
 kunmetita_vorto([AParto,PParto]) -->

@@ -61,47 +61,55 @@ parto_nombro(Vorto,Signo,Nombro) :-
   proper_length(Partoj,Nombro).
 
 
-analizu_tekston_kopie(FileName,OutFileName) :-
-  atom(FileName),
-  phrase_from_file(teksto(T),FileName,[encoding(utf8)]),!,
+analizu_tekston_outfile(InFileName,OutFileName,BlankaListo) :-
+  atom(InFileName),
+  phrase_from_file(teksto(T),InFileName,[encoding(utf8)]),!,
   setup_call_cleanup(
      open(OutFileName,write,Out),
      with_output_to(Out,
-       analizu_tekston_kopie_(T)),
+       analizu_tekston_kopie_(T,BlankaListo)),
      close(Out)
   ).
 
-analizu_tekston_kopie(InCodes,OutFileName) :-
+analizu_tekston_outfile(InCodes,OutFileName,BlankaListo) :-
   is_list(InCodes),
   phrase(teksto(T),InCodes),!,
   setup_call_cleanup(
      open(OutFileName,write,Out),
      with_output_to(Out,
-       analizu_tekston_kopie_(T)),
+       analizu_tekston_kopie_(T,BlankaListo)),
      close(Out)
   ).
 
 % analizas tutan tekstodosieron, kaj redonas la tekston kun
 % ne analizeblaj vortoj markitaj
-analizu_tekston_kopie(FileName) :-
+analizu_tekston_kopie(FileName,BlankaListo) :-
   atom(FileName),
   phrase_from_file(teksto(T),FileName,[encoding(utf8)]),!,
-  analizu_tekston_kopie_(T).
+  analizu_tekston_kopie_(T,BlankaListo).
 
-analizu_tekston_kopie(Stream) :-
+analizu_tekston_kopie(Stream,BlankaListo) :-
   is_stream(Stream),
   phrase_from_stream(teksto(T),Stream),!,
-  analizu_tekston_kopie_(T).
+  analizu_tekston_kopie_(T,BlankaListo).
 
-analizu_tekston_kopie(Txt) :-
+analizu_tekston_kopie(Txt,BlankaListo) :-
   is_list(Txt),
   phrase(teksto(T),Txt),!,
-  analizu_tekston_kopie_(T).
+  analizu_tekston_kopie_(T,BlankaListo).
 
-analizu_tekston_kopie_(T) :-
+analizu_tekston_kopie_(T,BlankaListo) :-
   skribu_kapon,
   forall(member(M,T),
-      once(analizu_teksteron(M))
+      once(
+        (
+	   M = v(V), 
+	   memberchk(V,BlankaListo),
+	   skribu_vorton(blanka,V,_,_,_)
+	   ;
+	   analizu_teksteron(M)
+	)
+      )
   ),!,
   skribu_voston.
 
@@ -170,6 +178,11 @@ skribu_vorton(dubebla,_,Analizita,_,_) :-
   output(html)
   -> format('<span class="dubebla">~w</span>(?)',[Analizita])
   ; format('~w(?)',[Analizita]).
+
+skribu_vorton(blanka,Vorto,_,_,_) :-
+  output(html)
+  -> format('<span class="blanka">~s</span>',[Vorto])
+  ; format('>>~s<<',[Vorto]).
 
 skribu_signojn(s(S)) :-  
  output(html)

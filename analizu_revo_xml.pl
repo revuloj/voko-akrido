@@ -1,7 +1,9 @@
 :- use_module(library(process)).
 :- use_module(library(unix)).
 %:- use_module(library(memfile)).
+
 :- consult(analizilo2).
+:- consult(revo_blanka_listo).
 
 info :-
   format('revo_art_txt(XmlInput,Txt); analizu_revo_art(Art); analizu_revo_art_litero(Komenco)').
@@ -33,6 +35,15 @@ revo_art_txt(XmlInput,Txt) :-
   close(TxtOut).
 ***/
 
+blanka_listo(Art,Listo) :-
+  once( 
+    (
+     bl(Art,Listo); 
+     atom_concat('/',Art1,Art), bl(Art1,Listo);
+     Listo=[]
+    ) 
+  ).
+
 revo_art_txt(XmlInput,Txt) :-
 % xsltproc $VOKO/xsl/revotxt_eo.xsl $infile
   xslt(XsltProc), txt_xsl(Xsl),
@@ -48,7 +59,8 @@ analizu_revo_art(Art) :-
   revo_xml(XmlPado),
   atomic_list_concat([XmlPado,'/',Art,'.xml'],XmlInput),
   revo_art_txt(XmlInput,Txt),
-  analizu_tekston_kopie(Txt).
+  blanka_listo(Art,BL),
+  analizu_tekston_kopie(Txt,BL).
 
 analizu_revo_art_litero(Litero) :-
    revo_xml(XmlPado), skribo_pado(Kontrolitaj),
@@ -62,7 +74,8 @@ analizu_revo_art_litero(Litero) :-
        atomic_list_concat([Kontrolitaj,Unua,Art,'.html'],HtmlFile),
        format('~w -> ~w~n',[XmlFile,HtmlFile]),
        revo_art_txt(XmlFile,Txt),
-       analizu_tekston_kopie(Txt,HtmlFile)
+       blanka_listo(Art,BL),
+       analizu_tekston_outfile(Txt,HtmlFile,BL)
      )
    ).
 

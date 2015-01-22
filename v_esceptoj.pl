@@ -16,3 +16,7 @@ v('post/morgaŭ',adv) --> "postmorgaŭ".
 r(vir,best) --> "vir". % malfacile marki kiel klaso "bestoj" en Revo, ĉar temas ekz. nur pri sekso...
 r(putin,best) --> "putin". % alternative, eble pli bone difinu la escepton en revo_radikoj.pl
 r(fripon,best) --> "fripon".
+
+r('x-aks',subst) --> "x-aks".
+r('y-aks',subst) --> "y-aks".
+r('z-aks',subst) --> "z-aks".
