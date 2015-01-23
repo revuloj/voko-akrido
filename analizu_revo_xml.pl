@@ -4,6 +4,7 @@
 
 :- consult(analizilo2).
 :- consult(revo_blanka_listo).
+:- consult(v_revo_evitindaj).
 
 info :-
   format('revo_art_txt(XmlInput,Txt); analizu_revo_art(Art); analizu_revo_art_litero(Komenco)').
@@ -36,13 +37,20 @@ revo_art_txt(XmlInput,Txt) :-
 ***/
 
 blanka_listo(Art,Listo) :-
-  once( 
-    (
-     bl(Art,Listo); 
-     atom_concat('/',Art1,Art), bl(Art1,Listo);
-     Listo=[]
-    ) 
-  ).
+  once((
+      atom_concat('/',Art1,Art);
+      Art1 = Art
+    )),
+  once((
+      bl(Art1,Lst); 
+      Lst = []
+    )),
+  once((
+      evi(Art1,Vrt), Vrt1 = [Vrt];
+      Vrt1 = []
+    )),
+  append(Vrt1,Lst,Listo).
+
 
 revo_art_txt(XmlInput,Txt) :-
 % xsltproc $VOKO/xsl/revotxt_eo.xsl $infile
