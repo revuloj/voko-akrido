@@ -12,4 +12,4 @@ bl(alkad,
 bl(amfibr,
   ["n-amfibraĥo","Bean"]).
 bl(arkansas,
-   "Wal-Mart"]).
+  ["Wal-Mart"]).
