@@ -17,12 +17,12 @@ output(html).
 analizu_vorton(N) :-
 	not(N = ''), 
         ( atom(N) -> atom_codes(N,C); C=N ),
-        minuskligo(C,Cmin), majuskligo(C,Cmaj),
+        minuskligo(C,Cmin), %majuskligo(C,Cmaj),
 	once(
           (
 	    vortanalizo(C,V,S), format('~w (~w)~n',[V,S]);
             vortanalizo(Cmin,V,S), format('~w (~w)~n',[V,S]);
-            vortanalizo(Cmaj,V,S), format('~w (~w)~n',[V,S]);
+            %vortanalizo(Cmaj,V,S), format('~w (~w)~n',[V,S]);
 	    vortpartoj(Cmin,P), format('~w - malstrikte!~n',[P]);
 	    format('~s - NE analizebla!~n',[C])
 	  )
@@ -31,12 +31,12 @@ analizu_vorton(N) :-
 analizu_vorton(Neanalizita,Vorto,Speco,Partoj,Rez) :-
 	not(Neanalizita = ''), 
         ( atom(Neanalizita) -> atom_codes(Neanalizita,C); C=Neanalizita ),
-        minuskligo(C,Cmin), majuskligo(C,Cmaj),
+        minuskligo(C,Cmin), %majuskligo(C,Cmaj),
 	once(
           (
 	    vortanalizo(C,Vorto,Speco), Rez=bone;
             vortanalizo(Cmin,Vorto,Speco), Rez=minuskle;
-            vortanalizo(Cmaj,Vorto,Speco), Rez=majuskle; 
+            % vortanalizo(Cmaj,Vorto,Speco), Rez=majuskle; 
 	    vortpartoj(C,Partoj), Rez=malstrikte;
             Rez = neanalizebla
 	  )
@@ -108,6 +108,10 @@ analizu_tekston_kopie_(T,VerdaListo) :-
 	   memberchk(V,VerdaListo),
 	   skribu_vorton(verda,V,_,_,_)
 	   ;
+           M=v(V), atom_codes(Mlg,V), 
+	   mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
+           skribu_vorton(mlg,V,_,_,_)
+	   ;
 	   analizu_teksteron(M)
 	)
       )
@@ -166,9 +170,11 @@ skribu_vorton(minuskle,_,Analizita,_,_) :-
   majuskligo_atom(Analizita,Majuskla),
   format('~w',Majuskla).
 
+/***
 skribu_vorton(majuskle,_,Analizita,_,_) :-
   minuskligo_atom(Analizita,Minuskla),
   format('~w',Minuskla).
+***/
 
 skribu_vorton(neanalizebla,Vorto,_,_,_) :-
   output(html)
@@ -184,6 +190,11 @@ skribu_vorton(verda,Vorto,_,_,_) :-
   output(html)
   -> format('<span class="verda">~s</span>',[Vorto])
   ; format('>>~s<<',[Vorto]).
+
+skribu_vorton(mlg,Vorto,_,_,_) :-
+  output(html)
+  -> format('<span class="mlg">~s</span>',[Vorto])
+  ; format('~s',[Vorto]).
 
 skribu_signojn(s(S)) :-  
  output(html)
