@@ -16,20 +16,20 @@ v('kc',adj) --> "kc". % kaj ceteraj
 v('ks',adj) --> "ks". % kaj similaj
 v('kp',verb) --> "kp". % komparu
 v('resp',adv) --> "resp".
-v('cm',subst) --> "cm".
-v('km',subst) --> "km".
-v('mm',subst) --> "mm".
-v('Rim',subst) --> "Rim".
-v('proks',adv) --> "proks".
-v('vd',verb) --> "vd".
-v('SAT',subst) --> "SAT".
-v('OA',subst) --> "OA".
-v('PV',subst) --> "PV".
-v('PIV',subst) --> "PIV".
-v('PIV-oj',subst) --> "PIV-oj".
-v('UEA',subst) --> "UEA".
-v('n-a',adj) --> "n-a".
-v('s-ro',best) --> "s-ro".
-v('d-ro',best) --> "d-ro".
-v('DNA',subst) --> "DNA".
-v('RNA',subst) --> "RNA".
+v('cm',subst).
+v('km',subst).
+v('mm',subst).
+v('Rim',subst).
+v('proks',adv).
+v('vd',verb).
+v('SAT',subst).
+v('OA',subst).
+v('PV',subst).
+v('PIV',subst).
+v('PIV-oj',subst).
+v('UEA',subst).
+v('n-a',adj).
+v('s-ro',best).
+v('d-ro',best).
+v('DNA',subst).
+v('RNA',subst).
