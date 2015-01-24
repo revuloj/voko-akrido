@@ -8,132 +8,132 @@
   personaj pronomoj kiel rad. 
 *****************/
 
-r('mi','adj') --> "mi".
-r('ci','adj') --> "ci".
-r('li','adj') --> "li".
-r('ŝi','adj') --> "ŝi".
-r('ĝi','adj') --> "ĝi".
-r('oni','adj') --> "oni".
-r('ni','adj') --> "ni".
-r('vi','adj') --> "vi".
-r('ili','adj') --> "ili".
-r('si','adj') --> "si".
+r('mi',adj).
+r('ci',adj).
+r('li',adj).
+r('ŝi',adj).
+r('ĝi',adj).
+r('oni',adj).
+r('ni',adj).
+r('vi',adj).
+r('ili',adj).
+r('si',adj).
 
 /**********
  * aliaj pronomoj/tabelvortoj kiel radikoj
 **********/
-r('kial','subst') --> "kial".
-r('ĉiam','adv') --> "ĉiam".
-r('tiam','adv') --> "tiam".
-r('tiel','adv') --> "tiel".
-r('iom','adv') --> "iom".
-r('kiom','adv') --> "kiom".
-r('tiom','adv') --> "tiom".
-r('ĉiom','adv') --> "ĉiom".
-r('tie','adj') --> "tie".
+r('kial',subst).
+r('ĉiam',adv).
+r('tiam',adv).
+r('tiel',adv).
+r('iom',adv).
+r('kiom',adv).
+r('tiom',adv).
+r('ĉiom',adv).
+r('tie',adj).
 
 /**************
  * nombroj kiel radiko 
 **************/
-r('nul','nombr') --> "nul".
-r('unu','nombr') --> "unu".
-r('du','nombr') --> "du".
-r('tri','nombr') --> "tri".
-r('kvar','nombr') --> "kvar".
-r('kvin','nombr') --> "kvin".
-r('ses','nombr') --> "ses".
-r('sep','nombr') --> "sep".
-r('ok','nombr') --> "ok".
-r('naŭ','nombr') --> "naŭ".
-r('dek','nombr') --> "dek".
-r('cent','nombr') --> "cent".
-r('mil','nombr') --> "mil".
+r('nul',nombr).
+r('unu',nombr).
+r('du',nombr).
+r('tri',nombr).
+r('kvar',nombr).
+r('kvin',nombr).
+r('ses',nombr).
+r('sep',nombr).
+r('ok',nombr).
+r('naŭ',nombr).
+r('dek',nombr).
+r('cent',nombr).
+r('mil',nombr).
 
 /*****************
  * kelkaj prepozicioj kaj prim. adv, 
    kiuj estas uzeblaj radike 
 ******************/
 
-r('ajn','adj') --> "ajn".
-r('anstataŭ','adv') --> "anstataŭ".
-r('anstataŭ','tr') --> "anstataŭ".
-r('antaŭ','adv') --> "antaŭ".
-r('al','adv') --> "al".
-r('antaŭ','adv') --> "antaŭ".
-r('antaŭ','tr') --> "antaŭ".
-r('apud','adv') --> "apud".
-r('ĉirkaŭ','adv') --> "ĉirkaŭ".
-r('ĉirkaŭ','tr') --> "ĉirkaŭ".
-r('ekster','adv') --> "ekster".
-r('el','adv') --> "el".
-r('en','adv') --> "en".
-r('ĝis','adv') --> "ĝis".
-r('inter','adv') --> "inter".
-r('jam','adv') --> "jam".
-r('jen','adv') --> "jen".
-r('jes','tr') --> "jes".
-r('kontraŭ','adv') --> "kontraŭ".
-r('kontraŭ','tr') --> "kontraŭ".
-r('krom','adv') --> "krom".
-r('kun','adv') --> "kun".
-r('ne','tr') --> "ne".
-r('nun','adv') --> "nun".
-r('nur','adv') --> "nur".
-r('post','adv') --> "post".
-r('preter','adv') --> "preter".
-r('per','tr') --> "per".
-r('pli','adv') --> "pli".
-r('plu','adv') --> "plu".
-r('pri','adv') --> "pri".
-r('sub','adv') --> "sub".
-r('super','adv') --> "super".
-r('super','tr') --> "super".
-r('sur','adv') --> "sur".
-r('trans','adv') --> "trans".
-r('ĵus','adj') --> "ĵus".
-r('for','adj') --> "for".
-r('hodiaŭ','adj') --> "hodiaŭ".
-r('hieraŭ','adj') --> "hieraŭ".
-r('morgaŭ','adj') --> "morgaŭ".
-r('plus','subst') --> "plus".
+r('ajn',adj).
+r('anstataŭ',adv).
+r('anstataŭ',tr).
+r('antaŭ',adv).
+r('al',adv).
+r('antaŭ',adv).
+r('antaŭ',tr).
+r('apud',adv).
+r('ĉirkaŭ',adv).
+r('ĉirkaŭ',tr).
+r('ekster',adv).
+r('el',adv).
+r('en',adv).
+r('ĝis',adv).
+r('inter',adv).
+r('jam',adv).
+r('jen',adv).
+r('jes',tr).
+r('kontraŭ',adv).
+r('kontraŭ',tr).
+r('krom',adv).
+r('kun',adv).
+r('ne',tr).
+r('nun',adv).
+r('nur',adv).
+r('post',adv).
+r('preter',adv).
+r('per',tr).
+r('pli',adv).
+r('plu',adv).
+r('pri',adv).
+r('sub',adv).
+r('super',adv).
+r('super',tr).
+r('sur',adv).
+r('trans',adv).
+r('ĵus',adj).
+r('for',adj).
+r('hodiaŭ',adj).
+r('hieraŭ',adj).
+r('morgaŭ',adj).
+r('plus',subst).
 
 /**********
  * afiksoj kaj interjekcioj kiel radikoj
 **********/
 
-r('aĉ','adj') --> "aĉ".
-r('adiaŭ','subst') --> "adiaŭ".
-r('aĵ','subst') --> "aĵ".
-r('aĥ','ntr') --> "aĥ".
-r('an','best') --> "an".
-r('ar','subst') --> "ar".
-r('ĉef','subst') --> "ĉef".
-r('dis','adv') --> "dis".
-r('ebl','adv') --> "ebl".
-r('ec','subst') --> "ec".
-r('eg','adj') --> "eg".
-r('ej','subst') --> "ej".
-r('ek','intj') --> "ek".
-r('eks','adj') --> "eks".
-r('em','adj') --> "em".
-r('er','subst') --> "er".
-r('estr','best') --> "estr".
-r('et','adj') --> "et".
-r('fi','intj') --> "fi".
-r('id','best') --> "id".
-r('ig','tr') --> "ig".
-r('iĝ','ntr') --> "iĝ".
-r('il','subst') --> "il".
-r('in','best') --> "in".
-r('ind','adj') --> "ind".
-r('ing','subst') --> "ing".
-r('mal','subst') --> "mal".
-r('obl','subst') --> "obl".
-r('pra',adj) --> "pra".
-r('re','adv') --> "re".
-r('uj','subst') --> "uj".
-r('ul','best') --> "ul".
-r('um','ntr') --> "um".
+r('aĉ',adj).
+r('adiaŭ',subst).
+r('aĵ',subst).
+r('aĥ',ntr).
+r('an',best).
+r('ar',subst).
+r('ĉef',subst).
+r('dis',adv).
+r('ebl',adv).
+r('ec',subst).
+r('eg',adj).
+r('ej',subst).
+r('ek',intj).
+r('eks',adj).
+r('em',adj).
+r('er',subst).
+r('estr',best).
+r('et',adj).
+r('fi',intj).
+r('id',best).
+r('ig',tr).
+r('iĝ',ntr).
+r('il',subst).
+r('in',best).
+r('ind',adj).
+r('ing',subst).
+r('mal',subst).
+r('obl',subst).
+r('pra',adj).
+r('re',adv).
+r('uj',subst).
+r('ul',best).
+r('um',ntr).
 
 
 

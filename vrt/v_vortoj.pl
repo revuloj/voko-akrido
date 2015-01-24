@@ -1,140 +1,140 @@
 /*************
    pretaj vortoj 
 *************/
-v('aĉ','intj') --> "aĉ".
-v('adiaŭ','intj') --> "adiaŭ".
-v('ajn','advpart') --> "ajn".
-v('aĥ','intj') --> "aĥ".
-v('al','prep') --> "al".
-v('almenaŭ','adv') --> "almenaŭ".
-v('ambaŭ','pron') --> "ambaŭ".
-v('ankaŭ','adv') --> "ankaŭ".
-v('ankoraŭ','adv') --> "ankoraŭ".
-v('anstataŭ','prep') --> "anstataŭ".
-v('anstataŭ','infprep') --> "anstataŭ".
-v('antaŭ','prep') --> "antaŭ".
-v('antaŭ','infprep') --> "antaŭ".
-v('apenaŭ','adv') --> "apenaŭ".
-v('apud','prep') --> "apud".
-v('aŭ','konj') --> "aŭ".
-v('baldaŭ','adv') --> "baldaŭ".
-v('cent','nombr') --> "cent".
-v('ĉar','konj') --> "ĉar".
-v('ĉe','prep') --> "ĉe".
-v('ĉi','advpart') --> "ĉi".
-v('ĉial','adv') --> "ĉial".
-v('ĉiam','adv') --> "ĉiam".
-v('ĉiel','adv') --> "ĉiel".
-v('ĉiom','adv') --> "ĉiom".
-v('ĉirkaŭ','prep') --> "ĉirkaŭ".
-v('ĉu','adv') --> "ĉu".
-v('da','prep') --> "da".
-v('de','prep') --> "de".
-v('dek','nombr') --> "dek".
-v('des','adv') --> "des".
-v('do','konj') --> "do".
-v('du','nombr') --> "du".
-v('dum','prep') --> "dum".
-v('eĉ','adv') --> "eĉ".
-v('ekster','prep') --> "ekster".
-v('el','prep') --> "el".
-v('en','prep') --> "en".
-v('fi','intj') --> "fi".
-v('for','adv') --> "for".
-v('ĝis','prep') --> "ĝis".
-v('ho','intj') --> "ho".
-v('hieraŭ','adv') --> "hieraŭ".
-v('hodiaŭ','adv') --> "hodiaŭ".
-v('hura','intj') --> "hura".
-v('ial','adv') --> "ial".
-v('iam','adv') --> "iam".
-v('iel','adv') --> "iel".
-v('inter','prep') --> "inter".
-v('iom','adv') --> "iom".
-v('ja','adv') --> "ja".
-v('jam','adv') --> "jam".
-v('je','prep') --> "je".
-v('jen','adv') --> "jen".
-v('jes','intj') --> "jes".
-v('ju','adv') --> "ju".
-v('ĵus','adv') --> "ĵus".
-v('kaj','konj') --> "kaj".
-v('ke','subj') --> "ke".
-v('kial','adv') --> "kial".
-v('kiam','adv') --> "kiam".
-v('kiel','adv') --> "kiel".
-v('ĉies','pron') --> "ĉies".
-v('kies','pron') --> "kies".
-v('kiom','adv') --> "kiom".
-v('kontraŭ','prep') --> "kontraŭ".
-v('krom','prep') --> "krom".
-v('krom','infprep') --> "krom".
-v('kun','prep') --> "kun".
-v('kvankam','subj') --> "kvankam".
-v('kvar','nombr') --> "kvar".
-v('kvazaŭ','subj') --> "kvazaŭ".
-v('kvin','nombr') --> "kvin".
-v('la','art') --> "la".
-v('l''','art') --> "l'".
-v('laŭ','prep') --> "laŭ".
-v('malgraŭ','prep') --> "malgraŭ".
-v('mem','adv') --> "mem".
-v('mil','nombr') --> "mil".
-v('minus','konj') --> "minus".
-v('morgaŭ','adv') --> "morgaŭ".
-v('naŭ','nombr') --> "naŭ".
-v('ne','adv') --> "ne".
-v('ne','intj') --> "ne".
-v('nek','konj') --> "nek".
-v('nenial','adv') --> "nenial".
-v('neniam','adv') --> "neniam".
-v('neniel','adv') --> "neniel".
-v('nenies','pron') --> "nenies".
-v('ies','pron') --> "ies".
-v('kiom','adv') --> "kiom".
-v('neniom','adv') --> "neniom".
-v('nu','intj') --> "nu".
-v('nul','nombr') --> "nul".
-v('nun','adv') --> "nun".
-v('nur','adv') --> "nur".
-v('ok','nomr') --> "ok".
-v('ol','konj') --> "ol".
-v('per','prep') --> "per".
-v('plej','adv') --> "plej".
-v('pli','adv') --> "pli".
-v('plu','adv') --> "plu".
-v('plus','konj') --> "plus".
-v('po','prep') --> "po".
-v('por','prep') --> "por".
-v('por','infprep') --> "por".
-v('post','prep') --> "post".
-v('preskaŭ','adv') --> "preskaŭ".
-v('preter','prep') --> "preter".
-v('pri','prep') --> "pri".
-v('pro','prep') --> "pro".
-v('se','subj') --> "se".
-v('sed','konj') --> "sed".
-v('sen','prep') --> "sen".
-v('sen','infprep') --> "sen".
-v('sep','nombr') --> "sep".
-v('ses','nombr') --> "ses".
-v('sub','prep') --> "sub".
-v('super','prep') --> "super".
-v('sur','prep') --> "sur".
-v('tamen','konj') --> "tamen".
-v('tial','adv') --> "tial".
-v('tiam','adv') --> "tiam".
-v('tiel','adv') --> "tiel".
-v('ties','pron') --> "ties".
-v('tiom','adv') --> "tiom".
-v('tra','prep') --> "tra".
-v('trans','prep') --> "trans".
-v('tre','adv') --> "tre".
-v('tri','nombr') --> "tri".
-v('tro','adv') --> "tro".
-v('tuj','adv') --> "tuj".
-v('unu','nombr') --> "unu".
-v('ve','intj') --> "ve".
+v('aĉ',intj).
+v('adiaŭ',intj).
+v('ajn',advpart).
+v('aĥ',intj).
+v('al',prep).
+v('almenaŭ',adv).
+v('ambaŭ',pron).
+v('ankaŭ',adv).
+v('ankoraŭ',adv).
+v('anstataŭ',prep).
+v('anstataŭ',infprep).
+v('antaŭ',prep).
+v('antaŭ',infprep).
+v('apenaŭ',adv).
+v('apud',prep).
+v('aŭ',konj).
+v('baldaŭ',adv).
+v('cent',nombr).
+v('ĉar',konj).
+v('ĉe',prep).
+v('ĉi',advpart).
+v('ĉial',adv).
+v('ĉiam',adv).
+v('ĉiel',adv).
+v('ĉiom',adv).
+v('ĉirkaŭ',prep).
+v('ĉu',adv).
+v('da',prep).
+v('de',prep).
+v('dek',nombr).
+v('des',adv).
+v('do',konj).
+v('du',nombr).
+v('dum',prep).
+v('eĉ',adv).
+v('ekster',prep).
+v('el',prep).
+v('en',prep).
+v('fi',intj).
+v('for',adv).
+v('ĝis',prep).
+v('ho',intj).
+v('hieraŭ',adv).
+v('hodiaŭ',adv).
+v('hura',intj).
+v('ial',adv).
+v('iam',adv).
+v('iel',adv).
+v('inter',prep).
+v('iom',adv).
+v('ja',adv).
+v('jam',adv).
+v('je',prep).
+v('jen',adv).
+v('jes',intj).
+v('ju',adv).
+v('ĵus',adv).
+v('kaj',konj).
+v('ke',subj).
+v('kial',adv).
+v('kiam',adv).
+v('kiel',adv).
+v('ĉies',pron).
+v('kies',pron).
+v('kiom',adv).
+v('kontraŭ',prep).
+v('krom',prep).
+v('krom',infprep).
+v('kun',prep).
+v('kvankam',subj).
+v('kvar',nombr).
+v('kvazaŭ',subj).
+v('kvin',nombr).
+v('la',art).
+v('l''',art).
+v('laŭ',prep).
+v('malgraŭ',prep).
+v('mem',adv).
+v('mil',nombr).
+v('minus',konj).
+v('morgaŭ',adv).
+v('naŭ',nombr).
+v('ne',adv).
+v('ne',intj).
+v('nek',konj).
+v('nenial',adv).
+v('neniam',adv).
+v('neniel',adv).
+v('nenies',pron).
+v('ies',pron).
+v('kiom',adv).
+v('neniom',adv).
+v('nu',intj).
+v('nul',nombr).
+v('nun',adv).
+v('nur',adv).
+v('ok',nomr).
+v('ol',konj).
+v('per',prep).
+v('plej',adv).
+v('pli',adv).
+v('plu',adv).
+v('plus',konj).
+v('po',prep).
+v('por',prep).
+v('por',infprep).
+v('post',prep).
+v('preskaŭ',adv).
+v('preter',prep).
+v('pri',prep).
+v('pro',prep).
+v('se',subj).
+v('sed',konj).
+v('sen',prep).
+v('sen',infprep).
+v('sep',nombr).
+v('ses',nombr).
+v('sub',prep).
+v('super',prep).
+v('sur',prep).
+v('tamen',konj).
+v('tial',adv).
+v('tiam',adv).
+v('tiel',adv).
+v('ties',pron).
+v('tiom',adv).
+v('tra',prep).
+v('trans',prep).
+v('tre',adv).
+v('tri',nombr).
+v('tro',adv).
+v('tuj',adv).
+v('unu',nombr).
+v('ve',intj).
 
 
 
