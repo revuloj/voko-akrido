@@ -2,6 +2,7 @@
 
 :-consult('vortaro.pl').
 %%:-consult('derivado.pl').
+:-consult('dcg/vortpartoj_dcg.pl').
 :-consult('dcg/vorto_dcg.pl').
 %:-consult('frazana.pl').
 :-consult('dcg/teksto_dcg.pl').
@@ -228,6 +229,56 @@ analizu_tekston2(Txt) :-
           )
         ),!.
 **************/
+
+vortanalizo(Vorto,Analizita,Speco) :-
+  vortpartoj(Vorto,Partoj),
+  (
+    phrase(vorto(Analizita,Speco),Partoj)%;
+    %phrase(kunmetita_vorto(Analizita,Speco),Partoj)
+  ).
+
+
+
+spc_fin_(Spc,Fin) :-
+ (
+    sub(Spc,subst), Fin=f(o,subst);
+    sub(Spc,adj), Fin=f(a,adj),!;
+    sub(Spc,verb), Fin=f(i,vrb);
+    sub(Spc,adv), Fin=f(e,adv)
+  ).
+
+derivajho(Radiko,Derivajho,Speco) :-
+  atom_codes(Radiko,RadCodes),
+  phrase(r(Rad,Spc),RadCodes),
+  phrase(s(Suf,AlSpc,DeSpc),_),
+  spc_fin_(AlSpc,Fin),
+  %member(Fin,[f(o,subst),f(a,adj),f(i,verb),f(e,adv)]),
+  %member(Fin,[f(o,subst)]),
+  phrase(vorto(Derivajho,Speco),[r(Rad,Spc),s(Suf,AlSpc,DeSpc),Fin]).
+
+derivajho(Radiko,Derivajho,Speco) :-
+  atom_codes(Radiko,RadCodes),
+  phrase(r(Rad,Spc),RadCodes),
+  phrase(p(Pref,AlSpc),_),
+  spc_fin_(AlSpc,Fin),
+  %member(Fin,[f(o,subst),f(a,adj),f(i,verb),f(e,adv)]),
+  %member(Fin,[f(o,subst)]),
+  phrase(vorto(Derivajho,Speco),[p(Pref,AlSpc),r(Rad,Spc),Fin]).
+%test: derivajho(abel,D,_), writeln(D),fail.
+
+derivajhoj(Radiko,Derivajhoj) :-
+  setof(D,Spc^derivajho(Radiko,D,Spc),Derivajhoj).
+
+testo(Vorto) :-
+  vortpartoj(Vorto,Partoj),
+  maplist(writeln,Partoj).
+
+% ekz. grandegul
+testo_suf(Vorto,N) :-
+  phrase(radika_vorto_sen_fino(Partoj),Vorto),
+  phrase(radv_sen_fin(V,S,N),Partoj),
+  format('~w ~w~n',[V,S]).
+
 
 /********************* analizaj funkcioj por frazoj ******************/
 
