@@ -6,10 +6,13 @@
 :- consult('dcg/vortlisto_dcg.pl').
 
 %:- consult(revo_blanka_listo).
+%:- artikolo_verda_listo.
 :- consult('vrt/v_revo_evitindaj').
 
 info :-
   format('revo_art_txt(XmlInput,Txt); analizu_revo_art(Art); analizu_revo_art_litero(Komenco)').
+
+:- dynamic(verda/2).
 
 %%% revo_xml('http://retavortaro.de/revo/xml').
 revo_xml('/home/revo/revo/xml').
@@ -51,6 +54,7 @@ analizu_revo_art(Art) :-
 ***/
 
 analizu_revo_art_litero(Litero) :-
+   (verda(_,_) -> true; artikolo_verda_listo), % enlegu la verdan liston se ankorau ne antaue...
    revo_txt(TxtPado), 
    skribo_pado(Kontrolitaj),
    atomic_list_concat([TxtPado,'/',Litero,'*.txt'],TxtInput),
