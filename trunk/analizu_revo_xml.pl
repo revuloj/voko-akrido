@@ -3,8 +3,10 @@
 %:- use_module(library(memfile)).
 
 :- consult(analizilo2).
-:- consult(revo_blanka_listo).
-:- consult(v_revo_evitindaj).
+:- consult('dcg/vortlisto_dcg.pl').
+
+%:- consult(revo_blanka_listo).
+:- consult('vrt/v_revo_evitindaj').
 
 info :-
   format('revo_art_txt(XmlInput,Txt); analizu_revo_art(Art); analizu_revo_art_litero(Komenco)').
@@ -14,24 +16,12 @@ revo_xml('/home/revo/revo/xml').
 revo_txt('/home/revo/revo/txt').
 txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
 skribo_pado('kontrolitaj').
-xslt('/usr/bin/xsltproc').
-lynx('/usr/bin/lynx').
+%xslt('/usr/bin/xsltproc').
+%lynx('/usr/bin/lynx').
+revo_verda_listo('vrt/revo_verda_listo.pl').
 
-blanka_listo(Art,Listo) :-
-  once((
-      atom_concat('/',Art1,Art);
-      Art1 = Art
-    )),
-  once((
-      bl(Art1,Lst); 
-      Lst = []
-    )),
-  once((
-      evi(Art1,Vrt), Vrt1 = [Vrt];
-      Vrt1 = []
-    )),
-  append(Vrt1,Lst,Listo).
 
+/***
 revo_art_txt(XmlInput,Txt) :-
 % xsltproc $VOKO/xsl/revotxt_eo.xsl $infile
   xslt(XsltProc), txt_xsl(Xsl),
@@ -42,12 +32,13 @@ revo_art_txt(XmlInput,Txt) :-
   open(pipe(Cmd),read,HtmlOut,[]),
   read_stream_to_codes(HtmlOut,Txt),
   close(HtmlOut).
+***/
 
 analizu_revo_art(Art) :-
     revo_txt(TxtPado),
     atomic_list_concat([TxtPado,'/',Art,'.txt'],TxtFile),
     read_file_to_codes(TxtFile,Txt,[]),
-    blanka_listo(Art,BL),
+    verda_listo(Art,BL),
     analizu_tekston_kopie(Txt,BL).
 
 /***
@@ -55,7 +46,7 @@ analizu_revo_art(Art) :-
   revo_xml(XmlPado),
   atomic_list_concat([XmlPado,'/',Art,'.xml'],XmlInput),
   revo_art_txt(XmlInput,Txt),
-  blanka_listo(Art,BL),
+  verda_listo(Art,BL),
   analizu_tekston_kopie(Txt,BL).
 ***/
 
@@ -73,7 +64,7 @@ analizu_revo_art_litero(Litero) :-
        format('~w -> ~w~n',[TxtFile,HtmlFile]),
 %      revo_art_txt(XmlFile,Txt),
        read_file_to_codes(TxtFile,Txt,[]),
-       blanka_listo(Art,BL),
+       verda_listo(Art,BL),
        analizu_tekston_outfile(Txt,HtmlFile,BL)
      )
    ).
@@ -92,9 +83,63 @@ analizu_revo_art_litero(Litero) :-
        atomic_list_concat([Kontrolitaj,Unua,Art,'.html'],HtmlFile),
        format('~w -> ~w~n',[XmlFile,HtmlFile]),
        revo_art_txt(XmlFile,Txt),
-       blanka_listo(Art,BL),
+       verda_listo(Art,BL),
        analizu_tekston_outfile(Txt,HtmlFile,BL)
      )
    ).
 ****/
 
+artikolo_verda_listo :-
+    revo_verda_listo(Infile),
+    retractall(verda(_,_)),
+    setup_call_cleanup(
+      open(Infile,read,In),
+      artikolo_verda_listo_(In),
+      close(In)		 
+    ).
+
+artikolo_verda_listo_(In) :-
+  (
+    repeat,
+    read_line_to_codes(In,Linio),
+    ( Linio == end_of_file -> !
+      ;
+      phrase(linio(Art,Vortoj),Linio),
+      % debugging:
+      format('~s~n',[Art,Vortoj]),
+      atom_codes(Artikolo,Art),
+      assert(verda(Artikolo,Vortoj)),
+      fail % read next line
+    )
+  ).
+
+artikolo_verda_listo_testo :-
+    revo_verda_listo(Infile),
+    setup_call_cleanup(
+      open(Infile,read,In),
+(		       
+repeat,
+ read_line_to_codes(In,Linio),
+    (  Linio == end_of_file
+    -> !
+    ;   format('~s~n',[Linio]),
+       fail
+    )
+),
+      close(In)		 
+    ).
+
+verda_listo(Art,Listo) :-
+  once((
+      atom_concat('/',Art1,Art);
+      Art1 = Art
+    )),
+  once((
+      verda(Art1,Lst); 
+      Lst = []
+    )),
+  once((
+      evi(Art1,Vrt), Vrt1 = [Vrt];
+      Vrt1 = []
+    )),
+  append(Vrt1,Lst,Listo).
