@@ -1,10998 +1,11004 @@
-r('ŝvit',ntr) --> "ŝvit".
-r('ŝvel',ntr) --> "ŝvel".
-r('ŝveb',ntr) --> "ŝveb".
-r('ŝva',subst) --> "ŝva".
-r('ŝuŝ',ntr) --> "ŝuŝ".
-r('ŝutr',subst) --> "ŝutr".
-r('ŝut',tr) --> "ŝut".
-r('ŝultr',subst) --> "ŝultr".
-r('ŝuld',tr) --> "ŝuld".
-r('ŝu',subst) --> "ŝu".
-r('ŝtup',subst) --> "ŝtup".
-r('ŝtrump',subst) --> "ŝtrump".
-r('ŝtorm',subst) --> "ŝtorm".
-r('ŝtop',tr) --> "ŝtop".
-r('ŝton',subst) --> "ŝton".
-r('ŝtof',subst) --> "ŝtof".
-r('ŝtip',subst) --> "ŝtip".
-r('ŝtel',tr) --> "ŝtel".
-r('ŝtat',subst) --> "ŝtat".
-r('ŝtal',subst) --> "ŝtal".
-r('ŝrump',ntr) --> "ŝrump".
-r('ŝroter',subst) --> "ŝroter".
-r('ŝrot',subst) --> "ŝrot".
-r('ŝrik',ntr) --> "ŝrik".
-r('ŝraŭb',subst) --> "ŝraŭb".
-r('ŝrapnel',subst) --> "ŝrapnel".
-r('ŝrank',subst) --> "ŝrank".
-r('ŝraman',subst) --> "ŝraman".
-r('ŝpruc',verb) --> "ŝpruc".
-r('ŝpin',tr) --> "ŝpin".
-r('ŝpat',subst) --> "ŝpat".
-r('ŝpar',tr) --> "ŝpar".
-r('ŝpal',subst) --> "ŝpal".
-r('ŝovinist',subst) --> "ŝovinist".
-r('ŝovinism',subst) --> "ŝovinism".
-r('ŝovel',tr) --> "ŝovel".
-r('ŝov',verb) --> "ŝov".
-r('ŝot',tr) --> "ŝot".
-r('ŝose',subst) --> "ŝose".
-r('ŝos',subst) --> "ŝos".
-r('ŝort',subst) --> "ŝort".
-r('ŝorbet',subst) --> "ŝorbet".
-r('ŝok',tr) --> "ŝok".
-r('ŝogun',subst) --> "ŝogun".
-r('ŝofor',subst) --> "ŝofor".
-r('ŝnur',subst) --> "ŝnur".
-r('ŝmir',tr) --> "ŝmir".
-r('ŝmink',tr) --> "ŝmink".
-r('ŝmac',ntr) --> "ŝmac".
-r('ŝlos',tr) --> "ŝlos".
-r('ŝlim',subst) --> "ŝlim".
-r('ŝlif',verb) --> "ŝlif".
-r('ŝlemil',subst) --> "ŝlemil".
-r('ŝlem',subst) --> "ŝlem".
-r('ŝlak',subst) --> "ŝlak".
-r('ŝlagr',subst) --> "ŝlagr".
-r('ŝkot',subst) --> "ŝkot".
-r('ŝiruk',subst) --> "ŝiruk".
-r('ŝirm',tr) --> "ŝirm".
-r('ŝir',tr) --> "ŝir".
-r('ŝip',subst) --> "ŝip".
-r('ŝintoism',subst) --> "ŝintoism".
-r('ŝinto',subst) --> "ŝinto".
-r('ŝintaid',subst) --> "ŝintaid".
-r('ŝinob',subst) --> "ŝinob".
-r('ŝink',subst) --> "ŝink".
-r('ŝind',subst) --> "ŝind".
-r('ŝim',ntr) --> "ŝim".
-r('ŝiling',subst) --> "ŝiling".
-r('ŝild',subst) --> "ŝild".
-r('ŝil',subst) --> "ŝil".
-r('ŝik',adj) --> "ŝik".
-r('ŝijaist',subst) --> "ŝijaist".
-r('ŝijaism',subst) --> "ŝijaism".
-r('ŝiacu',subst) --> "ŝiacu".
-r('ŝeviot',subst) --> "ŝeviot".
-r('ŝerp',subst) --> "ŝerp".
-r('ŝere',subst) --> "ŝere".
-r('ŝerc',ntr) --> "ŝerc".
-r('ŝenopraz',subst) --> "ŝenopraz".
-r('ŝelk',subst) --> "ŝelk".
-r('ŝelak',subst) --> "ŝelak".
-r('ŝel',subst) --> "ŝel".
-r('ŝekel',subst) --> "ŝekel".
-r('ŝejk',subst) --> "ŝejk".
-r('ŝed',subst) --> "ŝed".
-r('ŝaŭm',subst) --> "ŝaŭm".
-r('ŝat',tr) --> "ŝat".
-r('ŝarĝ',tr) --> "ŝarĝ".
-r('ŝarked',subst) --> "ŝarked".
-r('ŝark',best) --> "ŝark".
-r('ŝarg',tr) --> "ŝarg".
-r('ŝarad',subst) --> "ŝarad".
-r('ŝanĝ',tr) --> "ŝanĝ".
-r('ŝankr',subst) --> "ŝankr".
-r('ŝanel',subst) --> "ŝanel".
-r('ŝancel',tr) --> "ŝancel".
-r('ŝanc',subst) --> "ŝanc".
-r('ŝanaj',subst) --> "ŝanaj".
-r('ŝampu',subst) --> "ŝampu".
-r('ŝamot',subst) --> "ŝamot".
-r('ŝamisen',subst) --> "ŝamisen".
-r('ŝaman',subst) --> "ŝaman".
-r('ŝam',subst) --> "ŝam".
-r('ŝalup',subst) --> "ŝalup".
-r('ŝalt',tr) --> "ŝalt".
-r('ŝalm',subst) --> "ŝalm".
-r('ŝaligram',subst) --> "ŝaligram".
-r('ŝal',subst) --> "ŝal".
-r('ŝakuhaĉ',subst) --> "ŝakuhaĉ".
-r('ŝakt',subst) --> "ŝakt".
-r('ŝakr',ntr) --> "ŝakr".
-r('ŝakal',subst) --> "ŝakal".
-r('ŝak',subst) --> "ŝak".
-r('ŝajn',ntr) --> "ŝajn".
-r('ŝah',subst) --> "ŝah".
-r('ŝagrin',subst) --> "ŝagrin".
-r('ŝaft',subst) --> "ŝaft".
-r('ŝaf',subst) --> "ŝaf".
-r('ŝablon',subst) --> "ŝablon".
-r('Ŝopen',subst) --> "Ŝopen".
-r('Ŝlesvigholstini',subst) --> "Ŝlesvigholstini".
-r('Ŝlejer',subst) --> "Ŝlejer".
-r('Ŝiva',subst) --> "Ŝiva".
-r('Ŝengen',subst) --> "Ŝengen".
-r('Ŝem',subst) --> "Ŝem".
-r('Ŝekspir',subst) --> "Ŝekspir".
-r('Ŝari',subst) --> "Ŝari".
-r('ĵuĵu',subst) --> "ĵuĵu".
-r('ĵurnal',subst) --> "ĵurnal".
-r('ĵuri',subst) --> "ĵuri".
-r('ĵuras',subst) --> "ĵuras".
-r('ĵur',tr) --> "ĵur".
-r('ĵud',subst) --> "ĵud".
-r('ĵonk',subst) --> "ĵonk".
-r('ĵongl',ntr) --> "ĵongl".
-r('ĵoker',subst) --> "ĵoker".
-r('ĵoke',subst) --> "ĵoke".
-r('ĵip',subst) --> "ĵip".
-r('ĵinz',subst) --> "ĵinz".
-r('ĵig',subst) --> "ĵig".
-r('ĵig',subst) --> "ĵig".
-r('ĵib',subst) --> "ĵib".
-r('ĵeton',subst) --> "ĵeton".
-r('ĵet',tr) --> "ĵet".
-r('ĵerz',subst) --> "ĵerz".
-r('ĵele',subst) --> "ĵele".
-r('ĵaŭd',subst) --> "ĵaŭd".
-r('ĵaz',subst) --> "ĵaz".
-r('ĵartel',subst) --> "ĵartel".
-r('ĵargon',subst) --> "ĵargon".
-r('ĵambore',subst) --> "ĵambore".
-r('ĵam',verb) --> "ĵam".
-r('ĵaluzi',subst) --> "ĵaluzi".
-r('ĵaluz',adj) --> "ĵaluz".
-r('ĵaket',subst) --> "ĵaket".
-r('ĵak',subst) --> "ĵak".
-r('ĵak',subst) --> "ĵak".
-r('ĵabutikab',subst) --> "ĵabutikab".
-r('ĵabot',subst) --> "ĵabot".
-r('Ĵul',best) --> "Ĵul".
-r('Ĵerzej',subst) --> "Ĵerzej".
-r('ĥore',subst) --> "ĥore".
-r('ĥord',subst) --> "ĥord".
-r('ĥoral',subst) --> "ĥoral".
-r('ĥor',subst) --> "ĥor".
-r('ĥolesterol',subst) --> "ĥolesterol".
-r('ĥolesterin',subst) --> "ĥolesterin".
-r('ĥoler',subst) --> "ĥoler".
-r('ĥolecistit',subst) --> "ĥolecistit".
-r('ĥlamid',subst) --> "ĥlamid".
-r('ĥiton',subst) --> "ĥiton".
-r('ĥitin',subst) --> "ĥitin".
-r('ĥirurgi',subst) --> "ĥirurgi".
-r('ĥirurg',subst) --> "ĥirurg".
-r('ĥinin',subst) --> "ĥinin".
-r('ĥin',subst) --> "ĥin".
-r('ĥimer',subst) --> "ĥimer".
-r('ĥim',subst) --> "ĥim".
-r('ĥil',subst) --> "ĥil".
-r('ĥet',subst) --> "ĥet".
-r('ĥemi',subst) --> "ĥemi".
-r('ĥeloni',subst) --> "ĥeloni".
-r('ĥazar',subst) --> "ĥazar".
-r('ĥat',subst) --> "ĥat".
-r('ĥasid',subst) --> "ĥasid".
-r('ĥaradried',subst) --> "ĥaradried".
-r('ĥaradri',subst) --> "ĥaradri".
-r('ĥaos',subst) --> "ĥaos".
-r('ĥant',subst) --> "ĥant".
-r('ĥan',subst) --> "ĥan".
-r('ĥamsin',subst) --> "ĥamsin".
-r('ĥamemor',subst) --> "ĥamemor".
-r('ĥameleoned',subst) --> "ĥameleoned".
-r('ĥameleon',best) --> "ĥameleon".
-r('ĥalkolitik',subst) --> "ĥalkolitik".
-r('ĥalkogen',subst) --> "ĥalkogen".
-r('ĥalif',subst) --> "ĥalif".
-r('ĥalde',subst) --> "ĥalde".
-r('ĥalat',subst) --> "ĥalat".
-r('Ĥiron',subst) --> "Ĥiron".
-r('Ĥi',subst) --> "Ĥi".
-r('Ĥerone',subst) --> "Ĥerone".
-r('Ĥeops',subst) --> "Ĥeops".
-r('Ĥaron',subst) --> "Ĥaron".
-r('Ĥaribd',subst) --> "Ĥaribd".
-r('Ĥanuk',subst) --> "Ĥanuk".
-r('Ĥam',subst) --> "Ĥam".
-r('ĝust',adj) --> "ĝust".
-r('ĝu',tr) --> "ĝu".
-r('ĝonk',subst) --> "ĝonk".
-r('ĝoj',ntr) --> "ĝoj".
-r('ĝirafed',subst) --> "ĝirafed".
-r('ĝiraf',subst) --> "ĝiraf".
-r('ĝir',tr) --> "ĝir".
-r('ĝinz',subst) --> "ĝinz".
-r('ĝin',subst) --> "ĝin".
-r('ĝin',subst) --> "ĝin".
-r('ĝin',subst) --> "ĝin".
-r('ĝihad',subst) --> "ĝihad".
-r('ĝig',subst) --> "ĝig".
-r('ĝib',subst) --> "ĝib".
-r('ĝet',subst) --> "ĝet".
-r('ĝerman',subst) --> "ĝerman".
-r('ĝerm',subst) --> "ĝerm".
-r('ĝentleman',subst) --> "ĝentleman".
-r('ĝentil',adj) --> "ĝentil".
-r('ĝenr',subst) --> "ĝenr".
-r('ĝeni',subst) --> "ĝeni".
-r('ĝeneral',adj) --> "ĝeneral".
-r('ĝendarm',subst) --> "ĝendarm".
-r('ĝen',tr) --> "ĝen".
-r('ĝemel',subst) --> "ĝemel".
-r('ĝem',ntr) --> "ĝem".
-r('ĝelab',subst) --> "ĝelab".
-r('ĝazband',subst) --> "ĝazband".
-r('ĝarden',subst) --> "ĝarden".
-r('ĝangal',subst) --> "ĝangal".
-r('ĝajn',subst) --> "ĝajn".
-r('Ĝoĉi',subst) --> "Ĝoĉi".
-r('Ĝibuti',subst) --> "Ĝibuti".
-r('Ĝerald',subst) --> "Ĝerald".
-r('Ĝenov',subst) --> "Ĝenov".
-r('Ĝenev',subst) --> "Ĝenev".
-r('Ĝarkand',subst) --> "Ĝarkand".
-r('Ĝakart',subst) --> "Ĝakart".
-r('ĉurask',subst) --> "ĉurask".
-r('ĉur',subst) --> "ĉur".
-r('ĉukĉ',subst) --> "ĉukĉ".
-r('ĉoted',subst) --> "ĉoted".
-r('ĉot',best) --> "ĉot".
-r('ĉonmag',subst) --> "ĉonmag".
-r('ĉokolad',subst) --> "ĉokolad".
-r('ĉiĉimek',subst) --> "ĉiĉimek".
-r('ĉiĉeron',subst) --> "ĉiĉeron".
-r('ĉiz',tr) --> "ĉiz".
-r('ĉirp',ntr) --> "ĉirp".
-r('ĉir',subst) --> "ĉir".
-r('ĉips',subst) --> "ĉips".
-r('ĉinĉil',subst) --> "ĉinĉil".
-r('ĉinesk',subst) --> "ĉinesk".
-r('ĉin',subst) --> "ĉin".
-r('ĉimpanz',best) --> "ĉimpanz".
-r('ĉim',subst) --> "ĉim".
-r('ĉil',subst) --> "ĉil".
-r('ĉikan',tr) --> "ĉikan".
-r('ĉigong',subst) --> "ĉigong".
-r('ĉifr',subst) --> "ĉifr".
-r('ĉifon',subst) --> "ĉifon".
-r('ĉif',tr) --> "ĉif".
-r('ĉiel',subst) --> "ĉiel".
-r('ĉibuk',subst) --> "ĉibuk".
-r('ĉeĥ',best) --> "ĉeĥ".
-r('ĉevron',subst) --> "ĉevron".
-r('ĉevaled',subst) --> "ĉevaled".
-r('ĉeval',best) --> "ĉeval".
-r('ĉes',ntr) --> "ĉes".
-r('ĉervonc',subst) --> "ĉervonc".
-r('ĉerp',tr) --> "ĉerp".
-r('ĉernozem',subst) --> "ĉernozem".
-r('ĉerkes',subst) --> "ĉerkes".
-r('ĉerk',subst) --> "ĉerk".
-r('ĉeriz',subst) --> "ĉeriz".
-r('ĉen',subst) --> "ĉen".
-r('ĉemiz',subst) --> "ĉemiz".
-r('ĉel',subst) --> "ĉel".
-r('ĉek',subst) --> "ĉek".
-r('ĉatni',subst) --> "ĉatni".
-r('ĉast',adj) --> "ĉast".
-r('ĉasi',subst) --> "ĉasi".
-r('ĉas',tr) --> "ĉas".
-r('ĉart',subst) --> "ĉart".
-r('ĉarpi',subst) --> "ĉarpi".
-r('ĉarpent',tr) --> "ĉarpent".
-r('ĉarnir',subst) --> "ĉarnir".
-r('ĉarm',adj) --> "ĉarm".
-r('ĉarlatan',subst) --> "ĉarlatan".
-r('ĉard',subst) --> "ĉard".
-r('ĉarang',subst) --> "ĉarang".
-r('ĉar',subst) --> "ĉar".
-r('ĉapitr',subst) --> "ĉapitr".
-r('ĉapel',subst) --> "ĉapel".
-r('ĉap',subst) --> "ĉap".
-r('ĉantaĝ',tr) --> "ĉantaĝ".
-r('ĉan',subst) --> "ĉan".
-r('ĉampion',subst) --> "ĉampion".
-r('ĉampinjon',subst) --> "ĉampinjon".
-r('ĉampan',subst) --> "ĉampan".
-r('ĉambr',subst) --> "ĉambr".
-r('ĉambelan',subst) --> "ĉambelan".
-r('ĉam',subst) --> "ĉam".
-r('ĉalet',subst) --> "ĉalet".
-r('ĉaled',subst) --> "ĉaled".
-r('ĉakr',subst) --> "ĉakr".
-r('ĉakon',subst) --> "ĉakon".
-r('ĉak',subst) --> "ĉak".
-r('ĉajot',subst) --> "ĉajot".
-r('ĉagren',tr) --> "ĉagren".
-r('ĉador',subst) --> "ĉador".
-r('ĉabrak',subst) --> "ĉabrak".
-r('Ĉini',subst) --> "Ĉini".
-r('Ĉingis',subst) --> "Ĉingis".
-r('Ĉili',subst) --> "Ĉili".
-r('Ĉikag',subst) --> "Ĉikag".
-r('Ĉeĥi',subst) --> "Ĉeĥi".
-r('Ĉatisgar',subst) --> "Ĉatisgar".
-r('Ĉad',subst) --> "Ĉad".
-r('zum',ntr) --> "zum".
-r('zulu',subst) --> "zulu".
-r('zuav',subst) --> "zuav".
-r('zosterops',subst) --> "zosterops".
-r('zori',subst) --> "zori".
-r('zorg',tr) --> "zorg".
-r('zoologi',subst) --> "zoologi".
-r('zoolog',subst) --> "zoolog".
-r('zoofit',subst) --> "zoofit".
-r('zon',subst) --> "zon".
-r('zombi',subst) --> "zombi".
-r('zom',subst) --> "zom".
-r('zodiak',subst) --> "zodiak".
-r('zo',subst) --> "zo".
-r('zlot',subst) --> "zlot".
-r('zizel',best) --> "zizel".
-r('zirkoni',subst) --> "zirkoni".
-r('zip',subst) --> "zip".
-r('zink',subst) --> "zink".
-r('zingibrac',subst) --> "zingibrac".
-r('zingibr',subst) --> "zingibr".
-r('zimbalon',subst) --> "zimbalon".
-r('zigzag',subst) --> "zigzag".
-r('zigurat',subst) --> "zigurat".
-r('zigot',subst) --> "zigot".
-r('zigom',subst) --> "zigom".
-r('zigofilac',subst) --> "zigofilac".
-r('zibet',subst) --> "zibet".
-r('zibel',best) --> "zibel".
-r('zeŭgm',subst) --> "zeŭgm".
-r('zeta',pref) --> "zeta".
-r('zepto',pref) --> "zepto".
-r('zepelin',subst) --> "zepelin".
-r('zenit',subst) --> "zenit".
-r('zen',subst) --> "zen".
-r('zelot',subst) --> "zelot".
-r('zelkov',subst) --> "zelkov".
-r('zeken',subst) --> "zeken".
-r('zefir',subst) --> "zefir".
-r('zebu',subst) --> "zebu".
-r('zebr',best) --> "zebr".
-r('ze',subst) --> "ze".
-r('zarzuel',subst) --> "zarzuel".
-r('zakusk',subst) --> "zakusk".
-r('vund',tr) --> "vund".
-r('vulv',subst) --> "vulv".
-r('vultur',subst) --> "vultur".
-r('vultu',adj) --> "vultu".
-r('vulp',best) --> "vulp".
-r('vulkaniz',tr) --> "vulkaniz".
-r('vulkan',subst) --> "vulkan".
-r('vulgar',adj) --> "vulgar".
-r('vual',subst) --> "vual".
-r('vu',subst) --> "vu".
-r('vring',tr) --> "vring".
-r('vrak',subst) --> "vrak".
-r('voĉ',subst) --> "voĉ".
-r('vot',subst) --> "vot".
-r('vost',subst) --> "vost".
-r('vortic',subst) --> "vortic".
-r('vort',subst) --> "vort".
-r('vor',tr) --> "vor".
-r('von',subst) --> "von".
-r('vomit',subst) --> "vomit".
-r('vombat',subst) --> "vombat".
-r('vom',tr) --> "vom".
-r('volv',tr) --> "volv".
-r('volupt',subst) --> "volupt".
-r('volumen',subst) --> "volumen".
-r('volum',subst) --> "volum".
-r('volont',adv) --> "volont".
-r('volitiv',subst) --> "volitiv".
-r('volfram',subst) --> "volfram".
-r('volejbal',subst) --> "volejbal".
-r('volb',subst) --> "volb".
-r('volapuk',subst) --> "volapuk".
-r('vol',tr) --> "vol".
-r('vokt',subst) --> "vokt".
-r('vokativ',subst) --> "vokativ".
-r('vokal',subst) --> "vokal".
-r('vok',tr) --> "vok".
-r('vojevodi',subst) --> "vojevodi".
-r('vojevod',subst) --> "vojevod".
-r('vojaĝ',ntr) --> "vojaĝ".
-r('voj',subst) --> "voj".
-r('vodk',subst) --> "vodk".
-r('vodevil',subst) --> "vodevil".
-r('vladik',subst) --> "vladik".
-r('vjol',subst) --> "vjol".
-r('vjetnam',subst) --> "vjetnam".
-r('vjel',subst) --> "vjel".
-r('viŝ',tr) --> "viŝ".
-r('vizitandin',subst) --> "vizitandin".
-r('vizit',tr) --> "vizit".
-r('vizier',subst) --> "vizier".
-r('vizi',subst) --> "vizi".
-r('vizaĝ',subst) --> "vizaĝ".
-r('viz',subst) --> "viz".
-r('vivisekci',subst) --> "vivisekci".
-r('vivered',subst) --> "vivered".
-r('viver',best) --> "viver".
-r('viv',ntr) --> "viv".
-r('vitriol',subst) --> "vitriol".
-r('vitrin',subst) --> "vitrin".
-r('vitre',subst) --> "vitre".
-r('vitral',subst) --> "vitral".
-r('vitr',subst) --> "vitr".
-r('vitamin',subst) --> "vitamin".
-r('vital',adj) --> "vital".
-r('vitac',subst) --> "vitac".
-r('vit',subst) --> "vit".
-r('visteri',subst) --> "visteri".
-r('vist',subst) --> "vist".
-r('viskoz',subst) --> "viskoz".
-r('viski',subst) --> "viski".
-r('visk',subst) --> "visk".
-r('visigot',subst) --> "visigot".
-r('viscer',subst) --> "viscer".
-r('virusologi',subst) --> "virusologi".
-r('virusolog',subst) --> "virusolog".
-r('virus',subst) --> "virus".
-r('virtuoz',subst) --> "virtuoz".
-r('virtual',adj) --> "virtual".
-r('virt',subst) --> "virt".
-r('virg',adj) --> "virg".
-r('vir',subst) --> "vir".
-r('vipured',subst) --> "vipured".
-r('vipur',best) --> "vipur".
-r('viper',subst) --> "viper".
-r('vip',subst) --> "vip".
-r('violonĉel',subst) --> "violonĉel".
-r('violon',subst) --> "violon".
-r('violent',adj) --> "violent".
-r('violac',subst) --> "violac".
-r('viol',subst) --> "viol".
-r('vinĉestr',subst) --> "vinĉestr".
-r('vinĉ',subst) --> "vinĉ".
-r('vintr',subst) --> "vintr".
-r('vinkt',subst) --> "vinkt".
-r('vink',subst) --> "vink".
-r('vinjet',subst) --> "vinjet".
-r('vinil',subst) --> "vinil".
-r('vindas',subst) --> "vindas".
-r('vind',tr) --> "vind".
-r('vinagr',subst) --> "vinagr".
-r('vina',subst) --> "vina".
-r('vin',subst) --> "vin".
-r('vimpl',subst) --> "vimpl".
-r('vimen',subst) --> "vimen".
-r('vilaĝ',subst) --> "vilaĝ".
-r('vila',subst) --> "vila".
-r('vil',adj) --> "vil".
-r('viktuali',subst) --> "viktuali".
-r('viktim',subst) --> "viktim".
-r('viking',subst) --> "viking".
-r('viki',subst) --> "viki".
-r('vikari',subst) --> "vikari".
-r('vigvam',subst) --> "vigvam".
-r('vigl',adj) --> "vigl".
-r('vigil',ntr) --> "vigil".
-r('vifi',subst) --> "vifi".
-r('vidv',subst) --> "vidv".
-r('vide',subst) --> "vide".
-r('vid',tr) --> "vid".
-r('vici',subst) --> "vici".
-r('vic',subst) --> "vic".
-r('viburn',subst) --> "viburn".
-r('vibrafon',subst) --> "vibrafon".
-r('vibr',ntr) --> "vibr".
-r('viatik',subst) --> "viatik".
-r('viand',subst) --> "viand".
-r('viadukt',subst) --> "viadukt".
-r('veŝt',subst) --> "veŝt".
-r('vezir',subst) --> "vezir".
-r('vezik',subst) --> "vezik".
-r('vetur',ntr) --> "vetur".
-r('veto',subst) --> "veto".
-r('veterinar',subst) --> "veterinar".
-r('veteran',subst) --> "veteran".
-r('veter',subst) --> "veter".
-r('vet',tr) --> "vet".
-r('vestiĝ',subst) --> "vestiĝ".
-r('vestibl',subst) --> "vestibl".
-r('vestal',subst) --> "vestal".
-r('vest',tr) --> "vest".
-r('vespr',subst) --> "vespr".
-r('vespert',subst) --> "vespert".
-r('vesper',subst) --> "vesper".
-r('vesped',subst) --> "vesped".
-r('vesp',subst) --> "vesp".
-r('vesel',subst) --> "vesel".
-r('verŝ',tr) --> "verŝ".
-r('verv',subst) --> "verv".
-r('veruk',subst) --> "veruk".
-r('vertiĝ',subst) --> "vertiĝ".
-r('vertikal',adj) --> "vertikal".
-r('vertic',subst) --> "vertic".
-r('vertebr',subst) --> "vertebr".
-r('vertag',subst) --> "vertag".
-r('vert',subst) --> "vert".
-r('verst',subst) --> "verst".
-r('versi',subst) --> "versi".
-r('versal',subst) --> "versal".
-r('vers',subst) --> "vers".
-r('veronal',subst) --> "veronal".
-r('vernis',subst) --> "vernis".
-r('vernier',subst) --> "vernier".
-r('vermut',subst) --> "vermut".
-r('vermiĉel',subst) --> "vermiĉel".
-r('vermiljon',adj) --> "vermiljon".
-r('vermifug',subst) --> "vermifug".
-r('verm',subst) --> "verm".
-r('verk',tr) --> "verk".
-r('verg',subst) --> "verg".
-r('verdikt',subst) --> "verdikt".
-r('verdigr',subst) --> "verdigr".
-r('verd',adj) --> "verd".
-r('verbenac',subst) --> "verbenac".
-r('verben',subst) --> "verben".
-r('verbask',subst) --> "verbask".
-r('verb',subst) --> "verb".
-r('veratr',subst) --> "veratr".
-r('verand',subst) --> "verand".
-r('ver',adj) --> "ver".
-r('vepr',subst) --> "vepr".
-r('venĝ',tr) --> "venĝ".
-r('ventrikl',subst) --> "ventrikl".
-r('ventr',subst) --> "ventr".
-r('ventol',tr) --> "ventol".
-r('vent',subst) --> "vent".
-r('venk',tr) --> "venk".
-r('venere',adj) --> "venere".
-r('venen',subst) --> "venen".
-r('vendred',subst) --> "vendred".
-r('vend',tr) --> "vend".
-r('ven',ntr) --> "ven".
-r('velur',subst) --> "velur".
-r('velociped',subst) --> "velociped".
-r('velk',ntr) --> "velk".
-r('velen',subst) --> "velen".
-r('veld',tr) --> "veld".
-r('velar',subst) --> "velar".
-r('vel',subst) --> "vel".
-r('vektor',subst) --> "vektor".
-r('vekt',subst) --> "vekt".
-r('vek',tr) --> "vek".
-r('vejĉi',subst) --> "vejĉi".
-r('vejn',subst) --> "vejn".
-r('vegetar',adj) --> "vegetar".
-r('vegetalin',subst) --> "vegetalin".
-r('vegetal',subst) --> "vegetal".
-r('veget',ntr) --> "veget".
-r('vegan',subst) --> "vegan".
-r('veft',subst) --> "veft".
-r('ved',subst) --> "ved".
-r('vaĉ',ntr) --> "vaĉ".
-r('vazelin',subst) --> "vazelin".
-r('vaz',subst) --> "vaz".
-r('vav',subst) --> "vav".
-r('vat',subst) --> "vat".
-r('vast',adj) --> "vast".
-r('vaskul',subst) --> "vaskul".
-r('vask',subst) --> "vask".
-r('vasal',subst) --> "vasal".
-r('vasabi',subst) --> "vasabi".
-r('vart',tr) --> "vart".
-r('varp',subst) --> "varp".
-r('varm',adj) --> "varm".
-r('variol',subst) --> "variol".
-r('varik',subst) --> "varik".
-r('variete',subst) --> "variete".
-r('varicel',subst) --> "varicel".
-r('variant',subst) --> "variant".
-r('varianc',subst) --> "varianc".
-r('variaci',subst) --> "variaci".
-r('variabl',subst) --> "variabl".
-r('vari',ntr) --> "vari".
-r('varf',subst) --> "varf".
-r('varb',tr) --> "varb".
-r('varang',subst) --> "varang".
-r('varan',subst) --> "varan".
-r('var',subst) --> "var".
-r('vapor',subst) --> "vapor".
-r('vanuatu',subst) --> "vanuatu".
-r('vanu',verb) --> "vanu".
-r('vant',adj) --> "vant".
-r('vanil',subst) --> "vanil".
-r('vang',subst) --> "vang".
-r('vaneled',subst) --> "vaneled".
-r('vanel',subst) --> "vanel".
-r('vandal',subst) --> "vandal".
-r('vand',subst) --> "vand".
-r('vanadi',subst) --> "vanadi".
-r('vanad',subst) --> "vanad".
-r('van',adj) --> "van".
-r('vampir',best) --> "vampir".
-r('valv',subst) --> "valv".
-r('valut',subst) --> "valut".
-r('vals',subst) --> "vals".
-r('valoriz',tr) --> "valoriz".
-r('valor',tr) --> "valor".
-r('valon',subst) --> "valon".
-r('valiz',subst) --> "valiz".
-r('valid',adj) --> "valid".
-r('valerianac',subst) --> "valerianac".
-r('valerian',subst) --> "valerian".
-r('valent',subst) --> "valent".
-r('valencien',subst) --> "valencien".
-r('val',subst) --> "val".
-r('vakuol',subst) --> "vakuol".
-r('vaku',subst) --> "vaku".
-r('vaks',subst) --> "vaks".
-r('vaker',subst) --> "vaker".
-r('vakcini',subst) --> "vakcini".
-r('vakcin',subst) --> "vakcin".
-r('vak',ntr) --> "vak".
-r('vajc',subst) --> "vajc".
-r('vahabit',subst) --> "vahabit".
-r('vagon',subst) --> "vagon".
-r('vagin',subst) --> "vagin".
-r('vagabond',subst) --> "vagabond".
-r('vag',ntr) --> "vag".
-r('vafl',subst) --> "vafl".
-r('vadi',subst) --> "vadi".
-r('vad',ntr) --> "vad".
-r('uŝu',subst) --> "uŝu".
-r('uzurpator',subst) --> "uzurpator".
-r('uzurp',tr) --> "uzurp".
-r('uzur',subst) --> "uzur".
-r('uzukap',tr) --> "uzukap".
-r('uzin',subst) --> "uzin".
-r('uzbek',subst) --> "uzbek".
-r('uzanc',subst) --> "uzanc".
-r('uz',tr) --> "uz".
-r('uvul',subst) --> "uvul".
-r('uvertur',subst) --> "uvertur".
-r('uv',subst) --> "uv".
-r('utopi',subst) --> "utopi".
-r('util',adj) --> "util".
-r('uter',subst) --> "uter".
-r('uten',subst) --> "uten".
-r('uskl',subst) --> "uskl".
-r('urĝ',tr) --> "urĝ".
-r('urtikac',subst) --> "urtikac".
-r('urtik',subst) --> "urtik".
-r('ursed',subst) --> "ursed".
-r('urs',best) --> "urs".
-r('urogal',subst) --> "urogal".
-r('urodel',subst) --> "urodel".
-r('urn',subst) --> "urn".
-r('urin',verb) --> "urin".
-r('ureus',subst) --> "ureus".
-r('uretr',subst) --> "uretr".
-r('ureter',subst) --> "ureter".
-r('urb',subst) --> "urb".
-r('urani',subst) --> "urani".
-r('uragan',subst) --> "uragan".
-r('ur',subst) --> "ur".
-r('upasak',subst) --> "upasak".
-r('upaniŝad',subst) --> "upaniŝad".
-r('unut',subst) --> "unut".
-r('unucikl',subst) --> "unucikl".
-r('unkt',verb) --> "unkt".
-r('unkari',subst) --> "unkari".
-r('universitat',subst) --> "universitat".
-r('universal',adj) --> "universal".
-r('univers',subst) --> "univers".
-r('unison',subst) --> "unison".
-r('unikorn',subst) --> "unikorn".
-r('unik',adj) --> "unik".
-r('uniform',subst) --> "uniform".
-r('uniat',subst) --> "uniat".
-r('uni',subst) --> "uni".
-r('ungvent',subst) --> "ungvent".
-r('ung',subst) --> "ung".
-r('uncial',subst) --> "uncial".
-r('unc',subst) --> "unc".
-r('umlaŭt',subst) --> "umlaŭt".
-r('ume',subst) --> "ume".
-r('umbilik',subst) --> "umbilik".
-r('umbelifer',subst) --> "umbelifer".
-r('umbel',subst) --> "umbel".
-r('um',suf) --> "um".
-r('ulul',ntr) --> "ulul".
-r('ultraviol',adj) --> "ultraviol".
-r('ultrason',subst) --> "ultrason".
-r('ultramar',subst) --> "ultramar".
-r('ultra',pref) --> "ultra".
-r('ultimat',subst) --> "ultimat".
-r('uln',subst) --> "uln".
-r('ulmac',subst) --> "ulmac".
-r('ulm',subst) --> "ulm".
-r('ulem',subst) --> "ulem".
-r('uleks',subst) --> "uleks".
-r('ulcer',subst) --> "ulcer".
-r('ulan',subst) --> "ulan".
-r('ulamban',subst) --> "ulamban".
-r('ukulel',subst) --> "ukulel".
-r('ukrajn',subst) --> "ukrajn".
-r('ukraini',subst) --> "ukraini".
-r('ukrain',subst) --> "ukrain".
-r('ukaz',subst) --> "ukaz".
-r('ugvis',subst) --> "ugvis".
-r('udon',subst) --> "udon".
-r('ubliet',subst) --> "ubliet".
-r('tvist',subst) --> "tvist".
-r('tvid',subst) --> "tvid".
-r('tuŝ',tr) --> "tuŝ".
-r('tuĉ',subst) --> "tuĉ".
-r('tuval',subst) --> "tuval".
-r('tut',adj) --> "tut".
-r('tusk',subst) --> "tusk".
-r('tusilag',subst) --> "tusilag".
-r('tus',verb) --> "tus".
-r('turt',subst) --> "turt".
-r('turp',adj) --> "turp".
-r('turnir',subst) --> "turnir".
-r('turne',ntr) --> "turne".
-r('turn',tr) --> "turn".
-r('turment',tr) --> "turment".
-r('turkmen',subst) --> "turkmen".
-r('turkis',subst) --> "turkis".
-r('turk',subst) --> "turk".
-r('turist',subst) --> "turist".
-r('turism',subst) --> "turism".
-r('turing',subst) --> "turing".
-r('turded',subst) --> "turded".
-r('turd',subst) --> "turd".
-r('turbulent',adj) --> "turbulent".
-r('turbin',subst) --> "turbin".
-r('turban',subst) --> "turban".
-r('turb',subst) --> "turb".
-r('tur',subst) --> "tur".
-r('tunik',subst) --> "tunik".
-r('tungsten',subst) --> "tungsten".
-r('tunel',subst) --> "tunel".
-r('tundr',subst) --> "tundr".
-r('tun',subst) --> "tun".
-r('tumult',subst) --> "tumult".
-r('tumor',subst) --> "tumor".
-r('tulip',subst) --> "tulip".
-r('tuli',subst) --> "tuli".
-r('tul',subst) --> "tul".
-r('tuku',subst) --> "tuku".
-r('tukan',subst) --> "tukan".
-r('tuk',subst) --> "tuk".
-r('tuj',subst) --> "tuj".
-r('tuf',subst) --> "tuf".
-r('tubj',subst) --> "tubj".
-r('tuberos',subst) --> "tuberos".
-r('tuberkuloz',subst) --> "tuberkuloz".
-r('tuberkul',subst) --> "tuberkul".
-r('tuber',subst) --> "tuber".
-r('tub',subst) --> "tub".
-r('tualet',subst) --> "tualet".
-r('trut',subst) --> "trut".
-r('trust',subst) --> "trust".
-r('truso',subst) --> "truso".
-r('trup',subst) --> "trup".
-r('trunk',subst) --> "trunk".
-r('trumpet',subst) --> "trumpet".
-r('trum',subst) --> "trum".
-r('trul',subst) --> "trul".
-r('truk',subst) --> "truk".
-r('truf',subst) --> "truf".
-r('trud',tr) --> "trud".
-r('trubadur',subst) --> "trubadur".
-r('tru',subst) --> "tru".
-r('troĥoid',subst) --> "troĥoid".
-r('troĥe',ntr) --> "troĥe".
-r('trov',tr) --> "trov".
-r('trotuar',subst) --> "trotuar".
-r('trot',ntr) --> "trot".
-r('troposfer',subst) --> "troposfer".
-r('tropik',subst) --> "tropik".
-r('trop',subst) --> "trop".
-r('tron',subst) --> "tron".
-r('tromp',tr) --> "tromp".
-r('trombon',subst) --> "trombon".
-r('tromb',subst) --> "tromb".
-r('trole',subst) --> "trole".
-r('trol',subst) --> "trol".
-r('trol',subst) --> "trol".
-r('troke',subst) --> "troke".
-r('troglodit',subst) --> "troglodit".
-r('trog',subst) --> "trog".
-r('trofe',subst) --> "trofe".
-r('trobador',subst) --> "trobador".
-r('triĥin',subst) --> "triĥin".
-r('trivial',adj) --> "trivial".
-r('triv',tr) --> "triv".
-r('triumf',subst) --> "triumf".
-r('tritikal',subst) --> "tritikal".
-r('tritik',subst) --> "tritik".
-r('trit',subst) --> "trit".
-r('trist',adj) --> "trist".
-r('trirem',subst) --> "trirem".
-r('triptik',subst) --> "triptik".
-r('trip',subst) --> "trip".
-r('triolet',subst) --> "triolet".
-r('triod',subst) --> "triod".
-r('trinom',subst) --> "trinom".
-r('trink',tr) --> "trink".
-r('trinidad',subst) --> "trinidad".
-r('trimestr',subst) --> "trimestr".
-r('trilogi',subst) --> "trilogi".
-r('tril',subst) --> "tril".
-r('triktrak',subst) --> "triktrak".
-r('trikot',subst) --> "trikot".
-r('trik',tr) --> "trik".
-r('trigonometri',subst) --> "trigonometri".
-r('triglif',subst) --> "triglif".
-r('trigled',subst) --> "trigled".
-r('trigl',best) --> "trigl".
-r('tridakn',subst) --> "tridakn".
-r('tricikl',subst) --> "tricikl".
-r('tribut',subst) --> "tribut".
-r('tribunal',subst) --> "tribunal".
-r('tribun',subst) --> "tribun".
-r('tribrak',subst) --> "tribrak".
-r('tribord',subst) --> "tribord".
-r('trib',subst) --> "trib".
-r('triatlon',subst) --> "triatlon".
-r('trias',subst) --> "trias".
-r('tri',subst) --> "tri".
-r('trezor',subst) --> "trezor".
-r('tret',tr) --> "tret".
-r('tres',subst) --> "tres".
-r('tren',tr) --> "tren".
-r('tremp',tr) --> "tremp".
-r('tremol',subst) --> "tremol".
-r('trematod',subst) --> "trematod".
-r('trema',subst) --> "trema".
-r('trem',ntr) --> "trem".
-r('trejn',tr) --> "trejn".
-r('tref',subst) --> "tref".
-r('tred',tr) --> "tred".
-r('traŭmatologi',subst) --> "traŭmatologi".
-r('traŭmatolog',subst) --> "traŭmatolog".
-r('traŭmatiz',verb) --> "traŭmatiz".
-r('traŭmat',subst) --> "traŭmat".
-r('traŭm',subst) --> "traŭm".
-r('traĥom',subst) --> "traĥom".
-r('traĥe',subst) --> "traĥe".
-r('travesti',tr) --> "travesti".
-r('travertin',subst) --> "travertin".
-r('trat',subst) --> "trat".
-r('trapez',subst) --> "trapez".
-r('trap',subst) --> "trap".
-r('tranĉe',subst) --> "tranĉe".
-r('tranĉ',tr) --> "tranĉ".
-r('transvers',adj) --> "transvers".
-r('transpon',tr) --> "transpon".
-r('transmisi',verb) --> "transmisi".
-r('translaci',subst) --> "translaci".
-r('transitiv',adj) --> "transitiv".
-r('transit',subst) --> "transit".
-r('transistor',subst) --> "transistor".
-r('transfuz',verb) --> "transfuz".
-r('transformator',subst) --> "transformator".
-r('transept',subst) --> "transept".
-r('transcend',adj) --> "transcend".
-r('transakci',subst) --> "transakci".
-r('trankvil',adj) --> "trankvil".
-r('tranc',subst) --> "tranc".
-r('trampolin',subst) --> "trampolin".
-r('trampl',tr) --> "trampl".
-r('tramp',subst) --> "tramp".
-r('tram',subst) --> "tram".
-r('traktori',subst) --> "traktori".
-r('traktor',subst) --> "traktor".
-r('traktat',subst) --> "traktat".
-r('trakt',tr) --> "trakt".
-r('trakom',subst) --> "trakom".
-r('trake',subst) --> "trake".
-r('trak',subst) --> "trak".
-r('trajt',subst) --> "trajt".
-r('trajn',subst) --> "trajn".
-r('trajektori',subst) --> "trajektori".
-r('tragikomedi',subst) --> "tragikomedi".
-r('tragik',adj) --> "tragik".
-r('tragelaf',subst) --> "tragelaf".
-r('tragedi',subst) --> "tragedi".
-r('trafik',subst) --> "trafik".
-r('traf',tr) --> "traf".
-r('tradukologi',subst) --> "tradukologi".
-r('tradukolog',subst) --> "tradukolog".
-r('traduk',tr) --> "traduk".
-r('tradici',subst) --> "tradici".
-r('trabant',subst) --> "trabant".
-r('trab',subst) --> "trab".
-r('toŭfu',subst) --> "toŭfu".
-r('totem',subst) --> "totem".
-r('total',adj) --> "total".
-r('tost',subst) --> "tost".
-r('toskan',subst) --> "toskan".
-r('torĉ',subst) --> "torĉ".
-r('tortur',tr) --> "tortur".
-r('tortilj',subst) --> "tortilj".
-r('tort',subst) --> "tort".
-r('tors',subst) --> "tors".
-r('torpor',subst) --> "torpor".
-r('torped',subst) --> "torped".
-r('tornistr',subst) --> "tornistr".
-r('tornad',subst) --> "tornad".
-r('torn',tr) --> "torn".
-r('tori',subst) --> "tori".
-r('torf',subst) --> "torf".
-r('torent',subst) --> "torent".
-r('toreador',subst) --> "toreador".
-r('tord',tr) --> "tord".
-r('torak',subst) --> "torak".
-r('tor',subst) --> "tor".
-r('topor',subst) --> "topor".
-r('toponimi',subst) --> "toponimi".
-r('toponim',subst) --> "toponim".
-r('topologi',subst) --> "topologi".
-r('topografi',subst) --> "topografi".
-r('topograf',subst) --> "topograf".
-r('topinambur',subst) --> "topinambur".
-r('topaz',subst) --> "topaz".
-r('top',subst) --> "top".
-r('tonus',subst) --> "tonus".
-r('tonsur',subst) --> "tonsur".
-r('tonsil',subst) --> "tonsil".
-r('tonik',subst) --> "tonik".
-r('tong',subst) --> "tong".
-r('tonel',subst) --> "tonel".
-r('tondr',ntr) --> "tondr".
-r('tond',tr) --> "tond".
-r('tonal',subst) --> "tonal".
-r('ton',subst) --> "ton".
-r('tomografi',subst) --> "tomografi".
-r('tomism',subst) --> "tomism".
-r('tombak',subst) --> "tombak".
-r('tomb',subst) --> "tomb".
-r('tomat',subst) --> "tomat".
-r('toman',subst) --> "toman".
-r('toluen',subst) --> "toluen".
-r('toltek',subst) --> "toltek".
-r('toler',tr) --> "toler".
-r('tol',subst) --> "tol".
-r('toksologi',subst) --> "toksologi".
-r('toksolog',subst) --> "toksolog".
-r('toksin',subst) --> "toksin".
-r('tokonom',subst) --> "tokonom".
-r('tokipon',subst) --> "tokipon".
-r('tokat',subst) --> "tokat".
-r('tohuvabohu',subst) --> "tohuvabohu".
-r('tohu',subst) --> "tohu".
-r('tog',subst) --> "tog".
-r('tofu',subst) --> "tofu".
-r('tof',subst) --> "tof".
-r('tobogan',subst) --> "tobogan".
-r('tobag',subst) --> "tobag".
-r('toast',subst) --> "toast".
-r('tjurk',subst) --> "tjurk".
-r('tizan',subst) --> "tizan".
-r('titol',subst) --> "titol".
-r('titan',subst) --> "titan".
-r('titan',subst) --> "titan".
-r('tiroid',subst) --> "tiroid".
-r('tiran',subst) --> "tiran".
-r('tiraljor',subst) --> "tiraljor".
-r('tir',tr) --> "tir".
-r('tipul',subst) --> "tipul".
-r('tipometr',subst) --> "tipometr".
-r('tipologi',subst) --> "tipologi".
-r('tipol',subst) --> "tipol".
-r('tipografi',subst) --> "tipografi".
-r('tipograf',subst) --> "tipograf".
-r('tipi',subst) --> "tipi".
-r('tip',subst) --> "tip".
-r('tinus',best) --> "tinus".
-r('tint',ntr) --> "tint".
-r('tinktur',subst) --> "tinktur".
-r('tink',best) --> "tink".
-r('tineed',subst) --> "tineed".
-r('tine',best) --> "tine".
-r('tindr',subst) --> "tindr".
-r('tin',subst) --> "tin".
-r('tin',subst) --> "tin".
-r('timus',subst) --> "timus".
-r('timpan',subst) --> "timpan".
-r('timon',subst) --> "timon".
-r('timin',subst) --> "timin".
-r('timid',adj) --> "timid".
-r('timian',subst) --> "timian".
-r('timeleac',subst) --> "timeleac".
-r('timbal',subst) --> "timbal".
-r('tim',tr) --> "tim".
-r('tiliac',subst) --> "tiliac".
-r('tili',subst) --> "tili".
-r('tild',subst) --> "tild".
-r('tiktak',subst) --> "tiktak".
-r('tikl',tr) --> "tikl".
-r('tik',ntr) --> "tik".
-r('tik',subst) --> "tik".
-r('tigr',best) --> "tigr".
-r('tig',subst) --> "tig".
-r('tifon',subst) --> "tifon".
-r('tifa',subst) --> "tifa".
-r('tif',subst) --> "tif".
-r('tibi',subst) --> "tibi".
-r('tiar',subst) --> "tiar".
-r('teŭg',subst) --> "teŭg".
-r('teĥnolog',subst) --> "teĥnolog".
-r('teĥnokrati',subst) --> "teĥnokrati".
-r('teĥnokrat',subst) --> "teĥnokrat".
-r('teĥnik',subst) --> "teĥnik".
-r('tezaŭr',subst) --> "tezaŭr".
-r('tez',subst) --> "tez".
-r('tetraoned',subst) --> "tetraoned".
-r('tetraon',subst) --> "tetraon".
-r('tetraedr',subst) --> "tetraedr".
-r('tetra',subst) --> "tetra".
-r('tetr',subst) --> "tetr".
-r('tetan',subst) --> "tetan".
-r('testud',best) --> "testud".
-r('testik',subst) --> "testik".
-r('testament',subst) --> "testament".
-r('test',tr) --> "test".
-r('terur',subst) --> "terur".
-r('terpen',subst) --> "terpen".
-r('teror',subst) --> "teror".
-r('tern',ntr) --> "tern".
-r('termos',subst) --> "termos".
-r('termonukle',adj) --> "termonukle".
-r('termometr',subst) --> "termometr".
-r('termoelektr',adj) --> "termoelektr".
-r('termodinamik',subst) --> "termodinamik".
-r('termit',subst) --> "termit".
-r('terminologi',subst) --> "terminologi".
-r('terminolog',subst) --> "terminolog".
-r('terminali',subst) --> "terminali".
-r('terminal',subst) --> "terminal".
-r('terminal',subst) --> "terminal".
-r('termin',subst) --> "termin".
-r('termik',adj) --> "termik".
-r('term',subst) --> "term".
-r('teritori',subst) --> "teritori".
-r('teriak',subst) --> "teriak".
-r('teren',subst) --> "teren".
-r('terebint',subst) --> "terebint".
-r('terciar',adj) --> "terciar".
-r('terci',subst) --> "terci".
-r('tercet',subst) --> "tercet".
-r('terbi',subst) --> "terbi".
-r('teratologi',subst) --> "teratologi".
-r('teras',subst) --> "teras".
-r('terari',subst) --> "terari".
-r('terapi',subst) --> "terapi".
-r('terapeŭtik',adj) --> "terapeŭtik".
-r('terakot',subst) --> "terakot".
-r('tera',pref) --> "tera".
-r('ter',subst) --> "ter".
-r('teozofi',subst) --> "teozofi".
-r('teozof',subst) --> "teozof".
-r('teori',subst) --> "teori".
-r('teorem',subst) --> "teorem".
-r('teorb',subst) --> "teorb".
-r('teologi',subst) --> "teologi".
-r('teolog',subst) --> "teolog".
-r('teokrati',subst) --> "teokrati".
-r('teodolit',subst) --> "teodolit".
-r('tent',tr) --> "tent".
-r('tensi',subst) --> "tensi".
-r('tenor',subst) --> "tenor".
-r('tenon',subst) --> "tenon".
-r('tenis',subst) --> "tenis".
-r('teni',subst) --> "teni".
-r('tener',adj) --> "tener".
-r('tenebr',subst) --> "tenebr".
-r('tendr',subst) --> "tendr".
-r('tendenc',subst) --> "tendenc".
-r('tenden',subst) --> "tenden".
-r('tend',subst) --> "tend".
-r('tenajl',subst) --> "tenajl".
-r('tenac',adj) --> "tenac".
-r('ten',tr) --> "ten".
-r('temporal',subst) --> "temporal".
-r('templ',subst) --> "templ".
-r('tempi',subst) --> "tempi".
-r('tempest',subst) --> "tempest".
-r('temperatur',subst) --> "temperatur".
-r('temperament',subst) --> "temperament".
-r('temp',subst) --> "temp".
-r('temerar',adj) --> "temerar".
-r('tembr',subst) --> "tembr".
-r('tem',subst) --> "tem".
-r('telur',subst) --> "telur".
-r('telomer',subst) --> "telomer".
-r('telfer',subst) --> "telfer".
-r('televizi',subst) --> "televizi".
-r('televid',verb) --> "televid".
-r('teleskop',subst) --> "teleskop".
-r('telereg',verb) --> "telereg".
-r('teler',subst) --> "teler".
-r('telepati',subst) --> "telepati".
-r('teleobjektiv',subst) --> "teleobjektiv".
-r('teleks',subst) --> "teleks".
-r('telekopi',subst) --> "telekopi".
-r('telekomunik',verb) --> "telekomunik".
-r('telegram',subst) --> "telegram".
-r('telegrafi',subst) --> "telegrafi".
-r('telegraf',subst) --> "telegraf".
-r('telefotograf',tr) --> "telefotograf".
-r('telefoni',subst) --> "telefoni".
-r('telefon',subst) --> "telefon".
-r('teleaŭtograf',tr) --> "teleaŭtograf".
-r('tele',pref) --> "tele".
-r('tel',subst) --> "tel".
-r('tekvond',subst) --> "tekvond".
-r('tekton',subst) --> "tekton".
-r('tekstur',subst) --> "tekstur".
-r('tekstur',subst) --> "tekstur".
-r('tekst',subst) --> "tekst".
-r('teks',tr) --> "teks".
-r('teknologi',subst) --> "teknologi".
-r('teknolog',subst) --> "teknolog".
-r('teknokrati',subst) --> "teknokrati".
-r('teknokrat',subst) --> "teknokrat".
-r('teknik',subst) --> "teknik".
-r('tekneci',subst) --> "tekneci".
-r('tekil',subst) --> "tekil".
-r('tek',subst) --> "tek".
-r('teist',subst) --> "teist".
-r('teism',subst) --> "teism".
-r('tein',subst) --> "tein".
-r('tegol',subst) --> "tegol".
-r('tegment',subst) --> "tegment".
-r('teg',tr) --> "teg".
-r('teflon',subst) --> "teflon".
-r('ted',tr) --> "ted".
-r('teatr',subst) --> "teatr".
-r('team',subst) --> "team".
-r('teac',subst) --> "teac".
-r('te',subst) --> "te".
-r('taŭz',tr) --> "taŭz".
-r('taŭtologi',subst) --> "taŭtologi".
-r('taŭrotrag',subst) --> "taŭrotrag".
-r('taŭr',subst) --> "taŭr".
-r('taŭg',ntr) --> "taŭg".
-r('taŝ',subst) --> "taŝ".
-r('taĥikardi',subst) --> "taĥikardi".
-r('taĝik',subst) --> "taĝik".
-r('taĉment',subst) --> "taĉment".
-r('tavol',subst) --> "tavol".
-r('tavern',subst) --> "tavern".
-r('tatu',tr) --> "tatu".
-r('tatar',subst) --> "tatar".
-r('tatam',subst) --> "tatam".
-r('task',subst) --> "task".
-r('tas',subst) --> "tas".
-r('tartan',subst) --> "tartan".
-r('tars',subst) --> "tars".
-r('tarok',subst) --> "tarok".
-r('tarif',subst) --> "tarif".
-r('tarantul',subst) --> "tarantul".
-r('tarantel',subst) --> "tarantel".
-r('tarantas',subst) --> "tarantas".
-r('tar',subst) --> "tar".
-r('tar',subst) --> "tar".
-r('tapiŝ',subst) --> "tapiŝ".
-r('tapiok',subst) --> "tapiok".
-r('tapet',subst) --> "tapet".
-r('taoist',subst) --> "taoist".
-r('taoism',subst) --> "taoism".
-r('tanĝ',tr) --> "tanĝ".
-r('tantr',subst) --> "tantr".
-r('tantiem',subst) --> "tantiem".
-r('tantal',subst) --> "tantal".
-r('tanka',subst) --> "tanka".
-r('tank',subst) --> "tank".
-r('tanin',subst) --> "tanin".
-r('tangram',subst) --> "tangram".
-r('tangent',subst) --> "tangent".
-r('tanga',subst) --> "tanga".
-r('tang',ntr) --> "tang".
-r('tandem',subst) --> "tandem".
-r('tan',tr) --> "tan".
-r('tamul',subst) --> "tamul".
-r('tamtam',subst) --> "tamtam".
-r('tampon',subst) --> "tampon".
-r('tamil',best) --> "tamil".
-r('tamias',best) --> "tamias".
-r('tamburin',subst) --> "tamburin".
-r('tambur',subst) --> "tambur".
-r('tamarind',subst) --> "tamarind".
-r('tamarikac',subst) --> "tamarikac".
-r('tamarik',subst) --> "tamarik".
-r('talped',subst) --> "talped".
-r('talp',best) --> "talp".
-r('talon',subst) --> "talon".
-r('talmud',subst) --> "talmud".
-r('talk',subst) --> "talk".
-r('talium',subst) --> "talium".
-r('talisman',subst) --> "talisman".
-r('talib',subst) --> "talib".
-r('tali',subst) --> "tali".
-r('tali',subst) --> "tali".
-r('taler',subst) --> "taler".
-r('talent',subst) --> "talent".
-r('talasemi',subst) --> "talasemi".
-r('talar',subst) --> "talar".
-r('talant',subst) --> "talant".
-r('taktik',subst) --> "taktik".
-r('takt',subst) --> "takt".
-r('taksusac',subst) --> "taksusac".
-r('taksus',subst) --> "taksus".
-r('taksonomi',subst) --> "taksonomi".
-r('taksonom',subst) --> "taksonom".
-r('takson',subst) --> "takson".
-r('taksodiac',subst) --> "taksodiac".
-r('taksimetr',subst) --> "taksimetr".
-r('taksi',subst) --> "taksi".
-r('taks',tr) --> "taks".
-r('takipet',subst) --> "takipet".
-r('takikardi',subst) --> "takikardi".
-r('takel',subst) --> "takel".
-r('tajĝiĉuan',subst) --> "tajĝiĉuan".
-r('tajĝi',subst) --> "tajĝi".
-r('tajvan',subst) --> "tajvan".
-r('tajp',tr) --> "tajp".
-r('tajlor',subst) --> "tajlor".
-r('tajl',tr) --> "tajl".
-r('tajg',subst) --> "tajg".
-r('tajfun',subst) --> "tajfun".
-r('tajd',subst) --> "tajd".
-r('taj',subst) --> "taj".
-r('tagalog',subst) --> "tagalog".
-r('tag',subst) --> "tag".
-r('taft',subst) --> "taft".
-r('tael',subst) --> "tael".
-r('taburet',subst) --> "taburet".
-r('tabul',subst) --> "tabul".
-r('tabu',tr) --> "tabu".
-r('tablojd',subst) --> "tablojd".
-r('tabl',subst) --> "tabl".
-r('tabi',subst) --> "tabi".
-r('tabernakl',subst) --> "tabernakl".
-r('tabel',subst) --> "tabel".
-r('tabaned',subst) --> "tabaned".
-r('taban',subst) --> "taban".
-r('tabak',subst) --> "tabak".
-r('tab',subst) --> "tab".
-r('ta',subst) --> "ta".
-r('svop',subst) --> "svop".
-r('svis',subst) --> "svis".
-r('sving',tr) --> "sving".
-r('sveter',subst) --> "sveter".
-r('sven',ntr) --> "sven".
-r('svelt',adj) --> "svelt".
-r('sved',subst) --> "sved".
-r('svazi',subst) --> "svazi".
-r('svat',tr) --> "svat".
-r('svastik',subst) --> "svastik".
-r('svarm',ntr) --> "svarm".
-r('svag',adj) --> "svag".
-r('suŝi',subst) --> "suŝi".
-r('suĉ',tr) --> "suĉ".
-r('suzeren',subst) --> "suzeren".
-r('suveren',subst) --> "suveren".
-r('suvenir',subst) --> "suvenir".
-r('sutur',verb) --> "sutur".
-r('sutr',subst) --> "sutr".
-r('sutan',subst) --> "sutan".
-r('susur',ntr) --> "susur".
-r('suspir',ntr) --> "suspir".
-r('suspensi',subst) --> "suspensi".
-r('suspens',subst) --> "suspens".
-r('suspend',tr) --> "suspend".
-r('suspekt',tr) --> "suspekt".
-r('surtut',subst) --> "surtut".
-r('surpriz',tr) --> "surpriz".
-r('surplis',subst) --> "surplis".
-r('surogat',subst) --> "surogat".
-r('surjekci',subst) --> "surjekci".
-r('surfac',subst) --> "surfac".
-r('surf',subst) --> "surf".
-r('surd',adj) --> "surd".
-r('sura',subst) --> "sura".
-r('sur',subst) --> "sur".
-r('suprem',subst) --> "suprem".
-r('supr',adv) --> "supr".
-r('supoz',tr) --> "supoz".
-r('suplik',tr) --> "suplik".
-r('suplement',subst) --> "suplement".
-r('supl',adj) --> "supl".
-r('superstiĉ',subst) --> "superstiĉ".
-r('superlativ',subst) --> "superlativ".
-r('superb',adj) --> "superb".
-r('sup',subst) --> "sup".
-r('suom',subst) --> "suom".
-r('sun',subst) --> "sun".
-r('sumo',subst) --> "sumo".
-r('sumer',subst) --> "sumer".
-r('sum',subst) --> "sum".
-r('sultan',subst) --> "sultan".
-r('sulk',subst) --> "sulk".
-r('sulfur',subst) --> "sulfur".
-r('sulf',subst) --> "sulf".
-r('sukur',tr) --> "sukur".
-r('sukub',subst) --> "sukub".
-r('suker',subst) --> "suker".
-r('sukces',ntr) --> "sukces".
-r('sukcen',subst) --> "sukcen".
-r('sukced',tr) --> "sukced".
-r('suk',subst) --> "suk".
-r('suit',subst) --> "suit".
-r('suicid',ntr) --> "suicid".
-r('sugesti',tr) --> "sugesti".
-r('sugest',verb) --> "sugest".
-r('sufragan',subst) --> "sufragan".
-r('sufok',tr) --> "sufok".
-r('suflor',subst) --> "suflor".
-r('sufiĉ',adj) --> "sufiĉ".
-r('sufiks',subst) --> "sufiks".
-r('sufer',tr) --> "sufer".
-r('sudok',subst) --> "sudok".
-r('sud',subst) --> "sud".
-r('subvenci',subst) --> "subvenci".
-r('subtrah',tr) --> "subtrah".
-r('subtil',adj) --> "subtil".
-r('substrat',subst) --> "substrat".
-r('substitu',tr) --> "substitu".
-r('substantiv',subst) --> "substantiv".
-r('substanc',subst) --> "substanc".
-r('subsidiar',adj) --> "subsidiar".
-r('submarin',subst) --> "submarin".
-r('sublimat',subst) --> "sublimat".
-r('sublim',adj) --> "sublim".
-r('sublim',tr) --> "sublim".
-r('subjunktiv',subst) --> "subjunktiv".
-r('subjunkci',subst) --> "subjunkci".
-r('subjekt',subst) --> "subjekt".
-r('subit',adj) --> "subit".
-r('subaltern',adj) --> "subaltern".
-r('sturned',subst) --> "sturned".
-r('sturn',subst) --> "sturn".
-r('sturm',tr) --> "sturm".
-r('sturg',best) --> "sturg".
-r('stupor',subst) --> "stupor".
-r('stupa',subst) --> "stupa".
-r('stup',subst) --> "stup".
-r('stump',subst) --> "stump".
-r('stumbl',ntr) --> "stumbl".
-r('stult',adj) --> "stult".
-r('stuk',tr) --> "stuk".
-r('stuf',tr) --> "stuf".
-r('studi',subst) --> "studi".
-r('student',subst) --> "student".
-r('stud',tr) --> "stud".
-r('stuc',verb) --> "stuc".
-r('struted',subst) --> "struted".
-r('strut',subst) --> "strut".
-r('struktur',subst) --> "struktur".
-r('stronci',subst) --> "stronci".
-r('stromatolit',subst) --> "stromatolit".
-r('strofoid',subst) --> "strofoid".
-r('strof',subst) --> "strof".
-r('strobil',subst) --> "strobil".
-r('striptiz',subst) --> "striptiz".
-r('string',tr) --> "string".
-r('strikt',adj) --> "strikt".
-r('striknin',subst) --> "striknin".
-r('strik',subst) --> "strik".
-r('strigl',tr) --> "strigl".
-r('striged',subst) --> "striged".
-r('strig',subst) --> "strig".
-r('strid',verb) --> "strid".
-r('stri',subst) --> "stri".
-r('streĉ',tr) --> "streĉ".
-r('streptomicin',subst) --> "streptomicin".
-r('strek',tr) --> "strek".
-r('streb',ntr) --> "streb".
-r('stratus',subst) --> "stratus".
-r('stratum',subst) --> "stratum".
-r('stratosfer',subst) --> "stratosfer".
-r('stratigrafi',subst) --> "stratigrafi".
-r('strategi',subst) --> "strategi".
-r('stratagem',subst) --> "stratagem".
-r('strat',subst) --> "strat".
-r('stras',subst) --> "stras".
-r('strangol',tr) --> "strangol".
-r('strang',adj) --> "strang".
-r('strand',subst) --> "strand".
-r('strab',ntr) --> "strab".
-r('stov',subst) --> "stov".
-r('stotink',subst) --> "stotink".
-r('stopl',subst) --> "stopl".
-r('stomp',tr) --> "stomp".
-r('stomak',subst) --> "stomak".
-r('stol',subst) --> "stol".
-r('stokast',adj) --> "stokast".
-r('stok',subst) --> "stok".
-r('stoik',adj) --> "stoik".
-r('stof',subst) --> "stof".
-r('stiv',tr) --> "stiv".
-r('stirak',subst) --> "stirak".
-r('stir',tr) --> "stir".
-r('stipendi',subst) --> "stipendi".
-r('stip',subst) --> "stip".
-r('stink',ntr) --> "stink".
-r('stimul',tr) --> "stimul".
-r('stilz',subst) --> "stilz".
-r('stilus',subst) --> "stilus".
-r('stilistik',subst) --> "stilistik".
-r('stilet',subst) --> "stilet".
-r('stil',subst) --> "stil".
-r('stik',tr) --> "stik".
-r('stigmat',subst) --> "stigmat".
-r('stigm',subst) --> "stigm".
-r('stift',subst) --> "stift".
-r('stif',pref) --> "stif".
-r('steven',subst) --> "steven".
-r('stevard',subst) --> "stevard".
-r('stetoskop',subst) --> "stetoskop".
-r('stertor',subst) --> "stertor".
-r('sternum',subst) --> "sternum".
-r('stern',tr) --> "stern".
-r('sterling',adj) --> "sterling".
-r('sterled',best) --> "sterled".
-r('sterkuliac',subst) --> "sterkuliac".
-r('sterkuli',subst) --> "sterkuli".
-r('sterkorari',subst) --> "sterkorari".
-r('sterk',subst) --> "sterk".
-r('steril',adj) --> "steril".
-r('stereotip',subst) --> "stereotip".
-r('stereoskop',subst) --> "stereoskop".
-r('stereomikroskop',subst) --> "stereomikroskop".
-r('stereometri',subst) --> "stereometri".
-r('stereografi',subst) --> "stereografi".
-r('stereofoni',subst) --> "stereofoni".
-r('stereo',pref) --> "stereo".
-r('steradian',subst) --> "steradian".
-r('step',subst) --> "step".
-r('stenotipi',subst) --> "stenotipi".
-r('stenotip',subst) --> "stenotip".
-r('stenotajp',verb) --> "stenotajp".
-r('stenogram',subst) --> "stenogram".
-r('stenografi',subst) --> "stenografi".
-r('stenograf',verb) --> "stenograf".
-r('stenodaktilograf',verb) --> "stenodaktilograf".
-r('stenodaktil',verb) --> "stenodaktil".
-r('stencil',subst) --> "stencil".
-r('stele',subst) --> "stele".
-r('stelari',subst) --> "stelari".
-r('stel',subst) --> "stel".
-r('steg',subst) --> "steg".
-r('steb',tr) --> "steb".
-r('stearin',subst) --> "stearin".
-r('staŭd',subst) --> "staŭd".
-r('staĝ',subst) --> "staĝ".
-r('statut',subst) --> "statut".
-r('status',subst) --> "status".
-r('statur',subst) --> "statur".
-r('statu',subst) --> "statu".
-r('stativ',subst) --> "stativ".
-r('statistik',subst) --> "statistik".
-r('statist',subst) --> "statist".
-r('statik',subst) --> "statik".
-r('stater',subst) --> "stater".
-r('stat',subst) --> "stat".
-r('start',ntr) --> "start".
-r('star',ntr) --> "star".
-r('stapl',subst) --> "stapl".
-r('staniol',subst) --> "staniol".
-r('stang',subst) --> "stang".
-r('standard',subst) --> "standard".
-r('stand',subst) --> "stand".
-r('stanc',subst) --> "stanc".
-r('stan',subst) --> "stan".
-r('stampf',verb) --> "stampf".
-r('stamp',tr) --> "stamp".
-r('stamin',subst) --> "stamin".
-r('stamf',ntr) --> "stamf".
-r('stamen',subst) --> "stamen".
-r('stalaktit',subst) --> "stalaktit".
-r('stalagmit',subst) --> "stalagmit".
-r('stal',subst) --> "stal".
-r('stakt',subst) --> "stakt".
-r('stakat',subst) --> "stakat".
-r('stak',subst) --> "stak".
-r('staj',subst) --> "staj".
-r('stagn',ntr) --> "stagn".
-r('stafet',subst) --> "stafet".
-r('stadium',subst) --> "stadium".
-r('stadion',subst) --> "stadion".
-r('stadi',subst) --> "stadi".
-r('staci',subst) --> "staci".
-r('stabl',subst) --> "stabl".
-r('stabil',adj) --> "stabil".
-r('stab',subst) --> "stab".
-r('srilank',subst) --> "srilank".
-r('sputnik',subst) --> "sputnik".
-r('sput',tr) --> "sput".
-r('spur',subst) --> "spur".
-r('sprot',subst) --> "sprot".
-r('spros',subst) --> "spros".
-r('spron',subst) --> "spron".
-r('sprit',adj) --> "sprit".
-r('sport',subst) --> "sport".
-r('sporad',adj) --> "sporad".
-r('spor',subst) --> "spor".
-r('spontane',adj) --> "spontane".
-r('spontan',adj) --> "spontan".
-r('spont',adj) --> "spont".
-r('sponsor',subst) --> "sponsor".
-r('spong',subst) --> "spong".
-r('sponde',subst) --> "sponde".
-r('spok',subst) --> "spok".
-r('split',subst) --> "split".
-r('splint',subst) --> "splint".
-r('splen',subst) --> "splen".
-r('spit',tr) --> "spit".
-r('spiroĥet',subst) --> "spiroĥet".
-r('spiroket',subst) --> "spiroket".
-r('spiritualist',subst) --> "spiritualist".
-r('spiritualism',subst) --> "spiritualism".
-r('spiritual',adj) --> "spiritual".
-r('spiritist',subst) --> "spiritist".
-r('spiritism',subst) --> "spiritism".
-r('spirit',subst) --> "spirit".
-r('spire',subst) --> "spire".
-r('spiral',subst) --> "spiral".
-r('spir',ntr) --> "spir".
-r('spion',subst) --> "spion".
-r('spinet',subst) --> "spinet".
-r('spindel',subst) --> "spindel".
-r('spinac',subst) --> "spinac".
-r('spin',subst) --> "spin".
-r('spin',subst) --> "spin".
-r('spil',tr) --> "spil".
-r('spik',subst) --> "spik".
-r('spic',subst) --> "spic".
-r('spez',subst) --> "spez".
-r('spes',subst) --> "spes".
-r('spert',adj) --> "spert".
-r('spermatozo',subst) --> "spermatozo".
-r('sperm',subst) --> "sperm".
-r('spelt',subst) --> "spelt".
-r('speleologi',subst) --> "speleologi".
-r('speleolog',subst) --> "speleolog".
-r('spekulativ',adj) --> "spekulativ".
-r('spekulaci',ntr) --> "spekulaci".
-r('spekul',verb) --> "spekul".
-r('spektroskopi',subst) --> "spektroskopi".
-r('spektroskop',subst) --> "spektroskop".
-r('spektrometri',subst) --> "spektrometri".
-r('spektrometr',subst) --> "spektrometr".
-r('spektrofotometri',subst) --> "spektrofotometri".
-r('spektr',subst) --> "spektr".
-r('spektakl',subst) --> "spektakl".
-r('spekt',tr) --> "spekt".
-r('spegul',subst) --> "spegul".
-r('specimen',subst) --> "specimen".
-r('specif',verb) --> "specif".
-r('special',adj) --> "special".
-r('speci',subst) --> "speci".
-r('spec',subst) --> "spec".
-r('spatel',subst) --> "spatel".
-r('spat',subst) --> "spat".
-r('spasm',subst) --> "spasm".
-r('spark',subst) --> "spark".
-r('spar',subst) --> "spar".
-r('spaniel',subst) --> "spaniel".
-r('span',subst) --> "span".
-r('spam',subst) --> "spam".
-r('spalir',subst) --> "spalir".
-r('spajr',subst) --> "spajr".
-r('spaget',subst) --> "spaget".
-r('spadik',subst) --> "spadik".
-r('spad',subst) --> "spad".
-r('spac',subst) --> "spac".
-r('sozi',subst) --> "sozi".
-r('sovĥoz',subst) --> "sovĥoz".
-r('sovet',subst) --> "sovet".
-r('sovaĝ',adj) --> "sovaĝ".
-r('sorĉ',tr) --> "sorĉ".
-r('sortiment',subst) --> "sortiment".
-r('sort',subst) --> "sort".
-r('sorp',subst) --> "sorp".
-r('soroban',subst) --> "soroban".
-r('soriked',subst) --> "soriked".
-r('sorik',best) --> "sorik".
-r('sorg',subst) --> "sorg".
-r('sordid',adj) --> "sordid".
-r('sorb',tr) --> "sorb".
-r('sorab',best) --> "sorab".
-r('sopran',subst) --> "sopran".
-r('sopir',tr) --> "sopir".
-r('sonĝ',subst) --> "sonĝ".
-r('sonor',ntr) --> "sonor".
-r('sonografi',subst) --> "sonografi".
-r('sonet',subst) --> "sonet".
-r('sond',tr) --> "sond".
-r('sonat',subst) --> "sonat".
-r('son',ntr) --> "son".
-r('somnol',verb) --> "somnol".
-r('somnambul',subst) --> "somnambul".
-r('somer',subst) --> "somer".
-r('sombr',adj) --> "sombr".
-r('somateri',subst) --> "somateri".
-r('somal',subst) --> "somal".
-r('solvent',adj) --> "solvent".
-r('solv',tr) --> "solv".
-r('solstic',subst) --> "solstic".
-r('solist',subst) --> "solist".
-r('solipsist',subst) --> "solipsist".
-r('solipsism',subst) --> "solipsism".
-r('solidar',adj) --> "solidar".
-r('solidag',subst) --> "solidag".
-r('solid',adj) --> "solid".
-r('solen',adj) --> "solen".
-r('solecism',subst) --> "solecism".
-r('sole',best) --> "sole".
-r('soldat',subst) --> "soldat".
-r('sold',subst) --> "sold".
-r('solanac',subst) --> "solanac".
-r('solan',subst) --> "solan".
-r('sol',adj) --> "sol".
-r('sokl',subst) --> "sokl".
-r('sok',subst) --> "sok".
-r('sojl',subst) --> "sojl".
-r('soj',subst) --> "soj".
-r('soif',tr) --> "soif".
-r('soft',adj) --> "soft".
-r('sofrologi',subst) --> "sofrologi".
-r('sofrolog',subst) --> "sofrolog".
-r('sofor',subst) --> "sofor".
-r('sofistik',subst) --> "sofistik".
-r('sofist',subst) --> "sofist".
-r('sofism',subst) --> "sofism".
-r('sof',subst) --> "sof".
-r('sod',subst) --> "sod".
-r('socionik',subst) --> "socionik".
-r('sociologi',subst) --> "sociologi".
-r('sociolog',subst) --> "sociolog".
-r('sociolekt',subst) --> "sociolekt".
-r('societ',subst) --> "societ".
-r('social',adj) --> "social".
-r('soci',subst) --> "soci".
-r('sobr',adj) --> "sobr".
-r('snuf',verb) --> "snuf".
-r('snob',subst) --> "snob".
-r('smirg',subst) --> "smirg".
-r('smerald',subst) --> "smerald".
-r('sloven',subst) --> "sloven".
-r('slovak',subst) --> "slovak".
-r('slojd',subst) --> "slojd".
-r('slogan',subst) --> "slogan".
-r('slip',subst) --> "slip".
-r('sled',subst) --> "sled".
-r('slav',subst) --> "slav".
-r('slang',subst) --> "slang".
-r('slab',subst) --> "slab".
-r('skvaŝ',subst) --> "skvaŝ".
-r('skvar',subst) --> "skvar".
-r('skvam',subst) --> "skvam".
-r('skut',ntr) --> "skut".
-r('skurĝ',subst) --> "skurĝ".
-r('skunk',subst) --> "skunk".
-r('skun',subst) --> "skun".
-r('skulptur',subst) --> "skulptur".
-r('skulpt',tr) --> "skulpt".
-r('sku',tr) --> "sku".
-r('skrupul',subst) --> "skrupul".
-r('skrot',subst) --> "skrot".
-r('skrofulariac',subst) --> "skrofulariac".
-r('skrofulari',subst) --> "skrofulari".
-r('skrofol',subst) --> "skrofol".
-r('skrib',tr) --> "skrib".
-r('skrap',tr) --> "skrap".
-r('skrabl',subst) --> "skrabl".
-r('skotiŝ',subst) --> "skotiŝ".
-r('skoter',subst) --> "skoter".
-r('skot',subst) --> "skot".
-r('skorzoner',subst) --> "skorzoner".
-r('skorpi',subst) --> "skorpi".
-r('skorpened',subst) --> "skorpened".
-r('skorpen',best) --> "skorpen".
-r('skori',subst) --> "skori".
-r('skorbut',subst) --> "skorbut".
-r('skombred',subst) --> "skombred".
-r('skombr',best) --> "skombr".
-r('skolt',subst) --> "skolt".
-r('skolopendr',subst) --> "skolopendr".
-r('skoloped',subst) --> "skoloped".
-r('skolop',subst) --> "skolop".
-r('skolioz',subst) --> "skolioz".
-r('skold',tr) --> "skold".
-r('skolastik',subst) --> "skolastik".
-r('skol',subst) --> "skol".
-r('skleroz',subst) --> "skleroz".
-r('sklerot',subst) --> "sklerot".
-r('skler',subst) --> "skler".
-r('sklav',subst) --> "sklav".
-r('skizofreni',subst) --> "skizofreni".
-r('skiz',subst) --> "skiz".
-r('skit',subst) --> "skit".
-r('skist',subst) --> "skist".
-r('skism',subst) --> "skism".
-r('skip',subst) --> "skip".
-r('skink',subst) --> "skink".
-r('ski',subst) --> "ski".
-r('skeĉ',subst) --> "skeĉ".
-r('skerm',ntr) --> "skerm".
-r('skerc',subst) --> "skerc".
-r('skeptik',adj) --> "skeptik".
-r('skem',subst) --> "skem".
-r('skelet',subst) --> "skelet".
-r('skatol',subst) --> "skatol".
-r('skarp',subst) --> "skarp".
-r('skarlatin',subst) --> "skarlatin".
-r('skarlat',subst) --> "skarlat".
-r('skarifik',tr) --> "skarifik".
-r('skarif',tr) --> "skarif".
-r('skarabed',subst) --> "skarabed".
-r('skarab',subst) --> "skarab".
-r('skapulari',subst) --> "skapulari".
-r('skapol',subst) --> "skapol".
-r('skandi',subst) --> "skandi".
-r('skandal',subst) --> "skandal".
-r('skand',tr) --> "skand".
-r('skan',tr) --> "skan".
-r('skalpel',subst) --> "skalpel".
-r('skalp',subst) --> "skalp".
-r('skalen',adj) --> "skalen".
-r('skald',subst) --> "skald".
-r('skalar',subst) --> "skalar".
-r('skal',subst) --> "skal".
-r('skafark',subst) --> "skafark".
-r('skafandr',subst) --> "skafandr".
-r('skafald',subst) --> "skafald".
-r('skadr',subst) --> "skadr".
-r('skabioz',subst) --> "skabioz".
-r('skabi',subst) --> "skabi".
-r('skaben',subst) --> "skaben".
-r('sivert',subst) --> "sivert".
-r('siu',subst) --> "siu".
-r('situaci',subst) --> "situaci".
-r('situ',subst) --> "situ".
-r('sitel',subst) --> "sitel".
-r('sitar',subst) --> "sitar".
-r('sistr',subst) --> "sistr".
-r('sistol',subst) --> "sistol".
-r('sistematik',subst) --> "sistematik".
-r('sistem',subst) --> "sistem".
-r('sismologi',subst) --> "sismologi".
-r('sismograf',subst) --> "sismograf".
-r('sism',adj) --> "sism".
-r('sisal',subst) --> "sisal".
-r('sirop',subst) --> "sirop".
-r('sirok',subst) --> "sirok".
-r('siring',subst) --> "siring".
-r('siren',subst) --> "siren".
-r('sinusit',subst) --> "sinusit".
-r('sinus',subst) --> "sinus".
-r('sinus',subst) --> "sinus".
-r('sinu',subst) --> "sinu".
-r('sintez',subst) --> "sintez".
-r('sintaks',subst) --> "sintaks".
-r('sintagm',subst) --> "sintagm".
-r('sinoptik',adj) --> "sinoptik".
-r('sinonimi',subst) --> "sinonimi".
-r('sinonim',subst) --> "sinonim".
-r('sinod',subst) --> "sinod".
-r('sinkrotron',subst) --> "sinkrotron".
-r('sinkron',adj) --> "sinkron".
-r('sinkretism',subst) --> "sinkretism".
-r('sinkop',subst) --> "sinkop".
-r('sink',verb) --> "sink".
-r('sinjor',subst) --> "sinjor".
-r('singult',ntr) --> "singult".
-r('singular',subst) --> "singular".
-r('sinestezi',subst) --> "sinestezi".
-r('sinergi',subst) --> "sinergi".
-r('sinekur',subst) --> "sinekur".
-r('sinekdoĥ',subst) --> "sinekdoĥ".
-r('sinekdok',subst) --> "sinekdok".
-r('sinedri',subst) --> "sinedri".
-r('sindrom',subst) --> "sindrom".
-r('sindikat',subst) --> "sindikat".
-r('sindik',subst) --> "sindik".
-r('sincer',adj) --> "sincer".
-r('sinaps',subst) --> "sinaps".
-r('sinap',subst) --> "sinap".
-r('sinagog',subst) --> "sinagog".
-r('sin',subst) --> "sin".
-r('simultan',adj) --> "simultan".
-r('simul',tr) --> "simul".
-r('simptom',subst) --> "simptom".
-r('simpozi',subst) --> "simpozi".
-r('simpl',adj) --> "simpl".
-r('simpati',subst) --> "simpati".
-r('simoni',subst) --> "simoni".
-r('simil',adj) --> "simil".
-r('simi',best) --> "simi".
-r('simfoni',subst) --> "simfoni".
-r('simetri',subst) --> "simetri".
-r('simbol',subst) --> "simbol".
-r('simbioz',subst) --> "simbioz".
-r('simarubac',subst) --> "simarubac".
-r('silvied',subst) --> "silvied".
-r('silvi',subst) --> "silvi".
-r('siluri',subst) --> "siluri".
-r('silur',subst) --> "silur".
-r('siluet',subst) --> "siluet".
-r('silogism',subst) --> "silogism".
-r('silk',subst) --> "silk".
-r('silikv',subst) --> "silikv".
-r('silikoz',subst) --> "silikoz".
-r('silikon',subst) --> "silikon".
-r('silik',subst) --> "silik".
-r('silici',subst) --> "silici".
-r('silf',subst) --> "silf".
-r('silent',ntr) --> "silent".
-r('silab',subst) --> "silab".
-r('sil',subst) --> "sil".
-r('sikomor',subst) --> "sikomor".
-r('sikl',subst) --> "sikl".
-r('sikari',subst) --> "sikari".
-r('sik',subst) --> "sik".
-r('signif',tr) --> "signif".
-r('signal',subst) --> "signal".
-r('sign',subst) --> "sign".
-r('sigl',subst) --> "sigl".
-r('sigel',subst) --> "sigel".
-r('sifon',subst) --> "sifon".
-r('sifilis',subst) --> "sifilis".
-r('sieĝ',tr) --> "sieĝ".
-r('siest',subst) --> "siest".
-r('sieraleon',subst) --> "sieraleon".
-r('sid',ntr) --> "sid".
-r('sibl',ntr) --> "sibl".
-r('sibarit',subst) --> "sibarit".
-r('sfinkter',subst) --> "sfinkter".
-r('sfinks',subst) --> "sfinks".
-r('sfer',subst) --> "sfer".
-r('sfenisk',subst) --> "sfenisk".
-r('seĝ',subst) --> "seĝ".
-r('sezon',subst) --> "sezon".
-r('sezam',subst) --> "sezam".
-r('sevrug',best) --> "sevrug".
-r('sever',adj) --> "sever".
-r('setari',subst) --> "setari".
-r('setar',subst) --> "setar".
-r('sesterc',subst) --> "sesterc".
-r('sest',subst) --> "sest".
-r('seskvilinear',adj) --> "seskvilinear".
-r('sesi',subst) --> "sesi".
-r('serĝent',subst) --> "serĝent".
-r('serĝ',subst) --> "serĝ".
-r('serĉ',tr) --> "serĉ".
-r('servut',subst) --> "servut".
-r('servil',adj) --> "servil".
-r('servic',subst) --> "servic".
-r('serval',best) --> "serval".
-r('serv',tr) --> "serv".
-r('serur',subst) --> "serur".
-r('serum',subst) --> "serum".
-r('serpent',subst) --> "serpent".
-r('serp',subst) --> "serp".
-r('seroz',subst) --> "seroz".
-r('serotonin',subst) --> "serotonin".
-r('seroterapi',subst) --> "seroterapi".
-r('serioz',adj) --> "serioz".
-r('serif',subst) --> "serif".
-r('seri',subst) --> "seri".
-r('serenad',subst) --> "serenad".
-r('seren',adj) --> "seren".
-r('serbi',subst) --> "serbi".
-r('serb',subst) --> "serb".
-r('serasalm',subst) --> "serasalm".
-r('seran',subst) --> "seran".
-r('serajl',subst) --> "serajl".
-r('seraf',subst) --> "seraf".
-r('ser',subst) --> "ser".
-r('sepult',tr) --> "sepult".
-r('septim',subst) --> "septim".
-r('septet',subst) --> "septet".
-r('septembr',subst) --> "septembr".
-r('sept',subst) --> "sept".
-r('seps',adj) --> "seps".
-r('sepi',subst) --> "sepi".
-r('separatist',subst) --> "separatist".
-r('separatism',subst) --> "separatism".
-r('separ',subst) --> "separ".
-r('sepal',subst) --> "sepal".
-r('sentimental',adj) --> "sentimental".
-r('sentiment',subst) --> "sentiment".
-r('sentenc',subst) --> "sentenc".
-r('sent',tr) --> "sent".
-r('sensualism',subst) --> "sensualism".
-r('sensaci',subst) --> "sensaci".
-r('sensac',subst) --> "sensac".
-r('sens',subst) --> "sens".
-r('senil',adj) --> "senil".
-r('senes',subst) --> "senes".
-r('seneci',subst) --> "seneci".
-r('send',tr) --> "send".
-r('senc',subst) --> "senc".
-r('senat',subst) --> "senat".
-r('sen',subst) --> "sen".
-r('semperviv',subst) --> "semperviv".
-r('semiotik',subst) --> "semiotik".
-r('seminari',subst) --> "seminari".
-r('semestr',subst) --> "semestr".
-r('semantik',subst) --> "semantik".
-r('semajn',subst) --> "semajn".
-r('semafor',subst) --> "semafor".
-r('sem',subst) --> "sem".
-r('selen',subst) --> "selen".
-r('selekt',tr) --> "selekt".
-r('selakt',subst) --> "selakt".
-r('sel',subst) --> "sel".
-r('sekvojadendr',subst) --> "sekvojadendr".
-r('sekvoj',subst) --> "sekvoj".
-r('sekvestraci',verb) --> "sekvestraci".
-r('sekvestr',tr) --> "sekvestr".
-r('sekv',tr) --> "sekv".
-r('sekur',adj) --> "sekur".
-r('sekundar',adj) --> "sekundar".
-r('sekundant',subst) --> "sekundant".
-r('sekund',subst) --> "sekund".
-r('sekulariz',tr) --> "sekulariz".
-r('sekular',adj) --> "sekular".
-r('sektor',subst) --> "sektor".
-r('sekt',subst) --> "sekt".
-r('sekstant',subst) --> "sekstant".
-r('sekst',subst) --> "sekst".
-r('seksologi',subst) --> "seksologi".
-r('seksolog',subst) --> "seksolog".
-r('seks',subst) --> "seks".
-r('sekretari',subst) --> "sekretari".
-r('sekret',subst) --> "sekret".
-r('sekreci',subst) --> "sekreci".
-r('sekestr',tr) --> "sekestr".
-r('sekci',subst) --> "sekci".
-r('sekc',tr) --> "sekc".
-r('sekant',subst) --> "sekant".
-r('sekal',subst) --> "sekal".
-r('sek',adj) --> "sek".
-r('sejŝel',subst) --> "sejŝel".
-r('sejn',subst) --> "sejn".
-r('segment',subst) --> "segment".
-r('seg',tr) --> "seg".
-r('sefard',subst) --> "sefard".
-r('sediment',subst) --> "sediment".
-r('sedativ',subst) --> "sedativ".
-r('secesi',subst) --> "secesi".
-r('sebum',subst) --> "sebum".
-r('seborgi',subst) --> "seborgi".
-r('seb',subst) --> "seb".
-r('seanc',subst) --> "seanc".
-r('seaborgi',subst) --> "seaborgi".
-r('sciured',subst) --> "sciured".
-r('sciur',best) --> "sciur".
-r('scintilografi',subst) --> "scintilografi".
-r('scintil',verb) --> "scintil".
-r('scintigrafi',subst) --> "scintigrafi".
-r('scienc',subst) --> "scienc".
-r('sci',tr) --> "sci".
-r('sceptr',subst) --> "sceptr".
-r('scen',subst) --> "scen".
-r('sbir',subst) --> "sbir".
-r('saŭrkraŭt',subst) --> "saŭrkraŭt".
-r('saŭn',subst) --> "saŭn".
-r('saŭc',subst) --> "saŭc".
-r('saŝim',subst) --> "saŝim".
-r('saĝ',adj) --> "saĝ".
-r('sazank',subst) --> "sazank".
-r('savan',subst) --> "savan".
-r('sav',tr) --> "sav".
-r('saturnali',subst) --> "saturnali".
-r('sature',subst) --> "sature".
-r('satur',tr) --> "satur".
-r('satrapi',subst) --> "satrapi".
-r('satrap',subst) --> "satrap".
-r('satirus',subst) --> "satirus".
-r('satir',subst) --> "satir".
-r('saten',subst) --> "saten".
-r('satelit',subst) --> "satelit".
-r('satan',subst) --> "satan".
-r('sat',adj) --> "sat".
-r('saskvaĉ',subst) --> "saskvaĉ".
-r('sarong',subst) --> "sarong".
-r('sarkofag',subst) --> "sarkofag".
-r('sarkasm',subst) --> "sarkasm".
-r('sark',tr) --> "sark".
-r('sarir',subst) --> "sarir".
-r('sarin',subst) --> "sarin".
-r('sari',subst) --> "sari".
-r('sardon',adj) --> "sardon".
-r('sardin',best) --> "sardin".
-r('sardel',best) --> "sardel".
-r('sarafan',subst) --> "sarafan".
-r('saraband',subst) --> "saraband".
-r('sapotac',subst) --> "sapotac".
-r('sapotac',subst) --> "sapotac".
-r('sapor',subst) --> "sapor".
-r('sapek',subst) --> "sapek".
-r('sape',subst) --> "sape".
-r('sap',subst) --> "sap".
-r('santome',subst) --> "santome".
-r('santolin',subst) --> "santolin".
-r('santal',subst) --> "santal".
-r('sansevier',subst) --> "sansevier".
-r('sansar',subst) --> "sansar".
-r('sanmarin',subst) --> "sanmarin".
-r('sankt',adj) --> "sankt".
-r('sankci',subst) --> "sankci".
-r('sanitar',adj) --> "sanitar".
-r('sangvin',adj) --> "sangvin".
-r('sangri',subst) --> "sangri".
-r('sang',subst) --> "sang".
-r('sandviĉ',subst) --> "sandviĉ".
-r('sandr',best) --> "sandr".
-r('sandal',subst) --> "sandal".
-r('sanatori',subst) --> "sanatori".
-r('san',adj) --> "san".
-r('samuraj',subst) --> "samuraj".
-r('samovar',subst) --> "samovar".
-r('samo',subst) --> "samo".
-r('samnit',subst) --> "samnit".
-r('samizdat',subst) --> "samizdat".
-r('sambuk',subst) --> "sambuk".
-r('samb',subst) --> "samb".
-r('samari',subst) --> "samari".
-r('sam',adj) --> "sam".
-r('salvi',subst) --> "salvi".
-r('salvelen',best) --> "salvelen".
-r('salvador',subst) --> "salvador".
-r('salv',subst) --> "salv".
-r('salut',verb) --> "salut".
-r('salubr',adj) --> "salubr".
-r('saltomortal',subst) --> "saltomortal".
-r('salt',ntr) --> "salt".
-r('salpetr',subst) --> "salpetr".
-r('salon',subst) --> "salon".
-r('salmed',subst) --> "salmed".
-r('salm',best) --> "salm".
-r('saliv',subst) --> "saliv".
-r('salikok',best) --> "salikok".
-r('salikari',subst) --> "salikari".
-r('salikac',subst) --> "salikac".
-r('salik',subst) --> "salik".
-r('sald',subst) --> "sald".
-r('salat',subst) --> "salat".
-r('salamandr',best) --> "salamandr".
-r('salam',subst) --> "salam".
-r('salajr',subst) --> "salajr".
-r('salafist',subst) --> "salafist".
-r('sal',subst) --> "sal".
-r('sakur',subst) --> "sakur".
-r('saksofon',subst) --> "saksofon".
-r('saksifragac',subst) --> "saksifragac".
-r('saks',best) --> "saks".
-r('sakristi',subst) --> "sakristi".
-r('sakrilegi',subst) --> "sakrilegi".
-r('sakrament',subst) --> "sakrament".
-r('sakr',subst) --> "sakr".
-r('sakr',ntr) --> "sakr".
-r('sake',subst) --> "sake".
-r('sak',subst) --> "sak".
-r('sajmiri',subst) --> "sajmiri".
-r('saj',subst) --> "saj".
-r('sair',subst) --> "sair".
-r('sagu',subst) --> "sagu".
-r('sagac',adj) --> "sagac".
-r('saga',subst) --> "saga".
-r('sag',subst) --> "sag".
-r('safran',subst) --> "safran".
-r('safir',subst) --> "safir".
-r('saduke',subst) --> "saduke".
-r('sacerdot',subst) --> "sacerdot".
-r('sabr',subst) --> "sabr".
-r('sabot',tr) --> "sabot".
-r('sabl',subst) --> "sabl".
-r('sabelik',subst) --> "sabelik".
-r('sabek',subst) --> "sabek".
-r('sabat',subst) --> "sabat".
-r('ruŝ',subst) --> "ruŝ".
-r('ruĵ',subst) --> "ruĵ".
-r('ruĝ',adj) --> "ruĝ".
-r('ruz',adj) --> "ruz".
-r('rutin',subst) --> "rutin".
-r('ruterfordi',subst) --> "ruterfordi".
-r('ruteni',subst) --> "ruteni".
-r('rutac',subst) --> "rutac".
-r('rut',subst) --> "rut".
-r('rusulac',subst) --> "rusulac".
-r('rusul',subst) --> "rusul".
-r('rustik',adj) --> "rustik".
-r('rust',subst) --> "rust".
-r('rus',best) --> "rus".
-r('rupi',subst) --> "rupi".
-r('rung',subst) --> "rung".
-r('rund',verb) --> "rund".
-r('run',subst) --> "run".
-r('rumor',ntr) --> "rumor".
-r('rumeks',subst) --> "rumeks".
-r('rumani',subst) --> "rumani".
-r('ruman',subst) --> "ruman".
-r('rum',subst) --> "rum".
-r('rulet',subst) --> "rulet".
-r('rul',tr) --> "rul".
-r('rukul',verb) --> "rukul".
-r('rukt',verb) --> "rukt".
-r('ruin',subst) --> "ruin".
-r('rugbe',subst) --> "rugbe".
-r('rudr',subst) --> "rudr".
-r('ruditap',subst) --> "ruditap".
-r('rudiment',adj) --> "rudiment".
-r('rudbeki',subst) --> "rudbeki".
-r('rubus',subst) --> "rubus".
-r('rubrik',subst) --> "rubrik".
-r('rubl',subst) --> "rubl".
-r('rubidi',subst) --> "rubidi".
-r('rubiac',subst) --> "rubiac".
-r('rubeol',subst) --> "rubeol".
-r('ruben',subst) --> "ruben".
-r('ruband',subst) --> "ruband".
-r('rub',subst) --> "rub".
-r('ru',tr) --> "ru".
-r('rozari',subst) --> "rozari".
-r('rozac',subst) --> "rozac".
-r('roz',subst) --> "roz".
-r('rovers',subst) --> "rovers".
-r('rover',subst) --> "rover".
-r('rotor',subst) --> "rotor".
-r('rotond',subst) --> "rotond".
-r('rotang',subst) --> "rotang".
-r('rotaciz',subst) --> "rotaciz".
-r('rotaci',ntr) --> "rotaci".
-r('rot',subst) --> "rot".
-r('rostr',subst) --> "rostr".
-r('rostbif',subst) --> "rostbif".
-r('rostbef',subst) --> "rostbef".
-r('rost',tr) --> "rost".
-r('rosmaren',subst) --> "rosmaren".
-r('rosmar',best) --> "rosmar".
-r('rosin',subst) --> "rosin".
-r('ros',subst) --> "ros".
-r('ror',ntr) --> "ror".
-r('ronĝ',tr) --> "ronĝ".
-r('ronron',ntr) --> "ronron".
-r('ronk',ntr) --> "ronk".
-r('rondel',subst) --> "rondel".
-r('rond',subst) --> "rond".
-r('romp',tr) --> "romp".
-r('romboid',subst) --> "romboid".
-r('romboedr',subst) --> "romboedr".
-r('romb',subst) --> "romb".
-r('romantism',subst) --> "romantism".
-r('romantik',adj) --> "romantik".
-r('romanik',subst) --> "romanik".
-r('romanc',subst) --> "romanc".
-r('roman',subst) --> "roman".
-r('roma',subst) --> "roma".
-r('rol',subst) --> "rol".
-r('roku',subst) --> "roku".
-r('rokok',subst) --> "rokok".
-r('rok',subst) --> "rok".
-r('rojalist',subst) --> "rojalist".
-r('rojalism',subst) --> "rojalism".
-r('roj',subst) --> "roj".
-r('rododendr',subst) --> "rododendr".
-r('rodi',subst) --> "rodi".
-r('rod',subst) --> "rod".
-r('rod',verb) --> "rod".
-r('robotik',subst) --> "robotik".
-r('robot',subst) --> "robot".
-r('robini',subst) --> "robini".
-r('robai',subst) --> "robai".
-r('rob',subst) --> "rob".
-r('riĉ',adj) --> "riĉ".
-r('rizot',subst) --> "rizot".
-r('rizom',subst) --> "rizom".
-r('riz',subst) --> "riz".
-r('rivolu',subst) --> "rivolu".
-r('riverenc',ntr) --> "riverenc".
-r('river',subst) --> "river".
-r('rivel',tr) --> "rivel".
-r('rival',subst) --> "rival".
-r('ritornel',subst) --> "ritornel".
-r('ritm',subst) --> "ritm".
-r('rit',subst) --> "rit".
-r('risort',subst) --> "risort".
-r('rism',subst) --> "rism".
-r('risk',tr) --> "risk".
-r('riproĉ',tr) --> "riproĉ".
-r('ripoz',ntr) --> "ripoz".
-r('ripet',tr) --> "ripet".
-r('ripar',tr) --> "ripar".
-r('rip',subst) --> "rip".
-r('rinocer',subst) --> "rinocer".
-r('ring',subst) --> "ring".
-r('rimors',subst) --> "rimors".
-r('rimoid',subst) --> "rimoid".
-r('rimes',subst) --> "rimes".
-r('rimen',subst) --> "rimen".
-r('rimed',subst) --> "rimed".
-r('rimark',tr) --> "rimark".
-r('rim',subst) --> "rim".
-r('rilat',ntr) --> "rilat".
-r('ril',subst) --> "ril".
-r('rikord',subst) --> "rikord".
-r('rikolt',tr) --> "rikolt".
-r('rikiŝ',subst) --> "rikiŝ".
-r('rikecioz',subst) --> "rikecioz".
-r('rikeci',subst) --> "rikeci".
-r('rikan',ntr) --> "rikan".
-r('rijet',subst) --> "rijet".
-r('rigor',adj) --> "rigor".
-r('rigl',verb) --> "rigl".
-r('rigid',adj) --> "rigid".
-r('rigard',tr) --> "rigard".
-r('rig',tr) --> "rig".
-r('rifuĝ',ntr) --> "rifuĝ".
-r('rifuz',tr) --> "rifuz".
-r('rif',subst) --> "rif".
-r('rid',ntr) --> "rid".
-r('ricin',subst) --> "ricin".
-r('ricev',tr) --> "ricev".
-r('ribosom',subst) --> "ribosom".
-r('ribel',ntr) --> "ribel".
-r('ribek',subst) --> "ribek".
-r('rib',subst) --> "rib".
-r('rial',subst) --> "rial".
-r('reŭmatism',subst) --> "reŭmatism".
-r('reĝistr',subst) --> "reĝistr".
-r('reĝisor',subst) --> "reĝisor".
-r('reĝim',subst) --> "reĝim".
-r('reĝ',subst) --> "reĝ".
-r('rezultat',subst) --> "rezultat".
-r('rezult',ntr) --> "rezult".
-r('rezon',ntr) --> "rezon".
-r('rezolut',adj) --> "rezolut".
-r('rezoluci',subst) --> "rezoluci".
-r('rezistiv',adj) --> "rezistiv".
-r('rezistanc',subst) --> "rezistanc".
-r('rezist',tr) --> "rezist".
-r('rezin',subst) --> "rezin".
-r('rezignaci',subst) --> "rezignaci".
-r('rezign',tr) --> "rezign".
-r('rezidu',subst) --> "rezidu".
-r('rezerv',tr) --> "rezerv".
-r('rezedac',subst) --> "rezedac".
-r('rezed',subst) --> "rezed".
-r('revu',subst) --> "revu".
-r('revolver',subst) --> "revolver".
-r('revoluci',subst) --> "revoluci".
-r('revizor',subst) --> "revizor".
-r('revizi',tr) --> "revizi".
-r('reviz',verb) --> "reviz".
-r('revers',subst) --> "revers".
-r('revelaci',subst) --> "revelaci".
-r('rev',tr) --> "rev".
-r('retrovirus',subst) --> "retrovirus".
-r('retrospektiv',subst) --> "retrospektiv".
-r('retrokupl',tr) --> "retrokupl".
-r('retroir',ntr) --> "retroir".
-r('retroderiv',tr) --> "retroderiv".
-r('retroced',verb) --> "retroced".
-r('retroaktiv',adj) --> "retroaktiv".
-r('retro',pref) --> "retro".
-r('retort',subst) --> "retort".
-r('retorik',subst) --> "retorik".
-r('retor',subst) --> "retor".
-r('retin',subst) --> "retin".
-r('retikul',subst) --> "retikul".
-r('retabl',subst) --> "retabl".
-r('ret',subst) --> "ret".
-r('resurs',subst) --> "resurs".
-r('restoraci',subst) --> "restoraci".
-r('restaŭr',verb) --> "restaŭr".
-r('rest',ntr) --> "rest".
-r('respublik',subst) --> "respublik".
-r('respons',ntr) --> "respons".
-r('respond',tr) --> "respond".
-r('respektiv',adj) --> "respektiv".
-r('respekt',subst) --> "respekt".
-r('resonanc',subst) --> "resonanc".
-r('reputaci',subst) --> "reputaci".
-r('repudi',verb) --> "repudi".
-r('reptili',subst) --> "reptili".
-r('reps',subst) --> "reps".
-r('reprezent',tr) --> "reprezent".
-r('reprezali',verb) --> "reprezali".
-r('represi',subst) --> "represi".
-r('reporter',subst) --> "reporter".
-r('replik',tr) --> "replik".
-r('repertuar',subst) --> "repertuar".
-r('rep',subst) --> "rep".
-r('reostat',subst) --> "reostat".
-r('renvers',tr) --> "renvers".
-r('rentgeni',subst) --> "rentgeni".
-r('rent',subst) --> "rent".
-r('renom',subst) --> "renom".
-r('renkont',tr) --> "renkont".
-r('reni',subst) --> "reni".
-r('renesanc',subst) --> "renesanc".
-r('renegat',subst) --> "renegat".
-r('rendiment',subst) --> "rendiment".
-r('rendevu',subst) --> "rendevu".
-r('ren',subst) --> "ren".
-r('rempar',subst) --> "rempar".
-r('remork',subst) --> "remork".
-r('remont',subst) --> "remont".
-r('remiz',subst) --> "remiz".
-r('rembur',tr) --> "rembur".
-r('rem',ntr) --> "rem".
-r('relikv',subst) --> "relikv".
-r('religi',subst) --> "religi".
-r('relief',subst) --> "relief".
-r('relegaci',tr) --> "relegaci".
-r('relativ',adj) --> "relativ".
-r('relajs',subst) --> "relajs".
-r('relaj',subst) --> "relaj".
-r('rel',subst) --> "rel".
-r('rekvizit',subst) --> "rekvizit".
-r('rekvizici',subst) --> "rekvizici".
-r('rekviem',subst) --> "rekviem".
-r('rektum',subst) --> "rektum".
-r('rektor',subst) --> "rektor".
-r('rektif',tr) --> "rektif".
-r('rekt',adj) --> "rekt".
-r('rekrut',subst) --> "rekrut".
-r('rekrement',subst) --> "rekrement".
-r('rekord',subst) --> "rekord".
-r('rekompenc',tr) --> "rekompenc".
-r('rekomend',tr) --> "rekomend".
-r('reklamaci',verb) --> "reklamaci".
-r('reklam',tr) --> "reklam".
-r('rek',subst) --> "rek".
-r('rejs',subst) --> "rejs".
-r('regulator',subst) --> "regulator".
-r('regul',subst) --> "regul".
-r('regres',ntr) --> "regres".
-r('regol',subst) --> "regol".
-r('regn',subst) --> "regn".
-r('reglament',verb) --> "reglament".
-r('registr',verb) --> "registr".
-r('region',subst) --> "region".
-r('regiment',subst) --> "regiment".
-r('regi',subst) --> "regi".
-r('regent',subst) --> "regent".
-r('rege',subst) --> "rege".
-r('regal',tr) --> "regal".
-r('reg',tr) --> "reg".
-r('refut',tr) --> "refut".
-r('refrakt',tr) --> "refrakt".
-r('reflektor',subst) --> "reflektor".
-r('reflekt',tr) --> "reflekt".
-r('refleksologi',subst) --> "refleksologi".
-r('refleksiv',subst) --> "refleksiv".
-r('refleks',subst) --> "refleks".
-r('referendum',subst) --> "referendum".
-r('referenc',subst) --> "referenc".
-r('referat',subst) --> "referat".
-r('refer',verb) --> "refer".
-r('ref',subst) --> "ref".
-r('reel',subst) --> "reel".
-r('redut',subst) --> "redut".
-r('redund',adj) --> "redund".
-r('redukt',tr) --> "redukt".
-r('redingot',subst) --> "redingot".
-r('redaktor',subst) --> "redaktor".
-r('redakt',tr) --> "redakt".
-r('redakci',subst) --> "redakci".
-r('recitativ',subst) --> "recitativ".
-r('recital',subst) --> "recital".
-r('recit',verb) --> "recit".
-r('reciprok',adj) --> "reciprok".
-r('recidiv',verb) --> "recidiv".
-r('recesi',subst) --> "recesi".
-r('recept',subst) --> "recept".
-r('recenz',tr) --> "recenz".
-r('rebus',subst) --> "rebus".
-r('real',adj) --> "real".
-r('real',subst) --> "real".
-r('reaktor',subst) --> "reaktor".
-r('reakci',subst) --> "reakci".
-r('re',pref) --> "re".
-r('raŭt',subst) --> "raŭt".
-r('raŭp',subst) --> "raŭp".
-r('raŭk',adj) --> "raŭk".
-r('raĵa',subst) --> "raĵa".
-r('raĝ',subst) --> "raĝ".
-r('razen',subst) --> "razen".
-r('raz',tr) --> "raz".
-r('raviol',subst) --> "raviol".
-r('ravin',subst) --> "ravin".
-r('ravelin',subst) --> "ravelin".
-r('rav',tr) --> "rav".
-r('ratifik',verb) --> "ratifik".
-r('ratif',verb) --> "ratif".
-r('rat',best) --> "rat".
-r('rastr',subst) --> "rastr".
-r('rast',tr) --> "rast".
-r('rasp',tr) --> "rasp".
-r('ras',subst) --> "ras".
-r('rar',adj) --> "rar".
-r('rapsod',subst) --> "rapsod".
-r('raport',tr) --> "raport".
-r('rapir',subst) --> "rapir".
-r('rapid',adj) --> "rapid".
-r('rap',subst) --> "rap".
-r('ranunkolac',subst) --> "ranunkolac".
-r('ranunkol',subst) --> "ranunkol".
-r('rankor',subst) --> "rankor".
-r('rang',subst) --> "rang".
-r('raned',subst) --> "raned".
-r('rand',subst) --> "rand".
-r('ranc',adj) --> "ranc".
-r('ran',best) --> "ran".
-r('rampl',subst) --> "rampl".
-r('ramp',ntr) --> "ramp".
-r('ramnac',subst) --> "ramnac".
-r('ramn',subst) --> "ramn".
-r('rambutan',subst) --> "rambutan".
-r('ramadan',subst) --> "ramadan".
-r('raled',subst) --> "raled".
-r('ral',subst) --> "ral".
-r('rakont',tr) --> "rakont".
-r('rakit',subst) --> "rakit".
-r('raket',subst) --> "raket".
-r('raked',subst) --> "raked".
-r('rak',subst) --> "rak".
-r('rajt',subst) --> "rajt".
-r('rajon',subst) --> "rajon".
-r('rajed',subst) --> "rajed".
-r('rajd',tr) --> "rajd".
-r('raj',best) --> "raj".
-r('ragu',subst) --> "ragu".
-r('rag',subst) --> "rag".
-r('rafin',tr) --> "rafin".
-r('rafi',subst) --> "rafi".
-r('rafan',subst) --> "rafan".
-r('radon',subst) --> "radon".
-r('radius',subst) --> "radius".
-r('radium',subst) --> "radium".
-r('radioterapi',subst) --> "radioterapi".
-r('radiotelegram',subst) --> "radiotelegram".
-r('radiotelegrafi',subst) --> "radiotelegrafi".
-r('radiotelefoni',subst) --> "radiotelefoni".
-r('radioskopi',subst) --> "radioskopi".
-r('radiometr',subst) --> "radiometr".
-r('radiologi',subst) --> "radiologi".
-r('radiolog',subst) --> "radiolog".
-r('radiogram',subst) --> "radiogram".
-r('radiografi',subst) --> "radiografi".
-r('radiofotografi',subst) --> "radiofotografi".
-r('radiofoni',subst) --> "radiofoni".
-r('radioaktiv',adj) --> "radioaktiv".
-r('radikal',adj) --> "radikal".
-r('radikal',subst) --> "radikal".
-r('radik',subst) --> "radik".
-r('radian',subst) --> "radian".
-r('radi',subst) --> "radi".
-r('radar',subst) --> "radar".
-r('rad',subst) --> "rad".
-r('racionalist',subst) --> "racionalist".
-r('racional',adj) --> "racional".
-r('racion',subst) --> "racion".
-r('raci',subst) --> "raci".
-r('rabot',tr) --> "rabot".
-r('rabi',subst) --> "rabi".
-r('raben',subst) --> "raben".
-r('rabat',subst) --> "rabat".
-r('rabarb',subst) --> "rabarb".
-r('rab',tr) --> "rab".
-r('puŝ',tr) --> "puŝ".
-r('puĉ',subst) --> "puĉ".
-r('puzl',subst) --> "puzl".
-r('putr',ntr) --> "putr".
-r('putor',best) --> "putor".
-r('putin',subst) --> "putin".
-r('put',subst) --> "put".
-r('pustul',subst) --> "pustul".
-r('pus',subst) --> "pus".
-r('purpur',subst) --> "purpur".
-r('puritan',subst) --> "puritan".
-r('purgatori',subst) --> "purgatori".
-r('pur',adj) --> "pur".
-r('pupitr',subst) --> "pupitr".
-r('pupil',subst) --> "pupil".
-r('pup',subst) --> "pup".
-r('punĉ',subst) --> "punĉ".
-r('puntili',subst) --> "puntili".
-r('punt',subst) --> "punt".
-r('punkt',subst) --> "punkt".
-r('punk',subst) --> "punk".
-r('punik',adj) --> "punik".
-r('pund',subst) --> "pund".
-r('punc',adj) --> "punc".
-r('pun',tr) --> "pun".
-r('pump',tr) --> "pump".
-r('pumik',subst) --> "pumik".
-r('pulĉinel',subst) --> "pulĉinel".
-r('pulvor',subst) --> "pulvor".
-r('pulv',subst) --> "pulv".
-r('pulsar',subst) --> "pulsar".
-r('puls',subst) --> "puls".
-r('pulp',subst) --> "pulp".
-r('pulover',subst) --> "pulover".
-r('pulm',subst) --> "pulm".
-r('pulk',subst) --> "pulk".
-r('puli',subst) --> "puli".
-r('pul',subst) --> "pul".
-r('pul',subst) --> "pul".
-r('pugn',subst) --> "pugn".
-r('pug',subst) --> "pug".
-r('puf',subst) --> "puf".
-r('puebl',subst) --> "puebl".
-r('pudr',subst) --> "pudr".
-r('pudor',subst) --> "pudor".
-r('puding',subst) --> "puding".
-r('pudel',subst) --> "pudel".
-r('pud',subst) --> "pud".
-r('pucel',subst) --> "pucel".
-r('publik',subst) --> "publik".
-r('public',tr) --> "public".
-r('pubert',subst) --> "pubert".
-r('puber',adj) --> "puber".
-r('pub',subst) --> "pub".
-r('pterid',subst) --> "pterid".
-r('psikoz',subst) --> "psikoz".
-r('psikosomat',adj) --> "psikosomat".
-r('psikopati',subst) --> "psikopati".
-r('psikopat',subst) --> "psikopat".
-r('psikologi',subst) --> "psikologi".
-r('psikolog',subst) --> "psikolog".
-r('psikogram',subst) --> "psikogram".
-r('psikiatri',subst) --> "psikiatri".
-r('psikiatr',subst) --> "psikiatr".
-r('psik',subst) --> "psik".
-r('pseŭdoskorpi',subst) --> "pseŭdoskorpi".
-r('pseŭdoscienc',subst) --> "pseŭdoscienc".
-r('pseŭdopod',subst) --> "pseŭdopod".
-r('pseŭdonom',subst) --> "pseŭdonom".
-r('pseŭdonim',subst) --> "pseŭdonim".
-r('pseŭdo',pref) --> "pseŭdo".
-r('pseŭd',adj) --> "pseŭd".
-r('psalter',subst) --> "psalter".
-r('psalm',subst) --> "psalm".
-r('pruv',tr) --> "pruv".
-r('prus',subst) --> "prus".
-r('prunus',subst) --> "prunus".
-r('prunt',tr) --> "prunt".
-r('prunel',subst) --> "prunel".
-r('prun',subst) --> "prun".
-r('prujn',subst) --> "prujn".
-r('prudent',adj) --> "prudent".
-r('prud',adj) --> "prud".
-r('pru',subst) --> "pru".
-r('prozopope',subst) --> "prozopope".
-r('prozodi',subst) --> "prozodi".
-r('prozelit',subst) --> "prozelit".
-r('proz',subst) --> "proz".
-r('provos',subst) --> "provos".
-r('provok',tr) --> "provok".
-r('provizor',adj) --> "provizor".
-r('proviz',tr) --> "proviz".
-r('provincial',subst) --> "provincial".
-r('provinc',subst) --> "provinc".
-r('providenc',subst) --> "providenc".
-r('proviant',subst) --> "proviant".
-r('proverb',subst) --> "proverb".
-r('prov',tr) --> "prov".
-r('protrud',adj) --> "protrud".
-r('protozo',subst) --> "protozo".
-r('prototip',subst) --> "prototip".
-r('protoplasm',subst) --> "protoplasm".
-r('proton',subst) --> "proton".
-r('protokol',subst) --> "protokol".
-r('protokanajl',subst) --> "protokanajl".
-r('proto',pref) --> "proto".
-r('protez',subst) --> "protez".
-r('protestant',subst) --> "protestant".
-r('protest',ntr) --> "protest".
-r('proterozoik',subst) --> "proterozoik".
-r('protektorat',subst) --> "protektorat".
-r('protekt',tr) --> "protekt".
-r('protein',subst) --> "protein".
-r('proteac',subst) --> "proteac".
-r('protaktini',subst) --> "protaktini".
-r('protagonist',subst) --> "protagonist".
-r('prostraci',subst) --> "prostraci".
-r('prostitu',tr) --> "prostitu".
-r('prostat',subst) --> "prostat".
-r('prosper',ntr) --> "prosper".
-r('prospekt',subst) --> "prospekt".
-r('proskripci',subst) --> "proskripci".
-r('proskrib',tr) --> "proskrib".
-r('propuls',tr) --> "propuls".
-r('propriet',subst) --> "propriet".
-r('propr',adj) --> "propr".
-r('propozici',subst) --> "propozici".
-r('proporci',subst) --> "proporci".
-r('propon',tr) --> "propon".
-r('propile',subst) --> "propile".
-r('propagand',subst) --> "propagand".
-r('prononc',tr) --> "prononc".
-r('pronom',subst) --> "pronom".
-r('prompt',adj) --> "prompt".
-r('promontor',subst) --> "promontor".
-r('promoci',tr) --> "promoci".
-r('prometi',subst) --> "prometi".
-r('promes',tr) --> "promes".
-r('promen',ntr) --> "promen".
-r('promeci',subst) --> "promeci".
-r('prolog',subst) --> "prolog".
-r('prolifer',verb) --> "prolifer".
-r('proletari',subst) --> "proletari".
-r('prolet',subst) --> "prolet".
-r('prokuror',subst) --> "prokuror".
-r('prokur',subst) --> "prokur".
-r('proksim',adj) --> "proksim".
-r('prokrast',tr) --> "prokrast".
-r('proklam',tr) --> "proklam".
-r('prokariot',subst) --> "prokariot".
-r('projekt',subst) --> "projekt".
-r('projekci',subst) --> "projekci".
-r('prohib',verb) --> "prohib".
-r('progresiv',adj) --> "progresiv".
-r('progresi',subst) --> "progresi".
-r('progres',ntr) --> "progres".
-r('program',subst) --> "program".
-r('prognoz',subst) --> "prognoz".
-r('profund',adj) --> "profund".
-r('profit',tr) --> "profit".
-r('profilaktik',subst) --> "profilaktik".
-r('profilakt',subst) --> "profilakt".
-r('profil',subst) --> "profil".
-r('profet',subst) --> "profet".
-r('profesor',subst) --> "profesor".
-r('profesi',subst) --> "profesi".
-r('profan',tr) --> "profan".
-r('produt',subst) --> "produt".
-r('produktiv',adj) --> "produktiv".
-r('produkt',tr) --> "produkt".
-r('prodrom',subst) --> "prodrom".
-r('prodig',tr) --> "prodig".
-r('prod',subst) --> "prod".
-r('procion',subst) --> "procion".
-r('procez',subst) --> "procez".
-r('procesor',subst) --> "procesor".
-r('procesi',subst) --> "procesi".
-r('proces',subst) --> "proces".
-r('procent',subst) --> "procent".
-r('procelari',subst) --> "procelari".
-r('procedur',subst) --> "procedur".
-r('proced',ntr) --> "proced".
-r('problem',subst) --> "problem".
-r('probabl',adj) --> "probabl".
-r('prizon',subst) --> "prizon".
-r('privilegi',subst) --> "privilegi".
-r('privat',adj) --> "privat".
-r('prism',subst) --> "prism".
-r('prioritat',subst) --> "prioritat".
-r('prior',subst) --> "prior".
-r('printemp',subst) --> "printemp".
-r('print',tr) --> "print".
-r('princip',subst) --> "princip".
-r('princ',subst) --> "princ".
-r('primus',subst) --> "primus".
-r('primolac',subst) --> "primolac".
-r('primol',subst) --> "primol".
-r('primitiv',adj) --> "primitiv".
-r('primaver',subst) --> "primaver".
-r('primat',subst) --> "primat".
-r('primar',adj) --> "primar".
-r('prim',subst) --> "prim".
-r('prikl',verb) --> "prikl".
-r('preĝ',ntr) --> "preĝ".
-r('prezid',tr) --> "prezid".
-r('prezent',tr) --> "prezent".
-r('prezenc',subst) --> "prezenc".
-r('prez',subst) --> "prez".
-r('prevent',verb) --> "prevent".
-r('pretor',subst) --> "pretor".
-r('preterit',subst) --> "preterit".
-r('pretend',tr) --> "pretend".
-r('pretekst',subst) --> "pretekst".
-r('pret',adj) --> "pret".
-r('prestiĝ',subst) --> "prestiĝ".
-r('prestidigitator',subst) --> "prestidigitator".
-r('preskript',subst) --> "preskript".
-r('preskrib',tr) --> "preskrib".
-r('presbiterian',subst) --> "presbiterian".
-r('presbiter',subst) --> "presbiter".
-r('pres',tr) --> "pres".
-r('prerogativ',subst) --> "prerogativ".
-r('preri',subst) --> "preri".
-r('prepuci',subst) --> "prepuci".
-r('prepozici',subst) --> "prepozici".
-r('prepost',subst) --> "prepost".
-r('prepar',tr) --> "prepar".
-r('pren',tr) --> "pren".
-r('premis',subst) --> "premis".
-r('premi',subst) --> "premi".
-r('prem',tr) --> "prem".
-r('prelud',subst) --> "prelud".
-r('preleg',subst) --> "preleg".
-r('prelat',subst) --> "prelat".
-r('prefiks',subst) --> "prefiks".
-r('preferanc',subst) --> "preferanc".
-r('prefer',tr) --> "prefer".
-r('prefekt',subst) --> "prefekt".
-r('prefac',subst) --> "prefac".
-r('predikativ',subst) --> "predikativ".
-r('predikat',subst) --> "predikat".
-r('predik',tr) --> "predik".
-r('pred',subst) --> "pred".
-r('preciz',adj) --> "preciz".
-r('precipit',tr) --> "precipit".
-r('precip',adv) --> "precip".
-r('precioz',adj) --> "precioz".
-r('precesi',subst) --> "precesi".
-r('precept',subst) --> "precept".
-r('precedenc',subst) --> "precedenc".
-r('prebend',subst) --> "prebend".
-r('preambl',subst) --> "preambl".
-r('prazeodim',subst) --> "prazeodim".
-r('prav',adj) --> "prav".
-r('pranc',ntr) --> "pranc".
-r('pram',subst) --> "pram".
-r('praktik',subst) --> "praktik".
-r('prajm',subst) --> "prajm".
-r('pragmatik',subst) --> "pragmatik".
-r('pragmat',adj) --> "pragmat".
-r('pra',pref) --> "pra".
-r('poŭp',subst) --> "poŭp".
-r('poŝt',subst) --> "poŝt".
-r('poŝ',subst) --> "poŝ".
-r('poĉ',verb) --> "poĉ".
-r('pozitron',subst) --> "pozitron".
-r('poziton',subst) --> "poziton".
-r('pozitiv',adj) --> "pozitiv".
-r('pozici',subst) --> "pozici".
-r('poz',tr) --> "poz".
-r('povr',adj) --> "povr".
-r('pov',tr) --> "pov".
-r('potern',subst) --> "potern".
-r('potentil',subst) --> "potentil".
-r('potencial',subst) --> "potencial".
-r('potenc',subst) --> "potenc".
-r('potas',subst) --> "potas".
-r('pot',subst) --> "pot".
-r('postulat',subst) --> "postulat".
-r('postul',tr) --> "postul".
-r('postpozici',subst) --> "postpozici".
-r('postiĉ',subst) --> "postiĉ".
-r('postilion',subst) --> "postilion".
-r('postfiks',subst) --> "postfiks".
-r('posten',subst) --> "posten".
-r('postament',subst) --> "postament".
-r('posesiv',subst) --> "posesiv".
-r('posed',tr) --> "posed".
-r('porĉ',subst) --> "porĉ".
-r('portulak',subst) --> "portulak".
-r('portugal',subst) --> "portugal".
-r('portret',subst) --> "portret".
-r('portik',subst) --> "portik".
-r('porter',subst) --> "porter".
-r('portepe',subst) --> "portepe".
-r('portal',subst) --> "portal".
-r('port',tr) --> "port".
-r('pornografi',subst) --> "pornografi".
-r('porked',subst) --> "porked".
-r('pork',subst) --> "pork".
-r('poriĝ',subst) --> "poriĝ".
-r('porfir',subst) --> "porfir".
-r('pore',subst) --> "pore".
-r('pord',subst) --> "pord".
-r('porci',subst) --> "porci".
-r('porcelan',subst) --> "porcelan".
-r('por',subst) --> "por".
-r('popular',adj) --> "popular".
-r('populaci',subst) --> "populaci".
-r('popol',subst) --> "popol".
-r('poplit',subst) --> "poplit".
-r('poplin',subst) --> "poplin".
-r('popl',subst) --> "popl".
-r('pop',subst) --> "pop".
-r('pop',subst) --> "pop".
-r('ponĝe',subst) --> "ponĝe".
-r('ponĉ',subst) --> "ponĉ".
-r('ponton',subst) --> "ponton".
-r('pontifik',subst) --> "pontifik".
-r('pont',subst) --> "pont".
-r('ponard',subst) --> "ponard".
-r('pomp',subst) --> "pomp".
-r('pomel',subst) --> "pomel".
-r('pomad',subst) --> "pomad".
-r('pom',subst) --> "pom".
-r('polv',subst) --> "polv".
-r('polus',subst) --> "polus".
-r('polur',subst) --> "polur".
-r('poluci',subst) --> "poluci".
-r('polu',tr) --> "polu".
-r('poltron',subst) --> "poltron".
-r('polp',subst) --> "polp".
-r('poloni',subst) --> "poloni".
-r('polo',subst) --> "polo".
-r('polm',subst) --> "polm".
-r('polk',subst) --> "polk".
-r('poliĥet',subst) --> "poliĥet".
-r('politologi',subst) --> "politologi".
-r('politolog',subst) --> "politolog".
-r('politikologi',subst) --> "politikologi".
-r('politikolog',subst) --> "politikolog".
-r('politik',subst) --> "politik".
-r('politeknik',subst) --> "politeknik".
-r('politeist',subst) --> "politeist".
-r('politeism',subst) --> "politeism".
-r('polistiren',subst) --> "polistiren".
-r('polisemi',subst) --> "polisemi".
-r('polisem',subst) --> "polisem".
-r('polis',subst) --> "polis".
-r('polipter',subst) --> "polipter".
-r('polipsoni',subst) --> "polipsoni".
-r('polipol',subst) --> "polipol".
-r('polip',subst) --> "polip".
-r('poliomjelit',subst) --> "poliomjelit".
-r('polinom',subst) --> "polinom".
-r('polimer',subst) --> "polimer".
-r('poliklinik',subst) --> "poliklinik".
-r('poligonac',subst) --> "poligonac".
-r('poligon',subst) --> "poligon".
-r('poliglot',subst) --> "poliglot".
-r('poligini',subst) --> "poligini".
-r('poligami',subst) --> "poligami".
-r('polifoni',subst) --> "polifoni".
-r('poliester',subst) --> "poliester".
-r('poliedr',subst) --> "poliedr".
-r('polic',subst) --> "polic".
-r('poliandri',subst) --> "poliandri".
-r('poliamid',subst) --> "poliamid".
-r('poli',subst) --> "poli".
-r('polent',subst) --> "polent".
-r('polenologi',subst) --> "polenologi".
-r('polen',subst) --> "polen".
-r('polemik',subst) --> "polemik".
-r('poleks',subst) --> "poleks".
-r('polder',subst) --> "polder".
-r('polaroid',subst) --> "polaroid".
-r('polariz',tr) --> "polariz".
-r('pol',subst) --> "pol".
-r('pol',tr) --> "pol".
-r('poker',subst) --> "poker".
-r('pokal',subst) --> "pokal".
-r('pojn',subst) --> "pojn".
-r('pogrom',subst) --> "pogrom".
-r('pogaĉ',subst) --> "pogaĉ".
-r('poezi',subst) --> "poezi".
-r('poetik',subst) --> "poetik".
-r('poet',subst) --> "poet".
-r('poent',subst) --> "poent".
-r('poem',subst) --> "poem".
-r('poefag',subst) --> "poefag".
-r('podzol',subst) --> "podzol".
-r('podkast',subst) --> "podkast".
-r('podi',subst) --> "podi".
-r('podestat',subst) --> "podestat".
-r('podajr',subst) --> "podajr".
-r('podagr',subst) --> "podagr".
-r('pob',subst) --> "pob".
-r('poac',subst) --> "poac".
-r('pneŭmonologi',subst) --> "pneŭmonologi".
-r('pneŭmonolog',subst) --> "pneŭmonolog".
-r('pneŭmoni',subst) --> "pneŭmoni".
-r('pneŭmatik',subst) --> "pneŭmatik".
-r('pneŭ',subst) --> "pneŭ".
-r('pluŝ',subst) --> "pluŝ".
-r('pluv',subst) --> "pluv".
-r('plutoni',subst) --> "plutoni".
-r('plutokrati',subst) --> "plutokrati".
-r('plutokrat',subst) --> "plutokrat".
-r('pluskvamperfekt',subst) --> "pluskvamperfekt".
-r('plural',subst) --> "plural".
-r('plur',adj) --> "plur".
-r('plump',adj) --> "plump".
-r('plumb',subst) --> "plumb".
-r('plum',subst) --> "plum".
-r('pluk',tr) --> "pluk".
-r('plug',tr) --> "plug".
-r('plot',best) --> "plot".
-r('plosiv',subst) --> "plosiv".
-r('plor',ntr) --> "plor".
-r('plonĝ',ntr) --> "plonĝ".
-r('plomb',subst) --> "plomb".
-r('pliocen',subst) --> "pliocen".
-r('plint',subst) --> "plint".
-r('plik',subst) --> "plik".
-r('pleŭronekted',subst) --> "pleŭronekted".
-r('pleŭronekt',best) --> "pleŭronekt".
-r('pleŭrit',subst) --> "pleŭrit".
-r('pleŭr',subst) --> "pleŭr".
-r('plezur',subst) --> "plezur".
-r('pletr',subst) --> "pletr".
-r('plet',subst) --> "plet".
-r('pleonasm',subst) --> "pleonasm".
-r('plend',ntr) --> "plend".
-r('plen',adj) --> "plen".
-r('plektr',subst) --> "plektr".
-r('plekt',tr) --> "plekt".
-r('plejstocen',subst) --> "plejstocen".
-r('plejd',subst) --> "plejd".
-r('pled',ntr) --> "pled".
-r('pleb',subst) --> "pleb".
-r('plaŭd',ntr) --> "plaŭd".
-r('plaĝ',subst) --> "plaĝ".
-r('plaĉ',ntr) --> "plaĉ".
-r('platform',subst) --> "platform".
-r('platen',subst) --> "platen".
-r('platan',subst) --> "platan".
-r('plat',adj) --> "plat".
-r('plastr',subst) --> "plastr".
-r('plastik',subst) --> "plastik".
-r('plast',subst) --> "plast".
-r('plasmid',subst) --> "plasmid".
-r('plasm',subst) --> "plasm".
-r('plantagac',subst) --> "plantagac".
-r('plantag',subst) --> "plantag".
-r('plant',tr) --> "plant".
-r('plankton',subst) --> "plankton".
-r('plank',subst) --> "plank".
-r('planimetri',subst) --> "planimetri".
-r('planedolog',subst) --> "planedolog".
-r('planed',subst) --> "planed".
-r('pland',subst) --> "pland".
-r('plan',subst) --> "plan".
-r('plak',subst) --> "plak".
-r('plagiat',subst) --> "plagiat".
-r('plag',subst) --> "plag".
-r('plafon',subst) --> "plafon".
-r('plad',subst) --> "plad".
-r('placent',subst) --> "placent".
-r('placeb',subst) --> "placeb".
-r('plac',subst) --> "plac".
-r('piŝt',subst) --> "piŝt".
-r('piĵam',subst) --> "piĵam".
-r('piĝin',subst) --> "piĝin".
-r('piĉ',subst) --> "piĉ".
-r('pizang',subst) --> "pizang".
-r('piz',subst) --> "piz".
-r('pivot',subst) --> "pivot".
-r('pitoresk',adj) --> "pitoresk".
-r('piton',best) --> "piton".
-r('pistol',subst) --> "pistol".
-r('pistil',subst) --> "pistil".
-r('pistak',subst) --> "pistak".
-r('pist',tr) --> "pist".
-r('pis',ntr) --> "pis".
-r('piruet',ntr) --> "piruet".
-r('piroz',subst) --> "piroz".
-r('piroteknik',subst) --> "piroteknik".
-r('pirol',subst) --> "pirol".
-r('pirog',subst) --> "pirog".
-r('pirit',subst) --> "pirit".
-r('pirik',subst) --> "pirik".
-r('pirat',subst) --> "pirat".
-r('piraruku',subst) --> "piraruku".
-r('piranj',subst) --> "piranj".
-r('piramid',subst) --> "piramid".
-r('pirakant',subst) --> "pirakant".
-r('pir',subst) --> "pir".
-r('pips',subst) --> "pips".
-r('piprujac',subst) --> "piprujac".
-r('pipr',subst) --> "pipr".
-r('pip',subst) --> "pip".
-r('pioĉ',subst) --> "pioĉ".
-r('pionir',subst) --> "pionir".
-r('pinĉ',tr) --> "pinĉ".
-r('pint',subst) --> "pint".
-r('pinjat',subst) --> "pinjat".
-r('pini',subst) --> "pini".
-r('pingven',subst) --> "pingven".
-r('pingl',subst) --> "pingl".
-r('pind',subst) --> "pind".
-r('pinakotek',subst) --> "pinakotek".
-r('pinakl',subst) --> "pinakl".
-r('pinac',subst) --> "pinac".
-r('pin',subst) --> "pin".
-r('pimpinel',subst) --> "pimpinel".
-r('pimp',adj) --> "pimp".
-r('piment',subst) --> "piment".
-r('pilot',subst) --> "pilot".
-r('pilori',subst) --> "pilori".
-r('pilon',subst) --> "pilon".
-r('pilol',subst) --> "pilol".
-r('pilk',subst) --> "pilk".
-r('pilipili',subst) --> "pilipili".
-r('pilier',subst) --> "pilier".
-r('pilgrim',ntr) --> "pilgrim".
-r('pilastr',subst) --> "pilastr".
-r('pilaf',subst) --> "pilaf".
-r('pil',subst) --> "pil".
-r('piktogram',subst) --> "piktogram".
-r('piko',pref) --> "piko".
-r('piknik',ntr) --> "piknik".
-r('piked',subst) --> "piked".
-r('pik',tr) --> "pik".
-r('pigr',adj) --> "pigr".
-r('pigme',subst) --> "pigme".
-r('pig',subst) --> "pig".
-r('pietist',subst) --> "pietist".
-r('pietism',subst) --> "pietism".
-r('piedestal',subst) --> "piedestal".
-r('pied',subst) --> "pied".
-r('pice',subst) --> "pice".
-r('pic',subst) --> "pic".
-r('piastr',subst) --> "piastr".
-r('pianol',subst) --> "pianol".
-r('pian',subst) --> "pian".
-r('piamatr',subst) --> "piamatr".
-r('pi',adj) --> "pi".
-r('pfenig',subst) --> "pfenig".
-r('peĉakuĉ',subst) --> "peĉakuĉ".
-r('peĉ',subst) --> "peĉ".
-r('pez',ntr) --> "pez".
-r('petuni',subst) --> "petuni".
-r('petrosel',subst) --> "petrosel".
-r('petromiz',subst) --> "petromiz".
-r('petrol',subst) --> "petrol".
-r('petol',ntr) --> "petol".
-r('petiol',subst) --> "petiol".
-r('petici',subst) --> "petici".
-r('petazit',subst) --> "petazit".
-r('petaz',subst) --> "petaz".
-r('petard',subst) --> "petard".
-r('petal',subst) --> "petal".
-r('peta',pref) --> "peta".
-r('pet',tr) --> "pet".
-r('pesticid',subst) --> "pesticid".
-r('pest',subst) --> "pest".
-r('pesimist',subst) --> "pesimist".
-r('pesimism',subst) --> "pesimism".
-r('peset',subst) --> "peset".
-r('pesari',subst) --> "pesari".
-r('pes',tr) --> "pes".
-r('pes',subst) --> "pes".
-r('perĉ',best) --> "perĉ".
-r('pervers',adj) --> "pervers".
-r('peruk',subst) --> "peruk".
-r('perturb',subst) --> "perturb".
-r('persvad',tr) --> "persvad".
-r('perspektiv',subst) --> "perspektiv".
-r('person',subst) --> "person".
-r('persist',ntr) --> "persist".
-r('persimon',subst) --> "persimon".
-r('persik',subst) --> "persik".
-r('persekut',tr) --> "persekut".
-r('pers',subst) --> "pers".
-r('perpleks',adj) --> "perpleks".
-r('perpendikular',adj) --> "perpendikular".
-r('perpendikl',subst) --> "perpendikl".
-r('peron',subst) --> "peron".
-r('permut',tr) --> "permut".
-r('permes',tr) --> "permes".
-r('permeabl',adj) --> "permeabl".
-r('permanent',adj) --> "permanent".
-r('perlamot',subst) --> "perlamot".
-r('perl',subst) --> "perl".
-r('perkut',tr) --> "perkut".
-r('perked',subst) --> "perked".
-r('perkal',subst) --> "perkal".
-r('perk',best) --> "perk".
-r('peritone',subst) --> "peritone".
-r('peristil',subst) --> "peristil".
-r('periskop',subst) --> "periskop".
-r('peripl',subst) --> "peripl".
-r('peripeti',subst) --> "peripeti".
-r('periost',subst) --> "periost".
-r('period',subst) --> "period".
-r('perine',subst) --> "perine".
-r('perimetr',subst) --> "perimetr".
-r('perikarp',subst) --> "perikarp".
-r('perikard',subst) --> "perikard".
-r('periheli',subst) --> "periheli".
-r('perige',subst) --> "perige".
-r('perifraz',subst) --> "perifraz".
-r('periferi',subst) --> "periferi".
-r('peridot',subst) --> "peridot".
-r('pergol',subst) --> "pergol".
-r('pergamen',subst) --> "pergamen".
-r('perfid',tr) --> "perfid".
-r('perfekt',adj) --> "perfekt".
-r('pere',ntr) --> "pere".
-r('perdrik',subst) --> "perdrik".
-r('perd',tr) --> "perd".
-r('percept',subst) --> "percept".
-r('peptid',subst) --> "peptid".
-r('pepsin',subst) --> "pepsin".
-r('peplom',subst) --> "peplom".
-r('pepl',subst) --> "pepl".
-r('pep',ntr) --> "pep".
-r('peoniac',subst) --> "peoniac".
-r('peoni',subst) --> "peoni".
-r('peon',subst) --> "peon".
-r('pentr',tr) --> "pentr".
-r('pentatom',subst) --> "pentatom".
-r('pentametr',subst) --> "pentametr".
-r('pentagram',subst) --> "pentagram".
-r('pentagon',subst) --> "pentagon".
-r('pent',tr) --> "pent".
-r('pension',subst) --> "pension".
-r('pensi',tr) --> "pensi".
-r('pens',tr) --> "pens".
-r('penis',subst) --> "penis".
-r('penik',subst) --> "penik".
-r('penicilin',subst) --> "penicilin".
-r('peni',subst) --> "peni".
-r('penetr',tr) --> "penetr".
-r('pendol',subst) --> "pendol".
-r('pend',ntr) --> "pend".
-r('penc',subst) --> "penc".
-r('pen',ntr) --> "pen".
-r('pelv',subst) --> "pelv".
-r('pelt',subst) --> "pelt".
-r('pelmen',subst) --> "pelmen".
-r('pelmel',subst) --> "pelmel".
-r('pelikaned',subst) --> "pelikaned".
-r('pelikan',subst) --> "pelikan".
-r('pelerin',subst) --> "pelerin".
-r('pelamid',subst) --> "pelamid".
-r('pelagr',subst) --> "pelagr".
-r('pel',tr) --> "pel".
-r('pekl',tr) --> "pekl".
-r('pek',ntr) --> "pek".
-r('pejzaĝ',subst) --> "pejzaĝ".
-r('pejotl',subst) --> "pejotl".
-r('peged',subst) --> "peged".
-r('peg',subst) --> "peg".
-r('pedologi',subst) --> "pedologi".
-r('pedofili',subst) --> "pedofili".
-r('pedikur',tr) --> "pedikur".
-r('pedik',subst) --> "pedik".
-r('pederasti',subst) --> "pederasti".
-r('pedel',subst) --> "pedel".
-r('pedant',adj) --> "pedant".
-r('pedaliac',subst) --> "pedaliac".
-r('pedal',subst) --> "pedal".
-r('pedagogi',subst) --> "pedagogi".
-r('pedagog',subst) --> "pedagog".
-r('pec',subst) --> "pec".
-r('pean',subst) --> "pean".
-r('paŭz',subst) --> "paŭz".
-r('paŭt',ntr) --> "paŭt".
-r('paŭs',tr) --> "paŭs".
-r('paŭperism',subst) --> "paŭperism".
-r('paŭlovni',subst) --> "paŭlovni".
-r('paŝtel',subst) --> "paŝtel".
-r('paŝt',tr) --> "paŝt".
-r('paŝa',subst) --> "paŝa".
-r('paŝ',ntr) --> "paŝ".
-r('paĝi',subst) --> "paĝi".
-r('paĝ',subst) --> "paĝ".
-r('paĉul',subst) --> "paĉul".
-r('pazigrafi',subst) --> "pazigrafi".
-r('pavim',subst) --> "pavim".
-r('pavilon',subst) --> "pavilon".
-r('pavian',best) --> "pavian".
-r('pavez',subst) --> "pavez".
-r('pavan',subst) --> "pavan".
-r('pav',subst) --> "pav".
-r('patron',subst) --> "patron".
-r('patrol',subst) --> "patrol".
-r('patriot',subst) --> "patriot".
-r('patrici',subst) --> "patrici".
-r('patric',subst) --> "patric".
-r('patriarĥ',subst) --> "patriarĥ".
-r('patriark',subst) --> "patriark".
-r('patri',subst) --> "patri".
-r('patr',parc) --> "patr".
-r('patos',subst) --> "patos".
-r('patologi',subst) --> "patologi".
-r('patin',subst) --> "patin".
-r('patent',subst) --> "patent".
-r('patel',subst) --> "patel".
-r('patel',subst) --> "patel".
-r('patat',subst) --> "patat".
-r('pat',subst) --> "pat".
-r('pastr',subst) --> "pastr".
-r('pastoral',subst) --> "pastoral".
-r('pastor',subst) --> "pastor".
-r('pastiĉ',subst) --> "pastiĉ".
-r('pastinak',subst) --> "pastinak".
-r('pasteŭriz',subst) --> "pasteŭriz".
-r('pasteĉ',subst) --> "pasteĉ".
-r('pastel',subst) --> "pastel".
-r('past',subst) --> "past".
-r('pasport',subst) --> "pasport".
-r('paspartu',subst) --> "paspartu".
-r('paskvil',subst) --> "paskvil".
-r('pasiv',adj) --> "pasiv".
-r('pasi',subst) --> "pasi".
-r('pasered',subst) --> "pasered".
-r('paser',subst) --> "paser".
-r('pase',subst) --> "pase".
-r('pasaĝer',subst) --> "pasaĝer".
-r('pasament',subst) --> "pasament".
-r('pas',ntr) --> "pas".
-r('parvenu',subst) --> "parvenu".
-r('parued',subst) --> "parued".
-r('paru',subst) --> "paru".
-r('partner',subst) --> "partner".
-r('partizan',subst) --> "partizan".
-r('partitur',subst) --> "partitur".
-r('partikular',adj) --> "partikular".
-r('partikul',subst) --> "partikul".
-r('partikl',subst) --> "partikl".
-r('particip',subst) --> "particip".
-r('parti',subst) --> "parti".
-r('parter',subst) --> "parter".
-r('partenogenez',subst) --> "partenogenez".
-r('part',subst) --> "part".
-r('parsek',subst) --> "parsek".
-r('paroĥ',subst) --> "paroĥ".
-r('paronimi',subst) --> "paronimi".
-r('paronim',subst) --> "paronim".
-r('parol',tr) --> "parol".
-r('paroksism',subst) --> "paroksism".
-r('parodi',subst) --> "parodi".
-r('parlamentari',subst) --> "parlamentari".
-r('parlament',subst) --> "parlament".
-r('parker',adv) --> "parker".
-r('park',subst) --> "park".
-r('park',subst) --> "park".
-r('parietal',subst) --> "parietal".
-r('pariet',subst) --> "pariet".
-r('pari',subst) --> "pari".
-r('parget',subst) --> "parget".
-r('parfum',subst) --> "parfum".
-r('parentez',subst) --> "parentez".
-r('parenc',subst) --> "parenc".
-r('pare',subst) --> "pare".
-r('pardon',tr) --> "pardon".
-r('parcel',subst) --> "parcel".
-r('parc',subst) --> "parc".
-r('paraŝut',subst) --> "paraŝut".
-r('paraŝit',subst) --> "paraŝit".
-r('parazitologi',subst) --> "parazitologi".
-r('parazitolog',subst) --> "parazitolog".
-r('parazit',subst) --> "parazit".
-r('paratif',subst) --> "paratif".
-r('parapsiĥologi',subst) --> "parapsiĥologi".
-r('parapsikologi',subst) --> "parapsikologi".
-r('paraplegi',subst) --> "paraplegi".
-r('parapet',subst) --> "parapet".
-r('paranormal',adj) --> "paranormal".
-r('paranoj',subst) --> "paranoj".
-r('paramotor',subst) --> "paramotor".
-r('parametr',subst) --> "parametr".
-r('parameci',subst) --> "parameci".
-r('paralogism',subst) --> "paralogism".
-r('paraliz',tr) --> "paraliz".
-r('paralelogram',subst) --> "paralelogram".
-r('paralelepiped',subst) --> "paralelepiped".
-r('paralel',adj) --> "paralel".
-r('paragraf',subst) --> "paragraf".
-r('paraglis',verb) --> "paraglis".
-r('parafraz',subst) --> "parafraz".
-r('parafin',subst) --> "parafin".
-r('paraf',subst) --> "paraf".
-r('paradoks',subst) --> "paradoks".
-r('paradiz',subst) --> "paradiz".
-r('paradigm',subst) --> "paradigm".
-r('parad',ntr) --> "parad".
-r('paraboloid',subst) --> "paraboloid".
-r('parabol',subst) --> "parabol".
-r('par',subst) --> "par".
-r('paprik',subst) --> "paprik".
-r('papirus',subst) --> "papirus".
-r('papiliac',subst) --> "papiliac".
-r('papili',subst) --> "papili".
-r('paper',subst) --> "paper".
-r('papavac',subst) --> "papavac".
-r('papav',subst) --> "papav".
-r('paparac',subst) --> "paparac".
-r('papaj',subst) --> "papaj".
-r('papaged',subst) --> "papaged".
-r('papag',subst) --> "papag".
-r('pap',subst) --> "pap".
-r('pantun',subst) --> "pantun".
-r('pantomim',subst) --> "pantomim".
-r('pantofl',subst) --> "pantofl".
-r('panter',subst) --> "panter".
-r('panteist',subst) --> "panteist".
-r('panteism',subst) --> "panteism".
-r('pantalon',subst) --> "pantalon".
-r('panoram',subst) --> "panoram".
-r('panopli',subst) --> "panopli".
-r('pankreat',subst) --> "pankreat".
-r('pankreas',subst) --> "pankreas".
-r('panikl',subst) --> "panikl".
-r('panik',subst) --> "panik".
-r('panel',subst) --> "panel".
-r('panegir',adj) --> "panegir".
-r('pane',subst) --> "pane".
-r('pandit',subst) --> "pandit".
-r('pandioned',subst) --> "pandioned".
-r('pandion',subst) --> "pandion".
-r('pandemoni',subst) --> "pandemoni".
-r('pandemi',subst) --> "pandemi".
-r('pand',best) --> "pand".
-r('panarici',subst) --> "panarici".
-r('panam',subst) --> "panam".
-r('panace',subst) --> "panace".
-r('pan',subst) --> "pan".
-r('pampelmus',subst) --> "pampelmus".
-r('pamp',subst) --> "pamp".
-r('pamflet',subst) --> "pamflet".
-r('palumb',subst) --> "palumb".
-r('paludism',subst) --> "paludism".
-r('palt',subst) --> "palt".
-r('palpitaci',subst) --> "palpitaci".
-r('palpebr',subst) --> "palpebr".
-r('palp',tr) --> "palp".
-r('palmiped',subst) --> "palmiped".
-r('palm',subst) --> "palm".
-r('palium',subst) --> "palium".
-r('palisandr',subst) --> "palisandr".
-r('palis',subst) --> "palis".
-r('palinured',subst) --> "palinured".
-r('palinur',best) --> "palinur".
-r('palindrom',subst) --> "palindrom".
-r('paliativ',subst) --> "paliativ".
-r('paletr',subst) --> "paletr".
-r('paleozoik',subst) --> "paleozoik".
-r('paleontologi',subst) --> "paleontologi".
-r('paleontolog',subst) --> "paleontolog".
-r('paleolitik',subst) --> "paleolitik".
-r('paleografi',subst) --> "paleografi".
-r('paleograf',subst) --> "paleograf".
-r('paleoantropologi',subst) --> "paleoantropologi".
-r('paleoantropolog',subst) --> "paleoantropolog".
-r('paled',subst) --> "paled".
-r('pale',subst) --> "pale".
-r('palatal',subst) --> "palatal".
-r('palat',subst) --> "palat".
-r('palanken',subst) --> "palanken".
-r('palafit',subst) --> "palafit".
-r('paladi',subst) --> "paladi".
-r('palac',subst) --> "palac".
-r('pal',adj) --> "pal".
-r('pakt',subst) --> "pakt".
-r('pakiderm',subst) --> "pakiderm".
-r('pak',tr) --> "pak".
-r('pajl',subst) --> "pajl".
-r('pajac',subst) --> "pajac".
-r('pagured',subst) --> "pagured".
-r('pagur',best) --> "pagur".
-r('pagum',best) --> "pagum".
-r('pagr',subst) --> "pagr".
-r('pagod',subst) --> "pagod".
-r('pagel',subst) --> "pagel".
-r('pagan',subst) --> "pagan".
-r('pagaj',subst) --> "pagaj".
-r('pag',tr) --> "pag".
-r('paf',tr) --> "paf".
-r('paelj',subst) --> "paelj".
-r('padus',subst) --> "padus".
-r('padel',subst) --> "padel".
-r('pad',subst) --> "pad".
-r('pacifist',subst) --> "pacifist".
-r('pacifism',subst) --> "pacifism".
-r('pacient',subst) --> "pacient".
-r('pacienc',subst) --> "pacienc".
-r('pac',subst) --> "pac".
-r('ozon',subst) --> "ozon".
-r('oz',suf) --> "oz".
-r('ovul',subst) --> "ovul".
-r('ovr',tr) --> "ovr".
-r('ovol',subst) --> "ovol".
-r('ovibov',subst) --> "ovibov".
-r('ovari',subst) --> "ovari".
-r('oval',subst) --> "oval".
-r('ovaci',tr) --> "ovaci".
-r('ov',subst) --> "ov".
-r('otorinolaringologi',subst) --> "otorinolaringologi".
-r('otorinolaringolog',subst) --> "otorinolaringolog".
-r('otit',subst) --> "otit".
-r('otid',subst) --> "otid".
-r('ostrogot',subst) --> "ostrogot".
-r('ostred',subst) --> "ostred".
-r('ostracism',subst) --> "ostracism".
-r('ostr',subst) --> "ostr".
-r('ostoporoz',subst) --> "ostoporoz".
-r('ostologi',subst) --> "ostologi".
-r('ostolog',subst) --> "ostolog".
-r('osteoporoz',subst) --> "osteoporoz".
-r('ostaĝ',subst) --> "ostaĝ".
-r('ost',subst) --> "ost".
-r('osmoz',subst) --> "osmoz".
-r('osmi',subst) --> "osmi".
-r('osmant',subst) --> "osmant".
-r('osk',subst) --> "osk".
-r('oscilator',subst) --> "oscilator".
-r('oscil',verb) --> "oscil".
-r('osced',ntr) --> "osced".
-r('ortopter',subst) --> "ortopter".
-r('ortopedi',subst) --> "ortopedi".
-r('ortoped',subst) --> "ortoped".
-r('ortografi',subst) --> "ortografi".
-r('ortodoks',adj) --> "ortodoks".
-r('ortocentr',subst) --> "ortocentr".
-r('ort',subst) --> "ort".
-r('orografi',subst) --> "orografi".
-r('ornitorinked',subst) --> "ornitorinked".
-r('ornitorink',best) --> "ornitorink".
-r('ornitologi',subst) --> "ornitologi".
-r('ornitolog',subst) --> "ornitolog".
-r('ornat',subst) --> "ornat".
-r('ornam',tr) --> "ornam".
-r('orl',subst) --> "orl".
-r('orkide',subst) --> "orkide".
-r('orkidac',subst) --> "orkidac".
-r('orkid',subst) --> "orkid".
-r('orkestr',subst) --> "orkestr".
-r('orioled',subst) --> "orioled".
-r('oriol',subst) --> "oriol".
-r('oriks',subst) --> "oriks".
-r('original',adj) --> "original".
-r('origin',subst) --> "origin".
-r('origan',subst) --> "origan".
-r('origami',subst) --> "origami".
-r('orific',subst) --> "orific".
-r('orientalistik',subst) --> "orientalistik".
-r('orientalist',subst) --> "orientalist".
-r('orientalism',subst) --> "orientalism".
-r('orient',subst) --> "orient".
-r('oriel',subst) --> "oriel".
-r('orgojl',subst) --> "orgojl".
-r('orgi',subst) --> "orgi".
-r('orgen',subst) --> "orgen".
-r('orgasm',subst) --> "orgasm".
-r('organiz',tr) --> "organiz".
-r('organism',subst) --> "organism".
-r('organik',adj) --> "organik".
-r('organdi',subst) --> "organdi".
-r('organ',subst) --> "organ".
-r('orf',subst) --> "orf".
-r('orel',subst) --> "orel".
-r('ordon',tr) --> "ordon".
-r('ordinat',subst) --> "ordinat".
-r('ordinar',adj) --> "ordinar".
-r('ordinaci',subst) --> "ordinaci".
-r('orden',subst) --> "orden".
-r('ord',subst) --> "ord".
-r('orbit',subst) --> "orbit".
-r('orb',subst) --> "orb".
-r('oratori',subst) --> "oratori".
-r('orator',subst) --> "orator".
-r('oranĝeri',subst) --> "oranĝeri".
-r('oranĝ',subst) --> "oranĝ".
-r('orangutanged',subst) --> "orangutanged".
-r('orangutang',best) --> "orangutang".
-r('orakol',subst) --> "orakol".
-r('oraci',subst) --> "oraci".
-r('or',subst) --> "or".
-r('optimum',subst) --> "optimum".
-r('optimist',subst) --> "optimist".
-r('optimism',subst) --> "optimism".
-r('optik',subst) --> "optik".
-r('optativ',subst) --> "optativ".
-r('opres',tr) --> "opres".
-r('opozici',subst) --> "opozici".
-r('oportun',adj) --> "oportun".
-r('opon',ntr) --> "opon".
-r('opioid',subst) --> "opioid".
-r('opini',tr) --> "opini".
-r('opiat',subst) --> "opiat".
-r('opi',subst) --> "opi".
-r('operkul',subst) --> "operkul".
-r('operator',subst) --> "operator".
-r('operaci',subst) --> "operaci".
-r('operac',verb) --> "operac".
-r('oper',subst) --> "oper".
-r('opank',subst) --> "opank".
-r('opal',subst) --> "opal".
-r('ontologi',subst) --> "ontologi".
-r('ontogeni',subst) --> "ontogeni".
-r('ontogenez',subst) --> "ontogenez".
-r('onomatope',subst) --> "onomatope".
-r('onobrik',subst) --> "onobrik".
-r('onkologi',subst) --> "onkologi".
-r('onkolog',subst) --> "onkolog".
-r('onkl',parc) --> "onkl".
-r('onisk',best) --> "onisk".
-r('oniks',subst) --> "oniks".
-r('ondatr',best) --> "ondatr".
-r('ond',subst) --> "ond".
-r('omnibus',subst) --> "omnibus".
-r('ommetr',subst) --> "ommetr".
-r('omlet',subst) --> "omlet".
-r('omero',subst) --> "omero".
-r('omen',subst) --> "omen".
-r('ombrel',subst) --> "ombrel".
-r('ombr',subst) --> "ombr".
-r('omaĝ',subst) --> "omaĝ".
-r('omared',subst) --> "omared".
-r('omar',best) --> "omar".
-r('ologi',suf) --> "ologi".
-r('olog',suf) --> "olog".
-r('olmek',subst) --> "olmek".
-r('oliv',subst) --> "oliv".
-r('oligoĥet',subst) --> "oligoĥet".
-r('oligopsoni',subst) --> "oligopsoni".
-r('oligopol',subst) --> "oligopol".
-r('oligocen',subst) --> "oligocen".
-r('oligarĥi',subst) --> "oligarĥi".
-r('oligarki',subst) --> "oligarki".
-r('oligark',subst) --> "oligark".
-r('oliban',subst) --> "oliban".
-r('oleandr',subst) --> "oleandr".
-r('oleac',subst) --> "oleac".
-r('ole',subst) --> "ole".
-r('ole',subst) --> "ole".
-r('old',adj) --> "old".
-r('olapodrid',subst) --> "olapodrid".
-r('okzal',subst) --> "okzal".
-r('okupaci',verb) --> "okupaci".
-r('okup',tr) --> "okup".
-r('okult',adj) --> "okult".
-r('okulari',subst) --> "okulari".
-r('okul',subst) --> "okul".
-r('oktobr',subst) --> "oktobr".
-r('oktav',subst) --> "oktav".
-r('oktant',subst) --> "oktant".
-r('okt',subst) --> "okt".
-r('oksitocin',subst) --> "oksitocin".
-r('oksimor',subst) --> "oksimor".
-r('oksikok',subst) --> "oksikok".
-r('oksigen',subst) --> "oksigen".
-r('oksid',subst) --> "oksid".
-r('oksalidac',subst) --> "oksalidac".
-r('oksalid',subst) --> "oksalid".
-r('okr',subst) --> "okr".
-r('okcipital',subst) --> "okcipital".
-r('okcipit',subst) --> "okcipit".
-r('okcident',subst) --> "okcident".
-r('okaz',ntr) --> "okaz".
-r('okarin',subst) --> "okarin".
-r('okapi',subst) --> "okapi".
-r('oka',subst) --> "oka".
-r('ojstred',subst) --> "ojstred".
-r('ojstr',subst) --> "ojstr".
-r('oid',suf) --> "oid".
-r('oguz',subst) --> "oguz".
-r('ogr',subst) --> "ogr".
-r('ogiv',subst) --> "ogiv".
-r('oftalmologi',subst) --> "oftalmologi".
-r('oftalmolog',subst) --> "oftalmolog".
-r('oftalmit',subst) --> "oftalmit".
-r('oft',adv) --> "oft".
-r('ofset',subst) --> "ofset".
-r('ofsajd',subst) --> "ofsajd".
-r('oficir',subst) --> "oficir".
-r('oficial',adj) --> "oficial".
-r('ofic',subst) --> "ofic".
-r('ofertori',subst) --> "ofertori".
-r('ofert',tr) --> "ofert".
-r('ofer',tr) --> "ofer".
-r('ofensiv',subst) --> "ofensiv".
-r('ofend',tr) --> "ofend".
-r('odor',tr) --> "odor".
-r('odonat',subst) --> "odonat".
-r('odekolon',subst) --> "odekolon".
-r('od',subst) --> "od".
-r('oceanologi',subst) --> "oceanologi".
-r('ocean',subst) --> "ocean".
-r('obĵet',verb) --> "obĵet".
-r('obus',subst) --> "obus".
-r('obtuz',adj) --> "obtuz".
-r('obstrukc',subst) --> "obstrukc".
-r('obstin',adj) --> "obstin".
-r('obstakl',subst) --> "obstakl".
-r('obskurantism',subst) --> "obskurantism".
-r('obskur',adj) --> "obskur".
-r('obsidian',subst) --> "obsidian".
-r('observatori',subst) --> "observatori".
-r('observ',tr) --> "observ".
-r('obsed',tr) --> "obsed".
-r('obscen',adj) --> "obscen".
-r('obol',subst) --> "obol".
-r('oblikv',adj) --> "oblikv".
-r('obligaci',subst) --> "obligaci".
-r('oblat',subst) --> "oblat".
-r('objektiv',subst) --> "objektiv".
-r('objektiv',adj) --> "objektiv".
-r('objekt',subst) --> "objekt".
-r('obi',subst) --> "obi".
-r('obez',adj) --> "obez".
-r('obelisk',subst) --> "obelisk".
-r('obe',tr) --> "obe".
-r('oaz',subst) --> "oaz".
-r('nutr',tr) --> "nutr".
-r('nupt',subst) --> "nupt".
-r('nunci',subst) --> "nunci".
-r('numismatik',subst) --> "numismatik".
-r('numismat',subst) --> "numismat".
-r('numid',subst) --> "numid".
-r('numerologi',subst) --> "numerologi".
-r('numerator',subst) --> "numerator".
-r('numeral',subst) --> "numeral".
-r('numer',subst) --> "numer".
-r('numeni',subst) --> "numeni".
-r('nuks',subst) --> "nuks".
-r('nukleotid',subst) --> "nukleotid".
-r('nukleon',subst) --> "nukleon".
-r('nukle',subst) --> "nukle".
-r('nuk',subst) --> "nuk".
-r('nugat',subst) --> "nugat".
-r('nufar',subst) --> "nufar".
-r('nudel',subst) --> "nudel".
-r('nud',adj) --> "nud".
-r('nub',subst) --> "nub".
-r('nuanc',subst) --> "nuanc".
-r('novic',subst) --> "novic".
-r('novembr',subst) --> "novembr".
-r('novel',subst) --> "novel".
-r('noval',subst) --> "noval".
-r('nova',subst) --> "nova".
-r('nov',adj) --> "nov".
-r('notic',subst) --> "notic".
-r('notari',subst) --> "notari".
-r('not',subst) --> "not".
-r('nostalgi',subst) --> "nostalgi".
-r('norveg',subst) --> "norveg".
-r('normal',adj) --> "normal".
-r('norm',subst) --> "norm".
-r('nori',subst) --> "nori".
-r('nord',subst) --> "nord".
-r('noradrenalin',subst) --> "noradrenalin".
-r('nominativ',subst) --> "nominativ".
-r('nominal',adj) --> "nominal".
-r('nominaci',subst) --> "nominaci".
-r('nomes',subst) --> "nomes".
-r('nomenklatur',subst) --> "nomenklatur".
-r('nombr',subst) --> "nombr".
-r('nomarĥ',subst) --> "nomarĥ".
-r('nomark',subst) --> "nomark".
-r('nomad',subst) --> "nomad".
-r('nom',subst) --> "nom".
-r('nokturn',subst) --> "nokturn".
-r('noktued',subst) --> "noktued".
-r('noktu',best) --> "noktu".
-r('nokt',subst) --> "nokt".
-r('nokaŭt',tr) --> "nokaŭt".
-r('nok',subst) --> "nok".
-r('nod',subst) --> "nod".
-r('noci',subst) --> "noci".
-r('noc',tr) --> "noc".
-r('nobl',adj) --> "nobl".
-r('nobeli',subst) --> "nobeli".
-r('nobel',subst) --> "nobel".
-r('no',subst) --> "no".
-r('niĝeri',subst) --> "niĝeri".
-r('niĝer',subst) --> "niĝer".
-r('niĉ',subst) --> "niĉ".
-r('niz',subst) --> "niz".
-r('nivel',subst) --> "nivel".
-r('nitroglicerin',subst) --> "nitroglicerin".
-r('nitrogen',subst) --> "nitrogen".
-r('nitrit',subst) --> "nitrit".
-r('nitrid',subst) --> "nitrid".
-r('nitrat',subst) --> "nitrat".
-r('niton',subst) --> "niton".
-r('nit',subst) --> "nit".
-r('nipa',subst) --> "nipa".
-r('niob',subst) --> "niob".
-r('nimfeac',subst) --> "nimfeac".
-r('nimfe',subst) --> "nimfe".
-r('nimf',subst) --> "nimf".
-r('nimbus',subst) --> "nimbus".
-r('nimb',subst) --> "nimb".
-r('nilpotent',adj) --> "nilpotent".
-r('nilon',subst) --> "nilon".
-r('niktit',subst) --> "niktit".
-r('niktereŭt',subst) --> "niktereŭt".
-r('niks',subst) --> "niks".
-r('nikotin',subst) --> "nikotin".
-r('nikotian',subst) --> "nikotian".
-r('nikel',subst) --> "nikel".
-r('nikaragv',subst) --> "nikaragv".
-r('nikab',subst) --> "nikab".
-r('nihilist',subst) --> "nihilist".
-r('nihilism',subst) --> "nihilism".
-r('nigr',adj) --> "nigr".
-r('nigel',subst) --> "nigel".
-r('nif',subst) --> "nif".
-r('niel',subst) --> "niel".
-r('neŭtron',subst) --> "neŭtron".
-r('neŭtrin',subst) --> "neŭtrin".
-r('neŭtral',adj) --> "neŭtral".
-r('neŭtr',adj) --> "neŭtr".
-r('neŭroz',subst) --> "neŭroz".
-r('neŭrotransmisi',verb) --> "neŭrotransmisi".
-r('neŭron',subst) --> "neŭron".
-r('neŭrologi',subst) --> "neŭrologi".
-r('neŭrolog',subst) --> "neŭrolog".
-r('neŭrodegener',subst) --> "neŭrodegener".
-r('neŭrobiologi',subst) --> "neŭrobiologi".
-r('neŭrasteni',subst) --> "neŭrasteni".
-r('neŭralgi',subst) --> "neŭralgi".
-r('neĝ',subst) --> "neĝ".
-r('nevus',subst) --> "nevus".
-r('nevropter',subst) --> "nevropter".
-r('nev',parc) --> "nev".
-r('net',adj) --> "net".
-r('nest',subst) --> "nest".
-r('nervur',subst) --> "nervur".
-r('nervoz',adj) --> "nervoz".
-r('nerv',subst) --> "nerv".
-r('neri',subst) --> "neri".
-r('neptuni',subst) --> "neptuni".
-r('nepr',adj) --> "nepr".
-r('nepotism',subst) --> "nepotism".
-r('nep',parc) --> "nep".
-r('neon',subst) --> "neon".
-r('neologism',subst) --> "neologism".
-r('neolitik',subst) --> "neolitik".
-r('neodim',subst) --> "neodim".
-r('neni',subst) --> "neni".
-r('nektarin',subst) --> "nektarin".
-r('nektar',subst) --> "nektar".
-r('nekropsi',subst) --> "nekropsi".
-r('nekropol',subst) --> "nekropol".
-r('nekromanci',subst) --> "nekromanci".
-r('nekrolog',subst) --> "nekrolog".
-r('negr',subst) --> "negr".
-r('negoc',subst) --> "negoc".
-r('negliĝ',subst) --> "negliĝ".
-r('neglekt',tr) --> "neglekt".
-r('negatron',subst) --> "negatron".
-r('negaton',subst) --> "negaton".
-r('negativ',adj) --> "negativ".
-r('negaci',subst) --> "negaci".
-r('neg',tr) --> "neg".
-r('nefrologi',subst) --> "nefrologi".
-r('nefrolog',subst) --> "nefrolog".
-r('nefrit',subst) --> "nefrit".
-r('nefrit',subst) --> "nefrit".
-r('neces',adj) --> "neces".
-r('nebuloz',subst) --> "nebuloz".
-r('nebul',subst) --> "nebul".
-r('neandertal',adj) --> "neandertal".
-r('naŭz',tr) --> "naŭz".
-r('naŭtil',subst) --> "naŭtil".
-r('naŭt',subst) --> "naŭt".
-r('naŭn',subst) --> "naŭn".
-r('naĝ',ntr) --> "naĝ".
-r('nazi',subst) --> "nazi".
-r('nazal',subst) --> "nazal".
-r('naz',subst) --> "naz".
-r('navigaci',subst) --> "navigaci".
-r('navig',ntr) --> "navig".
-r('navet',subst) --> "navet".
-r('naved',subst) --> "naved".
-r('navaĥ',subst) --> "navaĥ".
-r('nav',subst) --> "nav".
-r('naur',subst) --> "naur".
-r('naturalism',subst) --> "naturalism".
-r('natur',subst) --> "natur".
-r('natri',subst) --> "natri".
-r('natr',subst) --> "natr".
-r('nask',tr) --> "nask".
-r('nas',subst) --> "nas".
-r('narvaled',subst) --> "narvaled".
-r('narval',best) --> "narval".
-r('narkotik',subst) --> "narkotik".
-r('narkot',tr) --> "narkot".
-r('nargile',subst) --> "nargile".
-r('narcis',subst) --> "narcis".
-r('napalm',subst) --> "napalm".
-r('nap',subst) --> "nap".
-r('nano',pref) --> "nano".
-r('nanken',subst) --> "nanken".
-r('nandin',subst) --> "nandin".
-r('nan',subst) --> "nan".
-r('najtingal',subst) --> "najtingal".
-r('najl',subst) --> "najl".
-r('najbar',subst) --> "najbar".
-r('najad',subst) --> "najad".
-r('naiv',adj) --> "naiv".
-r('naga',best) --> "naga".
-r('naftol',subst) --> "naftol".
-r('naftalin',subst) --> "naftalin".
-r('naft',subst) --> "naft".
-r('nadl',subst) --> "nadl".
-r('nadir',subst) --> "nadir".
-r('nacionalism',subst) --> "nacionalism".
-r('naci',subst) --> "naci".
-r('nabab',subst) --> "nabab".
-r('nab',subst) --> "nab".
-r('muŝed',subst) --> "muŝed".
-r('muŝ',best) --> "muŝ".
-r('muĵik',subst) --> "muĵik".
-r('muĝ',ntr) --> "muĝ".
-r('muzikologi',subst) --> "muzikologi".
-r('muzikolog',subst) --> "muzikolog".
-r('muzik',subst) --> "muzik".
-r('muzeologi',subst) --> "muzeologi".
-r('muzeolog',subst) --> "muzeolog".
-r('muzel',subst) --> "muzel".
-r('muze',subst) --> "muze".
-r('muz',subst) --> "muz".
-r('mutaci',subst) --> "mutaci".
-r('mut',adj) --> "mut".
-r('musteled',subst) --> "musteled".
-r('mustel',best) --> "mustel".
-r('mustard',subst) --> "mustard".
-r('muson',subst) --> "muson".
-r('muslin',subst) --> "muslin".
-r('musli',subst) --> "musli".
-r('muskol',subst) --> "muskol".
-r('musket',subst) --> "musket".
-r('musked',subst) --> "musked".
-r('muskat',subst) --> "muskat".
-r('musk',subst) --> "musk".
-r('mused',subst) --> "mused".
-r('mus',best) --> "mus".
-r('murmur',tr) --> "murmur".
-r('murened',subst) --> "murened".
-r('muren',best) --> "muren".
-r('murd',tr) --> "murd".
-r('mur',subst) --> "mur".
-r('muon',subst) --> "muon".
-r('munt',tr) --> "munt".
-r('municip',subst) --> "municip".
-r('munici',subst) --> "munici".
-r('mung',verb) --> "mung".
-r('mumps',subst) --> "mumps".
-r('mumi',subst) --> "mumi".
-r('mulĉ',subst) --> "mulĉ".
-r('multiplikend',subst) --> "multiplikend".
-r('multiplik',tr) --> "multiplik".
-r('mult',adj) --> "mult".
-r('muld',tr) --> "muld".
-r('mulat',subst) --> "mulat".
-r('mula',subst) --> "mula".
-r('mul',subst) --> "mul".
-r('mukoz',subst) --> "mukoz".
-r('muk',subst) --> "muk".
-r('mugiled',subst) --> "mugiled".
-r('mugil',best) --> "mugil".
-r('mufti',subst) --> "mufti".
-r('mufl',subst) --> "mufl".
-r('muf',subst) --> "muf".
-r('muezin',subst) --> "muezin".
-r('muel',tr) --> "muel".
-r('mudehar',subst) --> "mudehar".
-r('mucilag',subst) --> "mucilag".
-r('mucid',adj) --> "mucid".
-r('muar',tr) --> "muar".
-r('mu',subst) --> "mu".
-r('moŝt',subst) --> "moŝt".
-r('moĉi',subst) --> "moĉi".
-r('mozaik',subst) --> "mozaik".
-r('moviment',subst) --> "moviment".
-r('mov',tr) --> "mov".
-r('motor',subst) --> "motor".
-r('motocikl',subst) --> "motocikl".
-r('motiv',subst) --> "motiv".
-r('mote',subst) --> "mote".
-r('motaciled',subst) --> "motaciled".
-r('motacil',subst) --> "motacil".
-r('mot',subst) --> "mot".
-r('most',subst) --> "most".
-r('moslem',subst) --> "moslem".
-r('moskul',subst) --> "moskul".
-r('moskit',subst) --> "moskit".
-r('moske',subst) --> "moske".
-r('mosk',subst) --> "mosk".
-r('morĥel',subst) --> "morĥel".
-r('morv',subst) --> "morv".
-r('morusac',subst) --> "morusac".
-r('morus',subst) --> "morus".
-r('moru',best) --> "moru".
-r('mortez',subst) --> "mortez".
-r('morter',subst) --> "morter".
-r('mort',ntr) --> "mort".
-r('moroz',adj) --> "moroz".
-r('moroned',subst) --> "moroned".
-r('morn',adj) --> "morn".
-r('mormon',subst) --> "mormon".
-r('morkel',subst) --> "morkel".
-r('morfologi',subst) --> "morfologi".
-r('morfin',subst) --> "morfin".
-r('moren',subst) --> "moren".
-r('mordent',subst) --> "mordent".
-r('mord',tr) --> "mord".
-r('morbil',subst) --> "morbil".
-r('moratori',subst) --> "moratori".
-r('moral',subst) --> "moral".
-r('mor',subst) --> "mor".
-r('mops',subst) --> "mops".
-r('monument',subst) --> "monument".
-r('montr',tr) --> "montr".
-r('mont',subst) --> "mont".
-r('monstr',subst) --> "monstr".
-r('monoton',adj) --> "monoton".
-r('monoteist',subst) --> "monoteist".
-r('monoteism',subst) --> "monoteism".
-r('monopsoni',subst) --> "monopsoni".
-r('monopol',subst) --> "monopol".
-r('monoplan',subst) --> "monoplan".
-r('mononukleoz',subst) --> "mononukleoz".
-r('monomani',subst) --> "monomani".
-r('monom',subst) --> "monom".
-r('monolog',subst) --> "monolog".
-r('monolit',subst) --> "monolit".
-r('monokultur',subst) --> "monokultur".
-r('monokl',subst) --> "monokl".
-r('monojd',subst) --> "monojd".
-r('monoid',subst) --> "monoid".
-r('monogram',subst) --> "monogram".
-r('monografi',subst) --> "monografi".
-r('monogami',subst) --> "monogami".
-r('monitor',subst) --> "monitor".
-r('monism',subst) --> "monism".
-r('mongoled',adj) --> "mongoled".
-r('mongol',adj) --> "mongol".
-r('moned',subst) --> "moned".
-r('mond',subst) --> "mond".
-r('monaĥ',subst) --> "monaĥ".
-r('monat',subst) --> "monat".
-r('monarĥi',subst) --> "monarĥi".
-r('monarĥ',subst) --> "monarĥ".
-r('monal',subst) --> "monal".
-r('monak',subst) --> "monak".
-r('monad',subst) --> "monad".
-r('mon',subst) --> "mon".
-r('momordik',subst) --> "momordik".
-r('moment',subst) --> "moment".
-r('momant',subst) --> "momant".
-r('molusk',subst) --> "molusk".
-r('molibden',subst) --> "molibden".
-r('molest',tr) --> "molest".
-r('molekul',subst) --> "molekul".
-r('mole',subst) --> "mole".
-r('moldavi',subst) --> "moldavi".
-r('moldav',subst) --> "moldav".
-r('molas',subst) --> "molas".
-r('molar',subst) --> "molar".
-r('mol',adj) --> "mol".
-r('mokasen',subst) --> "mokasen".
-r('mok',tr) --> "mok".
-r('mojos',adj) --> "mojos".
-r('mohajr',subst) --> "mohajr".
-r('modus',subst) --> "modus".
-r('modulaci',tr) --> "modulaci".
-r('modul',tr) --> "modul".
-r('modlur',subst) --> "modlur".
-r('modl',tr) --> "modl".
-r('modif',tr) --> "modif".
-r('modest',adj) --> "modest".
-r('modern',adj) --> "modern".
-r('moder',adj) --> "moder".
-r('modem',subst) --> "modem".
-r('model',subst) --> "model".
-r('modal',subst) --> "modal".
-r('mod',subst) --> "mod".
-r('mobiliz',tr) --> "mobiliz".
-r('mnemoteknik',subst) --> "mnemoteknik".
-r('mnemonik',subst) --> "mnemonik".
-r('mjel',subst) --> "mjel".
-r('miŝmaŝ',subst) --> "miŝmaŝ".
-r('mizerikord',subst) --> "mizerikord".
-r('mizer',subst) --> "mizer".
-r('mizantrop',subst) --> "mizantrop".
-r('mituled',subst) --> "mituled".
-r('mitul',subst) --> "mitul".
-r('mitral',subst) --> "mitral".
-r('mitrajl',subst) --> "mitrajl".
-r('mitr',subst) --> "mitr".
-r('mitoĥondri',subst) --> "mitoĥondri".
-r('mitoz',subst) --> "mitoz".
-r('mitologi',subst) --> "mitologi".
-r('mitokondri',subst) --> "mitokondri".
-r('miting',subst) --> "miting".
-r('mit',subst) --> "mit".
-r('mistral',subst) --> "mistral".
-r('mistik',subst) --> "mistik".
-r('mistifik',tr) --> "mistifik".
-r('mistif',tr) --> "mistif".
-r('mister',subst) --> "mister".
-r('miso',subst) --> "miso".
-r('misi',subst) --> "misi".
-r('mis',pref) --> "mis".
-r('mirtel',subst) --> "mirtel".
-r('mirtac',subst) --> "mirtac".
-r('mirt',subst) --> "mirt".
-r('mirmeleoned',subst) --> "mirmeleoned".
-r('mirmeleon',subst) --> "mirmeleon".
-r('mirmekob',best) --> "mirmekob".
-r('mirliton',subst) --> "mirliton".
-r('miristikac',subst) --> "miristikac".
-r('miristik',subst) --> "miristik".
-r('mirid',subst) --> "mirid".
-r('miriapod',subst) --> "miriapod".
-r('miriametr',subst) --> "miriametr".
-r('miriad',subst) --> "miriad".
-r('mirh',subst) --> "mirh".
-r('miraĝ',subst) --> "miraĝ".
-r('mirakl',subst) --> "mirakl".
-r('mirabel',subst) --> "mirabel".
-r('mir',tr) --> "mir".
-r('miozot',subst) --> "miozot".
-r('miozin',subst) --> "miozin".
-r('miop',adj) --> "miop".
-r('miogal',best) --> "miogal".
-r('miocen',subst) --> "miocen".
-r('minut',subst) --> "minut".
-r('minuskl',subst) --> "minuskl".
-r('minstrel',subst) --> "minstrel".
-r('minoritat',subst) --> "minoritat".
-r('minor',adj) --> "minor".
-r('ministr',subst) --> "ministr".
-r('ministeri',subst) --> "ministeri".
-r('minimum',subst) --> "minimum".
-r('minijup',subst) --> "minijup".
-r('minibus',subst) --> "minibus".
-r('miniatur',subst) --> "miniatur".
-r('mini',subst) --> "mini".
-r('mini',pref) --> "mini".
-r('mineralogi',subst) --> "mineralogi".
-r('mineralog',subst) --> "mineralog".
-r('mineral',subst) --> "mineral".
-r('minc',adj) --> "minc".
-r('minaret',subst) --> "minaret".
-r('minac',tr) --> "minac".
-r('min',subst) --> "min".
-r('min',subst) --> "min".
-r('mimozac',subst) --> "mimozac".
-r('mimoz',subst) --> "mimoz".
-r('mimik',subst) --> "mimik".
-r('mimetism',subst) --> "mimetism".
-r('mimeografi',subst) --> "mimeografi".
-r('mimeograf',subst) --> "mimeograf".
-r('milv',subst) --> "milv".
-r('milit',ntr) --> "milit".
-r('milion',subst) --> "milion".
-r('milimetr',subst) --> "milimetr".
-r('mililitr',subst) --> "mililitr".
-r('miligram',subst) --> "miligram".
-r('milici',subst) --> "milici".
-r('milic',subst) --> "milic".
-r('miliard',subst) --> "miliard".
-r('mili',subst) --> "mili".
-r('mili',pref) --> "mili".
-r('mild',adj) --> "mild".
-r('miks',tr) --> "miks".
-r('mikrovivaĵ',subst) --> "mikrovivaĵ".
-r('mikrot',best) --> "mikrot".
-r('mikroskopi',subst) --> "mikroskopi".
-r('mikroskop',subst) --> "mikroskop".
-r('mikrosekc',tr) --> "mikrosekc".
-r('mikroorganism',subst) --> "mikroorganism".
-r('mikronezi',subst) --> "mikronezi".
-r('mikrometr',subst) --> "mikrometr".
-r('mikrokredit',subst) --> "mikrokredit".
-r('mikrokosm',subst) --> "mikrokosm".
-r('mikroklimat',subst) --> "mikroklimat".
-r('mikrofon',subst) --> "mikrofon".
-r('mikrofilm',subst) --> "mikrofilm".
-r('mikrofarad',subst) --> "mikrofarad".
-r('mikroelektronik',subst) --> "mikroelektronik".
-r('mikroekonomik',subst) --> "mikroekonomik".
-r('mikrobiologi',subst) --> "mikrobiologi".
-r('mikrobiolog',subst) --> "mikrobiolog".
-r('mikrob',subst) --> "mikrob".
-r('mikro',pref) --> "mikro".
-r('mikoz',subst) --> "mikoz".
-r('mikad',subst) --> "mikad".
-r('migren',subst) --> "migren".
-r('migr',ntr) --> "migr".
-r('migdal',subst) --> "migdal".
-r('mien',subst) --> "mien".
-r('miel',subst) --> "miel".
-r('midinet',subst) --> "midinet".
-r('miceli',subst) --> "miceli".
-r('miaŭ',verb) --> "miaŭ".
-r('miasm',subst) --> "miasm".
-r('meĥanism',subst) --> "meĥanism".
-r('meĥanik',subst) --> "meĥanik".
-r('meĉ',subst) --> "meĉ".
-r('mezur',tr) --> "mezur".
-r('mezozoik',subst) --> "mezozoik".
-r('mezoteliom',subst) --> "mezoteliom".
-r('mezosfer',subst) --> "mezosfer".
-r('mezon',subst) --> "mezon".
-r('mezokarp',subst) --> "mezokarp".
-r('mezanin',subst) --> "mezanin".
-r('mezalianc',subst) --> "mezalianc".
-r('mez',subst) --> "mez".
-r('mev',subst) --> "mev".
-r('metropoliten',subst) --> "metropoliten".
-r('metropolit',subst) --> "metropolit".
-r('metropol',subst) --> "metropol".
-r('metronom',subst) --> "metronom".
-r('metro',subst) --> "metro".
-r('metrik',subst) --> "metrik".
-r('metr',subst) --> "metr".
-r('metop',subst) --> "metop".
-r('metonimi',subst) --> "metonimi".
-r('metodologi',subst) --> "metodologi".
-r('metod',subst) --> "metod".
-r('meti',subst) --> "meti".
-r('meteorologi',subst) --> "meteorologi".
-r('meteorolog',subst) --> "meteorolog".
-r('meteorism',subst) --> "meteorism".
-r('meteor',subst) --> "meteor".
-r('meteologi',subst) --> "meteologi".
-r('meteolog',subst) --> "meteolog".
-r('metempsikoz',subst) --> "metempsikoz".
-r('metatez',subst) --> "metatez".
-r('metatars',subst) --> "metatars".
-r('metastaz',subst) --> "metastaz".
-r('metasekvoj',subst) --> "metasekvoj".
-r('metapsiki',subst) --> "metapsiki".
-r('metan',subst) --> "metan".
-r('metamorfoz',subst) --> "metamorfoz".
-r('metamorf',adj) --> "metamorf".
-r('metalurgi',subst) --> "metalurgi".
-r('metalurg',subst) --> "metalurg".
-r('metaloid',subst) --> "metaloid".
-r('metalofon',subst) --> "metalofon".
-r('metal',subst) --> "metal".
-r('metakarpe',subst) --> "metakarpe".
-r('metafor',subst) --> "metafor".
-r('metafizik',subst) --> "metafizik".
-r('metadon',subst) --> "metadon".
-r('metabol',subst) --> "metabol".
-r('meta',pref) --> "meta".
-r('met',tr) --> "met".
-r('mestiz',subst) --> "mestiz".
-r('mespil',subst) --> "mespil".
-r('meskalin',subst) --> "meskalin".
-r('mesi',subst) --> "mesi".
-r('mesaĝ',subst) --> "mesaĝ".
-r('mes',subst) --> "mes".
-r('merĝ',best) --> "merĝ".
-r('merop',subst) --> "merop".
-r('meromorf',adj) --> "meromorf".
-r('merluĉ',subst) --> "merluĉ".
-r('merlang',best) --> "merlang".
-r('merl',subst) --> "merl".
-r('merkurial',subst) --> "merkurial".
-r('merkred',subst) --> "merkred".
-r('merkatik',subst) --> "merkatik".
-r('merkat',subst) --> "merkat".
-r('merkantilism',subst) --> "merkantilism".
-r('meriz',subst) --> "meriz".
-r('merit',tr) --> "merit".
-r('mering',subst) --> "mering".
-r('merin',subst) --> "merin".
-r('meridian',subst) --> "meridian".
-r('merg',tr) --> "merg".
-r('merceriz',verb) --> "merceriz".
-r('mercer',subst) --> "mercer".
-r('menured',subst) --> "menured".
-r('menur',subst) --> "menur".
-r('menuet',subst) --> "menuet".
-r('menu',subst) --> "menu".
-r('mentor',subst) --> "mentor".
-r('menton',subst) --> "menton".
-r('mentol',subst) --> "mentol".
-r('ment',subst) --> "ment".
-r('menstru',subst) --> "menstru".
-r('mensog',tr) --> "mensog".
-r('mens',subst) --> "mens".
-r('menonit',subst) --> "menonit".
-r('menisk',subst) --> "menisk".
-r('meningit',subst) --> "meningit".
-r('mening',subst) --> "mening".
-r('menhir',subst) --> "menhir".
-r('menestrel',subst) --> "menestrel".
-r('mendelevi',subst) --> "mendelevi".
-r('mend',tr) --> "mend".
-r('menci',tr) --> "menci".
-r('menaĝeri',subst) --> "menaĝeri".
-r('memuar',subst) --> "memuar".
-r('memorand',subst) --> "memorand".
-r('memor',tr) --> "memor".
-r('membran',subst) --> "membran".
-r('membr',subst) --> "membr".
-r('melopsitak',subst) --> "melopsitak".
-r('melopep',subst) --> "melopep".
-r('melope',subst) --> "melope".
-r('melongen',subst) --> "melongen".
-r('melon',subst) --> "melon".
-r('melolont',subst) --> "melolont".
-r('melodram',subst) --> "melodram".
-r('melodi',subst) --> "melodi".
-r('melk',tr) --> "melk".
-r('melis',subst) --> "melis".
-r('melinit',subst) --> "melinit".
-r('melilot',subst) --> "melilot".
-r('meliac',subst) --> "meliac".
-r('meli',subst) --> "meli".
-r('meleagr',subst) --> "meleagr".
-r('melas',subst) --> "melas".
-r('melanosom',subst) --> "melanosom".
-r('melanom',subst) --> "melanom".
-r('melankoli',subst) --> "melankoli".
-r('melanism',subst) --> "melanism".
-r('melanin',subst) --> "melanin".
-r('melampir',subst) --> "melampir".
-r('mel',best) --> "mel".
-r('mekanik',subst) --> "mekanik".
-r('mek',verb) --> "mek".
-r('mejtneri',subst) --> "mejtneri".
-r('mejl',subst) --> "mejl".
-r('megom',subst) --> "megom".
-r('meger',subst) --> "meger".
-r('megavat',subst) --> "megavat".
-r('megatun',subst) --> "megatun".
-r('megaom',subst) --> "megaom".
-r('megalosaŭr',best) --> "megalosaŭr".
-r('megalomani',subst) --> "megalomani".
-r('megalit',subst) --> "megalit".
-r('megafon',subst) --> "megafon".
-r('megabitok',subst) --> "megabitok".
-r('mega',pref) --> "mega".
-r('mefit',subst) --> "mefit".
-r('meduz',subst) --> "meduz".
-r('medol',subst) --> "medol".
-r('medium',subst) --> "medium".
-r('medit',verb) --> "medit".
-r('mediokr',adj) --> "mediokr".
-r('medikament',subst) --> "medikament".
-r('medikag',subst) --> "medikag".
-r('medicin',subst) --> "medicin".
-r('mediator',subst) --> "mediator".
-r('median',subst) --> "median".
-r('medial',subst) --> "medial".
-r('mediaci',verb) --> "mediaci".
-r('medi',subst) --> "medi".
-r('medalion',subst) --> "medalion".
-r('medal',subst) --> "medal".
-r('med',subst) --> "med".
-r('mecenat',subst) --> "mecenat".
-r('mebl',subst) --> "mebl".
-r('meandr',subst) --> "meandr".
-r('maŭzole',subst) --> "maŭzole".
-r('maŭritani',subst) --> "maŭritani".
-r('maŭrici',subst) --> "maŭrici".
-r('maŭr',subst) --> "maŭr".
-r('maŝin',subst) --> "maŝin".
-r('maŝ',subst) --> "maŝ".
-r('maĵor',adj) --> "maĵor".
-r('maĥinaci',subst) --> "maĥinaci".
-r('maĝang',subst) --> "maĝang".
-r('maĉet',subst) --> "maĉet".
-r('maĉ',verb) --> "maĉ".
-r('maĉ',subst) --> "maĉ".
-r('mazut',subst) --> "mazut".
-r('mazurk',subst) --> "mazurk".
-r('mazda',subst) --> "mazda".
-r('matĉ',subst) --> "matĉ".
-r('matur',adj) --> "matur".
-r('matros',subst) --> "matros".
-r('matron',subst) --> "matron".
-r('matrikul',subst) --> "matrikul".
-r('matric',subst) --> "matric".
-r('matrac',subst) --> "matrac".
-r('material',subst) --> "material".
-r('materi',subst) --> "materi".
-r('maten',subst) --> "maten".
-r('matematik',subst) --> "matematik".
-r('mate',subst) --> "mate".
-r('matador',subst) --> "matador".
-r('mat',subst) --> "mat".
-r('mastr',subst) --> "mastr".
-r('mastodont',subst) --> "mastodont".
-r('mastik',subst) --> "mastik".
-r('mast',subst) --> "mast".
-r('masoĥist',subst) --> "masoĥist".
-r('masoĥism',subst) --> "masoĥism".
-r('masor',subst) --> "masor".
-r('mason',tr) --> "mason".
-r('maskl',subst) --> "maskl".
-r('maskerad',subst) --> "maskerad".
-r('mask',subst) --> "mask".
-r('masiv',adj) --> "masiv".
-r('masaĝ',subst) --> "masaĝ".
-r('masakr',tr) --> "masakr".
-r('mas',subst) --> "mas".
-r('marŝal',subst) --> "marŝal".
-r('marŝal',subst) --> "marŝal".
-r('marŝ',ntr) --> "marŝ".
-r('marĝen',subst) --> "marĝen".
-r('marĉand',ntr) --> "marĉand".
-r('marĉ',subst) --> "marĉ".
-r('martir',subst) --> "martir".
-r('martes',best) --> "martes".
-r('martel',subst) --> "martel".
-r('mart',subst) --> "mart".
-r('marsupiul',subst) --> "marsupiul".
-r('marseljez',subst) --> "marseljez".
-r('marot',subst) --> "marot".
-r('maron',subst) --> "maron".
-r('maroken',subst) --> "maroken".
-r('marod',tr) --> "marod".
-r('marn',subst) --> "marn".
-r('marmot',best) --> "marmot".
-r('marmor',subst) --> "marmor".
-r('marmelad',subst) --> "marmelad".
-r('markot',subst) --> "markot".
-r('markiz',subst) --> "markiz".
-r('markez',subst) --> "markez".
-r('mark',subst) --> "mark".
-r('mark',subst) --> "mark".
-r('marionet',subst) --> "marionet".
-r('marin',tr) --> "marin".
-r('marimb',subst) --> "marimb".
-r('mariaĝ',subst) --> "mariaĝ".
-r('margarin',subst) --> "margarin".
-r('mard',subst) --> "mard".
-r('marcipan',subst) --> "marcipan".
-r('maraved',subst) --> "maraved".
-r('maraton',subst) --> "maraton".
-r('marasm',subst) --> "marasm".
-r('marak',subst) --> "marak".
-r('marabu',subst) --> "marabu".
-r('mar',subst) --> "mar".
-r('map',subst) --> "map".
-r('maori',subst) --> "maori".
-r('manĝu',subst) --> "manĝu".
-r('manĝ',tr) --> "manĝ".
-r('manuskript',subst) --> "manuskript".
-r('manufaktur',subst) --> "manufaktur".
-r('mantr',subst) --> "mantr".
-r('mantis',subst) --> "mantis".
-r('mantil',subst) --> "mantil".
-r('mantel',subst) --> "mantel".
-r('mant',subst) --> "mant".
-r('mansard',subst) --> "mansard".
-r('manovr',ntr) --> "manovr".
-r('manometr',subst) --> "manometr".
-r('mank',ntr) --> "mank".
-r('manis',subst) --> "manis".
-r('manipulator',subst) --> "manipulator".
-r('manipul',tr) --> "manipul".
-r('maniok',subst) --> "maniok".
-r('manikur',tr) --> "manikur".
-r('manik',subst) --> "manik".
-r('manifestaci',subst) --> "manifestaci".
-r('manifest',tr) --> "manifest".
-r('manier',subst) --> "manier".
-r('mani',subst) --> "mani".
-r('mangostan',subst) --> "mangostan".
-r('mangan',subst) --> "mangan".
-r('manga',subst) --> "manga".
-r('mang',subst) --> "mang".
-r('maneĝ',subst) --> "maneĝ".
-r('maneken',subst) --> "maneken".
-r('mandragor',subst) --> "mandragor".
-r('mandolin',subst) --> "mandolin".
-r('mandibl',subst) --> "mandibl".
-r('mandat',subst) --> "mandat".
-r('mandarin',subst) --> "mandarin".
-r('mandaren',subst) --> "mandaren".
-r('mandal',subst) --> "mandal".
-r('mancinel',subst) --> "mancinel".
-r('manat',best) --> "manat".
-r('manat',subst) --> "manat".
-r('mana',subst) --> "mana".
-r('man',subst) --> "man".
-r('mamut',best) --> "mamut".
-r('mamon',subst) --> "mamon".
-r('mam',subst) --> "mam".
-r('malversaci',subst) --> "malversaci".
-r('malvazi',subst) --> "malvazi".
-r('malvac',subst) --> "malvac".
-r('malv',subst) --> "malv".
-r('maltusianism',subst) --> "maltusianism".
-r('maltoz',subst) --> "maltoz".
-r('malt',subst) --> "malt".
-r('malign',adj) --> "malign".
-r('malic',adj) --> "malic".
-r('mali',subst) --> "mali".
-r('maleol',subst) --> "maleol".
-r('male',subst) --> "male".
-r('maldiv',subst) --> "maldiv".
-r('malari',subst) --> "malari".
-r('malakit',subst) --> "malakit".
-r('makzel',subst) --> "makzel".
-r('makulatur',subst) --> "makulatur".
-r('makul',subst) --> "makul".
-r('maksimum',subst) --> "maksimum".
-r('maksim',subst) --> "maksim".
-r('makroped',subst) --> "makroped".
-r('makrop',subst) --> "makrop".
-r('makrokosm',subst) --> "makrokosm".
-r('makrofag',subst) --> "makrofag".
-r('makroekonomik',subst) --> "makroekonomik".
-r('makrocefaled',subst) --> "makrocefaled".
-r('makrocefal',best) --> "makrocefal".
-r('makrobiotik',subst) --> "makrobiotik".
-r('makro',subst) --> "makro".
-r('makler',ntr) --> "makler".
-r('makis',subst) --> "makis".
-r('makiavel',adj) --> "makiavel".
-r('makedon',subst) --> "makedon".
-r('makaroni',subst) --> "makaroni".
-r('makaron',subst) --> "makaron".
-r('makak',best) --> "makak".
-r('makadam',subst) --> "makadam".
-r('makabr',adj) --> "makabr".
-r('majuskl',subst) --> "majuskl".
-r('majstr',subst) --> "majstr".
-r('majoritat',subst) --> "majoritat".
-r('majordom',subst) --> "majordom".
-r('majoran',subst) --> "majoran".
-r('major',subst) --> "major".
-r('majonez',subst) --> "majonez".
-r('majolik',subst) --> "majolik".
-r('majest',adj) --> "majest".
-r('maja',subst) --> "maja".
-r('maj',subst) --> "maj".
-r('maiz',subst) --> "maiz".
-r('mahut',subst) --> "mahut".
-r('mahagon',subst) --> "mahagon".
-r('magr',adj) --> "magr".
-r('magnoliac',subst) --> "magnoliac".
-r('magnoli',subst) --> "magnoli".
-r('magnitud',subst) --> "magnitud".
-r('magnezit',subst) --> "magnezit".
-r('magnezi',subst) --> "magnezi".
-r('magnez',subst) --> "magnez".
-r('magnetoskop',subst) --> "magnetoskop".
-r('magnetofon',subst) --> "magnetofon".
-r('magnetit',subst) --> "magnetit".
-r('magnetism',subst) --> "magnetism".
-r('magnet',subst) --> "magnet".
-r('magnat',subst) --> "magnat".
-r('magm',subst) --> "magm".
-r('magistrat',subst) --> "magistrat".
-r('magistr',subst) --> "magistr".
-r('magi',subst) --> "magi".
-r('magazin',subst) --> "magazin".
-r('magazen',subst) --> "magazen".
-r('mag',subst) --> "mag".
-r('mafi',subst) --> "mafi".
-r('madrigal',subst) --> "madrigal".
-r('madon',subst) --> "madon".
-r('madagaskar',subst) --> "madagaskar".
-r('macer',verb) --> "macer".
-r('mac',subst) --> "mac".
-r('maat',subst) --> "maat".
-r('luzern',subst) --> "luzern".
-r('lutreol',best) --> "lutreol".
-r('lutr',best) --> "lutr".
-r('luteci',subst) --> "luteci".
-r('lut',tr) --> "lut".
-r('lustr',subst) --> "lustr".
-r('lupus',subst) --> "lupus".
-r('lupol',subst) --> "lupol".
-r('lupin',subst) --> "lupin".
-r('lupen',subst) --> "lupen".
-r('lupe',subst) --> "lupe".
-r('luparaneed',subst) --> "luparaneed".
-r('lup',best) --> "lup".
-r('lunĉ',subst) --> "lunĉ".
-r('lund',subst) --> "lund".
-r('lunatik',subst) --> "lunatik".
-r('lunari',subst) --> "lunari".
-r('lun',subst) --> "lun".
-r('luminesk',ntr) --> "luminesk".
-r('lumbriked',subst) --> "lumbriked".
-r('lumbrik',subst) --> "lumbrik".
-r('lumbag',subst) --> "lumbag".
-r('lumb',subst) --> "lumb".
-r('lum',ntr) --> "lum".
-r('lul',tr) --> "lul".
-r('lukum',subst) --> "lukum".
-r('lukt',ntr) --> "lukt".
-r('luks',subst) --> "luks".
-r('lukaned',subst) --> "lukaned".
-r('lukan',subst) --> "lukan".
-r('luk',subst) --> "luk".
-r('luidor',subst) --> "luidor".
-r('lugr',subst) --> "lugr".
-r('luf',subst) --> "luf".
-r('lud',tr) --> "lud".
-r('lucid',adj) --> "lucid".
-r('lucern',subst) --> "lucern".
-r('lubrik',tr) --> "lubrik".
-r('lu',tr) --> "lu".
-r('loĝistik',subst) --> "loĝistik".
-r('loĝi',subst) --> "loĝi".
-r('loĝ',tr) --> "loĝ".
-r('lozanĝ',subst) --> "lozanĝ".
-r('loz',adj) --> "loz".
-r('lotus',subst) --> "lotus".
-r('lotos',subst) --> "lotos".
-r('loteri',subst) --> "loteri".
-r('lot',ntr) --> "lot".
-r('lorn',subst) --> "lorn".
-r('lord',subst) --> "lord".
-r('lorantac',subst) --> "lorantac".
-r('lop',verb) --> "lop".
-r('lontan',adj) --> "lontan".
-r('lonicer',subst) --> "lonicer".
-r('longitud',subst) --> "longitud".
-r('longan',subst) --> "longan".
-r('long',adj) --> "long".
-r('lombard',subst) --> "lombard".
-r('lom',subst) --> "lom".
-r('lol',subst) --> "lol".
-r('lokust',subst) --> "lokust".
-r('loksi',subst) --> "loksi".
-r('lokomotiv',subst) --> "lokomotiv".
-r('lokomobil',subst) --> "lokomobil".
-r('lokaŭt',subst) --> "lokaŭt".
-r('lokaliz',tr) --> "lokaliz".
-r('lokal',subst) --> "lokal".
-r('lok',subst) --> "lok".
-r('lojt',best) --> "lojt".
-r('lojal',adj) --> "lojal".
-r('logotip',subst) --> "logotip".
-r('logogrif',subst) --> "logogrif".
-r('logistik',subst) --> "logistik".
-r('logik',subst) --> "logik".
-r('logaritm',subst) --> "logaritm".
-r('log',tr) --> "log".
-r('log',subst) --> "log".
-r('lofi',best) --> "lofi".
-r('lof',tr) --> "lof".
-r('loes',subst) --> "loes".
-r('lodikl',subst) --> "lodikl".
-r('lod',subst) --> "lod".
-r('lobi',subst) --> "lobi".
-r('lobeli',subst) --> "lobeli".
-r('lob',subst) --> "lob".
-r('liĉi',subst) --> "liĉi".
-r('lizosom',subst) --> "lizosom".
-r('livre',subst) --> "livre".
-r('livid',subst) --> "livid".
-r('livi',subst) --> "livi".
-r('livermorum',subst) --> "livermorum".
-r('liver',tr) --> "liver".
-r('liv',adj) --> "liv".
-r('liut',subst) --> "liut".
-r('liturgi',subst) --> "liturgi".
-r('litrumac',subst) --> "litrumac".
-r('litrum',subst) --> "litrum".
-r('litr',subst) --> "litr".
-r('litov',subst) --> "litov".
-r('litot',subst) --> "litot".
-r('litorined',subst) --> "litorined".
-r('litorin',subst) --> "litorin".
-r('litografi',subst) --> "litografi".
-r('litograf',tr) --> "litograf".
-r('litin',subst) --> "litin".
-r('liti',subst) --> "liti".
-r('literaturologi',subst) --> "literaturologi".
-r('literaturolog',subst) --> "literaturolog".
-r('literatur',subst) --> "literatur".
-r('liter',subst) --> "liter".
-r('litargir',subst) --> "litargir".
-r('litani',subst) --> "litani".
-r('lit',subst) --> "lit".
-r('listel',subst) --> "listel".
-r('list',subst) --> "list".
-r('lisp',ntr) --> "lisp".
-r('lirl',ntr) --> "lirl".
-r('lirik',subst) --> "lirik".
-r('lir',subst) --> "lir".
-r('lir',subst) --> "lir".
-r('lipom',subst) --> "lipom".
-r('lipid',subst) --> "lipid".
-r('lip',subst) --> "lip".
-r('liofiliz',verb) --> "liofiliz".
-r('linĉ',tr) --> "linĉ".
-r('lintel',subst) --> "lintel".
-r('linotip',subst) --> "linotip".
-r('link',best) --> "link".
-r('lini',subst) --> "lini".
-r('lingvistik',subst) --> "lingvistik".
-r('lingv',subst) --> "lingv".
-r('linear',adj) --> "linear".
-r('line',subst) --> "line".
-r('linac',subst) --> "linac".
-r('lin',subst) --> "lin".
-r('limuzin',subst) --> "limuzin".
-r('limonit',subst) --> "limonit".
-r('limonad',subst) --> "limonad".
-r('limnologi',subst) --> "limnologi".
-r('limit',subst) --> "limit".
-r('limfatism',subst) --> "limfatism".
-r('limfangit',subst) --> "limfangit".
-r('limf',subst) --> "limf".
-r('limes',subst) --> "limes".
-r('limerik',subst) --> "limerik".
-r('limed',subst) --> "limed".
-r('lime',subst) --> "lime".
-r('limb',subst) --> "limb".
-r('limand',subst) --> "limand".
-r('limaked',subst) --> "limaked".
-r('limak',subst) --> "limak".
-r('limaed',subst) --> "limaed".
-r('lima',subst) --> "lima".
-r('lim',subst) --> "lim".
-r('liliput',adj) --> "liliput".
-r('liliac',subst) --> "liliac".
-r('lili',subst) --> "lili".
-r('lil',adj) --> "lil".
-r('likvor',subst) --> "likvor".
-r('likvid',tr) --> "likvid".
-r('likvid',subst) --> "likvid".
-r('likv',subst) --> "likv".
-r('liktor',subst) --> "liktor".
-r('likopodiac',subst) --> "likopodiac".
-r('likopodi',subst) --> "likopodi".
-r('liknid',subst) --> "liknid".
-r('liken',subst) --> "liken".
-r('lik',ntr) --> "lik".
-r('ligustr',subst) --> "ligustr".
-r('ligur',subst) --> "ligur".
-r('ligul',subst) --> "ligul".
-r('lignit',subst) --> "lignit".
-r('lign',subst) --> "lign".
-r('ligament',subst) --> "ligament".
-r('lig',tr) --> "lig".
-r('lift',subst) --> "lift".
-r('lien',subst) --> "lien".
-r('lid',subst) --> "lid".
-r('lici',subst) --> "lici".
-r('licenci',subst) --> "licenci".
-r('licenc',subst) --> "licenc".
-r('lice',subst) --> "lice".
-r('lic',ntr) --> "lic".
-r('libr',subst) --> "libr".
-r('libid',subst) --> "libid".
-r('libertinism',subst) --> "libertinism".
-r('liberal',adj) --> "liberal".
-r('liber',adj) --> "liber".
-r('libel',subst) --> "libel".
-r('lias',subst) --> "lias".
-r('lian',subst) --> "lian".
-r('li',subst) --> "li".
-r('leŭtenant',subst) --> "leŭtenant".
-r('leŭs',subst) --> "leŭs".
-r('leŭkomain',subst) --> "leŭkomain".
-r('leŭkoj',subst) --> "leŭkoj".
-r('leŭkocit',subst) --> "leŭkocit".
-r('leŭkocit',subst) --> "leŭkocit".
-r('leŭkemi',subst) --> "leŭkemi".
-r('leŭg',subst) --> "leŭg".
-r('leŭcisk',subst) --> "leŭcisk".
-r('leĝ',subst) --> "leĝ".
-r('lez',tr) --> "lez".
-r('levrel',subst) --> "levrel".
-r('levkoj',subst) --> "levkoj".
-r('levjatan',subst) --> "levjatan".
-r('levitaci',verb) --> "levitaci".
-r('levier',subst) --> "levier".
-r('levid',subst) --> "levid".
-r('lev',tr) --> "lev".
-r('lev',subst) --> "lev".
-r('leter',subst) --> "leter".
-r('letargi',subst) --> "letargi".
-r('lespedez',subst) --> "lespedez".
-r('lesiv',subst) --> "lesiv".
-r('lert',adj) --> "lert".
-r('lern',tr) --> "lern".
-r('leptospiroz',subst) --> "leptospiroz".
-r('leptospir',subst) --> "leptospir".
-r('lepton',subst) --> "lepton".
-r('lept',subst) --> "lept".
-r('lepr',subst) --> "lepr".
-r('lepored',subst) --> "lepored".
-r('lepor',best) --> "lepor".
-r('lepidopter',subst) --> "lepidopter".
-r('lepidodendr',subst) --> "lepidodendr".
-r('leopard',best) --> "leopard".
-r('leontod',subst) --> "leontod".
-r('leon',best) --> "leon".
-r('lentug',subst) --> "lentug".
-r('lent',subst) --> "lent".
-r('lens',subst) --> "lens".
-r('lempir',subst) --> "lempir".
-r('lemniskat',subst) --> "lemniskat".
-r('lemn',subst) --> "lemn".
-r('lem',subst) --> "lem".
-r('lektor',subst) --> "lektor".
-r('leksikon',subst) --> "leksikon".
-r('leksikologi',subst) --> "leksikologi".
-r('leksikolog',subst) --> "leksikolog".
-r('leksikografi',subst) --> "leksikografi".
-r('leksikograf',subst) --> "leksikograf".
-r('leksik',subst) --> "leksik".
-r('lekci',subst) --> "lekci".
-r('lekant',subst) --> "lekant".
-r('lek',tr) --> "lek".
-r('legumin',subst) --> "legumin".
-r('legom',subst) --> "legom".
-r('legitimaci',subst) --> "legitimaci".
-r('legitim',tr) --> "legitim".
-r('legi',subst) --> "legi".
-r('legend',subst) --> "legend".
-r('legat',subst) --> "legat".
-r('legat',subst) --> "legat".
-r('legaci',subst) --> "legaci".
-r('leg',tr) --> "leg".
-r('led',subst) --> "led".
-r('lecitin',subst) --> "lecitin".
-r('lecion',subst) --> "lecion".
-r('laŭt',adj) --> "laŭt".
-r('laŭrenti',subst) --> "laŭrenti".
-r('laŭrenci',subst) --> "laŭrenci".
-r('laŭreat',subst) --> "laŭreat".
-r('laŭrac',subst) --> "laŭrac".
-r('laŭr',subst) --> "laŭr".
-r('laŭdan',subst) --> "laŭdan".
-r('laŭdaci',subst) --> "laŭdaci".
-r('laŭd',tr) --> "laŭd".
-r('laŭb',subst) --> "laŭb".
-r('laĉ',subst) --> "laĉ".
-r('lazurit',subst) --> "lazurit".
-r('lazur',subst) --> "lazur".
-r('lazaret',subst) --> "lazaret".
-r('laz',subst) --> "laz".
-r('lavr',subst) --> "lavr".
-r('lavend',subst) --> "lavend".
-r('lavang',subst) --> "lavang".
-r('lav',tr) --> "lav".
-r('latv',subst) --> "latv".
-r('latun',subst) --> "latun".
-r('latron',subst) --> "latron".
-r('latrin',subst) --> "latrin".
-r('latitud',subst) --> "latitud".
-r('latis',subst) --> "latis".
-r('latir',subst) --> "latir".
-r('later',subst) --> "later".
-r('latent',adj) --> "latent".
-r('latani',subst) --> "latani".
-r('lat',subst) --> "lat".
-r('last',adj) --> "last".
-r('laser',subst) --> "laser".
-r('lasciv',adj) --> "lasciv".
-r('las',tr) --> "las".
-r('larĝ',adj) --> "larĝ".
-r('larv',subst) --> "larv".
-r('larm',subst) --> "larm".
-r('laringit',subst) --> "laringit".
-r('laring',subst) --> "laring".
-r('larik',subst) --> "larik".
-r('lared',subst) --> "lared".
-r('lard',subst) --> "lard".
-r('lar',subst) --> "lar".
-r('lapis',subst) --> "lapis".
-r('lapidar',adj) --> "lapidar".
-r('laparotomi',subst) --> "laparotomi".
-r('lap',subst) --> "lap".
-r('lanĉ',tr) --> "lanĉ".
-r('lanug',subst) --> "lanug".
-r('lantern',subst) --> "lantern".
-r('lantan',subst) --> "lantan".
-r('laniari',subst) --> "laniari".
-r('langvor',subst) --> "langvor".
-r('langust',subst) --> "langust".
-r('lang',subst) --> "lang".
-r('landskneĥt',subst) --> "landskneĥt".
-r('land',subst) --> "land".
-r('lanc',subst) --> "lanc".
-r('lan',subst) --> "lan".
-r('lampired',subst) --> "lampired".
-r('lampir',subst) --> "lampir".
-r('lampion',subst) --> "lampion".
-r('lamp',subst) --> "lamp".
-r('laminari',subst) --> "laminari".
-r('lamiac',subst) --> "lamiac".
-r('lami',subst) --> "lami".
-r('lament',ntr) --> "lament".
-r('lamen',subst) --> "lamen".
-r('lamelikorn',subst) --> "lamelikorn".
-r('lamelibrank',subst) --> "lamelibrank".
-r('lamblioz',subst) --> "lamblioz".
-r('lambdaciz',subst) --> "lambdaciz".
-r('lama',subst) --> "lama".
-r('lam',adj) --> "lam".
-r('lam',subst) --> "lam".
-r('lakun',subst) --> "lakun".
-r('laktuk',subst) --> "laktuk".
-r('laktoz',subst) --> "laktoz".
-r('lakt',subst) --> "lakt".
-r('laks',subst) --> "laks".
-r('lakrimal',subst) --> "lakrimal".
-r('lakon',adj) --> "lakon".
-r('lakmus',subst) --> "lakmus".
-r('lake',subst) --> "lake".
-r('lak',subst) --> "lak".
-r('laik',subst) --> "laik".
-r('lagun',subst) --> "lagun".
-r('lagried',subst) --> "lagried".
-r('lagri',subst) --> "lagri".
-r('lagr',subst) --> "lagr".
-r('lagop',subst) --> "lagop".
-r('lag',subst) --> "lag".
-r('laf',subst) --> "laf".
-r('lad',subst) --> "lad".
-r('lacerted',subst) --> "lacerted".
-r('lacert',best) --> "lacert".
-r('lac',adj) --> "lac".
-r('laburn',subst) --> "laburn".
-r('labrak',best) --> "labrak".
-r('laboratori',subst) --> "laboratori".
-r('labor',ntr) --> "labor".
-r('labirint',subst) --> "labirint".
-r('labial',subst) --> "labial".
-r('labiac',subst) --> "labiac".
-r('labi',subst) --> "labi".
-r('kvot',subst) --> "kvot".
-r('kvorum',subst) --> "kvorum".
-r('kvodlibet',subst) --> "kvodlibet".
-r('kvocient',subst) --> "kvocient".
-r('kviz',subst) --> "kviz".
-r('kvivit',ntr) --> "kvivit".
-r('kvitanc',subst) --> "kvitanc".
-r('kvit',adj) --> "kvit".
-r('kvintet',subst) --> "kvintet".
-r('kvintesenc',subst) --> "kvintesenc".
-r('kvintal',subst) --> "kvintal".
-r('kvint',subst) --> "kvint".
-r('kvinsland',subst) --> "kvinsland".
-r('kvino',subst) --> "kvino".
-r('kvik',verb) --> "kvik".
-r('kviet',adj) --> "kviet".
-r('kvestor',subst) --> "kvestor".
-r('kvest',verb) --> "kvest".
-r('kverk',subst) --> "kverk".
-r('kverel',ntr) --> "kverel".
-r('kver',ntr) --> "kver".
-r('kvazar',subst) --> "kvazar".
-r('kvaternar',subst) --> "kvaternar".
-r('kvast',subst) --> "kvast".
-r('kvas',subst) --> "kvas".
-r('kvartir',subst) --> "kvartir".
-r('kvartet',subst) --> "kvartet".
-r('kvartal',subst) --> "kvartal".
-r('kvart',subst) --> "kvart".
-r('kvart',subst) --> "kvart".
-r('kvark',subst) --> "kvark".
-r('kvarc',subst) --> "kvarc".
-r('kvaranten',subst) --> "kvaranten".
-r('kvantum',subst) --> "kvantum".
-r('kvant',subst) --> "kvant".
-r('kvalit',subst) --> "kvalit".
-r('kvalifik',tr) --> "kvalifik".
-r('kvalif',tr) --> "kvalif".
-r('kvaker',subst) --> "kvaker".
-r('kvak',verb) --> "kvak".
-r('kvadriplegi',subst) --> "kvadriplegi".
-r('kvadril',subst) --> "kvadril".
-r('kvadrik',subst) --> "kvadrik".
-r('kvadrig',subst) --> "kvadrig".
-r('kvadratur',subst) --> "kvadratur".
-r('kvadrat',subst) --> "kvadrat".
-r('kvadrant',subst) --> "kvadrant".
-r('kvadrant',subst) --> "kvadrant".
-r('kuŝ',ntr) --> "kuŝ".
-r('kuz',parc) --> "kuz".
-r('kuv',subst) --> "kuv".
-r('kutr',subst) --> "kutr".
-r('kutim',ntr) --> "kutim".
-r('kut',subst) --> "kut".
-r('kusp',tr) --> "kusp".
-r('kuskus',subst) --> "kuskus".
-r('kusen',subst) --> "kusen".
-r('kurĉatovi',subst) --> "kurĉatovi".
-r('kurz',subst) --> "kurz".
-r('kurtin',subst) --> "kurtin".
-r('kurten',subst) --> "kurten".
-r('kurtaĝ',subst) --> "kurtaĝ".
-r('kursor',subst) --> "kursor".
-r('kursiv',subst) --> "kursiv".
-r('kurs',subst) --> "kurs".
-r('kurkum',subst) --> "kurkum".
-r('kurkulied',subst) --> "kurkulied".
-r('kurkuli',subst) --> "kurkuli".
-r('kurium',subst) --> "kurium".
-r('kurioz',adj) --> "kurioz".
-r('kurier',subst) --> "kurier".
-r('kuri',subst) --> "kuri".
-r('kurent',subst) --> "kurent".
-r('kurb',adj) --> "kurb".
-r('kuraĝ',adj) --> "kuraĝ".
-r('kurator',subst) --> "kurator".
-r('kurac',tr) --> "kurac".
-r('kur',ntr) --> "kur".
-r('kupul',subst) --> "kupul".
-r('kupr',subst) --> "kupr".
-r('kupon',subst) --> "kupon".
-r('kupol',subst) --> "kupol".
-r('kuplet',subst) --> "kuplet".
-r('kupl',tr) --> "kupl".
-r('kupel',verb) --> "kupel".
-r('kupe',subst) --> "kupe".
-r('kup',subst) --> "kup".
-r('kunikl',best) --> "kunikl".
-r('kungfu',subst) --> "kungfu".
-r('kumulus',subst) --> "kumulus".
-r('kumis',subst) --> "kumis".
-r('kumin',subst) --> "kumin".
-r('kuman',subst) --> "kuman".
-r('kultur',tr) --> "kultur".
-r('kultiv',tr) --> "kultiv".
-r('kult',subst) --> "kult".
-r('kulp',adj) --> "kulp".
-r('kulot',subst) --> "kulot".
-r('kulmin',subst) --> "kulmin".
-r('kulis',subst) --> "kulis".
-r('kulinar',adj) --> "kulinar".
-r('kuli',subst) --> "kuli".
-r('kuler',subst) --> "kuler".
-r('kuled',subst) --> "kuled".
-r('kulas',subst) --> "kulas".
-r('kulak',subst) --> "kulak".
-r('kul',subst) --> "kul".
-r('kukurbac',subst) --> "kukurbac".
-r('kukurb',subst) --> "kukurb".
-r('kukum',subst) --> "kukum".
-r('kukoled',subst) --> "kukoled".
-r('kukol',subst) --> "kukol".
-r('kukabur',subst) --> "kukabur".
-r('kuk',subst) --> "kuk".
-r('kuir',tr) --> "kuir".
-r('kugl',subst) --> "kugl".
-r('kuf',subst) --> "kuf".
-r('kudr',tr) --> "kudr".
-r('kubut',subst) --> "kubut".
-r('kubu',subst) --> "kubu".
-r('kub',subst) --> "kub".
-r('kub',subst) --> "kub".
-r('ku',subst) --> "ku".
-r('ksilokop',subst) --> "ksilokop".
-r('ksilografi',subst) --> "ksilografi".
-r('ksilograf',tr) --> "ksilograf".
-r('ksilograf',subst) --> "ksilograf".
-r('ksilofon',subst) --> "ksilofon".
-r('ksilem',subst) --> "ksilem".
-r('ksifi',subst) --> "ksifi".
-r('kseres',subst) --> "kseres".
-r('ksenon',subst) --> "ksenon".
-r('kruĉ',subst) --> "kruĉ".
-r('kruzad',subst) --> "kruzad".
-r('krut',adj) --> "krut".
-r('krust',subst) --> "krust".
-r('krur',subst) --> "krur".
-r('krupier',subst) --> "krupier".
-r('krup',subst) --> "krup".
-r('kruel',adj) --> "kruel".
-r('krud',adj) --> "krud".
-r('krucifiks',subst) --> "krucifiks".
-r('krucifer',subst) --> "krucifer".
-r('kruc',subst) --> "kruc".
-r('kroĉ',tr) --> "kroĉ".
-r('kroz',ntr) --> "kroz".
-r('krotal',best) --> "krotal".
-r('krop',subst) --> "krop".
-r('kronometri',subst) --> "kronometri".
-r('kronometr',subst) --> "kronometr".
-r('kronologi',subst) --> "kronologi".
-r('kronik',adj) --> "kronik".
-r('kronik',subst) --> "kronik".
-r('kron',subst) --> "kron".
-r('kron',subst) --> "kron".
-r('kromosom',subst) --> "kromosom".
-r('kromolitografi',subst) --> "kromolitografi".
-r('kromofotografi',subst) --> "kromofotografi".
-r('kromi',subst) --> "kromi".
-r('kromatografi',subst) --> "kromatografi".
-r('kromatograf',subst) --> "kromatograf".
-r('kromat',adj) --> "kromat".
-r('krom',subst) --> "krom".
-r('krokus',subst) --> "krokus".
-r('krokodiled',subst) --> "krokodiled".
-r('krokodil',best) --> "krokodil".
-r('krokiz',verb) --> "krokiz".
-r('kroket',subst) --> "kroket".
-r('kroat',subst) --> "kroat".
-r('kriĉ',verb) --> "kriĉ".
-r('krizolit',subst) --> "krizolit".
-r('krizokal',subst) --> "krizokal".
-r('krizantem',subst) --> "krizantem".
-r('krizalid',subst) --> "krizalid".
-r('kriz',subst) --> "kriz".
-r('kritik',tr) --> "kritik".
-r('kriteri',subst) --> "kriteri".
-r('kristalografi',subst) --> "kristalografi".
-r('kristal',subst) --> "kristal".
-r('krisp',subst) --> "krisp".
-r('krisol',subst) --> "krisol".
-r('kris',subst) --> "kris".
-r('kripton',subst) --> "kripton".
-r('kriptomeri',subst) --> "kriptomeri".
-r('kriptogam',subst) --> "kriptogam".
-r('kript',subst) --> "kript".
-r('kripl',adj) --> "kripl".
-r('krip',subst) --> "krip".
-r('krinolin',subst) --> "krinolin".
-r('kring',subst) --> "kring".
-r('krin',subst) --> "krin".
-r('krimologi',subst) --> "krimologi".
-r('krimolog',subst) --> "krimolog".
-r('kriminologi',subst) --> "kriminologi".
-r('kriminolog',subst) --> "kriminolog".
-r('kriminal',adj) --> "kriminal".
-r('krim',subst) --> "krim".
-r('kril',subst) --> "kril".
-r('kriket',subst) --> "kriket".
-r('krik',subst) --> "krik".
-r('krif',subst) --> "krif".
-r('kribr',tr) --> "kribr".
-r('kribaĝ',subst) --> "kribaĝ".
-r('kri',ntr) --> "kri".
-r('kri',subst) --> "kri".
-r('krev',ntr) --> "krev".
-r('kreton',subst) --> "kreton".
-r('kreten',subst) --> "kreten".
-r('kretace',subst) --> "kretace".
-r('kret',subst) --> "kret".
-r('kresĉend',subst) --> "kresĉend".
-r('krestomati',subst) --> "krestomati".
-r('krest',subst) --> "krest".
-r('kresp',subst) --> "kresp".
-r('kresk',ntr) --> "kresk".
-r('krescent',subst) --> "krescent".
-r('kres',subst) --> "kres".
-r('krepusk',subst) --> "krepusk".
-r('krepid',subst) --> "krepid".
-r('krep',subst) --> "krep".
-r('kreozot',subst) --> "kreozot".
-r('kreol',subst) --> "kreol".
-r('krenel',subst) --> "krenel".
-r('kren',subst) --> "kren".
-r('kremaci',verb) --> "kremaci".
-r('krem',subst) --> "krem".
-r('krejcer',subst) --> "krejcer".
-r('kreditor',subst) --> "kreditor".
-r('kredit',subst) --> "kredit".
-r('kred',tr) --> "kred".
-r('kre',tr) --> "kre".
-r('kraŝ',verb) --> "kraŝ".
-r('kraĉ',tr) --> "kraĉ".
-r('kravat',subst) --> "kravat".
-r('krati',suf) --> "krati".
-r('krater',subst) --> "krater".
-r('kratag',subst) --> "kratag".
-r('krasulac',subst) --> "krasulac".
-r('krasul',subst) --> "krasul".
-r('krank',subst) --> "krank".
-r('krani',subst) --> "krani".
-r('kran',subst) --> "kran".
-r('krampf',subst) --> "krampf".
-r('kramp',subst) --> "kramp".
-r('kramf',subst) --> "kramf".
-r('kramb',subst) --> "kramb".
-r('kral',subst) --> "kral".
-r('kraken',subst) --> "kraken".
-r('krak',verb) --> "krak".
-r('krak',subst) --> "krak".
-r('krajon',subst) --> "krajon".
-r('krad',subst) --> "krad".
-r('krabr',subst) --> "krabr".
-r('krabl',verb) --> "krabl".
-r('krab',best) --> "krab".
-r('koŭtoŭ',ntr) --> "koŭtoŭ".
-r('koŝmar',subst) --> "koŝmar".
-r('koŝer',adj) --> "koŝer".
-r('koŝ',subst) --> "koŝ".
-r('koĉer',subst) --> "koĉer".
-r('koĉenil',subst) --> "koĉenil".
-r('koĉed',subst) --> "koĉed".
-r('koĉ',subst) --> "koĉ".
-r('kozak',subst) --> "kozak".
-r('koz',subst) --> "koz".
-r('kovr',tr) --> "kovr".
-r('kovert',subst) --> "kovert".
-r('kovarianc',subst) --> "kovarianc".
-r('kovard',adj) --> "kovard".
-r('kov',tr) --> "kov".
-r('koturn',subst) --> "koturn".
-r('kotorn',subst) --> "kotorn".
-r('koton',subst) --> "koton".
-r('koto',subst) --> "koto".
-r('kotlet',subst) --> "kotlet".
-r('kotiz',ntr) --> "kotiz".
-r('kotiljon',subst) --> "kotiljon".
-r('kotiledon',subst) --> "kotiledon".
-r('koteri',subst) --> "koteri".
-r('kotangent',subst) --> "kotangent".
-r('kot',subst) --> "kot".
-r('kostum',subst) --> "kostum".
-r('kostarik',subst) --> "kostarik".
-r('kost',tr) --> "kost".
-r('kosov',subst) --> "kosov".
-r('kosmos',subst) --> "kosmos".
-r('kosmopolit',subst) --> "kosmopolit".
-r('kosmonaŭtik',subst) --> "kosmonaŭtik".
-r('kosmonaŭt',subst) --> "kosmonaŭt".
-r('kosmologi',subst) --> "kosmologi".
-r('kosmografi',subst) --> "kosmografi".
-r('kosmogoni',subst) --> "kosmogoni".
-r('kosmodrom',subst) --> "kosmodrom".
-r('kosmetik',subst) --> "kosmetik".
-r('kosm',subst) --> "kosm".
-r('kosinus',subst) --> "kosinus".
-r('kosekant',subst) --> "kosekant".
-r('korvet',subst) --> "korvet".
-r('korved',subst) --> "korved".
-r('korv',subst) --> "korv".
-r('korus',subst) --> "korus".
-r('korupt',tr) --> "korupt".
-r('korund',subst) --> "korund".
-r('kortizon',subst) --> "kortizon".
-r('kortik',subst) --> "kortik".
-r('korteks',subst) --> "korteks".
-r('kort',subst) --> "kort".
-r('korset',subst) --> "korset".
-r('korsaĵ',subst) --> "korsaĵ".
-r('korsar',subst) --> "korsar".
-r('kors',subst) --> "kors".
-r('korpuskl',subst) --> "korpuskl".
-r('korpus',subst) --> "korpus".
-r('korpulent',adj) --> "korpulent".
-r('korporaci',subst) --> "korporaci".
-r('korp',subst) --> "korp".
-r('korolari',subst) --> "korolari".
-r('korol',subst) --> "korol".
-r('korod',tr) --> "korod".
-r('kornusac',subst) --> "kornusac".
-r('kornus',subst) --> "kornus".
-r('kornik',subst) --> "kornik".
-r('kornic',subst) --> "kornic".
-r('kornet',subst) --> "kornet".
-r('kornet',subst) --> "kornet".
-r('korne',subst) --> "korne".
-r('korn',subst) --> "korn".
-r('kormoraned',subst) --> "kormoraned".
-r('kormoran',subst) --> "kormoran".
-r('kork',subst) --> "kork".
-r('korimb',subst) --> "korimb".
-r('korife',subst) --> "korife".
-r('koridor',subst) --> "koridor".
-r('koriandr',subst) --> "koriandr".
-r('korespond',ntr) --> "korespond".
-r('korelativ',adj) --> "korelativ".
-r('korelaci',subst) --> "korelaci".
-r('korekt',tr) --> "korekt".
-r('koregoned',subst) --> "koregoned".
-r('koregon',best) --> "koregon".
-r('koregidor',subst) --> "koregidor".
-r('kore',subst) --> "kore".
-r('korduroj',subst) --> "korduroj".
-r('kordon',subst) --> "kordon".
-r('kordob',subst) --> "kordob".
-r('kord',subst) --> "kord".
-r('korbel',subst) --> "korbel".
-r('korb',subst) --> "korb".
-r('koral',subst) --> "koral".
-r('korakl',subst) --> "korakl".
-r('kor',subst) --> "kor".
-r('kopulaci',subst) --> "kopulaci".
-r('kopul',subst) --> "kopul".
-r('kopt',subst) --> "kopt".
-r('kopr',subst) --> "kopr".
-r('kopl',subst) --> "kopl".
-r('kopi',tr) --> "kopi".
-r('kopernici',subst) --> "kopernici".
-r('kopepod',subst) --> "kopepod".
-r('kopek',subst) --> "kopek".
-r('koordinat',subst) --> "koordinat".
-r('kooperativ',subst) --> "kooperativ".
-r('kooper',adj) --> "kooper".
-r('konĥoid',subst) --> "konĥoid".
-r('konĉert',subst) --> "konĉert".
-r('konzol',subst) --> "konzol".
-r('konzern',subst) --> "konzern".
-r('konvulsi',subst) --> "konvulsi".
-r('konvolvulac',subst) --> "konvolvulac".
-r('konvolvul',subst) --> "konvolvul".
-r('konvoj',subst) --> "konvoj".
-r('konvink',tr) --> "konvink".
-r('konvikt',tr) --> "konvikt".
-r('konverĝ',ntr) --> "konverĝ".
-r('konvert',tr) --> "konvert".
-r('konversaci',subst) --> "konversaci".
-r('konvers',tr) --> "konvers".
-r('konvenci',subst) --> "konvenci".
-r('konven',ntr) --> "konven".
-r('konveks',adj) --> "konveks".
-r('konvalesk',verb) --> "konvalesk".
-r('konval',subst) --> "konval".
-r('konus',subst) --> "konus".
-r('konur',subst) --> "konur".
-r('kontuz',tr) --> "kontuz".
-r('kontur',subst) --> "kontur".
-r('kontrol',tr) --> "kontrol".
-r('kontrici',subst) --> "kontrici".
-r('kontribuci',subst) --> "kontribuci".
-r('kontribu',tr) --> "kontribu".
-r('kontrast',subst) --> "kontrast".
-r('kontrapunkt',subst) --> "kontrapunkt".
-r('kontramark',subst) --> "kontramark".
-r('kontralt',subst) --> "kontralt".
-r('kontraktur',subst) --> "kontraktur".
-r('kontrakt',tr) --> "kontrakt".
-r('kontrafagot',subst) --> "kontrafagot".
-r('kontradmiral',subst) --> "kontradmiral".
-r('kontradanc',subst) --> "kontradanc".
-r('kontrabas',subst) --> "kontrabas".
-r('kontraband',subst) --> "kontraband".
-r('kontor',subst) --> "kontor".
-r('kontinu',adj) --> "kontinu".
-r('kontingent',subst) --> "kontingent".
-r('kontingenc',adj) --> "kontingenc".
-r('kontinent',subst) --> "kontinent".
-r('kontest',tr) --> "kontest".
-r('kontent',adj) --> "kontent".
-r('kontener',subst) --> "kontener".
-r('kontempl',tr) --> "kontempl".
-r('kontaĝ',tr) --> "kontaĝ".
-r('kontant',adj) --> "kontant".
-r('kontakt',subst) --> "kontakt".
-r('kont',subst) --> "kont".
-r('konsum',tr) --> "konsum".
-r('konsult',tr) --> "konsult".
-r('konsul',subst) --> "konsul".
-r('konstru',tr) --> "konstru".
-r('konstituci',subst) --> "konstituci".
-r('konstitu',verb) --> "konstitu".
-r('konstip',tr) --> "konstip".
-r('konstern',tr) --> "konstern".
-r('konstelaci',subst) --> "konstelaci".
-r('konstat',tr) --> "konstat".
-r('konstant',adj) --> "konstant".
-r('konspir',ntr) --> "konspir".
-r('konsorci',subst) --> "konsorci".
-r('konsonant',subst) --> "konsonant".
-r('konsonanc',subst) --> "konsonanc".
-r('konsol',tr) --> "konsol".
-r('konskripci',subst) --> "konskripci".
-r('konsistori',subst) --> "konsistori".
-r('konsistenc',subst) --> "konsistenc".
-r('konsist',ntr) --> "konsist".
-r('konsili',subst) --> "konsili".
-r('konsil',tr) --> "konsil".
-r('konsider',tr) --> "konsider".
-r('konservatori',subst) --> "konservatori".
-r('konservativ',adj) --> "konservativ".
-r('konserv',tr) --> "konserv".
-r('konsent',tr) --> "konsent".
-r('konsekvenc',subst) --> "konsekvenc".
-r('konsekr',tr) --> "konsekr".
-r('konscienc',subst) --> "konscienc".
-r('konsci',tr) --> "konsci".
-r('konotaci',subst) --> "konotaci".
-r('konosament',subst) --> "konosament".
-r('konoid',subst) --> "konoid".
-r('konkurs',tr) --> "konkurs".
-r('konkurenc',subst) --> "konkurenc".
-r('konkur',tr) --> "konkur".
-r('konkubin',subst) --> "konkubin".
-r('konkret',adj) --> "konkret".
-r('konkrement',subst) --> "konkrement".
-r('konkreci',subst) --> "konkreci".
-r('konkordat',subst) --> "konkordat".
-r('konkordanc',subst) --> "konkordanc".
-r('konkord',subst) --> "konkord".
-r('konkologi',subst) --> "konkologi".
-r('konkolog',subst) --> "konkolog".
-r('konkoid',subst) --> "konkoid".
-r('konklud',tr) --> "konklud".
-r('konklav',subst) --> "konklav".
-r('konker',tr) --> "konker".
-r('konkav',adj) --> "konkav".
-r('konk',subst) --> "konk".
-r('konjunktur',subst) --> "konjunktur".
-r('konjunktivit',subst) --> "konjunktivit".
-r('konjunktiv',subst) --> "konjunktiv".
-r('konjunktiv',subst) --> "konjunktiv".
-r('konjunkci',subst) --> "konjunkci".
-r('konjugaci',subst) --> "konjugaci".
-r('konjug',verb) --> "konjug".
-r('konjekt',tr) --> "konjekt".
-r('konjak',subst) --> "konjak".
-r('konik',subst) --> "konik".
-r('konifer',subst) --> "konifer".
-r('koni',subst) --> "koni".
-r('kongru',ntr) --> "kongru".
-r('kongres',subst) --> "kongres".
-r('kongregaci',subst) --> "kongregaci".
-r('konglomerat',subst) --> "konglomerat".
-r('konglomer',tr) --> "konglomer".
-r('kongest',subst) --> "kongest".
-r('konga',subst) --> "konga".
-r('konfuz',tr) --> "konfuz".
-r('konfront',verb) --> "konfront".
-r('konform',adj) --> "konform".
-r('konflikt',subst) --> "konflikt".
-r('konfit',tr) --> "konfit".
-r('konfisk',tr) --> "konfisk".
-r('konfirmaci',subst) --> "konfirmaci".
-r('konfirm',tr) --> "konfirm".
-r('konfidenci',subst) --> "konfidenci".
-r('konfidenc',subst) --> "konfidenc".
-r('konfid',tr) --> "konfid".
-r('konfet',subst) --> "konfet".
-r('konfesi',subst) --> "konfesi".
-r('konfes',tr) --> "konfes".
-r('konferv',subst) --> "konferv".
-r('konferenc',subst) --> "konferenc".
-r('konfekci',subst) --> "konfekci".
-r('konfederaci',subst) --> "konfederaci".
-r('konfeder',verb) --> "konfeder".
-r('konekt',tr) --> "konekt".
-r('koneks',adj) --> "koneks".
-r('kondut',ntr) --> "kondut".
-r('konduktor',subst) --> "konduktor".
-r('konduktiv',adj) --> "konduktiv".
-r('konduktanc',subst) --> "konduktanc".
-r('kondukt',verb) --> "kondukt".
-r('konduk',tr) --> "konduk".
-r('kondotier',subst) --> "kondotier".
-r('kondor',subst) --> "kondor".
-r('kondom',subst) --> "kondom".
-r('kondolenc',tr) --> "kondolenc".
-r('kondiĉ',subst) --> "kondiĉ".
-r('kondiment',subst) --> "kondiment".
-r('kondicional',subst) --> "kondicional".
-r('kondensator',subst) --> "kondensator".
-r('kondamn',tr) --> "kondamn".
-r('konciz',adj) --> "konciz".
-r('koncip',tr) --> "koncip".
-r('koncili',subst) --> "koncili".
-r('koncesi',tr) --> "koncesi".
-r('koncertin',subst) --> "koncertin".
-r('koncert',subst) --> "koncert".
-r('koncern',tr) --> "koncern".
-r('koncept',subst) --> "koncept".
-r('koncentr',tr) --> "koncentr".
-r('koncentr',adj) --> "koncentr".
-r('konced',tr) --> "konced".
-r('kon',tr) --> "kon".
-r('komutator',subst) --> "komutator".
-r('komut',tr) --> "komut".
-r('komunik',tr) --> "komunik".
-r('komuni',tr) --> "komuni".
-r('komun',adj) --> "komun".
-r('komputor',subst) --> "komputor".
-r('komputik',subst) --> "komputik".
-r('komputer',subst) --> "komputer".
-r('komput',verb) --> "komput".
-r('kompufon',subst) --> "kompufon".
-r('kompromit',tr) --> "kompromit".
-r('kompromis',subst) --> "kompromis".
-r('kompresor',subst) --> "kompresor".
-r('kompres',subst) --> "kompres".
-r('kompren',tr) --> "kompren".
-r('kompoŝt',subst) --> "kompoŝt".
-r('kompozit',subst) --> "kompozit".
-r('kompozit',subst) --> "kompozit".
-r('kompozici',subst) --> "kompozici".
-r('kompot',subst) --> "kompot".
-r('kompost',tr) --> "kompost".
-r('kompon',tr) --> "kompon".
-r('komplot',subst) --> "komplot".
-r('kompliment',subst) --> "kompliment".
-r('komplik',tr) --> "komplik".
-r('komplic',subst) --> "komplic".
-r('komplez',subst) --> "komplez".
-r('kompletiv',adj) --> "kompletiv".
-r('komplet',adj) --> "komplet".
-r('komplement',subst) --> "komplement".
-r('kompleksi',subst) --> "kompleksi".
-r('kompleks',adj) --> "kompleks".
-r('kompil',tr) --> "kompil".
-r('kompetent',adj) --> "kompetent".
-r('kompensator',subst) --> "kompensator".
-r('kompens',tr) --> "kompens".
-r('kompendi',subst) --> "kompendi".
-r('kompat',tr) --> "kompat".
-r('kompas',subst) --> "kompas".
-r('komparativ',subst) --> "komparativ".
-r('komparaci',subst) --> "komparaci".
-r('kompar',tr) --> "kompar".
-r('kompani',subst) --> "kompani".
-r('kompakt',adj) --> "kompakt".
-r('komor',subst) --> "komor".
-r('komod',subst) --> "komod".
-r('komoci',tr) --> "komoci".
-r('komiz',subst) --> "komiz".
-r('komitat',subst) --> "komitat".
-r('komisur',subst) --> "komisur".
-r('komision',subst) --> "komision".
-r('komisi',tr) --> "komisi".
-r('komisar',subst) --> "komisar".
-r('komiks',subst) --> "komiks".
-r('komik',adj) --> "komik".
-r('komfort',subst) --> "komfort".
-r('komet',subst) --> "komet".
-r('komerc',ntr) --> "komerc".
-r('komentari',tr) --> "komentari".
-r('koment',tr) --> "koment".
-r('komenc',tr) --> "komenc".
-r('komedon',subst) --> "komedon".
-r('komedi',subst) --> "komedi".
-r('kombine',subst) --> "kombine".
-r('kombinatorik',subst) --> "kombinatorik".
-r('kombin',tr) --> "kombin".
-r('komb',tr) --> "komb".
-r('komatul',subst) --> "komatul".
-r('komat',subst) --> "komat".
-r('komanĉ',subst) --> "komanĉ".
-r('komandor',subst) --> "komandor".
-r('komandit',subst) --> "komandit".
-r('komand',tr) --> "komand".
-r('koma',subst) --> "koma".
-r('kom',subst) --> "kom".
-r('kolŝit',subst) --> "kolŝit".
-r('kolĥoz',subst) --> "kolĥoz".
-r('kolĉikin',subst) --> "kolĉikin".
-r('kolĉik',subst) --> "kolĉik".
-r('kolz',subst) --> "kolz".
-r('koluzi',subst) --> "koluzi".
-r('kolumn',subst) --> "kolumn".
-r('kolubred',subst) --> "kolubred".
-r('kolubr',best) --> "kolubr".
-r('kolport',tr) --> "kolport".
-r('kolostr',subst) --> "kolostr".
-r('kolos',subst) --> "kolos".
-r('koloratur',subst) --> "koloratur".
-r('kolor',subst) --> "kolor".
-r('koloni',subst) --> "koloni".
-r('kolonel',subst) --> "kolonel".
-r('kolon',subst) --> "kolon".
-r('kolon',subst) --> "kolon".
-r('kolombed',subst) --> "kolombed".
-r('kolomb',best) --> "kolomb".
-r('kolokint',subst) --> "kolokint".
-r('kolokazi',subst) --> "kolokazi".
-r('koloid',subst) --> "koloid".
-r('kolofon',subst) --> "kolofon".
-r('kolofon',subst) --> "kolofon".
-r('kolodi',subst) --> "kolodi".
-r('kolocint',subst) --> "kolocint".
-r('kolizi',ntr) --> "kolizi".
-r('koliri',subst) --> "koliri".
-r('kolimbet',subst) --> "kolimbet".
-r('kolimbed',subst) --> "kolimbed".
-r('kolimb',subst) --> "kolimb".
-r('kolik',subst) --> "kolik".
-r('kolier',subst) --> "kolier".
-r('kolibr',subst) --> "kolibr".
-r('kolesterol',subst) --> "kolesterol".
-r('kolerik',adj) --> "kolerik".
-r('koler',verb) --> "koler".
-r('koleopter',subst) --> "koleopter".
-r('kolektiv',adj) --> "kolektiv".
-r('kolekt',tr) --> "kolekt".
-r('kolegi',subst) --> "kolegi".
-r('koleg',subst) --> "koleg".
-r('koledok',subst) --> "koledok".
-r('kolbas',subst) --> "kolbas".
-r('kolb',subst) --> "kolb".
-r('kolazion',verb) --> "kolazion".
-r('kolaps',subst) --> "kolaps".
-r('kol',subst) --> "kol".
-r('koktel',subst) --> "koktel".
-r('koks',subst) --> "koks".
-r('kokr',tr) --> "kokr".
-r('kokos',subst) --> "kokos".
-r('kokon',subst) --> "kokon".
-r('kokluŝ',subst) --> "kokluŝ".
-r('kokleari',subst) --> "kokleari".
-r('koket',adj) --> "koket".
-r('kokerik',ntr) --> "kokerik".
-r('kokcineled',subst) --> "kokcineled".
-r('kokcinel',subst) --> "kokcinel".
-r('kokcig',subst) --> "kokcig".
-r('kokard',subst) --> "kokard".
-r('kokain',subst) --> "kokain".
-r('koka',subst) --> "koka".
-r('kok',subst) --> "kok".
-r('kojp',subst) --> "kojp".
-r('kojot',subst) --> "kojot".
-r('kojon',subst) --> "kojon".
-r('kojne',subst) --> "kojne".
-r('kojn',subst) --> "kojn".
-r('kojl',subst) --> "kojl".
-r('koit',ntr) --> "koit".
-r('koincid',ntr) --> "koincid".
-r('kohort',subst) --> "kohort".
-r('koher',adj) --> "koher".
-r('kofr',subst) --> "kofr".
-r('kofer',subst) --> "kofer".
-r('kofaktor',subst) --> "kofaktor".
-r('koeficient',subst) --> "koeficient".
-r('kodrant',subst) --> "kodrant".
-r('kodicil',subst) --> "kodicil".
-r('kodeks',subst) --> "kodeks".
-r('kodek',subst) --> "kodek".
-r('kodak',subst) --> "kodak".
-r('kod',subst) --> "kod".
-r('kobold',subst) --> "kobold".
-r('kobitided',subst) --> "kobitided".
-r('kobitid',best) --> "kobitid".
-r('kobalt',subst) --> "kobalt".
-r('kobajed',subst) --> "kobajed".
-r('kobaj',best) --> "kobaj".
-r('koan',subst) --> "koan".
-r('koalici',ntr) --> "koalici".
-r('koalici',subst) --> "koalici".
-r('koal',subst) --> "koal".
-r('koaks',subst) --> "koaks".
-r('koagul',tr) --> "koagul".
-r('knel',subst) --> "knel".
-r('knedlik',subst) --> "knedlik".
-r('kned',tr) --> "kned".
-r('knar',verb) --> "knar".
-r('knal',ntr) --> "knal".
-r('knab',subst) --> "knab".
-r('kluĉ',tr) --> "kluĉ".
-r('kluz',subst) --> "kluz".
-r('klus',subst) --> "klus".
-r('klupeed',subst) --> "klupeed".
-r('klupe',best) --> "klupe".
-r('kluk',verb) --> "kluk".
-r('klub',subst) --> "klub".
-r('kloŝ',subst) --> "kloŝ".
-r('klozone',subst) --> "klozone".
-r('klozet',subst) --> "klozet".
-r('klostrofobi',subst) --> "klostrofobi".
-r('klostr',subst) --> "klostr".
-r('kloroz',subst) --> "kloroz".
-r('kloroplast',subst) --> "kloroplast".
-r('kloroform',subst) --> "kloroform".
-r('klorofil',subst) --> "klorofil".
-r('klor',subst) --> "klor".
-r('klopod',ntr) --> "klopod".
-r('klonik',adj) --> "klonik".
-r('klon',subst) --> "klon".
-r('klon',subst) --> "klon".
-r('kloak',subst) --> "kloak".
-r('kliŝ',verb) --> "kliŝ".
-r('kliv',tr) --> "kliv".
-r('klitor',subst) --> "klitor".
-r('klister',subst) --> "klister".
-r('klink',subst) --> "klink".
-r('klinik',subst) --> "klinik".
-r('kling',subst) --> "kling".
-r('klin',tr) --> "klin".
-r('klimatologi',subst) --> "klimatologi".
-r('klimatolog',subst) --> "klimatolog".
-r('klimatiz',tr) --> "klimatiz".
-r('klimat',subst) --> "klimat".
-r('klimaks',subst) --> "klimaks".
-r('klik',subst) --> "klik".
-r('klik',subst) --> "klik".
-r('klif',subst) --> "klif".
-r('klient',subst) --> "klient".
-r('klerikal',adj) --> "klerikal".
-r('klerik',subst) --> "klerik".
-r('kler',adj) --> "kler".
-r('klepsidr',subst) --> "klepsidr".
-r('klementin',subst) --> "klementin".
-r('klematit',subst) --> "klematit".
-r('klematid',subst) --> "klematid".
-r('klemat',subst) --> "klemat".
-r('klem',subst) --> "klem".
-r('kle',subst) --> "kle".
-r('klaŭz',subst) --> "klaŭz".
-r('klaŭstrofobi',subst) --> "klaŭstrofobi".
-r('klaŭstr',subst) --> "klaŭstr".
-r('klaŭn',subst) --> "klaŭn".
-r('klaĉ',ntr) --> "klaĉ".
-r('klavikord',subst) --> "klavikord".
-r('klavikl',subst) --> "klavikl".
-r('klavicen',subst) --> "klavicen".
-r('klavcen',subst) --> "klavcen".
-r('klav',subst) --> "klav".
-r('klasik',adj) --> "klasik".
-r('klasifik',tr) --> "klasifik".
-r('klas',subst) --> "klas".
-r('klarnet',subst) --> "klarnet".
-r('klarion',subst) --> "klarion".
-r('klar',adj) --> "klar".
-r('klap',subst) --> "klap".
-r('klangul',best) --> "klangul".
-r('klan',subst) --> "klan".
-r('klamid',subst) --> "klamid".
-r('klak',verb) --> "klak".
-r('klaft',subst) --> "klaft".
-r('kladoni',subst) --> "kladoni".
-r('klad',subst) --> "klad".
-r('klab',subst) --> "klab".
-r('kiĉ',subst) --> "kiĉ".
-r('kivi',subst) --> "kivi".
-r('kiv',subst) --> "kiv".
-r('kiton',subst) --> "kiton".
-r('kitivak',subst) --> "kitivak".
-r('kitin',subst) --> "kitin".
-r('kiti',subst) --> "kiti".
-r('kitel',subst) --> "kitel".
-r('kitar',subst) --> "kitar".
-r('kis',tr) --> "kis".
-r('kirŝ',subst) --> "kirŝ".
-r('kirurgi',subst) --> "kirurgi".
-r('kirurg',subst) --> "kirurg".
-r('kirl',tr) --> "kirl".
-r('kirk',subst) --> "kirk".
-r('kiribat',subst) --> "kiribat".
-r('kirgiz',subst) --> "kirgiz".
-r('kiras',subst) --> "kiras".
-r('kipĉak',subst) --> "kipĉak".
-r('kiosk',subst) --> "kiosk".
-r('kinkonin',subst) --> "kinkonin".
-r('kinkon',subst) --> "kinkon".
-r('kinin',subst) --> "kinin".
-r('kinet',adj) --> "kinet".
-r('kinematograf',subst) --> "kinematograf".
-r('kinematik',subst) --> "kinematik".
-r('kin',subst) --> "kin".
-r('kin',subst) --> "kin".
-r('kimĉi',subst) --> "kimĉi".
-r('kimr',best) --> "kimr".
-r('kimon',subst) --> "kimon".
-r('kimer',subst) --> "kimer".
-r('kilt',subst) --> "kilt".
-r('kilovolt',subst) --> "kilovolt".
-r('kilovat',subst) --> "kilovat".
-r('kilotun',subst) --> "kilotun".
-r('kiloparsek',subst) --> "kiloparsek".
-r('kilometr',subst) --> "kilometr".
-r('kilokalori',subst) --> "kilokalori".
-r('kilogram',subst) --> "kilogram".
-r('kilobitok',subst) --> "kilobitok".
-r('kilo',pref) --> "kilo".
-r('kil',subst) --> "kil".
-r('kikerik',verb) --> "kikerik".
-r('kiker',subst) --> "kiker".
-r('kidnap',verb) --> "kidnap".
-r('kibuc',subst) --> "kibuc".
-r('kibernetik',subst) --> "kibernetik".
-r('kiang',best) --> "kiang".
-r('keĉap',subst) --> "keĉap".
-r('kevlar',subst) --> "kevlar".
-r('kest',subst) --> "kest".
-r('kerub',subst) --> "kerub".
-r('kerosen',subst) --> "kerosen".
-r('kern',subst) --> "kern".
-r('kermes',subst) --> "kermes".
-r('kerkedul',subst) --> "kerkedul".
-r('keri',subst) --> "keri".
-r('ker',subst) --> "ker".
-r('kep',subst) --> "kep".
-r('kenozoik',subst) --> "kenozoik".
-r('kenopodiac',subst) --> "kenopodiac".
-r('kenopodi',subst) --> "kenopodi".
-r('kena',subst) --> "kena".
-r('ken',subst) --> "ken".
-r('kemi',subst) --> "kemi".
-r('kelt',subst) --> "kelt".
-r('kelner',subst) --> "kelner".
-r('kelk',adj) --> "kelk".
-r('kelidoni',subst) --> "kelidoni".
-r('kel',subst) --> "kel".
-r('keks',subst) --> "keks".
-r('kejl',subst) --> "kejl".
-r('keirant',subst) --> "keirant".
-r('kegl',subst) --> "kegl".
-r('kefir',subst) --> "kefir".
-r('kecal',subst) --> "kecal".
-r('kebab',subst) --> "kebab".
-r('kaŭĉuk',subst) --> "kaŭĉuk".
-r('kaŭz',subst) --> "kaŭz".
-r('kaŭteriz',tr) --> "kaŭteriz".
-r('kaŭstik',adj) --> "kaŭstik".
-r('kaŭr',ntr) --> "kaŭr".
-r('kaŭci',subst) --> "kaŭci".
-r('kaŝtan',subst) --> "kaŝtan".
-r('kaŝbu',subst) --> "kaŝbu".
-r('kaŝ',tr) --> "kaŝ".
-r('kaĵol',tr) --> "kaĵol".
-r('kaĝ',subst) --> "kaĝ".
-r('kaĉalot',subst) --> "kaĉalot".
-r('kaĉ',subst) --> "kaĉ".
-r('kazuistik',subst) --> "kazuistik".
-r('kazuist',subst) --> "kazuist".
-r('kazin',subst) --> "kazin".
-r('kazern',subst) --> "kazern".
-r('kazemat',subst) --> "kazemat".
-r('kazein',subst) --> "kazein".
-r('kaze',subst) --> "kaze".
-r('kazaĥ',subst) --> "kazaĥ".
-r('kazak',subst) --> "kazak".
-r('kaz',subst) --> "kaz".
-r('kaviar',subst) --> "kaviar".
-r('kavern',subst) --> "kavern".
-r('kavalkad',subst) --> "kavalkad".
-r('kavalir',subst) --> "kavalir".
-r('kavaleri',subst) --> "kavaleri".
-r('kav',subst) --> "kav".
-r('katun',subst) --> "katun".
-r('katolik',adj) --> "katolik".
-r('katod',subst) --> "katod".
-r('katjon',subst) --> "katjon".
-r('katiz',tr) --> "katiz".
-r('kateĥiz',tr) --> "kateĥiz".
-r('kateĥist',subst) --> "kateĥist".
-r('kateĥism',subst) --> "kateĥism".
-r('kateter',subst) --> "kateter".
-r('katet',subst) --> "katet".
-r('katen',subst) --> "katen".
-r('katekiz',verb) --> "katekiz".
-r('katekist',subst) --> "katekist".
-r('katekism',subst) --> "katekism".
-r('kategori',subst) --> "kategori".
-r('katedral',subst) --> "katedral".
-r('katedr',subst) --> "katedr".
-r('katastrof',subst) --> "katastrof".
-r('katastr',subst) --> "katastr".
-r('katarted',subst) --> "katarted".
-r('katarakt',subst) --> "katarakt".
-r('katar',subst) --> "katar".
-r('katar',subst) --> "katar".
-r('katapult',subst) --> "katapult".
-r('kataplasm',subst) --> "kataplasm".
-r('katamaran',subst) --> "katamaran".
-r('katalog',subst) --> "katalog".
-r('kataliz',tr) --> "kataliz".
-r('katalepsi',subst) --> "katalepsi".
-r('katakomb',subst) --> "katakomb".
-r('kataklism',subst) --> "kataklism".
-r('katakana',subst) --> "katakana".
-r('katafalk',subst) --> "katafalk".
-r('katabol',subst) --> "katabol".
-r('kat',best) --> "kat".
-r('kasuar',subst) --> "kasuar".
-r('kastr',tr) --> "kastr".
-r('kastored',subst) --> "kastored".
-r('kastor',best) --> "kastor".
-r('kastel',subst) --> "kastel".
-r('kastanot',subst) --> "kastanot".
-r('kastanjet',subst) --> "kastanjet".
-r('kast',subst) --> "kast".
-r('kasked',subst) --> "kasked".
-r('kaskad',subst) --> "kaskad".
-r('kask',subst) --> "kask".
-r('kasi',subst) --> "kasi".
-r('kaset',subst) --> "kaset".
-r('kaserol',subst) --> "kaserol".
-r('kased',subst) --> "kased".
-r('kasav',subst) --> "kasav".
-r('kasaci',tr) --> "kasaci".
-r('kas',subst) --> "kas".
-r('karvi',subst) --> "karvi".
-r('karusel',subst) --> "karusel".
-r('karunkl',subst) --> "karunkl".
-r('kartveli',subst) --> "kartveli".
-r('kartvel',subst) --> "kartvel".
-r('kartuŝ',subst) --> "kartuŝ".
-r('kartuzi',subst) --> "kartuzi".
-r('kartunkin',subst) --> "kartunkin".
-r('kartun',subst) --> "kartun".
-r('kartoĉ',subst) --> "kartoĉ".
-r('karton',subst) --> "karton".
-r('kartografi',subst) --> "kartografi".
-r('kartilag',subst) --> "kartilag".
-r('kartel',subst) --> "kartel".
-r('kartav',ntr) --> "kartav".
-r('kart',subst) --> "kart".
-r('karst',subst) --> "karst".
-r('karpen',subst) --> "karpen".
-r('karpel',subst) --> "karpel".
-r('karpe',subst) --> "karpe".
-r('karp',best) --> "karp".
-r('karot',subst) --> "karot".
-r('karoseri',subst) --> "karoseri".
-r('karol',subst) --> "karol".
-r('karob',subst) --> "karob".
-r('karo',subst) --> "karo".
-r('karnaval',subst) --> "karnaval".
-r('karn',subst) --> "karn".
-r('karmin',subst) --> "karmin".
-r('karmezin',subst) --> "karmezin".
-r('karm',subst) --> "karm".
-r('karlin',subst) --> "karlin".
-r('karitat',subst) --> "karitat".
-r('karit',subst) --> "karit".
-r('karism',subst) --> "karism".
-r('kariotip',subst) --> "kariotip".
-r('kariol',subst) --> "kariol".
-r('kariofilac',subst) --> "kariofilac".
-r('kariofil',subst) --> "kariofil".
-r('karilon',subst) --> "karilon".
-r('kariljon',subst) --> "kariljon".
-r('karikatur',subst) --> "karikatur".
-r('karik',subst) --> "karik".
-r('karier',subst) --> "karier".
-r('kari',subst) --> "kari".
-r('karg',subst) --> "karg".
-r('karet',subst) --> "karet".
-r('kares',tr) --> "kares".
-r('karen',subst) --> "karen".
-r('kareks',subst) --> "kareks".
-r('kare',subst) --> "kare".
-r('kardon',subst) --> "kardon".
-r('kardiologi',subst) --> "kardiologi".
-r('kardiolog',subst) --> "kardiolog".
-r('kardioid',subst) --> "kardioid".
-r('kardinal',subst) --> "kardinal".
-r('kardi',subst) --> "kardi".
-r('kardel',subst) --> "kardel".
-r('kardan',subst) --> "kardan".
-r('kardamom',subst) --> "kardamom".
-r('kardamin',subst) --> "kardamin".
-r('kard',subst) --> "kard".
-r('karcer',subst) --> "karcer".
-r('karburator',subst) --> "karburator".
-r('karbur',verb) --> "karbur".
-r('karbunkol',subst) --> "karbunkol".
-r('karbunkl',subst) --> "karbunkl".
-r('karbon',subst) --> "karbon".
-r('karbol',subst) --> "karbol".
-r('karb',subst) --> "karb".
-r('karavel',subst) --> "karavel".
-r('karavan',subst) --> "karavan".
-r('karate',subst) --> "karate".
-r('karat',subst) --> "karat".
-r('karas',best) --> "karas".
-r('karapac',subst) --> "karapac".
-r('karaoke',subst) --> "karaoke".
-r('karamel',subst) --> "karamel".
-r('karambol',ntr) --> "karambol".
-r('karakterologi',subst) --> "karakterologi".
-r('karakterolog',subst) --> "karakterolog".
-r('karakteriz',tr) --> "karakteriz".
-r('karakteristik',subst) --> "karakteristik".
-r('karakter',subst) --> "karakter".
-r('karakol',ntr) --> "karakol".
-r('karaf',subst) --> "karaf".
-r('karaben',subst) --> "karaben".
-r('karabed',subst) --> "karabed".
-r('kar',adj) --> "kar".
-r('kapuĉin',subst) --> "kapuĉin".
-r('kapuĉ',subst) --> "kapuĉ".
-r('kaput',adj) --> "kaput".
-r('kapucen',subst) --> "kapucen".
-r('kapt',tr) --> "kapt".
-r('kapsul',subst) --> "kapsul".
-r('kapstan',subst) --> "kapstan".
-r('kapsik',subst) --> "kapsik".
-r('kapriol',subst) --> "kapriol".
-r('kaprimulg',subst) --> "kaprimulg".
-r('kaprifoliac',subst) --> "kaprifoliac".
-r('kaprifoli',subst) --> "kaprifoli".
-r('kapric',subst) --> "kapric".
-r('kapreol',best) --> "kapreol".
-r('kapr',subst) --> "kapr".
-r('kapot',subst) --> "kapot".
-r('kaporal',subst) --> "kaporal".
-r('kapor',subst) --> "kapor".
-r('kapon',subst) --> "kapon".
-r('kapol',subst) --> "kapol".
-r('kapok',subst) --> "kapok".
-r('kapitulac',ntr) --> "kapitulac".
-r('kapitul',subst) --> "kapitul".
-r('kapitel',subst) --> "kapitel".
-r('kapitan',subst) --> "kapitan".
-r('kapital',subst) --> "kapital".
-r('kapilar',subst) --> "kapilar".
-r('kapibar',subst) --> "kapibar".
-r('kaper',tr) --> "kaper".
-r('kapeldiner',subst) --> "kapeldiner".
-r('kapel',subst) --> "kapel".
-r('kapacitanc',subst) --> "kapacitanc".
-r('kapacit',subst) --> "kapacit".
-r('kapabl',adj) --> "kapabl".
-r('kap',subst) --> "kap".
-r('kaos',subst) --> "kaos".
-r('kaolin',subst) --> "kaolin".
-r('kanzon',subst) --> "kanzon".
-r('kanvas',subst) --> "kanvas".
-r('kanul',subst) --> "kanul".
-r('kanu',subst) --> "kanu".
-r('kantor',subst) --> "kantor".
-r('kantonment',subst) --> "kantonment".
-r('kanton',subst) --> "kanton".
-r('kantin',subst) --> "kantin".
-r('kantilen',subst) --> "kantilen".
-r('kantik',subst) --> "kantik".
-r('kanti',adj) --> "kanti".
-r('kantat',subst) --> "kantat".
-r('kantarid',subst) --> "kantarid".
-r('kantarel',subst) --> "kantarel".
-r('kant',tr) --> "kant".
-r('kanot',subst) --> "kanot".
-r('kanoniz',tr) --> "kanoniz".
-r('kanonik',subst) --> "kanonik".
-r('kanon',subst) --> "kanon".
-r('kanon',subst) --> "kanon".
-r('kankr',best) --> "kankr".
-r('kanjon',subst) --> "kanjon".
-r('kanistr',subst) --> "kanistr".
-r('kanin',subst) --> "kanin".
-r('kanibal',subst) --> "kanibal".
-r('kanguru',best) --> "kanguru".
-r('kanel',subst) --> "kanel".
-r('kandomble',subst) --> "kandomble".
-r('kandidat',subst) --> "kandidat".
-r('kandelabr',subst) --> "kandelabr".
-r('kandel',subst) --> "kandel".
-r('kand',subst) --> "kand".
-r('kancerologi',subst) --> "kancerologi".
-r('kancerolog',subst) --> "kancerolog".
-r('kancer',subst) --> "kancer".
-r('kancelier',subst) --> "kancelier".
-r('kancelari',subst) --> "kancelari".
-r('kanast',subst) --> "kanast".
-r('kanari',subst) --> "kanari".
-r('kanap',subst) --> "kanap".
-r('kanaliz',verb) --> "kanaliz".
-r('kanal',subst) --> "kanal".
-r('kanak',subst) --> "kanak".
-r('kanajl',subst) --> "kanajl".
-r('kanad',subst) --> "kanad".
-r('kanaben',subst) --> "kanaben".
-r('kanabac',subst) --> "kanabac".
-r('kanab',subst) --> "kanab".
-r('kana',subst) --> "kana".
-r('kana',subst) --> "kana".
-r('kan',subst) --> "kan".
-r('kamufl',tr) --> "kamufl".
-r('kampus',subst) --> "kampus".
-r('kampeĉ',subst) --> "kampeĉ".
-r('kampanulac',subst) --> "kampanulac".
-r('kampanul',subst) --> "kampanul".
-r('kampanj',subst) --> "kampanj".
-r('kampanil',subst) --> "kampanil".
-r('kamp',subst) --> "kamp".
-r('kamomil',subst) --> "kamomil".
-r('kamlot',subst) --> "kamlot".
-r('kamizol',subst) --> "kamizol".
-r('kamion',subst) --> "kamion".
-r('kamikaz',subst) --> "kamikaz".
-r('kamfor',subst) --> "kamfor".
-r('kamerling',subst) --> "kamerling".
-r('kamera',subst) --> "kamera".
-r('kamer',subst) --> "kamer".
-r('kamen',subst) --> "kamen".
-r('kameli',subst) --> "kameli".
-r('kameleoned',subst) --> "kameleoned".
-r('kameleon',subst) --> "kameleon".
-r('kameled',subst) --> "kameled".
-r('kamel',subst) --> "kamel".
-r('kameciparid',subst) --> "kameciparid".
-r('kame',subst) --> "kame".
-r('kambri',subst) --> "kambri".
-r('kambi',subst) --> "kambi".
-r('kamaril',subst) --> "kamaril".
-r('kamarad',subst) --> "kamarad".
-r('kamabok',subst) --> "kamabok".
-r('kalv',adj) --> "kalv".
-r('kalumni',tr) --> "kalumni".
-r('kalson',subst) --> "kalson".
-r('kalpak',subst) --> "kalpak".
-r('kalp',subst) --> "kalp".
-r('kalot',subst) --> "kalot".
-r('kalori',subst) --> "kalori".
-r('kalomel',subst) --> "kalomel".
-r('kalmuk',subst) --> "kalmuk".
-r('kalkul',tr) --> "kalkul".
-r('kalke',subst) --> "kalke".
-r('kalkane',subst) --> "kalkane".
-r('kalkan',subst) --> "kalkan".
-r('kalk',subst) --> "kalk".
-r('kalistef',subst) --> "kalistef".
-r('kalikot',subst) --> "kalikot".
-r('kalikl',subst) --> "kalikl".
-r('kalik',subst) --> "kalik".
-r('kaligrafi',subst) --> "kaligrafi".
-r('kaligraf',subst) --> "kaligraf".
-r('kalifornium',subst) --> "kalifornium".
-r('kaliforni',subst) --> "kaliforni".
-r('kalif',subst) --> "kalif".
-r('kalibr',subst) --> "kalibr".
-r('kali',subst) --> "kali".
-r('kalfatr',tr) --> "kalfatr".
-r('kaleŝ',subst) --> "kaleŝ".
-r('kalendul',subst) --> "kalendul".
-r('kalendar',subst) --> "kalendar".
-r('kalend',subst) --> "kalend".
-r('kalejdoskop',subst) --> "kalejdoskop".
-r('kaldron',subst) --> "kaldron".
-r('kalcitr',ntr) --> "kalcitr".
-r('kalcit',subst) --> "kalcit".
-r('kalcin',tr) --> "kalcin".
-r('kalci',subst) --> "kalci".
-r('kalaŝnikov',subst) --> "kalaŝnikov".
-r('kalandra',subst) --> "kalandra".
-r('kalandr',subst) --> "kalandr".
-r('kalandr',subst) --> "kalandr".
-r('kalandr',tr) --> "kalandr".
-r('kalambak',subst) --> "kalambak".
-r('kalabas',subst) --> "kalabas".
-r('kal',subst) --> "kal".
-r('kakt',subst) --> "kakt".
-r('kakofoni',subst) --> "kakofoni".
-r('kakemon',subst) --> "kakemon".
-r('kakatu',subst) --> "kakatu".
-r('kaka',subst) --> "kaka".
-r('kajut',subst) --> "kajut".
-r('kajt',subst) --> "kajt".
-r('kajpirinj',subst) --> "kajpirinj".
-r('kajman',best) --> "kajman".
-r('kajer',subst) --> "kajer".
-r('kajak',subst) --> "kajak".
-r('kaj',subst) --> "kaj".
-r('kaid',subst) --> "kaid".
-r('kahel',subst) --> "kahel".
-r('kaftan',subst) --> "kaftan".
-r('kafein',subst) --> "kafein".
-r('kaf',subst) --> "kaf".
-r('kaduk',adj) --> "kaduk".
-r('kaduce',subst) --> "kaduce".
-r('kadrat',subst) --> "kadrat".
-r('kadr',subst) --> "kadr".
-r('kadmi',subst) --> "kadmi".
-r('kadi',subst) --> "kadi".
-r('kadet',subst) --> "kadet".
-r('kadenc',subst) --> "kadenc".
-r('kadavr',subst) --> "kadavr".
-r('kacuon',best) --> "kacuon".
-r('kac',subst) --> "kac".
-r('kabuk',subst) --> "kabuk".
-r('kabriolet',subst) --> "kabriolet".
-r('kablogram',subst) --> "kablogram".
-r('kabl',subst) --> "kabl".
-r('kabinet',subst) --> "kabinet".
-r('kabaret',subst) --> "kabaret".
-r('kabared',subst) --> "kabared".
-r('kaban',subst) --> "kaban".
-r('kab',subst) --> "kab".
-r('juĝ',tr) --> "juĝ".
-r('juvel',subst) --> "juvel".
-r('jut',subst) --> "jut".
-r('justic',subst) --> "justic".
-r('just',adj) --> "just".
-r('jurt',subst) --> "jurt".
-r('jurisprudenc',subst) --> "jurisprudenc".
-r('jurisdikci',subst) --> "jurisdikci".
-r('jur',subst) --> "jur".
-r('jup',subst) --> "jup".
-r('junt',subst) --> "junt".
-r('junkr',subst) --> "junkr".
-r('junkac',subst) --> "junkac".
-r('junk',subst) --> "junk".
-r('juniper',subst) --> "juniper".
-r('juni',subst) --> "juni".
-r('jung',tr) --> "jung".
-r('jun',adj) --> "jun".
-r('juli',subst) --> "juli".
-r('juka',subst) --> "juka".
-r('juk',tr) --> "juk".
-r('jujub',subst) --> "jujub".
-r('juglandujac',subst) --> "juglandujac".
-r('jugland',subst) --> "jugland".
-r('jug',subst) --> "jug".
-r('judaism',subst) --> "judaism".
-r('jud',subst) --> "jud".
-r('jubile',subst) --> "jubile".
-r('jubil',ntr) --> "jubil".
-r('juan',subst) --> "juan".
-r('jovial',adj) --> "jovial".
-r('jota',pref) --> "jota".
-r('jonkvil',subst) --> "jonkvil".
-r('joniz',verb) --> "joniz".
-r('jon',subst) --> "jon".
-r('jokto',pref) --> "jokto".
-r('jojk',subst) --> "jojk".
-r('jogurt',subst) --> "jogurt".
-r('jog',subst) --> "jog".
-r('jodoform',subst) --> "jodoform".
-r('jod',subst) --> "jod".
-r('jeŝiv',subst) --> "jeŝiv".
-r('jezuit',subst) --> "jezuit".
-r('jeti',subst) --> "jeti".
-r('jet',ntr) --> "jet".
-r('jeralaŝ',subst) --> "jeralaŝ".
-r('jelp',ntr) --> "jelp".
-r('jaŝir',subst) --> "jaŝir".
-r('jaĥt',subst) --> "jaĥt".
-r('jaspis',subst) --> "jaspis".
-r('jasp',subst) --> "jasp".
-r('jasmen',subst) --> "jasmen".
-r('jard',subst) --> "jard".
-r('jard',subst) --> "jard".
-r('jar',subst) --> "jar".
-r('japanesk',subst) --> "japanesk".
-r('japan',subst) --> "japan".
-r('januar',subst) --> "januar".
-r('janiĉar',subst) --> "janiĉar".
-r('jamb',subst) --> "jamb".
-r('jakv',subst) --> "jakv".
-r('jakobian',subst) --> "jakobian".
-r('jakoben',subst) --> "jakoben".
-r('jak',subst) --> "jak".
-r('jahurt',subst) --> "jahurt".
-r('jaguar',best) --> "jaguar".
-r('jad',subst) --> "jad".
-r('jacint',subst) --> "jacint".
-r('iĥtiosaŭr',best) --> "iĥtiosaŭr".
-r('iĥtiokol',subst) --> "iĥtiokol".
-r('iĝ',suf) --> "iĝ".
-r('izotrop',adj) --> "izotrop".
-r('izotop',subst) --> "izotop".
-r('izoterm',adj) --> "izoterm".
-r('izomorfi',subst) --> "izomorfi".
-r('izomorf',adj) --> "izomorf".
-r('izometri',subst) --> "izometri".
-r('izol',tr) --> "izol".
-r('izocel',adj) --> "izocel".
-r('iz',suf) --> "iz".
-r('iv',suf) --> "iv".
-r('itri',subst) --> "itri".
-r('itiner',subst) --> "itiner".
-r('iterbi',subst) --> "iterbi".
-r('ital',best) --> "ital".
-r('isĥemi',subst) --> "isĥemi".
-r('istm',subst) --> "istm".
-r('ism',suf) --> "ism".
-r('islam',subst) --> "islam".
-r('iskiatik',subst) --> "iskiatik".
-r('iskiatalgi',subst) --> "iskiatalgi".
-r('iski',subst) --> "iski".
-r('iskemi',subst) --> "iskemi".
-r('ironi',subst) --> "ironi".
-r('iriz',verb) --> "iriz".
-r('irit',tr) --> "irit".
-r('iris',subst) --> "iris".
-r('irigaci',subst) --> "irigaci".
-r('irigac',subst) --> "irigac".
-r('iridi',subst) --> "iridi".
-r('iridac',subst) --> "iridac".
-r('irid',subst) --> "irid".
-r('iredent',adj) --> "iredent".
-r('iran',subst) --> "iran".
-r('ir',ntr) --> "ir".
-r('ipsilon',subst) --> "ipsilon".
-r('inĝenier',subst) --> "inĝenier".
-r('inĝeni',adj) --> "inĝeni".
-r('involukr',subst) --> "involukr".
-r('involuci',subst) --> "involuci".
-r('invit',tr) --> "invit".
-r('investitur',subst) --> "investitur".
-r('invest',tr) --> "invest".
-r('inversi',subst) --> "inversi".
-r('invers',adj) --> "invers".
-r('inventar',subst) --> "inventar".
-r('invent',tr) --> "invent".
-r('invariant',subst) --> "invariant".
-r('invalid',subst) --> "invalid".
-r('invad',tr) --> "invad".
-r('inund',tr) --> "inund".
-r('inuit',subst) --> "inuit".
-r('intuici',subst) --> "intuici".
-r('intu',subst) --> "intu".
-r('introvertit',subst) --> "introvertit".
-r('introvert',adj) --> "introvert".
-r('introspekt',subst) --> "introspekt".
-r('intrig',ntr) --> "intrig".
-r('intim',adj) --> "intim".
-r('intest',subst) --> "intest".
-r('intervju',tr) --> "intervju".
-r('interval',subst) --> "interval".
-r('interpunkci',subst) --> "interpunkci".
-r('interpret',tr) --> "interpret".
-r('interpol',tr) --> "interpol".
-r('interpelaci',tr) --> "interpelaci".
-r('interpelac',subst) --> "interpelac".
-r('intern',adj) --> "intern".
-r('intermit',ntr) --> "intermit".
-r('interlingvistik',subst) --> "interlingvistik".
-r('interjekci',subst) --> "interjekci".
-r('interior',subst) --> "interior".
-r('interferon',subst) --> "interferon".
-r('interferometri',subst) --> "interferometri".
-r('interfer',ntr) --> "interfer".
-r('interez',subst) --> "interez".
-r('interes',tr) --> "interes".
-r('interdikt',subst) --> "interdikt".
-r('intens',adj) --> "intens".
-r('intendant',subst) --> "intendant".
-r('intenc',tr) --> "intenc".
-r('inteligent',adj) --> "inteligent".
-r('intelekt',subst) --> "intelekt".
-r('integral',subst) --> "integral".
-r('integr',adj) --> "integr".
-r('integr',tr) --> "integr".
-r('intajl',subst) --> "intajl".
-r('insult',tr) --> "insult".
-r('insulin',subst) --> "insulin".
-r('insul',subst) --> "insul".
-r('instrument',subst) --> "instrument".
-r('instrukci',subst) --> "instrukci".
-r('instru',tr) --> "instru".
-r('institut',subst) --> "institut".
-r('instituci',subst) --> "instituci".
-r('instinkt',subst) --> "instinkt".
-r('instig',tr) --> "instig".
-r('instanc',subst) --> "instanc".
-r('instal',tr) --> "instal".
-r('inspir',tr) --> "inspir".
-r('inspektor',subst) --> "inspektor".
-r('inspekt',tr) --> "inspekt".
-r('insolent',adj) --> "insolent".
-r('insist',ntr) --> "insist".
-r('insinu',tr) --> "insinu".
-r('insign',subst) --> "insign".
-r('insid',tr) --> "insid".
-r('insert',tr) --> "insert".
-r('insekticid',subst) --> "insekticid".
-r('insekt',subst) --> "insekt".
-r('inokul',tr) --> "inokul".
-r('inkvizitor',subst) --> "inkvizitor".
-r('inkvizici',subst) --> "inkvizici".
-r('inkunabl',subst) --> "inkunabl".
-r('inkud',subst) --> "inkud".
-r('inkubator',subst) --> "inkubator".
-r('inkubaci',subst) --> "inkubaci".
-r('inkub',subst) --> "inkub".
-r('inkrust',tr) --> "inkrust".
-r('inkognit',subst) --> "inkognit".
-r('inkluziv',adj) --> "inkluziv".
-r('inklud',tr) --> "inklud".
-r('inklin',adj) --> "inklin".
-r('inkandesk',ntr) --> "inkandesk".
-r('ink',subst) --> "ink".
-r('injektor',subst) --> "injektor".
-r('injekt',tr) --> "injekt".
-r('iniciator',subst) --> "iniciator".
-r('iniciativ',subst) --> "iniciativ".
-r('iniciat',tr) --> "iniciat".
-r('inic',tr) --> "inic".
-r('inhibici',subst) --> "inhibici".
-r('inhib',verb) --> "inhib".
-r('inhal',tr) --> "inhal".
-r('ingven',subst) --> "ingven".
-r('ingredienc',subst) --> "ingredienc".
-r('ingot',subst) --> "ingot".
-r('ing',suf) --> "ing".
-r('infuzori',subst) --> "infuzori".
-r('infuz',tr) --> "infuz".
-r('infrastruktur',subst) --> "infrastruktur".
-r('infrason',subst) --> "infrason".
-r('infraruĝ',adj) --> "infraruĝ".
-r('infra',pref) --> "infra".
-r('informatik',subst) --> "informatik".
-r('informadik',subst) --> "informadik".
-r('inform',tr) --> "inform".
-r('influenc',subst) --> "influenc".
-r('influ',tr) --> "influ".
-r('infloresk',subst) --> "infloresk".
-r('infleks',adj) --> "infleks".
-r('inflam',subst) --> "inflam".
-r('inflaci',subst) --> "inflaci".
-r('infinitiv',subst) --> "infinitiv".
-r('infinitezim',subst) --> "infinitezim".
-r('infinit',subst) --> "infinit".
-r('infim',subst) --> "infim".
-r('infest',verb) --> "infest".
-r('infer',subst) --> "infer".
-r('infektologi',subst) --> "infektologi".
-r('infektolog',subst) --> "infektolog".
-r('infekt',tr) --> "infekt".
-r('infarkt',subst) --> "infarkt".
-r('infanteri',subst) --> "infanteri".
-r('infan',subst) --> "infan".
-r('inert',adj) --> "inert".
-r('inerci',subst) --> "inerci".
-r('industri',subst) --> "industri".
-r('indulgenc',subst) --> "indulgenc".
-r('indulg',tr) --> "indulg".
-r('indukt',tr) --> "indukt".
-r('indukci',verb) --> "indukci".
-r('indonezi',subst) --> "indonezi".
-r('indiĝen',subst) --> "indiĝen".
-r('individualist',subst) --> "individualist".
-r('individualism',subst) --> "individualism".
-r('individu',subst) --> "individu".
-r('indikator',subst) --> "indikator".
-r('indikativ',subst) --> "indikativ".
-r('indik',tr) --> "indik".
-r('indign',ntr) --> "indign".
-r('indig',subst) --> "indig".
-r('indiferent',adj) --> "indiferent".
-r('indien',subst) --> "indien".
-r('indic',subst) --> "indic".
-r('indian',subst) --> "indian".
-r('indi',subst) --> "indi".
-r('indeks',subst) --> "indeks".
-r('inciziv',subst) --> "inciziv".
-r('incit',tr) --> "incit".
-r('incident',subst) --> "incident".
-r('incid',ntr) --> "incid".
-r('incest',subst) --> "incest".
-r('incens',subst) --> "incens".
-r('incendi',subst) --> "incendi".
-r('inaŭguraci',subst) --> "inaŭguraci".
-r('inaŭgur',tr) --> "inaŭgur".
-r('imunologi',subst) --> "imunologi".
-r('imunolog',subst) --> "imunolog".
-r('imun',adj) --> "imun".
-r('imput',tr) --> "imput".
-r('impuls',subst) --> "impuls".
-r('improviz',tr) --> "improviz".
-r('impresionist',subst) --> "impresionist".
-r('impresionism',subst) --> "impresionism".
-r('impresari',subst) --> "impresari".
-r('impres',subst) --> "impres".
-r('impregn',tr) --> "impregn".
-r('impoz',tr) --> "impoz".
-r('impotent',adj) --> "impotent".
-r('impost',subst) --> "impost".
-r('import',tr) --> "import".
-r('impon',tr) --> "impon".
-r('implikaci',subst) --> "implikaci".
-r('implik',tr) --> "implik".
-r('implic',tr) --> "implic".
-r('impet',ntr) --> "impet".
-r('impertinent',adj) --> "impertinent".
-r('imperium',subst) --> "imperium".
-r('imperialist',subst) --> "imperialist".
-r('imperialism',subst) --> "imperialism".
-r('imperial',subst) --> "imperial".
-r('imperi',subst) --> "imperi".
-r('imperfekt',subst) --> "imperfekt".
-r('imperator',subst) --> "imperator".
-r('imperativ',subst) --> "imperativ".
-r('impedanc',subst) --> "impedanc".
-r('imit',tr) --> "imit".
-r('imanent',adj) --> "imanent".
-r('imam',subst) --> "imam".
-r('imaginar',adj) --> "imaginar".
-r('imagin',subst) --> "imagin".
-r('imag',tr) --> "imag".
-r('iluzi',subst) --> "iluzi".
-r('ilustr',tr) --> "ilustr".
-r('ilumin',tr) --> "ilumin".
-r('ilium',subst) --> "ilium".
-r('ilici',subst) --> "ilici".
-r('ileks',subst) --> "ileks".
-r('ile',subst) --> "ile".
-r('ikter',subst) --> "ikter".
-r('ikt',subst) --> "ikt".
-r('iksod',subst) --> "iksod".
-r('iks',subst) --> "iks".
-r('ikonostaz',subst) --> "ikonostaz".
-r('ikon',subst) --> "ikon".
-r('ikeban',subst) --> "ikeban".
-r('ik',suf) --> "ik".
-r('igvanodont',subst) --> "igvanodont".
-r('igvan',subst) --> "igvan".
-r('igumen',subst) --> "igumen".
-r('ignor',tr) --> "ignor".
-r('ignam',subst) --> "ignam".
-r('iglu',subst) --> "iglu".
-r('igl',subst) --> "igl".
-r('ig',suf) --> "ig".
-r('idu',subst) --> "idu".
-r('idol',subst) --> "idol".
-r('idiotism',subst) --> "idiotism".
-r('idiot',subst) --> "idiot".
-r('idiom',subst) --> "idiom".
-r('idili',subst) --> "idili".
-r('ideologi',subst) --> "ideologi".
-r('ideolog',subst) --> "ideolog".
-r('ideogram',subst) --> "ideogram".
-r('ideografi',subst) --> "ideografi".
-r('ident',adj) --> "ident".
-r('ideal',adj) --> "ideal".
-r('ide',subst) --> "ide".
-r('ibised',subst) --> "ibised".
-r('ibis',subst) --> "ibis".
-r('ia',verb) --> "ia".
-r('iFon',subst) --> "iFon".
-r('huŝ',verb) --> "huŝ".
-r('huĉin',subst) --> "huĉin".
-r('huz',best) --> "huz".
-r('husum',subst) --> "husum".
-r('husar',subst) --> "husar".
-r('hurl',ntr) --> "hurl".
-r('hurd',subst) --> "hurd".
-r('hup',subst) --> "hup".
-r('hungar',best) --> "hungar".
-r('hunded',subst) --> "hunded".
-r('hund',best) --> "hund".
-r('hun',subst) --> "hun".
-r('humur',subst) --> "humur".
-r('humor',subst) --> "humor".
-r('humil',adj) --> "humil".
-r('humid',adj) --> "humid".
-r('humer',subst) --> "humer".
-r('human',adj) --> "human".
-r('hum',subst) --> "hum".
-r('huligan',subst) --> "huligan".
-r('hul',subst) --> "hul".
-r('hugenot',subst) --> "hugenot".
-r('huf',subst) --> "huf".
-r('hub',subst) --> "hub".
-r('hotel',subst) --> "hotel".
-r('hosti',subst) --> "hosti".
-r('hospital',subst) --> "hospital".
-r('hospic',subst) --> "hospic".
-r('hortulan',subst) --> "hortulan".
-r('hortikultur',subst) --> "hortikultur".
-r('hortensi',subst) --> "hortensi".
-r('horoskop',subst) --> "horoskop".
-r('horor',subst) --> "horor".
-r('hormon',subst) --> "hormon".
-r('hormin',subst) --> "hormin".
-r('horloĝ',subst) --> "horloĝ".
-r('horizontal',adj) --> "horizontal".
-r('horizont',subst) --> "horizont".
-r('horde',subst) --> "horde".
-r('hord',subst) --> "hord".
-r('hor',subst) --> "hor".
-r('hoplit',subst) --> "hoplit".
-r('hopi',subst) --> "hopi".
-r('hont',tr) --> "hont".
-r('honorari',subst) --> "honorari".
-r('honor',tr) --> "honor".
-r('honest',adj) --> "honest".
-r('hondur',subst) --> "hondur".
-r('homotop',adj) --> "homotop".
-r('homoteti',subst) --> "homoteti".
-r('homopter',subst) --> "homopter".
-r('homonimi',subst) --> "homonimi".
-r('homonim',subst) --> "homonim".
-r('homomorfi',subst) --> "homomorfi".
-r('homolog',adj) --> "homolog".
-r('homogen',adj) --> "homogen".
-r('homeopati',subst) --> "homeopati".
-r('homeopat',subst) --> "homeopat".
-r('homeomorfi',subst) --> "homeomorfi".
-r('homed',subst) --> "homed".
-r('hom',best) --> "hom".
-r('holoturi',subst) --> "holoturi".
-r('holomorf',adj) --> "holomorf".
-r('holokaŭst',subst) --> "holokaŭst".
-r('hologram',subst) --> "hologram".
-r('holografi',subst) --> "holografi".
-r('holocen',subst) --> "holocen".
-r('holmi',subst) --> "holmi".
-r('holivud',subst) --> "holivud".
-r('hold',subst) --> "hold".
-r('hoke',subst) --> "hoke".
-r('hok',subst) --> "hok".
-r('hojl',ntr) --> "hojl".
-r('hoboj',subst) --> "hoboj".
-r('hobi',subst) --> "hobi".
-r('hiĝab',subst) --> "hiĝab".
-r('histrion',subst) --> "histrion".
-r('histriked',subst) --> "histriked".
-r('histrik',best) --> "histrik".
-r('histori',subst) --> "histori".
-r('histologi',subst) --> "histologi".
-r('histeri',subst) --> "histeri".
-r('histamin',subst) --> "histamin".
-r('hist',subst) --> "hist".
-r('hispan',subst) --> "hispan".
-r('hisop',subst) --> "hisop".
-r('hiskiam',subst) --> "hiskiam".
-r('his',tr) --> "his".
-r('hirunded',subst) --> "hirunded".
-r('hirund',subst) --> "hirund".
-r('hirud',subst) --> "hirud".
-r('hirt',adj) --> "hirt".
-r('hiragana',subst) --> "hiragana".
-r('hipster',subst) --> "hipster".
-r('hipoĥondri',subst) --> "hipoĥondri".
-r('hipotroĥoid',subst) --> "hipotroĥoid".
-r('hipotez',subst) --> "hipotez".
-r('hipotenuz',subst) --> "hipotenuz".
-r('hipotek',subst) --> "hipotek".
-r('hipostaz',subst) --> "hipostaz".
-r('hipopotamed',subst) --> "hipopotamed".
-r('hipopotam',subst) --> "hipopotam".
-r('hipoksi',subst) --> "hipoksi".
-r('hipokrit',tr) --> "hipokrit".
-r('hipokondri',subst) --> "hipokondri".
-r('hipokaŝtanac',subst) --> "hipokaŝtanac".
-r('hipokaŝtan',subst) --> "hipokaŝtan".
-r('hipokamp',subst) --> "hipokamp".
-r('hipokamp',subst) --> "hipokamp".
-r('hipogrif',subst) --> "hipogrif".
-r('hipoglos',best) --> "hipoglos".
-r('hipoge',subst) --> "hipoge".
-r('hipodrom',subst) --> "hipodrom".
-r('hipocikloid',subst) --> "hipocikloid".
-r('hipo',pref) --> "hipo".
-r('hipnotism',subst) --> "hipnotism".
-r('hipnot',subst) --> "hipnot".
-r('hipi',subst) --> "hipi".
-r('hiphop',subst) --> "hiphop".
-r('hiperurani',subst) --> "hiperurani".
-r('hipertrofi',subst) --> "hipertrofi".
-r('hipertiroidism',subst) --> "hipertiroidism".
-r('hiperon',subst) --> "hiperon".
-r('hiperikac',subst) --> "hiperikac".
-r('hiperik',subst) --> "hiperik".
-r('hipereben',subst) --> "hipereben".
-r('hiperboloid',subst) --> "hiperboloid".
-r('hiperbol',subst) --> "hiperbol".
-r('hiper',pref) --> "hiper".
-r('hiparion',best) --> "hiparion".
-r('hinĝ',subst) --> "hinĝ".
-r('hindu',subst) --> "hindu".
-r('hindi',subst) --> "hindi".
-r('hind',subst) --> "hind".
-r('hin',subst) --> "hin".
-r('himn',subst) --> "himn".
-r('himenopter',subst) --> "himenopter".
-r('himeni',subst) --> "himeni".
-r('himen',subst) --> "himen".
-r('hilum',subst) --> "hilum".
-r('hiksos',subst) --> "hiksos".
-r('hik',ntr) --> "hik".
-r('hihi',verb) --> "hihi".
-r('higumen',subst) --> "higumen".
-r('higroskop',subst) --> "higroskop".
-r('higrometr',subst) --> "higrometr".
-r('higien',subst) --> "higien".
-r('hieroglif',subst) --> "hieroglif".
-r('hierodul',subst) --> "hierodul".
-r('hieratik',adj) --> "hieratik".
-r('hierarĥi',subst) --> "hierarĥi".
-r('hierarki',subst) --> "hierarki".
-r('hiened',subst) --> "hiened".
-r('hien',best) --> "hien".
-r('hidrozo',subst) --> "hidrozo".
-r('hidroterapi',subst) --> "hidroterapi".
-r('hidrostatik',subst) --> "hidrostatik".
-r('hidrops',subst) --> "hidrops".
-r('hidroplan',subst) --> "hidroplan".
-r('hidrometri',subst) --> "hidrometri".
-r('hidrometr',subst) --> "hidrometr".
-r('hidrologi',subst) --> "hidrologi".
-r('hidrolog',subst) --> "hidrolog".
-r('hidrokarbid',subst) --> "hidrokarbid".
-r('hidrogen',subst) --> "hidrogen".
-r('hidrofobi',subst) --> "hidrofobi".
-r('hidroelektr',adj) --> "hidroelektr".
-r('hidrodinamik',subst) --> "hidrodinamik".
-r('hidrocefal',subst) --> "hidrocefal".
-r('hidroaeroplan',subst) --> "hidroaeroplan".
-r('hidred',subst) --> "hidred".
-r('hidraŭlik',subst) --> "hidraŭlik".
-r('hidrat',subst) --> "hidrat".
-r('hidrarg',subst) --> "hidrarg".
-r('hidrant',subst) --> "hidrant".
-r('hidr',subst) --> "hidr".
-r('hidalg',subst) --> "hidalg".
-r('hid',adj) --> "hid".
-r('hibrid',subst) --> "hibrid".
-r('hibisk',subst) --> "hibisk".
-r('hibaĉ',subst) --> "hibaĉ".
-r('hiat',subst) --> "hiat".
-r('hiacint',subst) --> "hiacint".
-r('heĝ',subst) --> "heĝ".
-r('hezit',ntr) --> "hezit".
-r('hetman',subst) --> "hetman".
-r('heterogen',adj) --> "heterogen".
-r('heterodoks',adj) --> "heterodoks".
-r('hetajr',subst) --> "hetajr".
-r('hes',subst) --> "hes".
-r('hers',subst) --> "hers".
-r('herpet',subst) --> "herpet".
-r('herold',subst) --> "herold".
-r('heroin',subst) --> "heroin".
-r('hero',subst) --> "hero".
-r('herni',subst) --> "herni".
-r('hermini',best) --> "hermini".
-r('hermetik',adj) --> "hermetik".
-r('hermet',adj) --> "hermet".
-r('hermeneŭtik',subst) --> "hermeneŭtik".
-r('hermafrodit',adj) --> "hermafrodit".
-r('herezolog',subst) --> "herezolog".
-r('herez',subst) --> "herez".
-r('hered',tr) --> "hered".
-r('herc',subst) --> "herc".
-r('herbicid',subst) --> "herbicid".
-r('herbari',subst) --> "herbari".
-r('herb',subst) --> "herb".
-r('heraldik',subst) --> "heraldik".
-r('herakle',subst) --> "herakle".
-r('hepatik',subst) --> "hepatik".
-r('hepat',subst) --> "hepat".
-r('hena',subst) --> "hena".
-r('hen',ntr) --> "hen".
-r('hemoroid',subst) --> "hemoroid".
-r('hemoragi',subst) --> "hemoragi".
-r('hemoptiz',subst) --> "hemoptiz".
-r('hemoglobin',subst) --> "hemoglobin".
-r('hemofili',subst) --> "hemofili".
-r('hemipter',subst) --> "hemipter".
-r('hemiplegi',subst) --> "hemiplegi".
-r('hemion',best) --> "hemion".
-r('hemikrani',subst) --> "hemikrani".
-r('hemerokalid',subst) --> "hemerokalid".
-r('hemerokal',subst) --> "hemerokal".
-r('hematologi',subst) --> "hematologi".
-r('hematolog',subst) --> "hematolog".
-r('hematit',subst) --> "hematit".
-r('helvelac',subst) --> "helvelac".
-r('helvel',subst) --> "helvel".
-r('help',verb) --> "help".
-r('helm',subst) --> "helm".
-r('helium',subst) --> "helium".
-r('heliotrop',subst) --> "heliotrop".
-r('heliostat',subst) --> "heliostat".
-r('heliocentr',adj) --> "heliocentr".
-r('heliks',subst) --> "heliks".
-r('helikriz',subst) --> "helikriz".
-r('helikopter',subst) --> "helikopter".
-r('heliked',subst) --> "heliked".
-r('helik',subst) --> "helik".
-r('helic',subst) --> "helic".
-r('heliantem',subst) --> "heliantem".
-r('heliant',subst) --> "heliant".
-r('heli',subst) --> "heli".
-r('heler',subst) --> "heler".
-r('helenistik',subst) --> "helenistik".
-r('helen',subst) --> "helen".
-r('helebor',subst) --> "helebor".
-r('hel',adj) --> "hel".
-r('hektometr',subst) --> "hektometr".
-r('hektolitr',subst) --> "hektolitr".
-r('hektogram',subst) --> "hektogram".
-r('hektograf',subst) --> "hektograf".
-r('hekto',pref) --> "hekto".
-r('hektik',adj) --> "hektik".
-r('hektar',subst) --> "hektar".
-r('heksametr',subst) --> "heksametr".
-r('heksagon',subst) --> "heksagon".
-r('heksaedr',subst) --> "heksaedr".
-r('hekatomb',subst) --> "hekatomb".
-r('hejt',tr) --> "hejt".
-r('hejm',subst) --> "hejm".
-r('hegemoni',subst) --> "hegemoni".
-r('hedonist',subst) --> "hedonist".
-r('hedonism',subst) --> "hedonism".
-r('hedisar',subst) --> "hedisar".
-r('heder',subst) --> "heder".
-r('hebre',subst) --> "hebre".
-r('hebet',adj) --> "hebet".
-r('haŭt',subst) --> "haŭt".
-r('haŭser',subst) --> "haŭser".
-r('haŭs',subst) --> "haŭs".
-r('haŭl',tr) --> "haŭl".
-r('haŭbiz',subst) --> "haŭbiz".
-r('haŝiŝ',subst) --> "haŝiŝ".
-r('haŝi',subst) --> "haŝi".
-r('haĝ',subst) --> "haĝ".
-r('hazard',subst) --> "hazard".
-r('haven',subst) --> "haven".
-r('hav',tr) --> "hav".
-r('hast',ntr) --> "hast".
-r('hasi',subst) --> "hasi".
-r('harpun',subst) --> "harpun".
-r('harpi',subst) --> "harpi".
-r('harpal',subst) --> "harpal".
-r('harp',subst) --> "harp".
-r('harnis',subst) --> "harnis".
-r('harmonium',subst) --> "harmonium".
-r('harmonik',subst) --> "harmonik".
-r('harmoni',subst) --> "harmoni".
-r('harmon',subst) --> "harmon".
-r('haring',best) --> "haring".
-r('harem',subst) --> "harem".
-r('hard',tr) --> "hard".
-r('har',subst) --> "har".
-r('hapaks',subst) --> "hapaks".
-r('haor',subst) --> "haor".
-r('hant',tr) --> "hant".
-r('hans',subst) --> "hans".
-r('hangar',subst) --> "hangar".
-r('handikap',tr) --> "handikap".
-r('handbal',subst) --> "handbal".
-r('hamstred',subst) --> "hamstred".
-r('hamstr',best) --> "hamstr".
-r('hamburger',subst) --> "hamburger".
-r('hamamelid',subst) --> "hamamelid".
-r('hamak',subst) --> "hamak".
-r('haluks',subst) --> "haluks".
-r('halucinaci',subst) --> "halucinaci".
-r('halucin',subst) --> "halucin".
-r('halter',subst) --> "halter".
-r('halt',ntr) --> "halt".
-r('halogen',subst) --> "halogen".
-r('halo',subst) --> "halo".
-r('haliot',subst) --> "haliot".
-r('haliaet',subst) --> "haliaet".
-r('halebard',subst) --> "halebard".
-r('halanĝ',subst) --> "halanĝ".
-r('halal',adj) --> "halal".
-r('haladz',subst) --> "haladz".
-r('hal',subst) --> "hal".
-r('hak',tr) --> "hak".
-r('hajl',subst) --> "hajl".
-r('hajk',subst) --> "hajk".
-r('haiti',subst) --> "haiti".
-r('hafni',subst) --> "hafni".
-r('hadron',subst) --> "hadron".
-r('hadit',subst) --> "hadit".
-r('hadis',subst) --> "hadis".
-r('gvid',tr) --> "gvid".
-r('gvatemal',subst) --> "gvatemal".
-r('gvat',tr) --> "gvat".
-r('gvardi',subst) --> "gvardi".
-r('gvaran',subst) --> "gvaran".
-r('guŝ',subst) --> "guŝ".
-r('guĉin',subst) --> "guĉin".
-r('guzl',subst) --> "guzl".
-r('guvern',tr) --> "guvern".
-r('gutural',subst) --> "gutural".
-r('gutaperk',subst) --> "gutaperk".
-r('gut',subst) --> "gut".
-r('gust',subst) --> "gust".
-r('guru',subst) --> "guru".
-r('gurnard',subst) --> "gurnard".
-r('gurd',subst) --> "gurd".
-r('gupi',subst) --> "gupi".
-r('gumigut',subst) --> "gumigut".
-r('gum',subst) --> "gum".
-r('gulden',subst) --> "gulden".
-r('gulaŝ',subst) --> "gulaŝ".
-r('gul',best) --> "gul".
-r('gujav',subst) --> "gujav".
-r('guir',subst) --> "guir".
-r('gugon',subst) --> "gugon".
-r('gugl',subst) --> "gugl".
-r('guf',subst) --> "guf".
-r('gudr',subst) --> "gudr".
-r('guberni',subst) --> "guberni".
-r('gubernator',subst) --> "gubernator".
-r('guaŝ',subst) --> "guaŝ".
-r('guanin',subst) --> "guanin".
-r('guan',subst) --> "guan".
-r('gruz',subst) --> "gruz".
-r('grupoid',subst) --> "grupoid".
-r('grupet',subst) --> "grupet".
-r('grup',subst) --> "grup".
-r('grunt',ntr) --> "grunt".
-r('grund',subst) --> "grund".
-r('grumel',subst) --> "grumel".
-r('grumbl',ntr) --> "grumbl".
-r('grum',subst) --> "grum".
-r('grued',subst) --> "grued".
-r('gru',subst) --> "gru".
-r('groŝ',subst) --> "groŝ".
-r('grotesk',adj) --> "grotesk".
-r('grot',subst) --> "grot".
-r('gros',subst) --> "gros".
-r('grop',subst) --> "grop".
-r('grog',subst) --> "grog".
-r('grob',adj) --> "grob".
-r('grizajl',subst) --> "grizajl".
-r('griz',adj) --> "griz".
-r('griv',subst) --> "griv".
-r('grip',subst) --> "grip".
-r('gring',subst) --> "gring".
-r('grinc',ntr) --> "grinc".
-r('grimp',ntr) --> "grimp".
-r('grimac',subst) --> "grimac".
-r('griled',subst) --> "griled".
-r('gril',subst) --> "gril".
-r('grifon',subst) --> "grifon".
-r('grifel',subst) --> "grifel".
-r('grif',subst) --> "grif".
-r('gri',subst) --> "gri".
-r('gres',subst) --> "gres".
-r('grenat',subst) --> "grenat".
-r('grenadir',subst) --> "grenadir".
-r('grenad',subst) --> "grenad".
-r('grenad',subst) --> "grenad".
-r('gren',subst) --> "gren".
-r('grek',subst) --> "grek".
-r('grejs',subst) --> "grejs".
-r('greg',subst) --> "greg".
-r('greft',tr) --> "greft".
-r('greb',best) --> "greb".
-r('graŭl',ntr) --> "graŭl".
-r('gravur',tr) --> "gravur".
-r('gravit',ntr) --> "gravit".
-r('graviol',subst) --> "graviol".
-r('graved',adj) --> "graved".
-r('grav',adj) --> "grav".
-r('gratul',tr) --> "gratul".
-r('gratifikaci',subst) --> "gratifikaci".
-r('gratifik',tr) --> "gratifik".
-r('graten',tr) --> "graten".
-r('grat',tr) --> "grat".
-r('gras',subst) --> "gras".
-r('grapol',subst) --> "grapol".
-r('grapl',subst) --> "grapl".
-r('grapfrukt',subst) --> "grapfrukt".
-r('granol',subst) --> "granol".
-r('granit',subst) --> "granit".
-r('grandioz',adj) --> "grandioz".
-r('grand',adj) --> "grand".
-r('granatujac',subst) --> "granatujac".
-r('granat',subst) --> "granat".
-r('gramofon',subst) --> "gramofon".
-r('gramine',subst) --> "gramine".
-r('gramatik',subst) --> "gramatik".
-r('gram',subst) --> "gram".
-r('grak',verb) --> "grak".
-r('grajp',subst) --> "grajp".
-r('grajn',subst) --> "grajn".
-r('grajl',subst) --> "grajl".
-r('grafologi',subst) --> "grafologi".
-r('grafolog',subst) --> "grafolog".
-r('grafiti',subst) --> "grafiti".
-r('grafit',subst) --> "grafit".
-r('grafism',subst) --> "grafism".
-r('grafik',subst) --> "grafik".
-r('grafen',subst) --> "grafen".
-r('grafem',subst) --> "grafem".
-r('grafeik',subst) --> "grafeik".
-r('grafe',subst) --> "grafe".
-r('graf',subst) --> "graf".
-r('graf',subst) --> "graf".
-r('gradus',subst) --> "gradus".
-r('gradient',subst) --> "gradient".
-r('grad',subst) --> "grad".
-r('gracil',adj) --> "gracil".
-r('graci',adj) --> "graci".
-r('grac',subst) --> "grac".
-r('gotik',adj) --> "gotik".
-r('got',subst) --> "got".
-r('gospel',subst) --> "gospel".
-r('gorĝ',subst) --> "gorĝ".
-r('goril',best) --> "goril".
-r('gorgon',subst) --> "gorgon".
-r('gonore',subst) --> "gonore".
-r('gonokok',subst) --> "gonokok".
-r('gong',subst) --> "gong".
-r('gondol',subst) --> "gondol".
-r('gonad',subst) --> "gonad".
-r('gomb',subst) --> "gomb".
-r('golf',subst) --> "golf".
-r('golf',subst) --> "golf".
-r('gol',ntr) --> "gol".
-r('goelet',subst) --> "goelet".
-r('gobi',best) --> "gobi".
-r('gobelin',subst) --> "gobelin".
-r('gobelen',subst) --> "gobelen".
-r('gobang',subst) --> "gobang".
-r('go',subst) --> "go".
-r('gnu',subst) --> "gnu".
-r('gnoz',subst) --> "gnoz".
-r('gnostik',subst) --> "gnostik".
-r('gnomon',subst) --> "gnomon".
-r('gnom',subst) --> "gnom".
-r('gnetac',subst) --> "gnetac".
-r('gnet',subst) --> "gnet".
-r('gnejs',subst) --> "gnejs".
-r('gluten',subst) --> "gluten".
-r('glute',subst) --> "glute".
-r('glutamat',subst) --> "glutamat".
-r('glut',verb) --> "glut".
-r('glum',subst) --> "glum".
-r('glukoz',subst) --> "glukoz".
-r('glugl',ntr) --> "glugl".
-r('glucid',subst) --> "glucid".
-r('glu',tr) --> "glu".
-r('glotal',subst) --> "glotal".
-r('glot',subst) --> "glot".
-r('glosin',subst) --> "glosin".
-r('glos',subst) --> "glos".
-r('glor',tr) --> "glor".
-r('globus',subst) --> "globus".
-r('globulariac',subst) --> "globulariac".
-r('globulari',subst) --> "globulari".
-r('glob',subst) --> "glob".
-r('glit',ntr) --> "glit".
-r('glis',verb) --> "glis".
-r('glired',subst) --> "glired".
-r('glir',subst) --> "glir".
-r('gliptodont',subst) --> "gliptodont".
-r('gliptik',subst) --> "gliptik".
-r('gliom',subst) --> "gliom".
-r('glim',subst) --> "glim".
-r('glikoz',subst) --> "glikoz".
-r('gliciriz',subst) --> "gliciriz".
-r('glicine',subst) --> "glicine".
-r('glicin',subst) --> "glicin".
-r('glicerin',subst) --> "glicerin".
-r('gliceril',subst) --> "gliceril".
-r('glicerid',subst) --> "glicerid".
-r('gliceri',subst) --> "gliceri".
-r('gli',subst) --> "gli".
-r('glekom',subst) --> "glekom".
-r('glaŭkonit',subst) --> "glaŭkonit".
-r('glaŭk',adj) --> "glaŭk".
-r('glaŭci',subst) --> "glaŭci".
-r('glazur',subst) --> "glazur".
-r('glav',subst) --> "glav".
-r('glat',adj) --> "glat".
-r('glas',subst) --> "glas".
-r('glareoled',subst) --> "glareoled".
-r('glareol',subst) --> "glareol".
-r('gland',subst) --> "gland".
-r('glan',subst) --> "glan".
-r('gladiol',subst) --> "gladiol".
-r('gladiator',subst) --> "gladiator".
-r('glad',tr) --> "glad".
-r('glacis',subst) --> "glacis".
-r('glaci',subst) --> "glaci".
-r('glace',adj) --> "glace".
-r('glac',subst) --> "glac".
-r('glabel',subst) --> "glabel".
-r('giĉet',subst) --> "giĉet".
-r('gitar',subst) --> "gitar".
-r('gist',subst) --> "gist".
-r('gis',verb) --> "gis".
-r('giroskop',subst) --> "giroskop".
-r('girland',subst) --> "girland".
-r('gips',subst) --> "gips".
-r('gipaet',subst) --> "gipaet".
-r('ginseng',subst) --> "ginseng".
-r('ginostem',subst) --> "ginostem".
-r('gingiv',subst) --> "gingiv".
-r('ginekologi',subst) --> "ginekologi".
-r('ginekolog',subst) --> "ginekolog".
-r('ginece',subst) --> "ginece".
-r('gine',subst) --> "gine".
-r('gimnoted',subst) --> "gimnoted".
-r('gimnot',best) --> "gimnot".
-r('gimnostom',adj) --> "gimnostom".
-r('gimnosperm',adj) --> "gimnosperm".
-r('gimnazi',subst) --> "gimnazi".
-r('gimnastik',subst) --> "gimnastik".
-r('gimnast',subst) --> "gimnast".
-r('giloŝ',tr) --> "giloŝ".
-r('gilotin',subst) --> "gilotin".
-r('gild',subst) --> "gild".
-r('gigatun',subst) --> "gigatun".
-r('gigant',subst) --> "gigant".
-r('giga',pref) --> "giga".
-r('gibon',subst) --> "gibon".
-r('gib',tr) --> "gib".
-r('geum',subst) --> "geum".
-r('geta',subst) --> "geta".
-r('gest',subst) --> "gest".
-r('gerundi',subst) --> "gerundi".
-r('germanium',subst) --> "germanium".
-r('german',subst) --> "german".
-r('gerlen',subst) --> "gerlen".
-r('geril',subst) --> "geril".
-r('gerbil',best) --> "gerbil".
-r('geraniac',subst) --> "geraniac".
-r('gerani',subst) --> "gerani".
-r('gepard',best) --> "gepard".
-r('geoĥemi',subst) --> "geoĥemi".
-r('geotruped',subst) --> "geotruped".
-r('geotrup',subst) --> "geotrup".
-r('geotermik',subst) --> "geotermik".
-r('geoterm',adj) --> "geoterm".
-r('geostrategi',subst) --> "geostrategi".
-r('georgin',subst) --> "georgin".
-r('geopolitik',subst) --> "geopolitik".
-r('geomorfologi',subst) --> "geomorfologi".
-r('geometri',subst) --> "geometri".
-r('geometred',subst) --> "geometred".
-r('geometr',best) --> "geometr".
-r('geologi',subst) --> "geologi".
-r('geolog',subst) --> "geolog".
-r('geokomputik',subst) --> "geokomputik".
-r('geokemi',subst) --> "geokemi".
-r('geografi',subst) --> "geografi".
-r('geograf',subst) --> "geograf".
-r('geofizik',subst) --> "geofizik".
-r('geodezi',subst) --> "geodezi".
-r('geod',subst) --> "geod".
-r('geocentr',adj) --> "geocentr".
-r('geo',pref) --> "geo".
-r('genu',subst) --> "genu".
-r('gent',subst) --> "gent".
-r('genr',subst) --> "genr".
-r('genotip',subst) --> "genotip".
-r('genot',best) --> "genot".
-r('genom',subst) --> "genom".
-r('genocid',subst) --> "genocid".
-r('genitiv',subst) --> "genitiv".
-r('genist',subst) --> "genist".
-r('geni',subst) --> "geni".
-r('genez',subst) --> "genez".
-r('genetik',subst) --> "genetik".
-r('generator',subst) --> "generator".
-r('general',subst) --> "general".
-r('generaci',subst) --> "generaci".
-r('gener',tr) --> "gener".
-r('genealogi',subst) --> "genealogi".
-r('genealog',subst) --> "genealog".
-r('gencianac',subst) --> "gencianac".
-r('gencian',subst) --> "gencian".
-r('gen',subst) --> "gen".
-r('gemologi',subst) --> "gemologi".
-r('gem',subst) --> "gem".
-r('geloz',subst) --> "geloz".
-r('gelaten',subst) --> "gelaten".
-r('gelat',subst) --> "gelat".
-r('geked',subst) --> "geked".
-r('gek',best) --> "gek".
-r('gejŝ',subst) --> "gejŝ".
-r('gejser',subst) --> "gejser".
-r('gej',subst) --> "gej".
-r('gehen',subst) --> "gehen".
-r('gaŭĉ',subst) --> "gaŭĉ".
-r('gaŭlt',subst) --> "gaŭlt".
-r('gazon',subst) --> "gazon".
-r('gazet',subst) --> "gazet".
-r('gazel',subst) --> "gazel".
-r('gazal',subst) --> "gazal".
-r('gaz',subst) --> "gaz".
-r('gavot',subst) --> "gavot".
-r('gavialed',subst) --> "gavialed".
-r('gavial',best) --> "gavial".
-r('gatj',subst) --> "gatj".
-r('gastrotomi',subst) --> "gastrotomi".
-r('gastrostomi',subst) --> "gastrostomi".
-r('gastropod',subst) --> "gastropod".
-r('gastronomi',subst) --> "gastronomi".
-r('gastronom',subst) --> "gastronom".
-r('gastroenterologi',subst) --> "gastroenterologi".
-r('gastroenterolog',subst) --> "gastroenterolog".
-r('gastornit',subst) --> "gastornit".
-r('gasterosteed',subst) --> "gasterosteed".
-r('gasteroste',best) --> "gasteroste".
-r('gast',subst) --> "gast".
-r('gasometr',subst) --> "gasometr".
-r('gasojl',subst) --> "gasojl".
-r('gas',subst) --> "gas".
-r('garol',subst) --> "garol".
-r('garnizon',subst) --> "garnizon".
-r('garnitur',subst) --> "garnitur".
-r('garn',tr) --> "garn".
-r('gargojl',subst) --> "gargojl".
-r('gargar',tr) --> "gargar".
-r('gardeni',subst) --> "gardeni".
-r('gard',tr) --> "gard".
-r('garb',subst) --> "garb".
-r('garaĝ',subst) --> "garaĝ".
-r('garanti',tr) --> "garanti".
-r('gap',tr) --> "gap".
-r('gant',subst) --> "gant".
-r('gangren',subst) --> "gangren".
-r('gangli',subst) --> "gangli".
-r('gang',subst) --> "gang".
-r('gandarv',subst) --> "gandarv".
-r('gamet',subst) --> "gamet".
-r('gamelan',subst) --> "gamelan".
-r('gamel',subst) --> "gamel".
-r('gambit',subst) --> "gambit".
-r('gambi',subst) --> "gambi".
-r('gamb',subst) --> "gamb".
-r('gamaŝ',subst) --> "gamaŝ".
-r('gam',subst) --> "gam".
-r('galvanoterapi',subst) --> "galvanoterapi".
-r('galvanoskop',subst) --> "galvanoskop".
-r('galvanoplastik',subst) --> "galvanoplastik".
-r('galvanometr',subst) --> "galvanometr".
-r('galvaniz',tr) --> "galvaniz".
-r('galvanism',subst) --> "galvanism".
-r('galvan',adj) --> "galvan".
-r('galoŝ',subst) --> "galoŝ".
-r('galop',ntr) --> "galop".
-r('galon',subst) --> "galon".
-r('galium',subst) --> "galium".
-r('galion',subst) --> "galion".
-r('galinul',subst) --> "galinul".
-r('galimati',subst) --> "galimati".
-r('galicism',subst) --> "galicism".
-r('gali',subst) --> "gali".
-r('galeri',subst) --> "galeri".
-r('galer',subst) --> "galer".
-r('galeopitek',best) --> "galeopitek".
-r('galen',subst) --> "galen".
-r('galeas',subst) --> "galeas".
-r('galbuled',subst) --> "galbuled".
-r('galbul',subst) --> "galbul".
-r('galban',subst) --> "galban".
-r('galantin',subst) --> "galantin".
-r('galanteri',subst) --> "galanteri".
-r('galant',subst) --> "galant".
-r('galant',adj) --> "galant".
-r('galaksi',subst) --> "galaksi".
-r('galabij',subst) --> "galabij".
-r('gal',subst) --> "gal".
-r('gak',verb) --> "gak".
-r('gajn',tr) --> "gajn".
-r('gajlard',subst) --> "gajlard".
-r('gajl',subst) --> "gajl".
-r('gajakol',subst) --> "gajakol".
-r('gajak',subst) --> "gajak".
-r('gaj',adj) --> "gaj".
-r('gagat',subst) --> "gagat".
-r('gaf',subst) --> "gaf".
-r('gadolini',subst) --> "gadolini".
-r('gaded',subst) --> "gaded".
-r('gad',best) --> "gad".
-r('gabl',subst) --> "gabl".
-r('gabi',subst) --> "gabi".
-r('gabardin',subst) --> "gabardin".
-r('fuŝ',tr) --> "fuŝ".
-r('fuĝ',tr) --> "fuĝ".
-r('fuzilier',subst) --> "fuzilier".
-r('fuzi',subst) --> "fuzi".
-r('fuzelaĝ',subst) --> "fuzelaĝ".
-r('fuz',ntr) --> "fuz".
-r('futur',subst) --> "futur".
-r('futbal',subst) --> "futbal".
-r('fut',subst) --> "fut".
-r('fusten',subst) --> "fusten".
-r('fust',subst) --> "fust".
-r('fusil',subst) --> "fusil".
-r('furz',ntr) --> "furz".
-r('furunk',subst) --> "furunk".
-r('furor',subst) --> "furor".
-r('furlong',subst) --> "furlong".
-r('furioz',adj) --> "furioz".
-r('furier',subst) --> "furier".
-r('furi',subst) --> "furi".
-r('furaĝ',subst) --> "furaĝ".
-r('fur',subst) --> "fur".
-r('fuort',subst) --> "fuort".
-r('funt',subst) --> "funt".
-r('funkcional',subst) --> "funkcional".
-r('funkci',ntr) --> "funkci".
-r('funikular',subst) --> "funikular".
-r('funikl',subst) --> "funikl".
-r('fungus',subst) --> "fungus".
-r('fung',subst) --> "fung".
-r('funel',subst) --> "funel".
-r('funebr',subst) --> "funebr".
-r('fundament',subst) --> "fundament".
-r('fund',subst) --> "fund".
-r('fumariac',subst) --> "fumariac".
-r('fumari',subst) --> "fumari".
-r('fum',subst) --> "fum".
-r('fulm',subst) --> "fulm".
-r('fulik',subst) --> "fulik".
-r('fuligul',best) --> "fuligul".
-r('fulg',subst) --> "fulg".
-r('fulard',subst) --> "fulard".
-r('ful',tr) --> "ful".
-r('fuksin',subst) --> "fuksin".
-r('fuksi',subst) --> "fuksi".
-r('fuk',subst) --> "fuk".
-r('fug',subst) --> "fug".
-r('fuel',subst) --> "fuel".
-r('ftiz',subst) --> "ftiz".
-r('frustraci',verb) --> "frustraci".
-r('frustr',verb) --> "frustr".
-r('fruntal',subst) --> "fruntal".
-r('frunt',subst) --> "frunt".
-r('frukt',subst) --> "frukt".
-r('frugileg',subst) --> "frugileg".
-r('fru',adj) --> "fru".
-r('frot',tr) --> "frot".
-r('frost',subst) --> "frost".
-r('fronton',subst) --> "fronton".
-r('front',subst) --> "front".
-r('frond',subst) --> "frond".
-r('fromaĝ',subst) --> "fromaĝ".
-r('frok',subst) --> "frok".
-r('friz',tr) --> "friz".
-r('frivol',adj) --> "frivol".
-r('fritilari',subst) --> "fritilari".
-r('frit',tr) --> "frit".
-r('frisk',adj) --> "frisk".
-r('fris',subst) --> "fris".
-r('fris',subst) --> "fris".
-r('fripon',subst) --> "fripon".
-r('fringel',subst) --> "fringel".
-r('fringed',subst) --> "fringed".
-r('fring',subst) --> "fring".
-r('frikativ',subst) --> "frikativ".
-r('frid',adj) --> "frid".
-r('freŝ',adj) --> "freŝ".
-r('frez',verb) --> "frez".
-r('fret',subst) --> "fret".
-r('fresk',subst) --> "fresk".
-r('freon',subst) --> "freon".
-r('frenologi',subst) --> "frenologi".
-r('frenolog',subst) --> "frenolog".
-r('frenez',adj) --> "frenez".
-r('fremd',adj) --> "fremd".
-r('frekvent',tr) --> "frekvent".
-r('frekvencometr',subst) --> "frekvencometr".
-r('frekvenc',subst) --> "frekvenc".
-r('fregat',subst) --> "fregat".
-r('fregat',subst) --> "fregat".
-r('fraŭl',subst) --> "fraŭl".
-r('fraŭd',verb) --> "fraŭd".
-r('frazeologi',subst) --> "frazeologi".
-r('fraz',subst) --> "fraz".
-r('fratri',subst) --> "fratri".
-r('fraterkul',subst) --> "fraterkul".
-r('frat',parc) --> "frat".
-r('frap',verb) --> "frap".
-r('franĝ',subst) --> "franĝ".
-r('frankolin',subst) --> "frankolin".
-r('frank',subst) --> "frank".
-r('frangol',subst) --> "frangol".
-r('frand',tr) --> "frand".
-r('francium',subst) --> "francium".
-r('franci',subst) --> "franci".
-r('franc',subst) --> "franc".
-r('framb',subst) --> "framb".
-r('framason',subst) --> "framason".
-r('fram',subst) --> "fram".
-r('fraksen',subst) --> "fraksen".
-r('frakci',subst) --> "frakci".
-r('frakas',tr) --> "frakas".
-r('frak',subst) --> "frak".
-r('frajt',tr) --> "frajt".
-r('fraj',subst) --> "fraj".
-r('fragmit',subst) --> "fragmit".
-r('fragment',subst) --> "fragment".
-r('fragil',adj) --> "fragil".
-r('frag',subst) --> "frag".
-r('fototipi',subst) --> "fototipi".
-r('fototelegraf',verb) --> "fototelegraf".
-r('fotosintez',subst) --> "fotosintez".
-r('fotosfer',subst) --> "fotosfer".
-r('foton',subst) --> "foton".
-r('fotometr',subst) --> "fotometr".
-r('fotoliz',verb) --> "fotoliz".
-r('fotolitografi',subst) --> "fotolitografi".
-r('fotokromi',subst) --> "fotokromi".
-r('fotokopi',subst) --> "fotokopi".
-r('fotogravur',tr) --> "fotogravur".
-r('fotogrametri',subst) --> "fotogrametri".
-r('fotografi',subst) --> "fotografi".
-r('fotograf',tr) --> "fotograf".
-r('fotogliptik',subst) --> "fotogliptik".
-r('fotel',subst) --> "fotel".
-r('fot',verb) --> "fot".
-r('fost',subst) --> "fost".
-r('fosili',subst) --> "fosili".
-r('fosforit',subst) --> "fosforit".
-r('fosforesk',ntr) --> "fosforesk".
-r('fosfor',subst) --> "fosfor".
-r('fosfit',subst) --> "fosfit".
-r('fosfaturi',subst) --> "fosfaturi".
-r('fosfat',subst) --> "fosfat".
-r('fos',tr) --> "fos".
-r('forĝ',tr) --> "forĝ".
-r('forum',subst) --> "forum".
-r('fortun',subst) --> "fortun".
-r('fortres',subst) --> "fortres".
-r('fortik',adj) --> "fortik".
-r('fortepian',subst) --> "fortepian".
-r('fort',adj) --> "fort".
-r('forst',subst) --> "forst".
-r('forsiti',subst) --> "forsiti".
-r('forniks',subst) --> "forniks".
-r('fornel',subst) --> "fornel".
-r('forn',subst) --> "forn".
-r('formul',subst) --> "formul".
-r('formol',subst) --> "formol".
-r('forming',subst) --> "forming".
-r('formiked',subst) --> "formiked".
-r('formik',subst) --> "formik".
-r('format',subst) --> "format".
-r('formaldehid',subst) --> "formaldehid".
-r('formal',adj) --> "formal".
-r('formaci',subst) --> "formaci".
-r('form',subst) --> "form".
-r('fork',subst) --> "fork".
-r('forint',subst) --> "forint".
-r('forges',tr) --> "forges".
-r('forfikul',subst) --> "forfikul".
-r('forceps',subst) --> "forceps".
-r('forc',tr) --> "forc".
-r('fontanel',subst) --> "fontanel".
-r('fontan',subst) --> "fontan".
-r('font',subst) --> "font".
-r('fonoskop',subst) --> "fonoskop".
-r('fonometr',subst) --> "fonometr".
-r('fonologi',subst) --> "fonologi".
-r('fonolog',subst) --> "fonolog".
-r('fonogram',subst) --> "fonogram".
-r('fonograf',subst) --> "fonograf".
-r('fonetism',subst) --> "fonetism".
-r('fonetik',subst) --> "fonetik".
-r('fonem',subst) --> "fonem".
-r('fondus',subst) --> "fondus".
-r('fondu',subst) --> "fondu".
-r('fond',tr) --> "fond".
-r('fon',subst) --> "fon".
-r('foment',tr) --> "foment".
-r('folklor',subst) --> "folklor".
-r('folikl',subst) --> "folikl".
-r('foli',subst) --> "foli".
-r('fold',subst) --> "fold".
-r('foladed',subst) --> "foladed".
-r('folad',subst) --> "folad".
-r('fol',adj) --> "fol".
-r('fokus',subst) --> "fokus".
-r('fokstrot',subst) --> "fokstrot".
-r('foked',subst) --> "foked".
-r('fok',best) --> "fok".
-r('fojn',subst) --> "fojn".
-r('foj',subst) --> "foj".
-r('foir',subst) --> "foir".
-r('foin',best) --> "foin".
-r('fobi',subst) --> "fobi".
-r('flut',subst) --> "flut".
-r('flustr',tr) --> "flustr".
-r('flus',subst) --> "flus".
-r('fluoresk',ntr) --> "fluoresk".
-r('fluor',subst) --> "fluor".
-r('fluktu',ntr) --> "fluktu".
-r('fluid',adj) --> "fluid".
-r('flug',ntr) --> "flug".
-r('flu',ntr) --> "flu".
-r('flot',subst) --> "flot".
-r('flos',subst) --> "flos".
-r('floren',subst) --> "floren".
-r('flor',subst) --> "flor".
-r('flok',subst) --> "flok".
-r('floem',subst) --> "floem".
-r('flirt',ntr) --> "flirt".
-r('flint',subst) --> "flint".
-r('flikten',subst) --> "flikten".
-r('flik',tr) --> "flik".
-r('fles',best) --> "fles".
-r('flerovi',subst) --> "flerovi".
-r('fleksi',tr) --> "fleksi".
-r('fleks',tr) --> "fleks".
-r('flegmon',subst) --> "flegmon".
-r('flegm',subst) --> "flegm".
-r('fleg',tr) --> "fleg".
-r('flaŭr',subst) --> "flaŭr".
-r('flaŭn',subst) --> "flaŭn".
-r('flaĝolet',subst) --> "flaĝolet".
-r('flav',adj) --> "flav".
-r('flat',tr) --> "flat".
-r('flar',tr) --> "flar".
-r('flanĝ',subst) --> "flanĝ".
-r('flank',subst) --> "flank".
-r('flanel',subst) --> "flanel".
-r('flandr',subst) --> "flandr".
-r('flan',subst) --> "flan".
-r('flamenk',subst) --> "flamenk".
-r('flameng',subst) --> "flameng".
-r('flamberg',subst) --> "flamberg".
-r('flam',subst) --> "flam".
-r('flakurtiac',subst) --> "flakurtiac".
-r('flakurti',subst) --> "flakurti".
-r('flakon',subst) --> "flakon".
-r('flak',subst) --> "flak".
-r('flagr',ntr) --> "flagr".
-r('flagel',subst) --> "flagel".
-r('flag',subst) --> "flag".
-r('fjord',subst) --> "fjord".
-r('fiŝ',subst) --> "fiŝ".
-r('fiĝi',subst) --> "fiĝi".
-r('fizioterapi',subst) --> "fizioterapi".
-r('fizionomi',subst) --> "fizionomi".
-r('fiziologi',subst) --> "fiziologi".
-r('fiziolog',subst) --> "fiziolog".
-r('fiziokrat',subst) --> "fiziokrat".
-r('fiziografi',subst) --> "fiziografi".
-r('fiziognomik',subst) --> "fiziognomik".
-r('fizik',subst) --> "fizik".
-r('fitoterapi',subst) --> "fitoterapi".
-r('fiting',subst) --> "fiting".
-r('fistul',subst) --> "fistul".
-r('fisk',subst) --> "fisk".
-r('fisi',subst) --> "fisi".
-r('first',subst) --> "first".
-r('firmament',subst) --> "firmament".
-r('firma',subst) --> "firma".
-r('firm',adj) --> "firm".
-r('firm',subst) --> "firm".
-r('fiol',subst) --> "fiol".
-r('fint',tr) --> "fint".
-r('finn',subst) --> "finn".
-r('finial',subst) --> "finial".
-r('fini',subst) --> "fini".
-r('fingr',subst) --> "fingr".
-r('financ',subst) --> "financ".
-r('final',subst) --> "final".
-r('fin',tr) --> "fin".
-r('fimbril',subst) --> "fimbril".
-r('filum',subst) --> "filum".
-r('filtr',tr) --> "filtr".
-r('filozofi',subst) --> "filozofi".
-r('filozof',subst) --> "filozof".
-r('filon',subst) --> "filon".
-r('filologi',subst) --> "filologi".
-r('filolog',subst) --> "filolog".
-r('filoksered',subst) --> "filoksered".
-r('filokser',subst) --> "filokser".
-r('filogeni',subst) --> "filogeni".
-r('filogenez',subst) --> "filogenez".
-r('filodendr',subst) --> "filodendr".
-r('film',subst) --> "film".
-r('filistr',subst) --> "filistr".
-r('filik',subst) --> "filik".
-r('filigran',subst) --> "filigran".
-r('fili',subst) --> "fili".
-r('filharmoni',subst) --> "filharmoni".
-r('filateli',subst) --> "filateli".
-r('filatel',subst) --> "filatel".
-r('filantropi',subst) --> "filantropi".
-r('filantrop',subst) --> "filantrop".
-r('filant',subst) --> "filant".
-r('filandr',subst) --> "filandr".
-r('filament',subst) --> "filament".
-r('filakteri',subst) --> "filakteri".
-r('filadelfac',subst) --> "filadelfac".
-r('filadelf',subst) --> "filadelf".
-r('fil',parc) --> "fil".
-r('fiktiv',adj) --> "fiktiv".
-r('fiks',tr) --> "fiks".
-r('fikci',subst) --> "fikci".
-r('fik',tr) --> "fik".
-r('figur',subst) --> "figur".
-r('fig',subst) --> "fig".
-r('fifr',subst) --> "fifr".
-r('fier',adj) --> "fier".
-r('fidel',adj) --> "fidel".
-r('fid',tr) --> "fid".
-r('fibul',subst) --> "fibul".
-r('fibrom',subst) --> "fibrom".
-r('fibrin',subst) --> "fibrin".
-r('fibran',subst) --> "fibran".
-r('fibr',subst) --> "fibr".
-r('fiask',subst) --> "fiask".
-r('fianĉ',subst) --> "fianĉ".
-r('fiakr',subst) --> "fiakr".
-r('feŭd',subst) --> "feŭd".
-r('feĉ',subst) --> "feĉ".
-r('fez',subst) --> "fez".
-r('fetor',subst) --> "fetor".
-r('fetiĉ',subst) --> "fetiĉ".
-r('fet',subst) --> "fet".
-r('festuk',subst) --> "festuk".
-r('feston',subst) --> "feston".
-r('festival',subst) --> "festival".
-r('festen',subst) --> "festen".
-r('fest',subst) --> "fest".
-r('fervor',subst) --> "fervor".
-r('ferotipi',subst) --> "ferotipi".
-r('feromon',subst) --> "feromon".
-r('ferol',subst) --> "ferol".
-r('feroc',adj) --> "feroc".
-r('fermion',subst) --> "fermion".
-r('fermi',subst) --> "fermi".
-r('ferment',subst) --> "ferment".
-r('fermat',subst) --> "fermat".
-r('ferm',tr) --> "ferm".
-r('ferl',tr) --> "ferl".
-r('feri',subst) --> "feri".
-r('ferdek',subst) --> "ferdek".
-r('fer',subst) --> "fer".
-r('fenotip',subst) --> "fenotip".
-r('fenomenologi',subst) --> "fenomenologi".
-r('fenomen',subst) --> "fenomen".
-r('fenol',subst) --> "fenol".
-r('fenkol',subst) --> "fenkol".
-r('feniks',subst) --> "feniks".
-r('fenikoptered',subst) --> "fenikoptered".
-r('fenikopter',subst) --> "fenikopter".
-r('fenic',subst) --> "fenic".
-r('fenestr',subst) --> "fenestr".
-r('fendr',subst) --> "fendr".
-r('fend',tr) --> "fend".
-r('fen',subst) --> "fen".
-r('femur',subst) --> "femur".
-r('femto',pref) --> "femto".
-r('feminist',subst) --> "feminist".
-r('feminism',subst) --> "feminism".
-r('femal',subst) --> "femal".
-r('feluk',subst) --> "feluk".
-r('felt',subst) --> "felt".
-r('felp',subst) --> "felp".
-r('feloid',subst) --> "feloid".
-r('feliĉ',adj) --> "feliĉ".
-r('felised',subst) --> "felised".
-r('felis',subst) --> "felis".
-r('felieton',subst) --> "felieton".
-r('feldspat',subst) --> "feldspat".
-r('felandri',subst) --> "felandri".
-r('fel',subst) --> "fel".
-r('fekund',adj) --> "fekund".
-r('fekul',subst) --> "fekul".
-r('fek',ntr) --> "fek".
-r('federaci',subst) --> "federaci".
-r('feder',tr) --> "feder".
-r('februar',subst) --> "februar".
-r('febr',subst) --> "febr".
-r('febl',adj) --> "febl".
-r('fe',subst) --> "fe".
-r('faŭn',subst) --> "faŭn".
-r('faŭn',subst) --> "faŭn".
-r('faŭlt',subst) --> "faŭlt".
-r('faŭk',subst) --> "faŭk".
-r('faŝist',subst) --> "faŝist".
-r('faŝism',subst) --> "faŝism".
-r('fazeol',subst) --> "fazeol".
-r('fazaned',subst) --> "fazaned".
-r('fazan',subst) --> "fazan".
-r('faz',subst) --> "faz".
-r('favor',adj) --> "favor".
-r('fav',subst) --> "fav".
-r('fatv',subst) --> "fatv".
-r('fatras',subst) --> "fatras".
-r('fatamorgan',subst) --> "fatamorgan".
-r('fatal',adj) --> "fatal".
-r('fat',subst) --> "fat".
-r('fasĉin',subst) --> "fasĉin".
-r('fast',ntr) --> "fast".
-r('fason',subst) --> "fason".
-r('fask',subst) --> "fask".
-r('fasciol',subst) --> "fasciol".
-r('fascin',tr) --> "fascin".
-r('fasci',subst) --> "fasci".
-r('fasad',subst) --> "fasad".
-r('farĉ',subst) --> "farĉ".
-r('farun',subst) --> "farun".
-r('fart',ntr) --> "fart".
-r('fars',subst) --> "fars".
-r('farnient',subst) --> "farnient".
-r('farmakope',subst) --> "farmakope".
-r('farmakologi',subst) --> "farmakologi".
-r('farmakolog',subst) --> "farmakolog".
-r('farmaci',subst) --> "farmaci".
-r('farm',tr) --> "farm".
-r('farize',subst) --> "farize".
-r('farise',subst) --> "farise".
-r('faring',subst) --> "faring".
-r('farb',subst) --> "farb".
-r('faraon',subst) --> "faraon".
-r('farandol',subst) --> "farandol".
-r('faradiz',tr) --> "faradiz".
-r('far',tr) --> "far".
-r('fantom',subst) --> "fantom".
-r('fantazi',subst) --> "fantazi".
-r('fantast',subst) --> "fantast".
-r('fantasmagori',subst) --> "fantasmagori".
-r('fantasm',subst) --> "fantasm".
-r('fant',subst) --> "fant".
-r('fanfaron',tr) --> "fanfaron".
-r('fanfar',subst) --> "fanfar".
-r('fanerozoik',subst) --> "fanerozoik".
-r('fanerogam',subst) --> "fanerogam".
-r('faner',subst) --> "faner".
-r('fandang',subst) --> "fandang".
-r('fand',tr) --> "fand".
-r('fanatik',adj) --> "fanatik".
-r('fanariot',subst) --> "fanariot".
-r('familiar',adj) --> "familiar".
-r('famili',subst) --> "famili".
-r('fam',subst) --> "fam".
-r('falĉ',tr) --> "falĉ".
-r('falt',subst) --> "falt".
-r('falset',subst) --> "falset".
-r('fals',tr) --> "fals".
-r('falked',subst) --> "falked".
-r('falk',subst) --> "falk".
-r('fald',tr) --> "fald".
-r('falbal',subst) --> "falbal".
-r('falarop',subst) --> "falarop".
-r('falar',subst) --> "falar".
-r('falanster',subst) --> "falanster".
-r('falangi',subst) --> "falangi".
-r('falang',subst) --> "falang".
-r('falafel',subst) --> "falafel".
-r('fal',ntr) --> "fal".
-r('fakultativ',adj) --> "fakultativ".
-r('fakultat',subst) --> "fakultat".
-r('fakult',subst) --> "fakult".
-r('faktur',subst) --> "faktur".
-r('faktorial',subst) --> "faktorial".
-r('faktori',subst) --> "faktori".
-r('faktor',subst) --> "faktor".
-r('fakt',subst) --> "fakt".
-r('faksimil',subst) --> "faksimil".
-r('faks',tr) --> "faks".
-r('fakoĥer',subst) --> "fakoĥer".
-r('fakoĉer',subst) --> "fakoĉer".
-r('fakir',subst) --> "fakir".
-r('fak',subst) --> "fak".
-r('fajr',subst) --> "fajr".
-r('fajn',adj) --> "fajn".
-r('fajl',tr) --> "fajl".
-r('fajf',tr) --> "fajf".
-r('fajenc',subst) --> "fajenc".
-r('faj',subst) --> "faj".
-r('fagot',subst) --> "fagot".
-r('fagopir',subst) --> "fagopir".
-r('fagocit',subst) --> "fagocit".
-r('fagac',subst) --> "fagac".
-r('fag',subst) --> "fag".
-r('faeton',subst) --> "faeton".
-r('fadu',subst) --> "fadu".
-r('faden',subst) --> "faden".
-r('fad',subst) --> "fad".
-r('facil',adj) --> "facil".
-r('facet',subst) --> "facet".
-r('fac',subst) --> "fac".
-r('fabrik',subst) --> "fabrik".
-r('fabl',subst) --> "fabl".
-r('fabel',subst) --> "fabel".
-r('fabac',subst) --> "fabac".
-r('fab',subst) --> "fab".
-r('eŭĥaristi',subst) --> "eŭĥaristi".
-r('eŭsk',subst) --> "eŭsk".
-r('eŭropi',subst) --> "eŭropi".
-r('eŭr',subst) --> "eŭr".
-r('eŭnuk',subst) --> "eŭnuk".
-r('eŭkaristi',subst) --> "eŭkaristi".
-r('eŭkariot',subst) --> "eŭkariot".
-r('eŭkalipt',subst) --> "eŭkalipt".
-r('eŭgenik',subst) --> "eŭgenik".
-r('eŭforbiac',subst) --> "eŭforbiac".
-r('eŭforbi',subst) --> "eŭforbi".
-r('eŭfoni',subst) --> "eŭfoni".
-r('eŭfemism',subst) --> "eŭfemism".
-r('eŭdiometri',subst) --> "eŭdiometri".
-r('eŭdiometr',subst) --> "eŭdiometr".
-r('eŝafod',subst) --> "eŝafod".
-r('eĥografi',subst) --> "eĥografi".
-r('eĥinoderm',subst) --> "eĥinoderm".
-r('eĥin',subst) --> "eĥin".
-r('eĥimoz',subst) --> "eĥimoz".
-r('eĥidn',subst) --> "eĥidn".
-r('eĥ',subst) --> "eĥ".
-r('eĝ',subst) --> "eĝ".
-r('ezoked',subst) --> "ezoked".
-r('ezok',best) --> "ezok".
-r('ezofag',subst) --> "ezofag".
-r('evonim',subst) --> "evonim".
-r('evolvent',subst) --> "evolvent".
-r('evolut',subst) --> "evolut".
-r('evoluci',subst) --> "evoluci".
-r('evolu',ntr) --> "evolu".
-r('evit',tr) --> "evit".
-r('evikci',tr) --> "evikci".
-r('evident',adj) --> "evident".
-r('eventual',adj) --> "eventual".
-r('event',subst) --> "event".
-r('evangeliz',verb) --> "evangeliz".
-r('evangeli',subst) --> "evangeli".
-r('evaku',tr) --> "evaku".
-r('etud',subst) --> "etud".
-r('etrusk',subst) --> "etrusk".
-r('etos',subst) --> "etos".
-r('etologi',subst) --> "etologi".
-r('etolog',subst) --> "etolog".
-r('etnologi',subst) --> "etnologi".
-r('etnolog',subst) --> "etnolog".
-r('etnografi',subst) --> "etnografi".
-r('etnograf',subst) --> "etnograf".
-r('etn',subst) --> "etn".
-r('etmoid',subst) --> "etmoid".
-r('etiop',subst) --> "etiop".
-r('etiologi',subst) --> "etiologi".
-r('etimologi',subst) --> "etimologi".
-r('etim',subst) --> "etim".
-r('etilen',subst) --> "etilen".
-r('etil',subst) --> "etil".
-r('etiket',subst) --> "etiket".
-r('etiked',subst) --> "etiked".
-r('etik',subst) --> "etik".
-r('etern',adj) --> "etern".
-r('eter',subst) --> "eter".
-r('etend',tr) --> "etend".
-r('etaĝer',subst) --> "etaĝer".
-r('etaĝ',subst) --> "etaĝ".
-r('etat',subst) --> "etat".
-r('etap',subst) --> "etap".
-r('etan',subst) --> "etan".
-r('esĥatologi',subst) --> "esĥatologi".
-r('estuar',subst) --> "estuar".
-r('estrad',subst) --> "estrad".
-r('eston',subst) --> "eston".
-r('esting',tr) --> "esting".
-r('estim',tr) --> "estim".
-r('estetik',subst) --> "estetik".
-r('ester',subst) --> "ester".
-r('establ',tr) --> "establ".
-r('est',ntr) --> "est".
-r('esprim',tr) --> "esprim".
-r('esplor',tr) --> "esplor".
-r('esplanad',subst) --> "esplanad".
-r('esperantologi',subst) --> "esperantologi".
-r('esperantolog',subst) --> "esperantolog".
-r('esper',tr) --> "esper".
-r('espart',subst) --> "espart".
-r('espanjolet',subst) --> "espanjolet".
-r('esoter',adj) --> "esoter".
-r('eskvir',subst) --> "eskvir".
-r('eskuz',verb) --> "eskuz".
-r('eskud',subst) --> "eskud".
-r('eskort',tr) --> "eskort".
-r('esklud',verb) --> "esklud".
-r('eskim',subst) --> "eskim".
-r('eskatologi',subst) --> "eskatologi".
-r('eskarp',subst) --> "eskarp".
-r('eskap',tr) --> "eskap".
-r('eskalop',subst) --> "eskalop".
-r('eskal',subst) --> "eskal".
-r('eskadr',subst) --> "eskadr".
-r('esk',suf) --> "esk".
-r('esenc',subst) --> "esenc".
-r('ese',subst) --> "ese".
-r('escept',tr) --> "escept".
-r('erupt',verb) --> "erupt".
-r('erupci',subst) --> "erupci".
-r('eruk',subst) --> "eruk".
-r('erudit',subst) --> "erudit".
-r('erudici',subst) --> "erudici".
-r('erp',tr) --> "erp".
-r('erozi',tr) --> "erozi".
-r('erotomani',subst) --> "erotomani".
-r('erotik',adj) --> "erotik".
-r('erot',adj) --> "erot".
-r('erod',verb) --> "erod".
-r('ermit',subst) --> "ermit".
-r('ermen',best) --> "ermen".
-r('erizipel',subst) --> "erizipel".
-r('erizim',subst) --> "erizim".
-r('eritrozin',subst) --> "eritrozin".
-r('eritrocit',ntr) --> "eritrocit".
-r('eriofor',subst) --> "eriofor".
-r('eringi',subst) --> "eringi".
-r('erinaced',subst) --> "erinaced".
-r('erinac',best) --> "erinac".
-r('erikac',subst) --> "erikac".
-r('erik',subst) --> "erik".
-r('ergotin',subst) --> "ergotin".
-r('ergot',subst) --> "ergot".
-r('ergonomi',subst) --> "ergonomi".
-r('ergometr',subst) --> "ergometr".
-r('ergologi',subst) --> "ergologi".
-r('ergograf',subst) --> "ergograf".
-r('ergin',subst) --> "ergin".
-r('erg',subst) --> "erg".
-r('erekt',adj) --> "erekt".
-r('erc',subst) --> "erc".
-r('erbin',subst) --> "erbin".
-r('erbi',subst) --> "erbi".
-r('erar',ntr) --> "erar".
-r('erantid',subst) --> "erantid".
-r('era',subst) --> "era".
-r('er',subst) --> "er".
-r('epos',subst) --> "epos".
-r('epope',subst) --> "epope".
-r('epolet',subst) --> "epolet".
-r('epok',subst) --> "epok".
-r('epizooti',subst) --> "epizooti".
-r('epizod',subst) --> "epizod".
-r('epitroĥoid',subst) --> "epitroĥoid".
-r('epitom',subst) --> "epitom".
-r('epitet',subst) --> "epitet".
-r('epiteli',subst) --> "epiteli".
-r('epitaf',subst) --> "epitaf".
-r('epistrof',subst) --> "epistrof".
-r('epistol',subst) --> "epistol".
-r('epistemologi',subst) --> "epistemologi".
-r('epistemolog',subst) --> "epistemolog".
-r('episkop',subst) --> "episkop".
-r('epiornit',subst) --> "epiornit".
-r('epilog',subst) --> "epilog".
-r('epilobi',subst) --> "epilobi".
-r('epilepsi',subst) --> "epilepsi".
-r('epikarp',subst) --> "epikarp".
-r('epigram',subst) --> "epigram".
-r('epigrafik',subst) --> "epigrafik".
-r('epigraf',subst) --> "epigraf".
-r('epigon',subst) --> "epigon".
-r('epiglot',subst) --> "epiglot".
-r('epigenetik',subst) --> "epigenetik".
-r('epigastr',subst) --> "epigastr".
-r('epifor',subst) --> "epifor".
-r('epifonem',subst) --> "epifonem".
-r('epifiz',subst) --> "epifiz".
-r('epifit',subst) --> "epifit".
-r('epifenomen',subst) --> "epifenomen".
-r('epiderm',subst) --> "epiderm".
-r('epidemiologi',subst) --> "epidemiologi".
-r('epidemiolog',subst) --> "epidemiolog".
-r('epidemi',subst) --> "epidemi".
-r('epicikloid',subst) --> "epicikloid".
-r('epicentr',subst) --> "epicentr".
-r('ependimit',subst) --> "ependimit".
-r('ependim',subst) --> "ependim".
-r('eparki',subst) --> "eparki".
-r('epakt',subst) --> "epakt".
-r('eozin',subst) --> "eozin".
-r('eon',subst) --> "eon".
-r('eocen',subst) --> "eocen".
-r('enzim',subst) --> "enzim".
-r('envult',tr) --> "envult".
-r('envi',tr) --> "envi".
-r('envergur',subst) --> "envergur".
-r('envelop',subst) --> "envelop".
-r('enukleaci',subst) --> "enukleaci".
-r('enukle',tr) --> "enukle".
-r('enu',ntr) --> "enu".
-r('entuziast',subst) --> "entuziast".
-r('entuziasm',subst) --> "entuziasm".
-r('entropi',subst) --> "entropi".
-r('entrepren',tr) --> "entrepren".
-r('entozo',subst) --> "entozo".
-r('entomologi',subst) --> "entomologi".
-r('entomolog',subst) --> "entomolog".
-r('entjer',subst) --> "entjer".
-r('enterit',subst) --> "enterit".
-r('entablement',subst) --> "entablement".
-r('ent',subst) --> "ent".
-r('ensembl',subst) --> "ensembl".
-r('enoterac',subst) --> "enoterac".
-r('enoter',subst) --> "enoter".
-r('enorm',adj) --> "enorm".
-r('enklitik',subst) --> "enklitik".
-r('enklav',subst) --> "enklav".
-r('enket',subst) --> "enket".
-r('enjekci',subst) --> "enjekci".
-r('enigm',subst) --> "enigm".
-r('engaĝ',tr) --> "engaĝ".
-r('enfil',tr) --> "enfil".
-r('energi',subst) --> "energi".
-r('endoterm',adj) --> "endoterm".
-r('endoskopi',subst) --> "endoskopi".
-r('endoskop',subst) --> "endoskop".
-r('endos',tr) --> "endos".
-r('endorfin',subst) --> "endorfin".
-r('endoplasm',subst) --> "endoplasm".
-r('endomorfi',subst) --> "endomorfi".
-r('endokrinologi',subst) --> "endokrinologi".
-r('endokrinolog',subst) --> "endokrinolog".
-r('endokrin',adj) --> "endokrin".
-r('endokarp',subst) --> "endokarp".
-r('endokardit',subst) --> "endokardit".
-r('endokard',subst) --> "endokard".
-r('endogami',subst) --> "endogami".
-r('endivi',subst) --> "endivi".
-r('endemi',subst) --> "endemi".
-r('end',suf) --> "end".
-r('enciklopedi',subst) --> "enciklopedi".
-r('enciklik',subst) --> "enciklik".
-r('encefalopati',subst) --> "encefalopati".
-r('encefalogram',subst) --> "encefalogram".
-r('encefalit',subst) --> "encefalit".
-r('encefal',subst) --> "encefal".
-r('enantem',subst) --> "enantem".
-r('enant',subst) --> "enant".
-r('en',subst) --> "en".
-r('emulsin',subst) --> "emulsin".
-r('emulsi',subst) --> "emulsi".
-r('emu',subst) --> "emu".
-r('empirist',subst) --> "empirist".
-r('empirism',subst) --> "empirism".
-r('empiri',subst) --> "empiri".
-r('empir',subst) --> "empir".
-r('empiem',subst) --> "empiem".
-r('empen',subst) --> "empen".
-r('empati',subst) --> "empati".
-r('emoci',tr) --> "emoci".
-r('emisi',tr) --> "emisi".
-r('emir',subst) --> "emir".
-r('eminent',adj) --> "eminent".
-r('eminenc',subst) --> "eminenc".
-r('emfizem',subst) --> "emfizem".
-r('emfaz',subst) --> "emfaz".
-r('emetik',subst) --> "emetik".
-r('emerĝ',ntr) --> "emerĝ".
-r('emeritur',subst) --> "emeritur".
-r('emerit',subst) --> "emerit".
-r('embusk',ntr) --> "embusk".
-r('embriologi',subst) --> "embriologi".
-r('embriolog',subst) --> "embriolog".
-r('embriogeni',subst) --> "embriogeni".
-r('embri',subst) --> "embri".
-r('embrazur',subst) --> "embrazur".
-r('emboli',subst) --> "emboli".
-r('embol',subst) --> "embol".
-r('emblem',subst) --> "emblem".
-r('emberiz',subst) --> "emberiz".
-r('embarg',tr) --> "embarg".
-r('embaras',subst) --> "embaras".
-r('emancip',tr) --> "emancip".
-r('eman',ntr) --> "eman".
-r('emajl',subst) --> "emajl".
-r('elzevir',subst) --> "elzevir".
-r('elokvent',adj) --> "elokvent".
-r('elizi',tr) --> "elizi".
-r('elitr',subst) --> "elitr".
-r('elit',subst) --> "elit".
-r('elipsoid',subst) --> "elipsoid".
-r('elips',subst) --> "elips".
-r('elimin',tr) --> "elimin".
-r('elim',subst) --> "elim".
-r('eliksir',subst) --> "eliksir".
-r('elf',subst) --> "elf".
-r('elevator',subst) --> "elevator".
-r('element',subst) --> "element".
-r('elektrotipi',subst) --> "elektrotipi".
-r('elektrotip',subst) --> "elektrotip".
-r('elektroterapi',subst) --> "elektroterapi".
-r('elektrostatik',subst) --> "elektrostatik".
-r('elektroskop',subst) --> "elektroskop".
-r('elektronik',subst) --> "elektronik".
-r('elektron',subst) --> "elektron".
-r('elektromobil',subst) --> "elektromobil".
-r('elektrometr',subst) --> "elektrometr".
-r('elektromagnetism',subst) --> "elektromagnetism".
-r('elektromagnet',subst) --> "elektromagnet".
-r('elektroliz',tr) --> "elektroliz".
-r('elektrolit',subst) --> "elektrolit".
-r('elektrofor',subst) --> "elektrofor".
-r('elektrodinamometr',subst) --> "elektrodinamometr".
-r('elektrodinamism',subst) --> "elektrodinamism".
-r('elektrodinamik',subst) --> "elektrodinamik".
-r('elektrod',subst) --> "elektrod".
-r('elektriz',verb) --> "elektriz".
-r('elektrism',subst) --> "elektrism".
-r('elektr',subst) --> "elektr".
-r('elekt',tr) --> "elekt".
-r('elegi',subst) --> "elegi".
-r('elegant',adj) --> "elegant".
-r('elefantiaz',subst) --> "elefantiaz".
-r('elefanted',subst) --> "elefanted".
-r('elefant',best) --> "elefant".
-r('eldorad',subst) --> "eldorad".
-r('elatred',subst) --> "elatred".
-r('elatr',subst) --> "elatr".
-r('elateri',subst) --> "elateri".
-r('elater',subst) --> "elater".
-r('elastan',subst) --> "elastan".
-r('elast',adj) --> "elast".
-r('eland',subst) --> "eland".
-r('el',subst) --> "el".
-r('ekzotik',adj) --> "ekzotik".
-r('ekzoterm',adj) --> "ekzoterm".
-r('ekzot',adj) --> "ekzot".
-r('ekzorciz',verb) --> "ekzorciz".
-r('ekzorc',tr) --> "ekzorc".
-r('ekzokrin',adj) --> "ekzokrin".
-r('ekzogami',subst) --> "ekzogami".
-r('ekzistencialism',subst) --> "ekzistencialism".
-r('ekzist',ntr) --> "ekzist".
-r('ekzil',tr) --> "ekzil".
-r('ekzerg',subst) --> "ekzerg".
-r('ekzerc',tr) --> "ekzerc".
-r('ekzempler',subst) --> "ekzempler".
-r('ekzempl',subst) --> "ekzempl".
-r('ekzem',subst) --> "ekzem".
-r('ekzekut',tr) --> "ekzekut".
-r('ekzekuci',tr) --> "ekzekuci".
-r('ekzegez',subst) --> "ekzegez".
-r('ekzark',subst) --> "ekzark".
-r('ekzantem',subst) --> "ekzantem".
-r('ekzamen',tr) --> "ekzamen".
-r('ekzalt',tr) --> "ekzalt".
-r('ekzakt',adj) --> "ekzakt".
-r('ekvizet',subst) --> "ekvizet".
-r('ekvivalent',subst) --> "ekvivalent".
-r('ekvipolent',adj) --> "ekvipolent".
-r('ekvinoks',subst) --> "ekvinoks".
-r('ekvilibr',subst) --> "ekvilibr".
-r('ekvatorial',subst) --> "ekvatorial".
-r('ekvator',subst) --> "ekvator".
-r('ekvaci',subst) --> "ekvaci".
-r('ekv',subst) --> "ekv".
-r('ekumen',subst) --> "ekumen".
-r('ektropi',subst) --> "ektropi".
-r('ektopi',subst) --> "ektopi".
-r('eksud',ntr) --> "eksud".
-r('ekstrem',adj) --> "ekstrem".
-r('ekstravertit',subst) --> "ekstravertit".
-r('ekstravert',adj) --> "ekstravert".
-r('ekstravaganc',subst) --> "ekstravaganc".
-r('ekstrapol',tr) --> "ekstrapol".
-r('ekstrakt',subst) --> "ekstrakt".
-r('ekstradici',tr) --> "ekstradici".
-r('ekstr',adj) --> "ekstr".
-r('eksterpol',tr) --> "eksterpol".
-r('eksterm',tr) --> "eksterm".
-r('ekstemporal',subst) --> "ekstemporal".
-r('ekstazi',subst) --> "ekstazi".
-r('ekstaz',subst) --> "ekstaz".
-r('ekspresionist',subst) --> "ekspresionist".
-r('ekspresionism',subst) --> "ekspresionism".
-r('ekspres',subst) --> "ekspres".
-r('ekspozici',subst) --> "ekspozici".
-r('ekspoz',tr) --> "ekspoz".
-r('eksport',tr) --> "eksport".
-r('eksponent',subst) --> "eksponent".
-r('eksponencial',subst) --> "eksponencial".
-r('ekspon',tr) --> "ekspon".
-r('ekspluat',tr) --> "ekspluat".
-r('eksplod',ntr) --> "eksplod".
-r('eksplik',tr) --> "eksplik".
-r('ekspertiz',tr) --> "ekspertiz".
-r('ekspert',subst) --> "ekspert".
-r('eksperiment',subst) --> "eksperiment".
-r('ekspektor',ntr) --> "ekspektor".
-r('ekspekt',subst) --> "ekspekt".
-r('ekspedici',subst) --> "ekspedici".
-r('eksped',tr) --> "eksped".
-r('ekspansi',subst) --> "ekspansi".
-r('ekslibris',subst) --> "ekslibris".
-r('ekskuz',tr) --> "ekskuz".
-r('ekskurs',subst) --> "ekskurs".
-r('ekskrement',subst) --> "ekskrement".
-r('ekskreci',subst) --> "ekskreci".
-r('ekskoriaci',subst) --> "ekskoriaci".
-r('ekskomunik',tr) --> "ekskomunik".
-r('ekskluziv',adj) --> "ekskluziv".
-r('eksklud',verb) --> "eksklud".
-r('eksklamaci',subst) --> "eksklamaci".
-r('ekscitator',subst) --> "ekscitator".
-r('ekscit',tr) --> "ekscit".
-r('eksces',subst) --> "eksces".
-r('ekscepci',subst) --> "ekscepci".
-r('ekscentrik',subst) --> "ekscentrik".
-r('ekscentr',adj) --> "ekscentr".
-r('ekscelenc',subst) --> "ekscelenc".
-r('eksa',pref) --> "eksa".
-r('eks',pref) --> "eks".
-r('ekran',subst) --> "ekran".
-r('ekosistem',subst) --> "ekosistem".
-r('ekonomik',subst) --> "ekonomik".
-r('ekonomi',subst) --> "ekonomi".
-r('ekonom',subst) --> "ekonom".
-r('ekologi',subst) --> "ekologi".
-r('ekolog',subst) --> "ekolog".
-r('eklog',subst) --> "eklog".
-r('ekliptik',subst) --> "ekliptik".
-r('eklips',subst) --> "eklips".
-r('ekleziologi',subst) --> "ekleziologi".
-r('eklezi',subst) --> "eklezi".
-r('eklektik',adj) --> "eklektik".
-r('eklampsi',subst) --> "eklampsi".
-r('ekip',tr) --> "ekip".
-r('ekinoderm',subst) --> "ekinoderm".
-r('ekin',subst) --> "ekin".
-r('ekimoz',subst) --> "ekimoz".
-r('ekidn',subst) --> "ekidn".
-r('eki',subst) --> "eki".
-r('ekaŭdat',subst) --> "ekaŭdat".
-r('ekarte',subst) --> "ekarte".
-r('ekart',subst) --> "ekart".
-r('ejnŝtejni',subst) --> "ejnŝtejni".
-r('ejnstejni',subst) --> "ejnstejni".
-r('ejakul',ntr) --> "ejakul".
-r('egret',subst) --> "egret".
-r('egopodi',subst) --> "egopodi".
-r('egoist',subst) --> "egoist".
-r('egoism',subst) --> "egoism".
-r('ego',subst) --> "ego".
-r('eglefin',subst) --> "eglefin".
-r('eglanteri',subst) --> "eglanteri".
-r('egiptologi',subst) --> "egiptologi".
-r('egiptolog',subst) --> "egiptolog".
-r('egipt',subst) --> "egipt".
-r('egid',subst) --> "egid".
-r('egal',adj) --> "egal".
-r('efod',subst) --> "efod".
-r('efluv',subst) --> "efluv".
-r('efloresk',ntr) --> "efloresk".
-r('efik',ntr) --> "efik".
-r('efervesk',ntr) --> "efervesk".
-r('efemerid',subst) --> "efemerid".
-r('efemered',subst) --> "efemered".
-r('efemer',best) --> "efemer".
-r('efektiv',adj) --> "efektiv".
-r('efekt',subst) --> "efekt".
-r('efedr',subst) --> "efedr".
-r('edz',subst) --> "edz".
-r('eduk',tr) --> "eduk".
-r('edr',subst) --> "edr".
-r('editor',subst) --> "editor".
-r('edinol',subst) --> "edinol".
-r('edil',subst) --> "edil".
-r('edikt',subst) --> "edikt".
-r('edif',tr) --> "edif".
-r('edem',subst) --> "edem".
-r('edelvejs',subst) --> "edelvejs".
-r('ebur',subst) --> "ebur".
-r('ebul',subst) --> "ebul".
-r('ebri',adj) --> "ebri".
-r('ebonit',subst) --> "ebonit".
-r('ebon',subst) --> "ebon".
-r('eben',adj) --> "eben".
-r('duŝ',tr) --> "duŝ".
-r('duz',subst) --> "duz".
-r('dut',subst) --> "dut".
-r('duri',subst) --> "duri".
-r('duramatr',subst) --> "duramatr".
-r('dur',subst) --> "dur".
-r('dur',adj) --> "dur".
-r('duplikat',subst) --> "duplikat".
-r('dupleks',adj) --> "dupleks".
-r('dup',subst) --> "dup".
-r('duopsoni',subst) --> "duopsoni".
-r('duopol',subst) --> "duopol".
-r('duodenit',subst) --> "duodenit".
-r('duoden',subst) --> "duoden".
-r('dung',tr) --> "dung".
-r('dun',subst) --> "dun".
-r('dumping',subst) --> "dumping".
-r('dumdum',subst) --> "dumdum".
-r('dukt',subst) --> "dukt".
-r('dukat',subst) --> "dukat".
-r('duk',subst) --> "duk".
-r('dugong',best) --> "dugong".
-r('duet',subst) --> "duet".
-r('duenj',subst) --> "duenj".
-r('duel',subst) --> "duel".
-r('dubni',subst) --> "dubni".
-r('dublon',subst) --> "dublon".
-r('dubl',tr) --> "dubl".
-r('dub',tr) --> "dub".
-r('dualism',subst) --> "dualism".
-r('dual',subst) --> "dual".
-r('druz',subst) --> "druz".
-r('drup',subst) --> "drup".
-r('druid',subst) --> "druid".
-r('droŝk',subst) --> "droŝk".
-r('drozofil',subst) --> "drozofil".
-r('dros',subst) --> "dros".
-r('dron',ntr) --> "dron".
-r('dromedar',subst) --> "dromedar".
-r('drog',subst) --> "drog".
-r('driv',ntr) --> "driv".
-r('drink',tr) --> "drink".
-r('dril',subst) --> "dril".
-r('dribl',verb) --> "dribl".
-r('driad',subst) --> "driad".
-r('dres',tr) --> "dres".
-r('dren',tr) --> "dren".
-r('drelik',subst) --> "drelik".
-r('drednaŭt',subst) --> "drednaŭt".
-r('draŝ',tr) --> "draŝ".
-r('draĥm',subst) --> "draĥm".
-r('drat',subst) --> "drat".
-r('drast',adj) --> "drast".
-r('drapir',tr) --> "drapir".
-r('drap',subst) --> "drap".
-r('dramaturgi',subst) --> "dramaturgi".
-r('dram',subst) --> "dram".
-r('drakunkol',subst) --> "drakunkol".
-r('drakon',adj) --> "drakon".
-r('drakm',subst) --> "drakm".
-r('drak',subst) --> "drak".
-r('dragon',subst) --> "dragon".
-r('drag',tr) --> "drag".
-r('dracen',subst) --> "dracen".
-r('doĝ',subst) --> "doĝ".
-r('dozometr',subst) --> "dozometr".
-r('doz',subst) --> "doz".
-r('dot',tr) --> "dot".
-r('dosier',subst) --> "dosier".
-r('dors',subst) --> "dors".
-r('dorn',subst) --> "dorn".
-r('dorm',ntr) --> "dorm".
-r('dorlot',tr) --> "dorlot".
-r('dopamin',subst) --> "dopamin".
-r('donĵuan',subst) --> "donĵuan".
-r('donkiĥot',subst) --> "donkiĥot".
-r('dong',subst) --> "dong".
-r('donac',tr) --> "donac".
-r('don',tr) --> "don".
-r('dominik',subst) --> "dominik".
-r('dominik',subst) --> "dominik".
-r('domini',subst) --> "domini".
-r('domin',tr) --> "domin".
-r('domicil',subst) --> "domicil".
-r('domen',subst) --> "domen".
-r('domaĝ',subst) --> "domaĝ".
-r('dom',subst) --> "dom".
-r('dolĉamar',subst) --> "dolĉamar".
-r('dolĉ',adj) --> "dolĉ".
-r('dolor',tr) --> "dolor".
-r('dolmen',subst) --> "dolmen".
-r('doliĥocefal',subst) --> "doliĥocefal".
-r('dolin',subst) --> "dolin".
-r('dolikocefal',subst) --> "dolikocefal".
-r('dolar',subst) --> "dolar".
-r('dokumentari',subst) --> "dokumentari".
-r('dokument',subst) --> "dokument".
-r('doktrin',subst) --> "doktrin".
-r('doktor',subst) --> "doktor".
-r('dokt',adj) --> "dokt".
-r('dok',subst) --> "dok".
-r('dojen',subst) --> "dojen".
-r('dogm',subst) --> "dogm".
-r('dogan',subst) --> "dogan".
-r('dog',subst) --> "dog".
-r('dodekafonism',subst) --> "dodekafonism".
-r('docent',subst) --> "docent".
-r('diĥotomi',subst) --> "diĥotomi".
-r('diĝest',subst) --> "diĝest".
-r('dizert',verb) --> "dizert".
-r('dizel',subst) --> "dizel".
-r('dizajn',tr) --> "dizajn".
-r('divorc',ntr) --> "divorc".
-r('divizor',subst) --> "divizor".
-r('divizi',subst) --> "divizi".
-r('dividend',subst) --> "dividend".
-r('divid',tr) --> "divid".
-r('diverĝenc',subst) --> "diverĝenc".
-r('diverĝ',ntr) --> "diverĝ".
-r('divertikulit',subst) --> "divertikulit".
-r('divertikul',subst) --> "divertikul".
-r('diversi',verb) --> "diversi".
-r('divers',adj) --> "divers".
-r('diven',tr) --> "diven".
-r('divan',subst) --> "divan".
-r('divalent',subst) --> "divalent".
-r('diurn',subst) --> "diurn".
-r('diurez',subst) --> "diurez".
-r('ditiramb',subst) --> "ditiramb".
-r('disĉipl',subst) --> "disĉipl".
-r('disuri',subst) --> "disuri".
-r('disturb',verb) --> "disturb".
-r('distrikt',subst) --> "distrikt".
-r('distribuci',subst) --> "distribuci".
-r('distribu',tr) --> "distribu".
-r('distr',tr) --> "distr".
-r('distord',subst) --> "distord".
-r('disting',tr) --> "disting".
-r('distil',tr) --> "distil".
-r('distik',subst) --> "distik".
-r('distanc',subst) --> "distanc".
-r('dist',adj) --> "dist".
-r('disput',ntr) --> "disput".
-r('disprozi',subst) --> "disprozi".
-r('dispozici',subst) --> "dispozici".
-r('dispon',tr) --> "dispon".
-r('dispne',subst) --> "dispne".
-r('dispers',verb) --> "dispers".
-r('dispepsi',subst) --> "dispepsi".
-r('dispensari',subst) --> "dispensari".
-r('disonanc',subst) --> "disonanc".
-r('disoci',tr) --> "disoci".
-r('dism',subst) --> "dism".
-r('disleksi',subst) --> "disleksi".
-r('diskut',ntr) --> "diskut".
-r('diskurs',subst) --> "diskurs".
-r('diskriminant',subst) --> "diskriminant".
-r('diskriminaci',tr) --> "diskriminaci".
-r('diskrimin',verb) --> "diskrimin".
-r('diskret',adj) --> "diskret".
-r('diskredit',verb) --> "diskredit".
-r('diskotek',subst) --> "diskotek".
-r('diskont',tr) --> "diskont".
-r('diskografi',subst) --> "diskografi".
-r('disked',subst) --> "disked".
-r('disk',subst) --> "disk".
-r('disjunkci',subst) --> "disjunkci".
-r('disip',verb) --> "disip".
-r('disident',subst) --> "disident".
-r('disertaci',subst) --> "disertaci".
-r('disert',ntr) --> "disert".
-r('disenteri',subst) --> "disenteri".
-r('disdegn',tr) --> "disdegn".
-r('disciplin',subst) --> "disciplin".
-r('direktric',subst) --> "direktric".
-r('direktori',subst) --> "direktori".
-r('direktor',subst) --> "direktor".
-r('direktiv',subst) --> "direktiv".
-r('direkt',tr) --> "direkt".
-r('direkci',subst) --> "direkci".
-r('dir',tr) --> "dir".
-r('diptik',subst) --> "diptik".
-r('dipter',subst) --> "dipter".
-r('dipsakac',subst) --> "dipsakac".
-r('dipsak',subst) --> "dipsak".
-r('diplomati',subst) --> "diplomati".
-r('diplomat',subst) --> "diplomat".
-r('diplom',subst) --> "diplom".
-r('diplodok',subst) --> "diplodok".
-r('dipleks',adj) --> "dipleks".
-r('dioptrik',subst) --> "dioptrik".
-r('dioptri',subst) --> "dioptri".
-r('diod',subst) --> "diod".
-r('diocez',subst) --> "diocez".
-r('dinoteri',subst) --> "dinoteri".
-r('dinosaŭr',subst) --> "dinosaŭr".
-r('dinornit',subst) --> "dinornit".
-r('dinasti',subst) --> "dinasti".
-r('dinar',subst) --> "dinar".
-r('dinamotor',subst) --> "dinamotor".
-r('dinamometr',subst) --> "dinamometr".
-r('dinamit',subst) --> "dinamit".
-r('dinamism',subst) --> "dinamism".
-r('dinamik',subst) --> "dinamik".
-r('dinam',subst) --> "dinam".
-r('diminutiv',subst) --> "diminutiv".
-r('dimensi',subst) --> "dimensi".
-r('dimanĉ',subst) --> "dimanĉ".
-r('diluvi',subst) --> "diluvi".
-r('diluv',subst) --> "diluv".
-r('dilu',tr) --> "dilu".
-r('diliĝenc',subst) --> "diliĝenc".
-r('diligent',adj) --> "diligent".
-r('diletant',subst) --> "diletant".
-r('dilem',subst) --> "dilem".
-r('dilat',tr) --> "dilat".
-r('diktatur',subst) --> "diktatur".
-r('diktator',subst) --> "diktator".
-r('diktafon',subst) --> "diktafon".
-r('dikt',tr) --> "dikt".
-r('diklorid',subst) --> "diklorid".
-r('diklin',adj) --> "diklin".
-r('dik',adj) --> "dik".
-r('dign',subst) --> "dign".
-r('digitalin',subst) --> "digitalin".
-r('digital',subst) --> "digital".
-r('digest',tr) --> "digest".
-r('dig',subst) --> "dig".
-r('difuz',ntr) --> "difuz".
-r('diftong',subst) --> "diftong".
-r('difterit',subst) --> "difterit".
-r('difteri',subst) --> "difteri".
-r('difraktometr',subst) --> "difraktometr".
-r('difrakt',tr) --> "difrakt".
-r('difin',tr) --> "difin".
-r('diferencial',subst) --> "diferencial".
-r('diferenc',ntr) --> "diferenc".
-r('difekt',tr) --> "difekt".
-r('diet',subst) --> "diet".
-r('dies',subst) --> "dies".
-r('dierez',subst) --> "dierez".
-r('dielektrik',subst) --> "dielektrik".
-r('didelfed',subst) --> "didelfed".
-r('didelf',best) --> "didelf".
-r('didaktik',subst) --> "didaktik".
-r('diboĉ',ntr) --> "diboĉ".
-r('diatrib',subst) --> "diatrib".
-r('diaton',adj) --> "diaton".
-r('diatez',subst) --> "diatez".
-r('diaterm',adj) --> "diaterm".
-r('diastol',subst) --> "diastol".
-r('diastaz',subst) --> "diastaz".
-r('diaspor',subst) --> "diaspor".
-r('dias',subst) --> "dias".
-r('diartroz',subst) --> "diartroz".
-r('diare',subst) --> "diare".
-r('diapozitiv',subst) --> "diapozitiv".
-r('diapazon',subst) --> "diapazon".
-r('diant',subst) --> "diant".
-r('diametr',subst) --> "diametr".
-r('diamant',subst) --> "diamant".
-r('diamagnet',subst) --> "diamagnet".
-r('dialog',subst) --> "dialog".
-r('dializ',tr) --> "dializ".
-r('dialektologi',subst) --> "dialektologi".
-r('dialektolog',subst) --> "dialektolog".
-r('dialektik',subst) --> "dialektik".
-r('dialekt',subst) --> "dialekt".
-r('diakron',adj) --> "diakron".
-r('diakrit',tr) --> "diakrit".
-r('diakon',subst) --> "diakon".
-r('diakilon',subst) --> "diakilon".
-r('diakil',subst) --> "diakil".
-r('diagram',subst) --> "diagram".
-r('diagonal',subst) --> "diagonal".
-r('diagnoz',subst) --> "diagnoz".
-r('diafragm',subst) --> "diafragm".
-r('diafiz',subst) --> "diafiz".
-r('diafan',adj) --> "diafan".
-r('diadem',subst) --> "diadem".
-r('diabol',subst) --> "diabol".
-r('diabl',subst) --> "diabl".
-r('diabetologi',subst) --> "diabetologi".
-r('diabetolog',subst) --> "diabetolog".
-r('diabet',subst) --> "diabet".
-r('di',subst) --> "di".
-r('deŭteri',subst) --> "deŭteri".
-r('deĵor',ntr) --> "deĵor".
-r('deĉifr',tr) --> "deĉifr".
-r('dezir',tr) --> "dezir".
-r('dezert',subst) --> "dezert".
-r('dezajn',tr) --> "dezajn".
-r('devon',subst) --> "devon".
-r('deviz',subst) --> "deviz".
-r('devi',ntr) --> "devi".
-r('devanc',tr) --> "devanc".
-r('devanagar',adj) --> "devanagar".
-r('dev',tr) --> "dev".
-r('detru',tr) --> "detru".
-r('detonaci',verb) --> "detonaci".
-r('determinism',subst) --> "determinism".
-r('determin',tr) --> "determin".
-r('detektor',subst) --> "detektor".
-r('detektiv',subst) --> "detektiv".
-r('detekt',verb) --> "detekt".
-r('detal',subst) --> "detal".
-r('destrojer',subst) --> "destrojer".
-r('destin',tr) --> "destin".
-r('despot',subst) --> "despot".
-r('desmodi',subst) --> "desmodi".
-r('desinfekt',tr) --> "desinfekt".
-r('desert',subst) --> "desert".
-r('desegn',tr) --> "desegn".
-r('derviŝ',subst) --> "derviŝ".
-r('dermit',subst) --> "dermit".
-r('dermatoz',subst) --> "dermatoz".
-r('dermatologi',subst) --> "dermatologi".
-r('dermatolog',subst) --> "dermatolog".
-r('dermapter',subst) --> "dermapter".
-r('derm',subst) --> "derm".
-r('deriv',tr) --> "deriv".
-r('deput',tr) --> "deput".
-r('deprim',tr) --> "deprim".
-r('depresi',subst) --> "depresi".
-r('depozici',verb) --> "depozici".
-r('depot',subst) --> "depot".
-r('depon',tr) --> "depon".
-r('deploj',verb) --> "deploj".
-r('depeŝ',subst) --> "depeŝ".
-r('departement',subst) --> "departement".
-r('deontologi',subst) --> "deontologi".
-r('denunc',tr) --> "denunc".
-r('dental',subst) --> "dental".
-r('dent',subst) --> "dent".
-r('dens',adj) --> "dens".
-r('denominator',subst) --> "denominator".
-r('dendrokronologi',subst) --> "dendrokronologi".
-r('dendrit',subst) --> "dendrit".
-r('denar',subst) --> "denar".
-r('demotik',adj) --> "demotik".
-r('demoraliz',tr) --> "demoraliz".
-r('demonstrativ',subst) --> "demonstrativ".
-r('demonstr',tr) --> "demonstr".
-r('demonologi',subst) --> "demonologi".
-r('demon',subst) --> "demon".
-r('demokrati',subst) --> "demokrati".
-r('demokrat',subst) --> "demokrat".
-r('demografi',subst) --> "demografi".
-r('demograf',subst) --> "demograf".
-r('demisi',verb) --> "demisi".
-r('demimond',subst) --> "demimond".
-r('dement',tr) --> "dement".
-r('demenc',subst) --> "demenc".
-r('demarŝ',subst) --> "demarŝ".
-r('demarkaci',verb) --> "demarkaci".
-r('demand',tr) --> "demand".
-r('demagogi',subst) --> "demagogi".
-r('demagog',subst) --> "demagog".
-r('deltoid',subst) --> "deltoid".
-r('deltaplan',subst) --> "deltaplan".
-r('delt',subst) --> "delt".
-r('delkreder',subst) --> "delkreder".
-r('delir',ntr) --> "delir".
-r('delikt',subst) --> "delikt".
-r('delikat',adj) --> "delikat".
-r('delic',subst) --> "delic".
-r('delfini',subst) --> "delfini".
-r('delfened',subst) --> "delfened".
-r('delfen',best) --> "delfen".
-r('delegaci',subst) --> "delegaci".
-r('deleg',tr) --> "deleg".
-r('dekt',subst) --> "dekt".
-r('dekstrin',subst) --> "dekstrin".
-r('dekstr',adj) --> "dekstr".
-r('dekret',subst) --> "dekret".
-r('dekrement',subst) --> "dekrement".
-r('dekoraci',subst) --> "dekoraci".
-r('dekor',tr) --> "dekor".
-r('dekolt',tr) --> "dekolt".
-r('dekokt',tr) --> "dekokt".
-r('dekliv',subst) --> "dekliv".
-r('deklinaci',subst) --> "deklinaci".
-r('deklaraci',subst) --> "deklaraci".
-r('deklar',tr) --> "deklar".
-r('deklam',tr) --> "deklam".
-r('dekant',tr) --> "dekant".
-r('dekan',subst) --> "dekan".
-r('dekametr',subst) --> "dekametr".
-r('dekalog',subst) --> "dekalog".
-r('dekalitr',subst) --> "dekalitr".
-r('dekagram',subst) --> "dekagram".
-r('dekadenc',ntr) --> "dekadenc".
-r('dekad',subst) --> "dekad".
-r('deka',pref) --> "deka".
-r('deism',subst) --> "deism".
-r('deikt',subst) --> "deikt".
-r('dehisk',ntr) --> "dehisk".
-r('degrad',tr) --> "degrad".
-r('degn',tr) --> "degn".
-r('degener',ntr) --> "degener".
-r('degel',ntr) --> "degel".
-r('deflaci',subst) --> "deflaci".
-r('definitiv',adj) --> "definitiv".
-r('defil',ntr) --> "defil".
-r('deficit',subst) --> "deficit".
-r('defi',tr) --> "defi".
-r('defetism',subst) --> "defetism".
-r('defensiv',subst) --> "defensiv".
-r('defend',tr) --> "defend".
-r('dedukt',tr) --> "dedukt".
-r('dediĉ',tr) --> "dediĉ".
-r('decimetr',subst) --> "decimetr".
-r('decimal',adj) --> "decimal".
-r('decilitr',subst) --> "decilitr".
-r('decigram',subst) --> "decigram".
-r('decidu',adj) --> "decidu".
-r('decid',tr) --> "decid".
-r('deci',pref) --> "deci".
-r('decembr',subst) --> "decembr".
-r('dec',ntr) --> "dec".
-r('debut',ntr) --> "debut".
-r('debitor',subst) --> "debitor".
-r('debit',subst) --> "debit".
-r('debet',subst) --> "debet".
-r('debat',subst) --> "debat".
-r('debarkader',subst) --> "debarkader".
-r('deal',adv) --> "deal".
-r('daŭr',ntr) --> "daŭr".
-r('daŭb',subst) --> "daŭb".
-r('daŭ',subst) --> "daŭ".
-r('daziped',subst) --> "daziped".
-r('dazip',subst) --> "dazip".
-r('datur',subst) --> "datur".
-r('datum',subst) --> "datum".
-r('dativ',subst) --> "dativ".
-r('daten',subst) --> "daten".
-r('data',subst) --> "data".
-r('dat',subst) --> "dat".
-r('dartr',subst) --> "dartr".
-r('darmŝtati',subst) --> "darmŝtati".
-r('danĝer',subst) --> "danĝer".
-r('dank',tr) --> "dank".
-r('dand',subst) --> "dand".
-r('danc',ntr) --> "danc".
-r('dan',subst) --> "dan".
-r('damp',tr) --> "damp".
-r('damn',tr) --> "damn".
-r('damaĝ',tr) --> "damaĝ".
-r('damasken',tr) --> "damasken".
-r('damask',subst) --> "damask".
-r('dama',best) --> "dama".
-r('dam',subst) --> "dam".
-r('daltonism',subst) --> "daltonism".
-r('dalmatik',subst) --> "dalmatik".
-r('dali',subst) --> "dali".
-r('dalajlama',subst) --> "dalajlama".
-r('dal',subst) --> "dal".
-r('daktil',subst) --> "daktil".
-r('daktil',subst) --> "daktil".
-r('dajmon',subst) --> "dajmon".
-r('dajak',subst) --> "dajak".
-r('dagerotipi',subst) --> "dagerotipi".
-r('dagerotip',subst) --> "dagerotip".
-r('dag',subst) --> "dag".
-r('dafn',subst) --> "dafn".
-r('dadaism',subst) --> "dadaism".
-r('cunam',subst) --> "cunam".
-r('cum',subst) --> "cum".
-r('col',subst) --> "col".
-r('cizel',tr) --> "cizel".
-r('civit',subst) --> "civit".
-r('civilizaci',subst) --> "civilizaci".
-r('civiliz',tr) --> "civiliz".
-r('civil',adj) --> "civil".
-r('citrus',subst) --> "citrus".
-r('citron',subst) --> "citron".
-r('citr',subst) --> "citr".
-r('citozin',subst) --> "citozin".
-r('citosol',subst) --> "citosol".
-r('citoplasm',subst) --> "citoplasm".
-r('citologi',subst) --> "citologi".
-r('citolog',subst) --> "citolog".
-r('citiz',subst) --> "citiz".
-r('citar',subst) --> "citar".
-r('citadel',subst) --> "citadel".
-r('cit',tr) --> "cit".
-r('cistern',subst) --> "cistern".
-r('cistac',subst) --> "cistac".
-r('cisoid',subst) --> "cisoid".
-r('cirus',subst) --> "cirus".
-r('cirsi',subst) --> "cirsi".
-r('ciroz',subst) --> "ciroz".
-r('cirkvit',subst) --> "cirkvit".
-r('cirkumfleks',subst) --> "cirkumfleks".
-r('cirkumcid',tr) --> "cirkumcid".
-r('cirkuler',subst) --> "cirkuler".
-r('cirkul',ntr) --> "cirkul".
-r('cirku',subst) --> "cirku".
-r('cirkonstanc',subst) --> "cirkonstanc".
-r('cirkonferenc',subst) --> "cirkonferenc".
-r('cirkl',subst) --> "cirkl".
-r('cirkel',subst) --> "cirkel".
-r('cirkaet',subst) --> "cirkaet".
-r('cirk',subst) --> "cirk".
-r('cir',subst) --> "cir".
-r('ciprined',subst) --> "ciprined".
-r('ciprin',best) --> "ciprin".
-r('cipresac',subst) --> "cipresac".
-r('cipres',subst) --> "cipres".
-r('ciperac',subst) --> "ciperac".
-r('cinik',adj) --> "cinik".
-r('cindr',subst) --> "cindr".
-r('cinc',ntr) --> "cinc".
-r('cinam',subst) --> "cinam".
-r('cinabr',subst) --> "cinabr".
-r('cimitar',subst) --> "cimitar".
-r('cimed',subst) --> "cimed".
-r('cimbal',subst) --> "cimbal".
-r('cimati',subst) --> "cimati".
-r('cim',subst) --> "cim".
-r('cilindr',subst) --> "cilindr".
-r('cili',subst) --> "cili".
-r('cikut',subst) --> "cikut".
-r('cikori',subst) --> "cikori".
-r('cikonied',subst) --> "cikonied".
-r('cikoni',subst) --> "cikoni".
-r('ciklotron',subst) --> "ciklotron".
-r('ciklop',subst) --> "ciklop".
-r('ciklon',subst) --> "ciklon".
-r('cikloid',subst) --> "cikloid".
-r('ciklamen',subst) --> "ciklamen".
-r('cikl',subst) --> "cikl".
-r('cikatr',subst) --> "cikatr".
-r('cikad',subst) --> "cikad".
-r('cign',best) --> "cign".
-r('cigared',subst) --> "cigared".
-r('cigar',subst) --> "cigar".
-r('cigan',subst) --> "cigan".
-r('cifer',subst) --> "cifer".
-r('cidr',subst) --> "cidr".
-r('cidoni',subst) --> "cidoni".
-r('cidar',subst) --> "cidar".
-r('cicer',subst) --> "cicer".
-r('cic',subst) --> "cic".
-r('cibori',subst) --> "cibori".
-r('cibol',subst) --> "cibol".
-r('cibet',subst) --> "cibet".
-r('cibernetik',subst) --> "cibernetik".
-r('cian',subst) --> "cian".
-r('cezur',subst) --> "cezur".
-r('cezi',subst) --> "cezi".
-r('cetoni',subst) --> "cetoni".
-r('ceter',adj) --> "ceter".
-r('cetac',subst) --> "cetac".
-r('cervik',subst) --> "cervik".
-r('cerved',subst) --> "cerved".
-r('cerv',best) --> "cerv".
-r('ceruz',subst) --> "ceruz".
-r('cerumen',subst) --> "cerumen".
-r('cert',adj) --> "cert".
-r('cerkopiteked',subst) --> "cerkopiteked".
-r('cerkopitek',best) --> "cerkopitek".
-r('ceri',subst) --> "ceri".
-r('cerezin',subst) --> "cerezin".
-r('ceremoni',subst) --> "ceremoni".
-r('cerefoli',subst) --> "cerefoli".
-r('cerebel',subst) --> "cerebel".
-r('cereal',subst) --> "cereal".
-r('cercis',subst) --> "cercis".
-r('cerb',subst) --> "cerb".
-r('cerast',best) --> "cerast".
-r('ceramik',subst) --> "ceramik".
-r('cerambik',subst) --> "cerambik".
-r('cep',subst) --> "cep".
-r('cenzur',tr) --> "cenzur".
-r('cenzor',subst) --> "cenzor".
-r('centripet',adj) --> "centripet".
-r('centriol',subst) --> "centriol".
-r('centrifug',adj) --> "centrifug".
-r('centraliz',tr) --> "centraliz".
-r('central',subst) --> "central".
-r('centr',subst) --> "centr".
-r('centimetr',subst) --> "centimetr".
-r('centim',subst) --> "centim".
-r('centilitr',subst) --> "centilitr".
-r('centigram',subst) --> "centigram".
-r('centiar',subst) --> "centiar".
-r('centi',pref) --> "centi".
-r('centezimal',adj) --> "centezimal".
-r('centaŭre',subst) --> "centaŭre".
-r('centaŭr',subst) --> "centaŭr".
-r('centav',subst) --> "centav".
-r('cens',verb) --> "cens".
-r('cenotaf',subst) --> "cenotaf".
-r('cenoman',subst) --> "cenoman".
-r('cenobit',subst) --> "cenobit".
-r('cend',subst) --> "cend".
-r('cement',subst) --> "cement".
-r('cembr',subst) --> "cembr".
-r('celuloz',subst) --> "celuloz".
-r('celuloid',subst) --> "celuloid".
-r('celulit',subst) --> "celulit".
-r('celoidin',subst) --> "celoidin".
-r('celofan',subst) --> "celofan".
-r('celiaki',subst) --> "celiaki".
-r('celest',subst) --> "celest".
-r('celeri',subst) --> "celeri".
-r('celebr',tr) --> "celebr".
-r('celastrac',subst) --> "celastrac".
-r('celakant',subst) --> "celakant".
-r('celadon',subst) --> "celadon".
-r('cel',verb) --> "cel".
-r('cekum',subst) --> "cekum".
-r('cejan',subst) --> "cejan".
-r('cefalotorak',subst) --> "cefalotorak".
-r('cefalopod',subst) --> "cefalopod".
-r('cedrat',subst) --> "cedrat".
-r('cedr',subst) --> "cedr".
-r('ced',ntr) --> "ced".
-r('cece',subst) --> "cece".
-r('car',subst) --> "car".
-r('buŝel',subst) --> "buŝel".
-r('buŝ',subst) --> "buŝ".
-r('buĥt',subst) --> "buĥt".
-r('buĝet',subst) --> "buĝet".
-r('buĉ',tr) --> "buĉ".
-r('buzuk',subst) --> "buzuk".
-r('buton',subst) --> "buton".
-r('butler',subst) --> "butler".
-r('butik',subst) --> "butik".
-r('buter',subst) --> "buter".
-r('bute',subst) --> "bute".
-r('bust',subst) --> "bust".
-r('busprit',subst) --> "busprit".
-r('bus',subst) --> "bus".
-r('burĝon',subst) --> "burĝon".
-r('burĝ',subst) --> "burĝ".
-r('burs',subst) --> "burs".
-r('burokrati',subst) --> "burokrati".
-r('burokrat',subst) --> "burokrat".
-r('buro',subst) --> "buro".
-r('burnus',subst) --> "burnus".
-r('burlesk',adj) --> "burlesk".
-r('burkin',subst) --> "burkin".
-r('burjat',adj) --> "burjat".
-r('burg',subst) --> "burg".
-r('bure',subst) --> "bure".
-r('burd',subst) --> "burd".
-r('burbon',subst) --> "burbon".
-r('burask',subst) --> "burask".
-r('bunt',adj) --> "bunt".
-r('bunrak',subst) --> "bunrak".
-r('bumerang',subst) --> "bumerang".
-r('bum',subst) --> "bum".
-r('bulvard',subst) --> "bulvard".
-r('bulten',subst) --> "bulten".
-r('bulk',subst) --> "bulk".
-r('buljon',subst) --> "buljon".
-r('bulgar',subst) --> "bulgar".
-r('bulen',subst) --> "bulen".
-r('bule',subst) --> "bule".
-r('buldoz',subst) --> "buldoz".
-r('buldog',subst) --> "buldog".
-r('bulb',subst) --> "bulb".
-r('bul',subst) --> "bul".
-r('buksac',subst) --> "buksac".
-r('buks',subst) --> "buks".
-r('bukolik',subst) --> "bukolik".
-r('bukl',subst) --> "bukl".
-r('buked',subst) --> "buked".
-r('bukcen',subst) --> "bukcen".
-r('buk',subst) --> "buk".
-r('bugenvil',subst) --> "bugenvil".
-r('bufr',subst) --> "bufr".
-r('bufon',subst) --> "bufon".
-r('bufed',subst) --> "bufed".
-r('bufed',subst) --> "bufed".
-r('buf',best) --> "buf".
-r('budĝet',subst) --> "budĝet".
-r('buduar',subst) --> "buduar".
-r('budle',subst) --> "budle".
-r('budh',subst) --> "budh".
-r('buda',subst) --> "buda".
-r('bud',subst) --> "bud".
-r('bucer',subst) --> "bucer".
-r('bubu',subst) --> "bubu".
-r('bubon',subst) --> "bubon".
-r('bubal',subst) --> "bubal".
-r('bub',subst) --> "bub".
-r('bu',subst) --> "bu".
-r('brutal',adj) --> "brutal".
-r('brut',subst) --> "brut".
-r('brust',subst) --> "brust".
-r('brusk',tr) --> "brusk".
-r('brun',adj) --> "brun".
-r('brul',ntr) --> "brul".
-r('bru',ntr) --> "bru".
-r('broŝur',subst) --> "broŝur".
-r('broĉ',subst) --> "broĉ".
-r('brov',subst) --> "brov".
-r('bros',subst) --> "bros".
-r('bronz',subst) --> "bronz".
-r('bronkit',subst) --> "bronkit".
-r('bronk',subst) --> "bronk".
-r('bromeliac',subst) --> "bromeliac".
-r('brom',subst) --> "brom".
-r('brokol',subst) --> "brokol".
-r('brokant',tr) --> "brokant".
-r('brok',tr) --> "brok".
-r('brog',tr) --> "brog".
-r('brodkast',verb) --> "brodkast".
-r('brod',tr) --> "brod".
-r('briĝ',subst) --> "briĝ".
-r('briz',subst) --> "briz".
-r('brit',subst) --> "brit".
-r('brioĉ',subst) --> "brioĉ".
-r('brindz',subst) --> "brindz".
-r('briliant',subst) --> "briliant".
-r('bril',ntr) --> "bril".
-r('brik',subst) --> "brik".
-r('brigad',subst) --> "brigad".
-r('brig',subst) --> "brig".
-r('brid',subst) --> "brid".
-r('breĉ',subst) --> "breĉ".
-r('brevier',subst) --> "brevier".
-r('bret',subst) --> "bret".
-r('brems',subst) --> "brems".
-r('brelok',subst) --> "brelok".
-r('bred',tr) --> "bred".
-r('braŭning',subst) --> "braŭning".
-r('braĥicefal',subst) --> "braĥicefal".
-r('braĝ',subst) --> "braĝ".
-r('bravisim',adv) --> "bravisim".
-r('brav',adj) --> "brav".
-r('brasikac',subst) --> "brasikac".
-r('brasik',subst) --> "brasik".
-r('branĉ',subst) --> "branĉ".
-r('brankard',subst) --> "brankard".
-r('brank',subst) --> "brank".
-r('brand',subst) --> "brand".
-r('bran',subst) --> "bran".
-r('braman',subst) --> "braman".
-r('bram',subst) --> "bram".
-r('brakte',subst) --> "brakte".
-r('brakicefal',subst) --> "brakicefal".
-r('brak',subst) --> "brak".
-r('brajl',subst) --> "brajl".
-r('brajl',tr) --> "brajl".
-r('bradip',subst) --> "bradip".
-r('bracelet',subst) --> "bracelet".
-r('boŝ',subst) --> "boŝ".
-r('boĝi',subst) --> "boĝi".
-r('bovling',subst) --> "bovling".
-r('bovl',subst) --> "bovl".
-r('boved',subst) --> "boved".
-r('bov',subst) --> "bov".
-r('botel',subst) --> "botel".
-r('botaŭr',subst) --> "botaŭr".
-r('botanik',subst) --> "botanik".
-r('bot',subst) --> "bot".
-r('boston',subst) --> "boston".
-r('boston',subst) --> "boston".
-r('boson',subst) --> "boson".
-r('bosn',subst) --> "bosn".
-r('bosk',subst) --> "bosk".
-r('bosanov',subst) --> "bosanov".
-r('bors',subst) --> "bors".
-r('borneol',subst) --> "borneol".
-r('born',subst) --> "born".
-r('bori',subst) --> "bori".
-r('border',tr) --> "border".
-r('bordel',subst) --> "bordel".
-r('bord',subst) --> "bord".
-r('boraks',subst) --> "boraks".
-r('boragac',subst) --> "boragac".
-r('borag',subst) --> "borag".
-r('bor',tr) --> "bor".
-r('bor',subst) --> "bor".
-r('bonz',subst) --> "bonz".
-r('bonus',subst) --> "bonus".
-r('bonob',subst) --> "bonob".
-r('bonifik',subst) --> "bonifik".
-r('bong',subst) --> "bong".
-r('bon',adj) --> "bon".
-r('bombon',subst) --> "bombon".
-r('bombiksed',subst) --> "bombiksed".
-r('bombiks',subst) --> "bombiks".
-r('bombicil',subst) --> "bombicil".
-r('bombazin',subst) --> "bombazin".
-r('bombast',subst) --> "bombast".
-r('bombard',tr) --> "bombard".
-r('bombakac',subst) --> "bombakac".
-r('bombak',subst) --> "bombak".
-r('bomb',subst) --> "bomb".
-r('bolŝevist',subst) --> "bolŝevist".
-r('bolŝevism',subst) --> "bolŝevism".
-r('bolŝevik',subst) --> "bolŝevik".
-r('bolus',subst) --> "bolus".
-r('bolt',subst) --> "bolt".
-r('bolivud',subst) --> "bolivud".
-r('bolid',subst) --> "bolid".
-r('boletac',subst) --> "boletac".
-r('bolet',subst) --> "bolet".
-r('boler',subst) --> "boler".
-r('bolard',subst) --> "bolard".
-r('bol',ntr) --> "bol".
-r('boks',ntr) --> "boks".
-r('bokal',subst) --> "bokal".
-r('bojkot',tr) --> "bojkot".
-r('bojar',subst) --> "bojar".
-r('boj',verb) --> "boj".
-r('bogomil',subst) --> "bogomil".
-r('bodisatv',subst) --> "bodisatv".
-r('bodi',subst) --> "bodi".
-r('bocvan',subst) --> "bocvan".
-r('bobsled',subst) --> "bobsled".
-r('boben',subst) --> "boben".
-r('bobel',subst) --> "bobel".
-r('boat',subst) --> "boat".
-r('board',verb) --> "board".
-r('boaed',subst) --> "boaed".
-r('boac',subst) --> "boac".
-r('boa',best) --> "boa".
-r('bluz',subst) --> "bluz".
-r('blus',subst) --> "blus".
-r('blunderbuz',subst) --> "blunderbuz".
-r('bluf',ntr) --> "bluf".
-r('blu',adj) --> "blu".
-r('blov',ntr) --> "blov".
-r('blond',adj) --> "blond".
-r('blokad',subst) --> "blokad".
-r('blok',subst) --> "blok".
-r('blog',subst) --> "blog".
-r('blit',subst) --> "blit".
-r('blind',adj) --> "blind".
-r('blenore',subst) --> "blenore".
-r('blenoragi',subst) --> "blenoragi".
-r('blend',subst) --> "blend".
-r('blend',subst) --> "blend".
-r('blek',ntr) --> "blek".
-r('blefarit',subst) --> "blefarit".
-r('blazon',subst) --> "blazon".
-r('blaz',subst) --> "blaz".
-r('blat',subst) --> "blat".
-r('blastomer',subst) --> "blastomer".
-r('blasfem',tr) --> "blasfem".
-r('blanket',subst) --> "blanket".
-r('blank',adj) --> "blank".
-r('blag',subst) --> "blag".
-r('blabla',verb) --> "blabla".
-r('bizon',subst) --> "bizon".
-r('bizar',adj) --> "bizar".
-r('bivak',subst) --> "bivak".
-r('biv',subst) --> "biv".
-r('bitum',subst) --> "bitum".
-r('bitnik',subst) --> "bitnik".
-r('bit',subst) --> "bit".
-r('bit',subst) --> "bit".
-r('bisturi',subst) --> "bisturi".
-r('bistr',subst) --> "bistr".
-r('bismut',subst) --> "bismut".
-r('biskvit',subst) --> "biskvit".
-r('bisin',subst) --> "bisin".
-r('bisekc',verb) --> "bisekc".
-r('biret',subst) --> "biret".
-r('bird',subst) --> "bird".
-r('biplan',subst) --> "biplan".
-r('bioĥemi',subst) --> "bioĥemi".
-r('biotop',subst) --> "biotop".
-r('biostatistik',subst) --> "biostatistik".
-r('biosfer',subst) --> "biosfer".
-r('biopsi',subst) --> "biopsi".
-r('biontologi',subst) --> "biontologi".
-r('bionik',subst) --> "bionik".
-r('biomeĥanik',subst) --> "biomeĥanik".
-r('biometri',subst) --> "biometri".
-r('biomekanik',subst) --> "biomekanik".
-r('biomas',subst) --> "biomas".
-r('biologi',subst) --> "biologi".
-r('biolog',subst) --> "biolog".
-r('biokemi',subst) --> "biokemi".
-r('biografi',subst) --> "biografi".
-r('biograf',subst) --> "biograf".
-r('biogas',subst) --> "biogas".
-r('biofizik',subst) --> "biofizik".
-r('bioenergi',subst) --> "bioenergi".
-r('biodiversec',subst) --> "biodiversec".
-r('biodinamik',subst) --> "biodinamik".
-r('bio',pref) --> "bio".
-r('binom',subst) --> "binom".
-r('binokl',subst) --> "binokl".
-r('bing',subst) --> "bing".
-r('bind',tr) --> "bind".
-r('bimetalism',subst) --> "bimetalism".
-r('bilĝ',subst) --> "bilĝ".
-r('bilet',subst) --> "bilet".
-r('bild',subst) --> "bild".
-r('bilbok',subst) --> "bilbok".
-r('bilard',subst) --> "bilard".
-r('bilanc',subst) --> "bilanc".
-r('bil',subst) --> "bil".
-r('bikŝu',subst) --> "bikŝu".
-r('biks',subst) --> "biks".
-r('bikin',subst) --> "bikin".
-r('bijekci',subst) --> "bijekci".
-r('bigot',subst) --> "bigot".
-r('bigami',subst) --> "bigami".
-r('bifstek',subst) --> "bifstek".
-r('bier',subst) --> "bier".
-r('bienal',subst) --> "bienal".
-r('bien',subst) --> "bien".
-r('biel',subst) --> "biel".
-r('bidermajr',subst) --> "bidermajr".
-r('bide',subst) --> "bide".
-r('bid',subst) --> "bid".
-r('bicikl',subst) --> "bicikl".
-r('biceps',subst) --> "biceps".
-r('bibliotek',subst) --> "bibliotek".
-r('bibliografi',subst) --> "bibliografi".
-r('bibliograf',subst) --> "bibliograf".
-r('bias',subst) --> "bias".
-r('bezon',tr) --> "bezon".
-r('bezoar',subst) --> "bezoar".
-r('bevel',subst) --> "bevel".
-r('betulac',subst) --> "betulac".
-r('betul',subst) --> "betul".
-r('betonik',subst) --> "betonik".
-r('beton',subst) --> "beton".
-r('betel',subst) --> "betel".
-r('bet',subst) --> "bet".
-r('besti',subst) --> "besti".
-r('best',subst) --> "best".
-r('berserk',subst) --> "berserk".
-r('bern',tr) --> "bern".
-r('berkeli',subst) --> "berkeli".
-r('berili',subst) --> "berili".
-r('beril',subst) --> "beril".
-r('beriber',subst) --> "beriber".
-r('bergamot',subst) --> "bergamot".
-r('beret',subst) --> "beret".
-r('berberis',subst) --> "berberis".
-r('ber',subst) --> "ber".
-r('benzol',subst) --> "benzol".
-r('benzodiazepin',subst) --> "benzodiazepin".
-r('benzo',subst) --> "benzo".
-r('benzin',subst) --> "benzin".
-r('benzen',subst) --> "benzen".
-r('benk',subst) --> "benk".
-r('benjet',subst) --> "benjet".
-r('benin',subst) --> "benin".
-r('benefic',subst) --> "benefic".
-r('benediktan',subst) --> "benediktan".
-r('bend',subst) --> "bend".
-r('ben',tr) --> "ben".
-r('bemol',subst) --> "bemol".
-r('belveder',subst) --> "belveder".
-r('beluĉ',subst) --> "beluĉ".
-r('belorusi',subst) --> "belorusi".
-r('belorus',subst) --> "belorus".
-r('beliz',subst) --> "beliz".
-r('belg',subst) --> "belg".
-r('beletristik',subst) --> "beletristik".
-r('beletr',subst) --> "beletr".
-r('beladon',subst) --> "beladon".
-r('bel',adj) --> "bel".
-r('bekvadrat',subst) --> "bekvadrat".
-r('bekerel',subst) --> "bekerel".
-r('bek',subst) --> "bek".
-r('bej',subst) --> "bej".
-r('behaviorism',subst) --> "behaviorism".
-r('begoniac',subst) --> "begoniac".
-r('begoni',subst) --> "begoni".
-r('beduen',subst) --> "beduen".
-r('bedaŭr',tr) --> "bedaŭr".
-r('bed',subst) --> "bed".
-r('beb',subst) --> "beb".
-r('beat',adj) --> "beat".
-r('be',ntr) --> "be".
-r('baŭm',ntr) --> "baŭm".
-r('baŭksit',subst) --> "baŭksit".
-r('baŭdruĉ',subst) --> "baŭdruĉ".
-r('baŭd',subst) --> "baŭd".
-r('baŭ',subst) --> "baŭ".
-r('baŝlik',subst) --> "baŝlik".
-r('baŝibozuk',subst) --> "baŝibozuk".
-r('bazuk',subst) --> "bazuk".
-r('bazilisk',subst) --> "bazilisk".
-r('bazilik',subst) --> "bazilik".
-r('bazili',subst) --> "bazili".
-r('bazar',subst) --> "bazar".
-r('bazalt',subst) --> "bazalt".
-r('baz',subst) --> "baz".
-r('bavar',subst) --> "bavar".
-r('batu',verb) --> "batu".
-r('batrak',subst) --> "batrak".
-r('batist',subst) --> "batist".
-r('batik',subst) --> "batik".
-r('bateri',subst) --> "bateri".
-r('batat',subst) --> "batat".
-r('batalion',subst) --> "batalion".
-r('batal',ntr) --> "batal".
-r('batak',subst) --> "batak".
-r('bat',verb) --> "bat".
-r('baston',subst) --> "baston".
-r('bastion',subst) --> "bastion".
-r('bastard',subst) --> "bastard".
-r('bast',subst) --> "bast".
-r('baskul',subst) --> "baskul".
-r('basketbal',subst) --> "basketbal".
-r('bask',subst) --> "bask".
-r('basi',subst) --> "basi".
-r('basen',subst) --> "basen".
-r('basbal',subst) --> "basbal".
-r('bas',subst) --> "bas".
-r('barĝ',subst) --> "barĝ".
-r('barĉ',subst) --> "barĉ".
-r('bart',subst) --> "bart".
-r('baroskop',subst) --> "baroskop".
-r('baron',subst) --> "baron".
-r('barometr',subst) --> "barometr".
-r('barok',subst) --> "barok".
-r('barograf',subst) --> "barograf".
-r('barmicv',subst) --> "barmicv".
-r('barkarol',subst) --> "barkarol".
-r('bark',subst) --> "bark".
-r('barjon',subst) --> "barjon".
-r('bariton',subst) --> "bariton".
-r('barit',subst) --> "barit".
-r('barikad',subst) --> "barikad".
-r('barier',subst) --> "barier".
-r('bari',subst) --> "bari".
-r('bareĝ',subst) --> "bareĝ".
-r('barem',subst) --> "barem".
-r('barelief',subst) --> "barelief".
-r('barel',subst) --> "barel".
-r('barejn',subst) --> "barejn".
-r('bard',subst) --> "bard".
-r('barbud',subst) --> "barbud".
-r('barbir',subst) --> "barbir".
-r('barbarism',subst) --> "barbarism".
-r('barbar',subst) --> "barbar".
-r('barbakan',subst) --> "barbakan".
-r('barb',subst) --> "barb".
-r('barakt',ntr) --> "barakt".
-r('barak',subst) --> "barak".
-r('bar',tr) --> "bar".
-r('bapt',tr) --> "bapt".
-r('baobab',subst) --> "baobab".
-r('banĝ',subst) --> "banĝ".
-r('bant',subst) --> "bant".
-r('bankrot',ntr) --> "bankrot".
-r('bankiz',subst) --> "bankiz".
-r('bankier',subst) --> "bankier".
-r('banked',subst) --> "banked".
-r('bank',subst) --> "bank".
-r('banjan',subst) --> "banjan".
-r('bangladeŝ',subst) --> "bangladeŝ".
-r('banduri',subst) --> "banduri".
-r('bandoni',subst) --> "bandoni".
-r('bandit',subst) --> "bandit".
-r('banderol',subst) --> "banderol".
-r('bandaĝ',subst) --> "bandaĝ".
-r('band',subst) --> "band".
-r('bananujac',subst) --> "bananujac".
-r('banan',subst) --> "banan".
-r('banal',adj) --> "banal".
-r('ban',tr) --> "ban".
-r('bambu',subst) --> "bambu".
-r('balzaminac',subst) --> "balzaminac".
-r('balzamin',subst) --> "balzamin".
-r('balzam',subst) --> "balzam".
-r('balustrad',subst) --> "balustrad".
-r('balustr',subst) --> "balustr".
-r('balte',subst) --> "balte".
-r('balt',subst) --> "balt".
-r('balot',ntr) --> "balot".
-r('balon',subst) --> "balon".
-r('balkon',subst) --> "balkon".
-r('balistik',subst) --> "balistik".
-r('balist',subst) --> "balist".
-r('balg',subst) --> "balg".
-r('balet',subst) --> "balet".
-r('balened',subst) --> "balened".
-r('balen',best) --> "balen".
-r('baled',subst) --> "baled".
-r('baldaken',subst) --> "baldaken".
-r('balbut',tr) --> "balbut".
-r('balbo',subst) --> "balbo".
-r('balast',subst) --> "balast".
-r('balancel',subst) --> "balancel".
-r('balanc',tr) --> "balanc".
-r('balan',subst) --> "balan".
-r('balan',subst) --> "balan".
-r('balalajk',subst) --> "balalajk".
-r('balafon',subst) --> "balafon".
-r('balad',subst) --> "balad".
-r('bala',tr) --> "bala".
-r('bal',subst) --> "bal".
-r('bakŝiŝ',subst) --> "bakŝiŝ".
-r('bakteriologi',subst) --> "bakteriologi".
-r('bakteriofag',subst) --> "bakteriofag".
-r('bakteri',subst) --> "bakteri".
-r('bakgamon',subst) --> "bakgamon".
-r('bakelit',subst) --> "bakelit".
-r('bakanal',subst) --> "bakanal".
-r('bakalaŭr',subst) --> "bakalaŭr".
-r('bak',tr) --> "bak".
-r('bajt',subst) --> "bajt".
-r('bajonet',subst) --> "bajonet".
-r('bajader',subst) --> "bajader".
-r('baha',subst) --> "baha".
-r('bagn',subst) --> "bagn".
-r('bagaĝ',subst) --> "bagaĝ".
-r('bagatel',subst) --> "bagatel".
-r('badminton',subst) --> "badminton".
-r('bacil',subst) --> "bacil".
-r('babuŝ',subst) --> "babuŝ".
-r('babord',subst) --> "babord".
-r('babirus',subst) --> "babirus".
-r('babil',tr) --> "babil".
-r('baba',subst) --> "baba".
-r('aŭtun',subst) --> "aŭtun".
-r('aŭtoĥton',subst) --> "aŭtoĥton".
-r('aŭtoritat',subst) --> "aŭtoritat".
-r('aŭtor',subst) --> "aŭtor".
-r('aŭtopsi',subst) --> "aŭtopsi".
-r('aŭtonomi',subst) --> "aŭtonomi".
-r('aŭtonom',adj) --> "aŭtonom".
-r('aŭtomorfi',subst) --> "aŭtomorfi".
-r('aŭtomobil',subst) --> "aŭtomobil".
-r('aŭtomatik',subst) --> "aŭtomatik".
-r('aŭtomat',subst) --> "aŭtomat".
-r('aŭtomaci',subst) --> "aŭtomaci".
-r('aŭtokton',subst) --> "aŭtokton".
-r('aŭtokrati',subst) --> "aŭtokrati".
-r('aŭtokrat',subst) --> "aŭtokrat".
-r('aŭtografi',subst) --> "aŭtografi".
-r('aŭtograf',subst) --> "aŭtograf".
-r('aŭtogir',subst) --> "aŭtogir".
-r('aŭtofagi',subst) --> "aŭtofagi".
-r('aŭtodidakt',subst) --> "aŭtodidakt".
-r('aŭtodafe',subst) --> "aŭtodafe".
-r('aŭtobus',subst) --> "aŭtobus".
-r('aŭtobiografi',subst) --> "aŭtobiografi".
-r('aŭtism',subst) --> "aŭtism".
-r('aŭtentik',adj) --> "aŭtentik".
-r('aŭtent',adj) --> "aŭtent".
-r('aŭtarki',subst) --> "aŭtarki".
-r('aŭtarci',subst) --> "aŭtarci".
-r('aŭt',subst) --> "aŭt".
-r('aŭstralopitek',best) --> "aŭstralopitek".
-r('aŭstr',subst) --> "aŭstr".
-r('aŭspici',subst) --> "aŭspici".
-r('aŭskult',tr) --> "aŭskult".
-r('aŭror',subst) --> "aŭror".
-r('aŭrikul',subst) --> "aŭrikul".
-r('aŭrikl',subst) --> "aŭrikl".
-r('aŭreol',subst) --> "aŭreol".
-r('aŭl',subst) --> "aŭl".
-r('aŭked',subst) --> "aŭked".
-r('aŭkci',subst) --> "aŭkci".
-r('aŭk',subst) --> "aŭk".
-r('aŭgust',subst) --> "aŭgust".
-r('aŭgur',subst) --> "aŭgur".
-r('aŭditori',subst) --> "aŭditori".
-r('aŭdienc',subst) --> "aŭdienc".
-r('aŭdac',ntr) --> "aŭdac".
-r('aŭd',tr) --> "aŭd".
-r('aŝram',subst) --> "aŝram".
-r('aŝkenaz',subst) --> "aŝkenaz".
-r('aĵur',adj) --> "aĵur".
-r('aĝiot',ntr) --> "aĝiot".
-r('aĝi',subst) --> "aĝi".
-r('aĝ',subst) --> "aĝ".
-r('aĉet',tr) --> "aĉet".
-r('aĉakatur',subst) --> "aĉakatur".
-r('aĉ',suf) --> "aĉ".
-r('azuleĥ',subst) --> "azuleĥ".
-r('aztek',subst) --> "aztek".
-r('azot',subst) --> "azot".
-r('azimut',subst) --> "azimut".
-r('azil',subst) --> "azil".
-r('azer',subst) --> "azer".
-r('azen',best) --> "azen".
-r('azar',subst) --> "azar".
-r('azale',subst) --> "azale".
-r('avokad',subst) --> "avokad".
-r('aviz',subst) --> "aviz".
-r('avis',subst) --> "avis".
-r('avikulari',subst) --> "avikulari".
-r('avid',adj) --> "avid".
-r('aviad',subst) --> "aviad".
-r('avi',subst) --> "avi".
-r('avert',tr) --> "avert".
-r('avers',subst) --> "avers".
-r('averi',subst) --> "averi".
-r('avenu',subst) --> "avenu".
-r('aventurin',subst) --> "aventurin".
-r('aventur',subst) --> "aventur".
-r('aven',subst) --> "aven".
-r('avel',subst) --> "avel".
-r('avatar',subst) --> "avatar".
-r('avare',subst) --> "avare".
-r('avar',adj) --> "avar".
-r('avantaĝ',subst) --> "avantaĝ".
-r('avangard',subst) --> "avangard".
-r('avanc',ntr) --> "avanc".
-r('aval',subst) --> "aval".
-r('av',parc) --> "av".
-r('atut',subst) --> "atut".
-r('atropin',subst) --> "atropin".
-r('atrofi',subst) --> "atrofi".
-r('atripl',subst) --> "atripl".
-r('atribut',subst) --> "atribut".
-r('atribu',tr) --> "atribu".
-r('atri',subst) --> "atri".
-r('atrepsi',subst) --> "atrepsi".
-r('atrakci',subst) --> "atrakci".
-r('atoni',subst) --> "atoni".
-r('atom',subst) --> "atom".
-r('atol',subst) --> "atol".
-r('ato',pref) --> "ato".
-r('atmosfer',subst) --> "atmosfer".
-r('atletik',subst) --> "atletik".
-r('atlet',subst) --> "atlet".
-r('atlas',subst) --> "atlas".
-r('ating',tr) --> "ating".
-r('atik',adj) --> "atik".
-r('atest',tr) --> "atest".
-r('atent',adj) --> "atent".
-r('atend',tr) --> "atend".
-r('atenc',tr) --> "atenc".
-r('atelier',subst) --> "atelier".
-r('ateist',subst) --> "ateist".
-r('ateism',subst) --> "ateism".
-r('ataŝe',subst) --> "ataŝe".
-r('atavism',subst) --> "atavism".
-r('ataksi',subst) --> "ataksi".
-r('atak',tr) --> "atak".
-r('astronomi',subst) --> "astronomi".
-r('astronom',subst) --> "astronom".
-r('astronaŭt',subst) --> "astronaŭt".
-r('astrologi',subst) --> "astrologi".
-r('astrolog',subst) --> "astrolog".
-r('astrolab',subst) --> "astrolab".
-r('astrocit',subst) --> "astrocit".
-r('astrakan',subst) --> "astrakan".
-r('astragal',subst) --> "astragal".
-r('astr',subst) --> "astr".
-r('astm',subst) --> "astm".
-r('astigmat',adj) --> "astigmat".
-r('asteroid',subst) --> "asteroid".
-r('asterisk',subst) --> "asterisk".
-r('asteri',subst) --> "asteri".
-r('asterac',subst) --> "asterac".
-r('aster',subst) --> "aster".
-r('asteni',subst) --> "asteni".
-r('astaten',subst) --> "astaten".
-r('astat',subst) --> "astat".
-r('astaked',subst) --> "astaked".
-r('astak',best) --> "astak".
-r('aspr',adj) --> "aspr".
-r('aspirin',subst) --> "aspirin".
-r('aspir',tr) --> "aspir".
-r('aspid',subst) --> "aspid".
-r('asperul',subst) --> "asperul".
-r('asperg',tr) --> "asperg".
-r('aspekt',ntr) --> "aspekt".
-r('asparag',subst) --> "asparag".
-r('asonanc',subst) --> "asonanc".
-r('asoci',subst) --> "asoci".
-r('asklepiad',subst) --> "asklepiad".
-r('asket',subst) --> "asket".
-r('askarided',subst) --> "askarided".
-r('askarid',subst) --> "askarid".
-r('askalon',subst) --> "askalon".
-r('asiz',subst) --> "asiz".
-r('asist',tr) --> "asist".
-r('asiriologi',subst) --> "asiriologi".
-r('asiriolog',subst) --> "asiriolog".
-r('asimptot',subst) --> "asimptot".
-r('asimil',tr) --> "asimil".
-r('asign',tr) --> "asign".
-r('asidu',adj) --> "asidu".
-r('asfodel',subst) --> "asfodel".
-r('asfiksi',tr) --> "asfiksi".
-r('asfalt',subst) --> "asfalt".
-r('asesor',subst) --> "asesor".
-r('asert',tr) --> "asert".
-r('aseps',subst) --> "aseps".
-r('asemble',subst) --> "asemble".
-r('asembl',tr) --> "asembl".
-r('asekur',tr) --> "asekur".
-r('asbest',subst) --> "asbest".
-r('asar',subst) --> "asar".
-r('asai',subst) --> "asai".
-r('asafetid',subst) --> "asafetid".
-r('as',subst) --> "as".
-r('arŝin',subst) --> "arŝin".
-r('arĥiv',subst) --> "arĥiv".
-r('arĥitektur',subst) --> "arĥitektur".
-r('arĥitekt',subst) --> "arĥitekt".
-r('arĥeologi',subst) --> "arĥeologi".
-r('arĥeolog',subst) --> "arĥeolog".
-r('arĥaism',subst) --> "arĥaism".
-r('arĥaik',adj) --> "arĥaik".
-r('arĝirol',subst) --> "arĝirol".
-r('arĝentan',subst) --> "arĝentan".
-r('arĝent',subst) --> "arĝent".
-r('arĉ',subst) --> "arĉ".
-r('arund',subst) --> "arund".
-r('artroz',subst) --> "artroz".
-r('artropod',subst) --> "artropod".
-r('artritism',subst) --> "artritism".
-r('artrit',subst) --> "artrit".
-r('artiŝok',subst) --> "artiŝok".
-r('artileri',subst) --> "artileri".
-r('artikulaci',subst) --> "artikulaci".
-r('artikol',subst) --> "artikol".
-r('artikl',subst) --> "artikl".
-r('artik',subst) --> "artik".
-r('artifik',subst) --> "artifik".
-r('artez',adj) --> "artez".
-r('arteri',subst) --> "arteri".
-r('artemizi',subst) --> "artemizi".
-r('art',subst) --> "art".
-r('arsenik',subst) --> "arsenik".
-r('arsenal',subst) --> "arsenal".
-r('arsen',subst) --> "arsen".
-r('arpeĝ',subst) --> "arpeĝ".
-r('arorut',subst) --> "arorut".
-r('arom',subst) --> "arom".
-r('arok',tr) --> "arok".
-r('arogant',adj) --> "arogant".
-r('arog',tr) --> "arog".
-r('arob',subst) --> "arob".
-r('arnik',subst) --> "arnik".
-r('armistic',subst) --> "armistic".
-r('armen',subst) --> "armen".
-r('arme',subst) --> "arme".
-r('armatur',subst) --> "armatur".
-r('arm',subst) --> "arm".
-r('arleken',subst) --> "arleken".
-r('arkiv',subst) --> "arkiv".
-r('arkitrav',subst) --> "arkitrav".
-r('arkitektur',subst) --> "arkitektur".
-r('arkitekt',subst) --> "arkitekt".
-r('arkipelag',subst) --> "arkipelag".
-r('arkimandrit',subst) --> "arkimandrit".
-r('arkiduk',subst) --> "arkiduk".
-r('arketip',subst) --> "arketip".
-r('arkeopterik',subst) --> "arkeopterik".
-r('arkeologi',subst) --> "arkeologi".
-r('arkeolog',subst) --> "arkeolog".
-r('arkebuz',subst) --> "arkebuz".
-r('arkean',subst) --> "arkean".
-r('arke',subst) --> "arke".
-r('arkaism',subst) --> "arkaism".
-r('arkaik',adj) --> "arkaik".
-r('arkad',subst) --> "arkad".
-r('ark',subst) --> "ark".
-r('aritmetik',subst) --> "aritmetik".
-r('aristolokiac',subst) --> "aristolokiac".
-r('aristoloki',subst) --> "aristoloki".
-r('aristokrati',subst) --> "aristokrati".
-r('aristokrat',subst) --> "aristokrat".
-r('arist',subst) --> "arist".
-r('ariergard',subst) --> "ariergard".
-r('arid',adj) --> "arid".
-r('ari',subst) --> "ari".
-r('arhat',subst) --> "arhat".
-r('argument',ntr) --> "argument".
-r('argonaŭt',subst) --> "argonaŭt".
-r('argon',subst) --> "argon".
-r('argil',subst) --> "argil".
-r('argan',subst) --> "argan".
-r('arest',tr) --> "arest".
-r('areopag',subst) --> "areopag".
-r('areometr',subst) --> "areometr".
-r('aren',subst) --> "aren".
-r('arek',subst) --> "arek".
-r('areal',subst) --> "areal".
-r('are',subst) --> "are".
-r('ardez',subst) --> "ardez".
-r('ardeed',subst) --> "ardeed".
-r('arde',subst) --> "arde".
-r('ard',ntr) --> "ard".
-r('arbut',subst) --> "arbut".
-r('arbust',subst) --> "arbust".
-r('arbitraĝ',subst) --> "arbitraĝ".
-r('arbitraci',subst) --> "arbitraci".
-r('arbitr',adj) --> "arbitr".
-r('arbed',subst) --> "arbed".
-r('arbalest',subst) --> "arbalest".
-r('arb',subst) --> "arb".
-r('araŭkariac',subst) --> "araŭkariac".
-r('araŭkari',subst) --> "araŭkari".
-r('aranĝ',tr) --> "aranĝ".
-r('araneed',subst) --> "araneed".
-r('arane',subst) --> "arane".
-r('araliac',subst) --> "araliac".
-r('arakid',subst) --> "arakid".
-r('arak',subst) --> "arak".
-r('arabesk',subst) --> "arabesk".
-r('arab',subst) --> "arab".
-r('ara',subst) --> "ara".
-r('ar',subst) --> "ar".
-r('apunt',subst) --> "apunt".
-r('apsid',subst) --> "apsid".
-r('apsar',subst) --> "apsar".
-r('aproksim',ntr) --> "aproksim".
-r('aprob',tr) --> "aprob".
-r('aprior',adj) --> "aprior".
-r('april',subst) --> "april".
-r('aprez',tr) --> "aprez".
-r('apretur',subst) --> "apretur".
-r('aprec',tr) --> "aprec".
-r('apr',subst) --> "apr".
-r('apoĝatur',subst) --> "apoĝatur".
-r('apozici',subst) --> "apozici".
-r('apoteoz',tr) --> "apoteoz".
-r('apotem',subst) --> "apotem".
-r('apotek',subst) --> "apotek".
-r('apostrof',subst) --> "apostrof".
-r('apostol',subst) --> "apostol".
-r('aposterior',adj) --> "aposterior".
-r('apostat',subst) --> "apostat".
-r('apori',subst) --> "apori".
-r('apopleksi',subst) --> "apopleksi".
-r('apologi',subst) --> "apologi".
-r('apolog',subst) --> "apolog".
-r('apokrif',subst) --> "apokrif".
-r('apokop',subst) --> "apokop".
-r('apokalips',subst) --> "apokalips".
-r('apoge',subst) --> "apoge".
-r('apog',tr) --> "apog".
-r('apofiz',subst) --> "apofiz".
-r('apocinac',subst) --> "apocinac".
-r('aplomb',subst) --> "aplomb".
-r('aplik',tr) --> "aplik".
-r('aplaŭd',tr) --> "aplaŭd".
-r('aplanat',adj) --> "aplanat".
-r('apik',adj) --> "apik".
-r('apiac',subst) --> "apiac".
-r('api',subst) --> "api".
-r('apetit',subst) --> "apetit".
-r('apertur',subst) --> "apertur".
-r('apert',adj) --> "apert".
-r('aperitiv',subst) --> "aperitiv".
-r('aper',ntr) --> "aper".
-r('apepsi',subst) --> "apepsi".
-r('apendicit',subst) --> "apendicit".
-r('apendic',subst) --> "apendic".
-r('apelaci',tr) --> "apelaci".
-r('apaĉ',subst) --> "apaĉ".
-r('apatit',subst) --> "apatit".
-r('apati',subst) --> "apati".
-r('aparten',ntr) --> "aparten".
-r('apartament',subst) --> "apartament".
-r('apart',adj) --> "apart".
-r('aparat',subst) --> "aparat".
-r('apanaĝ',subst) --> "apanaĝ".
-r('aort',subst) --> "aort".
-r('anĝelus',subst) --> "anĝelus".
-r('anĝel',subst) --> "anĝel".
-r('anĉov',subst) --> "anĉov".
-r('anĉ',subst) --> "anĉ".
-r('anus',subst) --> "anus".
-r('anur',subst) --> "anur".
-r('anunciaci',subst) --> "anunciaci".
-r('anuitat',subst) --> "anuitat".
-r('antropozofi',subst) --> "antropozofi".
-r('antropozof',subst) --> "antropozof".
-r('antropomorfism',subst) --> "antropomorfism".
-r('antropometri',subst) --> "antropometri".
-r('antropologi',subst) --> "antropologi".
-r('antropolog',subst) --> "antropolog".
-r('antropoid',adj) --> "antropoid".
-r('antraks',subst) --> "antraks".
-r('antracit',subst) --> "antracit".
-r('antonomazi',subst) --> "antonomazi".
-r('antonimi',subst) --> "antonimi".
-r('antonim',subst) --> "antonim".
-r('antologi',subst) --> "antologi".
-r('antitez',subst) --> "antitez".
-r('antisimetri',adj) --> "antisimetri".
-r('antiseps',subst) --> "antiseps".
-r('antisemit',subst) --> "antisemit".
-r('antirin',subst) --> "antirin".
-r('antipod',subst) --> "antipod".
-r('antipirin',subst) --> "antipirin".
-r('antipati',subst) --> "antipati".
-r('antipartikl',subst) --> "antipartikl".
-r('antinomi',subst) --> "antinomi".
-r('antimon',subst) --> "antimon".
-r('antilop',subst) --> "antilop".
-r('antikv',adj) --> "antikv".
-r('antikrist',subst) --> "antikrist".
-r('antikrez',subst) --> "antikrez".
-r('antikorp',subst) --> "antikorp".
-r('antigv',subst) --> "antigv".
-r('antigen',subst) --> "antigen".
-r('antifraz',subst) --> "antifraz".
-r('antifon',subst) --> "antifon".
-r('antidot',subst) --> "antidot".
-r('anticip',tr) --> "anticip".
-r('anticiklon',subst) --> "anticiklon".
-r('antibiotik',subst) --> "antibiotik".
-r('anti',pref) --> "anti".
-r('anter',subst) --> "anter".
-r('anten',subst) --> "anten".
-r('antem',subst) --> "antem".
-r('antecedent',subst) --> "antecedent".
-r('antagonist',subst) --> "antagonist".
-r('antagonism',subst) --> "antagonism".
-r('anser',best) --> "anser".
-r('ans',subst) --> "ans".
-r('anormal',adj) --> "anormal".
-r('anoreksi',subst) --> "anoreksi".
-r('anorak',subst) --> "anorak".
-r('anonim',adj) --> "anonim".
-r('anoniac',subst) --> "anoniac".
-r('anonc',tr) --> "anonc".
-r('anon',subst) --> "anon".
-r('anomali',subst) --> "anomali".
-r('anod',subst) --> "anod".
-r('anobied',subst) --> "anobied".
-r('anobi',best) --> "anobi".
-r('anksi',subst) --> "anksi".
-r('ankr',subst) --> "ankr".
-r('ankiloz',subst) --> "ankiloz".
-r('anjon',subst) --> "anjon".
-r('aniz',subst) --> "aniz".
-r('anime',subst) --> "anime".
-r('animal',subst) --> "animal".
-r('animaci',subst) --> "animaci".
-r('anim',subst) --> "anim".
-r('anilin',subst) --> "anilin".
-r('anihilaci',subst) --> "anihilaci".
-r('anhidr',adj) --> "anhidr".
-r('anhel',ntr) --> "anhel".
-r('angvised',subst) --> "angvised".
-r('angvis',best) --> "angvis".
-r('angul',subst) --> "angul".
-r('angor',subst) --> "angor".
-r('anglikan',subst) --> "anglikan".
-r('angl',subst) --> "angl".
-r('angin',subst) --> "angin".
-r('angiled',subst) --> "angiled".
-r('angil',best) --> "angil".
-r('angi',subst) --> "angi".
-r('angelik',subst) --> "angelik".
-r('anfrakt',subst) --> "anfrakt".
-r('aneŭrism',subst) --> "aneŭrism".
-r('anet',subst) --> "anet".
-r('anestez',tr) --> "anestez".
-r('anemon',subst) --> "anemon".
-r('anemometr',subst) --> "anemometr".
-r('anemi',subst) --> "anemi".
-r('anelid',subst) --> "anelid".
-r('aneks',tr) --> "aneks".
-r('anekdot',subst) --> "anekdot".
-r('anduj',subst) --> "anduj".
-r('android',subst) --> "android".
-r('androgin',subst) --> "androgin".
-r('andezit',subst) --> "andezit".
-r('andant',subst) --> "andant".
-r('anaĥoret',subst) --> "anaĥoret".
-r('anatomi',subst) --> "anatomi".
-r('anatom',subst) --> "anatom".
-r('anatem',tr) --> "anatem".
-r('anastigmat',adj) --> "anastigmat".
-r('anased',subst) --> "anased".
-r('anas',best) --> "anas".
-r('anarĥi',subst) --> "anarĥi".
-r('anarki',subst) --> "anarki".
-r('anapest',subst) --> "anapest".
-r('ananas',subst) --> "ananas".
-r('anamnez',subst) --> "anamnez".
-r('analogi',subst) --> "analogi".
-r('analog',adj) --> "analog".
-r('analiz',tr) --> "analiz".
-r('analitik',subst) --> "analitik".
-r('analgezik',subst) --> "analgezik".
-r('analgezi',subst) --> "analgezi".
-r('analfabet',subst) --> "analfabet".
-r('analekt',subst) --> "analekt".
-r('anal',subst) --> "anal".
-r('anakronism',subst) --> "anakronism".
-r('anakoret',subst) --> "anakoret".
-r('anakolut',subst) --> "anakolut".
-r('anakardiac',subst) --> "anakardiac".
-r('anakardi',subst) --> "anakardi".
-r('anagram',subst) --> "anagram".
-r('anagal',subst) --> "anagal".
-r('anafor',subst) --> "anafor".
-r('anaerobi',adj) --> "anaerobi".
-r('anabol',subst) --> "anabol".
-r('anabaptist',subst) --> "anabaptist".
-r('anabaptism',subst) --> "anabaptism".
-r('amuz',tr) --> "amuz".
-r('amulet',subst) --> "amulet".
-r('amput',tr) --> "amput".
-r('ampol',subst) --> "ampol".
-r('amplitud',subst) --> "amplitud".
-r('amplifikator',subst) --> "amplifikator".
-r('amplifik',tr) --> "amplifik".
-r('amplif',tr) --> "amplif".
-r('ampleks',subst) --> "ampleks".
-r('ampermetr',subst) --> "ampermetr".
-r('ampelops',subst) --> "ampelops".
-r('amortiz',tr) --> "amortiz".
-r('amorf',adj) --> "amorf".
-r('amor',subst) --> "amor".
-r('amonit',subst) --> "amonit".
-r('amoniak',subst) --> "amoniak".
-r('amnezi',subst) --> "amnezi".
-r('amnesti',subst) --> "amnesti".
-r('amiŝ',subst) --> "amiŝ".
-r('amin',subst) --> "amin".
-r('amik',subst) --> "amik".
-r('amid',subst) --> "amid".
-r('amianti',subst) --> "amianti".
-r('amfor',subst) --> "amfor".
-r('amfiteatr',subst) --> "amfiteatr".
-r('amfikrin',adj) --> "amfikrin".
-r('amfibraĥ',subst) --> "amfibraĥ".
-r('amfibrak',subst) --> "amfibrak".
-r('amfibi',subst) --> "amfibi".
-r('ametist',subst) --> "ametist".
-r('americi',subst) --> "americi".
-r('ament',subst) --> "ament".
-r('amendament',subst) --> "amendament".
-r('amend',tr) --> "amend".
-r('amel',subst) --> "amel".
-r('ameb',subst) --> "ameb".
-r('ambulanc',subst) --> "ambulanc".
-r('ambrozi',subst) --> "ambrozi".
-r('ambr',subst) --> "ambr".
-r('ambos',subst) --> "ambos".
-r('ambon',subst) --> "ambon".
-r('ambl',subst) --> "ambl".
-r('ambigu',adj) --> "ambigu".
-r('ambici',subst) --> "ambici".
-r('ambasador',subst) --> "ambasador".
-r('ambasad',subst) --> "ambasad".
-r('amazon',subst) --> "amazon".
-r('amator',subst) --> "amator".
-r('amas',subst) --> "amas".
-r('amarilidac',subst) --> "amarilidac".
-r('amarilid',subst) --> "amarilid".
-r('amarant',subst) --> "amarant".
-r('amar',adj) --> "amar".
-r('amanit',subst) --> "amanit".
-r('amalgam',tr) --> "amalgam".
-r('am',tr) --> "am".
-r('alĥemi',subst) --> "alĥemi".
-r('alĉemil',subst) --> "alĉemil".
-r('alvus',subst) --> "alvus".
-r('alveol',subst) --> "alveol".
-r('aluvi',subst) --> "aluvi".
-r('alun',subst) --> "alun".
-r('alumini',subst) --> "alumini".
-r('alumin',subst) --> "alumin".
-r('alumet',subst) --> "alumet".
-r('alud',tr) --> "alud".
-r('altruist',subst) --> "altruist".
-r('altruism',subst) --> "altruism".
-r('altitud',subst) --> "altitud".
-r('alternator',subst) --> "alternator".
-r('alternativ',subst) --> "alternativ".
-r('alternanc',subst) --> "alternanc".
-r('altern',ntr) --> "altern".
-r('alte',subst) --> "alte".
-r('altar',subst) --> "altar".
-r('altan',subst) --> "altan".
-r('alt',adj) --> "alt".
-r('alsin',subst) --> "alsin".
-r('alpinist',subst) --> "alpinist".
-r('alpar',subst) --> "alpar".
-r('alpak',subst) --> "alpak".
-r('alp',subst) --> "alp".
-r('aloz',best) --> "aloz".
-r('alopeci',subst) --> "alopeci".
-r('alopati',subst) --> "alopati".
-r('alonĝ',subst) --> "alonĝ".
-r('aloj',subst) --> "aloj".
-r('alofon',subst) --> "alofon".
-r('alo',subst) --> "alo".
-r('aln',subst) --> "aln".
-r('almoz',subst) --> "almoz".
-r('almanaĥ',subst) --> "almanaĥ".
-r('almanak',subst) --> "almanak".
-r('alkov',subst) --> "alkov".
-r('alkohol',subst) --> "alkohol".
-r('alkazar',subst) --> "alkazar".
-r('alkaloid',subst) --> "alkaloid".
-r('alkal',subst) --> "alkal".
-r('alkad',subst) --> "alkad".
-r('alk',best) --> "alk".
-r('aliz',subst) --> "aliz".
-r('aliteraci',subst) --> "aliteraci".
-r('aline',subst) --> "aline".
-r('aliment',subst) --> "aliment".
-r('alikvot',subst) --> "alikvot".
-r('alikvant',subst) --> "alikvant".
-r('aligatored',subst) --> "aligatored".
-r('aligator',best) --> "aligator".
-r('alibi',subst) --> "alibi".
-r('alianc',subst) --> "alianc".
-r('ali',adj) --> "ali".
-r('algoritm',subst) --> "algoritm".
-r('algonkin',subst) --> "algonkin".
-r('alginat',subst) --> "alginat".
-r('algebr',subst) --> "algebr".
-r('alg',subst) --> "alg".
-r('alfenid',subst) --> "alfenid".
-r('alfabet',subst) --> "alfabet".
-r('alf',subst) --> "alf".
-r('aleŭrit',subst) --> "aleŭrit".
-r('alez',tr) --> "alez".
-r('aleut',subst) --> "aleut".
-r('aleron',subst) --> "aleron".
-r('alergi',subst) --> "alergi".
-r('aler',subst) --> "aler".
-r('alen',subst) --> "alen".
-r('alel',subst) --> "alel".
-r('alegr',subst) --> "alegr".
-r('alegori',subst) --> "alegori".
-r('aleator',adj) --> "aleator".
-r('ale',subst) --> "ale".
-r('aldehid',subst) --> "aldehid".
-r('ald',subst) --> "ald".
-r('alcion',subst) --> "alcion".
-r('alced',subst) --> "alced".
-r('alce',subst) --> "alce".
-r('alburn',subst) --> "alburn".
-r('alburn',best) --> "alburn".
-r('albuminuri',subst) --> "albuminuri".
-r('albumin',subst) --> "albumin".
-r('albumen',subst) --> "albumen".
-r('album',subst) --> "album".
-r('albizi',subst) --> "albizi".
-r('albin',subst) --> "albin".
-r('albigens',subst) --> "albigens".
-r('alberg',subst) --> "alberg".
-r('albatros',best) --> "albatros".
-r('albatred',subst) --> "albatred".
-r('alban',subst) --> "alban".
-r('alb',subst) --> "alb".
-r('alaŭded',subst) --> "alaŭded".
-r('alaŭd',subst) --> "alaŭd".
-r('alarm',subst) --> "alarm".
-r('alabastr',subst) --> "alabastr".
-r('al',subst) --> "al".
-r('akĉent',subst) --> "akĉent".
-r('akvilegi',subst) --> "akvilegi".
-r('akvifoliac',subst) --> "akvifoliac".
-r('akvifoli',subst) --> "akvifoli".
-r('akvedukt',subst) --> "akvedukt".
-r('akvatint',subst) --> "akvatint".
-r('akvari',subst) --> "akvari".
-r('akvarel',subst) --> "akvarel".
-r('akvamarin',subst) --> "akvamarin".
-r('akvafort',subst) --> "akvafort".
-r('akv',subst) --> "akv".
-r('akuŝ',tr) --> "akuŝ".
-r('akuzativ',subst) --> "akuzativ".
-r('akuz',tr) --> "akuz".
-r('akut',adj) --> "akut".
-r('akustik',subst) --> "akustik".
-r('akurat',adj) --> "akurat".
-r('akupunktur',subst) --> "akupunktur".
-r('akumulator',subst) --> "akumulator".
-r('akumul',tr) --> "akumul".
-r('aktual',adj) --> "aktual".
-r('aktor',subst) --> "aktor".
-r('aktiv',adj) --> "aktiv".
-r('aktinium',subst) --> "aktinium".
-r('aktini',subst) --> "aktini".
-r('aktin',subst) --> "aktin".
-r('akt',subst) --> "akt".
-r('akson',subst) --> "akson".
-r('aksiom',subst) --> "aksiom".
-r('aksel',subst) --> "aksel".
-r('aks',subst) --> "aks".
-r('akrostiĥ',subst) --> "akrostiĥ".
-r('akropol',subst) --> "akropol".
-r('akroniĉ',subst) --> "akroniĉ".
-r('akronim',subst) --> "akronim".
-r('akromat',adj) --> "akromat".
-r('akrobat',subst) --> "akrobat".
-r('akrided',subst) --> "akrided".
-r('akrid',best) --> "akrid".
-r('akribi',subst) --> "akribi".
-r('akreditiv',subst) --> "akreditiv".
-r('akredit',tr) --> "akredit".
-r('akreci',subst) --> "akreci".
-r('akre',subst) --> "akre".
-r('akr',adj) --> "akr".
-r('akr',subst) --> "akr".
-r('akordion',subst) --> "akordion".
-r('akord',subst) --> "akord".
-r('akonit',subst) --> "akonit".
-r('akompan',tr) --> "akompan".
-r('akomod',tr) --> "akomod".
-r('akolit',subst) --> "akolit".
-r('akn',subst) --> "akn".
-r('akme',subst) --> "akme".
-r('aklam',tr) --> "aklam".
-r('akir',tr) --> "akir".
-r('akile',subst) --> "akile".
-r('akciz',subst) --> "akciz".
-r('akcipitred',subst) --> "akcipitred".
-r('akcipitr',subst) --> "akcipitr".
-r('akcident',subst) --> "akcident".
-r('akci',subst) --> "akci".
-r('akcesor',adj) --> "akcesor".
-r('akcept',tr) --> "akcept".
-r('akcent',subst) --> "akcent".
-r('akcel',tr) --> "akcel".
-r('akaĵu',subst) --> "akaĵu".
-r('akar',subst) --> "akar".
-r('akapar',tr) --> "akapar".
-r('akant',subst) --> "akant".
-r('akademi',subst) --> "akademi".
-r('akaci',subst) --> "akaci".
-r('ajut',subst) --> "ajut".
-r('ajurved',subst) --> "ajurved".
-r('ajmar',subst) --> "ajmar".
-r('ajl',subst) --> "ajl".
-r('ajgen',subst) --> "ajgen".
-r('ajatol',subst) --> "ajatol".
-r('ain',best) --> "ain".
-r('ailant',subst) --> "ailant".
-r('aikid',subst) --> "aikid".
-r('aidos',subst) --> "aidos".
-r('aides',subst) --> "aides".
-r('agropir',subst) --> "agropir".
-r('agronomi',subst) --> "agronomi".
-r('agronom',subst) --> "agronom".
-r('agrikultur',subst) --> "agrikultur".
-r('agres',tr) --> "agres".
-r('agraf',subst) --> "agraf".
-r('agrabl',adj) --> "agrabl".
-r('agr',subst) --> "agr".
-r('agord',tr) --> "agord".
-r('agorafobi',subst) --> "agorafobi".
-r('agoni',subst) --> "agoni".
-r('agnostik',adj) --> "agnostik".
-r('agnosk',tr) --> "agnosk".
-r('agnat',subst) --> "agnat".
-r('aglutinogen',subst) --> "aglutinogen".
-r('aglutinin',subst) --> "aglutinin".
-r('aglutin',tr) --> "aglutin".
-r('aglomer',tr) --> "aglomer".
-r('agl',subst) --> "agl".
-r('agit',tr) --> "agit".
-r('agent',subst) --> "agent".
-r('agend',subst) --> "agend".
-r('agav',subst) --> "agav".
-r('agatid',subst) --> "agatid".
-r('agat',subst) --> "agat".
-r('agarikac',subst) --> "agarikac".
-r('agarik',subst) --> "agarik".
-r('agaragar',subst) --> "agaragar".
-r('agap',subst) --> "agap".
-r('agac',tr) --> "agac".
-r('ag',ntr) --> "ag".
-r('afust',subst) --> "afust".
-r('aftoz',subst) --> "aftoz".
-r('aft',subst) --> "aft".
-r('afrikat',subst) --> "afrikat".
-r('afrank',tr) --> "afrank".
-r('aforism',subst) --> "aforism".
-r('afoni',subst) --> "afoni".
-r('aflikt',tr) --> "aflikt".
-r('afiŝ',subst) --> "afiŝ".
-r('afin',adj) --> "afin".
-r('afiks',subst) --> "afiks".
-r('afided',subst) --> "afided".
-r('afid',subst) --> "afid".
-r('afgani',subst) --> "afgani".
-r('afgan',subst) --> "afgan".
-r('afer',subst) --> "afer".
-r('afeli',subst) --> "afeli".
-r('afektiv',adj) --> "afektiv".
-r('afekt',tr) --> "afekt".
-r('afekci',subst) --> "afekci".
-r('afazi',subst) --> "afazi".
-r('afabl',adj) --> "afabl".
-r('aerostat',subst) --> "aerostat".
-r('aerosol',subst) --> "aerosol".
-r('aeroplan',subst) --> "aeroplan".
-r('aeronaŭtik',subst) --> "aeronaŭtik".
-r('aeronaŭt',subst) --> "aeronaŭt".
-r('aerometr',subst) --> "aerometr".
-r('aerolit',subst) --> "aerolit".
-r('aerodrom',subst) --> "aerodrom".
-r('aerobi',adj) --> "aerobi".
-r('aer',subst) --> "aer".
-r('aed',subst) --> "aed".
-r('adz',subst) --> "adz".
-r('advokat',subst) --> "advokat".
-r('advers',adj) --> "advers".
-r('adverb',subst) --> "adverb".
-r('advent',subst) --> "advent".
-r('adult',ntr) --> "adult".
-r('adstring',adj) --> "adstring".
-r('adsorb',tr) --> "adsorb".
-r('adres',subst) --> "adres".
-r('adrenalin',subst) --> "adrenalin".
-r('ador',tr) --> "ador".
-r('adopt',tr) --> "adopt".
-r('adolt',subst) --> "adolt".
-r('adolesk',subst) --> "adolesk".
-r('adob',subst) --> "adob".
-r('admon',tr) --> "admon".
-r('admitanc',subst) --> "admitanc".
-r('admiralitat',subst) --> "admiralitat".
-r('admiral',subst) --> "admiral".
-r('admir',tr) --> "admir".
-r('administraci',subst) --> "administraci".
-r('administr',tr) --> "administr".
-r('adjutant',subst) --> "adjutant".
-r('adjunkt',subst) --> "adjunkt".
-r('adjudik',verb) --> "adjudik".
-r('adjudant',subst) --> "adjudant".
-r('adjektiv',subst) --> "adjektiv".
-r('adici',tr) --> "adici".
-r('adiant',subst) --> "adiant".
-r('adher',ntr) --> "adher".
-r('adept',subst) --> "adept".
-r('adenin',subst) --> "adenin".
-r('adekvat',adj) --> "adekvat".
-r('adaĝ',subst) --> "adaĝ".
-r('adasism',subst) --> "adasism".
-r('adapt',tr) --> "adapt".
-r('acipensered',subst) --> "acipensered".
-r('acipenser',best) --> "acipenser".
-r('acid',adj) --> "acid".
-r('aceton',subst) --> "aceton".
-r('acetilĥolin',subst) --> "acetilĥolin".
-r('acetilkolin',subst) --> "acetilkolin".
-r('acetilen',subst) --> "acetilen".
-r('acetil',subst) --> "acetil".
-r('acetat',subst) --> "acetat".
-r('acet',subst) --> "acet".
-r('acerb',adj) --> "acerb".
-r('acerac',subst) --> "acerac".
-r('acer',subst) --> "acer".
-r('abĵur',verb) --> "abĵur".
-r('abutment',subst) --> "abutment".
-r('abund',adj) --> "abund".
-r('absurd',adj) --> "absurd".
-r('abstrakt',adj) --> "abstrakt".
-r('abstinenc',subst) --> "abstinenc".
-r('abstin',ntr) --> "abstin".
-r('absorb',tr) --> "absorb".
-r('absolv',tr) --> "absolv".
-r('absolut',adj) --> "absolut".
-r('absint',subst) --> "absint".
-r('absid',subst) --> "absid".
-r('abscis',subst) --> "abscis".
-r('absces',subst) --> "absces".
-r('abrupt',adj) --> "abrupt".
-r('abrotan',subst) --> "abrotan".
-r('abrikot',subst) --> "abrikot".
-r('abrazi',tr) --> "abrazi".
-r('abrakadabr',ntr) --> "abrakadabr".
-r('abort',ntr) --> "abort".
-r('aborigen',subst) --> "aborigen".
-r('abon',tr) --> "abon".
-r('abomen',tr) --> "abomen".
-r('abolici',tr) --> "abolici".
-r('abol',verb) --> "abol".
-r('aboc',subst) --> "aboc".
-r('abnegaci',subst) --> "abnegaci".
-r('ablativ',subst) --> "ablativ".
-r('ablaci',subst) --> "ablaci".
-r('abiturient',subst) --> "abiturient".
-r('abism',subst) --> "abism".
-r('abi',subst) --> "abi".
-r('aberaci',ntr) --> "aberaci".
-r('abeled',subst) --> "abeled".
-r('abel',subst) --> "abel".
-r('abdomen',subst) --> "abdomen".
-r('abdik',tr) --> "abdik".
-r('abaĵur',subst) --> "abaĵur".
-r('abat',subst) --> "abat".
-r('abandon',verb) --> "abandon".
-r('abak',subst) --> "abak".
-r('Zimbabv',subst) --> "Zimbabv".
-r('Zeŭs',subst) --> "Zeŭs".
-r('Zeland',subst) --> "Zeland".
-r('Zaratuŝtr',subst) --> "Zaratuŝtr".
-r('Zamenhof',best) --> "Zamenhof".
-r('Zambi',subst) --> "Zambi".
-r('Vulgat',subst) --> "Vulgat".
-r('Volter',subst) --> "Volter".
-r('Volt',subst) --> "Volt".
-r('Volg',subst) --> "Volg".
-r('Volfgang',subst) --> "Volfgang".
-r('Vodu',subst) --> "Vodu".
-r('Vladimir',subst) --> "Vladimir".
-r('Vjetnami',subst) --> "Vjetnami".
-r('Viŝnu',subst) --> "Viŝnu".
-r('Vizbaden',subst) --> "Vizbaden".
-r('Vitruvi',subst) --> "Vitruvi".
-r('Viskonsin',subst) --> "Viskonsin".
-r('Virgini',subst) --> "Virgini".
-r('Vindoz',subst) --> "Vindoz".
-r('Vincent',subst) --> "Vincent".
-r('Vinaj',subst) --> "Vinaj".
-r('Vilhelm',subst) --> "Vilhelm".
-r('Viktori',subst) --> "Viktori".
-r('Viktor',subst) --> "Viktor".
-r('Vezuvi',subst) --> "Vezuvi".
-r('Vermont',subst) --> "Vermont".
-r('Vergili',subst) --> "Vergili".
-r('Venus',subst) --> "Venus".
-r('Venezuel',subst) --> "Venezuel".
-r('Vener',subst) --> "Vener".
-r('Vencesla',subst) --> "Vencesla".
-r('Vaĝrajan',subst) --> "Vaĝrajan".
-r('Vatikan',subst) --> "Vatikan".
-r('Vat',best) --> "Vat".
-r('Varsovi',subst) --> "Varsovi".
-r('Varingjen',subst) --> "Varingjen".
-r('Valter',subst) --> "Valter".
-r('Valoni',subst) --> "Valoni".
-r('Valeri',subst) --> "Valeri".
-r('Valenten',subst) --> "Valenten".
-r('Vajroĉan',subst) --> "Vajroĉan".
-r('Vajoming',subst) --> "Vajoming".
-r('Vahabism',subst) --> "Vahabism".
-r('Utreĥt',subst) --> "Utreĥt".
-r('Utarpradeŝ',subst) --> "Utarpradeŝ".
-r('Utarakand',subst) --> "Utarakand".
-r('Utah',subst) --> "Utah".
-r('Uson',subst) --> "Uson".
-r('Urugvaj',subst) --> "Urugvaj".
-r('Uran',subst) --> "Uran".
-r('Ural',subst) --> "Ural".
-r('Uniks',subst) --> "Uniks".
-r('Unikod',subst) --> "Unikod".
-r('Ugand',subst) --> "Ugand".
-r('Tviter',subst) --> "Tviter".
-r('Turus',subst) --> "Turus".
-r('Turkmeni',subst) --> "Turkmeni".
-r('Turki',subst) --> "Turki".
-r('Tunizi',subst) --> "Tunizi".
-r('Tucidid',subst) --> "Tucidid".
-r('Troj',subst) --> "Troj".
-r('Tripur',subst) --> "Tripur".
-r('Tripitak',subst) --> "Tripitak".
-r('Toskani',subst) --> "Toskani".
-r('Tora',subst) --> "Tora".
-r('Tomas',subst) --> "Tomas".
-r('Togoland',subst) --> "Togoland".
-r('Tobi',subst) --> "Tobi".
-r('Tinĉj',subst) --> "Tinĉj".
-r('Timote',subst) --> "Timote".
-r('Timor',subst) --> "Timor".
-r('Tigris',subst) --> "Tigris".
-r('Tife',subst) --> "Tife".
-r('Tician',subst) --> "Tician".
-r('Tiberi',subst) --> "Tiberi".
-r('Tet',subst) --> "Tet".
-r('Teravad',subst) --> "Teravad".
-r('Teofil',subst) --> "Teofil".
-r('Teodor',subst) --> "Teodor".
-r('Teobald',subst) --> "Teobald".
-r('Tenesi',subst) --> "Tenesi".
-r('Telangan',subst) --> "Telangan".
-r('Teksas',subst) --> "Teksas".
-r('Taĝiki',subst) --> "Taĝiki".
-r('Tasmani',subst) --> "Tasmani".
-r('Tanzani',subst) --> "Tanzani".
-r('Tales',subst) --> "Tales".
-r('Tade',subst) --> "Tade".
-r('Svisi',subst) --> "Svisi".
-r('Svedi',subst) --> "Svedi".
-r('Surinam',subst) --> "Surinam".
-r('Suna',subst) --> "Suna".
-r('Sumeri',subst) --> "Sumeri".
-r('Sukot',subst) --> "Sukot".
-r('Sudan',subst) --> "Sudan".
-r('Strasburg',subst) --> "Strasburg".
-r('Strabon',subst) --> "Strabon".
-r('Sten',subst) --> "Sten".
-r('Stefan',subst) --> "Stefan".
-r('Stanislav',subst) --> "Stanislav".
-r('Somali',subst) --> "Somali".
-r('Solutre',subst) --> "Solutre".
-r('Sokrat',subst) --> "Sokrat".
-r('Sloveni',subst) --> "Sloveni".
-r('Slovaki',subst) --> "Slovaki".
-r('Slavon',subst) --> "Slavon".
-r('Skoti',subst) --> "Skoti".
-r('Skiti',subst) --> "Skiti".
-r('Skeld',subst) --> "Skeld".
-r('Skajp',subst) --> "Skajp".
-r('Sirius',subst) --> "Sirius".
-r('Siriak',subst) --> "Siriak".
-r('Siri',subst) --> "Siri".
-r('Sirdarj',subst) --> "Sirdarj".
-r('Simon',subst) --> "Simon".
-r('Simeon',subst) --> "Simeon".
-r('Silvestr',subst) --> "Silvestr".
-r('Silvan',subst) --> "Silvan".
-r('Silezi',subst) --> "Silezi".
-r('Sikim',subst) --> "Sikim".
-r('Sigmund',subst) --> "Sigmund".
-r('Sigismund',subst) --> "Sigismund".
-r('Siberi',subst) --> "Siberi".
-r('Sergi',subst) --> "Sergi".
-r('Septuagint',subst) --> "Septuagint".
-r('Senek',subst) --> "Senek".
-r('Senegal',subst) --> "Senegal".
-r('Selim',subst) --> "Selim".
-r('Sebastian',subst) --> "Sebastian".
-r('Scil',subst) --> "Scil".
-r('Scientologi',subst) --> "Scientologi".
-r('Saĥalin',subst) --> "Saĥalin".
-r('Saĥalen',subst) --> "Saĥalen".
-r('Saturn',subst) --> "Saturn".
-r('Saskaĉevan',subst) --> "Saskaĉevan".
-r('Sarland',subst) --> "Sarland".
-r('Santeri',subst) --> "Santeri".
-r('Sanskrit',subst) --> "Sanskrit".
-r('Samg',subst) --> "Samg".
-r('Sambr',subst) --> "Sambr".
-r('Salomon',subst) --> "Salomon".
-r('Salomon',subst) --> "Salomon".
-r('Salafism',subst) --> "Salafism".
-r('Sajan',subst) --> "Sajan".
-r('Sahar',subst) --> "Sahar".
-r('Sadam',subst) --> "Sadam".
-r('Ruso',subst) --> "Ruso".
-r('Rusi',subst) --> "Rusi".
-r('Rurik',subst) --> "Rurik".
-r('Rudolf',subst) --> "Rudolf".
-r('Ruand',subst) --> "Ruand".
-r('Roĝer',subst) --> "Roĝer".
-r('Roterdam',subst) --> "Roterdam".
-r('Romi',subst) --> "Romi".
-r('Rome',subst) --> "Rome".
-r('Rom',subst) --> "Rom".
-r('Roland',subst) --> "Roland".
-r('Rodrig',subst) --> "Rodrig".
-r('Rodos',subst) --> "Rodos".
-r('Rodolf',subst) --> "Rodolf".
-r('Rodezi',subst) --> "Rodezi".
-r('Robert',subst) --> "Robert".
-r('Riman',subst) --> "Riman".
-r('Rikard',subst) --> "Rikard".
-r('Riad',subst) --> "Riad".
-r('Renat',subst) --> "Renat".
-r('Remington',subst) --> "Remington".
-r('Rejnland-Palatinat',subst) --> "Rejnland-Palatinat".
-r('Rejn',subst) --> "Rejn".
-r('Rejki',subst) --> "Rejki".
-r('Regensburg',subst) --> "Regensburg".
-r('Reformaci',subst) --> "Reformaci".
-r('Raŭm',subst) --> "Raŭm".
-r('Raĥel',subst) --> "Raĥel".
-r('Raĝastan',subst) --> "Raĝastan".
-r('Ramajan',subst) --> "Ramajan".
-r('Rajmund',subst) --> "Rajmund".
-r('Rafael',subst) --> "Rafael".
-r('Puŝkin',subst) --> "Puŝkin".
-r('Purim',subst) --> "Purim".
-r('Ptoleme',subst) --> "Ptoleme".
-r('Prusi',subst) --> "Prusi".
-r('Promete',subst) --> "Promete".
-r('Principe',subst) --> "Principe".
-r('Prag',subst) --> "Prag".
-r('Pozidon',subst) --> "Pozidon".
-r('Portugali',subst) --> "Portugali".
-r('Pompej',subst) --> "Pompej".
-r('Poluks',subst) --> "Poluks".
-r('Poli',subst) --> "Poli".
-r('Pluton',subst) --> "Pluton".
-r('Plut',subst) --> "Plut".
-r('Plini',subst) --> "Plini".
-r('Plejad',subst) --> "Plejad".
-r('Plaŭt',subst) --> "Plaŭt".
-r('Platon',subst) --> "Platon".
-r('Pjanĝ',subst) --> "Pjanĝ".
-r('Pitagor',subst) --> "Pitagor".
-r('Pinokj',subst) --> "Pinokj".
-r('Pinjin',subst) --> "Pinjin".
-r('Pilat',subst) --> "Pilat".
-r('Petr',subst) --> "Petr".
-r('Peterburg',subst) --> "Peterburg".
-r('Peru',subst) --> "Peru".
-r('Perse',subst) --> "Perse".
-r('Pentekost',subst) --> "Pentekost".
-r('Pensilvani',subst) --> "Pensilvani".
-r('Pegaz',subst) --> "Pegaz".
-r('Paŭl',subst) --> "Paŭl".
-r('Patrik',subst) --> "Patrik".
-r('Pasteŭr',subst) --> "Pasteŭr".
-r('Paskal',best) --> "Paskal".
-r('Pask',subst) --> "Pask".
-r('Pasion',subst) --> "Pasion".
-r('Pariz',subst) --> "Pariz".
-r('Paralimpik',subst) --> "Paralimpik".
-r('Paraklet',subst) --> "Paraklet".
-r('Paragvaj',subst) --> "Paragvaj".
-r('Papu',subst) --> "Papu".
-r('Panĝab',subst) --> "Panĝab".
-r('Pange',subst) --> "Pange".
-r('Pali',subst) --> "Pali".
-r('Palaŭ',subst) --> "Palaŭ".
-r('Pakistan',subst) --> "Pakistan".
-r('Pacifik',subst) --> "Pacifik".
-r('Pabl',subst) --> "Pabl".
-r('Oĥock',subst) --> "Oĥock".
-r('Oziris',subst) --> "Oziris".
-r('Ovidi',subst) --> "Ovidi".
-r('Otoman',subst) --> "Otoman".
-r('Osvald',subst) --> "Osvald".
-r('Ostend',subst) --> "Ostend".
-r('Osman',subst) --> "Osman".
-r('Oskar',subst) --> "Oskar".
-r('Oskar',subst) --> "Oskar".
-r('Oris',subst) --> "Oris".
-r('Orion',subst) --> "Orion".
-r('Orfe',subst) --> "Orfe".
-r('Oregon',subst) --> "Oregon".
-r('Onufri',subst) --> "Onufri".
-r('Ontari',subst) --> "Ontari".
-r('Onesim',subst) --> "Onesim".
-r('Omar',subst) --> "Omar".
-r('Oman',subst) --> "Oman".
-r('Om',best) --> "Om".
-r('Oliver',subst) --> "Oliver".
-r('Olimpik',subst) --> "Olimpik".
-r('Olimp',subst) --> "Olimp".
-r('Oklahom',subst) --> "Oklahom".
-r('Okcidental',subst) --> "Okcidental".
-r('Oka',subst) --> "Oka".
-r('Ohi',subst) --> "Ohi".
-r('Odr',subst) --> "Odr".
-r('Odiŝ',subst) --> "Odiŝ".
-r('Odise',subst) --> "Odise".
-r('Oceani',subst) --> "Oceani".
-r('Ob',subst) --> "Ob".
-r('Noŭruz',subst) --> "Noŭruz".
-r('Novosibirsk',subst) --> "Novosibirsk".
-r('Norvegi',subst) --> "Norvegi".
-r('Nordrejn-Vestfali',subst) --> "Nordrejn-Vestfali".
-r('Noaĥ',subst) --> "Noaĥ".
-r('Niĉiren',subst) --> "Niĉiren".
-r('Nirvan',subst) --> "Nirvan".
-r('Nimeg',subst) --> "Nimeg".
-r('Nil',subst) --> "Nil".
-r('Nikola',subst) --> "Nikola".
-r('Nikodem',subst) --> "Nikodem".
-r('Neŭton',best) --> "Neŭton".
-r('Nevad',subst) --> "Nevad".
-r('Nestor',subst) --> "Nestor".
-r('Neptun',subst) --> "Neptun".
-r('Neper',subst) --> "Neper".
-r('Nepal',subst) --> "Nepal".
-r('Nederland',subst) --> "Nederland".
-r('Nebrask',subst) --> "Nebrask".
-r('Namur',subst) --> "Namur".
-r('Namibi',subst) --> "Namibi".
-r('Muzaik',subst) --> "Muzaik".
-r('Muhamad',subst) --> "Muhamad".
-r('Mozel',subst) --> "Mozel".
-r('Mozart',subst) --> "Mozart".
-r('Mozambik',subst) --> "Mozambik".
-r('Moz',subst) --> "Moz".
-r('Moskv',subst) --> "Moskv".
-r('Mors',subst) --> "Mors".
-r('Morfe',subst) --> "Morfe".
-r('Montenegr',subst) --> "Montenegr".
-r('Montan',subst) --> "Montan".
-r('Mongoli',subst) --> "Mongoli".
-r('Monak',subst) --> "Monak".
-r('Mocart',subst) --> "Mocart".
-r('Miŝna',subst) --> "Miŝna".
-r('Miŝn',subst) --> "Miŝn".
-r('Miĥael',subst) --> "Miĥael".
-r('Miĉigan',subst) --> "Miĉigan".
-r('Mizoram',subst) --> "Mizoram".
-r('Misuri',subst) --> "Misuri".
-r('Misur',subst) --> "Misur".
-r('Misisipi',subst) --> "Misisipi".
-r('Misisip',subst) --> "Misisip".
-r('Mirz',subst) --> "Mirz".
-r('Minotaŭr',subst) --> "Minotaŭr".
-r('Minesot',subst) --> "Minesot".
-r('Mikrosoft',subst) --> "Mikrosoft".
-r('Midelburg',subst) --> "Midelburg".
-r('Meĥlen',subst) --> "Meĥlen".
-r('Mezopotami',subst) --> "Mezopotami".
-r('Metodi',subst) --> "Metodi".
-r('Merkur',subst) --> "Merkur".
-r('Mendelev',subst) --> "Mendelev".
-r('Mence',subst) --> "Mence".
-r('Meksiki',subst) --> "Meksiki".
-r('Meksik',subst) --> "Meksik".
-r('Meklenburgo-Antaŭpomeri',subst) --> "Meklenburgo-Antaŭpomeri".
-r('Megalaj',subst) --> "Megalaj".
-r('Mediterane',subst) --> "Mediterane".
-r('Medi',subst) --> "Medi".
-r('Mede',subst) --> "Mede".
-r('Maŭric',subst) --> "Maŭric".
-r('Maĥ',subst) --> "Maĥ".
-r('Mate',subst) --> "Mate".
-r('Mastriĥt',subst) --> "Mastriĥt".
-r('Masaĉusec',subst) --> "Masaĉusec".
-r('Marten',subst) --> "Marten".
-r('Mars',subst) --> "Mars".
-r('Marok',subst) --> "Marok".
-r('Marks',subst) --> "Marks".
-r('Mark',subst) --> "Mark".
-r('Mariland',subst) --> "Mariland".
-r('Mari',subst) --> "Mari".
-r('Marcial',subst) --> "Marcial".
-r('Marcel',subst) --> "Marcel".
-r('Manitob',subst) --> "Manitob".
-r('Manipur',subst) --> "Manipur".
-r('Manik',subst) --> "Manik".
-r('Malt',subst) --> "Malt".
-r('Malkolm',subst) --> "Malkolm".
-r('Malik',subst) --> "Malik".
-r('Malavi',subst) --> "Malavi".
-r('Malajzi',subst) --> "Malajzi".
-r('Maksimilian',subst) --> "Maksimilian".
-r('Makintoŝ',subst) --> "Makintoŝ".
-r('Makedoni',subst) --> "Makedoni".
-r('Majn',subst) --> "Majn".
-r('Majenc',subst) --> "Majenc".
-r('Mahomet',subst) --> "Mahomet".
-r('Mahavir',subst) --> "Mahavir".
-r('Maharaŝtr',subst) --> "Maharaŝtr".
-r('Mahajan',subst) --> "Mahajan".
-r('Mahabarat',subst) --> "Mahabarat".
-r('Magreb',subst) --> "Magreb".
-r('Madjapradeŝ',subst) --> "Madjapradeŝ".
-r('Madejr',subst) --> "Madejr".
-r('Luter',subst) --> "Luter".
-r('Luksemburgi',subst) --> "Luksemburgi".
-r('Luksemburg',subst) --> "Luksemburg".
-r('Luk',subst) --> "Luk".
-r('Luizian',subst) --> "Luizian".
-r('Ludovik',best) --> "Ludovik".
-r('Lucian',subst) --> "Lucian".
-r('Loĵban',subst) --> "Loĵban".
-r('Loven',subst) --> "Loven".
-r('Loglan',subst) --> "Loglan".
-r('Liĥtenŝtejn',subst) --> "Liĥtenŝtejn".
-r('Litovi',subst) --> "Litovi".
-r('Lionel',subst) --> "Lionel".
-r('Linuks',subst) --> "Linuks".
-r('Limburg',subst) --> "Limburg".
-r('Lilit',subst) --> "Lilit".
-r('Liguri',subst) --> "Liguri".
-r('Lieĝ',subst) --> "Lieĝ".
-r('Lier',subst) --> "Lier".
-r('Libi',subst) --> "Libi".
-r('Liberi',subst) --> "Liberi".
-r('Liban',subst) --> "Liban".
-r('Lesot',subst) --> "Lesot".
-r('Lesb',subst) --> "Lesb".
-r('Lepsik',subst) --> "Lepsik".
-r('Leopold',subst) --> "Leopold".
-r('Leonard',subst) --> "Leonard".
-r('Len',subst) --> "Len".
-r('Lelistad',subst) --> "Lelistad".
-r('Lejbnic',subst) --> "Lejbnic".
-r('Lebeg',subst) --> "Lebeg".
-r('Leandr',subst) --> "Leandr".
-r('Laŭrenc',subst) --> "Laŭrenc".
-r('Laŭrazi',subst) --> "Laŭrazi".
-r('Lazar',subst) --> "Lazar".
-r('Latvi',subst) --> "Latvi".
-r('Latin',subst) --> "Latin".
-r('Lati',subst) --> "Lati".
-r('Laptev',subst) --> "Laptev".
-r('Laplac',subst) --> "Laplac".
-r('Laos',subst) --> "Laos".
-r('Laert',subst) --> "Laert".
-r('Ladisla',subst) --> "Ladisla".
-r('Labrador',subst) --> "Labrador".
-r('Kvirin',subst) --> "Kvirin".
-r('Kuvajt',subst) --> "Kuvajt".
-r('Kulomb',best) --> "Kulomb".
-r('Ksitigarb',subst) --> "Ksitigarb".
-r('Ksenofont',subst) --> "Ksenofont".
-r('Ksenofon',subst) --> "Ksenofon".
-r('Ksaver',subst) --> "Ksaver".
-r('Kron',subst) --> "Kron".
-r('Kroati',subst) --> "Kroati".
-r('Kriŝn',subst) --> "Kriŝn".
-r('Kristofor',subst) --> "Kristofor".
-r('Kristian',subst) --> "Kristian".
-r('Krist',subst) --> "Krist".
-r('Koŝi',subst) --> "Koŝi".
-r('Kortrejk',subst) --> "Kortrejk".
-r('Korneli',subst) --> "Korneli".
-r('Korei',subst) --> "Korei".
-r('Koran',subst) --> "Koran".
-r('Kopernik',subst) --> "Kopernik".
-r('Kopenhag',subst) --> "Kopenhag".
-r('Konstantinopol',subst) --> "Konstantinopol".
-r('Konstanten',subst) --> "Konstanten".
-r('Konrad',subst) --> "Konrad".
-r('Kong',subst) --> "Kong".
-r('Konfuce',subst) --> "Konfuce".
-r('Konektikut',subst) --> "Konektikut".
-r('Komeni',subst) --> "Komeni".
-r('Kolĥid',subst) --> "Kolĥid".
-r('Kolumbi',subst) --> "Kolumbi".
-r('Kolorad',subst) --> "Kolorad".
-r('Kolonj',subst) --> "Kolonj".
-r('Kolombi',subst) --> "Kolombi".
-r('Kluĉevskaj',subst) --> "Kluĉevskaj".
-r('Klement',subst) --> "Klement".
-r('Klaŭdi',subst) --> "Klaŭdi".
-r('Kirgizi',subst) --> "Kirgizi".
-r('Kipr',subst) --> "Kipr".
-r('Kimri',subst) --> "Kimri".
-r('Keral',subst) --> "Keral".
-r('Kepler',subst) --> "Kepler".
-r('Kentuki',subst) --> "Kentuki".
-r('Kenj',subst) --> "Kenj".
-r('Kelvin',best) --> "Kelvin".
-r('Kebeki',subst) --> "Kebeki".
-r('Kaŭkaz',subst) --> "Kaŭkaz".
-r('Kaŝmir',subst) --> "Kaŝmir".
-r('Kazimir',subst) --> "Kazimir".
-r('Kazaĥi',subst) --> "Kazaĥi".
-r('Kastor',subst) --> "Kastor".
-r('Kaspi',subst) --> "Kaspi".
-r('Kasiope',subst) --> "Kasiope".
-r('Kartezi',subst) --> "Kartezi".
-r('Karon',subst) --> "Karon".
-r('Karolin',subst) --> "Karolin".
-r('Karol',subst) --> "Karol".
-r('Karnatak',subst) --> "Karnatak".
-r('Karloreĝ',subst) --> "Karloreĝ".
-r('Karesm',subst) --> "Karesm".
-r('Kara',subst) --> "Kara".
-r('Kaprikorn',subst) --> "Kaprikorn".
-r('Kapitol',subst) --> "Kapitol".
-r('Kansas',subst) --> "Kansas".
-r('Kamĉatk',subst) --> "Kamĉatk".
-r('Kampin',subst) --> "Kampin".
-r('Kamil',subst) --> "Kamil".
-r('Kameruni',subst) --> "Kameruni".
-r('Kamerun',subst) --> "Kamerun".
-r('Kamboĝ',subst) --> "Kamboĝ".
-r('Kam',subst) --> "Kam".
-r('Kalvin',subst) --> "Kalvin".
-r('Kalvari',subst) --> "Kalvari".
-r('Kaloĉaj',subst) --> "Kaloĉaj".
-r('Kaboverd',subst) --> "Kaboverd".
-r('Kabal',subst) --> "Kabal".
-r('Justinian',subst) --> "Justinian".
-r('Justen',subst) --> "Justen".
-r('Jupiter',subst) --> "Jupiter".
-r('Jul',subst) --> "Jul".
-r('Jugoslavi',subst) --> "Jugoslavi".
-r('Jugoslav',subst) --> "Jugoslav".
-r('Jozef',subst) --> "Jozef".
-r('Jork',subst) --> "Jork".
-r('Jordani',subst) --> "Jordani".
-r('Jordan',best) --> "Jordan".
-r('Jomkipur',subst) --> "Jomkipur".
-r('Johan',subst) --> "Johan".
-r('Joakim',subst) --> "Joakim".
-r('Jid',subst) --> "Jid".
-r('Jesu',subst) --> "Jesu".
-r('Jerusalem',subst) --> "Jerusalem".
-r('Jenisej',subst) --> "Jenisej".
-r('Jemen',subst) --> "Jemen".
-r('Jehov',subst) --> "Jehov".
-r('Jazon',subst) --> "Jazon".
-r('Jaroslav',subst) --> "Jaroslav".
-r('Japani',subst) --> "Japani".
-r('Jansen',subst) --> "Jansen".
-r('Jamajk',subst) --> "Jamajk".
-r('Jama',subst) --> "Jama".
-r('Jakobi',subst) --> "Jakobi".
-r('Jakob',subst) --> "Jakob".
-r('Izis',subst) --> "Izis".
-r('Izidor',subst) --> "Izidor".
-r('Iv',subst) --> "Iv".
-r('Itali',subst) --> "Itali".
-r('Istanbul',subst) --> "Istanbul".
-r('Israel',subst) --> "Israel".
-r('Island',subst) --> "Island".
-r('Isel',subst) --> "Isel".
-r('Irtiŝ',subst) --> "Irtiŝ".
-r('Irland',subst) --> "Irland".
-r('Irene',subst) --> "Irene".
-r('Irak',subst) --> "Irak".
-r('Iova',subst) --> "Iova".
-r('Interlingva',subst) --> "Interlingva".
-r('Inocent',subst) --> "Inocent".
-r('Indr',subst) --> "Indr".
-r('Indiana',subst) --> "Indiana".
-r('Ilinojs',subst) --> "Ilinojs".
-r('Iliad',subst) --> "Iliad".
-r('Ignac',subst) --> "Ignac".
-r('Idah',subst) --> "Idah".
-r('Id',subst) --> "Id".
-r('Husejn',subst) --> "Husejn".
-r('Hungari',subst) --> "Hungari".
-r('Humbert',subst) --> "Humbert".
-r('Hug',subst) --> "Hug".
-r('Hubert',subst) --> "Hubert".
-r('Horus',subst) --> "Horus".
-r('Horaci',subst) --> "Horaci".
-r('Honkong',subst) --> "Honkong".
-r('Homer',subst) --> "Homer".
-r('Holand',subst) --> "Holand".
-r('Hispani',subst) --> "Hispani".
-r('Hipolit',subst) --> "Hipolit".
-r('Hipokrat',subst) --> "Hipokrat".
-r('Hindustan',subst) --> "Hindustan".
-r('Hindukuŝ',subst) --> "Hindukuŝ".
-r('Hinajan',subst) --> "Hinajan".
-r('Himaĉalpradeŝ',subst) --> "Himaĉalpradeŝ".
-r('Himalaj',subst) --> "Himalaj".
-r('Hilbert',subst) --> "Hilbert".
-r('Hieronim',subst) --> "Hieronim".
-r('Heĝir',subst) --> "Heĝir".
-r('Heziod',subst) --> "Heziod".
-r('Hevisid',subst) --> "Hevisid".
-r('Herodot',subst) --> "Herodot".
-r('Hermit',subst) --> "Hermit".
-r('Hermes',subst) --> "Hermes".
-r('Herman',subst) --> "Herman".
-r('Herkul',subst) --> "Herkul".
-r('Hercegovin',subst) --> "Hercegovin".
-r('Herakl',subst) --> "Herakl".
-r('Henrik',subst) --> "Henrik".
-r('Henegovi',subst) --> "Henegovi".
-r('Hektor',subst) --> "Hektor".
-r('Havaj',subst) --> "Havaj".
-r('Hasan',subst) --> "Hasan".
-r('Harold',subst) --> "Harold".
-r('Harlem',subst) --> "Harlem".
-r('Harian',subst) --> "Harian".
-r('Hanafism',subst) --> "Hanafism".
-r('Hampŝir',subst) --> "Hampŝir".
-r('Hamburg',subst) --> "Hamburg".
-r('Halovin',subst) --> "Halovin".
-r('Haloven',subst) --> "Haloven".
-r('Hag',subst) --> "Hag".
-r('Hades',subst) --> "Hades".
-r('Gvine',subst) --> "Gvine".
-r('Gvajan',subst) --> "Gvajan".
-r('Guĝarat',subst) --> "Guĝarat".
-r('Gustav',subst) --> "Gustav".
-r('Gujan',subst) --> "Gujan".
-r('Gronland',subst) --> "Gronland".
-r('Groningen',subst) --> "Groningen".
-r('Greki',subst) --> "Greki".
-r('Gregori',subst) --> "Gregori".
-r('Gravet',subst) --> "Gravet".
-r('Gotam',subst) --> "Gotam".
-r('Gonzal',subst) --> "Gonzal".
-r('Gontran',subst) --> "Gontran".
-r('Gondvan',subst) --> "Gondvan".
-r('Golgot',subst) --> "Golgot".
-r('Godfred',subst) --> "Godfred".
-r('Goa',subst) --> "Goa".
-r('Glagolic',subst) --> "Glagolic".
-r('Ginevr',subst) --> "Ginevr".
-r('Gilgameŝ',subst) --> "Gilgameŝ".
-r('Gilbert',subst) --> "Gilbert".
-r('Gervaz',subst) --> "Gervaz".
-r('Germani',subst) --> "Germani".
-r('Gerard',subst) --> "Gerard".
-r('Georg',subst) --> "Georg".
-r('Gent',subst) --> "Gent".
-r('Gemar',subst) --> "Gemar".
-r('Gelderland',subst) --> "Gelderland".
-r('Ge',subst) --> "Ge".
-r('Gaŭs',subst) --> "Gaŭs".
-r('Gaston',subst) --> "Gaston".
-r('Gaspar',subst) --> "Gaspar".
-r('Gana',subst) --> "Gana".
-r('Galilej',subst) --> "Galilej".
-r('Galez',subst) --> "Galez".
-r('Gabriel',subst) --> "Gabriel".
-r('Gabon',subst) --> "Gabon".
-r('Frisi',subst) --> "Frisi".
-r('Freŭd',subst) --> "Freŭd".
-r('Frederik',subst) --> "Frederik".
-r('Frankfurt',subst) --> "Frankfurt".
-r('Francisk',subst) --> "Francisk".
-r('Franci',subst) --> "Franci".
-r('Fortunat',subst) --> "Fortunat".
-r('Fob',subst) --> "Fob".
-r('Florid',subst) --> "Florid".
-r('Florian',subst) --> "Florian".
-r('Florenc',subst) --> "Florenc".
-r('Flevoland',subst) --> "Flevoland".
-r('Flandri',subst) --> "Flandri".
-r('Finni',subst) --> "Finni".
-r('Finland',subst) --> "Finland".
-r('Filipin',subst) --> "Filipin".
-r('Filip',subst) --> "Filip".
-r('Filibert',subst) --> "Filibert".
-r('Figar',subst) --> "Figar".
-r('Fernand',subst) --> "Fernand".
-r('Ferdinand',subst) --> "Ferdinand".
-r('Fenici',subst) --> "Fenici".
-r('Feliks',subst) --> "Feliks".
-r('Fejsbuk',subst) --> "Fejsbuk".
-r('Farenhejt',subst) --> "Farenhejt".
-r('Farad',subst) --> "Farad".
-r('Fanar',subst) --> "Fanar".
-r('Fabrici',subst) --> "Fabrici".
-r('Fabian',subst) --> "Fabian".
-r('Fabi',subst) --> "Fabi".
-r('Eŭzebi',subst) --> "Eŭzebi".
-r('Eŭrop',subst) --> "Eŭrop".
-r('Eŭrial',subst) --> "Eŭrial".
-r('Eŭrazi',subst) --> "Eŭrazi".
-r('Eŭler',subst) --> "Eŭler".
-r('Eŭklid',subst) --> "Eŭklid".
-r('Eŭgen',subst) --> "Eŭgen".
-r('Eŭfrat',subst) --> "Eŭfrat".
-r('Ezop',subst) --> "Ezop".
-r('Etiopi',subst) --> "Etiopi".
-r('Estoni',subst) --> "Estoni".
-r('Esperanti',subst) --> "Esperanti".
-r('Esperant',subst) --> "Esperant".
-r('Ernest',subst) --> "Ernest".
-r('Eritre',subst) --> "Eritre".
-r('Erik',subst) --> "Erik".
-r('Erasm',subst) --> "Erasm".
-r('Epikur',subst) --> "Epikur".
-r('Epifani',subst) --> "Epifani".
-r('Ene',subst) --> "Ene".
-r('Emilian',subst) --> "Emilian".
-r('Emil',subst) --> "Emil".
-r('Emanuel',subst) --> "Emanuel".
-r('Elize',subst) --> "Elize".
-r('Eli',subst) --> "Eli".
-r('Elb',subst) --> "Elb".
-r('Ekvador',subst) --> "Ekvador".
-r('Ejnŝtejn',subst) --> "Ejnŝtejn".
-r('Ejnstejn',subst) --> "Ejnstejn".
-r('Egipti',subst) --> "Egipti".
-r('Efes',subst) --> "Efes".
-r('Edvard',subst) --> "Edvard".
-r('Eduard',subst) --> "Eduard".
-r('Edmund',subst) --> "Edmund".
-r('Edgar',subst) --> "Edgar".
-r('Eden',subst) --> "Eden".
-r('Duŝanbe',subst) --> "Duŝanbe".
-r('Dublin',subst) --> "Dublin".
-r('Drent',subst) --> "Drent".
-r('Donald',subst) --> "Donald".
-r('Dominik',subst) --> "Dominik".
-r('Dirak',subst) --> "Dirak".
-r('Dioskur',subst) --> "Dioskur".
-r('Dionizi',subst) --> "Dionizi".
-r('Dieg',subst) --> "Dieg".
-r('Dian',subst) --> "Dian".
-r('Demokrit',subst) --> "Demokrit".
-r('Demetri',subst) --> "Demetri".
-r('Delavar',subst) --> "Delavar".
-r('Dejm',subst) --> "Dejm".
-r('Dedekind',subst) --> "Dedekind".
-r('David',subst) --> "David".
-r('Darmapad',subst) --> "Darmapad".
-r('Darm',subst) --> "Darm".
-r('Danub',subst) --> "Danub".
-r('Daniel',subst) --> "Daniel".
-r('Dani',subst) --> "Dani".
-r('Damian',subst) --> "Damian".
-r('Damask',subst) --> "Damask".
-r('Dakot',subst) --> "Dakot".
-r('Dagobert',subst) --> "Dagobert".
-r('Ciril',subst) --> "Ciril".
-r('Ciprian',subst) --> "Ciprian".
-r('Cion',subst) --> "Cion".
-r('Ciceron',subst) --> "Ciceron".
-r('Cezar',subst) --> "Cezar".
-r('Cerber',subst) --> "Cerber".
-r('Celsi',subst) --> "Celsi".
-r('Celesten',subst) --> "Celesten".
-r('Cefe',subst) --> "Cefe".
-r('Buĥor',subst) --> "Buĥor".
-r('Buĥar',subst) --> "Buĥar".
-r('Butan',subst) --> "Butan".
-r('Burund',subst) --> "Burund".
-r('Bulgari',subst) --> "Bulgari".
-r('Bule',subst) --> "Bule".
-r('Bruĝ',subst) --> "Bruĝ".
-r('Brusel',subst) --> "Brusel".
-r('Brunsvik',subst) --> "Brunsvik".
-r('Brunej',subst) --> "Brunej".
-r('Brun',subst) --> "Brun".
-r('Briti',subst) --> "Briti".
-r('Bremen',subst) --> "Bremen".
-r('Brem',subst) --> "Brem".
-r('Brazilj',subst) --> "Brazilj".
-r('Brazili',subst) --> "Brazili".
-r('Brazil',subst) --> "Brazil".
-r('Brandenburg',subst) --> "Brandenburg".
-r('Brabant',subst) --> "Brabant".
-r('Bosni',subst) --> "Bosni".
-r('Boris',subst) --> "Boris".
-r('Borel',subst) --> "Borel".
-r('Bonifac',subst) --> "Bonifac".
-r('Bonaventur',subst) --> "Bonaventur".
-r('Bomarŝe',subst) --> "Bomarŝe".
-r('Bolivi',subst) --> "Bolivi".
-r('Boleslav',subst) --> "Boleslav".
-r('Bodidarm',subst) --> "Bodidarm".
-r('Blazi',subst) --> "Blazi".
-r('Bizanti',subst) --> "Bizanti".
-r('Bizanci',subst) --> "Bizanci".
-r('Bizanc',subst) --> "Bizanc".
-r('Birm',subst) --> "Birm".
-r('Bihar',subst) --> "Bihar".
-r('Bibli',subst) --> "Bibli".
-r('Besarabi',subst) --> "Besarabi".
-r('Bertrand',subst) --> "Bertrand".
-r('Bernard',subst) --> "Bernard".
-r('Berlin',subst) --> "Berlin".
-r('Bering',subst) --> "Bering".
-r('Beovulf',subst) --> "Beovulf".
-r('Beograd',subst) --> "Beograd".
-r('Benjamen',subst) --> "Benjamen".
-r('Bengal',subst) --> "Bengal".
-r('Benedikt',subst) --> "Benedikt".
-r('Belgi',subst) --> "Belgi".
-r('Behemot',subst) --> "Behemot".
-r('Baĥ',subst) --> "Baĥ".
-r('Bazil',subst) --> "Bazil".
-r('Batu',subst) --> "Batu".
-r('Bartolome',subst) --> "Bartolome".
-r('Barnab',subst) --> "Barnab".
-r('Barbad',subst) --> "Barbad".
-r('Barat',subst) --> "Barat".
-r('Bankok',subst) --> "Bankok".
-r('Banaĥ',subst) --> "Banaĥ".
-r('Baltik',subst) --> "Baltik".
-r('Baltazar',subst) --> "Baltazar".
-r('Balkaŝ',subst) --> "Balkaŝ".
-r('Balduen',subst) --> "Balduen".
-r('Baktri',subst) --> "Baktri".
-r('Bajkal',subst) --> "Bajkal".
-r('Baham',subst) --> "Baham".
-r('Bagdad',subst) --> "Bagdad".
-r('Bagavadgit',subst) --> "Bagavadgit".
-r('Baden-Virtemberg',subst) --> "Baden-Virtemberg".
-r('Babiloni',subst) --> "Babiloni".
-r('Babilon',subst) --> "Babilon".
-r('Babel',subst) --> "Babel".
-r('Aŭstri',subst) --> "Aŭstri".
-r('Aŭstrali',subst) --> "Aŭstrali".
-r('Aŭrelian',subst) --> "Aŭrelian".
-r('Aŭgusten',subst) --> "Aŭgusten".
-r('Aŝok',subst) --> "Aŝok".
-r('Aĥil',subst) --> "Aĥil".
-r('Azov',subst) --> "Azov".
-r('Azi',subst) --> "Azi".
-r('Azeri',subst) --> "Azeri".
-r('Azerbajĝan',subst) --> "Azerbajĝan".
-r('Avogadr',subst) --> "Avogadr".
-r('Avicen',subst) --> "Avicen".
-r('Avest',subst) --> "Avest".
-r('Avalokiteŝvar',subst) --> "Avalokiteŝvar".
-r('Atlantik',subst) --> "Atlantik".
-r('Atlantid',subst) --> "Atlantid".
-r('Atlant',subst) --> "Atlant".
-r('Atalant',subst) --> "Atalant".
-r('Aski',subst) --> "Aski".
-r('Asiri',subst) --> "Asiri".
-r('Asen',subst) --> "Asen".
-r('Asam',subst) --> "Asam".
-r('Arĥimed',subst) --> "Arĥimed".
-r('Arunaĉalpradeŝ',subst) --> "Arunaĉalpradeŝ".
-r('Artur',subst) --> "Artur".
-r('Artemid',subst) --> "Artemid".
-r('Arnold',subst) --> "Arnold".
-r('Arnhem',subst) --> "Arnhem".
-r('Armeni',subst) --> "Armeni".
-r('Arkt',subst) --> "Arkt".
-r('Arkansas',subst) --> "Arkansas".
-r('Arizon',subst) --> "Arizon".
-r('Aristotel',subst) --> "Aristotel".
-r('Aristofan',subst) --> "Aristofan".
-r('Argonaŭt',subst) --> "Argonaŭt".
-r('Argentin',subst) --> "Argentin".
-r('Ares',subst) --> "Ares".
-r('Aral',subst) --> "Aral".
-r('Apolon',subst) --> "Apolon".
-r('Antverpen',subst) --> "Antverpen".
-r('Antonen',subst) --> "Antonen".
-r('Anton',subst) --> "Anton".
-r('Antarkt',subst) --> "Antarkt".
-r('Anselm',subst) --> "Anselm".
-r('Angol',subst) --> "Angol".
-r('Angli',subst) --> "Angli".
-r('Angar',subst) --> "Angar".
-r('Andromed',subst) --> "Andromed".
-r('Andre',subst) --> "Andre".
-r('Andrapradeŝ',subst) --> "Andrapradeŝ".
-r('Andor',subst) --> "Andor".
-r('Anatoli',subst) --> "Anatoli".
-r('Anatol',subst) --> "Anatol".
-r('Anastazi',subst) --> "Anastazi".
-r('Anabaz',subst) --> "Anabaz".
-r('Amudarj',subst) --> "Amudarj".
-r('Amsterdam',subst) --> "Amsterdam".
-r('Amper',best) --> "Amper".
-r('Amerik',subst) --> "Amerik".
-r('Ambrozi',subst) --> "Ambrozi".
-r('Amazon',subst) --> "Amazon".
-r('Amade',subst) --> "Amade".
-r('Alĝeri',subst) --> "Alĝeri".
-r('Alzac',subst) --> "Alzac".
-r('Altaj',subst) --> "Altaj".
-r('Altair',subst) --> "Altair".
-r('Almat',subst) --> "Almat".
-r('Alfred',subst) --> "Alfred".
-r('Alfons',subst) --> "Alfons".
-r('Aleksandri',subst) --> "Aleksandri".
-r('Aleksandr',subst) --> "Aleksandr".
-r('Albert',subst) --> "Albert".
-r('Albert',subst) --> "Albert".
-r('Albani',subst) --> "Albani".
-r('Alask',subst) --> "Alask".
-r('Alan',subst) --> "Alan".
-r('Alah',subst) --> "Alah".
-r('Alabam',subst) --> "Alabam".
-r('Akad',subst) --> "Akad".
-r('Ahmadism',subst) --> "Ahmadism".
-r('Agni',subst) --> "Agni".
-r('Afrodit',subst) --> "Afrodit".
-r('Afrik',subst) --> "Afrik".
-r('Adrian',subst) --> "Adrian".
-r('Adolf',subst) --> "Adolf".
-r('Adam',subst) --> "Adam".
-r('Adalbert',subst) --> "Adalbert".
-r('Abidarm',subst) --> "Abidarm".
-r('Abel',subst) --> "Abel".
-r('Abas',subst) --> "Abas".
+r('ŝvit',ntr).
+r('ŝvel',ntr).
+r('ŝveb',ntr).
+r('ŝva',subst).
+r('ŝuŝ',ntr).
+r('ŝutr',subst).
+r('ŝut',tr).
+r('ŝultr',subst).
+r('ŝuld',tr).
+r('ŝu',subst).
+r('ŝtup',subst).
+r('ŝtrump',subst).
+r('ŝtorm',subst).
+r('ŝtop',tr).
+r('ŝton',subst).
+r('ŝtof',subst).
+r('ŝtip',subst).
+r('ŝtel',tr).
+r('ŝtat',subst).
+r('ŝtal',subst).
+r('ŝrump',ntr).
+r('ŝroter',subst).
+r('ŝrot',subst).
+r('ŝrik',ntr).
+r('ŝraŭb',subst).
+r('ŝrapnel',subst).
+r('ŝrank',subst).
+r('ŝraman',subst).
+r('ŝpruc',verb).
+r('ŝpin',tr).
+r('ŝpat',subst).
+r('ŝpar',tr).
+r('ŝpal',subst).
+r('ŝovinist',subst).
+r('ŝovinism',subst).
+r('ŝovel',tr).
+r('ŝov',verb).
+r('ŝot',tr).
+r('ŝose',subst).
+r('ŝos',subst).
+r('ŝort',subst).
+r('ŝorbet',subst).
+r('ŝok',tr).
+r('ŝogun',subst).
+r('ŝofor',subst).
+r('ŝnur',subst).
+r('ŝmir',tr).
+r('ŝmink',tr).
+r('ŝmac',ntr).
+r('ŝlos',tr).
+r('ŝlim',subst).
+r('ŝlif',verb).
+r('ŝlemil',subst).
+r('ŝlem',subst).
+r('ŝlak',subst).
+r('ŝlagr',subst).
+r('ŝkot',subst).
+r('ŝiruk',subst).
+r('ŝirm',tr).
+r('ŝir',tr).
+r('ŝip',subst).
+r('ŝintoism',subst).
+r('ŝinto',subst).
+r('ŝintaid',subst).
+r('ŝinob',subst).
+r('ŝink',subst).
+r('ŝind',subst).
+r('ŝim',ntr).
+r('ŝiling',subst).
+r('ŝild',subst).
+r('ŝil',subst).
+r('ŝik',adj).
+r('ŝijaist',subst).
+r('ŝijaism',subst).
+r('ŝiacu',subst).
+r('ŝeviot',subst).
+r('ŝerp',subst).
+r('ŝere',subst).
+r('ŝerc',ntr).
+r('ŝenopraz',subst).
+r('ŝelk',subst).
+r('ŝelak',subst).
+r('ŝel',subst).
+r('ŝekel',subst).
+r('ŝejk',subst).
+r('ŝed',subst).
+r('ŝaŭm',subst).
+r('ŝat',tr).
+r('ŝarĝ',tr).
+r('ŝarked',subst).
+r('ŝark',best).
+r('ŝarg',tr).
+r('ŝarad',subst).
+r('ŝanĝ',tr).
+r('ŝankr',subst).
+r('ŝanel',subst).
+r('ŝancel',tr).
+r('ŝanc',subst).
+r('ŝanaj',subst).
+r('ŝampu',subst).
+r('ŝamot',subst).
+r('ŝamisen',subst).
+r('ŝaman',subst).
+r('ŝam',subst).
+r('ŝalup',subst).
+r('ŝalt',tr).
+r('ŝalm',subst).
+r('ŝaligram',subst).
+r('ŝal',subst).
+r('ŝakuhaĉ',subst).
+r('ŝakt',subst).
+r('ŝakr',ntr).
+r('ŝakal',subst).
+r('ŝak',subst).
+r('ŝajn',ntr).
+r('ŝah',subst).
+r('ŝagrin',subst).
+r('ŝaft',subst).
+r('ŝaf',subst).
+r('ŝablon',subst).
+r('Ŝopen',subst).
+r('Ŝlesvigholstini',subst).
+r('Ŝlejer',subst).
+r('Ŝiva',subst).
+r('Ŝengen',subst).
+r('Ŝem',subst).
+r('Ŝekspir',subst).
+r('Ŝari',subst).
+r('ĵuĵu',subst).
+r('ĵurnal',subst).
+r('ĵuri',subst).
+r('ĵuras',subst).
+r('ĵur',tr).
+r('ĵud',subst).
+r('ĵonk',subst).
+r('ĵongl',ntr).
+r('ĵoker',subst).
+r('ĵoke',subst).
+r('ĵip',subst).
+r('ĵinz',subst).
+r('ĵig',subst).
+r('ĵig',subst).
+r('ĵib',subst).
+r('ĵeton',subst).
+r('ĵet',tr).
+r('ĵerz',subst).
+r('ĵele',subst).
+r('ĵaŭd',subst).
+r('ĵaz',subst).
+r('ĵartel',subst).
+r('ĵargon',subst).
+r('ĵambore',subst).
+r('ĵam',verb).
+r('ĵaluzi',subst).
+r('ĵaluz',adj).
+r('ĵaket',subst).
+r('ĵak',subst).
+r('ĵak',subst).
+r('ĵabutikab',subst).
+r('ĵabot',subst).
+r('Ĵul',best).
+r('Ĵerzej',subst).
+r('ĥore',subst).
+r('ĥord',subst).
+r('ĥoral',subst).
+r('ĥor',subst).
+r('ĥolesterol',subst).
+r('ĥolesterin',subst).
+r('ĥoler',subst).
+r('ĥolecistit',subst).
+r('ĥlamid',subst).
+r('ĥiton',subst).
+r('ĥitin',subst).
+r('ĥirurgi',subst).
+r('ĥirurg',subst).
+r('ĥinin',subst).
+r('ĥin',subst).
+r('ĥimer',subst).
+r('ĥim',subst).
+r('ĥil',subst).
+r('ĥet',subst).
+r('ĥemi',subst).
+r('ĥeloni',subst).
+r('ĥazar',subst).
+r('ĥat',subst).
+r('ĥasid',subst).
+r('ĥaradried',subst).
+r('ĥaradri',subst).
+r('ĥaos',subst).
+r('ĥant',subst).
+r('ĥan',subst).
+r('ĥamsin',subst).
+r('ĥamemor',subst).
+r('ĥameleoned',subst).
+r('ĥameleon',best).
+r('ĥalkolitik',subst).
+r('ĥalkogen',subst).
+r('ĥalif',subst).
+r('ĥalde',subst).
+r('ĥalat',subst).
+r('Ĥiron',subst).
+r('Ĥi',subst).
+r('Ĥerone',subst).
+r('Ĥeops',subst).
+r('Ĥaron',subst).
+r('Ĥaribd',subst).
+r('Ĥanuk',subst).
+r('Ĥam',subst).
+r('ĝust',adj).
+r('ĝu',tr).
+r('ĝonk',subst).
+r('ĝoj',ntr).
+r('ĝirafed',subst).
+r('ĝiraf',subst).
+r('ĝir',tr).
+r('ĝinz',subst).
+r('ĝin',subst).
+r('ĝin',subst).
+r('ĝin',subst).
+r('ĝihad',subst).
+r('ĝig',subst).
+r('ĝib',subst).
+r('ĝet',subst).
+r('ĝerman',subst).
+r('ĝerm',subst).
+r('ĝentleman',subst).
+r('ĝentil',adj).
+r('ĝenr',subst).
+r('ĝeni',subst).
+r('ĝeneral',adj).
+r('ĝendarm',subst).
+r('ĝen',tr).
+r('ĝemel',subst).
+r('ĝem',ntr).
+r('ĝelab',subst).
+r('ĝazband',subst).
+r('ĝarden',subst).
+r('ĝangal',subst).
+r('ĝajn',subst).
+r('Ĝoĉi',subst).
+r('Ĝibuti',subst).
+r('Ĝerald',subst).
+r('Ĝenov',subst).
+r('Ĝenev',subst).
+r('Ĝarkand',subst).
+r('Ĝakart',subst).
+r('ĉurask',subst).
+r('ĉur',subst).
+r('ĉukĉ',subst).
+r('ĉoted',subst).
+r('ĉot',best).
+r('ĉonmag',subst).
+r('ĉokolad',subst).
+r('ĉiĉimek',subst).
+r('ĉiĉeron',subst).
+r('ĉiz',tr).
+r('ĉirp',ntr).
+r('ĉir',subst).
+r('ĉips',subst).
+r('ĉinĉil',subst).
+r('ĉinesk',subst).
+r('ĉin',subst).
+r('ĉimpanz',best).
+r('ĉim',subst).
+r('ĉil',subst).
+r('ĉikan',tr).
+r('ĉigong',subst).
+r('ĉifr',subst).
+r('ĉifon',subst).
+r('ĉif',tr).
+r('ĉiel',subst).
+r('ĉibuk',subst).
+r('ĉeĥ',best).
+r('ĉevron',subst).
+r('ĉevaled',subst).
+r('ĉeval',best).
+r('ĉes',ntr).
+r('ĉervonc',subst).
+r('ĉerp',tr).
+r('ĉernozem',subst).
+r('ĉerkes',subst).
+r('ĉerk',subst).
+r('ĉeriz',subst).
+r('ĉen',subst).
+r('ĉemiz',subst).
+r('ĉel',subst).
+r('ĉek',subst).
+r('ĉatni',subst).
+r('ĉast',adj).
+r('ĉasi',subst).
+r('ĉas',tr).
+r('ĉart',subst).
+r('ĉarpi',subst).
+r('ĉarpent',tr).
+r('ĉarnir',subst).
+r('ĉarm',adj).
+r('ĉarlatan',subst).
+r('ĉard',subst).
+r('ĉarang',subst).
+r('ĉar',subst).
+r('ĉapitr',subst).
+r('ĉapel',subst).
+r('ĉap',subst).
+r('ĉantaĝ',tr).
+r('ĉan',subst).
+r('ĉampion',subst).
+r('ĉampinjon',subst).
+r('ĉampan',subst).
+r('ĉambr',subst).
+r('ĉambelan',subst).
+r('ĉam',subst).
+r('ĉalet',subst).
+r('ĉaled',subst).
+r('ĉakr',subst).
+r('ĉakon',subst).
+r('ĉak',subst).
+r('ĉajot',subst).
+r('ĉagren',tr).
+r('ĉador',subst).
+r('ĉabrak',subst).
+r('Ĉini',subst).
+r('Ĉingis',subst).
+r('Ĉili',subst).
+r('Ĉikag',subst).
+r('Ĉeĥi',subst).
+r('Ĉatisgar',subst).
+r('Ĉad',subst).
+r('zum',ntr).
+r('zulu',subst).
+r('zuav',subst).
+r('zosterops',subst).
+r('zori',subst).
+r('zorg',tr).
+r('zoologi',subst).
+r('zoolog',subst).
+r('zoofit',subst).
+r('zon',subst).
+r('zombi',subst).
+r('zom',subst).
+r('zodiak',subst).
+r('zo',subst).
+r('zlot',subst).
+r('zizel',best).
+r('zirkoni',subst).
+r('zip',subst).
+r('zink',subst).
+r('zingibrac',subst).
+r('zingibr',subst).
+r('zimbalon',subst).
+r('zigzag',subst).
+r('zigurat',subst).
+r('zigot',subst).
+r('zigom',subst).
+r('zigofilac',subst).
+r('zibet',subst).
+r('zibel',best).
+r('zeŭgm',subst).
+r('zeta',pref).
+r('zepto',pref).
+r('zepelin',subst).
+r('zenit',subst).
+r('zen',subst).
+r('zelot',subst).
+r('zelkov',subst).
+r('zeken',subst).
+r('zefir',subst).
+r('zebu',subst).
+r('zebr',best).
+r('ze',subst).
+r('zarzuel',subst).
+r('zakusk',subst).
+r('vund',tr).
+r('vulv',subst).
+r('vultur',subst).
+r('vultu',adj).
+r('vulp',best).
+r('vulkaniz',tr).
+r('vulkan',subst).
+r('vulgar',adj).
+r('vual',subst).
+r('vu',subst).
+r('vring',tr).
+r('vrak',subst).
+r('voĉ',subst).
+r('vot',subst).
+r('vost',subst).
+r('vortic',subst).
+r('vort',subst).
+r('vor',tr).
+r('von',subst).
+r('vomit',subst).
+r('vombat',subst).
+r('vom',tr).
+r('volv',tr).
+r('volupt',subst).
+r('volumen',subst).
+r('volum',subst).
+r('volont',adv).
+r('volitiv',subst).
+r('volfram',subst).
+r('volejbal',subst).
+r('volb',subst).
+r('volapuk',subst).
+r('vol',tr).
+r('vokt',subst).
+r('vokativ',subst).
+r('vokal',subst).
+r('vok',tr).
+r('vojevodi',subst).
+r('vojevod',subst).
+r('vojaĝ',ntr).
+r('voj',subst).
+r('vodk',subst).
+r('vodevil',subst).
+r('vladik',subst).
+r('vjol',subst).
+r('vjetnam',subst).
+r('vjel',subst).
+r('viŝ',tr).
+r('vizitandin',subst).
+r('vizit',tr).
+r('vizier',subst).
+r('vizi',subst).
+r('vizaĝ',subst).
+r('viz',subst).
+r('vivisekci',subst).
+r('vivered',subst).
+r('viver',best).
+r('viv',ntr).
+r('vitriol',subst).
+r('vitrin',subst).
+r('vitre',subst).
+r('vitral',subst).
+r('vitr',subst).
+r('vitamin',subst).
+r('vital',adj).
+r('vitac',subst).
+r('vit',subst).
+r('visteri',subst).
+r('vist',subst).
+r('viskoz',subst).
+r('viski',subst).
+r('visk',subst).
+r('visigot',subst).
+r('viscer',subst).
+r('virusologi',subst).
+r('virusolog',subst).
+r('virus',subst).
+r('virtuoz',subst).
+r('virtual',adj).
+r('virt',subst).
+r('virg',adj).
+r('vir',subst).
+r('vipured',subst).
+r('vipur',best).
+r('viper',subst).
+r('vip',subst).
+r('violonĉel',subst).
+r('violon',subst).
+r('violent',adj).
+r('violac',subst).
+r('viol',subst).
+r('vinĉestr',subst).
+r('vinĉ',subst).
+r('vintr',subst).
+r('vinkt',subst).
+r('vink',subst).
+r('vinjet',subst).
+r('vinil',subst).
+r('vindas',subst).
+r('vind',tr).
+r('vinagr',subst).
+r('vina',subst).
+r('vin',subst).
+r('vimpl',subst).
+r('vimen',subst).
+r('vilaĝ',subst).
+r('vila',subst).
+r('vil',adj).
+r('viktuali',subst).
+r('viktim',subst).
+r('viking',subst).
+r('viki',subst).
+r('vikari',subst).
+r('vigvam',subst).
+r('vigl',adj).
+r('vigil',ntr).
+r('vifi',subst).
+r('vidv',subst).
+r('vide',subst).
+r('vid',tr).
+r('vici',subst).
+r('vic',subst).
+r('viburn',subst).
+r('vibrafon',subst).
+r('vibr',ntr).
+r('viatik',subst).
+r('viand',subst).
+r('viadukt',subst).
+r('veŝt',subst).
+r('vezir',subst).
+r('vezik',subst).
+r('vetur',ntr).
+r('veto',subst).
+r('veterinar',subst).
+r('veteran',subst).
+r('veter',subst).
+r('vet',tr).
+r('vestiĝ',subst).
+r('vestibl',subst).
+r('vestal',subst).
+r('vest',tr).
+r('vespr',subst).
+r('vespert',subst).
+r('vesper',subst).
+r('vesped',subst).
+r('vesp',subst).
+r('vesel',subst).
+r('verŝ',tr).
+r('verv',subst).
+r('veruk',subst).
+r('vertiĝ',subst).
+r('vertikal',adj).
+r('vertic',subst).
+r('vertebr',subst).
+r('vertag',subst).
+r('vert',subst).
+r('verst',subst).
+r('versi',subst).
+r('versal',subst).
+r('vers',subst).
+r('veronal',subst).
+r('vernis',subst).
+r('vernier',subst).
+r('vermut',subst).
+r('vermiĉel',subst).
+r('vermiljon',adj).
+r('vermifug',subst).
+r('verm',subst).
+r('verk',tr).
+r('verg',subst).
+r('verdikt',subst).
+r('verdigr',subst).
+r('verd',adj).
+r('verbenac',subst).
+r('verben',subst).
+r('verbask',subst).
+r('verb',subst).
+r('veratr',subst).
+r('verand',subst).
+r('ver',adj).
+r('vepr',subst).
+r('venĝ',tr).
+r('ventrikl',subst).
+r('ventr',subst).
+r('ventol',tr).
+r('vent',subst).
+r('venk',tr).
+r('venere',adj).
+r('venen',subst).
+r('vendred',subst).
+r('vend',tr).
+r('ven',ntr).
+r('velur',subst).
+r('velociped',subst).
+r('velk',ntr).
+r('velen',subst).
+r('veld',tr).
+r('velar',subst).
+r('vel',subst).
+r('vektor',subst).
+r('vekt',subst).
+r('vek',tr).
+r('vejĉi',subst).
+r('vejn',subst).
+r('vegetar',adj).
+r('vegetalin',subst).
+r('vegetal',subst).
+r('veget',ntr).
+r('vegan',subst).
+r('veft',subst).
+r('ved',subst).
+r('vaĉ',ntr).
+r('vazelin',subst).
+r('vaz',subst).
+r('vav',subst).
+r('vat',subst).
+r('vast',adj).
+r('vaskul',subst).
+r('vask',subst).
+r('vasal',subst).
+r('vasabi',subst).
+r('vart',tr).
+r('varp',subst).
+r('varm',adj).
+r('variol',subst).
+r('varik',subst).
+r('variete',subst).
+r('varicel',subst).
+r('variant',subst).
+r('varianc',subst).
+r('variaci',subst).
+r('variabl',subst).
+r('vari',ntr).
+r('varf',subst).
+r('varb',tr).
+r('varang',subst).
+r('varan',subst).
+r('var',subst).
+r('vapor',subst).
+r('vanuatu',subst).
+r('vanu',verb).
+r('vant',adj).
+r('vanil',subst).
+r('vang',subst).
+r('vaneled',subst).
+r('vanel',subst).
+r('vandal',subst).
+r('vand',subst).
+r('vanadi',subst).
+r('vanad',subst).
+r('van',adj).
+r('vampir',best).
+r('valv',subst).
+r('valut',subst).
+r('vals',subst).
+r('valoriz',tr).
+r('valor',tr).
+r('valon',subst).
+r('valiz',subst).
+r('valid',adj).
+r('valerianac',subst).
+r('valerian',subst).
+r('valent',subst).
+r('valencien',subst).
+r('val',subst).
+r('vakuol',subst).
+r('vaku',subst).
+r('vaks',subst).
+r('vaker',subst).
+r('vakcini',subst).
+r('vakcin',subst).
+r('vak',ntr).
+r('vajc',subst).
+r('vahabit',subst).
+r('vagon',subst).
+r('vagin',subst).
+r('vagabond',subst).
+r('vag',ntr).
+r('vafl',subst).
+r('vadi',subst).
+r('vad',ntr).
+r('uŝu',subst).
+r('uzurpator',subst).
+r('uzurp',tr).
+r('uzur',subst).
+r('uzukap',tr).
+r('uzin',subst).
+r('uzbek',subst).
+r('uzanc',subst).
+r('uz',tr).
+r('uvul',subst).
+r('uvertur',subst).
+r('uv',subst).
+r('utopi',subst).
+r('util',adj).
+r('uter',subst).
+r('uten',subst).
+r('uskl',subst).
+r('urĝ',tr).
+r('urtikac',subst).
+r('urtik',subst).
+r('ursed',subst).
+r('urs',best).
+r('urogal',subst).
+r('urodel',subst).
+r('urn',subst).
+r('urin',verb).
+r('ureus',subst).
+r('uretr',subst).
+r('ureter',subst).
+r('urb',subst).
+r('urani',subst).
+r('uragan',subst).
+r('ur',subst).
+r('upasak',subst).
+r('upaniŝad',subst).
+r('unut',subst).
+r('unucikl',subst).
+r('unkt',verb).
+r('unkari',subst).
+r('universitat',subst).
+r('universal',adj).
+r('univers',subst).
+r('unison',subst).
+r('unikorn',subst).
+r('unik',adj).
+r('uniform',subst).
+r('uniat',subst).
+r('uni',subst).
+r('ungvent',subst).
+r('ung',subst).
+r('uncial',subst).
+r('unc',subst).
+r('umlaŭt',subst).
+r('ume',subst).
+r('umbilik',subst).
+r('umbelifer',subst).
+r('umbel',subst).
+r('um',suf).
+r('ulul',ntr).
+r('ultraviol',adj).
+r('ultrason',subst).
+r('ultramar',subst).
+r('ultra',pref).
+r('ultimat',subst).
+r('uln',subst).
+r('ulmac',subst).
+r('ulm',subst).
+r('ulem',subst).
+r('uleks',subst).
+r('ulcer',subst).
+r('ulan',subst).
+r('ulamban',subst).
+r('ukulel',subst).
+r('ukrajn',subst).
+r('ukraini',subst).
+r('ukrain',subst).
+r('ukaz',subst).
+r('ugvis',subst).
+r('udon',subst).
+r('ubliet',subst).
+r('tvist',subst).
+r('tvid',subst).
+r('tuŝ',tr).
+r('tuĉ',subst).
+r('tuval',subst).
+r('tut',adj).
+r('tusk',subst).
+r('tusilag',subst).
+r('tus',verb).
+r('turt',subst).
+r('turp',adj).
+r('turnir',subst).
+r('turne',ntr).
+r('turn',tr).
+r('turment',tr).
+r('turkmen',subst).
+r('turkis',subst).
+r('turk',subst).
+r('turist',subst).
+r('turism',subst).
+r('turing',subst).
+r('turded',subst).
+r('turd',subst).
+r('turbulent',adj).
+r('turbin',subst).
+r('turban',subst).
+r('turb',subst).
+r('tur',subst).
+r('tunik',subst).
+r('tungsten',subst).
+r('tunel',subst).
+r('tundr',subst).
+r('tun',subst).
+r('tumult',subst).
+r('tumor',subst).
+r('tulip',subst).
+r('tuli',subst).
+r('tul',subst).
+r('tuku',subst).
+r('tukan',subst).
+r('tuk',subst).
+r('tuj',subst).
+r('tuf',subst).
+r('tubj',subst).
+r('tuberos',subst).
+r('tuberkuloz',subst).
+r('tuberkul',subst).
+r('tuber',subst).
+r('tub',subst).
+r('tualet',subst).
+r('trut',subst).
+r('trust',subst).
+r('truso',subst).
+r('trup',subst).
+r('trunk',subst).
+r('trumpet',subst).
+r('trum',subst).
+r('trul',subst).
+r('truk',subst).
+r('truf',subst).
+r('trud',tr).
+r('trubadur',subst).
+r('tru',subst).
+r('troĥoid',subst).
+r('troĥe',ntr).
+r('trov',tr).
+r('trotuar',subst).
+r('trot',ntr).
+r('troposfer',subst).
+r('tropik',subst).
+r('trop',subst).
+r('tron',subst).
+r('tromp',tr).
+r('trombon',subst).
+r('tromb',subst).
+r('trole',subst).
+r('trol',subst).
+r('trol',subst).
+r('troke',subst).
+r('troglodit',subst).
+r('trog',subst).
+r('trofe',subst).
+r('trobador',subst).
+r('triĥin',subst).
+r('trivial',adj).
+r('triv',tr).
+r('triumf',subst).
+r('tritikal',subst).
+r('tritik',subst).
+r('trit',subst).
+r('trist',adj).
+r('trirem',subst).
+r('triptik',subst).
+r('trip',subst).
+r('triolet',subst).
+r('triod',subst).
+r('trinom',subst).
+r('trink',tr).
+r('trimestr',subst).
+r('trilogi',subst).
+r('tril',subst).
+r('triktrak',subst).
+r('trikot',subst).
+r('trik',tr).
+r('trigonometri',subst).
+r('triglif',subst).
+r('trigled',subst).
+r('trigl',best).
+r('tridakn',subst).
+r('tricikl',subst).
+r('tribut',subst).
+r('tribunal',subst).
+r('tribun',subst).
+r('tribrak',subst).
+r('tribord',subst).
+r('trib',subst).
+r('triatlon',subst).
+r('trias',subst).
+r('tri',subst).
+r('trezor',subst).
+r('tret',tr).
+r('tres',subst).
+r('tren',tr).
+r('tremp',tr).
+r('tremol',subst).
+r('trematod',subst).
+r('trema',subst).
+r('trem',ntr).
+r('trejn',tr).
+r('tref',subst).
+r('tred',tr).
+r('traŭmatologi',subst).
+r('traŭmatolog',subst).
+r('traŭmatiz',verb).
+r('traŭmat',subst).
+r('traŭm',subst).
+r('traĥom',subst).
+r('traĥe',subst).
+r('travesti',tr).
+r('travertin',subst).
+r('trat',subst).
+r('trapez',subst).
+r('trap',subst).
+r('tranĉe',subst).
+r('tranĉ',tr).
+r('transvers',adj).
+r('transpon',tr).
+r('transmisi',verb).
+r('translaci',subst).
+r('transitiv',adj).
+r('transit',subst).
+r('transistor',subst).
+r('transfuz',verb).
+r('transformator',subst).
+r('transept',subst).
+r('transcend',adj).
+r('transakci',subst).
+r('trankvil',adj).
+r('tranc',subst).
+r('trampolin',subst).
+r('trampl',tr).
+r('tramp',subst).
+r('tram',subst).
+r('traktori',subst).
+r('traktor',subst).
+r('traktat',subst).
+r('trakt',tr).
+r('trakom',subst).
+r('trake',subst).
+r('trak',subst).
+r('trajt',subst).
+r('trajn',subst).
+r('trajektori',subst).
+r('tragikomedi',subst).
+r('tragik',adj).
+r('tragelaf',subst).
+r('tragedi',subst).
+r('trafik',subst).
+r('traf',tr).
+r('tradukologi',subst).
+r('tradukolog',subst).
+r('traduk',tr).
+r('tradici',subst).
+r('trabant',subst).
+r('trab',subst).
+r('toŭfu',subst).
+r('totem',subst).
+r('total',adj).
+r('tost',subst).
+r('toskan',subst).
+r('torĉ',subst).
+r('tortur',tr).
+r('tortilj',subst).
+r('tort',subst).
+r('tors',subst).
+r('torpor',subst).
+r('torped',subst).
+r('tornistr',subst).
+r('tornad',subst).
+r('torn',tr).
+r('tori',subst).
+r('torf',subst).
+r('torent',subst).
+r('toreador',subst).
+r('tord',tr).
+r('torak',subst).
+r('tor',subst).
+r('topor',subst).
+r('toponimi',subst).
+r('toponim',subst).
+r('topologi',subst).
+r('topografi',subst).
+r('topograf',subst).
+r('topinambur',subst).
+r('topaz',subst).
+r('top',subst).
+r('tonus',subst).
+r('tonsur',subst).
+r('tonsil',subst).
+r('tonik',subst).
+r('tong',subst).
+r('tonel',subst).
+r('tondr',ntr).
+r('tond',tr).
+r('tonal',subst).
+r('ton',subst).
+r('tomografi',subst).
+r('tomism',subst).
+r('tombak',subst).
+r('tomb',subst).
+r('tomat',subst).
+r('toman',subst).
+r('toluen',subst).
+r('toltek',subst).
+r('toler',tr).
+r('tol',subst).
+r('toksologi',subst).
+r('toksolog',subst).
+r('toksin',subst).
+r('tokonom',subst).
+r('tokipon',subst).
+r('tokat',subst).
+r('tohuvabohu',subst).
+r('tohu',subst).
+r('tog',subst).
+r('tofu',subst).
+r('tof',subst).
+r('tobogan',subst).
+r('toast',subst).
+r('tjurk',subst).
+r('tizan',subst).
+r('titol',subst).
+r('titan',subst).
+r('titan',subst).
+r('tiroid',subst).
+r('tiran',subst).
+r('tiraljor',subst).
+r('tir',tr).
+r('tipul',subst).
+r('tipometr',subst).
+r('tipologi',subst).
+r('tipol',subst).
+r('tipografi',subst).
+r('tipograf',subst).
+r('tipi',subst).
+r('tip',subst).
+r('tinus',best).
+r('tint',ntr).
+r('tinktur',subst).
+r('tink',best).
+r('tineed',subst).
+r('tine',best).
+r('tindr',subst).
+r('tin',subst).
+r('tin',subst).
+r('timus',subst).
+r('timpan',subst).
+r('timon',subst).
+r('timin',subst).
+r('timid',adj).
+r('timian',subst).
+r('timeleac',subst).
+r('timbal',subst).
+r('tim',tr).
+r('tiliac',subst).
+r('tili',subst).
+r('tild',subst).
+r('tiktak',subst).
+r('tikl',tr).
+r('tik',ntr).
+r('tik',subst).
+r('tigr',best).
+r('tig',subst).
+r('tifon',subst).
+r('tifa',subst).
+r('tif',subst).
+r('tibi',subst).
+r('tiar',subst).
+r('teŭg',subst).
+r('teĥnolog',subst).
+r('teĥnokrati',subst).
+r('teĥnokrat',subst).
+r('teĥnik',subst).
+r('tezaŭr',subst).
+r('tez',subst).
+r('tetraoned',subst).
+r('tetraon',subst).
+r('tetraedr',subst).
+r('tetra',subst).
+r('tetr',subst).
+r('tetan',subst).
+r('testud',best).
+r('testik',subst).
+r('testament',subst).
+r('test',tr).
+r('terur',subst).
+r('terpen',subst).
+r('teror',subst).
+r('tern',ntr).
+r('termos',subst).
+r('termonukle',adj).
+r('termometr',subst).
+r('termoelektr',adj).
+r('termodinamik',subst).
+r('termit',subst).
+r('terminologi',subst).
+r('terminolog',subst).
+r('terminali',subst).
+r('terminal',subst).
+r('terminal',subst).
+r('termin',subst).
+r('termik',adj).
+r('term',subst).
+r('teritori',subst).
+r('teriak',subst).
+r('teren',subst).
+r('terebint',subst).
+r('terciar',adj).
+r('terci',subst).
+r('tercet',subst).
+r('terbi',subst).
+r('teratologi',subst).
+r('teras',subst).
+r('terari',subst).
+r('terapi',subst).
+r('terapeŭtik',adj).
+r('terakot',subst).
+r('tera',pref).
+r('ter',subst).
+r('teozofi',subst).
+r('teozof',subst).
+r('teori',subst).
+r('teorem',subst).
+r('teorb',subst).
+r('teologi',subst).
+r('teolog',subst).
+r('teokrati',subst).
+r('teodolit',subst).
+r('tent',tr).
+r('tensi',subst).
+r('tenor',subst).
+r('tenon',subst).
+r('tenis',subst).
+r('teni',subst).
+r('tener',adj).
+r('tenebr',subst).
+r('tendr',subst).
+r('tendenc',subst).
+r('tenden',subst).
+r('tend',subst).
+r('tenajl',subst).
+r('tenac',adj).
+r('ten',tr).
+r('temporal',subst).
+r('templ',subst).
+r('tempi',subst).
+r('tempest',subst).
+r('temperatur',subst).
+r('temperament',subst).
+r('temp',subst).
+r('temerar',adj).
+r('tembr',subst).
+r('tem',subst).
+r('telur',subst).
+r('telomer',subst).
+r('telfer',subst).
+r('televizi',subst).
+r('televid',verb).
+r('teleskop',subst).
+r('telereg',verb).
+r('teler',subst).
+r('telepati',subst).
+r('teleobjektiv',subst).
+r('teleks',subst).
+r('telekopi',subst).
+r('telekomunik',verb).
+r('telegram',subst).
+r('telegrafi',subst).
+r('telegraf',subst).
+r('telefotograf',tr).
+r('telefoni',subst).
+r('telefon',subst).
+r('teleaŭtograf',tr).
+r('tele',pref).
+r('tel',subst).
+r('tekvond',subst).
+r('tekton',subst).
+r('tekstur',subst).
+r('tekstur',subst).
+r('tekst',subst).
+r('teks',tr).
+r('teknologi',subst).
+r('teknolog',subst).
+r('teknokrati',subst).
+r('teknokrat',subst).
+r('teknik',subst).
+r('tekneci',subst).
+r('tekil',subst).
+r('tek',subst).
+r('teist',subst).
+r('teism',subst).
+r('tein',subst).
+r('tegol',subst).
+r('tegment',subst).
+r('teg',tr).
+r('teflon',subst).
+r('ted',tr).
+r('teatr',subst).
+r('team',subst).
+r('teac',subst).
+r('te',subst).
+r('taŭz',tr).
+r('taŭtologi',subst).
+r('taŭrotrag',subst).
+r('taŭr',subst).
+r('taŭg',ntr).
+r('taŝ',subst).
+r('taĥikardi',subst).
+r('taĝik',subst).
+r('taĉment',subst).
+r('tavol',subst).
+r('tavern',subst).
+r('tatu',tr).
+r('tatar',subst).
+r('tatam',subst).
+r('task',subst).
+r('tas',subst).
+r('tartan',subst).
+r('tars',subst).
+r('tarok',subst).
+r('tarif',subst).
+r('tarantul',subst).
+r('tarantel',subst).
+r('tarantas',subst).
+r('tar',subst).
+r('tar',subst).
+r('tapiŝ',subst).
+r('tapiok',subst).
+r('tapet',subst).
+r('taoist',subst).
+r('taoism',subst).
+r('tanĝ',tr).
+r('tantr',subst).
+r('tantiem',subst).
+r('tantal',subst).
+r('tanka',subst).
+r('tank',subst).
+r('tanin',subst).
+r('tangram',subst).
+r('tangent',subst).
+r('tanga',subst).
+r('tang',ntr).
+r('tandem',subst).
+r('tan',tr).
+r('tamul',subst).
+r('tamtam',subst).
+r('tampon',subst).
+r('tamil',best).
+r('tamias',best).
+r('tamburin',subst).
+r('tambur',subst).
+r('tamarind',subst).
+r('tamarikac',subst).
+r('tamarik',subst).
+r('talped',subst).
+r('talp',best).
+r('talon',subst).
+r('talmud',subst).
+r('talk',subst).
+r('talium',subst).
+r('talisman',subst).
+r('talib',subst).
+r('tali',subst).
+r('tali',subst).
+r('taler',subst).
+r('talent',subst).
+r('talasemi',subst).
+r('talar',subst).
+r('talant',subst).
+r('taktik',subst).
+r('takt',subst).
+r('taksusac',subst).
+r('taksus',subst).
+r('taksonomi',subst).
+r('taksonom',subst).
+r('takson',subst).
+r('taksodiac',subst).
+r('taksimetr',subst).
+r('taksi',subst).
+r('taks',tr).
+r('takipet',subst).
+r('takikardi',subst).
+r('takel',subst).
+r('tajĝiĉuan',subst).
+r('tajĝi',subst).
+r('tajvan',subst).
+r('tajp',tr).
+r('tajlor',subst).
+r('tajl',tr).
+r('tajg',subst).
+r('tajfun',subst).
+r('tajd',subst).
+r('taj',subst).
+r('tagalog',subst).
+r('tag',subst).
+r('taft',subst).
+r('tael',subst).
+r('taburet',subst).
+r('tabul',subst).
+r('tabu',tr).
+r('tablojd',subst).
+r('tabl',subst).
+r('tabi',subst).
+r('tabernakl',subst).
+r('tabel',subst).
+r('tabaned',subst).
+r('taban',subst).
+r('tabak',subst).
+r('tab',subst).
+r('ta',subst).
+r('svop',subst).
+r('svis',subst).
+r('sving',tr).
+r('sveter',subst).
+r('sven',ntr).
+r('svelt',adj).
+r('sved',subst).
+r('svazi',subst).
+r('svat',tr).
+r('svastik',subst).
+r('svarm',ntr).
+r('svag',adj).
+r('suŝi',subst).
+r('suĉ',tr).
+r('suzeren',subst).
+r('suveren',subst).
+r('suvenir',subst).
+r('sutur',verb).
+r('sutr',subst).
+r('sutan',subst).
+r('susur',ntr).
+r('suspir',ntr).
+r('suspensi',subst).
+r('suspens',subst).
+r('suspend',tr).
+r('suspekt',tr).
+r('surtut',subst).
+r('surpriz',tr).
+r('surplis',subst).
+r('surogat',subst).
+r('surjekci',subst).
+r('surfac',subst).
+r('surf',subst).
+r('surd',adj).
+r('sura',subst).
+r('sur',subst).
+r('suprem',subst).
+r('supr',adv).
+r('supoz',tr).
+r('suplik',tr).
+r('suplement',subst).
+r('supl',adj).
+r('superstiĉ',subst).
+r('superlativ',subst).
+r('superb',adj).
+r('sup',subst).
+r('suom',subst).
+r('sun',subst).
+r('sumo',subst).
+r('sumer',subst).
+r('sum',subst).
+r('sultan',subst).
+r('sulk',subst).
+r('sulfur',subst).
+r('sulf',subst).
+r('sukur',tr).
+r('sukub',subst).
+r('suker',subst).
+r('sukces',ntr).
+r('sukcen',subst).
+r('sukced',tr).
+r('suk',subst).
+r('suit',subst).
+r('suicid',ntr).
+r('sugesti',tr).
+r('sugest',verb).
+r('sufragan',subst).
+r('sufok',tr).
+r('suflor',subst).
+r('sufiĉ',adj).
+r('sufiks',subst).
+r('sufer',tr).
+r('sudok',subst).
+r('sud',subst).
+r('subvenci',subst).
+r('subtrah',tr).
+r('subtil',adj).
+r('substrat',subst).
+r('substitu',tr).
+r('substantiv',subst).
+r('substanc',subst).
+r('subsidiar',adj).
+r('submarin',subst).
+r('sublimat',subst).
+r('sublim',adj).
+r('sublim',tr).
+r('subjunktiv',subst).
+r('subjunkci',subst).
+r('subjekt',subst).
+r('subit',adj).
+r('subaltern',adj).
+r('sturned',subst).
+r('sturn',subst).
+r('sturm',tr).
+r('sturg',best).
+r('stupor',subst).
+r('stupa',subst).
+r('stup',subst).
+r('stump',subst).
+r('stumbl',ntr).
+r('stult',adj).
+r('stuk',tr).
+r('stuf',tr).
+r('studi',subst).
+r('student',subst).
+r('stud',tr).
+r('stuc',verb).
+r('struted',subst).
+r('strut',subst).
+r('struktur',subst).
+r('stronci',subst).
+r('stromatolit',subst).
+r('strofoid',subst).
+r('strof',subst).
+r('strobil',subst).
+r('striptiz',subst).
+r('string',tr).
+r('strikt',adj).
+r('striknin',subst).
+r('strik',subst).
+r('strigl',tr).
+r('striged',subst).
+r('strig',subst).
+r('strid',verb).
+r('stri',subst).
+r('streĉ',tr).
+r('streptomicin',subst).
+r('strek',tr).
+r('streb',ntr).
+r('stratus',subst).
+r('stratum',subst).
+r('stratosfer',subst).
+r('stratigrafi',subst).
+r('strategi',subst).
+r('stratagem',subst).
+r('strat',subst).
+r('stras',subst).
+r('strangol',tr).
+r('strang',adj).
+r('strand',subst).
+r('strab',ntr).
+r('stov',subst).
+r('stotink',subst).
+r('stopl',subst).
+r('stomp',tr).
+r('stomak',subst).
+r('stol',subst).
+r('stokast',adj).
+r('stok',subst).
+r('stoik',adj).
+r('stof',subst).
+r('stiv',tr).
+r('stirak',subst).
+r('stir',tr).
+r('stipendi',subst).
+r('stip',subst).
+r('stink',ntr).
+r('stimul',tr).
+r('stilz',subst).
+r('stilus',subst).
+r('stilistik',subst).
+r('stilet',subst).
+r('stil',subst).
+r('stik',tr).
+r('stigmat',subst).
+r('stigm',subst).
+r('stift',subst).
+r('stif',pref).
+r('steven',subst).
+r('stevard',subst).
+r('stetoskop',subst).
+r('stertor',subst).
+r('sternum',subst).
+r('stern',tr).
+r('sterling',adj).
+r('sterled',best).
+r('sterkuliac',subst).
+r('sterkuli',subst).
+r('sterkorari',subst).
+r('sterk',subst).
+r('steril',adj).
+r('stereotip',subst).
+r('stereoskop',subst).
+r('stereomikroskop',subst).
+r('stereometri',subst).
+r('stereografi',subst).
+r('stereofoni',subst).
+r('stereo',pref).
+r('steradian',subst).
+r('step',subst).
+r('stenotipi',subst).
+r('stenotip',subst).
+r('stenotajp',verb).
+r('stenogram',subst).
+r('stenografi',subst).
+r('stenograf',verb).
+r('stenodaktilograf',verb).
+r('stenodaktil',verb).
+r('stencil',subst).
+r('stele',subst).
+r('stelari',subst).
+r('stel',subst).
+r('steg',subst).
+r('steb',tr).
+r('stearin',subst).
+r('staŭd',subst).
+r('staĝ',subst).
+r('statut',subst).
+r('status',subst).
+r('statur',subst).
+r('statu',subst).
+r('stativ',subst).
+r('statistik',subst).
+r('statist',subst).
+r('statik',subst).
+r('stater',subst).
+r('stat',subst).
+r('start',ntr).
+r('star',ntr).
+r('stapl',subst).
+r('staniol',subst).
+r('stang',subst).
+r('standard',subst).
+r('stand',subst).
+r('stanc',subst).
+r('stan',subst).
+r('stampf',verb).
+r('stamp',tr).
+r('stamin',subst).
+r('stamf',ntr).
+r('stamen',subst).
+r('stalaktit',subst).
+r('stalagmit',subst).
+r('stal',subst).
+r('stakt',subst).
+r('stakat',subst).
+r('stak',subst).
+r('staj',subst).
+r('stagn',ntr).
+r('stafet',subst).
+r('stadium',subst).
+r('stadion',subst).
+r('stadi',subst).
+r('staci',subst).
+r('stabl',subst).
+r('stabil',adj).
+r('stab',subst).
+r('srilank',subst).
+r('sputnik',subst).
+r('sput',tr).
+r('spur',subst).
+r('sprot',subst).
+r('spros',subst).
+r('spron',subst).
+r('sprit',adj).
+r('sport',subst).
+r('sporad',adj).
+r('spor',subst).
+r('spontane',adj).
+r('spontan',adj).
+r('spont',adj).
+r('sponsor',subst).
+r('spong',subst).
+r('sponde',subst).
+r('spok',subst).
+r('split',subst).
+r('splint',subst).
+r('splen',subst).
+r('spit',tr).
+r('spiroĥet',subst).
+r('spiroket',subst).
+r('spiritualist',subst).
+r('spiritualism',subst).
+r('spiritual',adj).
+r('spiritist',subst).
+r('spiritism',subst).
+r('spirit',subst).
+r('spire',subst).
+r('spiral',subst).
+r('spir',ntr).
+r('spion',subst).
+r('spinet',subst).
+r('spindel',subst).
+r('spinac',subst).
+r('spin',subst).
+r('spin',subst).
+r('spil',tr).
+r('spik',subst).
+r('spic',subst).
+r('spez',subst).
+r('spes',subst).
+r('spert',adj).
+r('spermatozo',subst).
+r('sperm',subst).
+r('spelt',subst).
+r('speleologi',subst).
+r('speleolog',subst).
+r('spekulativ',adj).
+r('spekulaci',ntr).
+r('spekul',verb).
+r('spektroskopi',subst).
+r('spektroskop',subst).
+r('spektrometri',subst).
+r('spektrometr',subst).
+r('spektrofotometri',subst).
+r('spektr',subst).
+r('spektakl',subst).
+r('spekt',tr).
+r('spegul',subst).
+r('specimen',subst).
+r('specif',verb).
+r('special',adj).
+r('speci',subst).
+r('spec',subst).
+r('spatel',subst).
+r('spat',subst).
+r('spasm',subst).
+r('spark',subst).
+r('spar',subst).
+r('spaniel',subst).
+r('span',subst).
+r('spam',subst).
+r('spalir',subst).
+r('spajr',subst).
+r('spaget',subst).
+r('spadik',subst).
+r('spad',subst).
+r('spac',subst).
+r('sozi',subst).
+r('sovĥoz',subst).
+r('sovet',subst).
+r('sovaĝ',adj).
+r('sorĉ',tr).
+r('sortiment',subst).
+r('sort',subst).
+r('sorp',subst).
+r('soroban',subst).
+r('soriked',subst).
+r('sorik',best).
+r('sorg',subst).
+r('sordid',adj).
+r('sorb',tr).
+r('sorab',best).
+r('sopran',subst).
+r('sopir',tr).
+r('sonĝ',subst).
+r('sonor',ntr).
+r('sonografi',subst).
+r('sonet',subst).
+r('sond',tr).
+r('sonat',subst).
+r('son',ntr).
+r('somnol',verb).
+r('somnambul',subst).
+r('somer',subst).
+r('sombr',adj).
+r('somateri',subst).
+r('somal',subst).
+r('solvent',adj).
+r('solv',tr).
+r('solstic',subst).
+r('solist',subst).
+r('solipsist',subst).
+r('solipsism',subst).
+r('solidar',adj).
+r('solidag',subst).
+r('solid',adj).
+r('solfeĝ',subst).
+r('solen',adj).
+r('solecism',subst).
+r('sole',best).
+r('soldat',subst).
+r('sold',subst).
+r('solanac',subst).
+r('solan',subst).
+r('sol',adj).
+r('sokl',subst).
+r('sok',subst).
+r('sojl',subst).
+r('soj',subst).
+r('soif',tr).
+r('soft',adj).
+r('sofrologi',subst).
+r('sofrolog',subst).
+r('sofor',subst).
+r('sofistik',subst).
+r('sofist',subst).
+r('sofism',subst).
+r('sof',subst).
+r('sod',subst).
+r('socionik',subst).
+r('sociologi',subst).
+r('sociolog',subst).
+r('sociolekt',subst).
+r('societ',subst).
+r('social',adj).
+r('soci',subst).
+r('sobr',adj).
+r('snuf',verb).
+r('snob',subst).
+r('smirg',subst).
+r('smerald',subst).
+r('sloven',subst).
+r('slovak',subst).
+r('slojd',subst).
+r('slogan',subst).
+r('slip',subst).
+r('sled',subst).
+r('slav',subst).
+r('slang',subst).
+r('slab',subst).
+r('skvaŝ',subst).
+r('skvar',subst).
+r('skvam',subst).
+r('skut',ntr).
+r('skurĝ',subst).
+r('skunk',subst).
+r('skun',subst).
+r('skulptur',subst).
+r('skulpt',tr).
+r('sku',tr).
+r('skrupul',subst).
+r('skrot',subst).
+r('skrofulariac',subst).
+r('skrofulari',subst).
+r('skrofol',subst).
+r('skrib',tr).
+r('skrap',tr).
+r('skrabl',subst).
+r('skotiŝ',subst).
+r('skoter',subst).
+r('skot',subst).
+r('skorzoner',subst).
+r('skorpi',subst).
+r('skorpened',subst).
+r('skorpen',best).
+r('skori',subst).
+r('skorbut',subst).
+r('skombred',subst).
+r('skombr',best).
+r('skolt',subst).
+r('skolopendr',subst).
+r('skoloped',subst).
+r('skolop',subst).
+r('skolioz',subst).
+r('skold',tr).
+r('skolastik',subst).
+r('skol',subst).
+r('skleroz',subst).
+r('sklerot',subst).
+r('skler',subst).
+r('sklav',subst).
+r('skizofreni',subst).
+r('skiz',subst).
+r('skit',subst).
+r('skist',subst).
+r('skism',subst).
+r('skip',subst).
+r('skink',subst).
+r('ski',subst).
+r('skeĉ',subst).
+r('skerm',ntr).
+r('skerc',subst).
+r('skeptik',adj).
+r('skem',subst).
+r('skelet',subst).
+r('skatol',subst).
+r('skarp',subst).
+r('skarlatin',subst).
+r('skarlat',subst).
+r('skarifik',tr).
+r('skarif',tr).
+r('skarabed',subst).
+r('skarab',subst).
+r('skapulari',subst).
+r('skapol',subst).
+r('skandi',subst).
+r('skandal',subst).
+r('skand',tr).
+r('skan',tr).
+r('skalpel',subst).
+r('skalp',subst).
+r('skalen',adj).
+r('skald',subst).
+r('skalar',subst).
+r('skal',subst).
+r('skafark',subst).
+r('skafandr',subst).
+r('skafald',subst).
+r('skadr',subst).
+r('skabioz',subst).
+r('skabi',subst).
+r('skaben',subst).
+r('sivert',subst).
+r('siu',subst).
+r('situaci',subst).
+r('situ',subst).
+r('sitel',subst).
+r('sitar',subst).
+r('sistr',subst).
+r('sistol',subst).
+r('sistematik',subst).
+r('sistem',subst).
+r('sismologi',subst).
+r('sismograf',subst).
+r('sism',adj).
+r('sisal',subst).
+r('sirop',subst).
+r('sirok',subst).
+r('siring',subst).
+r('siren',subst).
+r('sinusit',subst).
+r('sinus',subst).
+r('sinus',subst).
+r('sinu',subst).
+r('sintez',subst).
+r('sintaks',subst).
+r('sintagm',subst).
+r('sinoptik',adj).
+r('sinonimi',subst).
+r('sinonim',subst).
+r('sinod',subst).
+r('sinkrotron',subst).
+r('sinkron',adj).
+r('sinkretism',subst).
+r('sinkop',subst).
+r('sink',verb).
+r('sinjor',subst).
+r('singult',ntr).
+r('singular',subst).
+r('sinestezi',subst).
+r('sinergi',subst).
+r('sinekur',subst).
+r('sinekdoĥ',subst).
+r('sinekdok',subst).
+r('sinedri',subst).
+r('sindrom',subst).
+r('sindikat',subst).
+r('sindik',subst).
+r('sincer',adj).
+r('sinaps',subst).
+r('sinap',subst).
+r('sinagog',subst).
+r('sin',subst).
+r('simultan',adj).
+r('simul',tr).
+r('simptom',subst).
+r('simpozi',subst).
+r('simpl',adj).
+r('simpati',subst).
+r('simoni',subst).
+r('simil',adj).
+r('simi',best).
+r('simfoni',subst).
+r('simetri',subst).
+r('simbol',subst).
+r('simbioz',subst).
+r('simarubac',subst).
+r('silvied',subst).
+r('silvi',subst).
+r('siluri',subst).
+r('silur',subst).
+r('siluet',subst).
+r('silogism',subst).
+r('silk',subst).
+r('silikv',subst).
+r('silikoz',subst).
+r('silikon',subst).
+r('silik',subst).
+r('silici',subst).
+r('silf',subst).
+r('silent',ntr).
+r('silab',subst).
+r('sil',subst).
+r('sikomor',subst).
+r('sikl',subst).
+r('sikari',subst).
+r('sik',subst).
+r('signif',tr).
+r('signal',subst).
+r('sign',subst).
+r('sigl',subst).
+r('sigel',subst).
+r('sifon',subst).
+r('sifilis',subst).
+r('sieĝ',tr).
+r('siest',subst).
+r('sieraleon',subst).
+r('sid',ntr).
+r('sibl',ntr).
+r('sibarit',subst).
+r('sfinkter',subst).
+r('sfinks',subst).
+r('sfer',subst).
+r('sfenisk',subst).
+r('seĝ',subst).
+r('sezon',subst).
+r('sezam',subst).
+r('sevrug',best).
+r('sever',adj).
+r('setari',subst).
+r('setar',subst).
+r('sesterc',subst).
+r('sest',subst).
+r('seskvilinear',adj).
+r('sesi',subst).
+r('serĝent',subst).
+r('serĝ',subst).
+r('serĉ',tr).
+r('servut',subst).
+r('servil',adj).
+r('servic',subst).
+r('serval',best).
+r('serv',tr).
+r('serur',subst).
+r('serum',subst).
+r('serpent',subst).
+r('serp',subst).
+r('seroz',subst).
+r('serotonin',subst).
+r('seroterapi',subst).
+r('serioz',adj).
+r('serif',subst).
+r('seri',subst).
+r('serenad',subst).
+r('seren',adj).
+r('serbi',subst).
+r('serb',subst).
+r('serasalm',subst).
+r('seran',subst).
+r('serajl',subst).
+r('seraf',subst).
+r('ser',subst).
+r('sepult',tr).
+r('septim',subst).
+r('septet',subst).
+r('septembr',subst).
+r('sept',subst).
+r('seps',adj).
+r('sepi',subst).
+r('separatist',subst).
+r('separatism',subst).
+r('separ',subst).
+r('sepal',subst).
+r('sentimental',adj).
+r('sentiment',subst).
+r('sentenc',subst).
+r('sent',tr).
+r('sensualism',subst).
+r('sensaci',subst).
+r('sensac',subst).
+r('sens',subst).
+r('senil',adj).
+r('senes',subst).
+r('seneci',subst).
+r('send',tr).
+r('senc',subst).
+r('senat',subst).
+r('sen',subst).
+r('semperviv',subst).
+r('semiotik',subst).
+r('seminari',subst).
+r('semestr',subst).
+r('semantik',subst).
+r('semajn',subst).
+r('semafor',subst).
+r('sem',subst).
+r('selen',subst).
+r('selekt',tr).
+r('selakt',subst).
+r('sel',subst).
+r('sekvojadendr',subst).
+r('sekvoj',subst).
+r('sekvestraci',verb).
+r('sekvestr',tr).
+r('sekv',tr).
+r('sekur',adj).
+r('sekundar',adj).
+r('sekundant',subst).
+r('sekund',subst).
+r('sekulariz',tr).
+r('sekular',adj).
+r('sektor',subst).
+r('sekt',subst).
+r('sekstant',subst).
+r('sekst',subst).
+r('seksologi',subst).
+r('seksolog',subst).
+r('seks',subst).
+r('sekretari',subst).
+r('sekret',subst).
+r('sekreci',subst).
+r('sekestr',tr).
+r('sekci',subst).
+r('sekc',tr).
+r('sekant',subst).
+r('sekal',subst).
+r('sek',adj).
+r('sejŝel',subst).
+r('sejn',subst).
+r('segment',subst).
+r('seg',tr).
+r('sefard',subst).
+r('sediment',subst).
+r('sedativ',subst).
+r('secesi',subst).
+r('sebum',subst).
+r('seborgi',subst).
+r('seb',subst).
+r('seanc',subst).
+r('seaborgi',subst).
+r('sciured',subst).
+r('sciur',best).
+r('scintilografi',subst).
+r('scintil',verb).
+r('scintigrafi',subst).
+r('scienc',subst).
+r('sci',tr).
+r('sceptr',subst).
+r('scen',subst).
+r('sbir',subst).
+r('saŭrkraŭt',subst).
+r('saŭn',subst).
+r('saŭc',subst).
+r('saŝim',subst).
+r('saĝ',adj).
+r('sazank',subst).
+r('savan',subst).
+r('sav',tr).
+r('saturnali',subst).
+r('sature',subst).
+r('satur',tr).
+r('satrapi',subst).
+r('satrap',subst).
+r('satirus',subst).
+r('satir',subst).
+r('saten',subst).
+r('satelit',subst).
+r('satan',subst).
+r('sat',adj).
+r('saskvaĉ',subst).
+r('sarong',subst).
+r('sarkofag',subst).
+r('sarkasm',subst).
+r('sark',tr).
+r('sarir',subst).
+r('sarin',subst).
+r('sari',subst).
+r('sardon',adj).
+r('sardin',best).
+r('sardel',best).
+r('sarafan',subst).
+r('saraband',subst).
+r('sapotac',subst).
+r('sapotac',subst).
+r('sapor',subst).
+r('sapek',subst).
+r('sape',subst).
+r('sap',subst).
+r('santome',subst).
+r('santolin',subst).
+r('santal',subst).
+r('sansevier',subst).
+r('sansar',subst).
+r('sanmarin',subst).
+r('sankt',adj).
+r('sankci',subst).
+r('sanitar',adj).
+r('sangvin',adj).
+r('sangri',subst).
+r('sang',subst).
+r('sandviĉ',subst).
+r('sandr',best).
+r('sandal',subst).
+r('sanatori',subst).
+r('san',adj).
+r('samuraj',subst).
+r('samovar',subst).
+r('samo',subst).
+r('samnit',subst).
+r('samizdat',subst).
+r('sambuk',subst).
+r('samb',subst).
+r('samari',subst).
+r('sam',adj).
+r('salvi',subst).
+r('salvelen',best).
+r('salvador',subst).
+r('salv',subst).
+r('salut',verb).
+r('salubr',adj).
+r('saltomortal',subst).
+r('salt',ntr).
+r('salpetr',subst).
+r('salon',subst).
+r('salmed',subst).
+r('salm',best).
+r('saliv',subst).
+r('salikok',best).
+r('salikari',subst).
+r('salikac',subst).
+r('salik',subst).
+r('sald',subst).
+r('salat',subst).
+r('salamandr',best).
+r('salam',subst).
+r('salajr',subst).
+r('salafist',subst).
+r('sal',subst).
+r('sakur',subst).
+r('saksofon',subst).
+r('saksifragac',subst).
+r('saks',best).
+r('sakristi',subst).
+r('sakrilegi',subst).
+r('sakrament',subst).
+r('sakr',subst).
+r('sakr',ntr).
+r('sake',subst).
+r('sak',subst).
+r('sajmiri',subst).
+r('saj',subst).
+r('sair',subst).
+r('sagu',subst).
+r('sagac',adj).
+r('saga',subst).
+r('sag',subst).
+r('safran',subst).
+r('safir',subst).
+r('saduke',subst).
+r('sacerdot',subst).
+r('sabr',subst).
+r('sabot',tr).
+r('sabl',subst).
+r('sabelik',subst).
+r('sabek',subst).
+r('sabat',subst).
+r('ruŝ',subst).
+r('ruĵ',subst).
+r('ruĝ',adj).
+r('ruz',adj).
+r('rutin',subst).
+r('ruterfordi',subst).
+r('ruteni',subst).
+r('rutac',subst).
+r('rut',subst).
+r('rusulac',subst).
+r('rusul',subst).
+r('rustik',adj).
+r('rust',subst).
+r('rus',best).
+r('rupi',subst).
+r('rung',subst).
+r('rund',verb).
+r('run',subst).
+r('rumor',ntr).
+r('rumeks',subst).
+r('rumani',subst).
+r('ruman',subst).
+r('rum',subst).
+r('rulet',subst).
+r('rul',tr).
+r('rukul',verb).
+r('rukt',verb).
+r('ruin',subst).
+r('rugbe',subst).
+r('rudr',subst).
+r('ruditap',subst).
+r('rudiment',adj).
+r('rudbeki',subst).
+r('rubus',subst).
+r('rubrik',subst).
+r('rubl',subst).
+r('rubidi',subst).
+r('rubiac',subst).
+r('rubeol',subst).
+r('ruben',subst).
+r('ruband',subst).
+r('rub',subst).
+r('ru',tr).
+r('rozari',subst).
+r('rozac',subst).
+r('roz',subst).
+r('rovers',subst).
+r('rover',subst).
+r('rotor',subst).
+r('rotond',subst).
+r('rotang',subst).
+r('rotaciz',subst).
+r('rotaci',ntr).
+r('rot',subst).
+r('rostr',subst).
+r('rostbif',subst).
+r('rostbef',subst).
+r('rost',tr).
+r('rosmaren',subst).
+r('rosmar',best).
+r('rosin',subst).
+r('ros',subst).
+r('ror',ntr).
+r('ronĝ',tr).
+r('ronron',ntr).
+r('ronk',ntr).
+r('rondel',subst).
+r('rond',subst).
+r('romp',tr).
+r('romboid',subst).
+r('romboedr',subst).
+r('romb',subst).
+r('romantism',subst).
+r('romantik',adj).
+r('romanik',subst).
+r('romanc',subst).
+r('roman',subst).
+r('roma',subst).
+r('rol',subst).
+r('roku',subst).
+r('rokok',subst).
+r('rok',subst).
+r('rojalist',subst).
+r('rojalism',subst).
+r('roj',subst).
+r('rododendr',subst).
+r('rodi',subst).
+r('rod',subst).
+r('rod',verb).
+r('robotik',subst).
+r('robot',subst).
+r('robini',subst).
+r('robai',subst).
+r('rob',subst).
+r('riĉ',adj).
+r('rizot',subst).
+r('rizom',subst).
+r('riz',subst).
+r('rivolu',subst).
+r('riverenc',ntr).
+r('river',subst).
+r('rivel',tr).
+r('rival',subst).
+r('ritornel',subst).
+r('ritm',subst).
+r('rit',subst).
+r('risort',subst).
+r('rism',subst).
+r('risk',tr).
+r('riproĉ',tr).
+r('ripoz',ntr).
+r('ripet',tr).
+r('ripar',tr).
+r('rip',subst).
+r('rinocer',subst).
+r('ring',subst).
+r('rimors',subst).
+r('rimoid',subst).
+r('rimes',subst).
+r('rimen',subst).
+r('rimed',subst).
+r('rimark',tr).
+r('rim',subst).
+r('rilat',ntr).
+r('ril',subst).
+r('rikord',subst).
+r('rikolt',tr).
+r('rikiŝ',subst).
+r('rikecioz',subst).
+r('rikeci',subst).
+r('rikan',ntr).
+r('rijet',subst).
+r('rigor',adj).
+r('rigl',verb).
+r('rigid',adj).
+r('rigard',tr).
+r('rig',tr).
+r('rifuĝ',ntr).
+r('rifuz',tr).
+r('rif',subst).
+r('rid',ntr).
+r('ricin',subst).
+r('ricev',tr).
+r('ribosom',subst).
+r('ribel',ntr).
+r('ribek',subst).
+r('rib',subst).
+r('rial',subst).
+r('reŭmatism',subst).
+r('reĝistr',subst).
+r('reĝisor',subst).
+r('reĝim',subst).
+r('reĝ',subst).
+r('rezultat',subst).
+r('rezult',ntr).
+r('rezon',ntr).
+r('rezolut',adj).
+r('rezoluci',subst).
+r('rezistiv',adj).
+r('rezistanc',subst).
+r('rezist',tr).
+r('rezin',subst).
+r('rezignaci',subst).
+r('rezign',tr).
+r('rezidu',subst).
+r('rezerv',tr).
+r('rezedac',subst).
+r('rezed',subst).
+r('revu',subst).
+r('revolver',subst).
+r('revoluci',subst).
+r('revizor',subst).
+r('revizi',tr).
+r('reviz',verb).
+r('revers',subst).
+r('revelaci',subst).
+r('rev',tr).
+r('retrovirus',subst).
+r('retrospektiv',subst).
+r('retrokupl',tr).
+r('retroir',ntr).
+r('retroderiv',tr).
+r('retroced',verb).
+r('retroaktiv',adj).
+r('retro',pref).
+r('retort',subst).
+r('retorik',subst).
+r('retor',subst).
+r('retin',subst).
+r('retikul',subst).
+r('retabl',subst).
+r('ret',subst).
+r('resurs',subst).
+r('restoraci',subst).
+r('restaŭr',verb).
+r('rest',ntr).
+r('respublik',subst).
+r('respons',ntr).
+r('respond',tr).
+r('respektiv',adj).
+r('respekt',subst).
+r('resonanc',subst).
+r('reputaci',subst).
+r('repudi',verb).
+r('reptili',subst).
+r('reps',subst).
+r('reprezent',tr).
+r('reprezali',verb).
+r('represi',subst).
+r('reporter',subst).
+r('replik',tr).
+r('repertuar',subst).
+r('rep',subst).
+r('reostat',subst).
+r('renvers',tr).
+r('rentgeni',subst).
+r('rent',subst).
+r('renom',subst).
+r('renkont',tr).
+r('reni',subst).
+r('renesanc',subst).
+r('renegat',subst).
+r('rendiment',subst).
+r('rendevu',subst).
+r('ren',subst).
+r('rempar',subst).
+r('remork',subst).
+r('remont',subst).
+r('remiz',subst).
+r('rembur',tr).
+r('rem',ntr).
+r('relikv',subst).
+r('religi',subst).
+r('relief',subst).
+r('relegaci',tr).
+r('relativ',adj).
+r('relajs',subst).
+r('relaj',subst).
+r('rel',subst).
+r('rekvizit',subst).
+r('rekvizici',subst).
+r('rekviem',subst).
+r('rektum',subst).
+r('rektor',subst).
+r('rektif',tr).
+r('rekt',adj).
+r('rekrut',subst).
+r('rekrement',subst).
+r('rekord',subst).
+r('rekompenc',tr).
+r('rekomend',tr).
+r('reklamaci',verb).
+r('reklam',tr).
+r('rek',subst).
+r('rejs',subst).
+r('regulator',subst).
+r('regul',subst).
+r('regres',ntr).
+r('regol',subst).
+r('regn',subst).
+r('reglament',verb).
+r('registr',verb).
+r('region',subst).
+r('regiment',subst).
+r('regi',subst).
+r('regent',subst).
+r('rege',subst).
+r('regal',tr).
+r('reg',tr).
+r('refut',tr).
+r('refrakt',tr).
+r('reflektor',subst).
+r('reflekt',tr).
+r('refleksologi',subst).
+r('refleksiv',subst).
+r('refleks',subst).
+r('referendum',subst).
+r('referenc',subst).
+r('referat',subst).
+r('refer',verb).
+r('ref',subst).
+r('reel',subst).
+r('redut',subst).
+r('redund',adj).
+r('redukt',tr).
+r('redingot',subst).
+r('redaktor',subst).
+r('redakt',tr).
+r('redakci',subst).
+r('recitativ',subst).
+r('recital',subst).
+r('recit',verb).
+r('reciprok',adj).
+r('recidiv',verb).
+r('recesi',subst).
+r('recept',subst).
+r('recenz',tr).
+r('rebus',subst).
+r('real',adj).
+r('real',subst).
+r('reaktor',subst).
+r('reakci',subst).
+r('re',pref).
+r('raŭt',subst).
+r('raŭp',subst).
+r('raŭk',adj).
+r('raĵa',subst).
+r('raĝ',subst).
+r('razen',subst).
+r('raz',tr).
+r('raviol',subst).
+r('ravin',subst).
+r('ravelin',subst).
+r('rav',tr).
+r('ratifik',verb).
+r('ratif',verb).
+r('rat',best).
+r('rastr',subst).
+r('rast',tr).
+r('rasp',tr).
+r('ras',subst).
+r('rar',adj).
+r('rapsod',subst).
+r('raport',tr).
+r('rapir',subst).
+r('rapid',adj).
+r('rap',subst).
+r('ranunkolac',subst).
+r('ranunkol',subst).
+r('rankor',subst).
+r('rang',subst).
+r('raned',subst).
+r('rand',subst).
+r('ranc',adj).
+r('ran',best).
+r('rampl',subst).
+r('ramp',ntr).
+r('ramnac',subst).
+r('ramn',subst).
+r('rambutan',subst).
+r('ramadan',subst).
+r('raled',subst).
+r('ral',subst).
+r('rakont',tr).
+r('rakit',subst).
+r('raket',subst).
+r('raked',subst).
+r('rak',subst).
+r('rajt',subst).
+r('rajon',subst).
+r('rajed',subst).
+r('rajd',tr).
+r('raj',best).
+r('ragu',subst).
+r('rag',subst).
+r('rafin',tr).
+r('rafi',subst).
+r('rafan',subst).
+r('radon',subst).
+r('radius',subst).
+r('radium',subst).
+r('radioterapi',subst).
+r('radiotelegram',subst).
+r('radiotelegrafi',subst).
+r('radiotelefoni',subst).
+r('radioskopi',subst).
+r('radiometr',subst).
+r('radiologi',subst).
+r('radiolog',subst).
+r('radiogram',subst).
+r('radiografi',subst).
+r('radiofotografi',subst).
+r('radiofoni',subst).
+r('radioaktiv',adj).
+r('radikal',adj).
+r('radikal',subst).
+r('radik',subst).
+r('radian',subst).
+r('radi',subst).
+r('radar',subst).
+r('rad',subst).
+r('racionalist',subst).
+r('racional',adj).
+r('racion',subst).
+r('raci',subst).
+r('rabot',tr).
+r('rabi',subst).
+r('raben',subst).
+r('rabat',subst).
+r('rabarb',subst).
+r('rab',tr).
+r('puŝ',tr).
+r('puĉ',subst).
+r('puzl',subst).
+r('putr',ntr).
+r('putor',best).
+r('putin',subst).
+r('put',subst).
+r('pustul',subst).
+r('pus',subst).
+r('purpur',subst).
+r('puritan',subst).
+r('purgatori',subst).
+r('pur',adj).
+r('pupitr',subst).
+r('pupil',subst).
+r('pup',subst).
+r('punĉ',subst).
+r('puntili',subst).
+r('punt',subst).
+r('punkt',subst).
+r('punk',subst).
+r('punik',adj).
+r('pund',subst).
+r('punc',adj).
+r('pun',tr).
+r('pump',tr).
+r('pumik',subst).
+r('pulĉinel',subst).
+r('pulvor',subst).
+r('pulv',subst).
+r('pulsar',subst).
+r('puls',subst).
+r('pulp',subst).
+r('pulover',subst).
+r('pulm',subst).
+r('pulk',subst).
+r('puli',subst).
+r('pul',subst).
+r('pul',subst).
+r('pugn',subst).
+r('pug',subst).
+r('puf',subst).
+r('puebl',subst).
+r('pudr',subst).
+r('pudor',subst).
+r('puding',subst).
+r('pudel',subst).
+r('pud',subst).
+r('pucel',subst).
+r('publik',subst).
+r('public',tr).
+r('pubert',subst).
+r('puber',adj).
+r('pub',subst).
+r('pterid',subst).
+r('psikoz',subst).
+r('psikosomat',adj).
+r('psikopati',subst).
+r('psikopat',subst).
+r('psikologi',subst).
+r('psikolog',subst).
+r('psikogram',subst).
+r('psikiatri',subst).
+r('psikiatr',subst).
+r('psik',subst).
+r('pseŭdoskorpi',subst).
+r('pseŭdoscienc',subst).
+r('pseŭdopod',subst).
+r('pseŭdonom',subst).
+r('pseŭdonim',subst).
+r('pseŭdo',pref).
+r('pseŭd',adj).
+r('psalter',subst).
+r('psalm',subst).
+r('pruv',tr).
+r('prus',subst).
+r('prunus',subst).
+r('prunt',tr).
+r('prunel',subst).
+r('prun',subst).
+r('prujn',subst).
+r('prudent',adj).
+r('prud',adj).
+r('pru',subst).
+r('prozopope',subst).
+r('prozodi',subst).
+r('prozelit',subst).
+r('proz',subst).
+r('provos',subst).
+r('provok',tr).
+r('provizor',adj).
+r('proviz',tr).
+r('provincial',subst).
+r('provinc',subst).
+r('providenc',subst).
+r('proviant',subst).
+r('proverb',subst).
+r('prov',tr).
+r('protrud',adj).
+r('protozo',subst).
+r('prototip',subst).
+r('protoplasm',subst).
+r('proton',subst).
+r('protokol',subst).
+r('protokanajl',subst).
+r('proto',pref).
+r('protez',subst).
+r('protestant',subst).
+r('protest',ntr).
+r('proterozoik',subst).
+r('protektorat',subst).
+r('protekt',tr).
+r('protein',subst).
+r('proteac',subst).
+r('protaktini',subst).
+r('protagonist',subst).
+r('prostraci',subst).
+r('prostitu',tr).
+r('prostat',subst).
+r('prosper',ntr).
+r('prospekt',subst).
+r('proskripci',subst).
+r('proskrib',tr).
+r('propuls',tr).
+r('propriet',subst).
+r('propr',adj).
+r('propozici',subst).
+r('proporci',subst).
+r('propon',tr).
+r('propile',subst).
+r('propagand',subst).
+r('prononc',tr).
+r('pronom',subst).
+r('prompt',adj).
+r('promontor',subst).
+r('promoci',tr).
+r('prometi',subst).
+r('promes',tr).
+r('promen',ntr).
+r('promeci',subst).
+r('prolog',subst).
+r('prolifer',verb).
+r('proletari',subst).
+r('prolet',subst).
+r('prokuror',subst).
+r('prokur',subst).
+r('proksim',adj).
+r('prokrast',tr).
+r('proklam',tr).
+r('prokariot',subst).
+r('projekt',subst).
+r('projekci',subst).
+r('prohib',verb).
+r('progresiv',adj).
+r('progresi',subst).
+r('progres',ntr).
+r('program',subst).
+r('prognoz',subst).
+r('profund',adj).
+r('profit',tr).
+r('profilaktik',subst).
+r('profilakt',subst).
+r('profil',subst).
+r('profet',subst).
+r('profesor',subst).
+r('profesi',subst).
+r('profan',tr).
+r('produt',subst).
+r('produktiv',adj).
+r('produkt',tr).
+r('prodrom',subst).
+r('prodig',tr).
+r('prod',subst).
+r('procion',subst).
+r('procez',subst).
+r('procesor',subst).
+r('procesi',subst).
+r('proces',subst).
+r('procent',subst).
+r('procelari',subst).
+r('procedur',subst).
+r('proced',ntr).
+r('problem',subst).
+r('probabl',adj).
+r('prizon',subst).
+r('privilegi',subst).
+r('privat',adj).
+r('prism',subst).
+r('prioritat',subst).
+r('prior',subst).
+r('printemp',subst).
+r('print',tr).
+r('princip',subst).
+r('princ',subst).
+r('primus',subst).
+r('primolac',subst).
+r('primol',subst).
+r('primitiv',adj).
+r('primaver',subst).
+r('primat',subst).
+r('primar',adj).
+r('prim',subst).
+r('prikl',verb).
+r('preĝ',ntr).
+r('prezid',tr).
+r('prezent',tr).
+r('prezenc',subst).
+r('prez',subst).
+r('prevent',verb).
+r('pretor',subst).
+r('preterit',subst).
+r('pretend',tr).
+r('pretekst',subst).
+r('pret',adj).
+r('prestiĝ',subst).
+r('prestidigitator',subst).
+r('preskript',subst).
+r('preskrib',tr).
+r('presbiterian',subst).
+r('presbiter',subst).
+r('pres',tr).
+r('prerogativ',subst).
+r('preri',subst).
+r('prepuci',subst).
+r('prepozici',subst).
+r('prepost',subst).
+r('prepar',tr).
+r('pren',tr).
+r('premis',subst).
+r('premi',subst).
+r('prem',tr).
+r('prelud',subst).
+r('preleg',subst).
+r('prelat',subst).
+r('prefiks',subst).
+r('preferanc',subst).
+r('prefer',tr).
+r('prefekt',subst).
+r('prefac',subst).
+r('predikativ',subst).
+r('predikat',subst).
+r('predik',tr).
+r('pred',subst).
+r('preciz',adj).
+r('precipit',tr).
+r('precip',adv).
+r('precioz',adj).
+r('precesi',subst).
+r('precept',subst).
+r('precedenc',subst).
+r('prebend',subst).
+r('preambl',subst).
+r('prazeodim',subst).
+r('prav',adj).
+r('pranc',ntr).
+r('pram',subst).
+r('praktik',subst).
+r('prajm',subst).
+r('pragmatik',subst).
+r('pragmat',adj).
+r('pra',pref).
+r('poŭp',subst).
+r('poŝt',subst).
+r('poŝ',subst).
+r('poĉ',verb).
+r('pozitron',subst).
+r('poziton',subst).
+r('pozitiv',adj).
+r('pozici',subst).
+r('poz',tr).
+r('povr',adj).
+r('pov',tr).
+r('potern',subst).
+r('potentil',subst).
+r('potencial',subst).
+r('potenc',subst).
+r('potas',subst).
+r('pot',subst).
+r('postulat',subst).
+r('postul',tr).
+r('postpozici',subst).
+r('postiĉ',subst).
+r('postilion',subst).
+r('postfiks',subst).
+r('posten',subst).
+r('postament',subst).
+r('posesiv',subst).
+r('posed',tr).
+r('porĉ',subst).
+r('portulak',subst).
+r('portugal',subst).
+r('portret',subst).
+r('portik',subst).
+r('porter',subst).
+r('portepe',subst).
+r('portal',subst).
+r('port',tr).
+r('pornografi',subst).
+r('porked',subst).
+r('pork',subst).
+r('poriĝ',subst).
+r('porfir',subst).
+r('pore',subst).
+r('pord',subst).
+r('porci',subst).
+r('porcelan',subst).
+r('por',subst).
+r('popular',adj).
+r('populaci',subst).
+r('popol',subst).
+r('poplit',subst).
+r('poplin',subst).
+r('popl',subst).
+r('pop',subst).
+r('pop',subst).
+r('ponĝe',subst).
+r('ponĉ',subst).
+r('ponton',subst).
+r('pontifik',subst).
+r('pont',subst).
+r('ponard',subst).
+r('pomp',subst).
+r('pomel',subst).
+r('pomad',subst).
+r('pom',subst).
+r('polv',subst).
+r('polus',subst).
+r('polur',subst).
+r('poluci',subst).
+r('polu',tr).
+r('poltron',subst).
+r('polp',subst).
+r('poloni',subst).
+r('polo',subst).
+r('polm',subst).
+r('polk',subst).
+r('poliĥet',subst).
+r('politologi',subst).
+r('politolog',subst).
+r('politikologi',subst).
+r('politikolog',subst).
+r('politik',subst).
+r('politeknik',subst).
+r('politeist',subst).
+r('politeism',subst).
+r('polistiren',subst).
+r('polisemi',subst).
+r('polisem',subst).
+r('polis',subst).
+r('polipter',subst).
+r('polipsoni',subst).
+r('polipol',subst).
+r('polip',subst).
+r('poliomjelit',subst).
+r('polinom',subst).
+r('polimer',subst).
+r('poliklinik',subst).
+r('poligonac',subst).
+r('poligon',subst).
+r('poliglot',subst).
+r('poligini',subst).
+r('poligami',subst).
+r('polifoni',subst).
+r('poliester',subst).
+r('poliedr',subst).
+r('polic',subst).
+r('poliandri',subst).
+r('poliamid',subst).
+r('poli',subst).
+r('polent',subst).
+r('polenologi',subst).
+r('polen',subst).
+r('polemik',subst).
+r('poleks',subst).
+r('polder',subst).
+r('polaroid',subst).
+r('polariz',tr).
+r('pol',subst).
+r('pol',tr).
+r('poker',subst).
+r('pokal',subst).
+r('pojn',subst).
+r('pogrom',subst).
+r('pogaĉ',subst).
+r('poezi',subst).
+r('poetik',subst).
+r('poet',subst).
+r('poent',subst).
+r('poem',subst).
+r('poefag',subst).
+r('podzol',subst).
+r('podkast',subst).
+r('podi',subst).
+r('podestat',subst).
+r('podajr',subst).
+r('podagr',subst).
+r('pob',subst).
+r('poac',subst).
+r('pneŭmonologi',subst).
+r('pneŭmonolog',subst).
+r('pneŭmoni',subst).
+r('pneŭmatik',subst).
+r('pneŭ',subst).
+r('pluŝ',subst).
+r('pluv',subst).
+r('plutoni',subst).
+r('plutokrati',subst).
+r('plutokrat',subst).
+r('pluskvamperfekt',subst).
+r('plural',subst).
+r('plur',adj).
+r('plump',adj).
+r('plumb',subst).
+r('plum',subst).
+r('pluk',tr).
+r('plug',tr).
+r('plot',best).
+r('plosiv',subst).
+r('plor',ntr).
+r('plonĝ',ntr).
+r('plomb',subst).
+r('pliocen',subst).
+r('plint',subst).
+r('plik',subst).
+r('pleŭronekted',subst).
+r('pleŭronekt',best).
+r('pleŭrit',subst).
+r('pleŭr',subst).
+r('plezur',subst).
+r('pletr',subst).
+r('plet',subst).
+r('pleonasm',subst).
+r('plend',ntr).
+r('plen',adj).
+r('plektr',subst).
+r('plekt',tr).
+r('plejstocen',subst).
+r('plejd',subst).
+r('pled',ntr).
+r('pleb',subst).
+r('plaŭd',ntr).
+r('plaĝ',subst).
+r('plaĉ',ntr).
+r('platform',subst).
+r('platen',subst).
+r('platan',subst).
+r('plat',adj).
+r('plastr',subst).
+r('plastik',subst).
+r('plast',subst).
+r('plasmid',subst).
+r('plasm',subst).
+r('plantagac',subst).
+r('plantag',subst).
+r('plant',tr).
+r('plankton',subst).
+r('plank',subst).
+r('planimetri',subst).
+r('planedolog',subst).
+r('planed',subst).
+r('pland',subst).
+r('plan',subst).
+r('plak',subst).
+r('plagiat',subst).
+r('plag',subst).
+r('plafon',subst).
+r('plad',subst).
+r('placent',subst).
+r('placeb',subst).
+r('plac',subst).
+r('piŝt',subst).
+r('piĵam',subst).
+r('piĝin',subst).
+r('piĉ',subst).
+r('pizang',subst).
+r('piz',subst).
+r('pivot',subst).
+r('pitoresk',adj).
+r('piton',best).
+r('pistol',subst).
+r('pistil',subst).
+r('pistak',subst).
+r('pist',tr).
+r('pis',ntr).
+r('piruet',ntr).
+r('piroz',subst).
+r('piroteknik',subst).
+r('pirol',subst).
+r('pirog',subst).
+r('pirit',subst).
+r('pirik',subst).
+r('pirat',subst).
+r('piraruku',subst).
+r('piranj',subst).
+r('piramid',subst).
+r('pirakant',subst).
+r('pir',subst).
+r('pips',subst).
+r('piprujac',subst).
+r('pipr',subst).
+r('pip',subst).
+r('pioĉ',subst).
+r('pionir',subst).
+r('pinĉ',tr).
+r('pint',subst).
+r('pinjat',subst).
+r('pini',subst).
+r('pingven',subst).
+r('pingl',subst).
+r('pind',subst).
+r('pinakotek',subst).
+r('pinakl',subst).
+r('pinac',subst).
+r('pin',subst).
+r('pimpinel',subst).
+r('pimp',adj).
+r('piment',subst).
+r('pilot',subst).
+r('pilori',subst).
+r('pilon',subst).
+r('pilol',subst).
+r('pilk',subst).
+r('pilipili',subst).
+r('pilier',subst).
+r('pilgrim',ntr).
+r('pilastr',subst).
+r('pilaf',subst).
+r('pil',subst).
+r('piktogram',subst).
+r('piko',pref).
+r('piknik',ntr).
+r('piked',subst).
+r('pik',tr).
+r('pigr',adj).
+r('pigme',subst).
+r('pig',subst).
+r('pietist',subst).
+r('pietism',subst).
+r('piedestal',subst).
+r('pied',subst).
+r('pice',subst).
+r('pic',subst).
+r('piastr',subst).
+r('pianol',subst).
+r('pian',subst).
+r('piamatr',subst).
+r('pi',adj).
+r('pfenig',subst).
+r('peĉakuĉ',subst).
+r('peĉ',subst).
+r('pez',ntr).
+r('petuni',subst).
+r('petrosel',subst).
+r('petromiz',subst).
+r('petrol',subst).
+r('petol',ntr).
+r('petiol',subst).
+r('petici',subst).
+r('petazit',subst).
+r('petaz',subst).
+r('petard',subst).
+r('petal',subst).
+r('peta',pref).
+r('pet',tr).
+r('pesticid',subst).
+r('pest',subst).
+r('pesimist',subst).
+r('pesimism',subst).
+r('peset',subst).
+r('pesari',subst).
+r('pes',tr).
+r('pes',subst).
+r('perĉ',best).
+r('pervers',adj).
+r('peruk',subst).
+r('perturb',subst).
+r('persvad',tr).
+r('perspektiv',subst).
+r('person',subst).
+r('persist',ntr).
+r('persimon',subst).
+r('persik',subst).
+r('persekut',tr).
+r('pers',subst).
+r('perpleks',adj).
+r('perpendikular',adj).
+r('perpendikl',subst).
+r('peron',subst).
+r('permut',tr).
+r('permes',tr).
+r('permeabl',adj).
+r('permanent',adj).
+r('perlamot',subst).
+r('perl',subst).
+r('perkut',tr).
+r('perked',subst).
+r('perkal',subst).
+r('perk',best).
+r('peritone',subst).
+r('peristil',subst).
+r('periskop',subst).
+r('peripl',subst).
+r('peripeti',subst).
+r('periost',subst).
+r('period',subst).
+r('perine',subst).
+r('perimetr',subst).
+r('perikarp',subst).
+r('perikard',subst).
+r('periheli',subst).
+r('perige',subst).
+r('perifraz',subst).
+r('periferi',subst).
+r('peridot',subst).
+r('pergol',subst).
+r('pergamen',subst).
+r('perfid',tr).
+r('perfekt',adj).
+r('pere',ntr).
+r('perdrik',subst).
+r('perd',tr).
+r('percept',subst).
+r('peptid',subst).
+r('pepsin',subst).
+r('peplom',subst).
+r('pepl',subst).
+r('pep',ntr).
+r('peoniac',subst).
+r('peoni',subst).
+r('peon',subst).
+r('pentr',tr).
+r('pentatom',subst).
+r('pentametr',subst).
+r('pentagram',subst).
+r('pentagon',subst).
+r('pent',tr).
+r('pension',subst).
+r('pensi',tr).
+r('pens',tr).
+r('penis',subst).
+r('penik',subst).
+r('penicilin',subst).
+r('peni',subst).
+r('penetr',tr).
+r('pendol',subst).
+r('pend',ntr).
+r('penc',subst).
+r('pen',ntr).
+r('pelv',subst).
+r('pelt',subst).
+r('pelmen',subst).
+r('pelmel',subst).
+r('pelikaned',subst).
+r('pelikan',subst).
+r('pelerin',subst).
+r('pelamid',subst).
+r('pelagr',subst).
+r('pel',tr).
+r('pekl',tr).
+r('pek',ntr).
+r('pejzaĝ',subst).
+r('pejotl',subst).
+r('peged',subst).
+r('peg',subst).
+r('pedologi',subst).
+r('pedofili',subst).
+r('pedikur',tr).
+r('pedik',subst).
+r('pederasti',subst).
+r('pedel',subst).
+r('pedant',adj).
+r('pedaliac',subst).
+r('pedal',subst).
+r('pedagogi',subst).
+r('pedagog',subst).
+r('pec',subst).
+r('pean',subst).
+r('paŭz',subst).
+r('paŭt',ntr).
+r('paŭs',tr).
+r('paŭperism',subst).
+r('paŭlovni',subst).
+r('paŝtel',subst).
+r('paŝt',tr).
+r('paŝa',subst).
+r('paŝ',ntr).
+r('paĝi',subst).
+r('paĝ',subst).
+r('paĉul',subst).
+r('pazigrafi',subst).
+r('pavim',subst).
+r('pavilon',subst).
+r('pavian',best).
+r('pavez',subst).
+r('pavan',subst).
+r('pav',subst).
+r('patron',subst).
+r('patrol',subst).
+r('patriot',subst).
+r('patrici',subst).
+r('patric',subst).
+r('patriarĥ',subst).
+r('patriark',subst).
+r('patri',subst).
+r('patr',parc).
+r('patos',subst).
+r('patologi',subst).
+r('patin',subst).
+r('patent',subst).
+r('patel',subst).
+r('patel',subst).
+r('patat',subst).
+r('pat',subst).
+r('pastr',subst).
+r('pastoral',subst).
+r('pastor',subst).
+r('pastiĉ',subst).
+r('pastinak',subst).
+r('pasteŭriz',subst).
+r('pasteĉ',subst).
+r('pastel',subst).
+r('past',subst).
+r('pasport',subst).
+r('paspartu',subst).
+r('paskvil',subst).
+r('pasiv',adj).
+r('pasi',subst).
+r('pasered',subst).
+r('paser',subst).
+r('pase',subst).
+r('pasaĝer',subst).
+r('pasament',subst).
+r('pas',ntr).
+r('parvenu',subst).
+r('parued',subst).
+r('paru',subst).
+r('partner',subst).
+r('partizan',subst).
+r('partitur',subst).
+r('partikular',adj).
+r('partikul',subst).
+r('partikl',subst).
+r('particip',subst).
+r('parti',subst).
+r('parter',subst).
+r('partenogenez',subst).
+r('part',subst).
+r('parsek',subst).
+r('paroĥ',subst).
+r('paronimi',subst).
+r('paronim',subst).
+r('parol',tr).
+r('paroksism',subst).
+r('parodi',subst).
+r('parlamentari',subst).
+r('parlament',subst).
+r('parker',adv).
+r('park',subst).
+r('park',subst).
+r('parietal',subst).
+r('pariet',subst).
+r('pari',subst).
+r('parget',subst).
+r('parfum',subst).
+r('parentez',subst).
+r('parenc',subst).
+r('pare',subst).
+r('pardon',tr).
+r('parcel',subst).
+r('parc',subst).
+r('paraŝut',subst).
+r('paraŝit',subst).
+r('parazitologi',subst).
+r('parazitolog',subst).
+r('parazit',subst).
+r('paratif',subst).
+r('parapsiĥologi',subst).
+r('parapsikologi',subst).
+r('paraplegi',subst).
+r('parapet',subst).
+r('paranormal',adj).
+r('paranoj',subst).
+r('paramotor',subst).
+r('parametr',subst).
+r('parameci',subst).
+r('paralogism',subst).
+r('paraliz',tr).
+r('paralelogram',subst).
+r('paralelepiped',subst).
+r('paralel',adj).
+r('paragraf',subst).
+r('paraglis',verb).
+r('parafraz',subst).
+r('parafin',subst).
+r('paraf',subst).
+r('paradoks',subst).
+r('paradiz',subst).
+r('paradigm',subst).
+r('parad',ntr).
+r('paraboloid',subst).
+r('parabol',subst).
+r('par',subst).
+r('paprik',subst).
+r('papirus',subst).
+r('papiliac',subst).
+r('papili',subst).
+r('paper',subst).
+r('papavac',subst).
+r('papav',subst).
+r('paparac',subst).
+r('papaj',subst).
+r('papaged',subst).
+r('papag',subst).
+r('pap',subst).
+r('pantun',subst).
+r('pantomim',subst).
+r('pantofl',subst).
+r('panter',subst).
+r('panteist',subst).
+r('panteism',subst).
+r('pantalon',subst).
+r('pans',tr).
+r('panoram',subst).
+r('panopli',subst).
+r('pankreat',subst).
+r('pankreas',subst).
+r('panikl',subst).
+r('panik',subst).
+r('panel',subst).
+r('panegir',adj).
+r('pane',subst).
+r('pandit',subst).
+r('pandioned',subst).
+r('pandion',subst).
+r('pandemoni',subst).
+r('pandemi',subst).
+r('pand',best).
+r('panarici',subst).
+r('panam',subst).
+r('panace',subst).
+r('pan',subst).
+r('pampelmus',subst).
+r('pamp',subst).
+r('pamflet',subst).
+r('palumb',subst).
+r('paludism',subst).
+r('palt',subst).
+r('palpitaci',subst).
+r('palpebr',subst).
+r('palp',tr).
+r('palmiped',subst).
+r('palm',subst).
+r('palium',subst).
+r('palisandr',subst).
+r('palis',subst).
+r('palinured',subst).
+r('palinur',best).
+r('palindrom',subst).
+r('paliativ',subst).
+r('paletr',subst).
+r('paleozoik',subst).
+r('paleontologi',subst).
+r('paleontolog',subst).
+r('paleolitik',subst).
+r('paleografi',subst).
+r('paleograf',subst).
+r('paleoantropologi',subst).
+r('paleoantropolog',subst).
+r('paled',subst).
+r('pale',subst).
+r('palatal',subst).
+r('palat',subst).
+r('palanken',subst).
+r('palafit',subst).
+r('paladi',subst).
+r('palac',subst).
+r('pal',adj).
+r('pakt',subst).
+r('pakiderm',subst).
+r('pak',tr).
+r('pajl',subst).
+r('pajac',subst).
+r('pagured',subst).
+r('pagur',best).
+r('pagum',best).
+r('pagr',subst).
+r('pagod',subst).
+r('pagel',subst).
+r('pagan',subst).
+r('pagaj',subst).
+r('pag',tr).
+r('paf',tr).
+r('paelj',subst).
+r('padus',subst).
+r('padel',subst).
+r('pad',subst).
+r('pacifist',subst).
+r('pacifism',subst).
+r('pacient',subst).
+r('pacienc',subst).
+r('pac',subst).
+r('ozon',subst).
+r('oz',suf).
+r('ovul',subst).
+r('ovr',tr).
+r('ovol',subst).
+r('ovibov',subst).
+r('ovari',subst).
+r('oval',subst).
+r('ovaci',tr).
+r('ov',subst).
+r('otorinolaringologi',subst).
+r('otorinolaringolog',subst).
+r('otit',subst).
+r('otid',subst).
+r('ostrogot',subst).
+r('ostred',subst).
+r('ostracism',subst).
+r('ostr',subst).
+r('ostoporoz',subst).
+r('ostologi',subst).
+r('ostolog',subst).
+r('osteoporoz',subst).
+r('ostaĝ',subst).
+r('ost',subst).
+r('osmoz',subst).
+r('osmi',subst).
+r('osmant',subst).
+r('osk',subst).
+r('oscilator',subst).
+r('oscil',verb).
+r('osced',ntr).
+r('ortopter',subst).
+r('ortopedi',subst).
+r('ortoped',subst).
+r('ortografi',subst).
+r('ortodoks',adj).
+r('ortocentr',subst).
+r('ort',subst).
+r('orografi',subst).
+r('ornitorinked',subst).
+r('ornitorink',best).
+r('ornitologi',subst).
+r('ornitolog',subst).
+r('ornat',subst).
+r('ornam',tr).
+r('orl',subst).
+r('orkide',subst).
+r('orkidac',subst).
+r('orkid',subst).
+r('orkestr',subst).
+r('orioled',subst).
+r('oriol',subst).
+r('oriks',subst).
+r('original',adj).
+r('origin',subst).
+r('origan',subst).
+r('origami',subst).
+r('orific',subst).
+r('orientalistik',subst).
+r('orientalist',subst).
+r('orientalism',subst).
+r('orient',subst).
+r('oriel',subst).
+r('orgojl',subst).
+r('orgi',subst).
+r('orgen',subst).
+r('orgasm',subst).
+r('organiz',tr).
+r('organism',subst).
+r('organik',adj).
+r('organdi',subst).
+r('organ',subst).
+r('orf',subst).
+r('orel',subst).
+r('ordon',tr).
+r('ordinat',subst).
+r('ordinar',adj).
+r('ordinaci',subst).
+r('orden',subst).
+r('ord',subst).
+r('orbit',subst).
+r('orb',subst).
+r('oratori',subst).
+r('orator',subst).
+r('oranĝeri',subst).
+r('oranĝ',subst).
+r('orangutanged',subst).
+r('orangutang',best).
+r('orakol',subst).
+r('oraci',subst).
+r('or',subst).
+r('optimum',subst).
+r('optimist',subst).
+r('optimism',subst).
+r('optik',subst).
+r('optativ',subst).
+r('opres',tr).
+r('opozici',subst).
+r('oportun',adj).
+r('opon',ntr).
+r('opioid',subst).
+r('opini',tr).
+r('opiat',subst).
+r('opi',subst).
+r('operkul',subst).
+r('operator',subst).
+r('operaci',subst).
+r('operac',verb).
+r('oper',subst).
+r('opank',subst).
+r('opal',subst).
+r('ontologi',subst).
+r('ontogeni',subst).
+r('ontogenez',subst).
+r('onomatope',subst).
+r('onobrik',subst).
+r('onkologi',subst).
+r('onkolog',subst).
+r('onkl',parc).
+r('onisk',best).
+r('oniks',subst).
+r('ondatr',best).
+r('ond',subst).
+r('omnibus',subst).
+r('ommetr',subst).
+r('omlet',subst).
+r('omero',subst).
+r('omen',subst).
+r('ombrel',subst).
+r('ombr',subst).
+r('omaĝ',subst).
+r('omared',subst).
+r('omar',best).
+r('ologi',suf).
+r('olog',suf).
+r('olmek',subst).
+r('oliv',subst).
+r('oligoĥet',subst).
+r('oligopsoni',subst).
+r('oligopol',subst).
+r('oligocen',subst).
+r('oligarĥi',subst).
+r('oligarki',subst).
+r('oligark',subst).
+r('oliban',subst).
+r('oleandr',subst).
+r('oleac',subst).
+r('ole',subst).
+r('ole',subst).
+r('old',adj).
+r('olapodrid',subst).
+r('okzal',subst).
+r('okupaci',verb).
+r('okup',tr).
+r('okult',adj).
+r('okulari',subst).
+r('okul',subst).
+r('oktobr',subst).
+r('oktav',subst).
+r('oktant',subst).
+r('okt',subst).
+r('oksitocin',subst).
+r('oksimor',subst).
+r('oksikok',subst).
+r('oksigen',subst).
+r('oksid',subst).
+r('oksalidac',subst).
+r('oksalid',subst).
+r('okr',subst).
+r('okcipital',subst).
+r('okcipit',subst).
+r('okcident',subst).
+r('okaz',ntr).
+r('okarin',subst).
+r('okapi',subst).
+r('oka',subst).
+r('ojstred',subst).
+r('ojstr',subst).
+r('oid',suf).
+r('oguz',subst).
+r('ogr',subst).
+r('ogiv',subst).
+r('oftalmologi',subst).
+r('oftalmolog',subst).
+r('oftalmit',subst).
+r('oft',adv).
+r('ofset',subst).
+r('ofsajd',subst).
+r('oficir',subst).
+r('oficial',adj).
+r('ofic',subst).
+r('ofertori',subst).
+r('ofert',tr).
+r('ofer',tr).
+r('ofensiv',subst).
+r('ofend',tr).
+r('odor',tr).
+r('odonat',subst).
+r('odekolon',subst).
+r('od',subst).
+r('oceanologi',subst).
+r('ocean',subst).
+r('obĵet',verb).
+r('obus',subst).
+r('obtuz',adj).
+r('obstrukc',subst).
+r('obstin',adj).
+r('obstakl',subst).
+r('obskurantism',subst).
+r('obskur',adj).
+r('obsidian',subst).
+r('observatori',subst).
+r('observ',tr).
+r('obsed',tr).
+r('obscen',adj).
+r('obol',subst).
+r('oblikv',adj).
+r('obligaci',subst).
+r('oblat',subst).
+r('objektiv',subst).
+r('objektiv',adj).
+r('objekt',subst).
+r('obi',subst).
+r('obez',adj).
+r('obelisk',subst).
+r('obe',tr).
+r('oaz',subst).
+r('nutr',tr).
+r('nupt',subst).
+r('nunci',subst).
+r('numismatik',subst).
+r('numismat',subst).
+r('numid',subst).
+r('numerologi',subst).
+r('numerator',subst).
+r('numeral',subst).
+r('numer',subst).
+r('numeni',subst).
+r('nuks',subst).
+r('nukleotid',subst).
+r('nukleon',subst).
+r('nukle',subst).
+r('nuk',subst).
+r('nugat',subst).
+r('nufar',subst).
+r('nudel',subst).
+r('nud',adj).
+r('nub',subst).
+r('nuanc',subst).
+r('novic',subst).
+r('novembr',subst).
+r('novel',subst).
+r('noval',subst).
+r('nova',subst).
+r('nov',adj).
+r('notic',subst).
+r('notari',subst).
+r('not',subst).
+r('nostalgi',subst).
+r('norveg',subst).
+r('normal',adj).
+r('norm',subst).
+r('nori',subst).
+r('nord',subst).
+r('noradrenalin',subst).
+r('nominativ',subst).
+r('nominal',adj).
+r('nominaci',subst).
+r('nomes',subst).
+r('nomenklatur',subst).
+r('nombr',subst).
+r('nomarĥ',subst).
+r('nomark',subst).
+r('nomad',subst).
+r('nom',subst).
+r('nokturn',subst).
+r('noktued',subst).
+r('noktu',best).
+r('nokt',subst).
+r('nokaŭt',tr).
+r('nok',subst).
+r('nod',subst).
+r('noci',subst).
+r('noc',tr).
+r('nobl',adj).
+r('nobeli',subst).
+r('nobel',subst).
+r('no',subst).
+r('niĝeri',subst).
+r('niĝer',subst).
+r('niĉ',subst).
+r('niz',subst).
+r('nivel',subst).
+r('nitroglicerin',subst).
+r('nitrogen',subst).
+r('nitrit',subst).
+r('nitrid',subst).
+r('nitrat',subst).
+r('niton',subst).
+r('nit',subst).
+r('nipa',subst).
+r('niob',subst).
+r('nimfeac',subst).
+r('nimfe',subst).
+r('nimf',subst).
+r('nimbus',subst).
+r('nimb',subst).
+r('nilpotent',adj).
+r('nilon',subst).
+r('niktit',subst).
+r('niktereŭt',subst).
+r('niks',subst).
+r('nikotin',subst).
+r('nikotian',subst).
+r('nikel',subst).
+r('nikaragv',subst).
+r('nikab',subst).
+r('nihilist',subst).
+r('nihilism',subst).
+r('nigr',adj).
+r('nigel',subst).
+r('nif',subst).
+r('niel',subst).
+r('neŭtron',subst).
+r('neŭtrin',subst).
+r('neŭtral',adj).
+r('neŭtr',adj).
+r('neŭroz',subst).
+r('neŭrotransmisi',verb).
+r('neŭron',subst).
+r('neŭrologi',subst).
+r('neŭrolog',subst).
+r('neŭrodegener',subst).
+r('neŭrobiologi',subst).
+r('neŭrasteni',subst).
+r('neŭralgi',subst).
+r('neĝ',subst).
+r('nevus',subst).
+r('nevropter',subst).
+r('nev',parc).
+r('net',adj).
+r('nest',subst).
+r('nervur',subst).
+r('nervoz',adj).
+r('nerv',subst).
+r('neri',subst).
+r('neptuni',subst).
+r('nepr',adj).
+r('nepotism',subst).
+r('nep',parc).
+r('neon',subst).
+r('neologism',subst).
+r('neolitik',subst).
+r('neodim',subst).
+r('neni',subst).
+r('nektarin',subst).
+r('nektar',subst).
+r('nekropsi',subst).
+r('nekropol',subst).
+r('nekromanci',subst).
+r('nekrolog',subst).
+r('negr',subst).
+r('negoc',subst).
+r('negliĝ',subst).
+r('neglekt',tr).
+r('negatron',subst).
+r('negaton',subst).
+r('negativ',adj).
+r('negaci',subst).
+r('neg',tr).
+r('nefrologi',subst).
+r('nefrolog',subst).
+r('nefrit',subst).
+r('nefrit',subst).
+r('neces',adj).
+r('nebuloz',subst).
+r('nebul',subst).
+r('neandertal',adj).
+r('naŭz',tr).
+r('naŭtil',subst).
+r('naŭt',subst).
+r('naŭn',subst).
+r('naĝ',ntr).
+r('nazi',subst).
+r('nazal',subst).
+r('naz',subst).
+r('navigaci',subst).
+r('navig',ntr).
+r('navet',subst).
+r('naved',subst).
+r('navaĥ',subst).
+r('nav',subst).
+r('naur',subst).
+r('naturalism',subst).
+r('natur',subst).
+r('natri',subst).
+r('natr',subst).
+r('nask',tr).
+r('nas',subst).
+r('narvaled',subst).
+r('narval',best).
+r('narkotik',subst).
+r('narkot',tr).
+r('nargile',subst).
+r('narcis',subst).
+r('napalm',subst).
+r('nap',subst).
+r('nano',pref).
+r('nanken',subst).
+r('nandin',subst).
+r('nan',subst).
+r('najtingal',subst).
+r('najl',subst).
+r('najbar',subst).
+r('najad',subst).
+r('naiv',adj).
+r('naga',best).
+r('naftol',subst).
+r('naftalin',subst).
+r('naft',subst).
+r('nadl',subst).
+r('nadir',subst).
+r('nacionalism',subst).
+r('naci',subst).
+r('nabab',subst).
+r('nab',subst).
+r('muŝed',subst).
+r('muŝ',best).
+r('muĵik',subst).
+r('muĝ',ntr).
+r('muzikologi',subst).
+r('muzikolog',subst).
+r('muzik',subst).
+r('muzeologi',subst).
+r('muzeolog',subst).
+r('muzel',subst).
+r('muze',subst).
+r('muz',subst).
+r('mutaci',subst).
+r('mut',adj).
+r('musteled',subst).
+r('mustel',best).
+r('mustard',subst).
+r('muson',subst).
+r('muslin',subst).
+r('musli',subst).
+r('muskol',subst).
+r('musket',subst).
+r('musked',subst).
+r('muskat',subst).
+r('musk',subst).
+r('mused',subst).
+r('mus',best).
+r('murmur',tr).
+r('murened',subst).
+r('muren',best).
+r('murd',tr).
+r('mur',subst).
+r('muon',subst).
+r('munt',tr).
+r('municip',subst).
+r('munici',subst).
+r('mung',verb).
+r('mumps',subst).
+r('mumi',subst).
+r('mulĉ',subst).
+r('multiplikend',subst).
+r('multiplik',tr).
+r('mult',adj).
+r('muld',tr).
+r('mulat',subst).
+r('mula',subst).
+r('mul',subst).
+r('mukoz',subst).
+r('muk',subst).
+r('mugiled',subst).
+r('mugil',best).
+r('mufti',subst).
+r('mufl',subst).
+r('muf',subst).
+r('muezin',subst).
+r('muel',tr).
+r('mudehar',subst).
+r('mucilag',subst).
+r('mucid',adj).
+r('muar',tr).
+r('mu',subst).
+r('moŝt',subst).
+r('moĉi',subst).
+r('mozaik',subst).
+r('moviment',subst).
+r('mov',tr).
+r('motor',subst).
+r('motocikl',subst).
+r('motiv',subst).
+r('mote',subst).
+r('motaciled',subst).
+r('motacil',subst).
+r('mot',subst).
+r('most',subst).
+r('moslem',subst).
+r('moskul',subst).
+r('moskit',subst).
+r('moske',subst).
+r('mosk',subst).
+r('morĥel',subst).
+r('morv',subst).
+r('morusac',subst).
+r('morus',subst).
+r('moru',best).
+r('mortez',subst).
+r('morter',subst).
+r('mort',ntr).
+r('moroz',adj).
+r('moroned',subst).
+r('morn',adj).
+r('mormon',subst).
+r('morkel',subst).
+r('morfologi',subst).
+r('morfin',subst).
+r('moren',subst).
+r('mordent',subst).
+r('mord',tr).
+r('morbil',subst).
+r('moratori',subst).
+r('moral',subst).
+r('mor',subst).
+r('mops',subst).
+r('monument',subst).
+r('montr',tr).
+r('mont',subst).
+r('monstr',subst).
+r('monoton',adj).
+r('monoteist',subst).
+r('monoteism',subst).
+r('monopsoni',subst).
+r('monopol',subst).
+r('monoplan',subst).
+r('mononukleoz',subst).
+r('monomani',subst).
+r('monom',subst).
+r('monolog',subst).
+r('monolit',subst).
+r('monokultur',subst).
+r('monokl',subst).
+r('monojd',subst).
+r('monoid',subst).
+r('monogram',subst).
+r('monografi',subst).
+r('monogami',subst).
+r('monitor',subst).
+r('monism',subst).
+r('mongoled',adj).
+r('mongol',adj).
+r('moned',subst).
+r('mond',subst).
+r('monaĥ',subst).
+r('monat',subst).
+r('monarĥi',subst).
+r('monarĥ',subst).
+r('monal',subst).
+r('monak',subst).
+r('monad',subst).
+r('mon',subst).
+r('momordik',subst).
+r('moment',subst).
+r('momant',subst).
+r('molusk',subst).
+r('molibden',subst).
+r('molest',tr).
+r('molekul',subst).
+r('mole',subst).
+r('moldavi',subst).
+r('moldav',subst).
+r('molas',subst).
+r('molar',subst).
+r('mol',adj).
+r('mokasen',subst).
+r('mok',tr).
+r('mojos',adj).
+r('mohajr',subst).
+r('modus',subst).
+r('modulaci',tr).
+r('modul',tr).
+r('modlur',subst).
+r('modl',tr).
+r('modif',tr).
+r('modest',adj).
+r('modern',adj).
+r('moder',adj).
+r('modem',subst).
+r('model',subst).
+r('modal',subst).
+r('mod',subst).
+r('mobiliz',tr).
+r('mnemoteknik',subst).
+r('mnemonik',subst).
+r('mjel',subst).
+r('miŝmaŝ',subst).
+r('mizerikord',subst).
+r('mizer',subst).
+r('mizantrop',subst).
+r('mituled',subst).
+r('mitul',subst).
+r('mitral',subst).
+r('mitrajl',subst).
+r('mitr',subst).
+r('mitoĥondri',subst).
+r('mitoz',subst).
+r('mitologi',subst).
+r('mitokondri',subst).
+r('miting',subst).
+r('mit',subst).
+r('mistral',subst).
+r('mistik',subst).
+r('mistifik',tr).
+r('mistif',tr).
+r('mister',subst).
+r('miso',subst).
+r('misi',subst).
+r('mis',pref).
+r('mirtel',subst).
+r('mirtac',subst).
+r('mirt',subst).
+r('mirmeleoned',subst).
+r('mirmeleon',subst).
+r('mirmekob',best).
+r('mirliton',subst).
+r('miristikac',subst).
+r('miristik',subst).
+r('mirid',subst).
+r('miriapod',subst).
+r('miriametr',subst).
+r('miriad',subst).
+r('mirh',subst).
+r('miraĝ',subst).
+r('mirakl',subst).
+r('mirabel',subst).
+r('mir',tr).
+r('miozot',subst).
+r('miozin',subst).
+r('miop',adj).
+r('miogal',best).
+r('miocen',subst).
+r('minut',subst).
+r('minuskl',subst).
+r('minstrel',subst).
+r('minoritat',subst).
+r('minor',adj).
+r('ministr',subst).
+r('ministeri',subst).
+r('minimum',subst).
+r('minijup',subst).
+r('minibus',subst).
+r('miniatur',subst).
+r('mini',subst).
+r('mini',pref).
+r('mineralogi',subst).
+r('mineralog',subst).
+r('mineral',subst).
+r('minc',adj).
+r('minaret',subst).
+r('minac',tr).
+r('min',subst).
+r('min',subst).
+r('mimozac',subst).
+r('mimoz',subst).
+r('mimik',subst).
+r('mimetism',subst).
+r('mimeografi',subst).
+r('mimeograf',subst).
+r('milv',subst).
+r('milit',ntr).
+r('milion',subst).
+r('milimetr',subst).
+r('mililitr',subst).
+r('miligram',subst).
+r('milici',subst).
+r('milic',subst).
+r('miliard',subst).
+r('mili',subst).
+r('mili',pref).
+r('mild',adj).
+r('miks',tr).
+r('mikrovivaĵ',subst).
+r('mikrot',best).
+r('mikroskopi',subst).
+r('mikroskop',subst).
+r('mikrosekc',tr).
+r('mikroorganism',subst).
+r('mikronezi',subst).
+r('mikrometr',subst).
+r('mikrokredit',subst).
+r('mikrokosm',subst).
+r('mikroklimat',subst).
+r('mikrofon',subst).
+r('mikrofilm',subst).
+r('mikrofarad',subst).
+r('mikroelektronik',subst).
+r('mikroekonomik',subst).
+r('mikrobiologi',subst).
+r('mikrobiolog',subst).
+r('mikrob',subst).
+r('mikro',pref).
+r('mikoz',subst).
+r('mikad',subst).
+r('migren',subst).
+r('migr',ntr).
+r('migdal',subst).
+r('mien',subst).
+r('miel',subst).
+r('midinet',subst).
+r('miceli',subst).
+r('miaŭ',verb).
+r('miasm',subst).
+r('meĥanism',subst).
+r('meĥanik',subst).
+r('meĉ',subst).
+r('mezur',tr).
+r('mezozoik',subst).
+r('mezoteliom',subst).
+r('mezosfer',subst).
+r('mezon',subst).
+r('mezokarp',subst).
+r('mezanin',subst).
+r('mezalianc',subst).
+r('mez',subst).
+r('mev',subst).
+r('metropoliten',subst).
+r('metropolit',subst).
+r('metropol',subst).
+r('metronom',subst).
+r('metro',subst).
+r('metrik',subst).
+r('metr',subst).
+r('metop',subst).
+r('metonimi',subst).
+r('metodologi',subst).
+r('metod',subst).
+r('meti',subst).
+r('meteorologi',subst).
+r('meteorolog',subst).
+r('meteorism',subst).
+r('meteor',subst).
+r('meteologi',subst).
+r('meteolog',subst).
+r('metempsikoz',subst).
+r('metatez',subst).
+r('metatars',subst).
+r('metastaz',subst).
+r('metasekvoj',subst).
+r('metapsiki',subst).
+r('metan',subst).
+r('metamorfoz',subst).
+r('metamorf',adj).
+r('metalurgi',subst).
+r('metalurg',subst).
+r('metaloid',subst).
+r('metalofon',subst).
+r('metal',subst).
+r('metakarpe',subst).
+r('metafor',subst).
+r('metafizik',subst).
+r('metadon',subst).
+r('metabol',subst).
+r('meta',pref).
+r('met',tr).
+r('mestiz',subst).
+r('mespil',subst).
+r('meskalin',subst).
+r('mesi',subst).
+r('mesaĝ',subst).
+r('mes',subst).
+r('merĝ',best).
+r('merop',subst).
+r('meromorf',adj).
+r('merluĉ',subst).
+r('merlang',best).
+r('merl',subst).
+r('merkurial',subst).
+r('merkred',subst).
+r('merkatik',subst).
+r('merkat',subst).
+r('merkantilism',subst).
+r('meriz',subst).
+r('merit',tr).
+r('mering',subst).
+r('merin',subst).
+r('meridian',subst).
+r('merg',tr).
+r('merceriz',verb).
+r('mercer',subst).
+r('menured',subst).
+r('menur',subst).
+r('menuet',subst).
+r('menu',subst).
+r('mentor',subst).
+r('menton',subst).
+r('mentol',subst).
+r('ment',subst).
+r('menstru',subst).
+r('mensog',tr).
+r('mens',subst).
+r('menonit',subst).
+r('menisk',subst).
+r('meningit',subst).
+r('mening',subst).
+r('menhir',subst).
+r('menestrel',subst).
+r('mendelevi',subst).
+r('mend',tr).
+r('menci',tr).
+r('menaĝeri',subst).
+r('memuar',subst).
+r('memorand',subst).
+r('memor',tr).
+r('membran',subst).
+r('membr',subst).
+r('melopsitak',subst).
+r('melopep',subst).
+r('melope',subst).
+r('melongen',subst).
+r('melon',subst).
+r('melolont',subst).
+r('melodram',subst).
+r('melodi',subst).
+r('melk',tr).
+r('melis',subst).
+r('melinit',subst).
+r('melilot',subst).
+r('meliac',subst).
+r('meli',subst).
+r('meleagr',subst).
+r('melas',subst).
+r('melanosom',subst).
+r('melanom',subst).
+r('melankoli',subst).
+r('melanism',subst).
+r('melanin',subst).
+r('melampir',subst).
+r('mel',best).
+r('mekanik',subst).
+r('mek',verb).
+r('mejtneri',subst).
+r('mejl',subst).
+r('megom',subst).
+r('meger',subst).
+r('megavat',subst).
+r('megatun',subst).
+r('megaom',subst).
+r('megalosaŭr',best).
+r('megalomani',subst).
+r('megalit',subst).
+r('megafon',subst).
+r('megabitok',subst).
+r('mega',pref).
+r('mefit',subst).
+r('meduz',subst).
+r('medol',subst).
+r('medium',subst).
+r('medit',verb).
+r('mediokr',adj).
+r('medikament',subst).
+r('medikag',subst).
+r('medicin',subst).
+r('mediator',subst).
+r('median',subst).
+r('medial',subst).
+r('mediaci',verb).
+r('medi',subst).
+r('medalion',subst).
+r('medal',subst).
+r('med',subst).
+r('mecenat',subst).
+r('mebl',subst).
+r('meandr',subst).
+r('maŭzole',subst).
+r('maŭritani',subst).
+r('maŭrici',subst).
+r('maŭr',subst).
+r('maŝin',subst).
+r('maŝ',subst).
+r('maĵor',adj).
+r('maĥinaci',subst).
+r('maĝang',subst).
+r('maĉet',subst).
+r('maĉ',verb).
+r('maĉ',subst).
+r('mazut',subst).
+r('mazurk',subst).
+r('mazda',subst).
+r('matĉ',subst).
+r('matur',adj).
+r('matros',subst).
+r('matron',subst).
+r('matrikul',subst).
+r('matric',subst).
+r('matrac',subst).
+r('material',subst).
+r('materi',subst).
+r('maten',subst).
+r('matematik',subst).
+r('mate',subst).
+r('matador',subst).
+r('mat',subst).
+r('mastr',subst).
+r('mastodont',subst).
+r('mastik',subst).
+r('mast',subst).
+r('masoĥist',subst).
+r('masoĥism',subst).
+r('masor',subst).
+r('mason',tr).
+r('maskl',subst).
+r('maskerad',subst).
+r('mask',subst).
+r('masiv',adj).
+r('masaĝ',subst).
+r('masakr',tr).
+r('mas',subst).
+r('marŝal',subst).
+r('marŝal',subst).
+r('marŝ',ntr).
+r('marĝen',subst).
+r('marĉand',ntr).
+r('marĉ',subst).
+r('martir',subst).
+r('martes',best).
+r('martel',subst).
+r('mart',subst).
+r('marsupiul',subst).
+r('marseljez',subst).
+r('marot',subst).
+r('maron',subst).
+r('maroken',subst).
+r('marod',tr).
+r('marn',subst).
+r('marmot',best).
+r('marmor',subst).
+r('marmelad',subst).
+r('markot',subst).
+r('markiz',subst).
+r('markez',subst).
+r('mark',subst).
+r('mark',subst).
+r('marionet',subst).
+r('marin',tr).
+r('marimb',subst).
+r('mariaĝ',subst).
+r('margarin',subst).
+r('mard',subst).
+r('marcipan',subst).
+r('maraved',subst).
+r('maraton',subst).
+r('marasm',subst).
+r('marak',subst).
+r('marabu',subst).
+r('mar',subst).
+r('map',subst).
+r('maori',subst).
+r('manĝu',subst).
+r('manĝ',tr).
+r('manuskript',subst).
+r('manufaktur',subst).
+r('mantr',subst).
+r('mantis',subst).
+r('mantil',subst).
+r('mantel',subst).
+r('mant',subst).
+r('mansard',subst).
+r('manovr',ntr).
+r('manometr',subst).
+r('mank',ntr).
+r('manis',subst).
+r('manipulator',subst).
+r('manipul',tr).
+r('maniok',subst).
+r('manikur',tr).
+r('manik',subst).
+r('manifestaci',subst).
+r('manifest',tr).
+r('manier',subst).
+r('mani',subst).
+r('mangostan',subst).
+r('mangan',subst).
+r('manga',subst).
+r('mang',subst).
+r('maneĝ',subst).
+r('maneken',subst).
+r('mandragor',subst).
+r('mandolin',subst).
+r('mandibl',subst).
+r('mandat',subst).
+r('mandarin',subst).
+r('mandaren',subst).
+r('mandal',subst).
+r('mancinel',subst).
+r('manat',best).
+r('manat',subst).
+r('mana',subst).
+r('man',subst).
+r('mamut',best).
+r('mamon',subst).
+r('mam',subst).
+r('malversaci',subst).
+r('malvazi',subst).
+r('malvac',subst).
+r('malv',subst).
+r('maltusianism',subst).
+r('maltoz',subst).
+r('malt',subst).
+r('malign',adj).
+r('malic',adj).
+r('mali',subst).
+r('maleol',subst).
+r('male',subst).
+r('maldiv',subst).
+r('malari',subst).
+r('malakit',subst).
+r('makzel',subst).
+r('makulatur',subst).
+r('makul',subst).
+r('maksimum',subst).
+r('maksim',subst).
+r('makroped',subst).
+r('makrop',subst).
+r('makrokosm',subst).
+r('makrofag',subst).
+r('makroekonomik',subst).
+r('makrocefaled',subst).
+r('makrocefal',best).
+r('makrobiotik',subst).
+r('makro',subst).
+r('makler',ntr).
+r('makis',subst).
+r('makiavel',adj).
+r('makedon',subst).
+r('makaroni',subst).
+r('makaron',subst).
+r('makak',best).
+r('makadam',subst).
+r('makabr',adj).
+r('majuskl',subst).
+r('majstr',subst).
+r('majoritat',subst).
+r('majordom',subst).
+r('majoran',subst).
+r('major',subst).
+r('majonez',subst).
+r('majolik',subst).
+r('majest',adj).
+r('maja',subst).
+r('maj',subst).
+r('maiz',subst).
+r('mahut',subst).
+r('mahagon',subst).
+r('magr',adj).
+r('magnoliac',subst).
+r('magnoli',subst).
+r('magnitud',subst).
+r('magnezit',subst).
+r('magnezi',subst).
+r('magnez',subst).
+r('magnetoskop',subst).
+r('magnetofon',subst).
+r('magnetit',subst).
+r('magnetism',subst).
+r('magnet',subst).
+r('magnat',subst).
+r('magm',subst).
+r('magistrat',subst).
+r('magistr',subst).
+r('magi',subst).
+r('magazin',subst).
+r('magazen',subst).
+r('mag',subst).
+r('mafi',subst).
+r('madrigal',subst).
+r('madon',subst).
+r('madagaskar',subst).
+r('macer',verb).
+r('mac',subst).
+r('maat',subst).
+r('luzern',subst).
+r('lutreol',best).
+r('lutr',best).
+r('luteci',subst).
+r('lut',tr).
+r('lustr',subst).
+r('lupus',subst).
+r('lupol',subst).
+r('lupin',subst).
+r('lupen',subst).
+r('lupe',subst).
+r('luparaneed',subst).
+r('lup',best).
+r('lunĉ',subst).
+r('lund',subst).
+r('lunatik',subst).
+r('lunari',subst).
+r('lun',subst).
+r('luminesk',ntr).
+r('lumbriked',subst).
+r('lumbrik',subst).
+r('lumbag',subst).
+r('lumb',subst).
+r('lum',ntr).
+r('lul',tr).
+r('lukum',subst).
+r('lukt',ntr).
+r('luks',subst).
+r('lukaned',subst).
+r('lukan',subst).
+r('luk',subst).
+r('luidor',subst).
+r('lugr',subst).
+r('luf',subst).
+r('lud',tr).
+r('lucid',adj).
+r('lucern',subst).
+r('lubrik',tr).
+r('lu',tr).
+r('loĝistik',subst).
+r('loĝi',subst).
+r('loĝ',tr).
+r('lozanĝ',subst).
+r('loz',adj).
+r('lotus',subst).
+r('lotos',subst).
+r('loteri',subst).
+r('lot',ntr).
+r('lorn',subst).
+r('lord',subst).
+r('lorantac',subst).
+r('lop',verb).
+r('lontan',adj).
+r('lonicer',subst).
+r('longitud',subst).
+r('longan',subst).
+r('long',adj).
+r('lombard',subst).
+r('lom',subst).
+r('lol',subst).
+r('lokust',subst).
+r('loksi',subst).
+r('lokomotiv',subst).
+r('lokomobil',subst).
+r('lokaŭt',subst).
+r('lokaliz',tr).
+r('lokal',subst).
+r('lok',subst).
+r('lojt',best).
+r('lojal',adj).
+r('logotip',subst).
+r('logogrif',subst).
+r('logistik',subst).
+r('logik',subst).
+r('logaritm',subst).
+r('log',tr).
+r('log',subst).
+r('lofi',best).
+r('lof',tr).
+r('loes',subst).
+r('lodikl',subst).
+r('lod',subst).
+r('lobi',subst).
+r('lobeli',subst).
+r('lob',subst).
+r('liĉi',subst).
+r('lizosom',subst).
+r('livre',subst).
+r('livid',subst).
+r('livi',subst).
+r('livermorum',subst).
+r('liver',tr).
+r('liv',adj).
+r('liut',subst).
+r('liturgi',subst).
+r('litrumac',subst).
+r('litrum',subst).
+r('litr',subst).
+r('litov',subst).
+r('litot',subst).
+r('litorined',subst).
+r('litorin',subst).
+r('litografi',subst).
+r('litograf',tr).
+r('litin',subst).
+r('liti',subst).
+r('literaturologi',subst).
+r('literaturolog',subst).
+r('literatur',subst).
+r('liter',subst).
+r('litargir',subst).
+r('litani',subst).
+r('lit',subst).
+r('listel',subst).
+r('list',subst).
+r('lisp',ntr).
+r('lirl',ntr).
+r('lirik',subst).
+r('lir',subst).
+r('lir',subst).
+r('lipom',subst).
+r('lipid',subst).
+r('lip',subst).
+r('liofiliz',verb).
+r('linĉ',tr).
+r('lintel',subst).
+r('linotip',subst).
+r('link',best).
+r('lini',subst).
+r('lingvistik',subst).
+r('lingv',subst).
+r('linear',adj).
+r('line',subst).
+r('linac',subst).
+r('lin',subst).
+r('limuzin',subst).
+r('limonit',subst).
+r('limonad',subst).
+r('limnologi',subst).
+r('limit',subst).
+r('limfatism',subst).
+r('limfangit',subst).
+r('limf',subst).
+r('limes',subst).
+r('limerik',subst).
+r('limed',subst).
+r('lime',subst).
+r('limb',subst).
+r('limand',subst).
+r('limaked',subst).
+r('limak',subst).
+r('limaed',subst).
+r('lima',subst).
+r('lim',subst).
+r('liliput',adj).
+r('liliac',subst).
+r('lili',subst).
+r('lil',adj).
+r('likvor',subst).
+r('likvid',tr).
+r('likvid',subst).
+r('likv',subst).
+r('liktor',subst).
+r('likopodiac',subst).
+r('likopodi',subst).
+r('liknid',subst).
+r('liken',subst).
+r('lik',ntr).
+r('ligustr',subst).
+r('ligur',subst).
+r('ligul',subst).
+r('lignit',subst).
+r('lign',subst).
+r('ligament',subst).
+r('lig',tr).
+r('lift',subst).
+r('lien',subst).
+r('lid',subst).
+r('lici',subst).
+r('licenci',subst).
+r('licenc',subst).
+r('lice',subst).
+r('lic',ntr).
+r('libr',subst).
+r('libid',subst).
+r('libertinism',subst).
+r('liberal',adj).
+r('liber',adj).
+r('libel',subst).
+r('lias',subst).
+r('lian',subst).
+r('li',subst).
+r('leŭtenant',subst).
+r('leŭs',subst).
+r('leŭkomain',subst).
+r('leŭkoj',subst).
+r('leŭkocit',subst).
+r('leŭkocit',subst).
+r('leŭkemi',subst).
+r('leŭg',subst).
+r('leŭcisk',subst).
+r('leĝ',subst).
+r('lez',tr).
+r('levrel',subst).
+r('levkoj',subst).
+r('levjatan',subst).
+r('levitaci',verb).
+r('levier',subst).
+r('levid',subst).
+r('lev',tr).
+r('lev',subst).
+r('leter',subst).
+r('letargi',subst).
+r('lespedez',subst).
+r('lesiv',subst).
+r('lert',adj).
+r('lern',tr).
+r('leptospiroz',subst).
+r('leptospir',subst).
+r('lepton',subst).
+r('lept',subst).
+r('lepr',subst).
+r('lepored',subst).
+r('lepor',best).
+r('lepidopter',subst).
+r('lepidodendr',subst).
+r('leopard',best).
+r('leontod',subst).
+r('leon',best).
+r('lentug',subst).
+r('lent',subst).
+r('lens',subst).
+r('lempir',subst).
+r('lemniskat',subst).
+r('lemn',subst).
+r('lem',subst).
+r('lektor',subst).
+r('leksikon',subst).
+r('leksikologi',subst).
+r('leksikolog',subst).
+r('leksikografi',subst).
+r('leksikograf',subst).
+r('leksik',subst).
+r('lekci',subst).
+r('lekant',subst).
+r('lek',tr).
+r('legumin',subst).
+r('legom',subst).
+r('legitimaci',subst).
+r('legitim',tr).
+r('legi',subst).
+r('legend',subst).
+r('legat',subst).
+r('legat',subst).
+r('legaci',subst).
+r('leg',tr).
+r('led',subst).
+r('lecitin',subst).
+r('lecion',subst).
+r('laŭt',adj).
+r('laŭrenti',subst).
+r('laŭrenci',subst).
+r('laŭreat',subst).
+r('laŭrac',subst).
+r('laŭr',subst).
+r('laŭdan',subst).
+r('laŭdaci',subst).
+r('laŭd',tr).
+r('laŭb',subst).
+r('laĉ',subst).
+r('lazurit',subst).
+r('lazur',subst).
+r('lazaret',subst).
+r('laz',subst).
+r('lavr',subst).
+r('lavend',subst).
+r('lavang',subst).
+r('lav',tr).
+r('latv',subst).
+r('latun',subst).
+r('latron',subst).
+r('latrin',subst).
+r('latitud',subst).
+r('latis',subst).
+r('latir',subst).
+r('later',subst).
+r('latent',adj).
+r('latani',subst).
+r('lat',subst).
+r('last',adj).
+r('laser',subst).
+r('lasciv',adj).
+r('las',tr).
+r('larĝ',adj).
+r('larv',subst).
+r('larm',subst).
+r('laringit',subst).
+r('laring',subst).
+r('larik',subst).
+r('lared',subst).
+r('lard',subst).
+r('lar',subst).
+r('lapis',subst).
+r('lapidar',adj).
+r('laparotomi',subst).
+r('lap',subst).
+r('lanĉ',tr).
+r('lanug',subst).
+r('lantern',subst).
+r('lantan',subst).
+r('laniari',subst).
+r('langvor',subst).
+r('langust',subst).
+r('lang',subst).
+r('landskneĥt',subst).
+r('land',subst).
+r('lanc',subst).
+r('lan',subst).
+r('lampired',subst).
+r('lampir',subst).
+r('lampion',subst).
+r('lamp',subst).
+r('laminari',subst).
+r('lamiac',subst).
+r('lami',subst).
+r('lament',ntr).
+r('lamen',subst).
+r('lamelikorn',subst).
+r('lamelibrank',subst).
+r('lamblioz',subst).
+r('lambdaciz',subst).
+r('lama',subst).
+r('lam',adj).
+r('lam',subst).
+r('lakun',subst).
+r('laktuk',subst).
+r('laktoz',subst).
+r('lakt',subst).
+r('laks',subst).
+r('lakrimal',subst).
+r('lakon',adj).
+r('lakmus',subst).
+r('lake',subst).
+r('lak',subst).
+r('laik',subst).
+r('lagun',subst).
+r('lagried',subst).
+r('lagri',subst).
+r('lagr',subst).
+r('lagop',subst).
+r('lag',subst).
+r('laf',subst).
+r('lad',subst).
+r('lacerted',subst).
+r('lacert',best).
+r('lac',adj).
+r('laburn',subst).
+r('labrak',best).
+r('laboratori',subst).
+r('labor',ntr).
+r('labirint',subst).
+r('labial',subst).
+r('labiac',subst).
+r('labi',subst).
+r('kvot',subst).
+r('kvorum',subst).
+r('kvodlibet',subst).
+r('kvocient',subst).
+r('kviz',subst).
+r('kvivit',ntr).
+r('kvitanc',subst).
+r('kvit',adj).
+r('kvintet',subst).
+r('kvintesenc',subst).
+r('kvintal',subst).
+r('kvint',subst).
+r('kvinsland',subst).
+r('kvino',subst).
+r('kvik',verb).
+r('kviet',adj).
+r('kvestor',subst).
+r('kvest',verb).
+r('kverk',subst).
+r('kverel',ntr).
+r('kver',ntr).
+r('kvazar',subst).
+r('kvaternar',subst).
+r('kvast',subst).
+r('kvas',subst).
+r('kvartir',subst).
+r('kvartet',subst).
+r('kvartal',subst).
+r('kvart',subst).
+r('kvart',subst).
+r('kvark',subst).
+r('kvarc',subst).
+r('kvaranten',subst).
+r('kvantum',subst).
+r('kvant',subst).
+r('kvalit',subst).
+r('kvalifik',tr).
+r('kvalif',tr).
+r('kvaker',subst).
+r('kvak',verb).
+r('kvadriplegi',subst).
+r('kvadril',subst).
+r('kvadrik',subst).
+r('kvadrig',subst).
+r('kvadratur',subst).
+r('kvadrat',subst).
+r('kvadrant',subst).
+r('kvadrant',subst).
+r('kuŝ',ntr).
+r('kuz',parc).
+r('kuv',subst).
+r('kutr',subst).
+r('kutim',ntr).
+r('kut',subst).
+r('kusp',tr).
+r('kuskus',subst).
+r('kusen',subst).
+r('kurĉatovi',subst).
+r('kurz',subst).
+r('kurtin',subst).
+r('kurten',subst).
+r('kurtaĝ',subst).
+r('kursor',subst).
+r('kursiv',subst).
+r('kurs',subst).
+r('kurkum',subst).
+r('kurkulied',subst).
+r('kurkuli',subst).
+r('kurium',subst).
+r('kurioz',adj).
+r('kurier',subst).
+r('kuri',subst).
+r('kurent',subst).
+r('kurb',adj).
+r('kuraĝ',adj).
+r('kurator',subst).
+r('kurac',tr).
+r('kur',ntr).
+r('kupul',subst).
+r('kupr',subst).
+r('kupon',subst).
+r('kupol',subst).
+r('kuplet',subst).
+r('kupl',tr).
+r('kupel',verb).
+r('kupe',subst).
+r('kup',subst).
+r('kunikl',best).
+r('kungfu',subst).
+r('kumulus',subst).
+r('kumis',subst).
+r('kumin',subst).
+r('kuman',subst).
+r('kultur',tr).
+r('kultiv',tr).
+r('kult',subst).
+r('kulp',adj).
+r('kulot',subst).
+r('kulmin',subst).
+r('kulis',subst).
+r('kulinar',adj).
+r('kuli',subst).
+r('kuler',subst).
+r('kuled',subst).
+r('kulas',subst).
+r('kulak',subst).
+r('kul',subst).
+r('kukurbac',subst).
+r('kukurb',subst).
+r('kukum',subst).
+r('kukoled',subst).
+r('kukol',subst).
+r('kukabur',subst).
+r('kuk',subst).
+r('kuir',tr).
+r('kugl',subst).
+r('kuf',subst).
+r('kudr',tr).
+r('kubut',subst).
+r('kubu',subst).
+r('kub',subst).
+r('kub',subst).
+r('ku',subst).
+r('ksilokop',subst).
+r('ksilografi',subst).
+r('ksilograf',tr).
+r('ksilograf',subst).
+r('ksilofon',subst).
+r('ksilem',subst).
+r('ksifi',subst).
+r('kseres',subst).
+r('ksenon',subst).
+r('kruĉ',subst).
+r('kruzad',subst).
+r('krut',adj).
+r('krust',subst).
+r('krur',subst).
+r('krupier',subst).
+r('krup',subst).
+r('kruel',adj).
+r('krud',adj).
+r('krucifiks',subst).
+r('krucifer',subst).
+r('kruc',subst).
+r('kroĉ',tr).
+r('kroz',ntr).
+r('krotal',best).
+r('krop',subst).
+r('kronometri',subst).
+r('kronometr',subst).
+r('kronologi',subst).
+r('kronik',adj).
+r('kronik',subst).
+r('kron',subst).
+r('kron',subst).
+r('kromosom',subst).
+r('kromolitografi',subst).
+r('kromofotografi',subst).
+r('kromi',subst).
+r('kromatografi',subst).
+r('kromatograf',subst).
+r('kromat',adj).
+r('krom',subst).
+r('krokus',subst).
+r('krokodiled',subst).
+r('krokodil',best).
+r('krokiz',verb).
+r('kroket',subst).
+r('kroat',subst).
+r('kriĉ',verb).
+r('krizolit',subst).
+r('krizokal',subst).
+r('krizantem',subst).
+r('krizalid',subst).
+r('kriz',subst).
+r('kritik',tr).
+r('kriteri',subst).
+r('kristalografi',subst).
+r('kristal',subst).
+r('krisp',subst).
+r('krisol',subst).
+r('kris',subst).
+r('kripton',subst).
+r('kriptomeri',subst).
+r('kriptogam',subst).
+r('kript',subst).
+r('kripl',adj).
+r('krip',subst).
+r('krinolin',subst).
+r('kring',subst).
+r('krin',subst).
+r('krimologi',subst).
+r('krimolog',subst).
+r('kriminologi',subst).
+r('kriminolog',subst).
+r('kriminal',adj).
+r('krim',subst).
+r('kril',subst).
+r('kriket',subst).
+r('krik',subst).
+r('krif',subst).
+r('kribr',tr).
+r('kribaĝ',subst).
+r('kri',ntr).
+r('kri',subst).
+r('krev',ntr).
+r('kreton',subst).
+r('kreten',subst).
+r('kretace',subst).
+r('kret',subst).
+r('kresĉend',subst).
+r('krestomati',subst).
+r('krest',subst).
+r('kresp',subst).
+r('kresk',ntr).
+r('krescent',subst).
+r('kres',subst).
+r('krepusk',subst).
+r('krepid',subst).
+r('krep',subst).
+r('kreozot',subst).
+r('kreol',subst).
+r('krenel',subst).
+r('kren',subst).
+r('kremaci',verb).
+r('krem',subst).
+r('krejcer',subst).
+r('kreditor',subst).
+r('kredit',subst).
+r('kred',tr).
+r('kre',tr).
+r('kraŝ',verb).
+r('kraĉ',tr).
+r('kravat',subst).
+r('krati',suf).
+r('krater',subst).
+r('kratag',subst).
+r('krasulac',subst).
+r('krasul',subst).
+r('krank',subst).
+r('krani',subst).
+r('kran',subst).
+r('krampf',subst).
+r('kramp',subst).
+r('kramf',subst).
+r('kramb',subst).
+r('kral',subst).
+r('kraken',subst).
+r('krak',verb).
+r('krak',subst).
+r('krajon',subst).
+r('krad',subst).
+r('krabr',subst).
+r('krabl',verb).
+r('krab',best).
+r('koŭtoŭ',ntr).
+r('koŝmar',subst).
+r('koŝer',adj).
+r('koŝ',subst).
+r('koĉer',subst).
+r('koĉenil',subst).
+r('koĉed',subst).
+r('koĉ',subst).
+r('kozak',subst).
+r('koz',subst).
+r('kovr',tr).
+r('kovert',subst).
+r('kovarianc',subst).
+r('kovard',adj).
+r('kov',tr).
+r('koturn',subst).
+r('kotorn',subst).
+r('koton',subst).
+r('koto',subst).
+r('kotlet',subst).
+r('kotiz',ntr).
+r('kotiljon',subst).
+r('kotiledon',subst).
+r('koteri',subst).
+r('kotangent',subst).
+r('kot',subst).
+r('kostum',subst).
+r('kostarik',subst).
+r('kost',tr).
+r('kosov',subst).
+r('kosmos',subst).
+r('kosmopolit',subst).
+r('kosmonaŭtik',subst).
+r('kosmonaŭt',subst).
+r('kosmologi',subst).
+r('kosmografi',subst).
+r('kosmogoni',subst).
+r('kosmodrom',subst).
+r('kosmetik',subst).
+r('kosm',subst).
+r('kosinus',subst).
+r('kosekant',subst).
+r('korvet',subst).
+r('korved',subst).
+r('korv',subst).
+r('korus',subst).
+r('korupt',tr).
+r('korund',subst).
+r('kortizon',subst).
+r('kortik',subst).
+r('korteks',subst).
+r('kort',subst).
+r('korset',subst).
+r('korsaĵ',subst).
+r('korsar',subst).
+r('kors',subst).
+r('korpuskl',subst).
+r('korpus',subst).
+r('korpulent',adj).
+r('korporaci',subst).
+r('korp',subst).
+r('korolari',subst).
+r('korol',subst).
+r('korod',tr).
+r('kornusac',subst).
+r('kornus',subst).
+r('kornik',subst).
+r('kornic',subst).
+r('kornet',subst).
+r('kornet',subst).
+r('korne',subst).
+r('korn',subst).
+r('kormoraned',subst).
+r('kormoran',subst).
+r('kork',subst).
+r('korimb',subst).
+r('korife',subst).
+r('koridor',subst).
+r('koriandr',subst).
+r('korespond',ntr).
+r('korelativ',adj).
+r('korelaci',subst).
+r('korekt',tr).
+r('koregoned',subst).
+r('koregon',best).
+r('koregidor',subst).
+r('kore',subst).
+r('korduroj',subst).
+r('kordon',subst).
+r('kordob',subst).
+r('kord',subst).
+r('korbel',subst).
+r('korb',subst).
+r('koral',subst).
+r('korakl',subst).
+r('kor',subst).
+r('kopulaci',subst).
+r('kopul',subst).
+r('kopt',subst).
+r('kopr',subst).
+r('kopl',subst).
+r('kopi',tr).
+r('kopernici',subst).
+r('kopepod',subst).
+r('kopek',subst).
+r('koordinat',subst).
+r('kooperativ',subst).
+r('kooper',adj).
+r('konĥoid',subst).
+r('konĉert',subst).
+r('konzol',subst).
+r('konzern',subst).
+r('konvulsi',subst).
+r('konvolvulac',subst).
+r('konvolvul',subst).
+r('konvoj',subst).
+r('konvink',tr).
+r('konvikt',tr).
+r('konverĝ',ntr).
+r('konvert',tr).
+r('konversaci',subst).
+r('konvers',tr).
+r('konvenci',subst).
+r('konven',ntr).
+r('konveks',adj).
+r('konvalesk',verb).
+r('konval',subst).
+r('konus',subst).
+r('konur',subst).
+r('kontuz',tr).
+r('kontur',subst).
+r('kontrol',tr).
+r('kontrici',subst).
+r('kontribuci',subst).
+r('kontribu',tr).
+r('kontrast',subst).
+r('kontrapunkt',subst).
+r('kontramark',subst).
+r('kontralt',subst).
+r('kontraktur',subst).
+r('kontrakt',tr).
+r('kontrafagot',subst).
+r('kontradmiral',subst).
+r('kontradanc',subst).
+r('kontrabas',subst).
+r('kontraband',subst).
+r('kontor',subst).
+r('kontinu',adj).
+r('kontingent',subst).
+r('kontingenc',adj).
+r('kontinent',subst).
+r('kontest',tr).
+r('kontent',adj).
+r('kontener',subst).
+r('kontempl',tr).
+r('kontaĝ',tr).
+r('kontant',adj).
+r('kontakt',subst).
+r('kont',subst).
+r('konsum',tr).
+r('konsult',tr).
+r('konsul',subst).
+r('konstru',tr).
+r('konstituci',subst).
+r('konstitu',verb).
+r('konstip',tr).
+r('konstern',tr).
+r('konstelaci',subst).
+r('konstat',tr).
+r('konstant',adj).
+r('konspir',ntr).
+r('konsorci',subst).
+r('konsonant',subst).
+r('konsonanc',subst).
+r('konsol',tr).
+r('konskripci',subst).
+r('konsistori',subst).
+r('konsistenc',subst).
+r('konsist',ntr).
+r('konsili',subst).
+r('konsil',tr).
+r('konsider',tr).
+r('konservatori',subst).
+r('konservativ',adj).
+r('konserv',tr).
+r('konsent',tr).
+r('konsekvenc',subst).
+r('konsekr',tr).
+r('konscienc',subst).
+r('konsci',tr).
+r('konotaci',subst).
+r('konosament',subst).
+r('konoid',subst).
+r('konkurs',tr).
+r('konkurenc',subst).
+r('konkur',tr).
+r('konkubin',subst).
+r('konkret',adj).
+r('konkrement',subst).
+r('konkreci',subst).
+r('konkordat',subst).
+r('konkordanc',subst).
+r('konkord',subst).
+r('konkologi',subst).
+r('konkolog',subst).
+r('konkoid',subst).
+r('konklud',tr).
+r('konklav',subst).
+r('konker',tr).
+r('konkav',adj).
+r('konk',subst).
+r('konjunktur',subst).
+r('konjunktivit',subst).
+r('konjunktiv',subst).
+r('konjunktiv',subst).
+r('konjunkci',subst).
+r('konjugaci',subst).
+r('konjug',verb).
+r('konjekt',tr).
+r('konjak',subst).
+r('konik',subst).
+r('konifer',subst).
+r('koni',subst).
+r('kongru',ntr).
+r('kongres',subst).
+r('kongregaci',subst).
+r('konglomerat',subst).
+r('konglomer',tr).
+r('kongest',subst).
+r('konga',subst).
+r('konfuz',tr).
+r('konfront',verb).
+r('konform',adj).
+r('konflikt',subst).
+r('konfit',tr).
+r('konfisk',tr).
+r('konfirmaci',subst).
+r('konfirm',tr).
+r('konfidenci',subst).
+r('konfidenc',subst).
+r('konfid',tr).
+r('konfet',subst).
+r('konfesi',subst).
+r('konfes',tr).
+r('konferv',subst).
+r('konferenc',subst).
+r('konfekci',subst).
+r('konfederaci',subst).
+r('konfeder',verb).
+r('konekt',tr).
+r('koneks',adj).
+r('kondut',ntr).
+r('konduktor',subst).
+r('konduktiv',adj).
+r('konduktanc',subst).
+r('kondukt',verb).
+r('konduk',tr).
+r('kondotier',subst).
+r('kondor',subst).
+r('kondom',subst).
+r('kondolenc',tr).
+r('kondiĉ',subst).
+r('kondiment',subst).
+r('kondicional',subst).
+r('kondensator',subst).
+r('kondamn',tr).
+r('konciz',adj).
+r('koncip',tr).
+r('koncili',subst).
+r('koncesi',tr).
+r('koncertin',subst).
+r('koncert',subst).
+r('koncern',tr).
+r('koncept',subst).
+r('koncentr',tr).
+r('koncentr',adj).
+r('konced',tr).
+r('kon',tr).
+r('komutator',subst).
+r('komut',tr).
+r('komunik',tr).
+r('komuni',tr).
+r('komun',adj).
+r('komputor',subst).
+r('komputik',subst).
+r('komputer',subst).
+r('komput',verb).
+r('kompufon',subst).
+r('kompromit',tr).
+r('kompromis',subst).
+r('kompresor',subst).
+r('kompres',subst).
+r('kompren',tr).
+r('kompoŝt',subst).
+r('kompozit',subst).
+r('kompozit',subst).
+r('kompozici',subst).
+r('kompot',subst).
+r('kompost',tr).
+r('kompon',tr).
+r('komplot',subst).
+r('kompliment',subst).
+r('komplik',tr).
+r('komplic',subst).
+r('komplez',subst).
+r('kompletiv',adj).
+r('komplet',adj).
+r('komplement',subst).
+r('kompleksi',subst).
+r('kompleks',adj).
+r('kompil',tr).
+r('kompetent',adj).
+r('kompensator',subst).
+r('kompens',tr).
+r('kompendi',subst).
+r('kompat',tr).
+r('kompas',subst).
+r('komparativ',subst).
+r('komparaci',subst).
+r('kompar',tr).
+r('kompani',subst).
+r('kompakt',adj).
+r('komor',subst).
+r('komod',subst).
+r('komoci',tr).
+r('komiz',subst).
+r('komitat',subst).
+r('komisur',subst).
+r('komision',subst).
+r('komisi',tr).
+r('komisar',subst).
+r('komiks',subst).
+r('komik',adj).
+r('komfort',subst).
+r('komet',subst).
+r('komerc',ntr).
+r('komentari',tr).
+r('koment',tr).
+r('komenc',tr).
+r('komedon',subst).
+r('komedi',subst).
+r('kombine',subst).
+r('kombinatorik',subst).
+r('kombin',tr).
+r('komb',tr).
+r('komatul',subst).
+r('komat',subst).
+r('komanĉ',subst).
+r('komandor',subst).
+r('komandit',subst).
+r('komand',tr).
+r('koma',subst).
+r('kom',subst).
+r('kolŝit',subst).
+r('kolĥoz',subst).
+r('kolĉikin',subst).
+r('kolĉik',subst).
+r('kolz',subst).
+r('koluzi',subst).
+r('kolumn',subst).
+r('kolubred',subst).
+r('kolubr',best).
+r('kolport',tr).
+r('kolostr',subst).
+r('kolos',subst).
+r('koloratur',subst).
+r('kolor',subst).
+r('koloni',subst).
+r('kolonel',subst).
+r('kolon',subst).
+r('kolon',subst).
+r('kolombed',subst).
+r('kolomb',best).
+r('kolokint',subst).
+r('kolokazi',subst).
+r('koloid',subst).
+r('kolofon',subst).
+r('kolofon',subst).
+r('kolodi',subst).
+r('kolocint',subst).
+r('kolizi',ntr).
+r('koliri',subst).
+r('kolimbet',subst).
+r('kolimbed',subst).
+r('kolimb',subst).
+r('kolik',subst).
+r('kolier',subst).
+r('kolibr',subst).
+r('kolesterol',subst).
+r('kolerik',adj).
+r('koler',verb).
+r('koleopter',subst).
+r('kolektiv',adj).
+r('kolekt',tr).
+r('kolegi',subst).
+r('koleg',subst).
+r('koledok',subst).
+r('kolbas',subst).
+r('kolb',subst).
+r('kolazion',verb).
+r('kolaps',subst).
+r('kol',subst).
+r('koktel',subst).
+r('koks',subst).
+r('kokr',tr).
+r('kokos',subst).
+r('kokon',subst).
+r('kokluŝ',subst).
+r('kokleari',subst).
+r('koket',adj).
+r('kokerik',ntr).
+r('kokcineled',subst).
+r('kokcinel',subst).
+r('kokcig',subst).
+r('kokard',subst).
+r('kokain',subst).
+r('koka',subst).
+r('kok',subst).
+r('kojp',subst).
+r('kojot',subst).
+r('kojon',subst).
+r('kojne',subst).
+r('kojn',subst).
+r('kojl',subst).
+r('koit',ntr).
+r('koincid',ntr).
+r('kohort',subst).
+r('koher',adj).
+r('kofr',subst).
+r('kofer',subst).
+r('kofaktor',subst).
+r('koeficient',subst).
+r('kodrant',subst).
+r('kodicil',subst).
+r('kodeks',subst).
+r('kodek',subst).
+r('kodak',subst).
+r('kod',subst).
+r('kobold',subst).
+r('kobitided',subst).
+r('kobitid',best).
+r('kobalt',subst).
+r('kobajed',subst).
+r('kobaj',best).
+r('koan',subst).
+r('koalici',ntr).
+r('koalici',subst).
+r('koal',subst).
+r('koaks',subst).
+r('koagul',tr).
+r('knel',subst).
+r('knedlik',subst).
+r('kned',tr).
+r('knar',verb).
+r('knal',ntr).
+r('knab',subst).
+r('kluĉ',tr).
+r('kluz',subst).
+r('klus',subst).
+r('klupeed',subst).
+r('klupe',best).
+r('kluk',verb).
+r('klub',subst).
+r('kloŝ',subst).
+r('klozone',subst).
+r('klozet',subst).
+r('klostrofobi',subst).
+r('klostr',subst).
+r('kloroz',subst).
+r('kloroplast',subst).
+r('kloroform',subst).
+r('klorofil',subst).
+r('klor',subst).
+r('klopod',ntr).
+r('klonik',adj).
+r('klon',subst).
+r('klon',subst).
+r('kloak',subst).
+r('kliŝ',verb).
+r('kliv',tr).
+r('klitor',subst).
+r('klister',subst).
+r('klink',subst).
+r('klinik',subst).
+r('kling',subst).
+r('klin',tr).
+r('klimatologi',subst).
+r('klimatolog',subst).
+r('klimatiz',tr).
+r('klimat',subst).
+r('klimaks',subst).
+r('klik',subst).
+r('klik',subst).
+r('klif',subst).
+r('klient',subst).
+r('klerikal',adj).
+r('klerik',subst).
+r('kler',adj).
+r('klepsidr',subst).
+r('klementin',subst).
+r('klematit',subst).
+r('klematid',subst).
+r('klemat',subst).
+r('klem',subst).
+r('kle',subst).
+r('klaŭz',subst).
+r('klaŭstrofobi',subst).
+r('klaŭstr',subst).
+r('klaŭn',subst).
+r('klaĉ',ntr).
+r('klavikord',subst).
+r('klavikl',subst).
+r('klavicen',subst).
+r('klavcen',subst).
+r('klav',subst).
+r('klasik',adj).
+r('klasifik',tr).
+r('klas',subst).
+r('klarnet',subst).
+r('klarion',subst).
+r('klar',adj).
+r('klap',subst).
+r('klangul',best).
+r('klan',subst).
+r('klamid',subst).
+r('klak',verb).
+r('klaft',subst).
+r('kladoni',subst).
+r('klad',subst).
+r('klab',subst).
+r('kiĉ',subst).
+r('kivi',subst).
+r('kiv',subst).
+r('kiton',subst).
+r('kitivak',subst).
+r('kitin',subst).
+r('kiti',subst).
+r('kitel',subst).
+r('kitar',subst).
+r('kis',tr).
+r('kirŝ',subst).
+r('kirurgi',subst).
+r('kirurg',subst).
+r('kirl',tr).
+r('kirk',subst).
+r('kiribat',subst).
+r('kirgiz',subst).
+r('kiras',subst).
+r('kipĉak',subst).
+r('kiosk',subst).
+r('kinkonin',subst).
+r('kinkon',subst).
+r('kinin',subst).
+r('kinetoskop',subst).
+r('kinet',adj).
+r('kinematograf',subst).
+r('kinematik',subst).
+r('kin',subst).
+r('kin',subst).
+r('kimĉi',subst).
+r('kimr',best).
+r('kimon',subst).
+r('kimer',subst).
+r('kilt',subst).
+r('kilovolt',subst).
+r('kilovat',subst).
+r('kilotun',subst).
+r('kiloparsek',subst).
+r('kilometr',subst).
+r('kilokalori',subst).
+r('kilogram',subst).
+r('kilobitok',subst).
+r('kilo',pref).
+r('kil',subst).
+r('kikerik',verb).
+r('kiker',subst).
+r('kidnap',verb).
+r('kibuc',subst).
+r('kibernetik',subst).
+r('kiang',best).
+r('keĉap',subst).
+r('kevlar',subst).
+r('kest',subst).
+r('kerub',subst).
+r('kerosen',subst).
+r('kern',subst).
+r('kermes',subst).
+r('kerkedul',subst).
+r('keri',subst).
+r('ker',subst).
+r('kep',subst).
+r('kenozoik',subst).
+r('kenopodiac',subst).
+r('kenopodi',subst).
+r('kena',subst).
+r('ken',subst).
+r('kemi',subst).
+r('kelt',subst).
+r('kelner',subst).
+r('kelk',adj).
+r('kelidoni',subst).
+r('kel',subst).
+r('keks',subst).
+r('kejl',subst).
+r('keirant',subst).
+r('kegl',subst).
+r('kefir',subst).
+r('kecal',subst).
+r('kebab',subst).
+r('kaŭĉuk',subst).
+r('kaŭz',subst).
+r('kaŭteriz',tr).
+r('kaŭstik',adj).
+r('kaŭr',ntr).
+r('kaŭci',subst).
+r('kaŝtan',subst).
+r('kaŝbu',subst).
+r('kaŝ',tr).
+r('kaĵol',tr).
+r('kaĝ',subst).
+r('kaĉalot',subst).
+r('kaĉ',subst).
+r('kazuistik',subst).
+r('kazuist',subst).
+r('kazin',subst).
+r('kazern',subst).
+r('kazemat',subst).
+r('kazein',subst).
+r('kaze',subst).
+r('kazaĥ',subst).
+r('kazak',subst).
+r('kaz',subst).
+r('kaviar',subst).
+r('kavern',subst).
+r('kavalkad',subst).
+r('kavalir',subst).
+r('kavaleri',subst).
+r('kav',subst).
+r('katun',subst).
+r('katolik',adj).
+r('katod',subst).
+r('katjon',subst).
+r('katiz',tr).
+r('kateĥiz',tr).
+r('kateĥist',subst).
+r('kateĥism',subst).
+r('kateter',subst).
+r('katet',subst).
+r('katen',subst).
+r('katekiz',verb).
+r('katekist',subst).
+r('katekism',subst).
+r('kategori',subst).
+r('katedral',subst).
+r('katedr',subst).
+r('katastrof',subst).
+r('katastr',subst).
+r('katarted',subst).
+r('katarakt',subst).
+r('katar',subst).
+r('katar',subst).
+r('katapult',subst).
+r('kataplasm',subst).
+r('katamaran',subst).
+r('katalog',subst).
+r('kataliz',tr).
+r('katalepsi',subst).
+r('katakomb',subst).
+r('kataklism',subst).
+r('katakana',subst).
+r('katafalk',subst).
+r('katabol',subst).
+r('kat',best).
+r('kasuar',subst).
+r('kastr',tr).
+r('kastored',subst).
+r('kastor',best).
+r('kastel',subst).
+r('kastanot',subst).
+r('kastanjet',subst).
+r('kast',subst).
+r('kasked',subst).
+r('kaskad',subst).
+r('kask',subst).
+r('kasi',subst).
+r('kaset',subst).
+r('kaserol',subst).
+r('kased',subst).
+r('kasav',subst).
+r('kasaci',tr).
+r('kas',subst).
+r('karvi',subst).
+r('karusel',subst).
+r('karunkl',subst).
+r('kartveli',subst).
+r('kartvel',subst).
+r('kartuŝ',subst).
+r('kartuzi',subst).
+r('kartunkin',subst).
+r('kartun',subst).
+r('kartoĉ',subst).
+r('karton',subst).
+r('kartografi',subst).
+r('kartilag',subst).
+r('kartel',subst).
+r('kartav',ntr).
+r('kart',subst).
+r('karst',subst).
+r('karpen',subst).
+r('karpel',subst).
+r('karpe',subst).
+r('karp',best).
+r('karot',subst).
+r('karoseri',subst).
+r('karol',subst).
+r('karob',subst).
+r('karo',subst).
+r('karnaval',subst).
+r('karn',subst).
+r('karmin',subst).
+r('karmezin',subst).
+r('karm',subst).
+r('karlin',subst).
+r('karitat',subst).
+r('karit',subst).
+r('karism',subst).
+r('kariotip',subst).
+r('kariol',subst).
+r('kariofilac',subst).
+r('kariofil',subst).
+r('karilon',subst).
+r('kariljon',subst).
+r('karikatur',subst).
+r('karik',subst).
+r('karier',subst).
+r('kari',subst).
+r('karg',subst).
+r('karet',subst).
+r('kares',tr).
+r('karen',subst).
+r('kareks',subst).
+r('kare',subst).
+r('kardon',subst).
+r('kardiologi',subst).
+r('kardiolog',subst).
+r('kardioid',subst).
+r('kardinal',subst).
+r('kardi',subst).
+r('kardel',subst).
+r('kardan',subst).
+r('kardamom',subst).
+r('kardamin',subst).
+r('kard',subst).
+r('karcer',subst).
+r('karburator',subst).
+r('karbur',verb).
+r('karbunkol',subst).
+r('karbunkl',subst).
+r('karbon',subst).
+r('karbol',subst).
+r('karb',subst).
+r('karavel',subst).
+r('karavan',subst).
+r('karate',subst).
+r('karat',subst).
+r('karas',best).
+r('karapac',subst).
+r('karaoke',subst).
+r('karamel',subst).
+r('karambol',ntr).
+r('karakterologi',subst).
+r('karakterolog',subst).
+r('karakteriz',tr).
+r('karakteristik',subst).
+r('karakter',subst).
+r('karakol',ntr).
+r('karaf',subst).
+r('karaben',subst).
+r('karabed',subst).
+r('kar',adj).
+r('kapuĉin',subst).
+r('kapuĉ',subst).
+r('kaput',adj).
+r('kapucen',subst).
+r('kapt',tr).
+r('kapsul',subst).
+r('kapstan',subst).
+r('kapsik',subst).
+r('kapriol',subst).
+r('kaprimulg',subst).
+r('kaprifoliac',subst).
+r('kaprifoli',subst).
+r('kapric',subst).
+r('kapreol',best).
+r('kapr',subst).
+r('kapot',subst).
+r('kaporal',subst).
+r('kapor',subst).
+r('kapon',subst).
+r('kapol',subst).
+r('kapok',subst).
+r('kapitulac',ntr).
+r('kapitul',subst).
+r('kapitel',subst).
+r('kapitan',subst).
+r('kapital',subst).
+r('kapilar',subst).
+r('kapibar',subst).
+r('kaper',tr).
+r('kapeldiner',subst).
+r('kapel',subst).
+r('kapacitanc',subst).
+r('kapacit',subst).
+r('kapabl',adj).
+r('kap',subst).
+r('kaos',subst).
+r('kaolin',subst).
+r('kanzon',subst).
+r('kanvas',subst).
+r('kanul',subst).
+r('kanu',subst).
+r('kantor',subst).
+r('kantonment',subst).
+r('kanton',subst).
+r('kantin',subst).
+r('kantilen',subst).
+r('kantik',subst).
+r('kanti',adj).
+r('kantat',subst).
+r('kantarid',subst).
+r('kantarel',subst).
+r('kant',tr).
+r('kanot',subst).
+r('kanoniz',tr).
+r('kanonik',subst).
+r('kanon',subst).
+r('kanon',subst).
+r('kankr',best).
+r('kanjon',subst).
+r('kanistr',subst).
+r('kanin',subst).
+r('kanibal',subst).
+r('kanguru',best).
+r('kanel',subst).
+r('kandomble',subst).
+r('kandidat',subst).
+r('kandelabr',subst).
+r('kandel',subst).
+r('kand',subst).
+r('kancerologi',subst).
+r('kancerolog',subst).
+r('kancer',subst).
+r('kancelier',subst).
+r('kancelari',subst).
+r('kanast',subst).
+r('kanari',subst).
+r('kanap',subst).
+r('kanaliz',verb).
+r('kanal',subst).
+r('kanak',subst).
+r('kanajl',subst).
+r('kanad',subst).
+r('kanaben',subst).
+r('kanabac',subst).
+r('kanab',subst).
+r('kana',subst).
+r('kana',subst).
+r('kan',subst).
+r('kamufl',tr).
+r('kampus',subst).
+r('kampeĉ',subst).
+r('kampanulac',subst).
+r('kampanul',subst).
+r('kampanj',subst).
+r('kampanil',subst).
+r('kamp',subst).
+r('kamomil',subst).
+r('kamlot',subst).
+r('kamizol',subst).
+r('kamion',subst).
+r('kamikaz',subst).
+r('kamfor',subst).
+r('kamerling',subst).
+r('kamera',subst).
+r('kamer',subst).
+r('kamen',subst).
+r('kameli',subst).
+r('kameleoned',subst).
+r('kameleon',subst).
+r('kameled',subst).
+r('kamel',subst).
+r('kameciparid',subst).
+r('kame',subst).
+r('kambri',subst).
+r('kambi',subst).
+r('kamaril',subst).
+r('kamarad',subst).
+r('kamabok',subst).
+r('kalv',adj).
+r('kalumni',tr).
+r('kalson',subst).
+r('kalpak',subst).
+r('kalp',subst).
+r('kalot',subst).
+r('kalori',subst).
+r('kalomel',subst).
+r('kalmuk',subst).
+r('kalkul',tr).
+r('kalke',subst).
+r('kalkane',subst).
+r('kalkan',subst).
+r('kalk',subst).
+r('kalistef',subst).
+r('kalikot',subst).
+r('kalikl',subst).
+r('kalik',subst).
+r('kaligrafi',subst).
+r('kaligraf',subst).
+r('kalifornium',subst).
+r('kaliforni',subst).
+r('kalif',subst).
+r('kalibr',subst).
+r('kali',subst).
+r('kalfatr',tr).
+r('kaleŝ',subst).
+r('kalendul',subst).
+r('kalendar',subst).
+r('kalend',subst).
+r('kalejdoskop',subst).
+r('kaldron',subst).
+r('kalcitr',ntr).
+r('kalcit',subst).
+r('kalcin',tr).
+r('kalci',subst).
+r('kalaŝnikov',subst).
+r('kalandra',subst).
+r('kalandr',subst).
+r('kalandr',subst).
+r('kalandr',tr).
+r('kalambak',subst).
+r('kalabas',subst).
+r('kal',subst).
+r('kakt',subst).
+r('kakofoni',subst).
+r('kakemon',subst).
+r('kakatu',subst).
+r('kaka',subst).
+r('kajut',subst).
+r('kajt',subst).
+r('kajpirinj',subst).
+r('kajman',best).
+r('kajer',subst).
+r('kajak',subst).
+r('kaj',subst).
+r('kaid',subst).
+r('kahel',subst).
+r('kaftan',subst).
+r('kafein',subst).
+r('kaf',subst).
+r('kaduk',adj).
+r('kaduce',subst).
+r('kadrat',subst).
+r('kadr',subst).
+r('kadmi',subst).
+r('kadi',subst).
+r('kadet',subst).
+r('kadenc',subst).
+r('kadavr',subst).
+r('kacuon',best).
+r('kac',subst).
+r('kabuk',subst).
+r('kabriolet',subst).
+r('kablogram',subst).
+r('kabl',subst).
+r('kabinet',subst).
+r('kabaret',subst).
+r('kabared',subst).
+r('kaban',subst).
+r('kab',subst).
+r('juĝ',tr).
+r('juvel',subst).
+r('jut',subst).
+r('justic',subst).
+r('just',adj).
+r('jurt',subst).
+r('jurisprudenc',subst).
+r('jurisdikci',subst).
+r('jur',subst).
+r('jup',subst).
+r('junt',subst).
+r('junkr',subst).
+r('junkac',subst).
+r('junk',subst).
+r('juniper',subst).
+r('juni',subst).
+r('jung',tr).
+r('jun',adj).
+r('juli',subst).
+r('juka',subst).
+r('juk',tr).
+r('jujub',subst).
+r('juglandujac',subst).
+r('jugland',subst).
+r('jug',subst).
+r('judaism',subst).
+r('jud',subst).
+r('jubile',subst).
+r('jubil',ntr).
+r('juan',subst).
+r('jovial',adj).
+r('jota',pref).
+r('jonkvil',subst).
+r('joniz',verb).
+r('jon',subst).
+r('jokto',pref).
+r('jojk',subst).
+r('jogurt',subst).
+r('jog',subst).
+r('jodoform',subst).
+r('jod',subst).
+r('jeŝiv',subst).
+r('jezuit',subst).
+r('jeti',subst).
+r('jet',ntr).
+r('jeralaŝ',subst).
+r('jelp',ntr).
+r('jaŝir',subst).
+r('jaĥt',subst).
+r('jaspis',subst).
+r('jasp',subst).
+r('jasmen',subst).
+r('jard',subst).
+r('jard',subst).
+r('jar',subst).
+r('japanesk',subst).
+r('japan',subst).
+r('januar',subst).
+r('janiĉar',subst).
+r('jamb',subst).
+r('jakv',subst).
+r('jakobian',subst).
+r('jakoben',subst).
+r('jak',subst).
+r('jahurt',subst).
+r('jaguar',best).
+r('jad',subst).
+r('jacint',subst).
+r('iĥtiosaŭr',best).
+r('iĥtiokol',subst).
+r('iĝ',suf).
+r('izotrop',adj).
+r('izotop',subst).
+r('izoterm',adj).
+r('izomorfi',subst).
+r('izomorf',adj).
+r('izometri',subst).
+r('izol',tr).
+r('izocel',adj).
+r('iz',suf).
+r('iv',suf).
+r('itri',subst).
+r('itiner',subst).
+r('iterbi',subst).
+r('ital',best).
+r('isĥemi',subst).
+r('istm',subst).
+r('ism',suf).
+r('islam',subst).
+r('iskiatik',subst).
+r('iskiatalgi',subst).
+r('iski',subst).
+r('iskemi',subst).
+r('ironi',subst).
+r('iriz',verb).
+r('irit',tr).
+r('iris',subst).
+r('irigaci',subst).
+r('irigac',subst).
+r('iridi',subst).
+r('iridac',subst).
+r('irid',subst).
+r('iredent',adj).
+r('iran',subst).
+r('ir',ntr).
+r('ipsilon',subst).
+r('inĝenier',subst).
+r('inĝeni',adj).
+r('involukr',subst).
+r('involuci',subst).
+r('invit',tr).
+r('investitur',subst).
+r('invest',tr).
+r('inversi',subst).
+r('invers',adj).
+r('inventar',subst).
+r('invent',tr).
+r('invariant',subst).
+r('invalid',subst).
+r('invad',tr).
+r('inund',tr).
+r('inuit',subst).
+r('intuici',subst).
+r('intu',subst).
+r('introvertit',subst).
+r('introvert',adj).
+r('introspekt',subst).
+r('intrig',ntr).
+r('intim',adj).
+r('intest',subst).
+r('intervju',tr).
+r('interval',subst).
+r('interpunkci',subst).
+r('interpret',tr).
+r('interpol',tr).
+r('interpelaci',tr).
+r('interpelac',subst).
+r('intern',adj).
+r('intermit',ntr).
+r('interlingvistik',subst).
+r('interjekci',subst).
+r('interior',subst).
+r('interferon',subst).
+r('interferometri',subst).
+r('interfer',ntr).
+r('interez',subst).
+r('interes',tr).
+r('interdikt',subst).
+r('intens',adj).
+r('intendant',subst).
+r('intenc',tr).
+r('inteligent',adj).
+r('intelekt',subst).
+r('integral',subst).
+r('integr',adj).
+r('integr',tr).
+r('intajl',subst).
+r('insult',tr).
+r('insulin',subst).
+r('insul',subst).
+r('instrument',subst).
+r('instrukci',subst).
+r('instru',tr).
+r('institut',subst).
+r('instituci',subst).
+r('instinkt',subst).
+r('instig',tr).
+r('instanc',subst).
+r('instal',tr).
+r('inspir',tr).
+r('inspektor',subst).
+r('inspekt',tr).
+r('insolent',adj).
+r('insist',ntr).
+r('insinu',tr).
+r('insign',subst).
+r('insid',tr).
+r('insert',tr).
+r('insekticid',subst).
+r('insekt',subst).
+r('inokul',tr).
+r('inkvizitor',subst).
+r('inkvizici',subst).
+r('inkunabl',subst).
+r('inkud',subst).
+r('inkubator',subst).
+r('inkubaci',subst).
+r('inkub',subst).
+r('inkrust',tr).
+r('inkognit',subst).
+r('inkluziv',adj).
+r('inklud',tr).
+r('inklin',adj).
+r('inkandesk',ntr).
+r('ink',subst).
+r('injektor',subst).
+r('injekt',tr).
+r('iniciator',subst).
+r('iniciativ',subst).
+r('iniciat',tr).
+r('inic',tr).
+r('inhibici',subst).
+r('inhib',verb).
+r('inhal',tr).
+r('ingven',subst).
+r('ingredienc',subst).
+r('ingot',subst).
+r('ing',suf).
+r('infuzori',subst).
+r('infuz',tr).
+r('infrastruktur',subst).
+r('infrason',subst).
+r('infraruĝ',adj).
+r('infra',pref).
+r('informatik',subst).
+r('informadik',subst).
+r('inform',tr).
+r('influenc',subst).
+r('influ',tr).
+r('infloresk',subst).
+r('infleks',adj).
+r('inflam',subst).
+r('inflaci',subst).
+r('infinitiv',subst).
+r('infinitezim',subst).
+r('infinit',subst).
+r('infim',subst).
+r('infest',verb).
+r('infer',subst).
+r('infektologi',subst).
+r('infektolog',subst).
+r('infekt',tr).
+r('infarkt',subst).
+r('infanteri',subst).
+r('infan',subst).
+r('inert',adj).
+r('inerci',subst).
+r('industri',subst).
+r('indulgenc',subst).
+r('indulg',tr).
+r('indukt',tr).
+r('indukci',verb).
+r('indonezi',subst).
+r('indiĝen',subst).
+r('individualist',subst).
+r('individualism',subst).
+r('individu',subst).
+r('indikator',subst).
+r('indikativ',subst).
+r('indik',tr).
+r('indign',ntr).
+r('indig',subst).
+r('indiferent',adj).
+r('indien',subst).
+r('indic',subst).
+r('indian',subst).
+r('indi',subst).
+r('indeks',subst).
+r('inciziv',subst).
+r('incit',tr).
+r('incident',subst).
+r('incid',ntr).
+r('incest',subst).
+r('incens',subst).
+r('incendi',subst).
+r('inaŭguraci',subst).
+r('inaŭgur',tr).
+r('imunologi',subst).
+r('imunolog',subst).
+r('imun',adj).
+r('imput',tr).
+r('impuls',subst).
+r('improviz',tr).
+r('impresionist',subst).
+r('impresionism',subst).
+r('impresari',subst).
+r('impres',subst).
+r('impregn',tr).
+r('impoz',tr).
+r('impotent',adj).
+r('impost',subst).
+r('import',tr).
+r('impon',tr).
+r('implikaci',subst).
+r('implik',tr).
+r('implic',tr).
+r('impet',ntr).
+r('impertinent',adj).
+r('imperium',subst).
+r('imperialist',subst).
+r('imperialism',subst).
+r('imperial',subst).
+r('imperi',subst).
+r('imperfekt',subst).
+r('imperator',subst).
+r('imperativ',subst).
+r('impedanc',subst).
+r('imit',tr).
+r('imanent',adj).
+r('imam',subst).
+r('imaginar',adj).
+r('imagin',subst).
+r('imag',tr).
+r('iluzi',subst).
+r('ilustr',tr).
+r('ilumin',tr).
+r('ilium',subst).
+r('ilici',subst).
+r('ileks',subst).
+r('ile',subst).
+r('ikter',subst).
+r('ikt',subst).
+r('iksod',subst).
+r('iks',subst).
+r('ikonostaz',subst).
+r('ikon',subst).
+r('ikeban',subst).
+r('ik',suf).
+r('igvanodont',subst).
+r('igvan',subst).
+r('igumen',subst).
+r('ignor',tr).
+r('ignam',subst).
+r('iglu',subst).
+r('igl',subst).
+r('ig',suf).
+r('idu',subst).
+r('idol',subst).
+r('idiotism',subst).
+r('idiot',subst).
+r('idiom',subst).
+r('idili',subst).
+r('ideologi',subst).
+r('ideolog',subst).
+r('ideogram',subst).
+r('ideografi',subst).
+r('ident',adj).
+r('ideal',adj).
+r('ide',subst).
+r('ibised',subst).
+r('ibis',subst).
+r('ia',verb).
+r('iFon',subst).
+r('huŝ',verb).
+r('huĉin',subst).
+r('huz',best).
+r('husum',subst).
+r('husar',subst).
+r('hurl',ntr).
+r('hurd',subst).
+r('hup',subst).
+r('hungar',best).
+r('hunded',subst).
+r('hund',best).
+r('hun',subst).
+r('humur',subst).
+r('humor',subst).
+r('humil',adj).
+r('humid',adj).
+r('humer',subst).
+r('human',adj).
+r('hum',subst).
+r('huligan',subst).
+r('hul',subst).
+r('hugenot',subst).
+r('huf',subst).
+r('hub',subst).
+r('hotel',subst).
+r('hosti',subst).
+r('hospital',subst).
+r('hospic',subst).
+r('hortulan',subst).
+r('hortikultur',subst).
+r('hortensi',subst).
+r('horoskop',subst).
+r('horor',subst).
+r('hormon',subst).
+r('hormin',subst).
+r('horloĝ',subst).
+r('horizontal',adj).
+r('horizont',subst).
+r('horde',subst).
+r('hord',subst).
+r('hor',subst).
+r('hoplit',subst).
+r('hopi',subst).
+r('hont',tr).
+r('honorari',subst).
+r('honor',tr).
+r('honest',adj).
+r('hondur',subst).
+r('homotop',adj).
+r('homoteti',subst).
+r('homopter',subst).
+r('homonimi',subst).
+r('homonim',subst).
+r('homomorfi',subst).
+r('homolog',adj).
+r('homogen',adj).
+r('homeopati',subst).
+r('homeopat',subst).
+r('homeomorfi',subst).
+r('homed',subst).
+r('hom',best).
+r('holoturi',subst).
+r('holomorf',adj).
+r('holokaŭst',subst).
+r('hologram',subst).
+r('holografi',subst).
+r('holocen',subst).
+r('holmi',subst).
+r('holivud',subst).
+r('hold',subst).
+r('hoke',subst).
+r('hok',subst).
+r('hojl',ntr).
+r('hoboj',subst).
+r('hobi',subst).
+r('hiĝab',subst).
+r('histrion',subst).
+r('histriked',subst).
+r('histrik',best).
+r('histori',subst).
+r('histologi',subst).
+r('histeri',subst).
+r('histamin',subst).
+r('hist',subst).
+r('hispan',subst).
+r('hisop',subst).
+r('hiskiam',subst).
+r('his',tr).
+r('hirunded',subst).
+r('hirund',subst).
+r('hirud',subst).
+r('hirt',adj).
+r('hiragana',subst).
+r('hipster',subst).
+r('hipoĥondri',subst).
+r('hipotroĥoid',subst).
+r('hipotez',subst).
+r('hipotenuz',subst).
+r('hipotek',subst).
+r('hipostaz',subst).
+r('hipopotamed',subst).
+r('hipopotam',subst).
+r('hipoksi',subst).
+r('hipokrit',tr).
+r('hipokondri',subst).
+r('hipokaŝtanac',subst).
+r('hipokaŝtan',subst).
+r('hipokamp',subst).
+r('hipokamp',subst).
+r('hipogrif',subst).
+r('hipoglos',best).
+r('hipoge',subst).
+r('hipodrom',subst).
+r('hipocikloid',subst).
+r('hipo',pref).
+r('hipnotism',subst).
+r('hipnot',subst).
+r('hipi',subst).
+r('hiphop',subst).
+r('hiperurani',subst).
+r('hipertrofi',subst).
+r('hipertiroidism',subst).
+r('hiperon',subst).
+r('hiperikac',subst).
+r('hiperik',subst).
+r('hipereben',subst).
+r('hiperboloid',subst).
+r('hiperbol',subst).
+r('hiper',pref).
+r('hiparion',best).
+r('hinĝ',subst).
+r('hindu',subst).
+r('hindi',subst).
+r('hind',subst).
+r('hin',subst).
+r('himn',subst).
+r('himenopter',subst).
+r('himeni',subst).
+r('himen',subst).
+r('hilum',subst).
+r('hiksos',subst).
+r('hik',ntr).
+r('hihi',verb).
+r('higumen',subst).
+r('higroskop',subst).
+r('higrometr',subst).
+r('higien',subst).
+r('hieroglif',subst).
+r('hierodul',subst).
+r('hieratik',adj).
+r('hierarĥi',subst).
+r('hierarki',subst).
+r('hiened',subst).
+r('hien',best).
+r('hidrozo',subst).
+r('hidroterapi',subst).
+r('hidrostatik',subst).
+r('hidrops',subst).
+r('hidroplan',subst).
+r('hidrometri',subst).
+r('hidrometr',subst).
+r('hidrologi',subst).
+r('hidrolog',subst).
+r('hidrokarbid',subst).
+r('hidrogen',subst).
+r('hidrofobi',subst).
+r('hidroelektr',adj).
+r('hidrodinamik',subst).
+r('hidrocefal',subst).
+r('hidroaeroplan',subst).
+r('hidred',subst).
+r('hidraŭlik',subst).
+r('hidrat',subst).
+r('hidrarg',subst).
+r('hidrant',subst).
+r('hidr',subst).
+r('hidalg',subst).
+r('hid',adj).
+r('hibrid',subst).
+r('hibisk',subst).
+r('hibaĉ',subst).
+r('hiat',subst).
+r('hiacint',subst).
+r('heĝ',subst).
+r('hezit',ntr).
+r('hetman',subst).
+r('heterogen',adj).
+r('heterodoks',adj).
+r('hetajr',subst).
+r('hes',subst).
+r('hers',subst).
+r('herpet',subst).
+r('herold',subst).
+r('heroin',subst).
+r('hero',subst).
+r('herni',subst).
+r('hermini',best).
+r('hermetik',adj).
+r('hermet',adj).
+r('hermeneŭtik',subst).
+r('hermafrodit',adj).
+r('herezolog',subst).
+r('herez',subst).
+r('hered',tr).
+r('herc',subst).
+r('herbicid',subst).
+r('herbari',subst).
+r('herb',subst).
+r('heraldik',subst).
+r('herakle',subst).
+r('hepatik',subst).
+r('hepat',subst).
+r('hena',subst).
+r('hen',ntr).
+r('hemoroid',subst).
+r('hemoragi',subst).
+r('hemoptiz',subst).
+r('hemoglobin',subst).
+r('hemofili',subst).
+r('hemipter',subst).
+r('hemiplegi',subst).
+r('hemion',best).
+r('hemikrani',subst).
+r('hemerokalid',subst).
+r('hemerokal',subst).
+r('hematologi',subst).
+r('hematolog',subst).
+r('hematit',subst).
+r('helvelac',subst).
+r('helvel',subst).
+r('help',verb).
+r('helm',subst).
+r('helium',subst).
+r('heliotrop',subst).
+r('heliostat',subst).
+r('heliocentr',adj).
+r('heliks',subst).
+r('helikriz',subst).
+r('helikopter',subst).
+r('heliked',subst).
+r('helik',subst).
+r('helic',subst).
+r('heliantem',subst).
+r('heliant',subst).
+r('heli',subst).
+r('heler',subst).
+r('helenistik',subst).
+r('helen',subst).
+r('helebor',subst).
+r('hel',adj).
+r('hektometr',subst).
+r('hektolitr',subst).
+r('hektogram',subst).
+r('hektograf',subst).
+r('hekto',pref).
+r('hektik',adj).
+r('hektar',subst).
+r('heksametr',subst).
+r('heksagon',subst).
+r('heksaedr',subst).
+r('hekatomb',subst).
+r('hejt',tr).
+r('hejm',subst).
+r('hegemoni',subst).
+r('hedonist',subst).
+r('hedonism',subst).
+r('hedisar',subst).
+r('heder',subst).
+r('hebre',subst).
+r('hebet',adj).
+r('haŭt',subst).
+r('haŭser',subst).
+r('haŭs',subst).
+r('haŭl',tr).
+r('haŭbiz',subst).
+r('haŝiŝ',subst).
+r('haŝi',subst).
+r('haĝ',subst).
+r('hazard',subst).
+r('haven',subst).
+r('hav',tr).
+r('hast',ntr).
+r('hasi',subst).
+r('harpun',subst).
+r('harpi',subst).
+r('harpal',subst).
+r('harp',subst).
+r('harnis',subst).
+r('harmonium',subst).
+r('harmonik',subst).
+r('harmoni',subst).
+r('harmon',subst).
+r('haring',best).
+r('harem',subst).
+r('hard',tr).
+r('har',subst).
+r('hapaks',subst).
+r('haor',subst).
+r('hant',tr).
+r('hans',subst).
+r('hangar',subst).
+r('handikap',tr).
+r('handbal',subst).
+r('hamstred',subst).
+r('hamstr',best).
+r('hamburger',subst).
+r('hamamelid',subst).
+r('hamak',subst).
+r('haluks',subst).
+r('halucinaci',subst).
+r('halucin',subst).
+r('halter',subst).
+r('halt',ntr).
+r('halogen',subst).
+r('halo',subst).
+r('haliot',subst).
+r('haliaet',subst).
+r('halebard',subst).
+r('halanĝ',subst).
+r('halal',adj).
+r('haladz',subst).
+r('hal',subst).
+r('hak',tr).
+r('hajl',subst).
+r('hajk',subst).
+r('haiti',subst).
+r('hafni',subst).
+r('hadron',subst).
+r('hadit',subst).
+r('hadis',subst).
+r('gvid',tr).
+r('gvatemal',subst).
+r('gvat',tr).
+r('gvardi',subst).
+r('gvaran',subst).
+r('guŝ',subst).
+r('guĉin',subst).
+r('guzl',subst).
+r('guvern',tr).
+r('gutural',subst).
+r('gutaperk',subst).
+r('gut',subst).
+r('gust',subst).
+r('guru',subst).
+r('gurnard',subst).
+r('gurd',subst).
+r('gupi',subst).
+r('gumigut',subst).
+r('gum',subst).
+r('gulden',subst).
+r('gulaŝ',subst).
+r('gul',best).
+r('gujav',subst).
+r('guir',subst).
+r('gugon',subst).
+r('gugl',subst).
+r('guf',subst).
+r('gudr',subst).
+r('guberni',subst).
+r('gubernator',subst).
+r('guaŝ',subst).
+r('guanin',subst).
+r('guan',subst).
+r('gruz',subst).
+r('grupoid',subst).
+r('grupet',subst).
+r('grup',subst).
+r('grunt',ntr).
+r('grund',subst).
+r('grumel',subst).
+r('grumbl',ntr).
+r('grum',subst).
+r('grued',subst).
+r('gru',subst).
+r('groŝ',subst).
+r('grotesk',adj).
+r('grot',subst).
+r('gros',subst).
+r('grop',subst).
+r('grog',subst).
+r('grob',adj).
+r('grizajl',subst).
+r('griz',adj).
+r('griv',subst).
+r('grip',subst).
+r('gring',subst).
+r('grinc',ntr).
+r('grimp',ntr).
+r('grimac',subst).
+r('griled',subst).
+r('gril',subst).
+r('grifon',subst).
+r('grifel',subst).
+r('grif',subst).
+r('gri',subst).
+r('gres',subst).
+r('grenat',subst).
+r('grenadir',subst).
+r('grenad',subst).
+r('gren',subst).
+r('grek',subst).
+r('grejs',subst).
+r('greg',subst).
+r('greft',tr).
+r('greb',best).
+r('graŭl',ntr).
+r('gravur',tr).
+r('gravit',ntr).
+r('graviol',subst).
+r('graved',adj).
+r('grav',adj).
+r('gratul',tr).
+r('gratifikaci',subst).
+r('gratifik',tr).
+r('graten',tr).
+r('grat',tr).
+r('gras',subst).
+r('grapol',subst).
+r('grapl',subst).
+r('grapfrukt',subst).
+r('granol',subst).
+r('granit',subst).
+r('grandioz',adj).
+r('grand',adj).
+r('granatujac',subst).
+r('granat',subst).
+r('gramofon',subst).
+r('gramine',subst).
+r('gramatik',subst).
+r('gram',subst).
+r('grak',verb).
+r('grajp',subst).
+r('grajn',subst).
+r('grajl',subst).
+r('grafologi',subst).
+r('grafolog',subst).
+r('grafiti',subst).
+r('grafit',subst).
+r('grafism',subst).
+r('grafik',subst).
+r('grafen',subst).
+r('grafem',subst).
+r('grafeik',subst).
+r('grafe',subst).
+r('graf',subst).
+r('graf',subst).
+r('gradus',subst).
+r('gradient',subst).
+r('grad',subst).
+r('gracil',adj).
+r('graci',adj).
+r('grac',subst).
+r('gotik',adj).
+r('got',subst).
+r('gospel',subst).
+r('gorĝ',subst).
+r('goril',best).
+r('gorgon',subst).
+r('gonore',subst).
+r('gonokok',subst).
+r('gong',subst).
+r('gondol',subst).
+r('gonad',subst).
+r('gomb',subst).
+r('golf',subst).
+r('golf',subst).
+r('gol',ntr).
+r('goelet',subst).
+r('gobi',best).
+r('gobelin',subst).
+r('gobelen',subst).
+r('gobang',subst).
+r('go',subst).
+r('gnu',subst).
+r('gnoz',subst).
+r('gnostik',subst).
+r('gnomon',subst).
+r('gnom',subst).
+r('gnetac',subst).
+r('gnet',subst).
+r('gnejs',subst).
+r('gluten',subst).
+r('glute',subst).
+r('glutamat',subst).
+r('glut',verb).
+r('glum',subst).
+r('glukoz',subst).
+r('glugl',ntr).
+r('glucid',subst).
+r('glu',tr).
+r('glotal',subst).
+r('glot',subst).
+r('glosin',subst).
+r('glos',subst).
+r('glor',tr).
+r('globus',subst).
+r('globulariac',subst).
+r('globulari',subst).
+r('glob',subst).
+r('glit',ntr).
+r('glis',verb).
+r('glired',subst).
+r('glir',subst).
+r('gliptodont',subst).
+r('gliptik',subst).
+r('gliom',subst).
+r('glim',subst).
+r('glikoz',subst).
+r('gliciriz',subst).
+r('glicine',subst).
+r('glicin',subst).
+r('glicerin',subst).
+r('gliceril',subst).
+r('glicerid',subst).
+r('gliceri',subst).
+r('gli',subst).
+r('glekom',subst).
+r('glaŭkonit',subst).
+r('glaŭk',adj).
+r('glaŭci',subst).
+r('glazur',subst).
+r('glav',subst).
+r('glat',adj).
+r('glas',subst).
+r('glareoled',subst).
+r('glareol',subst).
+r('gland',subst).
+r('glan',subst).
+r('gladiol',subst).
+r('gladiator',subst).
+r('glad',tr).
+r('glacis',subst).
+r('glaci',subst).
+r('glace',adj).
+r('glac',subst).
+r('glabel',subst).
+r('giĉet',subst).
+r('gitar',subst).
+r('gist',subst).
+r('gis',verb).
+r('giroskop',subst).
+r('girland',subst).
+r('gips',subst).
+r('gipaet',subst).
+r('ginseng',subst).
+r('ginostem',subst).
+r('gingiv',subst).
+r('ginekologi',subst).
+r('ginekolog',subst).
+r('ginece',subst).
+r('gine',subst).
+r('gimnoted',subst).
+r('gimnot',best).
+r('gimnostom',adj).
+r('gimnosperm',adj).
+r('gimnazi',subst).
+r('gimnastik',subst).
+r('gimnast',subst).
+r('giloŝ',tr).
+r('gilotin',subst).
+r('gild',subst).
+r('gigatun',subst).
+r('gigant',subst).
+r('giga',pref).
+r('gibon',subst).
+r('gib',tr).
+r('geum',subst).
+r('geta',subst).
+r('gest',subst).
+r('gerundi',subst).
+r('germanium',subst).
+r('german',subst).
+r('gerlen',subst).
+r('geril',subst).
+r('gerbil',best).
+r('geraniac',subst).
+r('gerani',subst).
+r('gepard',best).
+r('geoĥemi',subst).
+r('geotruped',subst).
+r('geotrup',subst).
+r('geotermik',subst).
+r('geoterm',adj).
+r('geostrategi',subst).
+r('georgin',subst).
+r('geopolitik',subst).
+r('geomorfologi',subst).
+r('geometri',subst).
+r('geometred',subst).
+r('geometr',best).
+r('geologi',subst).
+r('geolog',subst).
+r('geokomputik',subst).
+r('geokemi',subst).
+r('geografi',subst).
+r('geograf',subst).
+r('geofizik',subst).
+r('geodezi',subst).
+r('geod',subst).
+r('geocentr',adj).
+r('geo',pref).
+r('genu',subst).
+r('gent',subst).
+r('genr',subst).
+r('genotip',subst).
+r('genot',best).
+r('genom',subst).
+r('genocid',subst).
+r('genitiv',subst).
+r('genist',subst).
+r('geni',subst).
+r('genez',subst).
+r('genetik',subst).
+r('generator',subst).
+r('general',subst).
+r('generaci',subst).
+r('gener',tr).
+r('genealogi',subst).
+r('genealog',subst).
+r('gencianac',subst).
+r('gencian',subst).
+r('gen',subst).
+r('gemologi',subst).
+r('gem',subst).
+r('geloz',subst).
+r('gelaten',subst).
+r('gelat',subst).
+r('geked',subst).
+r('gek',best).
+r('gejŝ',subst).
+r('gejser',subst).
+r('gej',subst).
+r('gehen',subst).
+r('gaŭĉ',subst).
+r('gaŭlt',subst).
+r('gazon',subst).
+r('gazet',subst).
+r('gazel',subst).
+r('gazal',subst).
+r('gaz',subst).
+r('gavot',subst).
+r('gavialed',subst).
+r('gavial',best).
+r('gatj',subst).
+r('gastrotomi',subst).
+r('gastrostomi',subst).
+r('gastropod',subst).
+r('gastronomi',subst).
+r('gastronom',subst).
+r('gastroenterologi',subst).
+r('gastroenterolog',subst).
+r('gastornit',subst).
+r('gasterosteed',subst).
+r('gasteroste',best).
+r('gast',subst).
+r('gasometr',subst).
+r('gasojl',subst).
+r('gas',subst).
+r('garol',subst).
+r('garnizon',subst).
+r('garnitur',subst).
+r('garn',tr).
+r('gargojl',subst).
+r('gargar',tr).
+r('gardeni',subst).
+r('gard',tr).
+r('garb',subst).
+r('garaĝ',subst).
+r('garanti',tr).
+r('gap',tr).
+r('gant',subst).
+r('gangren',subst).
+r('gangli',subst).
+r('gang',subst).
+r('gandarv',subst).
+r('gamet',subst).
+r('gamelan',subst).
+r('gamel',subst).
+r('gambit',subst).
+r('gambi',subst).
+r('gamb',subst).
+r('gamaŝ',subst).
+r('gam',subst).
+r('galvanoterapi',subst).
+r('galvanoskop',subst).
+r('galvanoplastik',subst).
+r('galvanometr',subst).
+r('galvaniz',tr).
+r('galvanism',subst).
+r('galvan',adj).
+r('galoŝ',subst).
+r('galop',ntr).
+r('galon',subst).
+r('galium',subst).
+r('galion',subst).
+r('galinul',subst).
+r('galimati',subst).
+r('galicism',subst).
+r('gali',subst).
+r('galeri',subst).
+r('galer',subst).
+r('galeopitek',best).
+r('galen',subst).
+r('galeas',subst).
+r('galbuled',subst).
+r('galbul',subst).
+r('galban',subst).
+r('galantin',subst).
+r('galanteri',subst).
+r('galant',subst).
+r('galant',adj).
+r('galaksi',subst).
+r('galabij',subst).
+r('gal',subst).
+r('gak',verb).
+r('gajn',tr).
+r('gajlard',subst).
+r('gajl',subst).
+r('gajakol',subst).
+r('gajak',subst).
+r('gaj',adj).
+r('gagat',subst).
+r('gaf',subst).
+r('gadolini',subst).
+r('gaded',subst).
+r('gad',best).
+r('gabl',subst).
+r('gabi',subst).
+r('gabardin',subst).
+r('fuŝ',tr).
+r('fuĝ',tr).
+r('fuzilier',subst).
+r('fuzi',subst).
+r('fuzelaĝ',subst).
+r('fuz',ntr).
+r('futur',subst).
+r('futbal',subst).
+r('fut',subst).
+r('fusten',subst).
+r('fust',subst).
+r('fusil',subst).
+r('furz',ntr).
+r('furunk',subst).
+r('furor',subst).
+r('furlong',subst).
+r('furioz',adj).
+r('furier',subst).
+r('furi',subst).
+r('furaĝ',subst).
+r('fur',subst).
+r('fuort',subst).
+r('funt',subst).
+r('funkcional',subst).
+r('funkci',ntr).
+r('funikular',subst).
+r('funikl',subst).
+r('fungus',subst).
+r('fung',subst).
+r('funel',subst).
+r('funebr',subst).
+r('fundament',subst).
+r('fund',subst).
+r('fumariac',subst).
+r('fumari',subst).
+r('fum',subst).
+r('fulm',subst).
+r('fulik',subst).
+r('fuligul',best).
+r('fulg',subst).
+r('fulard',subst).
+r('ful',tr).
+r('fuksin',subst).
+r('fuksi',subst).
+r('fuk',subst).
+r('fug',subst).
+r('fuel',subst).
+r('ftiz',subst).
+r('frustraci',verb).
+r('frustr',verb).
+r('fruntal',subst).
+r('frunt',subst).
+r('frukt',subst).
+r('frugileg',subst).
+r('fru',adj).
+r('frot',tr).
+r('frost',subst).
+r('fronton',subst).
+r('front',subst).
+r('frond',subst).
+r('fromaĝ',subst).
+r('frok',subst).
+r('friz',tr).
+r('frivol',adj).
+r('fritilari',subst).
+r('frit',tr).
+r('frisk',adj).
+r('fris',subst).
+r('fris',subst).
+r('fripon',subst).
+r('fringel',subst).
+r('fringed',subst).
+r('fring',subst).
+r('frikativ',subst).
+r('frid',adj).
+r('freŝ',adj).
+r('frez',verb).
+r('fret',subst).
+r('fresk',subst).
+r('freon',subst).
+r('frenologi',subst).
+r('frenolog',subst).
+r('frenez',adj).
+r('fremd',adj).
+r('frekvent',tr).
+r('frekvencometr',subst).
+r('frekvenc',subst).
+r('fregat',subst).
+r('fregat',subst).
+r('fraŭl',subst).
+r('fraŭd',verb).
+r('frazeologi',subst).
+r('fraz',subst).
+r('fratri',subst).
+r('fraterkul',subst).
+r('frat',parc).
+r('frap',verb).
+r('franĝ',subst).
+r('frankolin',subst).
+r('frank',subst).
+r('frangol',subst).
+r('frand',tr).
+r('francium',subst).
+r('franci',subst).
+r('franc',subst).
+r('framb',subst).
+r('framason',subst).
+r('fram',subst).
+r('fraksen',subst).
+r('frakci',subst).
+r('frakas',tr).
+r('frak',subst).
+r('frajt',tr).
+r('fraj',subst).
+r('fragmit',subst).
+r('fragment',subst).
+r('fragil',adj).
+r('frag',subst).
+r('fototipi',subst).
+r('fototelegraf',verb).
+r('fotosintez',subst).
+r('fotosfer',subst).
+r('foton',subst).
+r('fotometr',subst).
+r('fotoliz',verb).
+r('fotolitografi',subst).
+r('fotokromi',subst).
+r('fotokopi',subst).
+r('fotogravur',tr).
+r('fotogrametri',subst).
+r('fotografi',subst).
+r('fotograf',tr).
+r('fotogliptik',subst).
+r('fotel',subst).
+r('fot',verb).
+r('fost',subst).
+r('fosili',subst).
+r('fosforit',subst).
+r('fosforesk',ntr).
+r('fosfor',subst).
+r('fosfit',subst).
+r('fosfaturi',subst).
+r('fosfat',subst).
+r('fos',tr).
+r('forĝ',tr).
+r('forum',subst).
+r('fortun',subst).
+r('fortres',subst).
+r('fortik',adj).
+r('fortepian',subst).
+r('fort',adj).
+r('forst',subst).
+r('forsiti',subst).
+r('forniks',subst).
+r('fornel',subst).
+r('forn',subst).
+r('formul',subst).
+r('formol',subst).
+r('forming',subst).
+r('formiked',subst).
+r('formik',subst).
+r('format',subst).
+r('formaldehid',subst).
+r('formal',adj).
+r('formaci',subst).
+r('form',subst).
+r('fork',subst).
+r('forint',subst).
+r('forges',tr).
+r('forfikul',subst).
+r('forceps',subst).
+r('forc',tr).
+r('fontanel',subst).
+r('fontan',subst).
+r('font',subst).
+r('fonoskop',subst).
+r('fonometr',subst).
+r('fonologi',subst).
+r('fonolog',subst).
+r('fonogram',subst).
+r('fonograf',subst).
+r('fonetism',subst).
+r('fonetik',subst).
+r('fonem',subst).
+r('fondus',subst).
+r('fondu',subst).
+r('fond',tr).
+r('fon',subst).
+r('foment',tr).
+r('folklor',subst).
+r('folikl',subst).
+r('foli',subst).
+r('fold',subst).
+r('foladed',subst).
+r('folad',subst).
+r('fol',adj).
+r('fokus',subst).
+r('fokstrot',subst).
+r('foked',subst).
+r('fok',best).
+r('fojn',subst).
+r('foj',subst).
+r('foir',subst).
+r('foin',best).
+r('fobi',subst).
+r('flut',subst).
+r('flustr',tr).
+r('flus',subst).
+r('fluoresk',ntr).
+r('fluor',subst).
+r('fluktu',ntr).
+r('fluid',adj).
+r('flug',ntr).
+r('flu',ntr).
+r('flot',subst).
+r('flos',subst).
+r('floren',subst).
+r('flor',subst).
+r('flok',subst).
+r('floem',subst).
+r('flirt',ntr).
+r('flint',subst).
+r('flikten',subst).
+r('flik',tr).
+r('fles',best).
+r('flerovi',subst).
+r('fleksi',tr).
+r('fleks',tr).
+r('flegmon',subst).
+r('flegm',subst).
+r('fleg',tr).
+r('flaŭr',subst).
+r('flaŭn',subst).
+r('flaĝolet',subst).
+r('flav',adj).
+r('flat',tr).
+r('flar',tr).
+r('flanĝ',subst).
+r('flank',subst).
+r('flanel',subst).
+r('flandr',subst).
+r('flan',subst).
+r('flamenk',subst).
+r('flameng',subst).
+r('flamberg',subst).
+r('flam',subst).
+r('flakurtiac',subst).
+r('flakurti',subst).
+r('flakon',subst).
+r('flak',subst).
+r('flagr',ntr).
+r('flagel',subst).
+r('flag',subst).
+r('fjord',subst).
+r('fiŝ',subst).
+r('fiĝi',subst).
+r('fizioterapi',subst).
+r('fizionomi',subst).
+r('fiziologi',subst).
+r('fiziolog',subst).
+r('fiziokrat',subst).
+r('fiziografi',subst).
+r('fiziognomik',subst).
+r('fizik',subst).
+r('fitoterapi',subst).
+r('fiting',subst).
+r('fistul',subst).
+r('fisk',subst).
+r('fisi',subst).
+r('first',subst).
+r('firmament',subst).
+r('firma',subst).
+r('firm',adj).
+r('firm',subst).
+r('fiol',subst).
+r('fint',tr).
+r('finn',subst).
+r('finial',subst).
+r('fini',subst).
+r('fingr',subst).
+r('financ',subst).
+r('final',subst).
+r('fin',tr).
+r('fimbril',subst).
+r('filum',subst).
+r('filtr',tr).
+r('filozofi',subst).
+r('filozof',subst).
+r('filon',subst).
+r('filologi',subst).
+r('filolog',subst).
+r('filoksered',subst).
+r('filokser',subst).
+r('filogeni',subst).
+r('filogenez',subst).
+r('filodendr',subst).
+r('film',subst).
+r('filistr',subst).
+r('filik',subst).
+r('filigran',subst).
+r('fili',subst).
+r('filharmoni',subst).
+r('filateli',subst).
+r('filatel',subst).
+r('filantropi',subst).
+r('filantrop',subst).
+r('filant',subst).
+r('filandr',subst).
+r('filament',subst).
+r('filakteri',subst).
+r('filadelfac',subst).
+r('filadelf',subst).
+r('fil',parc).
+r('fiktiv',adj).
+r('fiks',tr).
+r('fikci',subst).
+r('fik',tr).
+r('figur',subst).
+r('fig',subst).
+r('fifr',subst).
+r('fier',adj).
+r('fidel',adj).
+r('fid',tr).
+r('fibul',subst).
+r('fibrom',subst).
+r('fibrin',subst).
+r('fibran',subst).
+r('fibr',subst).
+r('fiask',subst).
+r('fianĉ',subst).
+r('fiakr',subst).
+r('feŭd',subst).
+r('feĉ',subst).
+r('fez',subst).
+r('fetor',subst).
+r('fetiĉ',subst).
+r('fet',subst).
+r('festuk',subst).
+r('feston',subst).
+r('festival',subst).
+r('festen',subst).
+r('fest',subst).
+r('fervor',subst).
+r('ferotipi',subst).
+r('feromon',subst).
+r('ferol',subst).
+r('feroc',adj).
+r('fermion',subst).
+r('fermi',subst).
+r('ferment',subst).
+r('fermat',subst).
+r('ferm',tr).
+r('ferl',tr).
+r('feri',subst).
+r('ferdek',subst).
+r('fer',subst).
+r('fenotip',subst).
+r('fenomenologi',subst).
+r('fenomen',subst).
+r('fenol',subst).
+r('fenkol',subst).
+r('feniks',subst).
+r('fenikoptered',subst).
+r('fenikopter',subst).
+r('fenic',subst).
+r('fenestr',subst).
+r('fendr',subst).
+r('fend',tr).
+r('fen',subst).
+r('femur',subst).
+r('femto',pref).
+r('feminist',subst).
+r('feminism',subst).
+r('femal',subst).
+r('feluk',subst).
+r('felt',subst).
+r('felp',subst).
+r('feloid',subst).
+r('feliĉ',adj).
+r('felised',subst).
+r('felis',subst).
+r('felieton',subst).
+r('feldspat',subst).
+r('felandri',subst).
+r('fel',subst).
+r('fekund',adj).
+r('fekul',subst).
+r('fek',ntr).
+r('federaci',subst).
+r('feder',tr).
+r('februar',subst).
+r('febr',subst).
+r('febl',adj).
+r('fe',subst).
+r('faŭn',subst).
+r('faŭn',subst).
+r('faŭlt',subst).
+r('faŭk',subst).
+r('faŝist',subst).
+r('faŝism',subst).
+r('fazeol',subst).
+r('fazaned',subst).
+r('fazan',subst).
+r('faz',subst).
+r('favor',adj).
+r('fav',subst).
+r('fatv',subst).
+r('fatras',subst).
+r('fatamorgan',subst).
+r('fatal',adj).
+r('fat',subst).
+r('fasĉin',subst).
+r('fast',ntr).
+r('fason',subst).
+r('fask',subst).
+r('fasciol',subst).
+r('fascin',tr).
+r('fasci',subst).
+r('fasad',subst).
+r('farĉ',subst).
+r('farun',subst).
+r('fart',ntr).
+r('fars',subst).
+r('farnient',subst).
+r('farmakope',subst).
+r('farmakologi',subst).
+r('farmakolog',subst).
+r('farmaci',subst).
+r('farm',tr).
+r('farize',subst).
+r('farise',subst).
+r('faring',subst).
+r('farb',subst).
+r('faraon',subst).
+r('farandol',subst).
+r('faradiz',tr).
+r('far',tr).
+r('fantom',subst).
+r('fantazi',subst).
+r('fantast',subst).
+r('fantasmagori',subst).
+r('fantasm',subst).
+r('fant',subst).
+r('fanfaron',tr).
+r('fanfar',subst).
+r('fanerozoik',subst).
+r('fanerogam',subst).
+r('faner',subst).
+r('fandang',subst).
+r('fand',tr).
+r('fanatik',adj).
+r('fanariot',subst).
+r('familiar',adj).
+r('famili',subst).
+r('fam',subst).
+r('falĉ',tr).
+r('falt',subst).
+r('falset',subst).
+r('fals',tr).
+r('falked',subst).
+r('falk',subst).
+r('fald',tr).
+r('falbal',subst).
+r('falarop',subst).
+r('falar',subst).
+r('falanster',subst).
+r('falangi',subst).
+r('falang',subst).
+r('falafel',subst).
+r('fal',ntr).
+r('fakultativ',adj).
+r('fakultat',subst).
+r('fakult',subst).
+r('faktur',subst).
+r('faktorial',subst).
+r('faktori',subst).
+r('faktor',subst).
+r('fakt',subst).
+r('faksimil',subst).
+r('faks',tr).
+r('fakoĥer',subst).
+r('fakoĉer',subst).
+r('fakir',subst).
+r('fak',subst).
+r('fajr',subst).
+r('fajn',adj).
+r('fajl',tr).
+r('fajf',tr).
+r('fajenc',subst).
+r('faj',subst).
+r('fagot',subst).
+r('fagopir',subst).
+r('fagocit',subst).
+r('fagac',subst).
+r('fag',subst).
+r('faeton',subst).
+r('fadu',subst).
+r('faden',subst).
+r('fad',subst).
+r('facil',adj).
+r('facet',subst).
+r('fac',subst).
+r('fabrik',subst).
+r('fabl',subst).
+r('fabel',subst).
+r('fabac',subst).
+r('fab',subst).
+r('eŭĥaristi',subst).
+r('eŭsk',subst).
+r('eŭropi',subst).
+r('eŭr',subst).
+r('eŭnuk',subst).
+r('eŭkaristi',subst).
+r('eŭkariot',subst).
+r('eŭkalipt',subst).
+r('eŭgenik',subst).
+r('eŭforbiac',subst).
+r('eŭforbi',subst).
+r('eŭfoni',subst).
+r('eŭfemism',subst).
+r('eŭdiometri',subst).
+r('eŭdiometr',subst).
+r('eŝafod',subst).
+r('eĥografi',subst).
+r('eĥinoderm',subst).
+r('eĥin',subst).
+r('eĥimoz',subst).
+r('eĥidn',subst).
+r('eĥ',subst).
+r('eĝ',subst).
+r('ezoked',subst).
+r('ezok',best).
+r('ezofag',subst).
+r('evonim',subst).
+r('evolvent',subst).
+r('evolut',subst).
+r('evoluci',subst).
+r('evolu',ntr).
+r('evit',tr).
+r('evikci',tr).
+r('evident',adj).
+r('eventual',adj).
+r('event',subst).
+r('evangeliz',verb).
+r('evangeli',subst).
+r('evaku',tr).
+r('etud',subst).
+r('etrusk',subst).
+r('etos',subst).
+r('etologi',subst).
+r('etolog',subst).
+r('etnologi',subst).
+r('etnolog',subst).
+r('etnografi',subst).
+r('etnograf',subst).
+r('etn',subst).
+r('etmoid',subst).
+r('etiop',subst).
+r('etiologi',subst).
+r('etimologi',subst).
+r('etim',subst).
+r('etilen',subst).
+r('etil',subst).
+r('etiket',subst).
+r('etiked',subst).
+r('etik',subst).
+r('etern',adj).
+r('eter',subst).
+r('etend',tr).
+r('etaĝer',subst).
+r('etaĝ',subst).
+r('etat',subst).
+r('etap',subst).
+r('etan',subst).
+r('esĥatologi',subst).
+r('estuar',subst).
+r('estrad',subst).
+r('eston',subst).
+r('esting',tr).
+r('estim',tr).
+r('estetik',subst).
+r('ester',subst).
+r('establ',tr).
+r('est',ntr).
+r('esprim',tr).
+r('esplor',tr).
+r('esplanad',subst).
+r('esperantologi',subst).
+r('esperantolog',subst).
+r('esper',tr).
+r('espart',subst).
+r('espanjolet',subst).
+r('esoter',adj).
+r('eskvir',subst).
+r('eskuz',verb).
+r('eskud',subst).
+r('eskort',tr).
+r('esklud',verb).
+r('eskim',subst).
+r('eskatologi',subst).
+r('eskarp',subst).
+r('eskap',tr).
+r('eskalop',subst).
+r('eskal',subst).
+r('eskadr',subst).
+r('esk',suf).
+r('esenc',subst).
+r('ese',subst).
+r('escept',tr).
+r('erupt',verb).
+r('erupci',subst).
+r('eruk',subst).
+r('erudit',subst).
+r('erudici',subst).
+r('erp',tr).
+r('erozi',tr).
+r('erotomani',subst).
+r('erotik',adj).
+r('erot',adj).
+r('erod',verb).
+r('ermit',subst).
+r('ermen',best).
+r('erizipel',subst).
+r('erizim',subst).
+r('eritrozin',subst).
+r('eritrocit',ntr).
+r('eriofor',subst).
+r('eringi',subst).
+r('erinaced',subst).
+r('erinac',best).
+r('erikac',subst).
+r('erik',subst).
+r('ergotin',subst).
+r('ergot',subst).
+r('ergonomi',subst).
+r('ergometr',subst).
+r('ergologi',subst).
+r('ergograf',subst).
+r('ergin',subst).
+r('erg',subst).
+r('erekt',adj).
+r('erc',subst).
+r('erbin',subst).
+r('erbi',subst).
+r('erar',ntr).
+r('erantid',subst).
+r('era',subst).
+r('er',subst).
+r('epos',subst).
+r('epope',subst).
+r('epolet',subst).
+r('epok',subst).
+r('epizooti',subst).
+r('epizod',subst).
+r('epitroĥoid',subst).
+r('epitom',subst).
+r('epitet',subst).
+r('epiteli',subst).
+r('epitaf',subst).
+r('epistrof',subst).
+r('epistol',subst).
+r('epistemologi',subst).
+r('epistemolog',subst).
+r('episkop',subst).
+r('epiornit',subst).
+r('epilog',subst).
+r('epilobi',subst).
+r('epilepsi',subst).
+r('epikarp',subst).
+r('epigram',subst).
+r('epigrafik',subst).
+r('epigraf',subst).
+r('epigon',subst).
+r('epiglot',subst).
+r('epigenetik',subst).
+r('epigastr',subst).
+r('epifor',subst).
+r('epifonem',subst).
+r('epifiz',subst).
+r('epifit',subst).
+r('epifenomen',subst).
+r('epiderm',subst).
+r('epidemiologi',subst).
+r('epidemiolog',subst).
+r('epidemi',subst).
+r('epicikloid',subst).
+r('epicentr',subst).
+r('ependimit',subst).
+r('ependim',subst).
+r('eparki',subst).
+r('epakt',subst).
+r('eozin',subst).
+r('eon',subst).
+r('eocen',subst).
+r('enzim',subst).
+r('envult',tr).
+r('envi',tr).
+r('envergur',subst).
+r('envelop',subst).
+r('enukleaci',subst).
+r('enukle',tr).
+r('enu',ntr).
+r('entuziast',subst).
+r('entuziasm',subst).
+r('entropi',subst).
+r('entrepren',tr).
+r('entozo',subst).
+r('entomologi',subst).
+r('entomolog',subst).
+r('entjer',subst).
+r('enterit',subst).
+r('entablement',subst).
+r('ent',subst).
+r('ensembl',subst).
+r('enoterac',subst).
+r('enoter',subst).
+r('enorm',adj).
+r('enklitik',subst).
+r('enklav',subst).
+r('enket',subst).
+r('enjekci',subst).
+r('enigm',subst).
+r('engaĝ',tr).
+r('enfil',tr).
+r('energi',subst).
+r('endoterm',adj).
+r('endoskopi',subst).
+r('endoskop',subst).
+r('endos',tr).
+r('endorfin',subst).
+r('endoplasm',subst).
+r('endomorfi',subst).
+r('endokrinologi',subst).
+r('endokrinolog',subst).
+r('endokrin',adj).
+r('endokarp',subst).
+r('endokardit',subst).
+r('endokard',subst).
+r('endogami',subst).
+r('endivi',subst).
+r('endemi',subst).
+r('end',suf).
+r('enciklopedi',subst).
+r('enciklik',subst).
+r('encefalopati',subst).
+r('encefalogram',subst).
+r('encefalit',subst).
+r('encefal',subst).
+r('enantem',subst).
+r('enant',subst).
+r('en',subst).
+r('emulsin',subst).
+r('emulsi',subst).
+r('emu',subst).
+r('empirist',subst).
+r('empirism',subst).
+r('empiri',subst).
+r('empir',subst).
+r('empiem',subst).
+r('empen',subst).
+r('empati',subst).
+r('emoci',tr).
+r('emisi',tr).
+r('emir',subst).
+r('eminent',adj).
+r('eminenc',subst).
+r('emfizem',subst).
+r('emfaz',subst).
+r('emetik',subst).
+r('emerĝ',ntr).
+r('emeritur',subst).
+r('emerit',subst).
+r('embusk',ntr).
+r('embriologi',subst).
+r('embriolog',subst).
+r('embriogeni',subst).
+r('embri',subst).
+r('embrazur',subst).
+r('emboli',subst).
+r('embol',subst).
+r('emblem',subst).
+r('emberiz',subst).
+r('embarg',tr).
+r('embaras',subst).
+r('emancip',tr).
+r('eman',ntr).
+r('emajl',subst).
+r('elzevir',subst).
+r('elokvent',adj).
+r('elizi',tr).
+r('elitr',subst).
+r('elit',subst).
+r('elipsoid',subst).
+r('elips',subst).
+r('elimin',tr).
+r('elim',subst).
+r('eliksir',subst).
+r('elf',subst).
+r('elevator',subst).
+r('element',subst).
+r('elektrotipi',subst).
+r('elektrotip',subst).
+r('elektroterapi',subst).
+r('elektrostatik',subst).
+r('elektroskop',subst).
+r('elektronik',subst).
+r('elektron',subst).
+r('elektromobil',subst).
+r('elektrometr',subst).
+r('elektromagnetism',subst).
+r('elektromagnet',subst).
+r('elektroliz',tr).
+r('elektrolit',subst).
+r('elektrofor',subst).
+r('elektrodinamometr',subst).
+r('elektrodinamism',subst).
+r('elektrodinamik',subst).
+r('elektrod',subst).
+r('elektriz',verb).
+r('elektrism',subst).
+r('elektr',subst).
+r('elekt',tr).
+r('elegi',subst).
+r('elegant',adj).
+r('elefantiaz',subst).
+r('elefanted',subst).
+r('elefant',best).
+r('eldorad',subst).
+r('elatred',subst).
+r('elatr',subst).
+r('elateri',subst).
+r('elater',subst).
+r('elastan',subst).
+r('elast',adj).
+r('eland',subst).
+r('el',subst).
+r('ekzotik',adj).
+r('ekzoterm',adj).
+r('ekzot',adj).
+r('ekzorciz',verb).
+r('ekzorc',tr).
+r('ekzokrin',adj).
+r('ekzogami',subst).
+r('ekzistencialism',subst).
+r('ekzist',ntr).
+r('ekzil',tr).
+r('ekzerg',subst).
+r('ekzerc',tr).
+r('ekzempler',subst).
+r('ekzempl',subst).
+r('ekzem',subst).
+r('ekzekut',tr).
+r('ekzekuci',tr).
+r('ekzegez',subst).
+r('ekzark',subst).
+r('ekzantem',subst).
+r('ekzamen',tr).
+r('ekzalt',tr).
+r('ekzakt',adj).
+r('ekvizet',subst).
+r('ekvivalent',subst).
+r('ekvipolent',adj).
+r('ekvinoks',subst).
+r('ekvilibr',subst).
+r('ekvatorial',subst).
+r('ekvator',subst).
+r('ekvaci',subst).
+r('ekv',subst).
+r('ekumen',subst).
+r('ektropi',subst).
+r('ektopi',subst).
+r('eksud',ntr).
+r('ekstrem',adj).
+r('ekstravertit',subst).
+r('ekstravert',adj).
+r('ekstravaganc',subst).
+r('ekstrapol',tr).
+r('ekstrakt',subst).
+r('ekstradici',tr).
+r('ekstr',adj).
+r('eksterpol',tr).
+r('eksterm',tr).
+r('ekstemporal',subst).
+r('ekstazi',subst).
+r('ekstaz',subst).
+r('ekspresionist',subst).
+r('ekspresionism',subst).
+r('ekspres',subst).
+r('ekspozici',subst).
+r('ekspoz',tr).
+r('eksport',tr).
+r('eksponent',subst).
+r('eksponencial',subst).
+r('ekspon',tr).
+r('ekspluat',tr).
+r('eksplod',ntr).
+r('eksplik',tr).
+r('ekspertiz',tr).
+r('ekspert',subst).
+r('eksperiment',subst).
+r('ekspektor',ntr).
+r('ekspekt',subst).
+r('ekspedici',subst).
+r('eksped',tr).
+r('ekspansi',subst).
+r('ekslibris',subst).
+r('ekskuz',tr).
+r('ekskurs',subst).
+r('ekskrement',subst).
+r('ekskreci',subst).
+r('ekskoriaci',subst).
+r('ekskomunik',tr).
+r('ekskluziv',adj).
+r('eksklud',verb).
+r('eksklamaci',subst).
+r('ekscitator',subst).
+r('ekscit',tr).
+r('eksces',subst).
+r('ekscepci',subst).
+r('ekscentrik',subst).
+r('ekscentr',adj).
+r('ekscelenc',subst).
+r('eksa',pref).
+r('eks',pref).
+r('ekran',subst).
+r('ekosistem',subst).
+r('ekonomik',subst).
+r('ekonomi',subst).
+r('ekonom',subst).
+r('ekologi',subst).
+r('ekolog',subst).
+r('eklog',subst).
+r('ekliptik',subst).
+r('eklips',subst).
+r('ekleziologi',subst).
+r('eklezi',subst).
+r('eklektik',adj).
+r('eklampsi',subst).
+r('ekip',tr).
+r('ekinoderm',subst).
+r('ekin',subst).
+r('ekimoz',subst).
+r('ekidn',subst).
+r('eki',subst).
+r('ekaŭdat',subst).
+r('ekarte',subst).
+r('ekart',subst).
+r('ejnŝtejni',subst).
+r('ejnstejni',subst).
+r('ejakul',ntr).
+r('egret',subst).
+r('egopodi',subst).
+r('egoist',subst).
+r('egoism',subst).
+r('ego',subst).
+r('eglefin',subst).
+r('eglanteri',subst).
+r('egiptologi',subst).
+r('egiptolog',subst).
+r('egipt',subst).
+r('egid',subst).
+r('egal',adj).
+r('efod',subst).
+r('efluv',subst).
+r('efloresk',ntr).
+r('efik',ntr).
+r('efervesk',ntr).
+r('efemerid',subst).
+r('efemered',subst).
+r('efemer',best).
+r('efektiv',adj).
+r('efekt',subst).
+r('efedr',subst).
+r('edz',subst).
+r('eduk',tr).
+r('edr',subst).
+r('editor',subst).
+r('edinol',subst).
+r('edil',subst).
+r('edikt',subst).
+r('edif',tr).
+r('edem',subst).
+r('edelvejs',subst).
+r('ebur',subst).
+r('ebul',subst).
+r('ebri',adj).
+r('ebonit',subst).
+r('ebon',subst).
+r('eben',adj).
+r('duŝ',tr).
+r('duz',subst).
+r('dut',subst).
+r('duri',subst).
+r('duramatr',subst).
+r('dur',subst).
+r('dur',adj).
+r('duplikat',subst).
+r('dupleks',adj).
+r('dup',subst).
+r('duopsoni',subst).
+r('duopol',subst).
+r('duodenit',subst).
+r('duoden',subst).
+r('dung',tr).
+r('dun',subst).
+r('dumping',subst).
+r('dumdum',subst).
+r('dukt',subst).
+r('dukat',subst).
+r('duk',subst).
+r('dugong',best).
+r('duet',subst).
+r('duenj',subst).
+r('duel',subst).
+r('dubni',subst).
+r('dublon',subst).
+r('dubl',tr).
+r('dub',tr).
+r('dualism',subst).
+r('dual',subst).
+r('druz',subst).
+r('drup',subst).
+r('druid',subst).
+r('droŝk',subst).
+r('drozofil',subst).
+r('dros',subst).
+r('dron',ntr).
+r('dromedar',subst).
+r('drog',subst).
+r('driv',ntr).
+r('drink',tr).
+r('dril',subst).
+r('dribl',verb).
+r('driad',subst).
+r('dres',tr).
+r('dren',tr).
+r('drelik',subst).
+r('drednaŭt',subst).
+r('draŝ',tr).
+r('draĥm',subst).
+r('drat',subst).
+r('drast',adj).
+r('drapir',tr).
+r('drap',subst).
+r('dramaturgi',subst).
+r('dram',subst).
+r('drakunkol',subst).
+r('drakon',adj).
+r('drakm',subst).
+r('drak',subst).
+r('dragon',subst).
+r('drag',tr).
+r('dracen',subst).
+r('doĝ',subst).
+r('dozometr',subst).
+r('doz',subst).
+r('dot',tr).
+r('dosier',subst).
+r('dors',subst).
+r('dorn',subst).
+r('dorm',ntr).
+r('dorlot',tr).
+r('dopamin',subst).
+r('donĵuan',subst).
+r('donkiĥot',subst).
+r('dong',subst).
+r('donac',tr).
+r('don',tr).
+r('dominik',subst).
+r('dominik',subst).
+r('domini',subst).
+r('domin',tr).
+r('domicil',subst).
+r('domen',subst).
+r('domaĝ',subst).
+r('dom',subst).
+r('dolĉamar',subst).
+r('dolĉ',adj).
+r('dolor',tr).
+r('dolmen',subst).
+r('doliĥocefal',subst).
+r('dolin',subst).
+r('dolikocefal',subst).
+r('dolar',subst).
+r('dokumentari',subst).
+r('dokument',subst).
+r('doktrin',subst).
+r('doktor',subst).
+r('dokt',adj).
+r('dok',subst).
+r('dojen',subst).
+r('dogm',subst).
+r('dogan',subst).
+r('dog',subst).
+r('dodekafonism',subst).
+r('docent',subst).
+r('diĥotomi',subst).
+r('diĝest',subst).
+r('dizert',verb).
+r('dizel',subst).
+r('dizajn',tr).
+r('divorc',ntr).
+r('divizor',subst).
+r('divizi',subst).
+r('dividend',subst).
+r('divid',tr).
+r('diverĝenc',subst).
+r('diverĝ',ntr).
+r('divertikulit',subst).
+r('divertikul',subst).
+r('diversi',verb).
+r('divers',adj).
+r('diven',tr).
+r('divan',subst).
+r('divalent',subst).
+r('diurn',subst).
+r('diurez',subst).
+r('ditiramb',subst).
+r('disĉipl',subst).
+r('disuri',subst).
+r('disturb',verb).
+r('distrikt',subst).
+r('distribuci',subst).
+r('distribu',tr).
+r('distr',tr).
+r('distord',subst).
+r('disting',tr).
+r('distil',tr).
+r('distik',subst).
+r('distanc',subst).
+r('dist',adj).
+r('disput',ntr).
+r('disprozi',subst).
+r('dispozici',subst).
+r('dispon',tr).
+r('dispne',subst).
+r('dispers',verb).
+r('dispepsi',subst).
+r('dispensari',subst).
+r('disonanc',subst).
+r('disoci',tr).
+r('dism',subst).
+r('disleksi',subst).
+r('diskut',ntr).
+r('diskurs',subst).
+r('diskriminant',subst).
+r('diskriminaci',tr).
+r('diskrimin',verb).
+r('diskret',adj).
+r('diskredit',verb).
+r('diskotek',subst).
+r('diskont',tr).
+r('diskografi',subst).
+r('disked',subst).
+r('disk',subst).
+r('disjunkci',subst).
+r('disip',verb).
+r('disident',subst).
+r('disertaci',subst).
+r('disert',ntr).
+r('disenteri',subst).
+r('disdegn',tr).
+r('disciplin',subst).
+r('direktric',subst).
+r('direktori',subst).
+r('direktor',subst).
+r('direktiv',subst).
+r('direkt',tr).
+r('direkci',subst).
+r('dir',tr).
+r('diptik',subst).
+r('dipter',subst).
+r('dipsakac',subst).
+r('dipsak',subst).
+r('diplomati',subst).
+r('diplomat',subst).
+r('diplom',subst).
+r('diplodok',subst).
+r('dipleks',adj).
+r('dioptrik',subst).
+r('dioptri',subst).
+r('diod',subst).
+r('diocez',subst).
+r('dinoteri',subst).
+r('dinosaŭr',subst).
+r('dinornit',subst).
+r('dinasti',subst).
+r('dinar',subst).
+r('dinamotor',subst).
+r('dinamometr',subst).
+r('dinamit',subst).
+r('dinamism',subst).
+r('dinamik',subst).
+r('dinam',subst).
+r('diminutiv',subst).
+r('dimensi',subst).
+r('dimanĉ',subst).
+r('diluvi',subst).
+r('diluv',subst).
+r('dilu',tr).
+r('diliĝenc',subst).
+r('diligent',adj).
+r('diletant',subst).
+r('dilem',subst).
+r('dilat',tr).
+r('diktatur',subst).
+r('diktator',subst).
+r('diktafon',subst).
+r('dikt',tr).
+r('diklorid',subst).
+r('diklin',adj).
+r('dik',adj).
+r('dign',subst).
+r('digitalin',subst).
+r('digital',subst).
+r('digest',tr).
+r('dig',subst).
+r('difuz',ntr).
+r('diftong',subst).
+r('difterit',subst).
+r('difteri',subst).
+r('difraktometr',subst).
+r('difrakt',tr).
+r('difin',tr).
+r('diferencial',subst).
+r('diferenc',ntr).
+r('difekt',tr).
+r('diet',subst).
+r('dies',subst).
+r('dierez',subst).
+r('dielektrik',subst).
+r('didelfed',subst).
+r('didelf',best).
+r('didaktik',subst).
+r('diboĉ',ntr).
+r('diatrib',subst).
+r('diaton',adj).
+r('diatez',subst).
+r('diaterm',adj).
+r('diastol',subst).
+r('diastaz',subst).
+r('diaspor',subst).
+r('dias',subst).
+r('diartroz',subst).
+r('diare',subst).
+r('diapozitiv',subst).
+r('diapazon',subst).
+r('diant',subst).
+r('diametr',subst).
+r('diamant',subst).
+r('diamagnet',subst).
+r('dialog',subst).
+r('dializ',tr).
+r('dialektologi',subst).
+r('dialektolog',subst).
+r('dialektik',subst).
+r('dialekt',subst).
+r('diakron',adj).
+r('diakrit',tr).
+r('diakon',subst).
+r('diakilon',subst).
+r('diakil',subst).
+r('diagram',subst).
+r('diagonal',subst).
+r('diagnoz',subst).
+r('diafragm',subst).
+r('diafiz',subst).
+r('diafan',adj).
+r('diadem',subst).
+r('diabol',subst).
+r('diabl',subst).
+r('diabetologi',subst).
+r('diabetolog',subst).
+r('diabet',subst).
+r('di',subst).
+r('deŭteri',subst).
+r('deĵor',ntr).
+r('deĉifr',tr).
+r('dezir',tr).
+r('dezert',subst).
+r('dezajn',tr).
+r('devon',subst).
+r('deviz',subst).
+r('devi',ntr).
+r('devanc',tr).
+r('devanagar',adj).
+r('dev',tr).
+r('detru',tr).
+r('detonaci',verb).
+r('determinism',subst).
+r('determin',tr).
+r('detektor',subst).
+r('detektiv',subst).
+r('detekt',verb).
+r('detal',subst).
+r('destrojer',subst).
+r('destin',tr).
+r('despot',subst).
+r('desmodi',subst).
+r('desinfekt',tr).
+r('desert',subst).
+r('desegn',tr).
+r('derviŝ',subst).
+r('dermit',subst).
+r('dermatoz',subst).
+r('dermatologi',subst).
+r('dermatolog',subst).
+r('dermapter',subst).
+r('derm',subst).
+r('deriv',tr).
+r('deput',tr).
+r('deprim',tr).
+r('depresi',subst).
+r('depozici',verb).
+r('depot',subst).
+r('depon',tr).
+r('deploj',verb).
+r('depeŝ',subst).
+r('departement',subst).
+r('deontologi',subst).
+r('denunc',tr).
+r('dental',subst).
+r('dent',subst).
+r('dens',adj).
+r('denominator',subst).
+r('dendrokronologi',subst).
+r('dendrit',subst).
+r('denar',subst).
+r('demotik',adj).
+r('demoraliz',tr).
+r('demonstrativ',subst).
+r('demonstr',tr).
+r('demonologi',subst).
+r('demon',subst).
+r('demokrati',subst).
+r('demokrat',subst).
+r('demografi',subst).
+r('demograf',subst).
+r('demisi',verb).
+r('demimond',subst).
+r('dement',tr).
+r('demenc',subst).
+r('demarŝ',subst).
+r('demarkaci',verb).
+r('demand',tr).
+r('demagogi',subst).
+r('demagog',subst).
+r('deltoid',subst).
+r('deltaplan',subst).
+r('delt',subst).
+r('delkreder',subst).
+r('delir',ntr).
+r('delikt',subst).
+r('delikat',adj).
+r('delic',subst).
+r('delfini',subst).
+r('delfened',subst).
+r('delfen',best).
+r('delegaci',subst).
+r('deleg',tr).
+r('dekt',subst).
+r('dekstrin',subst).
+r('dekstr',adj).
+r('dekret',subst).
+r('dekrement',subst).
+r('dekoraci',subst).
+r('dekor',tr).
+r('dekolt',tr).
+r('dekokt',tr).
+r('dekliv',subst).
+r('deklinaci',subst).
+r('deklaraci',subst).
+r('deklar',tr).
+r('deklam',tr).
+r('dekant',tr).
+r('dekan',subst).
+r('dekametr',subst).
+r('dekalog',subst).
+r('dekalitr',subst).
+r('dekagram',subst).
+r('dekadenc',ntr).
+r('dekad',subst).
+r('deka',pref).
+r('deism',subst).
+r('deikt',subst).
+r('dehisk',ntr).
+r('degrad',tr).
+r('degn',tr).
+r('degener',ntr).
+r('degel',ntr).
+r('deflaci',subst).
+r('definitiv',adj).
+r('defil',ntr).
+r('deficit',subst).
+r('defi',tr).
+r('defetism',subst).
+r('defensiv',subst).
+r('defend',tr).
+r('dedukt',tr).
+r('dediĉ',tr).
+r('decimetr',subst).
+r('decimal',adj).
+r('decilitr',subst).
+r('decigram',subst).
+r('decidu',adj).
+r('decid',tr).
+r('deci',pref).
+r('decembr',subst).
+r('dec',ntr).
+r('debut',ntr).
+r('debitor',subst).
+r('debit',subst).
+r('debet',subst).
+r('debat',subst).
+r('debarkader',subst).
+r('deal',adv).
+r('daŭr',ntr).
+r('daŭb',subst).
+r('daŭ',subst).
+r('daziped',subst).
+r('dazip',subst).
+r('datur',subst).
+r('datum',subst).
+r('dativ',subst).
+r('daten',subst).
+r('data',subst).
+r('dat',subst).
+r('dartr',subst).
+r('darmŝtati',subst).
+r('danĝer',subst).
+r('dank',tr).
+r('dand',subst).
+r('danc',ntr).
+r('dan',subst).
+r('damp',tr).
+r('damn',tr).
+r('damaĝ',tr).
+r('damasken',tr).
+r('damask',subst).
+r('dama',best).
+r('dam',subst).
+r('daltonism',subst).
+r('dalmatik',subst).
+r('dali',subst).
+r('dalajlama',subst).
+r('dal',subst).
+r('daktil',subst).
+r('daktil',subst).
+r('dajmon',subst).
+r('dajak',subst).
+r('dagerotipi',subst).
+r('dagerotip',subst).
+r('dag',subst).
+r('dafn',subst).
+r('dadaism',subst).
+r('cunam',subst).
+r('cum',subst).
+r('col',subst).
+r('cizel',tr).
+r('civit',subst).
+r('civilizaci',subst).
+r('civiliz',tr).
+r('civil',adj).
+r('citrus',subst).
+r('citron',subst).
+r('citr',subst).
+r('citozin',subst).
+r('citosol',subst).
+r('citoplasm',subst).
+r('citologi',subst).
+r('citolog',subst).
+r('citiz',subst).
+r('citar',subst).
+r('citadel',subst).
+r('cit',tr).
+r('cistern',subst).
+r('cistac',subst).
+r('cisoid',subst).
+r('cirus',subst).
+r('cirsi',subst).
+r('ciroz',subst).
+r('cirkvit',subst).
+r('cirkumfleks',subst).
+r('cirkumcid',tr).
+r('cirkuler',subst).
+r('cirkul',ntr).
+r('cirku',subst).
+r('cirkonstanc',subst).
+r('cirkonferenc',subst).
+r('cirkl',subst).
+r('cirkel',subst).
+r('cirkaet',subst).
+r('cirk',subst).
+r('cir',subst).
+r('ciprined',subst).
+r('ciprin',best).
+r('cipresac',subst).
+r('cipres',subst).
+r('ciperac',subst).
+r('cinik',adj).
+r('cindr',subst).
+r('cinc',ntr).
+r('cinam',subst).
+r('cinabr',subst).
+r('cimitar',subst).
+r('cimed',subst).
+r('cimbal',subst).
+r('cimati',subst).
+r('cim',subst).
+r('cilindr',subst).
+r('cili',subst).
+r('cikut',subst).
+r('cikori',subst).
+r('cikonied',subst).
+r('cikoni',subst).
+r('ciklotron',subst).
+r('ciklop',subst).
+r('ciklon',subst).
+r('cikloid',subst).
+r('ciklamen',subst).
+r('cikl',subst).
+r('cikatr',subst).
+r('cikad',subst).
+r('cign',best).
+r('cigared',subst).
+r('cigar',subst).
+r('cigan',subst).
+r('cifer',subst).
+r('cidr',subst).
+r('cidoni',subst).
+r('cidar',subst).
+r('cicer',subst).
+r('cic',subst).
+r('cibori',subst).
+r('cibol',subst).
+r('cibet',subst).
+r('cibernetik',subst).
+r('cian',subst).
+r('cezur',subst).
+r('cezi',subst).
+r('cetoni',subst).
+r('ceter',adj).
+r('cetac',subst).
+r('cervik',subst).
+r('cerved',subst).
+r('cerv',best).
+r('ceruz',subst).
+r('cerumen',subst).
+r('cert',adj).
+r('cerkopiteked',subst).
+r('cerkopitek',best).
+r('ceri',subst).
+r('cerezin',subst).
+r('ceremoni',subst).
+r('cerefoli',subst).
+r('cerebel',subst).
+r('cereal',subst).
+r('cercis',subst).
+r('cerb',subst).
+r('cerast',best).
+r('ceramik',subst).
+r('cerambik',subst).
+r('cep',subst).
+r('cenzur',tr).
+r('cenzor',subst).
+r('centripet',adj).
+r('centriol',subst).
+r('centrifug',adj).
+r('centraliz',tr).
+r('central',subst).
+r('centr',subst).
+r('centimetr',subst).
+r('centim',subst).
+r('centilitr',subst).
+r('centigram',subst).
+r('centiar',subst).
+r('centi',pref).
+r('centezimal',adj).
+r('centaŭre',subst).
+r('centaŭr',subst).
+r('centav',subst).
+r('cens',verb).
+r('cenotaf',subst).
+r('cenoman',subst).
+r('cenobit',subst).
+r('cend',subst).
+r('cement',subst).
+r('cembr',subst).
+r('celuloz',subst).
+r('celuloid',subst).
+r('celulit',subst).
+r('celoidin',subst).
+r('celofan',subst).
+r('celiaki',subst).
+r('celest',subst).
+r('celeri',subst).
+r('celebr',tr).
+r('celastrac',subst).
+r('celakant',subst).
+r('celadon',subst).
+r('cel',verb).
+r('cekum',subst).
+r('cejan',subst).
+r('cefalotorak',subst).
+r('cefalopod',subst).
+r('cedrat',subst).
+r('cedr',subst).
+r('ced',ntr).
+r('cece',subst).
+r('car',subst).
+r('buŝel',subst).
+r('buŝ',subst).
+r('buĥt',subst).
+r('buĝet',subst).
+r('buĉ',tr).
+r('buzuk',subst).
+r('buton',subst).
+r('butler',subst).
+r('butik',subst).
+r('buter',subst).
+r('bute',subst).
+r('bust',subst).
+r('busprit',subst).
+r('bus',subst).
+r('burĝon',subst).
+r('burĝ',subst).
+r('burs',subst).
+r('burokrati',subst).
+r('burokrat',subst).
+r('buro',subst).
+r('burnus',subst).
+r('burlesk',adj).
+r('burkin',subst).
+r('burjat',adj).
+r('burg',subst).
+r('bure',subst).
+r('burd',subst).
+r('burbon',subst).
+r('burask',subst).
+r('bunt',adj).
+r('bunrak',subst).
+r('bumerang',subst).
+r('bum',subst).
+r('bulvard',subst).
+r('bulten',subst).
+r('bulk',subst).
+r('buljon',subst).
+r('bulgar',subst).
+r('bulen',subst).
+r('bule',subst).
+r('buldoz',subst).
+r('buldog',subst).
+r('bulb',subst).
+r('bul',subst).
+r('buksac',subst).
+r('buks',subst).
+r('bukolik',subst).
+r('bukl',subst).
+r('buked',subst).
+r('bukcen',subst).
+r('buk',subst).
+r('bugenvil',subst).
+r('bufr',subst).
+r('bufon',subst).
+r('bufed',subst).
+r('bufed',subst).
+r('buf',best).
+r('budĝet',subst).
+r('buduar',subst).
+r('budle',subst).
+r('budh',subst).
+r('buda',subst).
+r('bud',subst).
+r('bucer',subst).
+r('bubu',subst).
+r('bubon',subst).
+r('bubal',subst).
+r('bub',subst).
+r('bu',subst).
+r('brutal',adj).
+r('brut',subst).
+r('brust',subst).
+r('brusk',tr).
+r('brun',adj).
+r('brul',ntr).
+r('bru',ntr).
+r('broŝur',subst).
+r('broĉ',subst).
+r('brov',subst).
+r('bros',subst).
+r('bronz',subst).
+r('bronkit',subst).
+r('bronk',subst).
+r('bromeliac',subst).
+r('brom',subst).
+r('brokol',subst).
+r('brokant',tr).
+r('brok',tr).
+r('brog',tr).
+r('brodkast',verb).
+r('brod',tr).
+r('briĝ',subst).
+r('briz',subst).
+r('brit',subst).
+r('brioĉ',subst).
+r('brindz',subst).
+r('briliant',subst).
+r('bril',ntr).
+r('brik',subst).
+r('brigad',subst).
+r('brig',subst).
+r('brid',subst).
+r('breĉ',subst).
+r('brevier',subst).
+r('bret',subst).
+r('brems',subst).
+r('brelok',subst).
+r('bred',tr).
+r('braŭning',subst).
+r('braĥicefal',subst).
+r('braĝ',subst).
+r('bravisim',adv).
+r('brav',adj).
+r('brasikac',subst).
+r('brasik',subst).
+r('branĉ',subst).
+r('brankard',subst).
+r('brank',subst).
+r('brand',subst).
+r('bran',subst).
+r('braman',subst).
+r('bram',subst).
+r('brakte',subst).
+r('brakicefal',subst).
+r('brak',subst).
+r('brajl',subst).
+r('brajl',tr).
+r('bradip',subst).
+r('bracelet',subst).
+r('boŝ',subst).
+r('boĝi',subst).
+r('bovling',subst).
+r('bovl',subst).
+r('boved',subst).
+r('bov',subst).
+r('botel',subst).
+r('botaŭr',subst).
+r('botanik',subst).
+r('bot',subst).
+r('boston',subst).
+r('boston',subst).
+r('boson',subst).
+r('bosn',subst).
+r('bosk',subst).
+r('bosanov',subst).
+r('bors',subst).
+r('borneol',subst).
+r('born',subst).
+r('bori',subst).
+r('border',tr).
+r('bordel',subst).
+r('bord',subst).
+r('boraks',subst).
+r('boragac',subst).
+r('borag',subst).
+r('bor',tr).
+r('bor',subst).
+r('bonz',subst).
+r('bonus',subst).
+r('bonob',subst).
+r('bonifik',subst).
+r('bong',subst).
+r('bon',adj).
+r('bombon',subst).
+r('bombiksed',subst).
+r('bombiks',subst).
+r('bombicil',subst).
+r('bombazin',subst).
+r('bombast',subst).
+r('bombard',tr).
+r('bombakac',subst).
+r('bombak',subst).
+r('bomb',subst).
+r('bolŝevist',subst).
+r('bolŝevism',subst).
+r('bolŝevik',subst).
+r('bolus',subst).
+r('bolt',subst).
+r('bolivud',subst).
+r('bolid',subst).
+r('boletac',subst).
+r('bolet',subst).
+r('boler',subst).
+r('bolard',subst).
+r('bol',ntr).
+r('boks',ntr).
+r('bokal',subst).
+r('bojkot',tr).
+r('bojar',subst).
+r('boj',verb).
+r('bogomil',subst).
+r('bodisatv',subst).
+r('bodi',subst).
+r('bocvan',subst).
+r('bobsled',subst).
+r('boben',subst).
+r('bobel',subst).
+r('boat',subst).
+r('board',verb).
+r('boaed',subst).
+r('boac',subst).
+r('boa',best).
+r('bluz',subst).
+r('blus',subst).
+r('blunderbuz',subst).
+r('bluf',ntr).
+r('blu',adj).
+r('blov',ntr).
+r('blond',adj).
+r('blokad',subst).
+r('blok',subst).
+r('blog',subst).
+r('blit',subst).
+r('blind',adj).
+r('blenore',subst).
+r('blenoragi',subst).
+r('blend',subst).
+r('blend',subst).
+r('blek',ntr).
+r('blefarit',subst).
+r('blazon',subst).
+r('blaz',subst).
+r('blat',subst).
+r('blastomer',subst).
+r('blasfem',tr).
+r('blanket',subst).
+r('blank',adj).
+r('blag',subst).
+r('blabla',verb).
+r('bizon',subst).
+r('bizar',adj).
+r('bivak',subst).
+r('biv',subst).
+r('bitum',subst).
+r('bitnik',subst).
+r('bit',subst).
+r('bit',subst).
+r('bisturi',subst).
+r('bistr',subst).
+r('bismut',subst).
+r('biskvit',subst).
+r('bisin',subst).
+r('bisekc',verb).
+r('biret',subst).
+r('bird',subst).
+r('biplan',subst).
+r('bioĥemi',subst).
+r('biotop',subst).
+r('biostatistik',subst).
+r('biosfer',subst).
+r('biopsi',subst).
+r('biontologi',subst).
+r('bionik',subst).
+r('biomeĥanik',subst).
+r('biometri',subst).
+r('biomekanik',subst).
+r('biomas',subst).
+r('biologi',subst).
+r('biolog',subst).
+r('biokemi',subst).
+r('biografi',subst).
+r('biograf',subst).
+r('biogas',subst).
+r('biofizik',subst).
+r('bioenergi',subst).
+r('biodiversec',subst).
+r('biodinamik',subst).
+r('bio',pref).
+r('binom',subst).
+r('binokl',subst).
+r('bing',subst).
+r('bind',tr).
+r('bimetalism',subst).
+r('bilĝ',subst).
+r('bilet',subst).
+r('bild',subst).
+r('bilbok',subst).
+r('bilard',subst).
+r('bilanc',subst).
+r('bil',subst).
+r('bikŝu',subst).
+r('biks',subst).
+r('bikin',subst).
+r('bijekci',subst).
+r('bigot',subst).
+r('bigami',subst).
+r('bifstek',subst).
+r('bier',subst).
+r('bienal',subst).
+r('bien',subst).
+r('biel',subst).
+r('bidermajr',subst).
+r('bide',subst).
+r('bid',subst).
+r('bicikl',subst).
+r('biceps',subst).
+r('bibliotek',subst).
+r('bibliografi',subst).
+r('bibliograf',subst).
+r('bias',subst).
+r('bezon',tr).
+r('bezoar',subst).
+r('bevel',subst).
+r('betulac',subst).
+r('betul',subst).
+r('betonik',subst).
+r('beton',subst).
+r('betel',subst).
+r('bet',subst).
+r('besti',subst).
+r('best',subst).
+r('berserk',subst).
+r('bern',tr).
+r('berkeli',subst).
+r('berili',subst).
+r('beril',subst).
+r('beriber',subst).
+r('bergamot',subst).
+r('beret',subst).
+r('berberis',subst).
+r('ber',subst).
+r('benzol',subst).
+r('benzodiazepin',subst).
+r('benzo',subst).
+r('benzin',subst).
+r('benzen',subst).
+r('benk',subst).
+r('benjet',subst).
+r('benin',subst).
+r('benefic',subst).
+r('benediktan',subst).
+r('bend',subst).
+r('ben',tr).
+r('bemol',subst).
+r('belveder',subst).
+r('beluĉ',subst).
+r('belorusi',subst).
+r('belorus',subst).
+r('beliz',subst).
+r('belg',subst).
+r('beletristik',subst).
+r('beletr',subst).
+r('beladon',subst).
+r('bel',adj).
+r('bekvadrat',subst).
+r('bekerel',subst).
+r('bek',subst).
+r('bej',subst).
+r('behaviorism',subst).
+r('begoniac',subst).
+r('begoni',subst).
+r('beduen',subst).
+r('bedaŭr',tr).
+r('bed',subst).
+r('beb',subst).
+r('beat',adj).
+r('be',ntr).
+r('baŭm',ntr).
+r('baŭksit',subst).
+r('baŭdruĉ',subst).
+r('baŭd',subst).
+r('baŭ',subst).
+r('baŝlik',subst).
+r('baŝibozuk',subst).
+r('bazuk',subst).
+r('bazilisk',subst).
+r('bazilik',subst).
+r('bazili',subst).
+r('bazar',subst).
+r('bazalt',subst).
+r('baz',subst).
+r('bavar',subst).
+r('batu',verb).
+r('batrak',subst).
+r('batist',subst).
+r('batik',subst).
+r('bateri',subst).
+r('batat',subst).
+r('batalion',subst).
+r('batal',ntr).
+r('batak',subst).
+r('bat',verb).
+r('baston',subst).
+r('bastion',subst).
+r('bastard',subst).
+r('bast',subst).
+r('baskul',subst).
+r('basketbal',subst).
+r('bask',subst).
+r('basi',subst).
+r('basen',subst).
+r('basbal',subst).
+r('bas',subst).
+r('barĝ',subst).
+r('barĉ',subst).
+r('bart',subst).
+r('baroskop',subst).
+r('baron',subst).
+r('barometr',subst).
+r('barok',subst).
+r('barograf',subst).
+r('barmicv',subst).
+r('barkarol',subst).
+r('bark',subst).
+r('barjon',subst).
+r('bariton',subst).
+r('barit',subst).
+r('barikad',subst).
+r('barier',subst).
+r('bari',subst).
+r('bareĝ',subst).
+r('barem',subst).
+r('barelief',subst).
+r('barel',subst).
+r('barejn',subst).
+r('bard',subst).
+r('barbud',subst).
+r('barbir',subst).
+r('barbarism',subst).
+r('barbar',subst).
+r('barbakan',subst).
+r('barb',subst).
+r('barakt',ntr).
+r('barak',subst).
+r('bar',tr).
+r('bapt',tr).
+r('baobab',subst).
+r('banĝ',subst).
+r('bant',subst).
+r('bankrot',ntr).
+r('bankiz',subst).
+r('bankier',subst).
+r('banked',subst).
+r('bank',subst).
+r('banjan',subst).
+r('bangladeŝ',subst).
+r('banduri',subst).
+r('bandoni',subst).
+r('bandit',subst).
+r('banderol',subst).
+r('bandaĝ',subst).
+r('band',subst).
+r('bananujac',subst).
+r('banan',subst).
+r('banal',adj).
+r('ban',tr).
+r('bambu',subst).
+r('balzaminac',subst).
+r('balzamin',subst).
+r('balzam',subst).
+r('balustrad',subst).
+r('balustr',subst).
+r('balte',subst).
+r('balt',subst).
+r('balot',ntr).
+r('balon',subst).
+r('balkon',subst).
+r('balistik',subst).
+r('balist',subst).
+r('balg',subst).
+r('balet',subst).
+r('balened',subst).
+r('balen',best).
+r('baled',subst).
+r('baldaken',subst).
+r('balbut',tr).
+r('balbo',subst).
+r('balast',subst).
+r('balancel',subst).
+r('balanc',tr).
+r('balan',subst).
+r('balan',subst).
+r('balalajk',subst).
+r('balafon',subst).
+r('balad',subst).
+r('bala',tr).
+r('bal',subst).
+r('bakŝiŝ',subst).
+r('bakteriologi',subst).
+r('bakteriolog',subst).
+r('bakteriofag',subst).
+r('bakteri',subst).
+r('bakgamon',subst).
+r('bakelit',subst).
+r('bakanal',subst).
+r('bakalaŭr',subst).
+r('bak',tr).
+r('bajt',subst).
+r('bajonet',subst).
+r('bajader',subst).
+r('baha',subst).
+r('bagn',subst).
+r('bagaĝ',subst).
+r('bagatel',subst).
+r('badminton',subst).
+r('bacil',subst).
+r('babuŝ',subst).
+r('babord',subst).
+r('babirus',subst).
+r('babil',tr).
+r('baba',subst).
+r('aŭtun',subst).
+r('aŭtoĥton',subst).
+r('aŭtoritat',subst).
+r('aŭtor',subst).
+r('aŭtopsi',subst).
+r('aŭtonomi',subst).
+r('aŭtonom',adj).
+r('aŭtomorfi',subst).
+r('aŭtomobil',subst).
+r('aŭtomatik',subst).
+r('aŭtomat',subst).
+r('aŭtomaci',subst).
+r('aŭtokton',subst).
+r('aŭtokrati',subst).
+r('aŭtokrat',subst).
+r('aŭtografi',subst).
+r('aŭtograf',subst).
+r('aŭtogir',subst).
+r('aŭtofagi',subst).
+r('aŭtodidakt',subst).
+r('aŭtodafe',subst).
+r('aŭtobus',subst).
+r('aŭtobiografi',subst).
+r('aŭtism',subst).
+r('aŭtentik',adj).
+r('aŭtent',adj).
+r('aŭtarki',subst).
+r('aŭtarci',subst).
+r('aŭt',subst).
+r('aŭstralopitek',best).
+r('aŭstr',subst).
+r('aŭspici',subst).
+r('aŭskult',tr).
+r('aŭror',subst).
+r('aŭrikul',subst).
+r('aŭrikl',subst).
+r('aŭreol',subst).
+r('aŭl',subst).
+r('aŭked',subst).
+r('aŭkci',subst).
+r('aŭk',subst).
+r('aŭgust',subst).
+r('aŭgur',subst).
+r('aŭditori',subst).
+r('aŭdienc',subst).
+r('aŭdac',ntr).
+r('aŭd',tr).
+r('aŝram',subst).
+r('aŝkenaz',subst).
+r('aĵur',adj).
+r('aĝiot',ntr).
+r('aĝi',subst).
+r('aĝ',subst).
+r('aĉet',tr).
+r('aĉakatur',subst).
+r('aĉ',suf).
+r('azuleĥ',subst).
+r('aztek',subst).
+r('azot',subst).
+r('azimut',subst).
+r('azil',subst).
+r('azer',subst).
+r('azen',best).
+r('azar',subst).
+r('azale',subst).
+r('avokad',subst).
+r('aviz',subst).
+r('avis',subst).
+r('avikulari',subst).
+r('avid',adj).
+r('aviad',subst).
+r('avi',subst).
+r('avert',tr).
+r('avers',subst).
+r('averi',subst).
+r('averaĝ',subst).
+r('avenu',subst).
+r('aventurin',subst).
+r('aventur',subst).
+r('aven',subst).
+r('avel',subst).
+r('avatar',subst).
+r('avare',subst).
+r('avar',adj).
+r('avantaĝ',subst).
+r('avangard',subst).
+r('avanc',ntr).
+r('aval',subst).
+r('av',parc).
+r('atut',subst).
+r('atropin',subst).
+r('atrofi',subst).
+r('atripl',subst).
+r('atribut',subst).
+r('atribu',tr).
+r('atri',subst).
+r('atrepsi',subst).
+r('atrakci',subst).
+r('atoni',subst).
+r('atom',subst).
+r('atol',subst).
+r('ato',pref).
+r('atmosfer',subst).
+r('atletik',subst).
+r('atlet',subst).
+r('atlas',subst).
+r('ating',tr).
+r('atik',adj).
+r('atest',tr).
+r('atent',adj).
+r('atend',tr).
+r('atenc',tr).
+r('atelier',subst).
+r('ateist',subst).
+r('ateism',subst).
+r('ataŝe',subst).
+r('atavism',subst).
+r('ataksi',subst).
+r('atak',tr).
+r('astronomi',subst).
+r('astronom',subst).
+r('astronaŭt',subst).
+r('astrologi',subst).
+r('astrolog',subst).
+r('astrolab',subst).
+r('astrocit',subst).
+r('astrakan',subst).
+r('astragal',subst).
+r('astr',subst).
+r('astm',subst).
+r('astigmat',adj).
+r('asteroid',subst).
+r('asterisk',subst).
+r('asteri',subst).
+r('asterac',subst).
+r('aster',subst).
+r('asteni',subst).
+r('astaten',subst).
+r('astat',subst).
+r('astaked',subst).
+r('astak',best).
+r('aspr',adj).
+r('aspirin',subst).
+r('aspir',tr).
+r('aspid',subst).
+r('asperul',subst).
+r('asperg',tr).
+r('aspekt',ntr).
+r('asparag',subst).
+r('asonanc',subst).
+r('asoci',subst).
+r('asklepiad',subst).
+r('asket',subst).
+r('askarided',subst).
+r('askarid',subst).
+r('askalon',subst).
+r('asiz',subst).
+r('asist',tr).
+r('asiriologi',subst).
+r('asiriolog',subst).
+r('asimptot',subst).
+r('asimil',tr).
+r('asign',tr).
+r('asidu',adj).
+r('asfodel',subst).
+r('asfiksi',tr).
+r('asfalt',subst).
+r('asesor',subst).
+r('asert',tr).
+r('aseps',subst).
+r('asemble',subst).
+r('asembl',tr).
+r('asekur',tr).
+r('asbest',subst).
+r('asar',subst).
+r('asai',subst).
+r('asafetid',subst).
+r('as',subst).
+r('arŝin',subst).
+r('arĥiv',subst).
+r('arĥitektur',subst).
+r('arĥitekt',subst).
+r('arĥeologi',subst).
+r('arĥeolog',subst).
+r('arĥaism',subst).
+r('arĥaik',adj).
+r('arĝirol',subst).
+r('arĝentan',subst).
+r('arĝent',subst).
+r('arĉ',subst).
+r('arund',subst).
+r('artroz',subst).
+r('artropod',subst).
+r('artritism',subst).
+r('artrit',subst).
+r('artiŝok',subst).
+r('artileri',subst).
+r('artikulaci',subst).
+r('artikol',subst).
+r('artikl',subst).
+r('artik',subst).
+r('artifik',subst).
+r('artez',adj).
+r('arteri',subst).
+r('artemizi',subst).
+r('art',subst).
+r('arsenik',subst).
+r('arsenal',subst).
+r('arsen',subst).
+r('arpeĝ',subst).
+r('arorut',subst).
+r('arom',subst).
+r('arok',tr).
+r('arogant',adj).
+r('arog',tr).
+r('arob',subst).
+r('arnik',subst).
+r('armistic',subst).
+r('armen',subst).
+r('arme',subst).
+r('armatur',subst).
+r('arm',subst).
+r('arleken',subst).
+r('arkiv',subst).
+r('arkitrav',subst).
+r('arkitektur',subst).
+r('arkitekt',subst).
+r('arkipelag',subst).
+r('arkimandrit',subst).
+r('arkiduk',subst).
+r('arketip',subst).
+r('arkeopterik',subst).
+r('arkeologi',subst).
+r('arkeolog',subst).
+r('arkebuz',subst).
+r('arkean',subst).
+r('arke',subst).
+r('arkaism',subst).
+r('arkaik',adj).
+r('arkad',subst).
+r('ark',subst).
+r('aritmetik',subst).
+r('aristolokiac',subst).
+r('aristoloki',subst).
+r('aristokrati',subst).
+r('aristokrat',subst).
+r('arist',subst).
+r('ariergard',subst).
+r('arid',adj).
+r('ari',subst).
+r('arhat',subst).
+r('argument',ntr).
+r('argonaŭt',subst).
+r('argon',subst).
+r('argil',subst).
+r('argan',subst).
+r('arest',tr).
+r('areopag',subst).
+r('areometr',subst).
+r('aren',subst).
+r('arek',subst).
+r('areal',subst).
+r('are',subst).
+r('ardez',subst).
+r('ardeed',subst).
+r('arde',subst).
+r('ard',ntr).
+r('arbut',subst).
+r('arbust',subst).
+r('arbitraĝ',subst).
+r('arbitraci',subst).
+r('arbitr',adj).
+r('arbed',subst).
+r('arbalest',subst).
+r('arb',subst).
+r('araŭkariac',subst).
+r('araŭkari',subst).
+r('aranĝ',tr).
+r('araneed',subst).
+r('arane',subst).
+r('araliac',subst).
+r('arakid',subst).
+r('arak',subst).
+r('arabesk',subst).
+r('arab',subst).
+r('ara',subst).
+r('ar',subst).
+r('apunt',subst).
+r('apsid',subst).
+r('apsar',subst).
+r('aproksim',ntr).
+r('aprob',tr).
+r('aprior',adj).
+r('april',subst).
+r('aprez',tr).
+r('apretur',subst).
+r('aprec',tr).
+r('apr',subst).
+r('apoĝatur',subst).
+r('apozici',subst).
+r('apoteoz',tr).
+r('apotem',subst).
+r('apotek',subst).
+r('apostrof',subst).
+r('apostol',subst).
+r('aposterior',adj).
+r('apostat',subst).
+r('apori',subst).
+r('apopleksi',subst).
+r('apologi',subst).
+r('apolog',subst).
+r('apokrif',subst).
+r('apokop',subst).
+r('apokalips',subst).
+r('apoge',subst).
+r('apog',tr).
+r('apofiz',subst).
+r('apocinac',subst).
+r('aplomb',subst).
+r('aplik',tr).
+r('aplaŭd',tr).
+r('aplanat',adj).
+r('apik',adj).
+r('apiac',subst).
+r('api',subst).
+r('apetit',subst).
+r('apertur',subst).
+r('apert',adj).
+r('aperitiv',subst).
+r('aper',ntr).
+r('apepsi',subst).
+r('apendicit',subst).
+r('apendic',subst).
+r('apelaci',tr).
+r('apaĉ',subst).
+r('apatit',subst).
+r('apati',subst).
+r('aparten',ntr).
+r('apartament',subst).
+r('apart',adj).
+r('aparat',subst).
+r('apanaĝ',subst).
+r('aort',subst).
+r('anĝelus',subst).
+r('anĝel',subst).
+r('anĉov',subst).
+r('anĉ',subst).
+r('anus',subst).
+r('anur',subst).
+r('anunciaci',subst).
+r('anuitat',subst).
+r('antropozofi',subst).
+r('antropozof',subst).
+r('antropomorfism',subst).
+r('antropometri',subst).
+r('antropologi',subst).
+r('antropolog',subst).
+r('antropoid',adj).
+r('antraks',subst).
+r('antracit',subst).
+r('antonomazi',subst).
+r('antonimi',subst).
+r('antonim',subst).
+r('antologi',subst).
+r('antitez',subst).
+r('antisimetri',adj).
+r('antiseps',subst).
+r('antisemit',subst).
+r('antirin',subst).
+r('antipod',subst).
+r('antipirin',subst).
+r('antipati',subst).
+r('antipartikl',subst).
+r('antinomi',subst).
+r('antimon',subst).
+r('antilop',subst).
+r('antikv',adj).
+r('antikrist',subst).
+r('antikrez',subst).
+r('antikorp',subst).
+r('antigv',subst).
+r('antigen',subst).
+r('antifraz',subst).
+r('antifon',subst).
+r('antidot',subst).
+r('anticip',tr).
+r('anticiklon',subst).
+r('antibiotik',subst).
+r('anti',pref).
+r('anter',subst).
+r('anten',subst).
+r('antem',subst).
+r('antecedent',subst).
+r('antagonist',subst).
+r('antagonism',subst).
+r('anser',best).
+r('ans',subst).
+r('anormal',adj).
+r('anoreksi',subst).
+r('anorak',subst).
+r('anonim',adj).
+r('anoniac',subst).
+r('anonc',tr).
+r('anon',subst).
+r('anomali',subst).
+r('anod',subst).
+r('anobied',subst).
+r('anobi',best).
+r('anksi',subst).
+r('ankr',subst).
+r('ankiloz',subst).
+r('anjon',subst).
+r('aniz',subst).
+r('anime',subst).
+r('animal',subst).
+r('animaci',subst).
+r('anim',subst).
+r('anilin',subst).
+r('anihilaci',subst).
+r('anhidr',adj).
+r('anhel',ntr).
+r('angvised',subst).
+r('angvis',best).
+r('angul',subst).
+r('angor',subst).
+r('anglikan',subst).
+r('angl',subst).
+r('angin',subst).
+r('angiled',subst).
+r('angil',best).
+r('angi',subst).
+r('angelik',subst).
+r('anfrakt',subst).
+r('aneŭrism',subst).
+r('anet',subst).
+r('anestez',tr).
+r('anemon',subst).
+r('anemometr',subst).
+r('anemi',subst).
+r('anelid',subst).
+r('aneks',tr).
+r('anekdot',subst).
+r('anduj',subst).
+r('android',subst).
+r('androgin',subst).
+r('andezit',subst).
+r('andant',subst).
+r('anaĥoret',subst).
+r('anatomi',subst).
+r('anatom',subst).
+r('anatem',tr).
+r('anastigmat',adj).
+r('anased',subst).
+r('anas',best).
+r('anarĥi',subst).
+r('anarki',subst).
+r('anapest',subst).
+r('ananas',subst).
+r('anamnez',subst).
+r('analogi',subst).
+r('analog',adj).
+r('analiz',tr).
+r('analitik',subst).
+r('analgezik',subst).
+r('analgezi',subst).
+r('analfabet',subst).
+r('analekt',subst).
+r('anal',subst).
+r('anakronism',subst).
+r('anakoret',subst).
+r('anakolut',subst).
+r('anakardiac',subst).
+r('anakardi',subst).
+r('anagram',subst).
+r('anagal',subst).
+r('anafor',subst).
+r('anaerobi',adj).
+r('anabol',subst).
+r('anabaptist',subst).
+r('anabaptism',subst).
+r('amuz',tr).
+r('amulet',subst).
+r('amput',tr).
+r('ampol',subst).
+r('amplitud',subst).
+r('amplifikator',subst).
+r('amplifik',tr).
+r('amplif',tr).
+r('ampleks',subst).
+r('ampermetr',subst).
+r('ampelops',subst).
+r('amortiz',tr).
+r('amorf',adj).
+r('amor',subst).
+r('amonit',subst).
+r('amoniak',subst).
+r('amnezi',subst).
+r('amnesti',subst).
+r('amiŝ',subst).
+r('amin',subst).
+r('amik',subst).
+r('amid',subst).
+r('amianti',subst).
+r('amfor',subst).
+r('amfiteatr',subst).
+r('amfikrin',adj).
+r('amfibraĥ',subst).
+r('amfibrak',subst).
+r('amfibi',subst).
+r('ametist',subst).
+r('americi',subst).
+r('ament',subst).
+r('amendament',subst).
+r('amend',tr).
+r('amel',subst).
+r('ameb',subst).
+r('ambulanc',subst).
+r('ambrozi',subst).
+r('ambr',subst).
+r('ambos',subst).
+r('ambon',subst).
+r('ambl',subst).
+r('ambigu',adj).
+r('ambici',subst).
+r('ambasador',subst).
+r('ambasad',subst).
+r('amazon',subst).
+r('amator',subst).
+r('amas',subst).
+r('amarilidac',subst).
+r('amarilid',subst).
+r('amarant',subst).
+r('amar',adj).
+r('amanit',subst).
+r('amalgam',tr).
+r('am',tr).
+r('alĥemi',subst).
+r('alĉemil',subst).
+r('alvus',subst).
+r('alveol',subst).
+r('aluvi',subst).
+r('alun',subst).
+r('alumini',subst).
+r('alumin',subst).
+r('alumet',subst).
+r('alud',tr).
+r('altruist',subst).
+r('altruism',subst).
+r('altitud',subst).
+r('alternator',subst).
+r('alternativ',subst).
+r('alternanc',subst).
+r('altern',ntr).
+r('alte',subst).
+r('altar',subst).
+r('altan',subst).
+r('alt',adj).
+r('alsin',subst).
+r('alpinist',subst).
+r('alpar',subst).
+r('alpak',subst).
+r('alp',subst).
+r('aloz',best).
+r('alopeci',subst).
+r('alopati',subst).
+r('alonĝ',subst).
+r('aloj',subst).
+r('alofon',subst).
+r('alo',subst).
+r('aln',subst).
+r('almoz',subst).
+r('almanaĥ',subst).
+r('almanak',subst).
+r('alkov',subst).
+r('alkohol',subst).
+r('alkazar',subst).
+r('alkaloid',subst).
+r('alkal',subst).
+r('alkad',subst).
+r('alk',best).
+r('aliz',subst).
+r('aliteraci',subst).
+r('aline',subst).
+r('aliment',subst).
+r('alikvot',subst).
+r('alikvant',subst).
+r('aligatored',subst).
+r('aligator',best).
+r('alibi',subst).
+r('alianc',subst).
+r('ali',adj).
+r('algoritm',subst).
+r('algonkin',subst).
+r('alginat',subst).
+r('algebr',subst).
+r('alg',subst).
+r('alfenid',subst).
+r('alfabet',subst).
+r('alf',subst).
+r('aleŭrit',subst).
+r('alez',tr).
+r('aleut',subst).
+r('aleron',subst).
+r('alergi',subst).
+r('aler',subst).
+r('alen',subst).
+r('alel',subst).
+r('alegr',subst).
+r('alegori',subst).
+r('aleator',adj).
+r('ale',subst).
+r('aldehid',subst).
+r('ald',subst).
+r('alcion',subst).
+r('alced',subst).
+r('alce',subst).
+r('alburn',subst).
+r('alburn',best).
+r('albuminuri',subst).
+r('albumin',subst).
+r('albumen',subst).
+r('album',subst).
+r('albizi',subst).
+r('albin',subst).
+r('albigens',subst).
+r('alberg',subst).
+r('albatros',best).
+r('albatred',subst).
+r('alban',subst).
+r('alb',subst).
+r('alaŭded',subst).
+r('alaŭd',subst).
+r('alarm',subst).
+r('alabastr',subst).
+r('al',subst).
+r('akĉent',subst).
+r('akvilegi',subst).
+r('akvifoliac',subst).
+r('akvifoli',subst).
+r('akvedukt',subst).
+r('akvatint',subst).
+r('akvari',subst).
+r('akvarel',subst).
+r('akvamarin',subst).
+r('akvafort',subst).
+r('akv',subst).
+r('akuŝ',tr).
+r('akuzativ',subst).
+r('akuz',tr).
+r('akut',adj).
+r('akustik',subst).
+r('akurat',adj).
+r('akupunktur',subst).
+r('akumulator',subst).
+r('akumul',tr).
+r('aktual',adj).
+r('aktor',subst).
+r('aktiv',adj).
+r('aktinium',subst).
+r('aktini',subst).
+r('aktin',subst).
+r('akt',subst).
+r('akson',subst).
+r('aksiom',subst).
+r('aksel',subst).
+r('aks',subst).
+r('akrostiĥ',subst).
+r('akropol',subst).
+r('akroniĉ',subst).
+r('akronim',subst).
+r('akromat',adj).
+r('akrobat',subst).
+r('akrided',subst).
+r('akrid',best).
+r('akribi',subst).
+r('akreditiv',subst).
+r('akredit',tr).
+r('akreci',subst).
+r('akre',subst).
+r('akr',adj).
+r('akr',subst).
+r('akordion',subst).
+r('akord',subst).
+r('akonit',subst).
+r('akompan',tr).
+r('akomod',tr).
+r('akolit',subst).
+r('akn',subst).
+r('akme',subst).
+r('aklam',tr).
+r('akir',tr).
+r('akile',subst).
+r('akciz',subst).
+r('akcipitred',subst).
+r('akcipitr',subst).
+r('akcident',subst).
+r('akci',subst).
+r('akcesor',adj).
+r('akcept',tr).
+r('akcent',subst).
+r('akcel',tr).
+r('akaĵu',subst).
+r('akar',subst).
+r('akapar',tr).
+r('akant',subst).
+r('akademi',subst).
+r('akaci',subst).
+r('ajut',subst).
+r('ajurved',subst).
+r('ajmar',subst).
+r('ajl',subst).
+r('ajgen',subst).
+r('ajatol',subst).
+r('ain',best).
+r('ailant',subst).
+r('aikid',subst).
+r('aidos',subst).
+r('aides',subst).
+r('agropir',subst).
+r('agronomi',subst).
+r('agronom',subst).
+r('agrikultur',subst).
+r('agres',tr).
+r('agraf',subst).
+r('agrabl',adj).
+r('agr',subst).
+r('agord',tr).
+r('agorafobi',subst).
+r('agoni',subst).
+r('agnostik',adj).
+r('agnosk',tr).
+r('agnat',subst).
+r('aglutinogen',subst).
+r('aglutinin',subst).
+r('aglutin',tr).
+r('aglomer',tr).
+r('agl',subst).
+r('agit',tr).
+r('agent',subst).
+r('agend',subst).
+r('agav',subst).
+r('agatid',subst).
+r('agat',subst).
+r('agarikac',subst).
+r('agarik',subst).
+r('agaragar',subst).
+r('agap',subst).
+r('agac',tr).
+r('ag',ntr).
+r('afust',subst).
+r('aftoz',subst).
+r('aft',subst).
+r('afrikat',subst).
+r('afrank',tr).
+r('aforism',subst).
+r('afoni',subst).
+r('aflikt',tr).
+r('afiŝ',subst).
+r('afin',adj).
+r('afiks',subst).
+r('afided',subst).
+r('afid',subst).
+r('afgani',subst).
+r('afgan',subst).
+r('afer',subst).
+r('afeli',subst).
+r('afektiv',adj).
+r('afekt',tr).
+r('afekci',subst).
+r('afazi',subst).
+r('afabl',adj).
+r('aerostat',subst).
+r('aerosol',subst).
+r('aeroplan',subst).
+r('aeronaŭtik',subst).
+r('aeronaŭt',subst).
+r('aerometr',subst).
+r('aerolit',subst).
+r('aerodrom',subst).
+r('aerobi',adj).
+r('aer',subst).
+r('aed',subst).
+r('adz',subst).
+r('advokat',subst).
+r('advers',adj).
+r('adverb',subst).
+r('advent',subst).
+r('adult',ntr).
+r('adstring',adj).
+r('adsorb',tr).
+r('adres',subst).
+r('adrenalin',subst).
+r('ador',tr).
+r('adopt',tr).
+r('adolt',subst).
+r('adolesk',subst).
+r('adob',subst).
+r('admon',tr).
+r('admitanc',subst).
+r('admiralitat',subst).
+r('admiral',subst).
+r('admir',tr).
+r('administraci',subst).
+r('administr',tr).
+r('adjutant',subst).
+r('adjunkt',subst).
+r('adjudik',verb).
+r('adjudant',subst).
+r('adjektiv',subst).
+r('adici',tr).
+r('adiant',subst).
+r('adher',ntr).
+r('adept',subst).
+r('adenin',subst).
+r('adekvat',adj).
+r('adaĝ',subst).
+r('adasism',subst).
+r('adapt',tr).
+r('acipensered',subst).
+r('acipenser',best).
+r('acid',adj).
+r('aceton',subst).
+r('acetilĥolin',subst).
+r('acetilkolin',subst).
+r('acetilen',subst).
+r('acetil',subst).
+r('acetat',subst).
+r('acet',subst).
+r('acerb',adj).
+r('acerac',subst).
+r('acer',subst).
+r('abĵur',verb).
+r('abutment',subst).
+r('abund',adj).
+r('absurd',adj).
+r('abstrakt',adj).
+r('abstinenc',subst).
+r('abstin',ntr).
+r('absorb',tr).
+r('absolv',tr).
+r('absolut',adj).
+r('absint',subst).
+r('absid',subst).
+r('abscis',subst).
+r('absces',subst).
+r('abrupt',adj).
+r('abrotan',subst).
+r('abrikot',subst).
+r('abrazi',tr).
+r('abrakadabr',ntr).
+r('abort',ntr).
+r('aborigen',subst).
+r('abon',tr).
+r('abomen',tr).
+r('abolici',tr).
+r('abol',verb).
+r('aboc',subst).
+r('abnegaci',subst).
+r('ablativ',subst).
+r('ablaci',subst).
+r('abiturient',subst).
+r('abism',subst).
+r('abi',subst).
+r('aberaci',ntr).
+r('abeled',subst).
+r('abel',subst).
+r('abdomen',subst).
+r('abdik',tr).
+r('abaĵur',subst).
+r('abat',subst).
+r('abandon',verb).
+r('abak',subst).
+r('Zimbabv',subst).
+r('Zeŭs',subst).
+r('Zeland',subst).
+r('Zaratuŝtr',subst).
+r('Zamenhof',best).
+r('Zambi',subst).
+r('Vulgat',subst).
+r('Volter',subst).
+r('Volt',subst).
+r('Volg',subst).
+r('Volfgang',subst).
+r('Vodu',subst).
+r('Vladimir',subst).
+r('Vjetnami',subst).
+r('Viŝnu',subst).
+r('Vizbaden',subst).
+r('Vitruvi',subst).
+r('Viskonsin',subst).
+r('Virgini',subst).
+r('Vindoz',subst).
+r('Vincent',subst).
+r('Vinaj',subst).
+r('Vilhelm',subst).
+r('Viktori',subst).
+r('Viktor',subst).
+r('Vezuvi',subst).
+r('Vermont',subst).
+r('Vergili',subst).
+r('Venus',subst).
+r('Venezuel',subst).
+r('Vener',subst).
+r('Vencesla',subst).
+r('Vaĝrajan',subst).
+r('Vatikan',subst).
+r('Vat',best).
+r('Varsovi',subst).
+r('Varingjen',subst).
+r('Valter',subst).
+r('Valoni',subst).
+r('Valeri',subst).
+r('Valenten',subst).
+r('Vajroĉan',subst).
+r('Vajoming',subst).
+r('Vahabism',subst).
+r('Utreĥt',subst).
+r('Utarpradeŝ',subst).
+r('Utarakand',subst).
+r('Utah',subst).
+r('Uson',subst).
+r('Urugvaj',subst).
+r('Uran',subst).
+r('Ural',subst).
+r('Uniks',subst).
+r('Unikod',subst).
+r('Ugand',subst).
+r('Tviter',subst).
+r('Turus',subst).
+r('Turkmeni',subst).
+r('Turki',subst).
+r('Tunizi',subst).
+r('Tucidid',subst).
+r('Troj',subst).
+r('Tripur',subst).
+r('Tripitak',subst).
+r('Trinidad',subst).
+r('Toskani',subst).
+r('Tora',subst).
+r('Tomas',subst).
+r('Togoland',subst).
+r('Tobi',subst).
+r('Tobag',subst).
+r('Tinĉj',subst).
+r('Timote',subst).
+r('Timor',subst).
+r('Tigris',subst).
+r('Tife',subst).
+r('Tician',subst).
+r('Tiberi',subst).
+r('Tet',subst).
+r('Teravad',subst).
+r('Teofil',subst).
+r('Teodor',subst).
+r('Teobald',subst).
+r('Tenesi',subst).
+r('Telangan',subst).
+r('Teksas',subst).
+r('Taĝiki',subst).
+r('Tasmani',subst).
+r('Tanzani',subst).
+r('Tales',subst).
+r('Tade',subst).
+r('Svisi',subst).
+r('Svedi',subst).
+r('Surinam',subst).
+r('Suna',subst).
+r('Sumeri',subst).
+r('Sukot',subst).
+r('Sudan',subst).
+r('Strasburg',subst).
+r('Strabon',subst).
+r('Sten',subst).
+r('Stefan',subst).
+r('Stanislav',subst).
+r('Somali',subst).
+r('Solutre',subst).
+r('Sokrat',subst).
+r('Sloveni',subst).
+r('Slovaki',subst).
+r('Slavon',subst).
+r('Skoti',subst).
+r('Skiti',subst).
+r('Skeld',subst).
+r('Skajp',subst).
+r('Sirius',subst).
+r('Siriak',subst).
+r('Siri',subst).
+r('Sirdarj',subst).
+r('Simon',subst).
+r('Simeon',subst).
+r('Silvestr',subst).
+r('Silvan',subst).
+r('Silezi',subst).
+r('Sikim',subst).
+r('Sigmund',subst).
+r('Sigismund',subst).
+r('Siberi',subst).
+r('Sergi',subst).
+r('Septuagint',subst).
+r('Senek',subst).
+r('Senegal',subst).
+r('Selim',subst).
+r('Sebastian',subst).
+r('Scil',subst).
+r('Scientologi',subst).
+r('Saĥalin',subst).
+r('Saĥalen',subst).
+r('Saturn',subst).
+r('Saskaĉevan',subst).
+r('Sarland',subst).
+r('Santeri',subst).
+r('Sanskrit',subst).
+r('Samg',subst).
+r('Sambr',subst).
+r('Salomon',subst).
+r('Salomon',subst).
+r('Salafism',subst).
+r('Sajan',subst).
+r('Sahar',subst).
+r('Sadam',subst).
+r('Ruso',subst).
+r('Rusi',subst).
+r('Rurik',subst).
+r('Rudolf',subst).
+r('Ruand',subst).
+r('Roĝer',subst).
+r('Roterdam',subst).
+r('Romi',subst).
+r('Rome',subst).
+r('Rom',subst).
+r('Roland',subst).
+r('Rodrig',subst).
+r('Rodos',subst).
+r('Rodolf',subst).
+r('Rodezi',subst).
+r('Robert',subst).
+r('Riman',subst).
+r('Rikard',subst).
+r('Riad',subst).
+r('Renat',subst).
+r('Remington',subst).
+r('Rejnland-Palatinat',subst).
+r('Rejn',subst).
+r('Rejki',subst).
+r('Regensburg',subst).
+r('Reformaci',subst).
+r('Raŭm',subst).
+r('Raĥel',subst).
+r('Raĝastan',subst).
+r('Ramajan',subst).
+r('Rajmund',subst).
+r('Rafael',subst).
+r('Puŝkin',subst).
+r('Purim',subst).
+r('Ptoleme',subst).
+r('Prusi',subst).
+r('Promete',subst).
+r('Principe',subst).
+r('Prag',subst).
+r('Pozidon',subst).
+r('Portugali',subst).
+r('Pompej',subst).
+r('Poluks',subst).
+r('Poli',subst).
+r('Pluton',subst).
+r('Plut',subst).
+r('Plini',subst).
+r('Plejad',subst).
+r('Plaŭt',subst).
+r('Platon',subst).
+r('Pjanĝ',subst).
+r('Pitagor',subst).
+r('Pinokj',subst).
+r('Pinjin',subst).
+r('Pilat',subst).
+r('Petr',subst).
+r('Peterburg',subst).
+r('Peru',subst).
+r('Perse',subst).
+r('Pentekost',subst).
+r('Pensilvani',subst).
+r('Pegaz',subst).
+r('Paŭl',subst).
+r('Patrik',subst).
+r('Pasteŭr',subst).
+r('Paskal',best).
+r('Pask',subst).
+r('Pasion',subst).
+r('Pariz',subst).
+r('Paralimpik',subst).
+r('Paraklet',subst).
+r('Paragvaj',subst).
+r('Papu',subst).
+r('Panĝab',subst).
+r('Pange',subst).
+r('Pali',subst).
+r('Palaŭ',subst).
+r('Pakistan',subst).
+r('Pacifik',subst).
+r('Pabl',subst).
+r('Oĥock',subst).
+r('Oziris',subst).
+r('Ovidi',subst).
+r('Otoman',subst).
+r('Osvald',subst).
+r('Ostend',subst).
+r('Osman',subst).
+r('Oskar',subst).
+r('Oskar',subst).
+r('Oris',subst).
+r('Orion',subst).
+r('Orfe',subst).
+r('Oregon',subst).
+r('Onufri',subst).
+r('Ontari',subst).
+r('Onesim',subst).
+r('Omar',subst).
+r('Oman',subst).
+r('Om',best).
+r('Oliver',subst).
+r('Olimpik',subst).
+r('Olimp',subst).
+r('Oklahom',subst).
+r('Okcidental',subst).
+r('Oka',subst).
+r('Ohi',subst).
+r('Odr',subst).
+r('Odiŝ',subst).
+r('Odise',subst).
+r('Oceani',subst).
+r('Ob',subst).
+r('Noŭruz',subst).
+r('Novosibirsk',subst).
+r('Norvegi',subst).
+r('Nordrejn-Vestfali',subst).
+r('Noaĥ',subst).
+r('Niĉiren',subst).
+r('Nirvan',subst).
+r('Nimeg',subst).
+r('Nil',subst).
+r('Nikola',subst).
+r('Nikodem',subst).
+r('Neŭton',best).
+r('Nevad',subst).
+r('Nestor',subst).
+r('Neptun',subst).
+r('Neper',subst).
+r('Nepal',subst).
+r('Nederland',subst).
+r('Nebrask',subst).
+r('Namur',subst).
+r('Namibi',subst).
+r('Muzaik',subst).
+r('Muhamad',subst).
+r('Mozel',subst).
+r('Mozart',subst).
+r('Mozambik',subst).
+r('Moz',subst).
+r('Moskv',subst).
+r('Mors',subst).
+r('Morfe',subst).
+r('Montenegr',subst).
+r('Montan',subst).
+r('Mongoli',subst).
+r('Monak',subst).
+r('Mocart',subst).
+r('Miŝna',subst).
+r('Miŝn',subst).
+r('Miĥael',subst).
+r('Miĉigan',subst).
+r('Mizoram',subst).
+r('Misuri',subst).
+r('Misur',subst).
+r('Misisipi',subst).
+r('Misisip',subst).
+r('Mirz',subst).
+r('Minotaŭr',subst).
+r('Minesot',subst).
+r('Mikrosoft',subst).
+r('Midelburg',subst).
+r('Meĥlen',subst).
+r('Mezopotami',subst).
+r('Metodi',subst).
+r('Merkur',subst).
+r('Mendelev',subst).
+r('Mence',subst).
+r('Meksiki',subst).
+r('Meksik',subst).
+r('Meklenburgo-Antaŭpomeri',subst).
+r('Megalaj',subst).
+r('Mediterane',subst).
+r('Medi',subst).
+r('Mede',subst).
+r('Maŭric',subst).
+r('Maĥ',subst).
+r('Mate',subst).
+r('Mastriĥt',subst).
+r('Masaĉusec',subst).
+r('Marten',subst).
+r('Mars',subst).
+r('Marok',subst).
+r('Marks',subst).
+r('Mark',subst).
+r('Mariland',subst).
+r('Mari',subst).
+r('Marcial',subst).
+r('Marcel',subst).
+r('Manitob',subst).
+r('Manipur',subst).
+r('Manik',subst).
+r('Malt',subst).
+r('Malkolm',subst).
+r('Malik',subst).
+r('Malavi',subst).
+r('Malajzi',subst).
+r('Maksimilian',subst).
+r('Makintoŝ',subst).
+r('Makedoni',subst).
+r('Majn',subst).
+r('Majenc',subst).
+r('Mahomet',subst).
+r('Mahavir',subst).
+r('Maharaŝtr',subst).
+r('Mahajan',subst).
+r('Mahabarat',subst).
+r('Magreb',subst).
+r('Madjapradeŝ',subst).
+r('Madejr',subst).
+r('Luter',subst).
+r('Luksemburgi',subst).
+r('Luksemburg',subst).
+r('Luk',subst).
+r('Luizian',subst).
+r('Ludovik',best).
+r('Lucian',subst).
+r('Loĵban',subst).
+r('Loven',subst).
+r('London',subst).
+r('Loglan',subst).
+r('Liĥtenŝtejn',subst).
+r('Litovi',subst).
+r('Lionel',subst).
+r('Linuks',subst).
+r('Limburg',subst).
+r('Lilit',subst).
+r('Liguri',subst).
+r('Lieĝ',subst).
+r('Lier',subst).
+r('Libi',subst).
+r('Liberi',subst).
+r('Liban',subst).
+r('Lesot',subst).
+r('Lesb',subst).
+r('Lepsik',subst).
+r('Leopold',subst).
+r('Leonard',subst).
+r('Len',subst).
+r('Lelistad',subst).
+r('Lejbnic',subst).
+r('Lebeg',subst).
+r('Leandr',subst).
+r('Laŭrenc',subst).
+r('Laŭrazi',subst).
+r('Lazar',subst).
+r('Latvi',subst).
+r('Latin',subst).
+r('Lati',subst).
+r('Laptev',subst).
+r('Laplac',subst).
+r('Laos',subst).
+r('Laert',subst).
+r('Ladisla',subst).
+r('Labrador',subst).
+r('Kvirin',subst).
+r('Kuvajt',subst).
+r('Kulomb',best).
+r('Ksitigarb',subst).
+r('Ksenofont',subst).
+r('Ksenofon',subst).
+r('Ksaver',subst).
+r('Kron',subst).
+r('Kroati',subst).
+r('Kriŝn',subst).
+r('Kristofor',subst).
+r('Kristian',subst).
+r('Krist',subst).
+r('Koŝi',subst).
+r('Kortrejk',subst).
+r('Korneli',subst).
+r('Korei',subst).
+r('Koran',subst).
+r('Kopernik',subst).
+r('Kopenhag',subst).
+r('Konstantinopol',subst).
+r('Konstanten',subst).
+r('Konrad',subst).
+r('Kong',subst).
+r('Konfuce',subst).
+r('Konektikut',subst).
+r('Komeni',subst).
+r('Kolĥid',subst).
+r('Kolumbi',subst).
+r('Kolorad',subst).
+r('Kolonj',subst).
+r('Kolombi',subst).
+r('Kluĉevskaj',subst).
+r('Klement',subst).
+r('Klaŭdi',subst).
+r('Kirgizi',subst).
+r('Kipr',subst).
+r('Kimri',subst).
+r('Keral',subst).
+r('Kepler',subst).
+r('Kentuki',subst).
+r('Kenj',subst).
+r('Kelvin',best).
+r('Kebeki',subst).
+r('Kaŭkaz',subst).
+r('Kaŝmir',subst).
+r('Kazimir',subst).
+r('Kazaĥi',subst).
+r('Kastor',subst).
+r('Kaspi',subst).
+r('Kasiope',subst).
+r('Kartezi',subst).
+r('Karon',subst).
+r('Karolin',subst).
+r('Karol',subst).
+r('Karnatak',subst).
+r('Karloreĝ',subst).
+r('Karesm',subst).
+r('Kara',subst).
+r('Kaprikorn',subst).
+r('Kapitol',subst).
+r('Kansas',subst).
+r('Kamĉatk',subst).
+r('Kampin',subst).
+r('Kamil',subst).
+r('Kameruni',subst).
+r('Kamerun',subst).
+r('Kamboĝ',subst).
+r('Kam',subst).
+r('Kalvin',subst).
+r('Kalvari',subst).
+r('Kaloĉaj',subst).
+r('Kaboverd',subst).
+r('Kabal',subst).
+r('Justinian',subst).
+r('Justen',subst).
+r('Jupiter',subst).
+r('Jul',subst).
+r('Jugoslavi',subst).
+r('Jugoslav',subst).
+r('Jozef',subst).
+r('Jork',subst).
+r('Jordani',subst).
+r('Jordan',best).
+r('Jomkipur',subst).
+r('Johan',subst).
+r('Joakim',subst).
+r('Jid',subst).
+r('Jesu',subst).
+r('Jerusalem',subst).
+r('Jenisej',subst).
+r('Jemen',subst).
+r('Jehov',subst).
+r('Jazon',subst).
+r('Jaroslav',subst).
+r('Japani',subst).
+r('Jansen',subst).
+r('Jamajk',subst).
+r('Jama',subst).
+r('Jakobi',subst).
+r('Jakob',subst).
+r('Izis',subst).
+r('Izidor',subst).
+r('Iv',subst).
+r('Itali',subst).
+r('Istanbul',subst).
+r('Israel',subst).
+r('Island',subst).
+r('Isel',subst).
+r('Irtiŝ',subst).
+r('Irland',subst).
+r('Irene',subst).
+r('Irak',subst).
+r('Iova',subst).
+r('Interlingva',subst).
+r('Inocent',subst).
+r('Indr',subst).
+r('Indiana',subst).
+r('Ilinojs',subst).
+r('Iliad',subst).
+r('Ignac',subst).
+r('Idah',subst).
+r('Id',subst).
+r('Husejn',subst).
+r('Hungari',subst).
+r('Humbert',subst).
+r('Hug',subst).
+r('Hubert',subst).
+r('Horus',subst).
+r('Horaci',subst).
+r('Honkong',subst).
+r('Homer',subst).
+r('Holand',subst).
+r('Hispani',subst).
+r('Hipolit',subst).
+r('Hipokrat',subst).
+r('Hindustan',subst).
+r('Hindukuŝ',subst).
+r('Hinajan',subst).
+r('Himaĉalpradeŝ',subst).
+r('Himalaj',subst).
+r('Hilbert',subst).
+r('Hieronim',subst).
+r('Heĝir',subst).
+r('Heziod',subst).
+r('Hevisid',subst).
+r('Herodot',subst).
+r('Hermit',subst).
+r('Hermes',subst).
+r('Herman',subst).
+r('Herkul',subst).
+r('Hercegovin',subst).
+r('Herakl',subst).
+r('Henrik',subst).
+r('Henegovi',subst).
+r('Hektor',subst).
+r('Havaj',subst).
+r('Hasan',subst).
+r('Harold',subst).
+r('Harlem',subst).
+r('Harian',subst).
+r('Hanafism',subst).
+r('Hampŝir',subst).
+r('Hamburg',subst).
+r('Halovin',subst).
+r('Haloven',subst).
+r('Hag',subst).
+r('Hades',subst).
+r('Gvine',subst).
+r('Gvajan',subst).
+r('Guĝarat',subst).
+r('Gustav',subst).
+r('Gujan',subst).
+r('Gronland',subst).
+r('Groningen',subst).
+r('Grenad',subst).
+r('Greki',subst).
+r('Gregori',subst).
+r('Gravet',subst).
+r('Gotam',subst).
+r('Gonzal',subst).
+r('Gontran',subst).
+r('Gondvan',subst).
+r('Golgot',subst).
+r('Godfred',subst).
+r('Goa',subst).
+r('Glagolic',subst).
+r('Ginevr',subst).
+r('Gilgameŝ',subst).
+r('Gilbert',subst).
+r('Gervaz',subst).
+r('Germani',subst).
+r('Gerard',subst).
+r('Georg',subst).
+r('Gent',subst).
+r('Gemar',subst).
+r('Gelderland',subst).
+r('Ge',subst).
+r('Gaŭs',subst).
+r('Gaston',subst).
+r('Gaspar',subst).
+r('Gana',subst).
+r('Galilej',subst).
+r('Galez',subst).
+r('Gabriel',subst).
+r('Gabon',subst).
+r('Frisi',subst).
+r('Freŭd',subst).
+r('Frederik',subst).
+r('Frankfurt',subst).
+r('Francisk',subst).
+r('Franci',subst).
+r('Fortunat',subst).
+r('Fob',subst).
+r('Florid',subst).
+r('Florian',subst).
+r('Florenc',subst).
+r('Flevoland',subst).
+r('Flandri',subst).
+r('Finni',subst).
+r('Finland',subst).
+r('Filipin',subst).
+r('Filip',subst).
+r('Filibert',subst).
+r('Figar',subst).
+r('Fernand',subst).
+r('Ferdinand',subst).
+r('Fenici',subst).
+r('Feliks',subst).
+r('Fejsbuk',subst).
+r('Farenhejt',subst).
+r('Farad',subst).
+r('Fanar',subst).
+r('Fabrici',subst).
+r('Fabian',subst).
+r('Fabi',subst).
+r('Eŭzebi',subst).
+r('Eŭrop',subst).
+r('Eŭrial',subst).
+r('Eŭrazi',subst).
+r('Eŭler',subst).
+r('Eŭklid',subst).
+r('Eŭgen',subst).
+r('Eŭfrat',subst).
+r('Ezop',subst).
+r('Etiopi',subst).
+r('Estoni',subst).
+r('Esperanti',subst).
+r('Esperant',subst).
+r('Ernest',subst).
+r('Eritre',subst).
+r('Erik',subst).
+r('Erasm',subst).
+r('Epikur',subst).
+r('Epifani',subst).
+r('Ene',subst).
+r('Emilian',subst).
+r('Emil',subst).
+r('Emanuel',subst).
+r('Elize',subst).
+r('Eli',subst).
+r('Elb',subst).
+r('Ekvador',subst).
+r('Ejnŝtejn',subst).
+r('Ejnstejn',subst).
+r('Egipti',subst).
+r('Efes',subst).
+r('Edvard',subst).
+r('Eduard',subst).
+r('Edmund',subst).
+r('Edgar',subst).
+r('Eden',subst).
+r('Duŝanbe',subst).
+r('Dublin',subst).
+r('Drent',subst).
+r('Donald',subst).
+r('Dominik',subst).
+r('Dirak',subst).
+r('Dioskur',subst).
+r('Dionizi',subst).
+r('Dieg',subst).
+r('Dian',subst).
+r('Demokrit',subst).
+r('Demetri',subst).
+r('Delavar',subst).
+r('Dejm',subst).
+r('Dedekind',subst).
+r('David',subst).
+r('Darmapad',subst).
+r('Darm',subst).
+r('Danub',subst).
+r('Daniel',subst).
+r('Dani',subst).
+r('Damian',subst).
+r('Damask',subst).
+r('Dakot',subst).
+r('Dagobert',subst).
+r('Ciril',subst).
+r('Ciprian',subst).
+r('Cion',subst).
+r('Ciceron',subst).
+r('Cezar',subst).
+r('Cerber',subst).
+r('Celsi',subst).
+r('Celesten',subst).
+r('Cefe',subst).
+r('Buĥor',subst).
+r('Buĥar',subst).
+r('Butan',subst).
+r('Burund',subst).
+r('Bulgari',subst).
+r('Bule',subst).
+r('Bruĝ',subst).
+r('Brusel',subst).
+r('Brunsvik',subst).
+r('Brunej',subst).
+r('Brun',subst).
+r('Briti',subst).
+r('Bremen',subst).
+r('Brem',subst).
+r('Brazilj',subst).
+r('Brazili',subst).
+r('Brazil',subst).
+r('Brandenburg',subst).
+r('Brabant',subst).
+r('Bosni',subst).
+r('Boris',subst).
+r('Borel',subst).
+r('Bonifac',subst).
+r('Bonaventur',subst).
+r('Bomarŝe',subst).
+r('Bolivi',subst).
+r('Boleslav',subst).
+r('Bodidarm',subst).
+r('Blazi',subst).
+r('Bizanti',subst).
+r('Bizanci',subst).
+r('Bizanc',subst).
+r('Birm',subst).
+r('Bihar',subst).
+r('Bibli',subst).
+r('Besarabi',subst).
+r('Bertrand',subst).
+r('Bernard',subst).
+r('Berlin',subst).
+r('Bering',subst).
+r('Beovulf',subst).
+r('Beograd',subst).
+r('Benjamen',subst).
+r('Bengal',subst).
+r('Benedikt',subst).
+r('Belgi',subst).
+r('Behemot',subst).
+r('Baĥ',subst).
+r('Bazil',subst).
+r('Batu',subst).
+r('Bartolome',subst).
+r('Barnab',subst).
+r('Barbad',subst).
+r('Barat',subst).
+r('Bankok',subst).
+r('Banaĥ',subst).
+r('Baltik',subst).
+r('Baltazar',subst).
+r('Balkaŝ',subst).
+r('Balduen',subst).
+r('Baktri',subst).
+r('Bajkal',subst).
+r('Baham',subst).
+r('Bagdad',subst).
+r('Bagavadgit',subst).
+r('Baden-Virtemberg',subst).
+r('Babiloni',subst).
+r('Babilon',subst).
+r('Babel',subst).
+r('Aŭstri',subst).
+r('Aŭstrali',subst).
+r('Aŭrelian',subst).
+r('Aŭgusten',subst).
+r('Aŝok',subst).
+r('Aĥil',subst).
+r('Azov',subst).
+r('Azi',subst).
+r('Azeri',subst).
+r('Azerbajĝan',subst).
+r('Avogadr',subst).
+r('Avicen',subst).
+r('Avest',subst).
+r('Avalokiteŝvar',subst).
+r('Atlantik',subst).
+r('Atlantid',subst).
+r('Atlant',subst).
+r('Atalant',subst).
+r('Aski',subst).
+r('Asiri',subst).
+r('Asen',subst).
+r('Asam',subst).
+r('Arĥimed',subst).
+r('Arunaĉalpradeŝ',subst).
+r('Artur',subst).
+r('Artemid',subst).
+r('Arnold',subst).
+r('Arnhem',subst).
+r('Armeni',subst).
+r('Arkt',subst).
+r('Arkansas',subst).
+r('Arizon',subst).
+r('Aristotel',subst).
+r('Aristofan',subst).
+r('Argonaŭt',subst).
+r('Argentin',subst).
+r('Ares',subst).
+r('Aral',subst).
+r('Apolon',subst).
+r('Antverpen',subst).
+r('Antonen',subst).
+r('Anton',subst).
+r('Antarkt',subst).
+r('Anselm',subst).
+r('Angol',subst).
+r('Angli',subst).
+r('Angar',subst).
+r('Andromed',subst).
+r('Andre',subst).
+r('Andrapradeŝ',subst).
+r('Andor',subst).
+r('Anatoli',subst).
+r('Anatol',subst).
+r('Anastazi',subst).
+r('Anabaz',subst).
+r('Amudarj',subst).
+r('Amsterdam',subst).
+r('Amper',best).
+r('Amerik',subst).
+r('Ambrozi',subst).
+r('Amazon',subst).
+r('Amade',subst).
+r('Alĝeri',subst).
+r('Alzac',subst).
+r('Altaj',subst).
+r('Altair',subst).
+r('Almat',subst).
+r('Alfred',subst).
+r('Alfons',subst).
+r('Aleksandri',subst).
+r('Aleksandr',subst).
+r('Albert',subst).
+r('Albert',subst).
+r('Albani',subst).
+r('Alask',subst).
+r('Alan',subst).
+r('Alah',subst).
+r('Alabam',subst).
+r('Akad',subst).
+r('Ahmadism',subst).
+r('Agni',subst).
+r('Afrodit',subst).
+r('Afrik',subst).
+r('Adrian',subst).
+r('Adolf',subst).
+r('Adam',subst).
+r('Adalbert',subst).
+r('Abidarm',subst).
+r('Abel',subst).
+r('Abas',subst).

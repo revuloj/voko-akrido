@@ -1,24 +1,28 @@
-fv('Zamenhof',pers) --> "Zamenhof".
-fv('Gandhi',pers) --> "Gandhi".
-fv('Niels',pers) --> "Niels".
-fv('Sartre',pers) --> "Sartre".
-fv('Harry',pers) --> "Harry".
-fv('Volapük',subst) --> "Volapük".
-fv('Aleksandroviĉ',best) --> "Aleksandroviĉ".
-fv('Berlioz',best) --> "Berlioz".
-fv('Bricard',best) --> "Bricard".
-fv('Bright',best) --> "Bright".
-fv('Murphy',best) --> "Murphy".
-fv('Reiersøl',best) --> "Reiersøl".
-fv('Vaŝington',best) --> "Vaŝington".
-fv('Wüster',best) --> "Wüster".
-fv('Brendon',best) --> "Brendon".
-fv('Clark',best) --> "Clark".
-fv('Cecil',best) --> "Cecil".
-fv('Bean',best) --> "Bean".
-fv('Thebais',best) --> "Thebais".
-fv('Rudolf',best) --> "Rudolf".
-fv('Steiner',best) --> "Steiner".
-fv('Shakespeare',best) --> "Shakespeare".
-fv('Charles',best) --> "Charles".
-fv('Wheatstone',best) --> "Wheatstone".
+fv('Zamenhof',pers).
+fv('Gandhi',pers).
+fv('Niels',pers).
+fv('Sartre',pers).
+fv('Harry',pers).
+fv('Volapük',subst).
+fv('Aleksandroviĉ',pers).
+fv('Berlioz',pers).
+fv('Bricard',pers).
+fv('Bright',pers).
+fv('Cebaot',pers).
+fv('Izrael',subst).
+fv('Murphy',pers).
+fv('Reiersøl',pers).
+fv('Vaŝington',pers).
+fv('Wüster',pers).
+fv('Brendon',pers).
+fv('Clark',pers).
+fv('Cecil',pers).
+fv('Bean',pers).
+fv('Thebais',pers).
+fv('Rudolf',pers).
+fv('Steiner',pers).
+fv('Shakespeare',pers).
+fv('Charles',pers).
+fv('Wheatstone',pers).
+fv('Alfred',pers).
+
