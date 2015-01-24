@@ -23,9 +23,13 @@ v('Rim',subst) --> "Rim".
 v('proks',adv) --> "proks".
 v('vd',verb) --> "vd".
 v('SAT',subst) --> "SAT".
+v('OA',subst) --> "OA".
+v('PV',subst) --> "PV".
 v('PIV',subst) --> "PIV".
 v('PIV-oj',subst) --> "PIV-oj".
 v('UEA',subst) --> "UEA".
 v('n-a',adj) --> "n-a".
 v('s-ro',best) --> "s-ro".
 v('d-ro',best) --> "d-ro".
+v('DNA',subst) --> "DNA".
+v('RNA',subst) --> "RNA".

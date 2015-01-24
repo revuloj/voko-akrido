@@ -10,7 +10,7 @@
 :- consult('vrt/v_revo_evitindaj').
 
 info :-
-  format('revo_art_txt(XmlInput,Txt); analizu_revo_art(Art); analizu_revo_art_litero(Komenco)').
+  format('analizu_revo_art(Art); analizu_revo_art_litero(Komenco)').
 
 :- dynamic(verda/2).
 
