@@ -1,4 +1,4 @@
-:- multifile r/4, v/4.
+:- multifile r/4, v/4, mlg/1.
 %:- dynamic fv//2.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,6 +24,7 @@ term_expansion(fv(Vrt,Spc),(fv(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 
 :-consult('vrt/v_esceptoj.pl').
 :-consult('vrt/v_mallongigoj.pl').
+:-consult('vrt/v_revo_mallongigoj.pl').
 :-consult('vrt/v_elementoj.pl').
 :-consult('vrt/v_vortoj.pl').
 :-consult('vrt/v_fremdvortoj.pl').
