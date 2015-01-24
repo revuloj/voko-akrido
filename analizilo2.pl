@@ -2,9 +2,9 @@
 
 :-consult('vortaro.pl').
 %%:-consult('derivado.pl').
-:-consult('vortana.pl').
+:-consult('dcg/vorto_dcg.pl').
 %:-consult('frazana.pl').
-:-consult('legilo4.pl').
+:-consult('dcg/teksto_dcg.pl').
 
 output(html).
 

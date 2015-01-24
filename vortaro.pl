@@ -1,16 +1,16 @@
 :- multifile r/4, v/4.
 
-:-consult('v_esceptoj.pl').
-:-consult('v_mallongigoj.pl').
-:-consult('v_elementoj.pl').
-:-consult('v_vortoj.pl').
+:-consult('vrt/v_esceptoj.pl').
+:-consult('vrt/v_mallongigoj.pl').
+:-consult('vrt/v_elementoj.pl').
+:-consult('vrt/v_vortoj.pl').
 
-:-consult('v_fremdvortoj.pl').
+:-consult('vrt/v_fremdvortoj.pl').
 
 % vicordo gravas, vortelementoj kiel radikoj
 % rekoniĝu nur post la pli longaj "normalaj" radikoj
-:-consult('v_revo_radikoj.pl').
-:-consult('v_radikoj.pl').
+:-consult('vrt/v_revo_radikoj.pl').
+:-consult('vrt/v_radikoj.pl').
 
 
 % ĝeneralaj transformoj de vorspeco 

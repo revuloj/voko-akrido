@@ -1,6 +1,8 @@
 % blankaj listoj de Revo-artikoloj - tiuj vortoj akceptiĝas kvankam neanalizeblaj...
 bl(absid,
    ["αψίς","αψίδος"]).
+bl(adapt,
+   ["SVGA"]).
 bl(akadem,
    ["Knaĥoĥŝveŭpsceg"]).
 bl(akcent,
