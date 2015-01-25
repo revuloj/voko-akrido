@@ -17,10 +17,13 @@ mlg('PIV'). % Plena Ilustrita Vortaro
 mlg('PIV-a'). % rilata al PIV
 mlg('PIV-oj'). % PIV1 + PIV2...
 mlg('PV'). % Plena Vortaro
+mlg('ReVo'). % Reta Votaro
 mlg('RNA'). % ribonukleacido
 mlg('Rim'). % rimarko
 mlg('SAT'). % Sennacia Asocio Tutmonda
+mlg('TEJO'). % Tutmonda Esperanto-Junularo
 mlg('UEA'). % Universala Esperanto Asocio
+mlg('UV'). % Universala Vortaro
 mlg('adv'). % adverbo
 mlg('cm'). % centimetro
 mlg('d-ro'). % doktoro

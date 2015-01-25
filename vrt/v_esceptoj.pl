@@ -7,6 +7,7 @@ r('si/a',adj) --> "sia".
 r('mult/e/kost',adj) --> "multekost".
 r('mult/e/kolor',adj) --> "multekolor".
 r('mult/e/sci',adj) --> "multesci".
+r('mult/e/frukt',adj) --> "multefrukt".
 r('art/e/far',tr) --> "artefar".
 v('unu/j',subst) --> "unuj".
 v('ek/de',prep) --> "ekde".
