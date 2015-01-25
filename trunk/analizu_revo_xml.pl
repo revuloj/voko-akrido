@@ -109,7 +109,10 @@ artikolo_verda_listo_(In) :-
     read_line_to_codes(In,Linio),
     ( Linio == end_of_file -> !
       ;
-      phrase(linio(Art,Vortoj),Linio),
+      once((
+	phrase(linio(Art,Vortoj),Linio)
+	   ; atom_codes(L,Linio), throw(sintakseraro(L))
+      )),
       % debugging:
       % format('~s~n',[Art,Vortoj]),
       atom_codes(Artikolo,Art),
