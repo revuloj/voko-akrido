@@ -21,7 +21,7 @@ txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
 skribo_pado('kontrolitaj').
 %xslt('/usr/bin/xsltproc').
 %lynx('/usr/bin/lynx').
-revo_verda_listo('vrt/revo_verda_listo.pl').
+revo_verda_listo('vrt/revo_verda_listo_provizora.pl').
 
 
 /***
@@ -95,6 +95,7 @@ analizu_revo_art_litero(Litero) :-
 
 artikolo_verda_listo :-
     revo_verda_listo(Infile),
+    format('legas ''~w''~n',[Infile]),
     retractall(verda(_,_)),
     setup_call_cleanup(
       open(Infile,read,In),
@@ -110,15 +111,17 @@ artikolo_verda_listo_(In) :-
       ;
       phrase(linio(Art,Vortoj),Linio),
       % debugging:
-      format('~s~n',[Art,Vortoj]),
+      % format('~s~n',[Art,Vortoj]),
       atom_codes(Artikolo,Art),
       assert(verda(Artikolo,Vortoj)),
       fail % read next line
     )
   ).
 
+/***
 artikolo_verda_listo_testo :-
     revo_verda_listo(Infile),
+    format('legas ''~w''~n',[Infile]).
     setup_call_cleanup(
       open(Infile,read,In),
 (		       
@@ -132,6 +135,8 @@ repeat,
 ),
       close(In)		 
     ).
+***/
+
 
 verda_listo(Art,Listo) :-
   once((

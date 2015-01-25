@@ -3,6 +3,7 @@
 *************/
 v('aĉ',intj).
 v('adiaŭ',intj).
+v('aj',intj).
 v('ajn',advpart).
 v('aĥ',intj).
 v('al',prep).

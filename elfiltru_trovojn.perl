@@ -1,8 +1,12 @@
 #!/usr/bin/perl
 
 $outhtml = 1;
-
 $REVO = "http://retavortaro.de/revo";
+
+if ($ARGV[0] eq '-t') {
+    $outhtml = 0;
+    shift @ARGV;
+}
 
 @files = @ARGV;
 
@@ -39,20 +43,19 @@ for $file (@files) {
 
     if (@eraroj) {
 
+	$fileref = $file; $fileref =~ s|^.*/(.*?)\.html|$1|;
+
         if ($outhtml) {
-	    $fileref = $file; $fileref =~ s|^.*/(.*?)\.html|$1|;
 	    print "<a href='$file'>$fileref</a> ";
 	    print "<a href='$REVO/art/$fileref.html' class='redakti' ";
 	    print "title='artikolo' target='_new'>&#x270E;</a>: ";
-	} else {
-	    print "$file: ";
-	}
 
-        print join(', ',@eraroj);
-
-	if ($outhtml) {
+	    print join(', ',@eraroj);
 	    print "<br/>\n";
 	} else {
+	    print "$fileref: ";
+	    my @err = map { m|>(.*?)</span|; $1 } @eraroj;
+	    print join(', ',@err);
 	    print "\n";
 	}
     }
