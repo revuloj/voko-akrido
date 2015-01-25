@@ -5,32 +5,47 @@
 %    tio pli facilighus fakte, se ni uzus m(..) anstatau mlg(...)?
 
 
-mlg('DNA').
-mlg('Hz').
-mlg('OA').
-mlg('PIV').
-mlg('PIV-oj').
-mlg('PV').
-mlg('RNA').
-mlg('Rim').
-mlg('SAT').
-mlg('UEA').
-mlg('cm').
-mlg('d-ro').
-mlg('ekz').
-mlg('ekz-e').
+mlg('DNA'). % desoksiribonukleacido
+mlg('E-a'). % Esperanta
+mlg('E-o'). % Esperanto
+mlg('Esp-o'). % Esperanto
+mlg('Esp-ismo'). % Esperantismo
+mlg('Hz'). % Hertz
+mlg('ISO'). % Internacia org. pri Normoj
+mlg('OA'). % Oficiala Aldono
+mlg('PIV'). % Plena Ilustrita Vortaro
+mlg('PIV-a'). % rilata al PIV
+mlg('PIV-oj'). % PIV1 + PIV2...
+mlg('PV'). % Plena Vortaro
+mlg('RNA'). % ribonukleacido
+mlg('Rim'). % rimarko
+mlg('SAT'). % Sennacia Asocio Tutmonda
+mlg('UEA'). % Universala Esperanto Asocio
+mlg('adv'). % adverbo
+mlg('cm'). % centimetro
+mlg('d-ro'). % doktoro
+mlg('e-a'). % esperanta
+mlg('ekz'). % ekzemplo
+mlg('ekz-e'). % ekzemple
+mlg('esp-istoj'). % esperantistoj
+mlg('jc'). % jarcento
 mlg('kc'). % kaj ceteraj
-mlg('kg').
-mlg('km').
+mlg('kg'). % kilogramo
+mlg('km'). % kilometro
+mlg('konj'). % Konjunkcio
 mlg('kp'). % komparu
 mlg('ks'). % kaj similaj
-mlg('ktp').
-mlg('mm').
-mlg('n-a').
-mlg('ntr').
-mlg('proks').
-mlg('resp').
-mlg('simb').
-mlg('s-ro').
-mlg('tr').
-mlg('vd').
+mlg('ktp'). % kaj tiel plu
+mlg('mm'). % milimetro
+mlg('n-a'). % elemento kun numero "n"
+mlg('n-ro'). % numero
+mlg('ntr'). % netransitiva
+mlg('PAG'). % Plena Analiza Gramatiko
+mlg('proks'). % rpoksimume
+mlg('prop'). % propozicio
+mlg('resp'). % respektive
+mlg('simb'). % simbolo
+mlg('s-ro'). % sinjoro
+mlg('s-ino'). % sinjorino
+mlg('tr').  % transitiva
+mlg('vd'). % vidu

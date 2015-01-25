@@ -101,6 +101,8 @@ analizu_tekston_kopie(Txt,VerdaListo) :-
 
 analizu_tekston_kopie_(T,VerdaListo) :-
   skribu_kapon,
+  % PLIBONIGU: uzu listo-rikuron anstataue, tiel oni povus ekz.
+  % kontroli punkton post mallongigo au kunigi ĥemiajn formulojn
   forall(member(M,T),
       once(
         (
@@ -160,7 +162,7 @@ skribu_vorton(malstrikte,_,_,_,[fv(F,_)]) :-
 
 skribu_vorton(malstrikte,Vorto,_,_,Partoj) :-
   output(html) 
-  -> format('<span class="malstrikte">~s: ~w</span>',[Vorto,Partoj])
+  -> format('<span class="malstrikte" title="~w">~s</span>',[Partoj,Vorto])
   ; format('?~s: ~w?',[Vorto,Partoj]).
 
 skribu_vorton(bone,_,Analizita,_,_) :-
