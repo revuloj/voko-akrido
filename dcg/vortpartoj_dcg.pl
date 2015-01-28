@@ -6,13 +6,34 @@
  * tie cxi al cxiaj vortspecoj.
 ****************************************************/
 
-radika_vorto_sen_fino(Partoj) --> prefiksoj(Prefiksoj), radiko(Radiko), sufiksoj(Sufiksoj),
-  { append([Prefiksoj,[Radiko],Sufiksoj],Partoj) }.
+radika_vorto_sen_fino(Partoj) --> 
+    prefiksoj(Prefiksoj), 
+    radiko(Radiko), 
+    sufiksoj(Sufiksoj),
+    { append([Prefiksoj,[Radiko],Sufiksoj],Partoj) }.
 
 radika_vorto(Partoj) -->
   radika_vorto_sen_fino(RvsfPartoj),
   finajxo(Fino),
   { append(RvsfPartoj,Fino,Partoj) }.
+
+% derivajxo per nomo, ekz "Atlantiko"
+% PLIBONIGU: distingu o(jn)-finaĵon (majuskle) kaj aliajn (minuskle)
+radika_vorto(Partoj) -->
+  nomrad_sen_fino(RvsfPartoj),
+  finajxo(Fino),
+  { append(RvsfPartoj,Fino,Partoj) }.
+
+nomrad_sen_fino(Partoj) --> % transatlantikej
+    prefiksoj(Prefiksoj), {Prefiksoj \= []},
+    nomrad_min(Radiko), 
+    sufiksoj(Sufiksoj),
+    { append([Prefiksoj,[Radiko],Sufiksoj],Partoj) }.
+
+nomrad_sen_fino(Partoj) --> % Atlantikej
+    (nomrad_maj(Radiko); nomrad_min(Radiko)), % PLIBONIGU: distingu o(jn)-finaĵon (majuskle) kaj aliajn (minuskle)
+    sufiksoj(Sufiksoj),
+    { append([[Radiko],Sufiksoj],Partoj) }.
 
 prefiksoj([]) --> [].
 prefiksoj([p(Prefikso,DeSpeco)|Prefiksoj]) -->
@@ -28,6 +49,12 @@ radiko(r(Radiko,Speco)) -->
   % por teĥnikaj prefiksoj kiel nitro-, kilo- k.a. difinu
   % apartajn regulojn por predikatoj "prefikso" kaj "sufikso"
   { Speco \= suf, Speco \= pref}.  
+
+nomrad_maj(r(Radiko,Speco)) -->
+  nr(Radiko,Speco). % Atlantik
+
+nomrad_min(r(Radiko,Speco)) -->
+  nr_(Radiko,Speco). % antlantik
 
 sufiksoj([]) --> [].
 sufiksoj([s(Sufikso,AlSpeco,DeSpeco)|Sufiksoj]) -->
