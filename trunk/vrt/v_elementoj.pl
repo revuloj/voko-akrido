@@ -176,6 +176,8 @@ p(pri,tr,verb). % ekz. priskribi
 p(dum,adj,subst).
 p(dum,adv,verb).
 
+p(trans,adj,subst).
+
 /**************
  *  j-pronomoj 
 ***************/

@@ -1,3 +1,7 @@
+% PLIBONIGU: shanghu tion al nf - nomo fremda
+% analoge al nr - nomoradiko...
+% kaj eble aldonu nf_ - deriveblan version por
+% derivado: nf_('Alfred',pers) -> Alfred-a, Alfred-on
 fv('Aleksandroviĉ',pers).
 fv('Alfred',pers).
 fv('Bean',pers).

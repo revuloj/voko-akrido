@@ -1,4 +1,4 @@
-:- multifile r/4, v/4, mlg/1.
+:- multifile r/4, v/4, mlg/1, nr/4, nr_/4.
 %:- dynamic fv//2.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -17,6 +17,8 @@ term_expansion(i(Vrt,Spc),(i(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 term_expansion(fi(Vrt,Spc),(fi(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 term_expansion(v(Vrt,Spc),(v(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 term_expansion(fv(Vrt,Spc),(fv(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
+term_expansion(nr(Vrt,Spc),(nr(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
+term_expansion(nr_(Vrt,Spc),(nr_(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % vortaraj faktoj
@@ -28,6 +30,7 @@ term_expansion(fv(Vrt,Spc),(fv(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 :-consult('vrt/v_elementoj.pl').
 :-consult('vrt/v_vortoj.pl').
 :-consult('vrt/v_fremdvortoj.pl').
+:-consult('vrt/v_revo_nomoj.pl').
 % vicordo gravas, vortelementoj kiel radikoj
 % rekoniĝu nur post la pli longaj "normalaj" radikoj
 :-consult('vrt/v_revo_radikoj.pl').

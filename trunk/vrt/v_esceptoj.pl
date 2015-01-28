@@ -4,11 +4,11 @@
 r('post/e/ul',subst) --> "posteul".
 r('pra',adj) --> "pra".
 r('si/a',adj) --> "sia".
-r('mult/e/kost',adj) --> "multekost".
-r('mult/e/kolor',adj) --> "multekolor".
-r('mult/e/sci',adj) --> "multesci".
-r('mult/e/frukt',adj) --> "multefrukt".
-r('art/e/far',tr) --> "artefar".
+r('mult/e+kost',adj) --> "multekost".
+r('mult/e+kolor',adj) --> "multekolor".
+r('mult/e+sci',adj) --> "multesci".
+r('mult/e+frukt',adj) --> "multefrukt".
+% r('art/e/far',tr) --> "artefar". % devas esti "arte farita"
 v('unu/j',subst) --> "unuj".
 v('ek/de',prep) --> "ekde".
 v('dis/de',prep) --> "disde".
