@@ -158,6 +158,9 @@ antau_parto(Partoj) -->
 antau_parto(Partoj) -->
   radika_vorto_sen_fino(Partoj).
 
+antau_parto(Partoj) -->
+  nomrad_sen_fino(Partoj).
+
 post_parto(Partoj) --> radika_vorto(Partoj).
 
 

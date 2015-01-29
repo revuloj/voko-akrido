@@ -28,3 +28,6 @@ r('z-aks',subst) --> "z-aks".
 r('σ-algebr',subst) --> "σ-algebr".
 r('C-maĵor',adj) --> "C-maĵor".
 r('n-fin/aĵ',subst) --> "n-finaĵ".
+r('a-fin/aĵ',subst) --> "a-finaĵ".
+r('o-fin/aĵ',subst) --> "o-finaĵ".
+r('v-form',subst) --> "v-form".
