@@ -30,7 +30,9 @@ mlg('d-ro'). % doktoro
 mlg('e-a'). % esperanta
 mlg('ekz'). % ekzemplo
 mlg('ekz-e'). % ekzemple
+r('ekz-',subst). %????
 mlg('esp-istoj'). % esperantistoj
+mlg('f-ino'). % fraŭlino
 mlg('jc'). % jarcento
 mlg('kc'). % kaj ceteraj
 mlg('kg'). % kilogramo
@@ -45,6 +47,7 @@ mlg('n-ro'). % numero
 mlg('ntr'). % netransitiva
 mlg('PAG'). % Plena Analiza Gramatiko
 mlg('proks'). % rpoksimume
+mlg('pron'). % prononcu
 mlg('prop'). % propozicio
 mlg('resp'). % respektive
 mlg('simb'). % simbolo
