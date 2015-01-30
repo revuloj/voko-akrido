@@ -2011,490 +2011,405 @@ kvino: ne-graminacaj, kinuo
 kvinsland: Toowoomba-on
 kvint: plejparte
 kvivit: kvivit, denove
-labor: trairata: [p(tra,verb),r(ir,ntr),s(at,best,tr),f(a,adj)], ĵulo, delonge: [p(de,verb),r(long,adj),f(e,adv)], EU-laborantaro, estranta: [r(estr,best),s(ant,best,verb),f(a,adj)], laboritaĵo: [r(labor,ntr),s(it,best,tr),s(aĵ,subst,adj),f(o,subst)], ellaborita: [p(el,verb),r(labor,ntr),s(it,best,tr),f(a,adj)], prilaboriteco: [p(pri,adj,subst),r(labor,ntr),s(it,best,tr),s(ec,subst,adj),f(o,subst)], laborn, Labor-Organizaĵo, viv, Labor-Organizajo, Ejnar, Daresalamo
+labor: ĵulo, delonge, EU-laborantaro, estranta, laboritaĵo, ellaborita, prilaboriteco, Labor-Organizaĵo, viv, Ejnar
 labrador: Davisan
 laburn: Laburnum
 lac: troa
-lad: plejofte
 ladisla: Enrique, Márquez
 lag: Ŝiloaĥ
-lagun: Venecio
 la: land, par
 laik: мирянин, Ĥomjakov, Kirievskij, profan, Zamenhof
-lak: lak, sxiajn, sxia
-lakmus: krotono
+lak: lak
 lakon: pp
 laktuk: Borges
 lakun: Howship
-lam1: vikunja, Andoj, guanaka
-lama: tibeta, Alexandra, tibetan, Yongden
-lamen: plejofte
-lament: vekriante, Jeremio, Jeruzalem
+lama: Alexandra, Yongden
+lament: vekriante, Jeruzalem
 lam: Listra
-lami: transformiĝita: [p(trans,verb),r(form,subst),s(iĝ,ntr,subst),s(it,best,tr),f(a,adj)]
 lancx: Peter, Benenson
-land: Le, Petit, Larousse, le, uj, an, an, Uson/o-uson-an/o, uj, homo-Homujo, Homio, franco-Francujo, David, nenieslando, chi, nenieslando, nenieslandon, NovLando, progres-eman-konserv/ist/an
+land: Le, Petit, Larousse, le, uj, an, Usono-usonano, uj, homo-Homujo, Homio, franco-Francujo, David, nenieslando, nenieslandon, progreseman-konservistan
 lang: Edwin, Kock, Firefox
 lanter: kerosen
-laos: Vjentiano, ISO, LA
+laos: LA
 laplac: Pierre, Simon
-laptev: Ĥaritono
 largx: larĝ
 laser: Light, Amplification, by, Stimulated, Emission, of, Radiation
 las: infin
 last: Esp-istaro, Margarita
-latani: large, pa
-later: n-latero, plejofte, Bricard, mult, plur, n-latero, dek-unu-later/o, dek-du-later/o, ses-dek-kvin-later/o
-lati: Tibero, Kalabrio
-latin: Sevilo, Neves, nepinjo
+latani: pa
+later: n-latero, Bricard, mult, plur, n-latero, dekunulatero, dekdulatero, sesdekkvinlatero
+latin: Neves
 latitu: OP, OM
 lauxda: Rebeca
-laux: Hor, Aĥab, Obadja, bum, inkluzivatan: [r(inkluziv,adj),s(at,best,tr),f(an,adj)], Herhar, Pentuer, Patroklo, Jakob, Laban, Eva, Istubar, Sargon, II, laŭa, laŭan, ad-substantivoj, laŭa, laŭa, Steiner, III, laŭXi, Xi, laŭe, laŭXa, Xo
+laux: Hor, Aĥab, Obadja, bum, Herhar, Pentuer, Jakob, Laban, Eva, Istubar, Sargon, II, laŭa, laŭan, ad-substantivoj, Steiner, III, laŭXi, Xi, laŭe, laŭXa, Xo
 lauxre: Saĥarov-premio
 lauxrenc: Ruiz, Gudula
 lauxrenci: Lr
 lauxr: Jorike
 lauxt: Volapük
 lav: kepra
-lavr: Sabo, Radoneĵo
-leandr: Hero
 lebeg: Henri
 lecion: mise
 legaci: Vic
-leg: legоjn, TTT-legilo, Izrael, s-ron, Edmund, Grimley, Evans, Zamenhof, Zamenhof, leg/o-pov-ig/o, leg/o-pov-ig/i, leg/o-pov-ig/is, leg/o-pov-ig/o, leg/o-pov-ig/o
-legume1: legumenac/oj, legumenacoj, legumenozoj
-legume: legumenacoj
-legumi: legumenacaj
+leg: legоjn, TTT-legilo, Izrael, s-ron, Edmund, Grimley, Evans, Zamenhof, lego-povigo, lego-povigi, lego-povigis, legopovigo
+legume1: legumenozoj
 lejbnic: xv', xv'', v', Louis, Couturat
 lek: Ivagin
-lektor: Oksfordo
-lemn: lemnacoj, Xiangyun
+lemn: Xiangyun
 lemnis: cos
 leonard: Ĝokonda, Vinci
-leon: vir-seks-ul/o, Leo, Tolstoj
-lepor: salt, Lep, Sud-hemisfera
+leon: virseksulo, Tolstoj
+lepor: salt, Lep
 lepsik: jc, Johann, Sebastian, Bach, an
-leptospiroz: propagata
-lern: du-dek-jar-ul/oj, Acoroj, Ĥristo, Nikolov, Koljo, Ĥristo, misan, meme
+lern: dudekjaruloj, Acoroj, Nikolov, misan, meme
 lesb: in, PACS
-lesot: Maseruo, Lesotho, ISO, LS
-letal: letal/a
+lesot: LS
 leuxcisk: Dyk, Knínice
 leuxg: Vernes
 leuxkoj: Leucojum, aestivum
-lev: Grabowski, frapitaj: [r(frap,verb),s(it,best,tr),f(aj,adj)], Kain, Habel, Upsala, Izrael, Mefres, Pentuer, an, Rúa
+lev: Grabowski, Kain, Habel, Upsala, Izrael, Mefres, Pentuer, an, Rúa
 levier: Jamburg
 levkoj: violet
 l: maj, L-fero, maj, II, lo
 libera: Vd
-liberi: Monrovio, ISO, LR, Ebur-Bordo, Hju-ám-ám
-libi: Ĵamahirio, ISO, LY
-libr: Ĉernjaev, Mosĥozupr, Lapenna, libr, GDR, denove: [p(de,verb),r(nov,adj),f(e,adv)], ret/o-tag-libr/o, ret/o-tag-libr/o, CO, libr/o-ten-ej/o, CO-librotenejo
-lid: ISO, LTL
-liegx: 'E, 'N, Eŭregiono, Akeno
+liberi: LR, Hju-ám-ám
+libi: LY
+libr: Ĉernjaev, Mosĥozupr, Lapenna, libr, GDR, denove, retotaglibro, CO, librotenejo, CO-librotenejo
+lid: LTL
+liegx: 'E, 'N
 lier: 'E, 'N
 lift: plejparte
-lig: Zamenhof, Esperanto-Ligo, hiperteksto, doserujano, so, ro, id, id, id, far
-ligur: antaŭ-hind-eŭrop/a, lun-iĝ-ia-ni/o
-li: vir-seks-ul/o
-lihxtensxtejn: tirola
-lik: Dunjo
+lig: Zamenhof, Esperanto-Ligo, so, ro, id, far
+li: virseksulo
 likvid1: flüssige, Laute, плавный, согласный
-lil: li-lak-flor/oj
 lilipu: Swift
 lilit: Jung
-limaed: du-valv-ul/oj
+limaed: duvalvuloj
 limak: cosθ, pli-malpli
-limes: lim, Bricard, inkluzivata: [r(inkluziv,adj),s(at,best,tr),f(a,adj)], lim
+limes: lim, Bricard
 lim: troan
 limnologi: ĉi-foja
 limona: Feniĉka
 lincx: Matupa, ĉi-jare
-linear: αx, n-lineara, bilineara, kalembure, unu-kaj-du/on-linear/a
-lingv: ellaborataj: [p(el,verb),r(labor,ntr),s(at,best,tr),f(aj,adj)], zamenhofan, zamenhofan, zamenhofan, zamenhofa, zamenhofa, Eugen, Wüster, unu-lingv-ec/o, unu-lingv-ul/o, unu-lingv-ec/o, unu-lingv-ec/on, Zamenhof, unu-lingv-ec/o, unu-lingv-ec/o, Leonard, unu-lingv-ul/o, du-lingv-ul/oj, unu-lingv-ul/oj, Zamenhof, NPIV, morfem/o, plan-lingv/o-scienc/o, plan-lingv/o-scienc/o
-lini: trairotaj: [p(tra,verb),r(ir,ntr),s(ot,best,tr),f(aj,adj)], fer-voj-lini/on, arĥaiĝinta, János
-link: Lyn, Nord-hemisfera
+linear: αx, n-lineara, bilineara, unu-kaj-duon-lineara
+lingv: Eugen, Wüster, unulingveco, unulingvulo, unulingveco, unulingvecon, Zamenhof, Leonard, dulingvuloj, unu-lingvuloj, NPIV, planlingvoscienco
+lini: fervojlinion, János
+link: Lyn
 linuks: GNU, GPL
-lionel: Lionel, Gray, Lionel
-lip: plejofte
+lionel: Lionel, Gray
 lir1: Iama
-lir: Lyr, Nord-hemisfera
-lirik: Eroŝenko, du/on-jar-cent/on
+lir: Lyr
+lirik: duonjarcenton
 lirl: Jinxiu
-list: ReVo, am-baŭ-direkt/a
-litarg: Protoksido, oranĝeruĝa
-litera: Goethe, Faust, iamaj, vidpuktoj, Declerck, Ĉernovcy
+list: ReVo, ambaŭdirekta
+litarg: oranĝeruĝa
+litera: Goethe, Faust, iamaj, Declerck, Ĉernovcy
 literator: Puŝkin
 literaturolog: Fjodor, Dostojevskij
 literaturologi: Wolfgang, Kirschstein
-liter: bo, co, ĉo, fo, go, ĝo, ĥo, jo, ĵo, ko, lo, mo, no, ro, so, ŝo, to, ŭo, vo, zo, UniRed, Zamenhof, ch, ch, gh, hh, jh, ough, cough, dough, ought, sch, eau
+liter: UniRed, Zamenhof, ch, gh, hh, jh, ough, cough, dough, ought, sch, eau
 lit: Moncada
 litogr: Adolf, Tuma
-litot: maltroigo: [p(mal,_G7333),p(tro,adj),r(ig,tr),f(o,subst)]
-litov: Vilno, ISO, LT, kal-in-in-grad/a
-liturg: s-ta, or-buŝ-ul/o
+litot: maltroigo
+litov: LT
+liturg: s-ta, orbuŝulo
 livermor: Lv, livermorio
-lobeli: lobeliacoj
 loes: Yaozhou
-logari: log, Log, ln, ln, dt/t
+logari: log, Log, ln, dt/t
 log: Van, Gog
-logik: rikura
 logistik: Couturat
 loglan: James, Cooke, Brown
 logotip: an
-logx: fremdeloĝado, UK-j, Björk, Akkadai, Jerusalem
+logx: UK-j, Björk, Akkadai, Jerusalem
 lojal: Zalmuna
 lojxban: Loĵban, Loĵban-istoj
 lokali: ĉi-momente, radar
-lok: minuso, ĉiea, Taylor, Vejkli, Ned, E-Asocio, IF, ec, lokuso, prun-te-don/i, Werner, Bricard, Ĉiea, lok-sid-iĝ/i, minuso
+lok: minuso, ĉiea, Taylor, Vejkli, Ned, E-Asocio, IF, ec, lokuso, Werner, Bricard, Ĉiea, loksidiĝi
 lokomo1: aj
-loksi: kruc-bek-ul/o
-lombar: antitkva, lom-bar-di/o, Norikon, reĝ, prun-te-don/as
+loksi: krucbekulo
 london: 'W, 'N
-longan: roz, pup-ur-kolor/a
-long: me-lan-ko-li-o, lan, Kalocsay, delonge: [p(de,verb),r(long,adj),f(e,adv)], delonge: [p(de,verb),r(long,adj),f(e,adv)], delonge: [p(de,verb),r(long,adj),f(e,adv)], delonge: [p(de,verb),r(long,adj),f(e,adv)], delonge: [p(de,verb),r(long,adj),f(e,adv)], Vd, ko, to, IJK, jo, ko
-lontan: drolan
-lop: alsuprante: [p(al,verb),r(supr,adv),s(ant,best,verb),f(e,adv)], alsubante: [p(al,verb),r(sub,adv),s(ant,best,verb),f(e,adv)]
+longan: roz
+long: lan, Kalocsay, delonge, Vd, ko, to, IJK, jo
+lop: alsuprante, alsubante
 lorn: Bronne
-lot: Saul, Jehudaidoj, lotita: [r(lot,ntr),s(it,best,tr),f(a,adj)], Simeon, Aaron, Jozef, unu-en/a-skit/o, Aaron, lotitan: [r(lot,ntr),s(it,best,tr),f(an,adj)], Azazel, Today's, English, Azazel, Josuo, Izraelidoj
+lot: Saul, Simeon, Aaron, Jozef, unuenaskito, Aaron, Azazel, Today's, English, Azazel
 loven: 'E, 'N, Lemmens-Instituto
-lubrik: rajpon
 lucid: Bogee
-lud: Ivar, Arosenius, tri-dek-kvar/an, glit-ŝton-lud/o, glit-ŝton-lud/on, Makao, Anna, Sergeevna, Hadda, Cantr, II, Command, and, Conquer, Generals, Electronic, Arts, KGS, XVIa, vi-de/lud-industri/o, Vorto-Mozaiko, kruc-vort-enigm/o, Nisikawa, Serizawa, Kiyosi, Tokio, Esperanto-Kooperativo, du-senc-ec/o, LA-STRANGA-BUTIKO, LAST-RANGA-BUTIKO
-lu: Dorina, Dorina, vic-lu-ig/i
+lud: Ivar, Arosenius, tridekkvaran, glitŝtonludo, glitŝtonludon, Anna, Sergeevna, Hadda, Cantr, II, Command, and, Conquer, Generals, Electronic, Arts, KGS, XVIa, videludindustrio, Vorto-Mozaiko, krucvortenigmo, Nisikawa, Serizawa, Kiyosi, Tokio, Esperanto-Kooperativo, dusenceco, LA-STRANGA-BUTIKO, LAST-RANGA-BUTIKO
+lu: Dorina, vicluigi
 luizian: iamajn
-luksemb: 'E, 'N, Eŭregiono, Akeno, Fogra
+luksemb: 'E, 'N, Fogra
 lukt: Lauri, Eero
 lukum: Bagdad
 lul: Infan
-lumbag: plejofte
-lumb: am-baŭ-flank/e
-lum: lumoa, Moseo, preterrapidantaj: [p(preter,verb),r(rapid,adj),s(ant,best,verb),f(aj,adj)], du-dek-tri/a, Drammensvej, pri-lu-mit-ec/o, km/s, aereolito
-lup: denove: [p(de,verb),r(nov,adj),f(e,adv)], Sud-hemisfera, tilacinedoj, tilacino, mapli, Baden-Powell, Rudyard, Kipling, evoluo/renovigado, kan
+lumb: ambaŭflank/e
+lum: lumoa, preterrapidantaj, dudektria, Drammensvej, prilumiteco, km/s
+lup: denove, mapli, Baden-Powell, Rudyard, Kipling, evoluo/renovigado, kan
 lupus: mem-agresa
 luteci: Lu
 luter: Martin
 macxet: tranĉil
-macx: maĉ, maĉ, maĉ, maĉ, Denove, denove: [p(de,verb),r(nov,adj),f(e,adv)], par-huf-ul/oj, plejofte
-madagas: an-tan-ar-iv/o, ISO, MG
-madjapradesx: seks-vi/o-lent/it/a, Madjo
+macx: maĉ, Denove, denove, parhufuloj
+madagas: MG
 magm: Celsius-gradoj
-magnetoskop: vide/o-bend-registr/il/o
+magnetoskop: videobendregistrilo
 magnez1: Mg
 magnez2: MgCO
 magnez: MgO
-magxang: sen-labor-iĝ/int/aj
+magxang: senlaboriĝintaj
 mahabarat: Gesar, Mahabharato
-mahajan: hanoj
-maharasxtr: teluguojn
 mahome: PIV-a
 mahx: v/a
 mahxinaci: don
-maiz: vin-ber-ĝarden/oj, mikroondajn, Trot
-maja: jc
+maiz: vinberĝardenoj, Trot
 majenc: 'E, 'N
 majn: Shakers
 majordom: Ĉef
 majstr: Ĥuram, M'saud, Jean, Ribillard
 makabr: S-rino
 makaro1: Anna
-makedon: Skopjo, Iama, ISO, MK
+makedon: Iama, MK
 makedoni: Iama
 makintosx: Apple
 makrobiotik: Georges, Ohsawa
 makroekonomik: Keynes
-maksim1: Plejgranda, max, Bricard, inkluzivitaj: [r(inkluziv,adj),s(it,best,tr),f(aj,adj)], ĉi-koncerne
-malajzi: Kuala-Lumpuro, ISO, MY
-malavi: Lilongvo, ISO, MW
-maldiv: ISO, MV
-male: am-baŭ-flank/e
+maksim1: max, Bricard, ĉi-koncerne
+malajzi: MY
+malavi: MW
+maldiv: MV
+male: ambaŭflanke
 malgra: malgraŭe
-mal: mal, mal, ig, dis, mal, II
-mali: Bamako, ISO, ML, Ebur-Bordo
-malik: Malik, Malik, Zidi
+mal: ig, dis, mal, II
+mali: ML
+malik: Malik, Zidi
 malkolm: Margareta
 maltus: Malthus
-malvazi: vin-ber-spec/o, adonido, Walter, Scott
+malvazi: vinberspeco, Walter, Scott
 manat1: YAM, AZM, TMM
-manat: triĥeĥedoj, kariba, Trichechus, karibmaraj, Trichechus, inunguis, or-in-ok/o, Trichechus, Kvanzo, Vikipedio, Trichechus, Trichechus
+manat: Trichechus, inunguis
 mancin: pom
 mandar: Fu, Kong
 manga: Tsuge
 mangan: Mn, transir
-mang: anarkadiacoj
-mangostan: Lam, Son, Ngoan, Muc, sud-orient-azi/o
-mangx: Artemij, Filippoviĉ, meropedoj, upupo, Abel-manĝ-ul/o, hom-manĝ-ul/o, formik-manĝ-ul/o, manisedoj, mir-mek/o-fag/oj, formik/o-manĝ-ul/o, insekt/o-manĝ-ul/o, insekt/o-manĝ-ul/oj, insekt/o-manĝ-ul/oj
-man: man-en-man/e, man-en-man/e
+mangostan: Lam, Son, Ngoan, Muc, sudorientazio
+mangx: Artemij, Filippoviĉ, Abelmanĝulo, hommanĝulo, formikmanĝulo, formikomanĝulo, insektomanĝulo, insektomanĝuloj
+man: man-en-mane
 manier: kielo
 manife: Zamenhof
-manis: formik-manĝ-ul/o, manisedoj, ebenajoj
-manitob: huteritanoj, huteritismo
-manovr: celatan: [r(cel,verb),s(at,best,tr),f(an,adj)]
-mantel: Adaha, jc, izvoŝĉikoj, Antarko
+manis: formikmanĝulo
+mantel: Adaha
 manufa: pogrande
 map: LOdE, Cosmas, map
-marabu: Sunda-insuloj
 maraton: du-tri
 maraved: Iama, ono
-marcial: proskimume
 marcxa: Petroviĉ
 mariland: Fort, Meade
 mark2: Iama, Konvertibilna, KM
 markez: troa
-markiz: Karaba, Asturio, Eŭskio
+markiz: Karaba
 markot: Jiŝaj
-marks: jc, jc, Engels
-maroder: soldat/o-marod-er/o
-marok: ISO, MA
+marks: Engels
+marok: MA
 marot: Ŝat
-marsxa: Sejmmarŝalo, Sejmo, Bundestag
-marsxal: Dalapo-Uligo-Darito, ISO, MH
-marsx: Nordia, Nordic, Walking
-marten: Alonzo, Pinzon
+marsxa: Bundestag
+marsxal: MH
+marsx: Nordic, Walking
+marten: Pinzon
 martir: de/por, ade
 masacxusec: Amherst
 masakr: DRK, Stella, Rossa
-mas: atentante: [r(atent,adj),s(ant,best,verb),f(e,adv)], poa, ML, g/cm, kg/m, ĉi-supra, poa, ĉi-supre
+mas: poa, ML, g/cm, kg/m, ĉi-supra, poa, ĉi-supre
 maskerad: Ŝvarc
-maskl: Saba, vir-seks-ul/o
-masohxism: Sovetio
+maskl: Saba, virseksulo
 masohxist: SCE
-masor: jc
-mast: Nord-Germana, Lloyd
-mastod: pleistoceno
+mast: Lloyd
 mastr: Zamenhof
-mastrihxt: 'E, 'N, plejmulta, Edama, Edam, Lejdena, Leiden, Valkenburg
-masx: dro
-masxin: cambro, subŝovatajn: [p(sub,verb),r(ŝov,verb),s(at,best,tr),f(ajn,adj)]
+mastrihxt: 'E, 'N, Edam, Leiden, Valkenburg
 matcx: Kim, Henriksen
-mate: ĵanaina
+mate: Ĵanaina
 matema: Pierre, Cérésole
 maten: Don, Quijote
-materi1: Zamenhof, Valdorfpupoj
-materi: entrikla
-mat: lud-fin-ig/a, mat
-matric: Povondra, ij, ij, i-a, j-a, ij, ĉi-supre, n', p', n', p', n', p', p-dimensia, n-dimensia, p-dimensia, n-dimensia, ij, i-a, j-a
-matur: Tokajvinon
+materi1: Zamenhof
+mat: ludfiniga, mat
+matric: Povondra, ij, i-a, j-a, ĉi-supre, n', p', p-dimensia, n-dimensia
 mauxric: Maeterlinck
-mauxrici: Port-Luiso, ISO, MU
-mauxrit: Nuakŝoto
+mauxrici: MU
 mauxzo: Xia-regno
-mazda: Guĝaratio
-mazurk: dek-ses-mezur/aj, Petroviĉ
-mazut: prоdukti
-medal: am-baŭ-flank/e, Ge/o-graf-io-societ/o
+mazurk: deksesmezuraj, Petroviĉ
+medal: ambaŭflanke, Geografio-societo
 median: Bricard, mez
-mediator: pal-est-in/o, pal-est-in/aj
 mediterane: Edwin, Kock, Santorin
-medit: Kolumbo, Anno-Doroteo, dek-kvar-jar/a
+medit: dekkvarjara
 medol: plejgravaĵon
-mefit: mefitedoj
 megabitok: bitok, e-libro
 mega: mega, mega, SI
 megaom: omoj
 megatun: TNT
 megavat: MW, Ignalina
-mehxlen: 'E, 'N, Meĥlino
+mehxlen: 'E, 'N
 mejtneri: Mt, IUPAC, unnilenio, Unnilentium
-mek: mek, mek-mek, he, he
-meklenburgant: Ŝverino
-meksik: 'U, 'N, Kariba, CNN
-meksiki: Ketzalkoatl, Edfu, prof, Feldmann-Gonzales, atentata: [r(atent,adj),s(at,best,tr),f(a,adj)], Ŝanhajon, London, trad, eld, chicano
+mek: mek, mek-mek, he
+meksik: 'U, 'N, CNN
+meksiki: Ketzalkoatl, Edfu, prof, Feldmann-Gonzales, London, trad, eld, chicano
 melanom: le
-melis: ests
-melon: plejofte
-melopsitak: melopsitakedoj
-membr: am-baŭ-flank/e
-mem: sk, II, sin-don-ec/o, III, mema, memo, mema, Neves, memo, memo, memon, memo
-memor: denove: [p(de,verb),r(nov,adj),f(e,adv)], denova: [p(de,verb),r(nov,adj),f(a,adj)], Kolumbo, Izraelidoj, travivitaĵon: [p(tra,verb),r(viv,ntr),s(it,best,tr),s(aĵ,subst,adj),f(on,subst)]
-mence: Mengzio
-menci: Orkada, menciio
+membr: ambaŭflanke
+mem: sk, II, sindoneco, III, mema, memo, Neves, memon
+memor: denove, denova
 mendelevi: Md
-menestre: peozio, ĉi-nokte
-mengzi: Mengzi/o
+menestre: ĉi-nokte
 menhir: Goodheir
-mens: Zamenhof, psiĥo, Edward, Sapir, Benjamin, Lee, Whorf, delonge: [p(de,verb),r(long,adj),f(e,adv)]
+mens: Zamenhof, Edward, Sapir, Benjamin, Lee, Whorf, delonge
 mentol: ment
-mentor: panjo
-menu: opcioj
 mercer: kudr, vest, ornam
-merd: merd/o
 merit: troe
-merkatik: respond-ec-ul/oj
-merlucx: merluĉedoj
-mesagx: celatoj: [r(cel,verb),s(at,best,tr),f(oj,subst)]
-mes: okcident-krist-an/aj
-mesi: Izraelon, Simon, mag-dal-en/o
+merkatik: respondeculoj
+mes: okcidentkristanaj
+mesi: Simon
 meskalin: NO
-mestiz: miks-ras-ul/o
-metadon: Opi, toksiĝemulojn
+mestiz: miksrasulo
+metadon: Opi
 meta: ePub-formo
 metal: IUPAC-sistemo, Ge, As, Sb, Te
 metalofon: László
-metasekvoj: am-baŭ-flank/e
+metasekvoj: ambaŭflanke
 metastaz: William, Auld
 meteol: Eugeniu, Norrköping
 meteor2: ologi
 meteorolog: Vilhö, Yrjö, Kalle, Väisälä
-met: Jakob, vin-ber-ĝarden/on, Olga, Halman
-metod: metodо, Cseh-metodо, Ĉe-metodo, Henri, Dunant, tri-cent-jar/an, Wesley, Charles, hal-el/uj/a-kant/ist/oj
-metodi: III, Rastislavo, Saloniko, kon-stan-tenon-Ciril/on
-metr: SI, trairata: [p(tra,verb),r(ir,ntr),s(at,best,tr),f(a,adj)], ono, dekmiliononon: [[r(dek,nombr)],[r(milion,subst),s(on,subst,nombr),f(on,subst)]], onon, n-amfibraĥo, n-anapesto, n-jambo, n-trokeo, n-silabo, m/s, m/s, m/s/s
+met: Jakob, vinberĝardenon, Olga, Halman
+metod: Cseh-metodо, Ĉe-metodo, Henri, Dunant, tricentjaran, Wesley, Charles
+metodi: III, Konstantenon-Cirilon
+metr: SI, ono, dekmiliononon, onon, n-amfibraĥo, n-anapesto, n-jambo, n-trokeo, n-silabo, m/s, m/s/s
 metrop: Krys, Ungar
-mev: ŝternmevo, ŝternmevo, karadriformaj
 mezanin: Davenant, Peel
-mez: Izraelidoj
-mezopotami: Isaak, Laban, Betuel, Ninivo
+mezopotami: Isaak, Laban, Betuel
 mezoteliom: Bakin
-mezozoik: nomtata
-mezur: Jakob, plejparte, Izraelidoj, komunona: [r(komun,adj),s(on,subst,nombr),f(a,adj)], b-a
-m: maj, maj, mega, II, mo
-miaux: miaŭ, miaŭ, miaŭ
-miceli: hifoj
-midelbu: Walcheren, 'E, 'N, fer-voj-lini/o
+mezur: Jakob, plejparte, b-a
+m: maj, mega, II, mo
+miaux: miaŭ
+midelbu: Walcheren, 'E, 'N, fervojlinio
 midinet: Johnny
-miel: ellaborata: [p(el,verb),r(labor,ntr),s(at,best,tr),f(a,adj)]
 mien: Katalin
 migr: fenika
 mi: adj, pron
-mihxael: Miĉjo
 mikad: Toba
 mikoz: haŭt
 mikrobiolog: Schaudinn
-mikroelektronik: Mikrokomputila
-mikrof: μF, milionono: [r(milion,subst),s(on,subst,nombr),f(o,subst)]
-mikro: mikro, mikro, Milionono, SI, mikrosekundo, mikropolvo, mikroĥirurgio, mikrohepateco, mikrokomputilo
+mikrof: μF, milionono
+mikro: mikro, Milionono, SI, mikrosekundo, mikropolvo, mikroĥirurgio, mikrohepateco, mikrokomputilo
 mikrokosm: Drezen
 mikrokredit: Muhammad, Yunus
-mikronez: plejparton, Palikiro, ISO, FM
-mikros: Bazarov, Mic, Sud-hemisfera, OLYMPUS, BH
+mikronez: plejparton, FM
+mikros: Bazarov, Mic, OLYMPUS, BH
 mikroskopi: Leuven
-mikrosoft: Majkrosofto, MS-DOS, Microsoft, Windows, OS, IBM, Microsoft, Office, Internet, Explorer
+mikrosoft: MS-DOS, Microsoft, Windows, OS, IBM, Microsoft, Office, Internet, Explorer
 miks: miks, divers
 mili1: SI
-miliar: biliono
 miligr: mg
 mililitr: ml
-milion: vers-per-manĝ/is
-milit: ha, Moseo, Jerusalem, kruc-mi-li-tir/o, milit, n-ro, Moseo, Jazeron, Holger, Sovetio, ekinta: [r(ek,intj),s(int,best,verb),f(a,adj)], ekinta: [r(ek,intj),s(int,best,verb),f(a,adj)]
-min1: ono, ono
+milit: ha, Jerusalem, krucmilitiro, milit, Jazeron, Holger, ekinta
+min1: ono
 minac: pp
-minesot: Mike, Seeger, Seeger
-min: Pli-malpli, ferminajo
+minesot: Mike, Seeger
+min: Pli-malpli
 miniat: Zoja, Ivanovna
 minibus: Gazel
 mini: Pb
 minimu: Bricard, Vd
-minist1: s-ino, Shipley
+minist1: Shipley
 minor: ij, i-a, j-a
 minus: minuspoluso, minusdrato, minuso, minussigno
 minuskl: DOS-a, USKL, XML, uskl, xml
-miogal: naĝ, insekt/o-manĝ-ul/o
+miogal: naĝ, insekto-manĝulo
 mirmek: plejparto
-mirmel2: ret-flug-il-ul/oj
-mirz: Ulugbek, sam-ar-kand/o
-mis: mis, mis, mise, II, mise, mise
+mirmel2: retflugiluloj
+mirz: Ulugbek
+mis: mis, mise, II
 misisip: Frederick, Bergstrom
-miso: plejofte
-mistifik: trouzante: [p(tro,adj),r(uz,tr),s(ant,best,verb),f(e,adv)], celitan: [r(cel,verb),s(it,best,tr),f(an,adj)]
-misur: ilinoja
+mistifik: trouzante
 misuri: Saint-Louis
 misxna: Hilel, Pirkei, Avot
-misxn: Moseo
 mit: Delonge
-miting: Krimeo, Sabadell, Anguita, meeting
-mitohxondri: plejmultaj
+miting: Sabadell, Anguita, meeting
 mitokondri: Paabo, DNA-n
-mitrajl: ĉirkaŭsŝiris
-mitule: du-valv-ul/oj
-mizant: hom-evit-ul/o
-mizer: Zamenhof, Malanja, mi-ze-re/aspekt/a
-mizoram: ĉakma-parolantaj, Mizoj
+mitule: duvalvuloj
+mizant: homevitulo
+mizer: Zamenhof, Malanja
+mizoram: ĉakma-parolantaj
 mocart: Saljeri
-modal: Kant, in-ton/a-ci/o, PAG, PAG, Zamenhof
-model: solvajoj, par-sal-go-ritm/o, delongan: [p(de,verb),r(long,adj),f(an,adj)], Bündchen
-modem: mod, dem, od-ul/a-tor/o
-moder: troa, troigo: [p(tro,adj),r(ig,tr),f(o,subst)], Troa
+modal: Kant, PAG, Zamenhof
+model: delongan, Bündchen
+modem: mod, dem, odulatoro
+moder: troa, troigo, Troa
 modern: Jarl
 modest: Mal
 mod: PAG
 modul: modul, ĉi-supre, ρe, iθ
-modus: a-participo, denove: [p(de,verb),r(nov,adj),f(e,adv)]
-mohajr: varm, anguraj
-mojos: mjs-a, modern-jun-stil/a, NASKa, MOJOsejo
+modus: a-participo, denove
+mohajr: varm
+mojos: mjs-a, modern-jun-stila, NASKa, MOJOsejo
 mok: Eero, Sidorov
-molas: glaĉeroj
-moldav: Kiŝinevo, Iama, Sovetio, ISO, MD
-mol: Senindulda
+moldav: Iama, MD
 molibden: Mo, transir
-molusk: du-valv-ul/oj
+molusk: duvalvuloj
 momant: X-E
 momordik: Momordica, charantia, Ji, Shengjiu
 monad: Leibniz
-monahx: Athos, iama, Alexandra, denove: [p(de,verb),r(nov,adj),f(e,adv)]
-monak1: Nicea, ISO, MC
-monal: Tibeto, Bhutano
-monarh1: monarki/o
-monarh: monarkio, Monarkiismo, monarkia, monarkia
-mond: indusa, Haan, Guam
+monahx: Athos, iama, Alexandra, denove
+monak1: Nicea, MC
+mond: Haan, Guam
 mon: Tolstoj
 monogr1: LP
 monokultur: pli-malpli
 monom: n-termo
 mononukleoz: Epstein-Barr
 monopo: Entrepren, ist, oj
-monoto: Kuniberto
-monteneg: Podgorica, ISO, MK, Adriatiko
-mont: inter-krut-ej/o, Men
+monteneg: Podgorica, MK
+mont: interkrutejo, Men
 montr: Dante
-monume: Ateno, Zamenhof, Raĥel, Mwl, Nyerere
+monume: Zamenhof, Raĥel, Mwl, Nyerere
 moral: Hong, SokHjon
-moratori: Ryan, il-li-no/is
+moratori: Ryan, Illinois
 morfe: Ipno
-morgau: iama, Savinako
+morgau: iama
 mor: Izrael
-mormon: Ruby, krist-an-de/ven/a
+mormon: Ruby, kristandevena
 mors: Samuel
-mort: Josefo, zamenhofe, zamenhofa, malzamenhofa, latin-id-lingv/aj, Mer, zamenhofa, Mer, Mortelle, malŝantantoj, mal, Pli-malpli, letala, SPIRITO, HAMLETO, ĉi-foje, denove: [p(de,verb),r(nov,adj),f(e,adv)], Kade-Barnea, Varhun, homicido, Uzibitum
-moru: ŝovita: [r(ŝov,verb),s(it,best,tr),f(a,adj)]
-morus: vi-ole-nigr/a, jar-cent-aĝ/aj
+mort: latinidlingvaj, Mer, Mer, Mortelle, mal, Pli-malpli, SPIRITO, HAMLETO, ĉi-foje, denove, Kade-Barnea, Varhun, Uzibitum
+morus: viole-nigra, jarcentaĝaj
 morv: ĉeval
 moskv: 'E, 'N
-mosxt: gast-am-ec/o
-mov: Zamenhof, Zamenhof, Izraelidoj, Erich, mult-em-ov/a, mul-te-hom/an, mult-em-ov/an
+mosxt: gastameco
+mov: Zamenhof, Erich, multemova, multehoman, multemovan
 moviment: Romberg
-mozambik: Maputo, ISO, MZ
-mozart: vin-ter-tur/o, vin-ter-tur/o, Wolfgang, Mozart
-mozel: Koblenco
-muel: Oreko-la-muelisto
-muf: ha-a, am-baŭ-flank/e
-muhama: Ĥorezmano, al-Ĥorezmi, Mako, Jasribo, MONATO, ABU, AL-QASIM, MUHAMMAD, IBN, 'ABD, ALLAH, IBN, 'ABD, AL-MUTTALIB, IBN, HAŜIM, Mohamedo
-mu: mu, mu, muu-muu-muu
+mozambik: MZ
+mozart: Wolfgang, Mozart
+muel: Orekola-muelisto
+muf: ha-a, ambaŭflanke
+muhama: al-Ĥorezmi, MONATO, ABU, AL-QASIM, MUHAMMAD, IBN, 'ABD, ALLAH, AL-MUTTALIB, HAŜIM
+mu: mu, muu-muu-muu
 mujxik: Denisoviĉ
-muk: troa, naz-muk-ul/o, Infan, naz-muk-ul/o
-mulat: miks-ras-ul/o
-mult: plur, mul-te-foj/e, mul-te-sci/a, mul-te-kolor/a, mul-te-vort-ul/o, mult/a-lingv-ul/o, um, plejmulte, plejmulte, plejmulte, mul-te-frukt/a, mul-te-pez/a, mul-te-spec/a
+muk: troa, nazmukulo, Infan
+mulat: miksrasulo
+mult: plur, multefoje, multescia, multekolora, multevortulo, multalingvulo, um, multefrukta, multepeza, multespeca
 multip: λA, ij, np-dimensia, ij, im, mj
 mumps: infan
-mung: Liubao
-munt: mikromaŝino, elektr/o-munt/ist/o-ripar/ist/o
-murd: in-farm-ort/ig/a, edz-in-murd/o, edz-in-murd/int/o, edz-in-murd/int/in/o
-mur: mallhelpaĵo
-murmur: du-dek-ses-jar/a, Moseo, Troa
-mus: Miĉjo, Walt, Disney
+munt: elektro-muntisto-riparisto
+murd: edzinmurdo, edzinmurdinto, edzinmurdintino
+murmur: dudeksesjara, Troa
+mus: Walt, Disney
 musked: Dumas
 muskol: Creuzfeldt-Jakob-malsano
-musx: Kelkmimiletra, mul-te-speci/a, drozofiledoj
+musx: multespecia
 mutaci: pli-malpli
 muzeolog: Bakony, Veszprém, Armand, David
-muzik: PIVa, iz, kom-pent-en/tul/o, Raita, Pyhälä, muzik-fak-ul/o, muzik-fak-ul/o, Zelenka, Wolfgang, Reich
+muzik: PIVa, iz, Raita, Pyhälä, muzikfakulo, Zelenka, Wolfgang, Reich
 muzikologi: Otto, Greiff, Haeusler
 muzulman: muslim
-n1: maj, maj, neŭtono, maj, maj, II, no
+n1: maj, II, no
 nabab: Sandy
-naci: Nov-Testamentaj, Valerij, Akulenko, dank'al, tv
-naft: subakvigxo, denove: [p(de,verb),r(nov,adj),f(e,adv)]
-naga: ĵuangoj
+naci: Nov-Testamentaj, Valerij, dank'al, tv
+naft: denove
 nagx: pp
 na: UniRed, alies, UniRed-on, UniRed, alies
 najbar: postanto: [r(post,adv),s(ant,best,verb),f(o,subst)]
