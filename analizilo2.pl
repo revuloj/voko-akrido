@@ -156,9 +156,10 @@ skribu_voston :-
 % fremdvorto...
 skribu_vorton(malstrikte,_,_,_,[fv(F,_)]) :-
  output(html)
-  -> format(atom(Sgn),'"~s"',[F]), xml_quote_cdata(Sgn,Quoted,utf8), 
-  format('<span class="malstrikte">~s</span>',[Quoted])
-  ; format('"~s"',[F]).
+  -> format(atom(Sgn),'~s',[F]), 
+     xml_quote_cdata(Sgn,Quoted,utf8), 
+     format('<span class="malstrikte"><em>~s</em></span>',[Quoted])
+  ;  format('"~s"',[F]).
 
 skribu_vorton(malstrikte,Vorto,_,_,Partoj) :-
   output(html) 
