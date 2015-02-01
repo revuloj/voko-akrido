@@ -3553,124 +3553,100 @@ tip: Optima, Helvetica, Elijah
 tipograf: S-ro, Polgár, Tipograf-Lernejo
 tipogr: liter
 tipologi: Kimura, Goro, Christoph
-tipul: tipuledoj
 tiraljor: tirailleur, Z-radikaro, Wüster, misa
-tir: komunehoma, Izrael, Kerubjev, Margaritan
+tir: Izrael, Kerubjev, Margaritan
 titan1: Ti
-titan: Iperiono, Ceo, Iperiono
-titol: hiroŝima
 tizan: kurac
-tjurk: Lo, Ŝinĝiang, ujguro
+tjurk: Lo, Ŝinĝiang
 toast: feb, PP
 tobi: Tobit
-togo: Lomeo, ISO, TG
-tokat: plejofte
-toki: Tokio, Tokio, Edo, Tokio
+togo: TG
+toki: Edo
 tokipon: Sonja
 toksolog: Hood
 tol: Pantelejeva
 toltek: zapatekojn, Tollan, iama
 toluen: CH
-tomas: ar/a-mede-ven/a
-tomb: Litomiŝla, Piĉ
-tomograf: tomograf/o, Tomografi, gliblastomo
+tomb: Piĉ
 tonal: Arvo, Pärt
-tong: Nukualofo, ISO, TO
-ton: bum, bum, dek-du-ton/ism/o, Schönberg, dek-du-ton/ism/o, Szilágyi
-tonik: Medi-kam-ent/o
-topogr: kutivota: [[r(kut,subst)],[r(iv,adj),s(ot,best,tr),f(a,adj)]]
+tong: TO
+ton: bum, dekdutonismo, Schönberg, Szilágyi
 topolo: x-y, E', E'
-tora: Moseo, Mosea, torah, Hilel
-torak: plejofte, SIN
-tord: spertinta: [r(spert,adj),s(int,best,verb),f(a,adj)], fruto
-tor: n-dimensian, ĉi-sence, toruso, Bricard
+tora: torah, Hilel
+torak: SIN
+tor: n-dimensian, ĉi-sence, Bricard
 tori: Th
-tortur: Tloaped, vole-nevole, jaguar-pied-ul/on
-tpr: tpr, tpr, Ek, tpr, hot, kvar-pied-ul/o
-tradic: Febo
+tortur: Tloaped, vole-nevole, jaguarpiedulon
+tpr: tpr, Ek, hot, kvarpiedulo
 traduk: esp-en
-traf: celitan: [r(cel,verb),s(it,best,tr),f(an,adj)], Hebron, celitaĵon: [r(cel,verb),s(it,best,tr),s(aĵ,subst,adj),f(on,subst)]
-traged: Sofoklo, Sovetio
+traf: Hebron, celitaĵon
 tragik1: ha
-tra: ellaborota: [p(el,verb),r(labor,ntr),s(ot,best,tr),f(a,adj)], Zamenhof, pli-malpli, trairata: [p(tra,verb),r(ir,ntr),s(at,best,tr),f(a,adj)], celata: [r(cel,verb),s(at,best,tr),f(a,adj)], II, trae, trae, trae, III, II, pref, fin, tut
-trahxe: ses-pied-ul/ojn, plejparte
-trahxom: okul, konjuktivo
+tra: ellaborota, Zamenhof, pli-malpli, trairata, celata, II, trae, III, pref, fin, tut
+trahxe: sespiedulojn, plejparte
+trahxom: okul
 trak: Stuttgart, bus, cm/sek
-trakta: trakt/at/o, Traktat-Organizaĵo, Traktat-Organizaĵo
-trampolin: aerblovita: [[r(aer,subst)],[r(blov,ntr),s(it,best,tr),f(a,adj)]]
-trancx: am-baŭ-tranĉ/a, y-x
+trakta: traktato, Traktat-Organizaĵo, Traktat-Organizaĵo
+trampolin: aerblovita
+trancx: ambaŭtranĉa, y-x
 trankv: Kp
 transc: K', Bricard, ĉi-supra
 transfuz: Wu, Dengyun
-trans: Izrael, Hanibalo, Barzilaj, Jordan, II, Jordan, Jordan, Josuo, neŭro, transmisi, III
+trans: Izrael, Jordan, II, Jordan, neŭro, transmisi, III
 transi1: akuz, Ekz, xRy, yRz, xRz, kompl, Ekz
 transistor: fer, res, istor
 transp: to, konjug
 trapez: ek
 trap: natans
-trateratra: trateratra, trateratra, trateratra
-trauxmatiz: Ŝok, traŭmatizita: [r(traŭmatiz,verb),s(it,best,tr),f(a,adj)]
-trauxmatolog: labor/o-ku-pat-ec/o
+trateratra: trateratra
+trauxmatiz: Ŝok
+trauxmatolog: laborokupateco
 trauxmatologi: an
-tre: treege, treege
+tre: treege
 trem: Inger
 tres: gitar
 trezor: Zamenhof
 trib: plejo
 tribra: υυυ
-tridakn: tridaknedoj
-triglif: dorika
 trigon: cosθ, sinθ
 tri: an
 triktrak: Don, Gaiferos
 trilogi: Arbat
 trimestr: pokapa
-trinidad: Portospeno
-trink: Plejpotenculo, Ijob, Jerusalem, denove: [p(de,verb),r(nov,adj),f(e,adv)]
+trink: Plejpotenculo, Ijob, Jerusalem, denove
 trinom: n-termo
 tritikal: aj
-trobad: ok-ci-tan-lingv/a, ok-ci-tan/aj
-tro: II, troa, troa, troa, troe, troa, troe, troaĵo: [p(tro,adj),r(aĵ,subst),f(o,subst)], troaĵoj: [p(tro,adj),r(aĵ,subst),f(oj,subst)], troigo: [p(tro,adj),r(ig,tr),f(o,subst)], Pi-Bast, troigo: [p(tro,adj),r(ig,tr),f(o,subst)], maltroigo: [p(mal,_G22312),p(tro,adj),r(ig,tr),f(o,subst)], Rauhamaa, Microsoft, Partlow, bon-vol-organiz/aĵ/o, maltroigo: [p(mal,_G22312),p(tro,adj),r(ig,tr),f(o,subst)], III, tropezo: [p(tro,adj),r(pez,ntr),f(o,subst)]
+tro: II, troa, troe, troaĵo, troaĵoj, troigo, Pi-Bast, maltroigo, Rauhamaa, Microsoft, Partlow, bonvolorganizaĵo, III, tropezo
 troj: dudek-kvar
 troke: Brendon, Clark, Cecil, n-trokeo, n-troĥeo
 tromp: Jakob, Laban
-troposfer: karbon-di-oksid/on
-trot: kvar-pied-ul/oj
-trov: postesignon
-tru: Steĉjo, Hjalmar, an
+trot: kvarpieduloj
+tru: Hjalmar, an
 trumpe: Jurij, Finkel
-trunk: sekv-in-ber/aj
-trup: ŝovitaj: [r(ŝov,verb),s(it,best,tr),f(aj,adj)]
-truso: nov-edz-in/o
-tsetse: tsetse/o
-ts: ts, ts, tss, tss, Ts, Niko, ĉit, Ts
-ttt: TTT, TTT, Tut-Tera, hiperteksta, to, to, to, TTT-ejo, TTT, hipertekstojn, TTT, TTT-paĝo, hiperteksto, TTT, URL, TTT-paĝaro, TTT-paĝoj
-tuber: tri-dek-kelk-jar/a
-tuberos: agavacoj
-tucidid: Ateno, Peloponeza
+trunk: sekvinberaj
+trup: ŝovitaj
+truso: novedzino
+ts: ts, tss, Niko, ĉit, Ts
+ttt: Tut-Tera, to, TTT-ejo, TTT-paĝo, URL, TTT-paĝaro, TTT-paĝoj
+tuber: tridekkelkjara
 tuj1: Martin
-tuj: tujtuj, tujtuj, fuzeon
-tukan: Mez, ramfastedoj, Tuc, Sud-hemisfera
+tuj: tujtuj
+tukan: Mez, Tuc
 tuk: Dorina, Vetiha
-tuku: okt/o-don-ted/oj
 tuli: Tm
-tumult: Moseo
-tungst: treege, anstromoj, dekmiliononoj: [[r(dek,nombr)],[r(milion,subst),s(on,subst,nombr),f(oj,subst)]]
-tunizi: Tunizo, ISO, TN
-tur: ej-fel-tur/o, JFK, plejparto
-turing: iama, Erfurto
-turism: I'm, not, in, Thailand, only, ruins, kvin-dek-jar/a
-turkis: verdeblua: [[r(ver,adj)],[p(de,verb),r(blu,adj),f(a,adj)]]
-turkmen: Aŝgabato
+tungst: treege, dekmiliononoj
+tunizi: TN
+tur: JFK, plejparto
+turing: iama
+turism: I'm, not, in, Thailand, only, ruins, kvindekjara
+turkis: verdeblua
 turn: Stella
 tus: tus, uf
 tusx: Maribor, Drava
 tut: tut, Volapük
-tuval: Sud, Funufatio, ISO, TV
+tuval: Sud, TV
 tvist: aj
 tviter: Tŭitero, Twitter-retejo
-udon: plejofte
-ugand: ISO, UG, Kinŝasa
+ugand: UG
 ugvis: bru-ne-verd/a
 u: du-dek-kvin/a, maj, U-fero, maj, maj, uesto
 uj: uj, uj, frukt/o-konserv-uj/o, par, uj, Kurdujo, Saudio, uj, II
