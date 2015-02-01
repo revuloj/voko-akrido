@@ -1,97 +1,47 @@
 :- use_module(library(process)).
 :- use_module(library(unix)).
-%:- use_module(library(memfile)).
+:- use_module(library(filesex)).
 
 :- consult(analizilo2).
 :- consult('dcg/vortlisto_dcg.pl').
 
 %:- consult(revo_blanka_listo).
-%:- artikolo_verda_listo.
 :- consult('vrt/v_revo_evitindaj').
 
 info :-
-  format('analizu_revo_art(Art); analizu_revo_art_litero(Komenco)').
+  format('analizu_revo_art(Art); analizu_revo_art_novaj; analizu_revo_art_prefix(Komenco)').
 
 :- dynamic(verda/2).
 
-%%% revo_xml('http://retavortaro.de/revo/xml').
 revo_xml('/home/revo/revo/xml').
 revo_txt('/home/revo/revo/txt').
 txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
 skribo_pado('kontrolitaj').
-%xslt('/usr/bin/xsltproc').
-%lynx('/usr/bin/lynx').
 revo_verda_listo('vrt/revo_verda_listo_provizora.pl').
 
-
-/***
-revo_art_txt(XmlInput,Txt) :-
-% xsltproc $VOKO/xsl/revotxt_eo.xsl $infile
-  xslt(XsltProc), txt_xsl(Xsl),
-% lynx -nolist -dump -assume_local_charset=utf8 -display_charset=utf8 -stdin 
-  lynx(Lynx),
-  atomic_list_concat([XsltProc,Xsl,XmlInput,'|',Lynx,'-nolist','-dump',
-		      '-assume_local_charset=utf8','-display_charset=utf8','-stdin'],' ',Cmd),
-  open(pipe(Cmd),read,HtmlOut,[]),
-  read_stream_to_codes(HtmlOut,Txt),
-  close(HtmlOut).
-***/
-
 analizu_revo_art(Art) :-
-    revo_txt(TxtPado),
-    atomic_list_concat([TxtPado,'/',Art,'.txt'],TxtFile),
+    artikolo_fonto_dosiero(Art,TxtFile),
     read_file_to_codes(TxtFile,Txt,[]),
     verda_listo(Art,BL),
     analizu_tekston_kopie(Txt,BL).
 
-/***
-analizu_revo_art(Art) :-
-  revo_xml(XmlPado),
-  atomic_list_concat([XmlPado,'/',Art,'.xml'],XmlInput),
-  revo_art_txt(XmlInput,Txt),
-  verda_listo(Art,BL),
-  analizu_tekston_kopie(Txt,BL).
-***/
+analizu_revo_art_prefix(Prefix) :-
+   legu_verdan_liston_se_malplena,
 
-analizu_revo_art_litero(Litero) :-
-   (verda(_,_) -> true; artikolo_verda_listo), % enlegu la verdan liston se ankorau ne antaue...
-   revo_txt(TxtPado), 
-   skribo_pado(Kontrolitaj),
-   atomic_list_concat([TxtPado,'/',Litero,'*.txt'],TxtInput),
-   expand_file_name(TxtInput,TxtFiles),
-   forall(member(TxtFile,TxtFiles),
-     (
-       file_base_name(TxtFile,File),
-       atom_concat(Art,'.txt',File),
-       sub_atom(Art,0,1,_,Unua), % ekz.'a'
-       atomic_list_concat([Kontrolitaj,'/',Unua,'/',Art,'.html'],HtmlFile),
-       format('~w -> ~w~n',[TxtFile,HtmlFile]),
-%      revo_art_txt(XmlFile,Txt),
-       read_file_to_codes(TxtFile,Txt,[]),
-       verda_listo(Art,BL),
-       analizu_tekston_outfile(Txt,HtmlFile,BL)
-     )
+   fonto_dosieroj(Prefix,TxtFiles),
+   forall(
+      member(TxtFile,TxtFiles),
+      kontrolu_dosieron(TxtFile)
    ).
 
-/*****
-analizu_revo_art_litero(Litero) :-
-   revo_xml(XmlPado), 
-   skribo_pado(Kontrolitaj),
-   atomic_list_concat([XmlPado,'/',Litero,'*.xml'],XmlInput),
-   expand_file_name(XmlInput,XmlFiles),
-   forall(member(XmlFile,XmlFiles),
-     (
-       atom_concat(XmlPado,File,XmlFile),
-       atom_concat(Art,'.xml',File),
-       sub_atom(Art,0,2,_,Unua), % ekz.'/a'
-       atomic_list_concat([Kontrolitaj,Unua,Art,'.html'],HtmlFile),
-       format('~w -> ~w~n',[XmlFile,HtmlFile]),
-       revo_art_txt(XmlFile,Txt),
-       verda_listo(Art,BL),
-       analizu_tekston_outfile(Txt,HtmlFile,BL)
-     )
-   ).
-****/
+analizu_revo_art_novaj :-
+    format('analizu novajn...~n'),
+    legu_verdan_liston_se_malplena,
+    novaj_fonto_dosieroj(Novaj),
+    forall(
+      member(TxtFile,Novaj),
+      kontrolu_dosieron(TxtFile)
+    ).
 
 artikolo_verda_listo :-
     revo_verda_listo(Infile),
@@ -121,25 +71,6 @@ artikolo_verda_listo_(In) :-
     )
   ).
 
-/***
-artikolo_verda_listo_testo :-
-    revo_verda_listo(Infile),
-    format('legas ''~w''~n',[Infile]).
-    setup_call_cleanup(
-      open(Infile,read,In),
-(		       
-repeat,
- read_line_to_codes(In,Linio),
-    (  Linio == end_of_file
-    -> !
-    ;   format('~s~n',[Linio]),
-       fail
-    )
-),
-      close(In)		 
-    ).
-***/
-
 
 verda_listo(Art,Listo) :-
   once((
@@ -155,3 +86,68 @@ verda_listo(Art,Listo) :-
       Vrt1 = []
     )),
   append(Vrt1,Lst,Listo).
+
+
+kontrolu_dosieron(TxtFile) :-
+    fonto_celo_dosiero(TxtFile,HtmlFile),
+    format('~w -> ~w~n',[TxtFile,HtmlFile]),
+    read_file_to_codes(TxtFile,Txt,[]),
+    artikolo_fonto_dosiero(Art,TxtFile),
+    verda_listo(Art,BL),
+    analizu_tekston_outfile(Txt,HtmlFile,BL). 
+
+legu_verdan_liston_se_malplena :-
+    verda(_,_) -> true
+    ;  % enlegu la verdan liston se ankorau ne antaue... 
+    catch(
+	 artikolo_verda_listo,
+	 _,
+	 true % ignore exceptions
+    ).
+			
+
+artikolo_fonto_dosiero(Art,TxtFile) :-
+    atom(Art),
+    revo_txt(TxtPado),
+    atomic_list_concat([TxtPado,'/',Art,'.txt'],TxtFile).
+
+artikolo_fonto_dosiero(Art,TxtFile) :-
+    atom(TxtFile),
+    file_base_name(TxtFile,File),
+    atom_concat(Art,'.txt',File).
+
+fonto_celo_dosiero(Fnt,Cel) :-
+    atom(Fnt),
+%   revo_txt(TxtPado), 
+   skribo_pado(Kontrolitaj),
+   file_base_name(Fnt,FntArt),
+   atom_concat(Art,'.txt',FntArt),
+   sub_atom(Art,0,1,_,Unua), % ekz.'a'
+   atomic_list_concat([Kontrolitaj,'/',Unua,'/',Art,'.html'],Cel).
+
+fonto_celo_dosiero(Fnt,Cel) :-
+   atom(Cel),
+   revo_txt(TxtPado), 
+   file_base_name(Cel,CelArt),
+   atom_concat(Art,'.html',CelArt),
+   atomic_list_concat([TxtPado,'/',Art,'.txt'],Fnt).
+
+fonto_dosieroj(Prefix,Dosieroj) :-
+    revo_txt(TxtPado), 
+    atomic_list_concat([TxtPado,'/',Prefix,'*.txt'],TxtInput),
+    expand_file_name(TxtInput,Dosieroj).
+
+novaj_fonto_dosieroj(NovajDosieroj) :-
+    fonto_dosieroj('',ChiujTxt),
+    findall(
+      File,
+      (
+         member(File,ChiujTxt),
+         fonto_celo_dosiero(File,Celo),
+         set_time_file(File,[modified(FntTempo)],[]),
+	 set_time_file(Celo,[modified(CelTempo)],[]),
+	 FntTempo > CelTempo
+      ),
+      NovajDosieroj
+    ).
+	   
