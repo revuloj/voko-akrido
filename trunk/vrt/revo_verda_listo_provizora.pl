@@ -2949,137 +2949,123 @@ puzl: denove
 rabi: Pasteur
 racx: raĉ, riĉ
 radar: ra, etecting, nd, anging, rad/ar/o
-radian: rad, rad
-radika1: CH, CH
-radik: Stockard, Vilĉjo, ismo, vi-vi-pov/a, n-an
-radiometr: vattojn
+radian: rad
+radika1: CH
+radik: Stockard, ismo, vivipova, n-an
 radium: Ra
-radius: x-x, x-x
+radius: x-x
 radon: Rn
-rafael: Sanzio, Bazarov
-rafin: prilaboriteco: [p(pri,adj,subst),r(labor,ntr),s(it,best,tr),s(ec,subst,adj),f(o,subst)], Fushun
-ragxastan: Keralao
+rafael: Bazarov
+rafin: prilaboriteco, Fushun
 rahxel: Jakob
-rajd: Midaso
 rajmund: Laval
-rajt: Jefferson, Davis, Free, Software, Foundation, Free, Software, Foundation, okcent, voĉ-don-rajt/o
-raked: tabl/o-tenis-matĉ/on
-rakont: Jack, London, Miko
-ramajan: Ramo, Bhakti
-rambutan: sud-orient-azi/o
+rajt: Jefferson, Davis, Free, Software, Foundation, okcent, voĉdonrajto
+raked: tablotenismatĉon
+rakont: Jack, London
+ramajan: Bhakti
+rambutan: sudorientazio
 ramn: verde-blankaj
 rand: fin, punkt, Bricard, Saul, Gibea, ĉi-sence
 rang: rang, plejmulto, Ekz-e
-rapid: trairata: [p(tra,verb),r(ir,ntr),s(at,best,tr),f(a,adj)], LT, km/h, Ligian
-ras: William, Auld, Abraham, miks-ras-ul/o, miks-ras-ul/oj
+rapid: trairata, LT, km/h, Ligian
+ras: William, Auld, Abraham, miksrasulo
 rastr: Malpleja, samkiel
-rat: protofazaj
 rauxk: mal, troa
 ravelin: Nolan
 rav: rav, ant
 reakci: mal
 reaktor: Reakci
 real1: hispan
-real: Herman, Thiery, sovetia, aj, tn
+real: Herman, Thiery, aj, tn
 recipr: Adj
-recital: Sevilo, Jean-Thierry, von, Büren, SAT-kongreso
+recital: Jean-Thierry, von, Büren, SAT-kongreso
 recit: Gilgameŝ
-redakt: Ŝanhajo, Ben, Liŭ, HTML-markojn, UniRed, Simredo, Ĝavo
-reding: jc, denove: [p(de,verb),r(nov,adj),f(e,adv)], denove: [p(de,verb),r(nov,adj),f(e,adv)]
-redund: par-ec-bit/o
+redakt: Ben, Liŭ, HTML-markojn, UniRed, Simredo
+reding: denove
+redund: parecbito
 redut: Cruys
-refere: dek-ses-jar-cent/aj, verko/dokumento, NPIV, mise, across, traa, am-baŭ-direkt/aj
-refer: zagreba
-reflek1: id, xRx, id
+refere: deksesjarcentaj, verko/dokumento, NPIV, mise, across, traa, ambaŭdirektaj
+reflek1: id, xRx
 refleks: Pavlov
-refleksologi: pied, Magda, Amer, kaira
+refleksologi: pied, Magda, Amer
 reflektor: ie-tie
-reform: karintia
 refrak: Newcomb
-rege: aj, skao, Desperado
-regime: eskadronoj: [r(eskadr,subst),s(on,subst,nombr),f(oj,subst)]
-region: kontrauspamilo, be, Netfind, com, org, su
+rege: aj, Desperado
+region: be, Netfind, com, org, su
 regist: Olympus, LS, Alsace-Lorraine
 regres: Marček, TEĴA
-regul: dek-du-edr/o, du-dek-edr/oj, dx, x-a, dx
-regx: Ekz-e, monarkio, Ĥiti, Hjalmar, Paĉakutek, Ĉimuan, Kito
-re: re, re, Denove, denove: [p(de,verb),r(nov,adj),f(e,adv)], denove: [p(de,verb),r(nov,adj),f(e,adv)], pro/cent, re/prezent, re/sum, II, re, re, ankoraŭfoje, dom-mastr-in/o, re, re, Denove, retro, re, denove: [p(de,verb),r(nov,adj),f(e,adv)]
-rejki: Mikao, Usui
-rejnlandp: Nordrejn-Vestfalujo
+regul: dekduedro, dudekedroj, dx, x-a
+regx: Ekz-e, Ĥiti, Hjalmar, Paĉakutek, Ĉimuan
+re: re, Denove, denove, re/prezent, re/sum, II, ankoraŭfoje, dommastrino, retro
+rejki: Usui
 rejs: Iama
 reklam: ado
 rekome: esp
 rekomp: pro/por, Tycho, Brahe, Nebukadnecar
-rekrem: vin-ber-rekrement/o
+rekrem: vinberrekremento
 rekrut: Novevarbito, plejparte
-rekt: Vd, am-baŭ-flank/e, inkluzivataj: [r(inkluziv,adj),s(at,best,tr),f(aj,adj)], ĉi-sence, Bricard, rekt-en/a-skit/a, T-kapa, denove: [p(de,verb),r(nov,adj),f(e,adv)], ke-frazo, Karlo, Karlo, inkluzivataj: [r(inkluziv,adj),s(at,best,tr),f(aj,adj)], Bazarov, rrektigis
-rektor: Inazo, Tokio
+rekt: Vd, ambaŭflanke, ĉi-sence, Bricard, rektenaskita, T-kapa, denove, ke-frazo, Karlo, Bazarov
+rektor: Inazo
 relajs: relais
 relati: Germain
 religi: l'animo
-remington: denove: [p(de,verb),r(nov,adj),f(e,adv)]
+remington: denove
 renat: Esperanto-Asocio
 rendiment: utlia
 reni: Re, transir
 renkon: Pjotr, Ivanoviĉ
 rentgeni: Rg
-rent: prun-ted/o-nit/a
 renver: abc, acb, Bricard
 rep: aj
 reporter: Stern, Rafael, Correa
-represi: Ventspils, Kronŝtadta, Bromberger, Blutsonntag
-reprezali: ustaŝoj, PIVoj, repressalia, political, respression, PIVoj
-reprezent: re, prezent, re
-respek: Marja, Antonovna, Rudzinski, denove: [p(de,verb),r(nov,adj),f(e,adv)], Hamul, Nikotris, Alice, Ŝjangzi
-respon: Laŭi, jc, um
-respons: okupuĝas, Povondra, ĉi-kadre, Varankin, SEU, SEU
-rest: estkiel, grano
-ret: TTT-ejo, TTT, TTT-legilo, Internet, samkiel, TTT-paĝaro, onta, Vikipedio, Ipernity
+represi: Ventspils, Bromberger, Blutsonntag
+reprezali: PIVoj, repressalia, political, respression, PIVoj
+reprezent: re, prezent
+respek: Marja, Antonovna, Rudzinski, denove, Hamul, Nikotris, Alice, Ŝjangzi
+respon: Laŭi, um
+respons: Povondra, ĉi-kadre, Varankin, SEU
+ret: TTT-ejo, TTT-legilo, Internet, samkiel, TTT-paĝaro, onta, Ipernity
 retikul: Yel, Minda
 retroderiv: far, Piĉ-aj, enkludi, elkludi
-retro: retro, retro, retropaŝi: [p(re,verb),p(tro,adj),r(paŝ,ntr),f(i,verb)], retroe, ret-ros-peg-ul/o, Danjelo, ret-ros-peg-ul/o, Lastoĉkin, ret-ros-peg-ul/o
-retroir: Frodo, Sam, retropaŝi: [p(re,verb),p(tro,adj),r(paŝ,ntr),f(i,verb)], hor-orf-rap/it/e
-retros: ret-ror-ig-ard/a
+retro: retro, retropaŝi, retroe, retrospegulo, Lastoĉkin
+retroir: Sam, retropaŝi, hororfrapite
+retros: retrorigarda
 retrovirus: XMRV
 reuxma: Malsan, dio-scias-kion
 revela: Samuel
 revers: Zamenhof
 rev: van, Gogh
 revizi: Jabeŝ, Gilead, Pi-Bast, Sequoyah
-revolu: ekinta: [r(ek,intj),s(int,best,verb),f(a,adj)], SAT-laboro
-rezign: programom
-rezin: epok-si-rezin/o, hetero-polimero, epok-si-hav/a
+revolu: ekinta, SAT-laboro
 rezist1: omo
-rezist2: omometro, poa, rezist, iv
+rezist2: poa, rezist, iv
 rezist: le
 rezolu: TEĴA, Nitobe-Simpozio
-r: du-dek-unu/a, maj, II, ro, r-sono
-riad: Sauda
-rial: Sauda, Abdullah, Saleh
+r: dudekunua, maj, II, ro, r-sono
+rial: Abdullah, Saleh
 ribel: Fujimori
-ricev: spertanto: [r(spert,adj),s(ant,best,verb),f(o,subst)], denove: [p(de,verb),r(nov,adj),f(e,adv)]
+ricev: spertanto, denove
 ricx: Eminjon
-rid: denove: [p(de,verb),r(nov,adj),f(e,adv)], fi-religi-ec/a, Ilu-ittia, Ĉan
-rigard: Marinjo, D-RO, GALÉN, WANGEL, ARNHOLM, Marija, Zalmuna, Ilu-ulba, denove: [p(de,verb),r(nov,adj),f(e,adv)], Udan, Yahoo-grupoj, vin-ber-trunk/o
+rid: denove, fireligieca, Ilu-ittia, Ĉan
+rigard: D-RO, GALÉN, WANGEL, ARNHOLM, Marija, Zalmuna, Ilu-ulba, denove, Udan, Yahoo-grupoj, vinbertrunko
 rig: Longren
-rigid: Adamson, Filiŝtojn
+rigid: Adamson
 rikeci: Howard, Taylor, Ricketts
 rikolt: veg-on, Refaim
-rikord: Esperanto-Muzeo, datenopo: [r(daten,subst),s(op,subst,nombr),f(o,subst)], ALGOL, PL/I
+rikord: Esperanto-Muzeo, datenopo, ALGOL, PL/I
 rilat: Bricard, ĉi-supra, n-argumentajn, R-rilato, aRb, id, n-argumenta, xRy, ĉi-supra
 riman: Bernhard
 rimen: Memeka
-rim: hemistikoj, plejparte, D-ro, Schlüter, harmonigiitaj, am/o-flam/o-ornam/o, Grabowski, Zamenhof, de/ten-as-katen/as, antenoj-la, Grabowski, aa, bb, cc, abab, cdcd, abba, abba, cddc, une
-rimoid: alt-ran-gaj-blank/aj, neniam-sub
+rim: plejparte, D-ro, Schlüter, amo-flamo-ornamo, Grabowski, Zamenhof, detenas-katenas, antenoj-la, Grabowski, aa, bb, cc, abab, cdcd, abba, abba, cddc, une
+rimoid: altrangaj-blankaj, neniam-sub
 rimors: Caiyun
 ring: n-modulaj, n-modulaj, n-obloj, R/I
-ripar: Sanbalat, Tobija, Jerusalem, Zebedeo
-ripet: Denove, Denove, denove: [p(de,verb),r(nov,adj),f(e,adv)], mise
+ripar: Sanbalat, Tobija, Jerusalem
+ripet: Denove, denove, mise
 riproc: Donald, Broadribb
 rism: n-ro
-rit: Oomoto
 rivere: Allah
-river: Raymond, Schwartz, km-ojn, Tibeto
+river: Raymond, Schwartz, km-ojn
 rivolu: km/h, rivolu, Bricard
 rizot: poiome
 robai: abaa, Kajjam, pleje, robajo
@@ -3089,45 +3075,41 @@ rodi: Rh, transir
 rodos: Rodiso
 rodrig: Sanchez
 rok: Boirac, Sugimura, Felsen, Gestein, fr, roche, rock, Gérard
-rokok: volutoj, art-fak-ul/oj
-rol: Hamleto
+rokok: artfakuloj
 roma: plejparte
-roman: William, Auld, Spartako, rom, an, Lozgaĉev, in-ton/a-ci/o
-romanik: popoleskajn
-romant: Kultur-Centro, Hay, Stockard, jc, NKVD, XX-a
-romp: unu-anim-ec/on, unu-ton-ec/on, Adela, ĉiu-tag-ec/on, ĵu, Strč, prst, skrz, krk, Josuo, Jeriĥon
+roman: William, Auld, rom, an, Lozgaĉev
+romant: Kultur-Centro, Hay, Stockard, NKVD, XX-a
+romp: unuanimecon, unutonecon, Adela, ĉiutagecon, ĵu, Strč, prst, skrz, krk
 rondel: Kaloscay, William, Auld, Marjorie, Boulton
 rond: pli-malpli
-ronron: kurŝripozi
-ror: denove: [p(de,verb),r(nov,adj),f(e,adv)]
-rosin: sekv-in-ber/o
+ror: denove
+rosin: sekvinbero
 rotaci: M', OM, OM'
 rotang: Calameae
 roterdam: 'E, 'N, Hector, Hodler
-rot: Rjabkov, dolmanoj
+rot: Rjabkov
 rovers: Edward
-roz: Roz, bul, jeriĥorozo, jeriĥa, jeriĥa
-ruand: Kigalio, ISO, RW, Kinŝasa
-rubeol: infan, kon-junt-iv/o
-rubidi: Rb, Rb
+roz: Roz, bul
+ruand: RW
+rubeol: infan
+rubidi: Rb
 rudbeki: plejofte
 rudime: pli-malpli, Proteolepas
-rudolf: denove: [p(de,verb),r(nov,adj),f(e,adv)]
+rudolf: denove
 rugx: John, Logie, Baird
-ruin: Miyamoto, Masao, Jerusalem, vin-ber-ĝarden/on
-ruk: ruk, ruk, ruk, ruk, ruk
-rukt: rukt, rukt
+ruin: Miyamoto, Masao, Jerusalem, vinberĝardenon
+ruk: ruk
+rukt: rukt
 rulet: Tobbogan
-rul: inkaoj, glad/rul/i, Tarzan, Molière, Molière, pli-malpli, libron-rulaĵon: [[r(libr,subst),s(on,subst,nombr)],[r(rul,tr),s(aĵ,subst,adj),f(on,subst)]], Izrael, Baduroc, Jakob, risurcojn
-ruman: Bukareŝto, ISO, RO
+rul: Tarzan, Molière, pli-malpli, Izrael, Baduroc, Jakob
+ruman: RO
 rum: Zuro
 run: plejparte, Tholfr, Kolbeinn
-rurik: Hrørekr, hródr, ríkr, Rastislavo, Kocelo, nov-go-rod/o, Kieva
-rus: kvin-dek-jar/a
-ruso: Rousseau, jc
+rurik: Hrørekr, hródr, ríkr
+rus: kvindekjara
+ruso: Rousseau
 rust: Otto
-rustik: Kam-par-ec/a
-ruteni: Ru, transir, am-fot-er/a
+ruteni: Ru, transir
 ruterfordi: Rf, Kurĉatovo, IUPAC, unnilkvadio, Unnilquadium
 o1: maj, maj, O-aperturo
 obelis: plejofte, Seti
