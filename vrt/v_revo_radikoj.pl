@@ -34,7 +34,7 @@ r('ŝpal',subst).
 r('ŝovinist',subst).
 r('ŝovinism',subst).
 r('ŝovel',tr).
-r('ŝov',verb).
+r('ŝov',tr).
 r('ŝot',tr).
 r('ŝose',subst).
 r('ŝos',subst).
@@ -8720,7 +8720,7 @@ r('celebr',tr).
 r('celastrac',subst).
 r('celakant',subst).
 r('celadon',subst).
-r('cel',verb).
+r('cel',tr).
 r('cekum',subst).
 r('cejan',subst).
 r('cefalotorak',subst).
