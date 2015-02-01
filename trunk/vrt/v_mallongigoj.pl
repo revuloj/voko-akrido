@@ -22,6 +22,7 @@ mlg('RNA'). % ribonukleacido
 mlg('Rim'). % rimarko
 mlg('SAT'). % Sennacia Asocio Tutmonda
 mlg('TEJO'). % Tutmonda Esperanto-Junularo
+mlg('TTT'). % Tutera Teksaĵo
 mlg('UEA'). % Universala Esperanto Asocio
 mlg('UV'). % Universala Vortaro
 mlg('adv'). % adverbo
