@@ -101,8 +101,8 @@ legu_verdan_liston_se_malplena :-
     ;  % enlegu la verdan liston se ankorau ne antaue... 
     catch(
 	 artikolo_verda_listo,
-	 _,
-	 true % ignore exceptions
+	 Exc,
+	 format('~w~n',[Exc]) % print exception and proceed
     ).
 			
 
@@ -144,9 +144,13 @@ novaj_fonto_dosieroj(NovajDosieroj) :-
       (
          member(File,ChiujTxt),
          fonto_celo_dosiero(File,Celo),
-         set_time_file(File,[modified(FntTempo)],[]),
-	 set_time_file(Celo,[modified(CelTempo)],[]),
-	 FntTempo > CelTempo
+         once((
+	      \+ exists_file(Celo)
+	     ;
+              set_time_file(File,[modified(FntTempo)],[]),
+	      set_time_file(Celo,[modified(CelTempo)],[]),
+	      FntTempo > CelTempo
+	     ))
       ),
       NovajDosieroj
     ).
