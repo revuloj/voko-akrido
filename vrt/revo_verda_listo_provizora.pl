@@ -3647,231 +3647,199 @@ tuval: Sud, TV
 tvist: aj
 tviter: Tŭitero, Twitter-retejo
 ugand: UG
-ugvis: bru-ne-verd/a
-u: du-dek-kvin/a, maj, U-fero, maj, maj, uesto
-uj: uj, uj, frukt/o-konserv-uj/o, par, uj, Kurdujo, Saudio, uj, II
-ukaz: Sovetia
-ukrain: UEA-delegito, no, jakob, no, Konstant, no, rab, no, delf, no, pingv, no, dendrologia, Umanj, ESPERANTE
-ukrajn: III, Kievo
+ugvis: brune-verda
+u: dudekkvina, U-fero, maj, uesto
+uj: uj, frukto-konservujo, par, II
+ukrain: UEA-delegito, no, jakob, Konstant, rab, delf, pingv, Umanj, ESPERANTE
+ukrajn: III
 ukulel: Paul, McCartney
 ulamban: Sansa
-ulan: dek-ses-jar/a
+ulan: deksesjara
 ulcer: Winston
-ul: ul, ul, unu/o-kul-ul/o, mult-infan-ul/in/o, II
-ulm: ter-glob-du/on/o
+ul: ul, unuokululo, multinfanulino, II
+ulm: terglobduono
 uln: Kubut
-ultima: Sarajevo
-ultra: ultra, ultra, infra
-um: um, um, um, um, um, II, CF, n-uma, e-uman, baz, orizi, troa, um, II
+ultra: ultra
+um: um, II, CF, n-uma, e-uman, baz, orizi, troa, II
 umlauxt: man, men, Gast, Gäste, Mutter, Mütter, Gans, Gänse, goose, geese
-uncial: jc, kirilico
-ungven: Medi-kam-ent/a
-uni: Margareto, Litvo, Liona, Bresta, Algol
-unik: denove: [p(de,verb),r(nov,adj),f(e,adv)], Salem, Arthur, Miller, Margareta, Vestminstra
-unikorn: unu-korn-ul/o
+ungven: Medikamenta
+uni: Algol
+unik: denove, Salem, Arthur, Miller, Margareta
+unikorn: unukornulo
 uniks: POSIX, IEEE
-univer2: Kembriĝa, Bonn, an, Teherano
-univer: antimaterio
+univer2: Bonn, an
 unucikl: Pi
-unu: Kp, unujn, unujn, unujn, unun, unun, unun, denove: [p(de,verb),r(nov,adj),f(e,adv)], Unun, Koreliĉojn, Rimŝa, Vd, PAG, unun, n-uma, au, ĉi-sence, unito, Ono
+unu: Kp, unujn, unun, denove, Unun, Rimŝa, Vd, PAG, n-uma, au, ĉi-sence, unito, Ono
 upanisxad: Els, Upanishads
-ups: ups, ups, Mise, ups, ups
-urb: VIII, IV, in-noc-ent/o, urb, okomplekso, delegitoza, Rio, Janeiro, Varaĵdin, Varaždin
+ups: ups, Mise
+urb: VIII, IV, Innocento, urb, okomplekso, delegitoza, Rio, Janeiro, Varaĵdin
 uretr: Ned
 ureus: kobra, Amenhotep
-urs: Nunavuto, Nord, procionedoj, hemisfero, stefiguro
+urs: Nord
 uskl: uskl, ec, on, ch, CH, Ch, CXIUJXAUXDE, Cxiujxauxde, M-u, M-c
-uson: Vaŝin, Frank, Lloyd, Wright, James, Duff, Law, United, States, of, North, America, Usonia, jc
-usxu: aǔ
+uson: Vaŝin, Frank, Lloyd, Wright, James, Duff, Law, United, States, of, North, America, Usonia
 utah: fiŝlago-Nacia
 utarpradesx: Utaro
 utopi: pli-malpli
-utrehxt: ring, 'E, ring, 'N
-uvul: ro, ro
-ux: du-dek-ses/a, II, ŭo, u-hoko, laŭ-di, ŭa, ŭaks, ŭo
-uxoux: ŭoŭ, ŭoŭ, ŭoŭ, Ŭoŭ
-uzbek: Uzbekio
-uz: trouzi: [p(tro,adj),r(uz,tr),f(i,verb)], trouzi: [p(tro,adj),r(uz,tr),f(i,verb)], trouzi: [p(tro,adj),r(uz,tr),f(i,verb)]
+utrehxt: ring, 'E, 'N
+uvul: ro
+ux: dudeksesa, II, ŭo, u-hoko, laŭ-di, ŭa, ŭaks, ŭo
+uxoux: ŭoŭ, Ŭoŭ
 uzurpator: Xu
-v1: IV, pĝ, xxviii, maj, maj, V-fero, vo-fero, maj, II, vo, vo, www, vooj, no, Anna, vo, avvocato
+v1: IV, pĝ, xxviii, maj, V-fero, vo-fero, II, vo, www, vooj, no, Anna, avvocato
 vacx: Úrsula
 vagabond: Baghy
 vag: Izrael, Adaha
-vagxrajan: tibeta
-vahabism: Sauda, Saŭdarabiaj, samkiel
-vajrocxan: Amitabo, Mahavajroĉano
+vajrocxan: Mahavajroĉano
 vakcin: imun
-vaker: vaqueros, jc
+vaker: vaqueros
 vak: pp, vak, ant
-vakuol: balantidio
-valencien: Brugoj
-valerian: noĉitaj, officinalis, Olga
+valerian: officinalis, Olga
 valeri: Evangelisti
-val: aj, ĉipoj
-valiz: jc
+val: aj
 valon: José, Happart, PS, Voer
-valoni: galloj
-valor: egal, Tarŝiŝ, mul-te-valor/a, mul-te-valor/an
+valor: egal, Tarŝiŝ, multevalora, multevaloran
 valoriz: length, cxeno
 vals: Johann, Strauss
 valter: Brienne
-valut: valor-metal-baz/a
-valv: pneŭmo, du-valv-ul/oj
+valut: valormetalbaza
+valv: duvalvuloj
 vanad: transir
 van: Adaha
-vapor: mantoojn
-varan: varandeoj
-variab: plejofte, stokast, ĉi-okaze
+variab: stokast, ĉi-okaze
 varian1: X-E, Var, X-E, Y-E, Kovar, ko, PIV-a
-vari: teniko, Auld, Guglielminetti, ĉi-subaj, Guangxi
-varingjen: pers/ist', kaj-am-traduk/oj, III, Varengjeno
-varm: Bokarev, Krause, misa, denove: [p(de,verb),r(nov,adj),f(e,adv)], samkiel, PIV-ekzemplo, mal, Ah, Clemency, Volapük, T-ĉemizon
-varsovi: Izabelino, Varsovi, Tokio, Varsovi, Geto
+vari: Auld, Guglielminetti, ĉi-subaj, Guangxi
+varingjen: pers/ist', Kajam-tradukoj, III, Varengjeno
+varm: Bokarev, Krause, misa, denove, PIV-ekzemplo, mal, Ah, Clemency, Volapük, T-ĉemizon
+varsovi: Varsovi
 vart: Song, Qingling
 vast: pli-malpli, sinx, Vd, aĵ
-vat1: ĵulo, Wh, ĵuloj
-vatikan: rezidejo, Chiasso/Kiaso, mikrosocia, Kremlo, Gaudí, Aznar
-vatt: Vatt/o, vatto, vatthoro, vattohoro
-vaux: vaŭ, vaŭ, boj, vaŭ-vaŭ-vaŭ-vaŭ
+vat1: Wh
+vatikan: Chiasso/Kiaso, Gaudí, Aznar
+vatt: Vatt/o
+vaux: vaŭ, boj, vaŭ-vaŭ-vaŭ-vaŭ
 vav: װער, ver, דו
-vaz: vaz-lav-maŝin/o
+vaz: vazlavmaŝino
 vegan: Nori
-vegeta2: tempeo, mizo, Zantipe
+vegeta2: Zantipe
 vegeta: giroflée, dunes, chou, chardon, bleu
 veget: Santa, Cruz
 ve: veo, veoj, vei, veojn, veadas, hejmveo
-vek: Hamleto
-vektor: opojn, P-O, OP, trairataj: [p(tra,verb),r(ir,ntr),s(at,best,tr),f(aj,adj)], Bricard
-vel: bum-bram-vel/o
+vektor: opojn, P-O, OP, trairataj, Bricard
+vel: bum-bram-velo
 vencesla: Přemysl, Otakar
-vend: pluropaj: [r(plur,adj),s(op,subst,nombr),f(aj,adj)], podetala, Anjon, Arbat, ret
+vend: pluropaj, podetala, Anjon, Arbat, ret
 venen: Lajbaŭ
-vener1: ku-pi-don/on
-ven: Hagar, alvenita: [p(al,verb),r(ven,ntr),s(it,best,tr),f(a,adj)], Izraelidoj, Izraelo, Jn, Kp, celatan: [r(cel,verb),s(at,best,tr),f(an,adj)], Raĥel, Lea, Jakob, an, EU, Denove
-venk: Venecio, mal
+ven: Hagar, Jn, Kp, Raĥel, Lea, Jakob, an, EU, Denove
+venk: mal
 vent: pp, Boaz
-vepr: dornoza
-verand: Manjo
-verd: Chen, Yuan, respond-ec-ul/oj, Sun, Yatsen, E-Ligo
-verk: Moliero, Pasteur, Herhor, Zamenhof, Zamenhof, Ludovikito: [r(Ludovik,best),s(it,best,tr),f(o,subst)], hiperteksta
-verm: li-brov-er-mul/o, li-brov-er-mul/o
-vermicxel: UV, UV
+verd: Chen, Yuan, respondeculoj, Sun, Yatsen, E-Ligo
+verk: Pasteur, Herhor, Zamenhof, Ludovikito
+verm: librovermulo
+vermicxel: UV
 vermont: Burlington
 vernis: sercxis, ajxo
 veronal: Maier
 versal: piv-a
-vers: plejofte, alvenita: [p(al,verb),r(ven,ntr),s(it,best,tr),f(a,adj)]
 versi: G-banko
 versx: Aqr
-vertag: Bundaŝ, miks-ras-ul/o
-verteb: rond-buŝ-ul/oj
-vertigx: sun-brul-iĝ/o
+vertag: Bundaŝ, miksrasulo
+verteb: rondbuŝuloj
+vertigx: sunbruliĝo
 vertik: n-opo
-vesper: Layau, ŝtonoza, Mikito, Seulo, Nisen, Nisan, Nisan, Nisan
+vesper: Layau, Seulo, Nisen, Nisan
 vespr: Audun
 vest: Zamenhof, Baal, Elsa, Olsen
 vesxt: Halman
-veteri: sep-dek-jar/a
-vet: am-baŭ-flank/e
-vetur: pp, plejofte
+veteri: sepdekjara
+vet: ambaŭflanke
+vetur: pp
 vezik: Express
-vezuvi: Napolo
-v: v/o, vo, maj, maj
-viand: ŝaf-id-viand/o
-viatik: Antonio, Isabel
-vic: Filiŝtoj, Izrael, vic, vic-lu-ig/i, Boparenca, stif, opoj
+v: v/o, vo, maj
+viand: ŝafidviando
+viatik: Isabel
+vic: Izrael, vic, vicluigi, Boparenca, stif, opoj
 vide: Bohème, Macbook-on, YouTube
-videoklip: vi-de/ok-lip/o, vi-de/ok-lip/on, vi-de/ok-lip/on, Madrid', venontsemanjne
-vid: Jakob, Laban, opaka, nigrevidulo, lante, descendis, Denove, vid-al-vid/e, vid-al-vid/e, hom, plejaltas, Lagranĝ
-vifi: Wi-Fi, Alliance, IEEE, Kindlo, IEEE
+videoklip: Madrid'
+vid: Jakob, Laban, nigrevidulo, Denove, vid-al-vide, hom, Lagranĝ
+vifi: Wi-Fi, Alliance, IEEE
 vigil: ĉi-nokte
-vigvam: nord-orient-amerik/aj, Jaguarpiedul
-viki: eo-vikio, vikipedio, Esperanto-Junularo
-viking: Kievo, Orm
+vigvam: nordorientamerikaj, Jaguarpiedul
+viki: eo-vikio, Esperanto-Junularo
+viking: Orm
 viktor: ha
 viktori: Thomas, Mitchell
-vilhelm: Erneĉjo, Vilhelĉjo
 vincent: Ferrier
 vind: Ptah
-vindoz: Windows, Microsoft, Majkrosoft, Windows, DOS, Windows, NT, Windows, Windows, XP
-vin: Daya, karbon-di-oksid/on, vin-ber-arb/o, vin-ber-ĝarden/o, vin-ber-ĝarden/on
-vinil: CH, CH
-vinkt: antaŭ-PIV-aj, Andersena, Zamenhof, Vilborg, VINKT/O, Jurgensen, Wörterbuch, Esperanto-Deutsch, eld, Wüster, mikroslipa, vinctum, Waringhien, et, Interlingue-Interlingua, rivet, Ptc, perf
-vintr: hemisfero, sepembro
-viol: deviita: [r(devi,ntr),s(it,best,tr),f(a,adj)]
+vindoz: Windows, Microsoft, Majkrosoft, DOS, NT, XP
+vin: Daya, vinberarbo, vinberĝardeno, vinberĝardenon
+vinil: CH
+vinkt: antaŭ-PIV-aj, Zamenhof, Vilborg, VINKT/O, Jurgensen, Wörterbuch, Esperanto-Deutsch, eld, Wüster, vinctum, Waringhien, et, Interlingue-Interlingua, rivet, Ptc, perf
 violon: Jurij, Finkel
 vipur: Zamenhof
-virg: spertinta: [r(spert,adj),s(int,best,verb),f(a,adj)], pra, Vir
-vir: vir, seks, Filiŝtoj, Hm
+virg: pra, Vir
+vir: vir, seks, Hm
 virtua: Russel, Tyalor, Warren, Robinett, Chapel, Hill
 virus: European, Bernt, Fix, Bernd
-visigot: Alarikon, an
+visigot: an
 viskonsin: Horicon
 viskoz: Échirolles
-visx: Jeruzalemon
-visxnu: Vjasa, Narasimha, Viŝno, Viŝno, Ramo
+visxnu: Vjasa, Narasimha
 vital: Bergson, disdiviĝanta
-vitre: Ge-lat-en/ec/a
-vitr: sun/o-kul-vitr/oj, sun/o-kul-vitr/oj
-viv: fenologio, vi-var-dec/o, Gavrilovna, vi-vi-pov/a, vi-vi-pov/a, vi-vi-pov-ec/o, vi-vu-kri/o, Merchant, Klem, Terminator, kvin-dek-jar/a, Izraelidoj, Eunana, denove: [p(de,verb),r(nov,adj),f(e,adv)], Eliŝa, denove: [p(de,verb),r(nov,adj),f(e,adv)], travivita: [p(tra,verb),r(viv,ntr),s(it,best,tr),f(a,adj)]
-vizagx: Xing, vizaĝ-al-vizaĝ/e
+vitre: Gelateneca
+vitr: sunokulvitroj
+viv: vivipova, vivipoveco, vivukrio, Merchant, Klem, Terminator, kvindekjara, Eunana, denove, Eliŝa, denove, travivita
+vizagx: Xing, vizaĝ-al-vizaĝe
 vizbaden: 'E, 'N
 viz: Ecca-Inter
-vizi: Jesaja, Babel, Jesaja
+vizi: Jesaja, Babel
 vizitandin: Nevers
-vizit: Kp, Knut, Anjo
-vjetnam: Hanojo, Socjalisma, ISO, VN, Sud-Ĉina
+vizit: Kp, Knut
+vjetnam: VN, Sud-Ĉina
 vladik: Vyšehrad
-vocx: elblovita: [p(el,verb),r(blov,ntr),s(it,best,tr),f(a,adj)], ĉiesvoĉa, voĉ-don-rajt/a, Kruko, Petters
-vodevi: vaŭdevilo, vaŭdevilo
-vodu: Dan, mul-te-di/a
-vojagx: Szathmári, kaz-ohi-ni/o, Sándor
-vojevod: Soplicanojn
-vojevodi: Grudziądz, pomeria
-voj: trairata: [p(tra,verb),r(ir,ntr),s(at,best,tr),f(a,adj)], irata: [r(ir,ntr),s(at,best,tr),f(a,adj)], trairata: [p(tra,verb),r(ir,ntr),s(at,best,tr),f(a,adj)], Vd, vin-ber-ĝarden/on, Ojdipo, fer-voj-kompani/o, Korsor, fer-voj-kompani/o, ĉi-supra, tra-azia
+vocx: elblovita, ĉiesvoĉa, voĉdonrajta, Petters
+vodevi: vaŭdevilo
+vodu: Dan
+vojagx: Szathmári, Sándor
+vojevodi: Grudziądz
+voj: trairata, irata, Vd, vinberĝardenon, fervojkompanio, Korsor, ĉi-supra, tra-azia
 vokal: Kalocsay, vi-no, pin-to, vi-na-gro, mi-a, a-pud
 vok: elvoki-povon, Aapo
 volapuk: Johann-Martin, Schleyer
-volfgang: Olavo
 vol: u-formon, malgraŭvola, malgraŭvole
 voliti: u-modalo
 volter: Arouet
-volt: trairata: [p(tra,verb),r(ir,ntr),s(at,best,tr),f(a,adj)], V/m
+volt: trairata, V/m
 volum: Wiederboren
-volv: vin-ber-branĉ/oj
-vombat: vombatedoj
-vort: pleje, proximus, proksim, du/o-ne-inter/naci/a, meze-klera, a-vorto, a-vorto, Eichholz, nPIV, KABE, Erich-Dieter, Krause, e-vorto, e-vorto, o-vorto, o-vorto, par, Esper-anto, ricev-ita, laŭmorfeman, ba-lo, sce-no, ko-le-ro, VER, VEI, VER, mise, VER, VER, II, aŭt/o-aer-brems/o, post-tag-mez/o, VER, vapor-ŝip-asoci/o, purig-o, martelbat-o, fervoj-isto, VER, VEI, grandkuraĝ-a, longdaŭr-a, diverskonsist-a, senfort-a, senpov-a, Pli-ol-trielementaj, sen-haŭt-ig/i, vizaĝalter-e, fer-industri-labor/ist/in/o, kvin-dek-jar-ul/in/o, pur, senfort, alt, aj, mont, oj, laŭ-VER-aj, laŭ-VEI-aj, tri-angul-ec/o, i-finaĵajn, pagideva, vi-vi-vol/a, vi-vi-pov/a, zamenhofaj, vi-vi-pov/a, substantiv-flank-element/ajn, manier-adjekto, jun-edz-in/o, edz-in-ec/o, vort-efik-regul/oj, René, Saussure, o-finaĵon
-vost: pp, pp, frapita: [r(frap,verb),s(it,best,tr),f(a,adj)], Marley
-vrak: malkrovis
+volv: vinberbranĉoj
+vort: pleje, proximus, proksim, duone-internacia, meze-klera, a-vorto, Eichholz, nPIV, KABE, Erich-Dieter, Krause, e-vorto, o-vorto, par, Esper-anto, ricev-ita, laŭmorfeman, ba-lo, sce-no, ko-le-ro, VER, VEI, mise, II, aŭto-aerbremso, post-tagmezo, vaporŝip-asocio, purig-o, martelbat-o, fervoj-isto, VEI, grandkuraĝ-a, longdaŭr-a, diverskonsist-a, senfort-a, senpov-a, Pli-ol-trielementaj, sen-haŭt-igi, vizaĝalter-e, ferindustrilaboristino, kvindekjarulino, pur, senfort, alt, aj, mont, oj, laŭ-VER-aj, laŭ-VEI-aj, trianguleco, i-finaĵajn, pagideva, vivivola, vivipova, substantiv-flankelementajn, manier-adjekto, junedzino, edzineco, vortefikreguloj, René, Saussure, o-finaĵon
+vost: pp, pp, Marley
 vu: vu, Ww, vu-vu-vu, www
-vulgat: plejparte, s-ta, jc
+vulgat: plejparte, s-ta
 vulkan: Ĉi-momente
 vultur: pp
-vund: sufacon, du-tri
-zambi: ISO, ZM, Kinŝasa
-zamenhof: Samenhof, Заменгофъ, Zamenhof, AdE, Zamenhof, Vaŝington, IV, RIM, IV, Zamenhof, Dume, Vaŝington, an, Nov-Jork, ĉi-pere, Zamenhof, Vaŝington
+vund: du-tri
+zambi: ZM
+zamenhof: Samenhof, Заменгофъ, Zamenhof, AdE, Vaŝington, IV, RIM, IV, Dume, an, Nov-Jork, ĉi-pere
 zarzuel: tierra, del
-zebr: ne/par-huf-ul/o
+zebr: neparhufulo
 ze: bjekto, speranto, amenhofo, Prilep, ZEO, ZEOj
-zeken: Venecio
 zen: Daitoo-Kokuŝi, Daitoku-templo
 zepelin: Aureliano, Segundo, Herrera
-zepto: zepto, zepto, tri-ili-ar-don/o, SI
-zeta: zeta, zeta, SI, tri-ili-ard/o
-z: latin/a-laf/a-bet/aj, maj, Z-fero, maj, maj, maj, zepto, II, zo
-zibel: dudek-kvar
+zepto: zepto, SI
+zeta: zeta, SI
+z: Z-fero, maj, zepto, II, zo
 zigom: Leo
 zigurat: Ur
-zimbabv: ISO, ZW
+zimbabv: ZW
 zimbalon: Cigan
-zink: Zn, transir, plejofte
-zirkoni: Zr, transir, am-fot-er/a
+zink: Zn, transir
+zirkoni: Zr, transir
 zodiak: jn
-zo: zo-or/a-si/a, Jokohamo
+zo: Zoorasia
 zombi: Ĉarlz, an
 zon: πRh, GMT
-zorg: Ijob, Padar, denove: [p(de,verb),r(nov,adj),f(e,adv)]
+zorg: Ijob, Padar, denove
 zori: v-forma
-zosterops: zosteropsedoj, zosteropo
-zulu: bantulingva
-zzz: zzz, zzz, zzzz, zzzz
+zosterops: zosteropo
+zzz: zzz
