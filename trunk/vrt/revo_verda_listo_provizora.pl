@@ -2894,7 +2894,7 @@ progre: Henrik, Seppik, iom-post-ioma, Stravinskij, Prokofjev
 progresiv: iom-post-ioma
 pro: Zamenhof, David, II, prokulpa, promemora, propeka, promalĉastaj, proprunte, proparolanta, propeti
 projek1: Zamenhof, iama
-projek: p-a, opon, pli-malpli, Bricard, retroprojekciilo, OM
+projek: p-a, opon, pli-malpli, Bricard, projekciaĵo, retroprojekciilo, OM
 prokla: Voss
 promeci: Pm
 promes: sankt
