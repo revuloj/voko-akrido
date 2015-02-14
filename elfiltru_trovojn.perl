@@ -3,6 +3,19 @@
 $outhtml = 1;
 $REVO = "http://retavortaro.de/revo";
 
+$revo_txt_dir = $ENV{REVO}."/txt";
+$touch_seventh = 1; # tushu (renovigu) chiun sepan fontodosieron kun eraroj tiel, 
+                    # ke la vortanalizu rekreos ghin sekvafoje - tio helpas
+                    # forigi erarojn el la erarolisto, kiuj kauzighis aliloke, ekz.
+                    # pro mankanta radiko en la vortaro
+
+#### opcioj:
+# -t       teksta rezulto, aliokaze html
+# -k <DIR> traktu chiujn dosierojn el ujo 
+#          kaj kreu filtrolisto por chiu komenclitero
+#          aliokaze traktu nur dosierojn de komandlinio
+#          kaj skribu rezulton en unu liston
+
 if ($ARGV[0] eq '-t') {
     $outhtml = 0;
     shift @ARGV;
@@ -37,6 +50,7 @@ exit(0);
 
 sub elfiltru {
     my @files = @_;
+    my $cnt = 0;
 
     print_header() if ($outhtml);
 
@@ -57,7 +71,7 @@ sub elfiltru {
 
 	if (@eraroj) {
 
-	    $fileref = $file; $fileref =~ s|^.*/(.*?)\.html|$1|;
+ 	    my $fileref = $file; $fileref =~ s|^.*/(.*?)\.html|$1|;
 
 	    if ($outhtml) {
 		print "<a href='$file'>$fileref</a> ";
@@ -72,6 +86,14 @@ sub elfiltru {
 		print join(', ',@err);
 		print "\n";
 	    }
+
+
+           # eble tushu (renovigu) fontodosieron, vd. supre
+           if ($touch_seventh) {
+	       my $source_file = "$revo_txt_dir/$fileref.txt";
+	       touch_modulo_seven($source_file,$cnt++);
+	   }
+
 	}
     }
 
@@ -101,4 +123,17 @@ sub print_footer {
       </body>
     </html>
 EOF
+}
+
+sub touch_modulo_seven {
+    my ($file,$counter) = @_;
+    my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime();
+
+    if ($counter % 7 == $wday) {
+	# tushu dosieron
+	my $atime = time;
+	my $mtime = $atime;
+	utime($atime,$mtime,$file) ||
+           warn "Ne povis tushi '$file'-on: $!\n";
+    }
 }
