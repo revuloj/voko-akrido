@@ -90,6 +90,7 @@ r('super',adv).
 r('super',tr).
 r('sur',adv).
 r('trans',adv).
+r('tro',adv).
 r('ĵus',adj).
 r('for',adj).
 r('hodiaŭ',adj).
