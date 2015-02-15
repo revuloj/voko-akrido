@@ -7,6 +7,7 @@
 revo_xml('/home/revo/revo/xml/*.xml').
 voko_rdf_klasoj('/home/revo/voko/owl/voko.rdf').
 radik_dosiero('vrt/v_revo_radikoj.pl').
+vort_dosiero('vrt/v_revo_vortoj.pl').
 nomo_dosiero('vrt/v_revo_nomoj.pl').
 evi_dosiero('vrt/v_revo_evitindaj.pl').
 mlg_dosiero('vrt/v_revo_mallongigoj.pl').
@@ -51,10 +52,10 @@ revo_trasercho :-
 
 skribu :-
   skribu_radikojn,
+  skribu_vortojn,
   skribu_nomojn,
   skribu_mallongigojn,
   skribu_evitindajn.
-
 
 
 skribu_radikojn :-
@@ -77,6 +78,27 @@ skribu_radikojn(Out) :-
     member(R-S,Renversitaj), % renversu por ke "senil" analiziĝu antaŭ "sen/il" ktp.
     % format(Out,'r(''~w'',~w) --> "~w".~n',[R,S,R])
     format(Out,'r(''~w'',~w).~n',[R,S])  
+  ).
+
+skribu_vortojn :-
+  vort_dosiero(Dos),
+  format('skribas al ''~w''...~n',[Dos]),
+  setup_call_cleanup(
+    open(Dos,write,Out),
+    skribu_vortojn(Out),
+    close(Out)
+  ).
+
+skribu_vortojn(Out) :-
+  findall(
+    Vrt-Spec,
+    vorto(Vrt,Spec),
+    Chiuj),
+  keysort(Chiuj,Ordigitaj),
+  reverse(Ordigitaj,Renversitaj),
+  forall(
+    member(V-S,Renversitaj), 
+    format(Out,'v(''~w'',~w).~n',[V,S])  
   ).
 
 skribu_nomojn :-
@@ -188,10 +210,17 @@ revo_art(Dosiero) :-
         )
      ),
   once((
+    % se temas pri majuskla nomo, registru 
+    % kiel nomradiko, kaj ankau minuskle	
     nomo_majuskla(Radiko),
     assertz(nr(Radiko,Speco)),
     assert_nomo_minuskla(Radiko,Speco)
     ;
+    % interjekciojn registru kiel vort(et)o
+    Speco == intj,
+    assertz(vorto(Radiko,Speco))
+    ;
+    % normalaj radikoj
     assertz(radiko(Radiko,Speco))
   )),
   assert_mlg(Mallongigoj).
@@ -265,7 +294,9 @@ revo_gra(Drv,Speco) :-
     VSpeco = tr -> Speco = tr;
     VSpeco = x -> Speco = tr;
     VSpeco = sufikso -> Speco = suf;
-    VSpeco = prefikso -> Speco = pref
+    VSpeco = prefikso -> Speco = pref;
+    VSpeco = sonimito -> Speco = intj;
+    sub_atom(VSpeco,_,_,_,ekkrio) -> Speco = intj
   ).
 
 revo_fin(Kap,Speco) :-

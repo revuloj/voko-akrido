@@ -51,14 +51,12 @@ agluti: друзей, ей
 agoni: l'soifo
 agord: pleja, SETUP, mise
 agx: dekkvinjara, mezaĝulo, iama, mezaĝulo, Ijob, Omar, plejaĝulo, plejaĝulo, Abraham, Kjöge, samaĝulinoj
-aha: aha, aha, Aha
 ahmadism: Gulam, Ahmad, Kadjan, Kadjan
 ahx: Injo, baci
 aidos: Imun-Deficita
 aikid: senperforta, Ueshiba, Morihei
 ajatol: Komejni
 ajgen: A-λ, f-λ, id, λx, f-λ, id, ajgen, Reiersøl, ajgen, ejgen
-aj: aj, aj, aj
 ajn: n-a-grada, Bricard, ĉi-okaze, Dramlit, ĉi-lasta, desupri
 ajx: aĵ, aĵ, aĵ, II
 ajxur: Eiffelturo
@@ -273,8 +271,6 @@ azot: nitr, HNO
 baba: sekvinberoj
 babel: Ŝinar, Babel, Ereĥ, Akad, Kalne, Ŝinar
 babusx: Jusef
-bac: bac, bat
-baf: baf
 bagate: minueto, Aulus
 bagavadgit: Giton, Bhagavadgitao, Bhagavad, Gitao
 baha: ekinta
@@ -310,7 +306,7 @@ baston: Kwang
 batak: Sumatro
 batal: abs, probatalanto, Midthus
 bat: bat, bac, frap, pulso-frapo-pulso-frapo, Ramzes, unuenaskiton, disbatita, disbatitaj, Jukola
-baux1: baŭ, baŭ-baŭ
+baux1: baŭ-baŭ
 bauxd: Bd
 bauxksit: ruĝebruna, Conté
 bauxm: kvarpiedulo
@@ -372,7 +368,7 @@ bitnik: aj
 bitum: nigrebruna
 bivak: Claussen
 bizanci: kvardekmonata
-blabla: blabla, bla
+blabla: bla
 blank: dube-blanka
 blasfe: abs, kvazaŭe
 blat: Intel
@@ -392,7 +388,6 @@ bodisatv: Kvazaŭ-budao
 bogomil: kristan-devena
 bo: bo, proedziĝan, boparenciĝi
 bojar: Iama
-boj: boj, vaŭ
 bojkot: EU-konferencojn
 boleslav: Vanadzins
 bol: bol, ig, Bokarev, Eichholz, bouilleur
@@ -428,7 +423,6 @@ brit: an, Folkestone, Dover, Galla
 briti: Gloucester, Bristola, ambaŭ-flanke
 brom: Br
 bronz: bronz
-brr: brr, Brr
 brugx: 'E, 'N, Salamanca
 brun1: Reims
 brun: flave-ruĝe-nigran
@@ -443,7 +437,6 @@ buhxor: iama
 buhxt: Kuk
 bulgar: iom-post-ioman, Nord-Orienten
 bul: Ĉiŭ, Jang
-bum1: bum, pum
 burbon: Bourbon
 bure: Ĵarar, Monik, Garig
 burg: Saint-Omer
@@ -544,7 +537,7 @@ cxingis: Ĉingis, Ajtmatov
 cxio: ĉionsciado, ĉionpova
 cxips: terpomtranĉaĵo, terpomfloko
 cxirka: Pli-malpli, Zamenhof,Szwejc, dekkvinmil, Koraĥ, Abiram, II, Bet-Elon, Gilgalon, Micpan, okdek, Sodom, Izrael, Arafat, III, ĉirkaŭXi, Xi, ĉe/al, Xi, ĉirkaŭXi, Yon, Xi, Yo, Yon, ante, Xi, ĉe/al, ĉirkaŭXi, Xo, ĉe/al, ĉirkaŭXi, Xante, Zo, Xante, Zon, ĉirkaŭXa, ĉirkaŭXo, Xon, ant
-cxit: ĉit, Solness, Hilde, psit, ts
+cxit: Solness, Hilde, psit, ts
 cxiz: Cae
 cxj: ĉj, nj, et, II, South
 cxokol: plejofte
@@ -657,7 +650,6 @@ dinast: Bang
 dinosa: dekkvinmetra, kvardekmetra
 dirak: Paul
 dir: Saul, Jiŝaj, David, Aĥija, Jesaja, Elija, Izrael, propetadas, Gluĥarjov, Jozef, Daniel, Arjoĥ, troigo, maltroigo
-dirlididi: dir-lid-idi, ta
 disert: Jouko, Lindstedt, Byunghyun, Oh
 dis: dis, di, mal, II
 disjun: aŭo, disaŭo, malaŭo
@@ -749,7 +741,6 @@ ego: egoism, egoist
 egoism: ego-ismo
 egoist: ego-isto
 egx: ĉi-sence, n-opeĝa, n-foje, pluropeĝa, n-opaj, n-grafeo, n-X-o, X-oj, n-latero, n-edro, X-o, n-opo
-ehe: ehe
 ehxografi: naskot, in
 ejgen: ejgen, ajgen
 ej: ej, II
@@ -1028,7 +1019,7 @@ francium: Fr
 frand: bongust, Elly
 frankfurt: 'E, 'N
 frank: iama
-frap: frap, bat, ant, Vanessa, polychloros
+frap: ant, Vanessa, polychloros
 frat: boparencoj, ambaŭseksaj, Zoja, Petrovna
 frazeologi: Zamenhof, rusa-pola-germana-franca
 fraz: pli-malpli, Anfisa
@@ -1044,7 +1035,7 @@ frond: plejmulto
 front: front-al-fronte
 frot: GRINCI, mouth, smooth, pro-cé-so, fe-lí-ĉa, pá-ĝo
 fru: ĉi-jare, Anjo-la-Pesto, ĉi-foje
-fu: fu, Haaaa, maljunulino-oficir-edzino
+fu: Haaaa, maljunulino-oficir-edzino
 fuk: brun
 fundam: Bulonja, kvintesenc
 funkci: fo, B-on, bo, funcio, Bricard, funkcja, kołowa, n-argumenta, n-opoj, n-opo, arc, tan, y/x, Ekz-e, cos, cosx, ĉi-supra, samtiom, Arg, kπ, Bricard, Ai
@@ -1122,8 +1113,8 @@ glit: sígno, kór', sováĝa, senbrída, glite-glate, b-uma
 glob: Ĉi-sence, ĉi-supre
 glor: plejmulto, ĉie-konateco, plejmulto
 glot: em, nɒʔ, 'ʌʊnli, bəʔ, 'ɔosʌʊ, not, only, but, also, IFA
-glu1: glu, glu-glu-glu
-glu: glu, ec, Ha-Nocri
+glu1: glu-glu-glu
+glu: ec, Ha-Nocri
 glut: glut, Glut
 gobelen: mur
 godfred: Bouillon
@@ -1201,7 +1192,7 @@ gxonk: PIVa, misa
 hadit: Al-Azhar, hadis
 hafni: Hf, transir
 hag: 'E, 'N, Lapenna
-ha: ha, lo
+ha: lo
 hak: troa, pli-malpli, ligno-ŝufaristo, Dongguj, Bingĉen, Abimeleĥ
 haladz: pli-malpli
 halal: Roubaix
@@ -1226,8 +1217,6 @@ hav: hav, aĵ, Treege, oz
 hedonism: New
 hedonist: Hedonism, Pomet, ĉi-maniere
 hegxir: Jahja, ibn, Sa, id, Safar, Mekko
-he: he, hej
-hej: hej, he
 hejm: Jehuda, TTT, hejmen-klavo, Sanĥerib, Mal
 hejt: abs
 hektar: ha
@@ -1290,7 +1279,6 @@ hiskia: plurcent, Volke, tromanĝis
 hister: nov
 histor: Edgar, Allan, Poe, apenaŭaj
 histri1: au
-hm: hm, Hm
 hok: ux, benson, brevo, benson, Koonen
 hola: hola, Interj, Colin
 holand: Esperanto-Centro, denove, ĉi-foje, Heerhugowaard, Alkmaar
@@ -1309,7 +1297,7 @@ hondur: Tegucigalpo, HN
 honkong: Hongkongo
 honor: honor, dign, on
 hont: senhontulinon
-hop: hop, hopi, hopis, hopas, ĉi-supra, hop, hopludo, hinke-leg
+hop: hopi, hopis, hopas, ĉi-supra, hop, hopludo, hinke-leg
 hopi: iama, Zamenhof
 hord: ĉi-supra
 hor: dudekkvarono, rub/hore, pohore, pohore
@@ -1320,14 +1308,14 @@ horus: sun
 hospic: longedaŭra
 hosti: plejparte
 hotel: Cezanne
-hot: hot, hoto, hot, Hoto, Hot
-hrr: hrr, hrrr, Hrr
+hot: hoto, Hoto
+hrr: hrrr
 hub: Ferda
 hucxin: Fangguan
 huf: parhufulo, neparhufulo, neparhufuloj, parhufuloj, unuhufuloj
 hugenot: S-ro, Montluc
-hu: hu, hui, huadi, huadas, huo, huado, Hu, huadoj, hu, hu-hu
-huj: huj, O-o, O-o-o-o-o, Huj
+hu: hui, huadi, huadas, huo, huado, huadoj, hu-hu
+huj: O-o, O-o-o-o-o
 huligan: plimalpli
 hum: nigrebruna
 humor: mapli, l'okazo
@@ -1727,7 +1715,7 @@ kiu: prop
 kiv: kiv
 kivi: neflugipova
 klad: Willi, Hennig
-klak: klak, TTT-paĝon, Liŭ, kunklakataj, Laji
+klak: TTT-paĝon, Liŭ, kunklakataj, Laji
 klar: mal, Stravinskij
 klario: Jurij, Finkel
 klas: Auld, xRy, Ha, aH, koaro, n-modula, n-modula, nZ, n-modulaj, nZ
@@ -1741,10 +1729,9 @@ klon: retroprojektado, GNU-a, Promax, Technology, Macintosh-klonon, MHz
 klor: Cl
 klorof: chloroplast
 klub: MONATO-n
-kluk: kluk
 kluz: ambaŭflanke
 knab: Izabela
-knar: knar, misoj
+knar: misoj
 knedlik: pivoj
 koagul: Quo, Lidja, Zamenhof
 koalici: Mao, Sui, Qin
@@ -1993,11 +1980,9 @@ kurb: n-a-grada, n-a-grada, exp
 kur: Vd, Gog, Magog
 kurium: Cm
 kurkul: riz
-kurre: kurre
 kusx: edzinbalkono
 kuvajt: KW
-kuxaks: kŭaks, brekekekeks
-kva: kva
+kuxaks: brekekekeks
 kvaker: Fox
 kvak: kvak, Kvak, gik, gak, kva, kŭaks, MONATO
 kvaran: EU
@@ -2248,7 +2233,7 @@ megatun: TNT
 megavat: MW, Ignalina
 mehxlen: 'E, 'N
 mejtneri: Mt, IUPAC, unnilenio, Unnilentium
-mek: mek, mek-mek, he
+mek: mek-mek
 meksik: 'U, 'N, CNN
 meksiki: Ketzalkoatl, Edfu, prof, Feldmann-Gonzales, London, trad, eld, chicano
 melanom: le
@@ -2286,7 +2271,6 @@ mezopotami: Isaak, Laban, Betuel
 mezoteliom: Bakin
 mezur: Jakob, plejparte, b-a
 m: maj, mega, II, mo
-miaux: miaŭ
 midelbu: Walcheren, 'E, 'N, fervojlinio
 midinet: Johnny
 mien: Katalin
@@ -2387,7 +2371,7 @@ mozart: Wolfgang, Mozart
 muel: Orekola-muelisto
 muf: ha-a, ambaŭflanke
 muhama: al-Ĥorezmi, MONATO, ABU, AL-QASIM, MUHAMMAD, IBN, 'ABD, ALLAH, AL-MUTTALIB, HAŜIM
-mu: mu, muu-muu-muu
+mu: muu-muu-muu
 mujxik: Denisoviĉ
 muk: troa, nazmukulo, Infan
 mulat: miksrasulo
@@ -2534,7 +2518,7 @@ oft: njo-knabo
 ohi: Sharonville
 o: rol
 oid: oid, form, simil, elips
-oj: oj, Pjotr, Ivanoviĉ
+oj: Pjotr, Ivanoviĉ
 okaz: Linda, Tom, Hiram, Zilah, Aut-Taurirt, Ekz-e, okaz, aĵ, oj, okaz, aĵ, oj, um, kastelmastrino, graf, O-vortoj, A-vortoj, infanvartist, in
 okcidental: Edgar, von, Wahl, interlingua, Occidental, Interlingue
 ok: um
@@ -2613,7 +2597,6 @@ paf: paf, krak, soldatoj-artileriistoj, Sgr
 pag: metal, Esperanto-monunuo
 pagod: Horinĝi
 pagxi: reĝ, in, on, sinjor
-pa: pa
 pajac: denove
 pak: Knut, Jim, troa
 paladi: Pd, transir
@@ -2764,7 +2747,7 @@ platen: Pt
 plat: l'homaro, numer, Trajan, Mahdi
 platon: Bernays, Frege, Cantor, Gödel, Russell
 plauxd: ZR, plaŭd, Santa
-plaux: plaŭ, plaŭd
+plaux: plaŭd
 plauxt: Amphitruo, Aulularia, Captivi, Curculio, Casina, Cistellaria, Edipicus, Bacchides, Mostellaria, Menaechmi, Miles, Gloriosus, Mercator, Pseudolus, Poenulus, Rudens, Strichus, Trinummus, Truculentus, vidularia, plaŭ-plaŭ, vaŭ-vaŭ, baŭ-baŭ, boj-boj
 plej: pleja, malpleja, pleje, malplejan, malpleje
 plend: vekrii
@@ -2936,7 +2919,6 @@ puding: sekvinberoj
 puf: Plenblovita, plenblovita
 pulk: kvarjaraĝe
 puls: pp
-pum: pum, bum
 pump: Ant
 punk: aj
 punkt: ĉi-lasta, µm, laŭ/el
@@ -2947,7 +2929,7 @@ purita: Dante, Milton
 pusxkin: Onegin, plejparte
 puzl: denove
 rabi: Pasteur
-racx: raĉ, riĉ
+racx: riĉ
 radar: ra, etecting, nd, anging, rad/ar/o
 radian: rad
 radika1: CH
@@ -3098,7 +3080,6 @@ rudime: pli-malpli, Proteolepas
 rudolf: denove
 rugx: John, Logie, Baird
 ruin: Miyamoto, Masao, Jerusalem, vinberĝardenon
-ruk: ruk
 rukt: rukt
 rulet: Tobbogan
 rul: Tarzan, Molière, pli-malpli, Izrael, Baduroc, Jakob
@@ -3267,7 +3248,6 @@ slang: kabei
 slip: Grosjean-Maupin
 slovak: SK
 sloven: SI
-snuf: snuf
 sobr: troigon
 societ: Ŝjangzi, Ŭang
 soci: ptydepe, ha
@@ -3314,7 +3294,6 @@ splint: Sui
 spong: BSE
 sport: pli-malpli, Pamela
 spur: sp
-sss: sss
 stabil: Keynes
 staci: Jim, Rondonpolis, Rudolf, NASA, Piĉ, Seokkye, Koori
 stafet: ambaŭekstreme, ĉi-bultenon
@@ -3540,11 +3519,10 @@ tial: Volapük, tialo
 tiam: ro, Canevari
 tie: ĉi-tieulo
 tiel: vivipova, Jeruzalem
-tiktak: tiktak
 tim: tju, Yuanyuan
 timin: ADN
 timor: Dilo
-tin2: tin, tin-tin-tin
+tin2: tin-tin-tin
 tincxj: Hergé, Georges, Rémi
 tint: tin-tin, David
 tio: vivipova
@@ -3577,7 +3555,7 @@ torak: SIN
 tor: n-dimensian, ĉi-sence, Bricard
 tori: Th
 tortur: Tloaped, vole-nevole, jaguarpiedulon
-tpr: tpr, Ek, hot, kvarpiedulo
+tpr: Ek, hot, kvarpiedulo
 traduk: esp-en
 traf: Hebron, celitaĵon
 tragik1: ha
@@ -3597,7 +3575,6 @@ transistor: fer, res, istor
 transp: to, konjug
 trapez: ek
 trap: natans
-trateratra: trateratra
 trauxmatiz: Ŝok
 trauxmatolog: laborokupateco
 trauxmatologi: an
@@ -3625,7 +3602,7 @@ trumpe: Jurij, Finkel
 trunk: sekvinberaj
 trup: ŝovitaj
 truso: novedzino
-ts: ts, tss, Niko, ĉit, Ts
+ts: tss, Niko, ĉit
 ttt: Tut-Tera, to, TTT-ejo, TTT-paĝo, URL, TTT-paĝaro, TTT-paĝoj
 tuber: tridekkelkjara
 tuj1: Martin
@@ -3671,7 +3648,7 @@ univer2: Bonn, an
 unucikl: Pi
 unu: Kp, unujn, unun, denove, Unun, Rimŝa, Vd, PAG, n-uma, au, ĉi-sence, unito, Ono
 upanisxad: Els, Upanishads
-ups: ups, Mise
+ups: Mise
 urb: VIII, IV, Innocento, urb, okomplekso, delegitoza, Rio, Janeiro, Varaĵdin
 uretr: Ned
 ureus: kobra, Amenhotep
@@ -3717,7 +3694,7 @@ vast: pli-malpli, sinx, Vd, aĵ
 vat1: Wh
 vatikan: Chiasso/Kiaso, Gaudí, Aznar
 vatt: Vatt/o
-vaux: vaŭ, boj, vaŭ-vaŭ-vaŭ-vaŭ
+vaux: boj, vaŭ-vaŭ-vaŭ-vaŭ
 vav: װער, ver, דו
 vaz: vazlavmaŝino
 vegan: Nori
@@ -3842,4 +3819,4 @@ zon: πRh, GMT
 zorg: Ijob, Padar, denove
 zori: v-forma
 zosterops: zosteropo
-zzz: zzz
+
