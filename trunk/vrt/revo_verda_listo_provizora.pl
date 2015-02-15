@@ -903,7 +903,7 @@ fanati: Troa
 fand: mise, Zamenhof, rex
 fantast: Lewis
 farenh: Daniel, Gabriel
-far: nenionfaranto, paf, far, o-vortoj, Zamenhof, ist
+far: nenionfaranto, far, o-vortoj, Zamenhof, ist
 farmakolog: isto, Shizhen
 farnient: farnient
 fart: Bob, Sulavi
@@ -915,7 +915,6 @@ favor: Izrael
 faz: πft
 federal: Proudhon
 feder: Wilhelm, Tell
-fek: fek, Fek, Panjo
 feloid: Fam
 femto: femto, femto, SI
 fend: troa
@@ -1198,7 +1197,7 @@ haladz: pli-malpli
 halal: Roubaix
 halovin: Ŭut
 halter: pluv
-halt: halt, Halt, O-finaĵo, Preskaŭaj, Quincy, Vd
+halt: O-finaĵo, Preskaŭaj, Quincy, Vd
 hamburg: ring, 'E, 'N
 hampsxir: Hampton
 hanafism: plejmulto
@@ -1229,7 +1228,7 @@ heler: Iama
 helik: po-signo
 helium: He
 helm: Plen
-help: help, halt, E-istoj
+help: E-istoj
 hemati: Fe
 hemion: neparhufulo
 herakl1: Ήρακλέης, Alkmena, Alcide, Eristeo, Hero
@@ -1254,7 +1253,6 @@ hidr: Hya, Iama, Hyi
 hidrof: jn
 hieronim: plejparte, s-ta
 higxab: hiĵabo, heĝabo
-hihi: hihi
 hilber: David
 himacxalpradesx: Bir, Himaĉalo
 himalaj: Indus-Ganga
@@ -1327,7 +1325,6 @@ hura: hurao, Hura-krio, hurai, Hura-krii
 hurl: plejofte, orel
 husejn: Fadlalaho
 husum: Ŝov
-husx: huŝ, Huŝ
 hxalat: Borisoviĉ
 hxalde: Babel, Abramon, Ur
 hxalkogen: ĥo-fobio, calx, calc, ĥalkos
@@ -1984,7 +1981,7 @@ kusx: edzinbalkono
 kuvajt: KW
 kuxaks: brekekekeks
 kvaker: Fox
-kvak: kvak, Kvak, gik, gak, kva, kŭaks, MONATO
+kvak: gik, gak, MONATO
 kvaran: EU
 kvar: FIAT
 kvazau: denove, II, kvazaŭe, III, IV, kvazaŭa, preskaŭa
@@ -1995,7 +1992,7 @@ kviet: denove
 kvino: ne-graminacaj, kinuo
 kvinsland: Toowoomba-on
 kvint: plejparte
-kvivit: kvivit, denove
+kvivit: denove
 labor: ĵulo, delonge, EU-laborantaro, estranta, laboritaĵo, ellaborita, prilaboriteco, Labor-Organizaĵo, viv, Ejnar
 labrador: Davisan
 laburn: Laburnum
@@ -2593,7 +2590,7 @@ pabl: Canto, General, Neruda
 pac: denove, Abram, Lot, perfortado, denove, Herhor, denove
 pacien: iu/io, malfruanta, Mentezufis
 pacxul: veg
-paf: paf, krak, soldatoj-artileriistoj, Sgr
+paf: soldatoj-artileriistoj, Sgr
 pag: metal, Esperanto-monunuo
 pagod: Horinĝi
 pagxi: reĝ, in, on, sinjor
@@ -2683,7 +2680,7 @@ pensilvani: setlas
 pentek: Mayor
 pent: batadante
 pentr: Chardin
-pep: pep, pip, pep
+pep: pip
 peplom: Hajjat
 peptid: molekulojn-sondilojn
 perd: pruntedono, Poiome
@@ -3418,7 +3415,7 @@ sxut: Microsoft, Netscape
 sxva: IFA-signo, IFA
 sxveb: pli-malpli, denove, volváĵo, sopíro, vagabónda, va, duonakcenteco, Kalocsay, ĉirkaŭŝvebata
 sxvel: tro-ŝvelo
-ta1: ta, ta-ta-ta, paf
+ta1: ta-ta-ta
 tabel: ti, ki, neni, ki-al, ki-o, neni-u, neni-a, ali-u, ali-es, kelk-om
 tabl: multehomaj, servoknabinoj
 tablojd: c-vitaminaj

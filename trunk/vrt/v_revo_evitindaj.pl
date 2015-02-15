@@ -20,7 +20,6 @@ evi('cinism',"cinismo").
 evi('demons1',"demonstracio").
 evi('difere1',"diferencii").
 evi('digxit',"diĝita").
-evi('efelid',"efelido").
 evi('eskadr1',"eskadrono").
 evi('fanatism',"fanatismo").
 evi('federal',"federala").

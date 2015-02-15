@@ -2,7 +2,7 @@
 :- use_module(library(xpath)).
 :- use_module(library(semweb/rdf_db)).
 
-:- dynamic radiko/2, evi/2, mlg/1.
+:- dynamic radiko/2, evi/2, mlg/1, nr/2, nr_/2, vorto/2.
 
 revo_xml('/home/revo/revo/xml/*.xml').
 voko_rdf_klasoj('/home/revo/voko/owl/voko.rdf').
@@ -221,7 +221,13 @@ revo_art(Dosiero) :-
     assertz(vorto(Radiko,Speco))
     ;
     % normalaj radikoj
-    assertz(radiko(Radiko,Speco))
+    assertz(radiko(Radiko,Speco)),
+      % se la radiko aldone uzighas kiel interjekcio...
+      once((
+        revo_intj(DOM,_),
+        assertz(vorto(Radiko,intj))
+        ;
+        true))
   )),
   assert_mlg(Mallongigoj).
 
@@ -327,6 +333,12 @@ revo_mlg(DOM,Mallongigoj) :-
     ),
     Mallongigoj
   ).
+
+revo_intj(DOM,VSpeco) :-
+   xpath(DOM,//drv,Drv),
+   xpath(Drv,/drv/kap(text),''),
+   xpath(Drv,/drv/gra/vspec(text),VSpeco),
+   (VSpeco = sonimito ;  sub_atom(VSpeco,_,_,_,ekkrio)).
 
 nomo_majuskla(Nomo) :-
   atom_codes(Nomo,[L|_]),
