@@ -96,3 +96,18 @@ testoj_pronomoj :-
   t1("neniaaspekta",'nenia+aspekt/a',adj);
   t1("miaflanke",'mi/a+flank/e',adv);
   t1("viavice",'vi/a+vic/e',adv).
+
+testoj_kunderiv :-
+  t1("sendolorigilo",'sen+dolor/ig/il/o',subst); % (sen+dolor)/ig/il/o
+  t1("surstrata",'sur+strat/a',adj).
+
+testoj_verboj :-
+  t1("ĉirkaŭflugi",'ĉirkaŭ/flug/i',tr);
+  t1("eniri",'en/ir/i',tr).
+
+testoj_sufiksoj :-
+  t1("lamulo",'lam/ul/o',best);
+  t1("mamulo",'mam/ul/o',best);
+  t1("rampulo",'ramp/ul/o',best);
+  t1("neparhufulo",'ne/par-huf/ul/o',best);
+  t1("drinkulo",'drink/ul/o',best).

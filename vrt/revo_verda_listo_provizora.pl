@@ -95,7 +95,6 @@ al: mis, Zamenhof, maristedzino, dubasencecon, II, Omar, III
 alianc: an
 ali: am, es, om, alial, aliam, aliel, alies, aliom
 aliment: boparenco, Mary
-alk: parhufulo
 alkad: Antequera
 alkoho: OH
 almat: Pom-Patro, Vernij, Alma-Ato, Алма, Атасы
@@ -175,7 +174,6 @@ apokri: ekleziaj/duakanonaj, Karel, Ĉapek, pseŭdoepigraf, iaĵ, oj
 apople: malsan
 aposto: Zamenhof
 aprec: ec, Thomson
-apr: parhufulo
 aprior: Kant, abs
 aproks: Bézier, desuba
 apsar: duondiinoj
@@ -263,7 +261,7 @@ avicen: abu, al-Husajn, Abdallah, ibn
 avi: naciligvaj
 aviz: ĉi-sabate
 avogadr: Carlo
-azen: cel, neparhufulo, ŝarĝ, tir, Bileam
+azen: cel, ŝarĝ, tir, Bileam
 azer: İçəri, Şəhər, Safura
 azot: nitr, HNO
 baba: sekvinberoj
@@ -403,7 +401,6 @@ bors: an
 bosn: BA
 boston1: Praskovja, Petrovna
 bot: panjo, Kaŭser, dece-konvene
-boved: parhufuloj
 bov: Boo
 bovl: Eŭtikia
 brajl: Braille, Braj
@@ -462,8 +459,7 @@ cenzor: Ovinia
 cerami: Annaberg, Siegburg, Nassau, Kreussen
 ceri: Ce
 ceruz: PbCO, Pb, OH
-cerved: parhufuloj
-cerv: parhufulo, parhufuloj, Umka, ruĝebruna
+cerv: Umka, ruĝebruna
 cetoni: flor
 cezar: Rossetti, Baghy, Raymond, Schwartz, Hadriano
 cezi: Cs
@@ -516,8 +512,7 @@ cxemiz: T-forma, T-ĉemizojn
 cxen: opo, term, Werner, Ĉi-kampa, Weg
 cxeriz: cerasus, Lucullo
 cxerkes: Jermolov
-cxeval1: neparhufuloj, unuhufuloj
-cxeval: neparhufulaj, rajd, Volapük, pkzip
+cxeval: rajd, Volapük, pkzip
 cx: II
 cxiel1: Ramzes, Holešov, an, ĉi-monda
 cxies: pleje, ĉiesvoĉa, ĉiesulino
@@ -542,7 +537,6 @@ dajak: sudorientazio
 dakot: Chris
 daktil1: υυ
 dalajlama: Zhaŝillunbu-Templon, Rikaze
-dama: parhufulo
 dam: Camilo
 damian: Krilov
 danc: Izrael
@@ -759,7 +753,6 @@ ekstravertit: Carl, Gustav, Jung
 ekstre: Treege, ekstremiteto, ekstremitetoj, ĉi-cele
 ekstr: extra
 ekvaci: dt
-ekv: neparhufuloj
 ekvino: tagnoktegaleco
 ekviva: kuo-on, po-on
 ekzame: ekzamen, iĝ, on
@@ -1161,7 +1154,6 @@ gxibuti: DJ, Bab, al-Mandab
 gxihad: Bin
 gxi: Zamenhof
 gxingis: Ĝingis, Ĝengis
-gxiraf1: parhufuloj
 gxiraf: Cam
 gxir: K-do, endos, aĵ
 gxis: evas, Zamenhof, II, III, Kaŭser
@@ -1208,7 +1200,6 @@ helium: He
 helm: Plen
 help: E-istoj
 hemati: Fe
-hemion: neparhufulo
 herakl1: Ήρακλέης, Alkmena, Alcide, Eristeo, Hero
 herb: verdanta
 hered: Isaak, Jakob, Izrael, Gregor, Mendel
@@ -1236,7 +1227,7 @@ himalaj: Indus-Ganga
 himn: Adelsköld, Montague, Butler
 hind: Aĥaŝveroŝ, Holger, aj
 hin: azen
-hiparion: Pra, neparhufulo
+hiparion: Pra
 hiperb: x/a, y/b
 hipere: n-dimensiaj
 hiper: hiper, hipo
@@ -1245,7 +1236,6 @@ hipi: aj, aj
 hipnot: pli-malpli
 hipo: hipo, hipo, hiper
 hipolit: Michon
-hipopo1: parhufuloj
 hipost: Jn, Heb, Jn, sub-stantia, hypo-stasis, ουσία
 hipster: aj
 hiskia: Volke
@@ -1285,7 +1275,6 @@ hot: hoto, Hoto
 hrr: hrrr
 hub: Ferda
 hucxin: Fangguan
-huf: parhufulo, neparhufulo, neparhufuloj, parhufuloj, unuhufuloj
 hugenot: S-ro, Montluc
 hu: hui, huadi, huadas, huo, huado, huadoj, hu-hu
 huj: O-o, O-o-o-o-o
@@ -1537,7 +1526,6 @@ kamara: delonge
 kambogx: KH
 kamcxatk: Sten, Bergman
 kameciparid: kamecipariso, kameciparo
-kameled: parhufuloj
 kamera: fum
 kamer: an, Ziklon-B
 kamerun: 'E, 'N, Mongo, ma, Ndemi, Jaundeo, CM
@@ -1570,7 +1558,6 @@ kapila: treege
 kapita: Hilferding, Lenin, pruntedona
 kapitu: Don, Juan
 kapot: Martin
-kapreo: parhufulo
 kapr: propeka, Izrael, propekan
 kaprik: Cap
 kaprim: arbŝelkolora
@@ -1652,7 +1639,6 @@ kern: kern
 kevlar: Kevlar
 k: maj, II, ko
 kiam: ekkiam, ek, Ekkiam
-kiang: neparhufulo
 kibernetik: Ceccato
 kibuc: Naaran
 kidnap: Nolan
@@ -2095,7 +2081,7 @@ lupus: mem-agresa
 luteci: Lu
 luter: Martin
 macxet: tranĉil
-macx: maĉ, Denove, denove, parhufuloj
+macx: maĉ, Denove, denove
 madagas: MG
 magm: Celsius-gradoj
 magnetoskop: videobendregistrilo
@@ -2507,7 +2493,7 @@ optimi1: Optimism
 optimi: Kandid, Keynes, Stef
 oraci: Bossuet
 orakol: Jesaja, Panglos
-ord: Ĉi-sence, ul, parhufuloj, ord, Hm, Kuzmin, Feniĉka, plejaĝuloj, Izrael, denove
+ord: Ĉi-sence, ul, ord, Hm, Kuzmin, Feniĉka, plejaĝuloj, Izrael, denove
 ordinac: Bokarev, Krause, Weihgrade, степень, ordin
 ordina: z-a, ĉi-sence, Bricard
 or: Au
@@ -2747,7 +2733,6 @@ porci: Hrafnkel
 porcx: Lizaveta, Ivanovna
 pord: fald, pordhokringo
 por: Zamenhof, Aĉet, Izrael, u-modon, II
-porked: parhufuloj
 portal: CIDKON, Gxangalo, com
 porter: Petroviĉ
 port: denove, Arne, Denove
@@ -3737,7 +3722,6 @@ vund: du-tri
 zambi: ZM
 zamenhof: Samenhof, Заменгофъ, Zamenhof, AdE, Vaŝington, IV, RIM, IV, Dume, an, Nov-Jork, ĉi-pere
 zarzuel: tierra, del
-zebr: neparhufulo
 ze: bjekto, speranto, amenhofo, Prilep, ZEO, ZEOj
 zen: Daitoo-Kokuŝi, Daitoku-templo
 zepelin: Aureliano, Segundo, Herrera
