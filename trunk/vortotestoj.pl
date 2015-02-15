@@ -74,8 +74,10 @@ testoj_nombroj :-
   t1("dekunusilaba",'dek-unu+silab/a',adj);
   t1("dekduedro",'dek+du-edr/o',subst);
   t1("dudekedro",'du-dek-edr/o',subst);
+  t1("dekunulatero",'dek+unu-later/o',subst);
   t1("sesdekkvinedro",'ses-dek+kvin-edr/o',subst);
-  t1("sepdekjarulo",'sep-dek+jar/ul/o',best).
+  t1("sepdekjarulo",'sep-dek+jar/ul/o',best);
+  t1("kelkdekpersona",'kelk+dek+person/a',adj).
 
 testoj_mlg :-
   t1("PIV",'PIV',_);

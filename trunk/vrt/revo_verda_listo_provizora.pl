@@ -529,7 +529,7 @@ cxinesk: William, Auld
 cxingis: Ĉingis, Ajtmatov
 cxio: ĉionsciado, ĉionpova
 cxips: terpomtranĉaĵo, terpomfloko
-cxirka: Pli-malpli, Zamenhof,Szwejc, dekkvinmil, Koraĥ, Abiram, II, Bet-Elon, Gilgalon, Micpan, okdek, Sodom, Izrael, Arafat, III, ĉirkaŭXi, Xi, ĉe/al, Xi, ĉirkaŭXi, Yon, Xi, Yo, Yon, ante, Xi, ĉe/al, ĉirkaŭXi, Xo, ĉe/al, ĉirkaŭXi, Xante, Zo, Xante, Zon, ĉirkaŭXa, ĉirkaŭXo, Xon, ant
+cxirka: Pli-malpli, Zamenhof,Szwejc, dekkvinmil, Koraĥ, Abiram, II, Bet-Elon, Gilgalon, Micpan, Sodom, Izrael, Arafat, III, ĉirkaŭXi, Xi, ĉe/al, Xi, ĉirkaŭXi, Yon, Xi, Yo, Yon, ante, Xi, ĉe/al, ĉirkaŭXi, Xo, ĉe/al, ĉirkaŭXi, Xante, Zo, Xante, Zon, ĉirkaŭXa, ĉirkaŭXo, Xon, ant
 cxit: Solness, Hilde, psit, ts
 cxiz: Cae
 cxj: ĉj, nj, et, II, South
@@ -570,7 +570,7 @@ dedukt: Kp
 defetism: Antissa
 defici: plejparte
 defi: je/al
-de: Seir, Kadeŝ-Barnea, elde, mal, Joab, far, de-verba, ebl, ind, kvindekunua, de-substantiva, okdek, ĉi-supraj, Göteborg, honorprotektecon, ĉi-sekva, Volapük, Trompeter, Zamenhof, II, III, deXi, Xante, desupre, Xi
+de: Seir, Kadeŝ-Barnea, elde, mal, Joab, far, de-verba, ebl, ind, kvindekunua, de-substantiva, ĉi-supraj, Göteborg, honorprotektecon, ĉi-sekva, Volapük, Trompeter, Zamenhof, II, III, deXi, Xante, desupre, Xi
 dekagr: dag
 deka: SI
 dekali: dal
@@ -931,7 +931,7 @@ fin: fin, Vd, Vd
 fini: Vd, Vd
 finn: land, uj, nn, nnl, nl, Fin-nlando, Gron-lando, Fin-n-lando
 fint: Vanderlieb
-firm1: aj, McDonalds, kelkdek, Professional, Consulting
+firm1: aj, McDonalds, Professional, Consulting
 firma: ret
 fisi: plejofte, He, Zehui
 fisk: estkiel, Andrzej, Lubomirski, Citigroup, JP, Morgan, Chase, Bank, of, America, Merrill, Lynch, Ekz-e
@@ -943,7 +943,7 @@ flank: Ofira, far, Jordan
 flat: Ade
 flauxr: Rafinesk, Rafinesque
 flav: kokinovo
-fleks: mult, okdek
+fleks: mult
 fleksi: goose, geese
 flerovi: Fl
 flirt: ĉirkaŭflirtata
@@ -1042,7 +1042,6 @@ gap: Hoi, An
 garant: pri/por, sindoneco
 gard: Gerdan, singardeco, singardecon, misojn, nesingardulo
 gargar: pp, Medikamento
-gas: kelkcent, kelkmil
 gast: gastamecon
 gastroenterolog: IST
 gauxs: Karl, Friedrich
@@ -1249,7 +1248,7 @@ hipolit: Michon
 hipopo1: parhufuloj
 hipost: Jn, Heb, Jn, sub-stantia, hypo-stasis, ουσία
 hipster: aj
-hiskia: plurcent, Volke
+hiskia: Volke
 hister: nov
 histor: Edgar, Allan, Poe, apenaŭaj
 histri1: au
@@ -1757,7 +1756,7 @@ komisi1: blokope, III-a
 komita: plejmulto
 komor: KM
 kompak: k-disko, codo
-kompan: kelkcent, Ŝimŝon, Klr, AK
+kompan: Ŝimŝon, Klr, AK
 kompar2: adv
 kompat: denove
 kompen1: Denove
@@ -2221,7 +2220,7 @@ meteorolog: Vilhö, Yrjö, Kalle, Väisälä
 met: Jakob, vinberĝardenon, Olga, Halman
 metod: Cseh-metodо, Ĉe-metodo, Henri, Dunant, tricentjaran, Wesley, Charles
 metodi: III, Konstantenon-Cirilon
-metr: SI, ono, dekmiliononon, onon, n-amfibraĥo, n-anapesto, n-jambo, n-trokeo, n-silabo, m/s, m/s/s
+metr: SI, ono, onon, n-amfibraĥo, n-anapesto, n-jambo, n-trokeo, n-silabo, m/s, m/s/s
 metrop: Krys, Ungar
 mezanin: Davenant, Peel
 mezopotami: Isaak, Laban, Betuel
@@ -2538,7 +2537,6 @@ otid: mak-har
 otit: Roselyne
 otorinolaringologi: Medicinokirurgia
 oval: ar, br', r', Bricard
-ovibov: okdek
 oz: oz, haroza, poroza, ŝvitozaj, ŝtonozaj, sablozan, riĉ, plen, hav, ik
 oziris: Set
 ozon: EU
@@ -2726,7 +2724,6 @@ po: Lippmann, Bennemann, poa, II, pogrande, podetale, pometre, pohore, potune, p
 pokal: Sargon, Lapenna, Crt
 polaroid: Polaroid, Corporation
 poleks: Saŝka
-polen: kelkcent
 pol: AS, Trzebiatów, land, uj, Łagów, tn
 poli2: Pref
 poliamid: Plur
@@ -2820,7 +2817,7 @@ profes: artes, liberales
 profet: Lapidot, Izrael
 profilak: denove
 profit: ĉijare
-profun: pleja, Abramon, kelkcent
+profun: pleja, Abramon
 progno: ĉi-foje
 progra: dorssakproblemo, ĉiesa, Firefox
 progre: Henrik, Seppik, iom-post-ioma, Stravinskij, Prokofjev
@@ -2866,7 +2863,7 @@ publik: Volapük, ŝtat, ism
 pud: Iama
 puding: sekvinberoj
 puf: Plenblovita, plenblovita
-pulk: kvarjaraĝe
+pulk: pulkvo, kvarjaraĝe
 puls: pp
 pump: Ant
 punk: aj
@@ -2890,7 +2887,7 @@ rafael: Bazarov
 rafin: prilaboriteco, Fushun
 rahxel: Jakob
 rajmund: Laval
-rajt: Jefferson, Davis, Free, Software, Foundation, okcent, voĉdonrajto
+rajt: Jefferson, Davis, Free, Software, Foundation, voĉdonrajto
 raked: tablotenismatĉon
 rakont: Jack, London
 ramajan: Bhakti
@@ -3321,7 +3318,7 @@ sxalt: prem
 sxanc: plimalpli, Baghy-a
 sxangx: travivitaĵoj, ia/n
 sxarad: krucvortenigmoj
-sxargx: denove, Hrafnkel, Stecken, kelkdek
+sxargx: denove, Hrafnkel, Stecken
 sxat: Zamenhof
 sxekel: Matrix
 sxel: malhele-verdaj, Cambridge
@@ -3552,7 +3549,7 @@ tuj: tujtuj
 tukan: Mez, Tuc
 tuk: Dorina, Vetiha
 tuli: Tm
-tungst: treege, dekmiliononoj
+tungst: treege
 tunizi: TN
 tur: JFK, plejparto
 turing: iama

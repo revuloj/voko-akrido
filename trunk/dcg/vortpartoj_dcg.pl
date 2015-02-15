@@ -50,6 +50,8 @@ radiko(r(Radiko,Speco)) -->
   % apartajn regulojn por predikatoj "prefikso" kaj "sufikso"
   { Speco \= suf, Speco \= pref}.  
 
+nombro([v(N,nombr)]) --> v(N,nombr).
+
 nomrad_maj(r(Radiko,Speco)) -->
   nr(Radiko,Speco). % Atlantik
 
@@ -109,9 +111,9 @@ simpla_vorto([i(Pronomo,Speco),fi(Fino,FSpeco)]) -->
   i(Pronomo,Speco),
   fi(Fino,FSpeco).
 
-simpla_vorto([v(N1,nombr),v(N2,nombr)]) -->
-  v(N1,nombr),
-  v(N2,nombr).
+%simpla_vorto([v(N1,nombr),v(N2,nombr)]) -->
+%  v(N1,nombr),
+%  v(N2,nombr).
 
 % mal+prep, mal+adv
 simpla_vorto([p(mal,_),v(Vorto,VSpeco)]) -->
@@ -163,8 +165,11 @@ antau_parto(Partoj) -->
 antau_parto(Partoj) -->
   nomrad_sen_fino(Partoj).
 
+antau_parto(Nmb) --> nombro(Nmb).
+
 post_parto(Partoj) --> radika_vorto(Partoj).
 
+post_parto(Nmb) --> nombro(Nmb).
 
 %%%%%%%%%%%%%%%%%%%%%%
 
