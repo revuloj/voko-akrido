@@ -34,9 +34,10 @@ if ($komplete) {
 
 	open TRV,">${subdir}_trovoj.html";
 	select TRV;
-	elfiltru(glob "${subdir}/*.html");
+	$cnt = elfiltru(glob "${subdir}/*.html");
 	select STDOUT;
 	close TRV;
+	print "  $cnt artikoloj\n";
    }
 
 } else {
@@ -97,8 +98,8 @@ sub elfiltru {
 	}
     }
 
-    print_footer() if ($outhtml);
-
+    print_footer($cnt) if ($outhtml);
+    return $cnt;
 }
 
 sub print_header {
@@ -119,7 +120,12 @@ EOH
 }
 
 sub print_footer {
+    my $cnt_artikoloj = shift;
+
 	print <<EOF;
+        <p>
+          artikoloj kun trovoj: $cnt_artikoloj
+        </p>
       </body>
     </html>
 EOF
