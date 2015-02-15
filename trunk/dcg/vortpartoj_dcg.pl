@@ -146,6 +146,8 @@ antau_partoj([P1|P2]) -->
   antau_parto(P1), interkunmeto,
   antau_partoj(P2).
 
+% eble iom dubinda: distingu kunmeto "mi-diri", "ĉiu-hom/o" de
+% kunderivado "ambaŭ+man/e", "tiu+jar/a"...
 antau_parto(Partoj) -->
   pronomo_sen_fino(Partoj).
 

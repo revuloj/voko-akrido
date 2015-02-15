@@ -110,9 +110,8 @@ alud: ot
 alzac: Obernai
 am: Luiza
 amazon2: Amazon
-ambaux: ambaŭdekstra, ambaŭflanka, ambaŭflanke, ambaŭtranĉa
+ambaux: ambaŭdekstra
 ambl: kvarpieduloj, kvarpiedulo
-ambos: ambaŭflanke
 americi: Am
 amerik: Sud, latinidlingvaj, hispan
 amfibrak: dekunusilaba
@@ -133,7 +132,6 @@ anastazi: New, Jersey, VIIa
 anatem: Izrael, Izrael, Tolstoj
 anatoli: Egea
 andrapradesx: adivasi, orija, gondi, koja, konda
-androg: ambaŭseksulo, ambaŭseksa
 andromed: Nord-hemisfera, And
 anduj: Guéméné
 aneste: sendolorigilo
@@ -252,7 +250,7 @@ auxten: Pinyin
 auxt: aŭt, aŭtomobil, milit, ŝarĝaŭtokondukisto
 auxtism: VandenDaele, Asperger
 auxtod1: Audrey, Childs-Mee, Lanti
-auxtomatik: Scientific, American, ambaŭflanka
+auxtomatik: Scientific, American
 auxtor1: Meje, Meillet, Hopkins, Yale, Un
 avanc: du-tri
 avare: tjurk, slav, ma'arul
@@ -420,7 +418,7 @@ bremen: 'E, 'N
 brigad: natur
 brindz: ŝaf
 brit: an, Folkestone, Dover, Galla
-briti: Gloucester, Bristola, ambaŭ-flanke
+briti: Gloucester, Bristola
 brom: Br
 bronz: bronz
 brugx: 'E, 'N, Salamanca
@@ -508,7 +506,7 @@ cxalet: Schönried
 cxam: fam
 cxampa: Dom, Pérignon
 cxampi: championat, um, probatalanto, Bourlet
-cxap: ambaŭflanke, Bricard
+cxap: Bricard
 cxar1: Katumandos, Aur, Helmut
 cxar: Konj, prop
 cxarla: trouzanta
@@ -524,7 +522,6 @@ cxeriz: cerasus, Lucullo
 cxerkes: Jermolov
 cxeval1: neparhufuloj, unuhufuloj
 cxeval: neparhufulaj, rajd, Volapük, pkzip
-cxevro: ambaŭflanke
 cx: II
 cxiel1: Ramzes, Holešov, an, ĉi-monda
 cxies: pleje, ĉiesvoĉa, ĉiesulino
@@ -631,7 +628,7 @@ dieg: Valor
 dierez: Raulo, au, eu, eŭ
 difekt: bon, stat
 difere2: plejofte, df, dx, dy
-difere: Bricard, troo, ambaŭokaze, E-F, fo
+difere: Bricard, troo, E-F, fo
 difin: um
 difraktometr: Buerguer-procesia
 difton: nuit
@@ -720,7 +717,6 @@ duri: Yunnan
 dusxanbe: REACT, Uzbekio
 dut: E-F, C-D
 e1: maj
-eben: ambaŭflanke
 ebl: ebl, ata, II
 ebon: diospyros
 ebur: Ebur-Bordo, Ebur-Bordo, CI
@@ -910,7 +906,6 @@ fart: Bob, Sulavi
 fast: Palazzo, degli, Uffici
 fatv: Ĥomejni, Rushdie, Al-Kaida
 fauxk: komand, anto, Kurt, Chavez
-fauxlt: ambaŭflankaj
 favor: Izrael
 faz: πft
 federal: Proudhon
@@ -955,10 +950,9 @@ fisi: plejofte, He, Zehui
 fisk: estkiel, Andrzej, Lubomirski, Citigroup, JP, Morgan, Chase, Bank, of, America, Merrill, Lynch, Ekz-e
 fizik: Merkel, ĉi-okaze
 fizionomik: Lavater, Shemmelpennick, Qingmei
-flambe: ambaŭmana
 flamenk: sudhispandevena, Los, Titi, Unión
 flandri: junulin
-flank: Ofira, far, ambaŭflanka, ambaŭflankaj, Jordan
+flank: Ofira, far, Jordan
 flat: troaj, Ade
 flauxr: Rafinesk, Rafinesque
 flav: kokinovo
@@ -1001,7 +995,6 @@ fosf: fosfokalcia, E-aj, fosf
 fosfit: PO
 fosfor: fosf
 fos: vinberbranĉojn, Jiuliandun, Hubei-provinco
-fost: ambaŭflankaj
 fot: fotograf, o-derivaĵo, fot, fotograf, Jane, sterean, Otto
 fotogr: fot
 fotoliz: PCP
@@ -1019,7 +1012,7 @@ frand: bongust, Elly
 frankfurt: 'E, 'N
 frank: iama
 frap: ant, Vanessa, polychloros
-frat: boparencoj, ambaŭseksaj, Zoja, Petrovna
+frat: boparencoj, Zoja, Petrovna
 frazeologi: Zamenhof, rusa-pola-germana-franca
 fraz: pli-malpli, Anfisa
 frekve2: atentante, Tavi
@@ -1177,7 +1170,7 @@ gxem: Sara, Úrsula, vinberkultivistoj, Ha, Szwejc
 gxen: sindevige
 gxenr: Berlioz
 gxentl: Ruyer
-gxet: ambaŭflanka, Billy
+gxet: Billy
 gx: II, ĝo
 gxibuti: DJ, Bab, al-Mandab
 gxihad: Bin
@@ -1208,7 +1201,7 @@ harian: Harjano
 harlem: 'E, 'N
 harmon1: ĉe-ekrane, man-en-mane
 harold: Berlioz
-harp: ambaŭmane, Jurij, Finkel
+harp: Jurij, Finkel
 hasan: Hasan, Rok, ANEB
 hasi: Hs, IUPAC, unniloktio, Unniloctium
 hauxs: Kp
@@ -1235,7 +1228,6 @@ herakl1: Ήρακλέης, Alkmena, Alcide, Eristeo, Hero
 herb: verdanta
 hered: Isaak, Jakob, Izrael, Gregor, Mendel
 herkul: Herkules, Herklo, Herkles
-hermaf: ambaŭseksulo, ambaŭseksa
 hermetik: Dao, Jing, Laŭzi
 hermit: Charles
 herodot: Ŝarazada
@@ -1268,7 +1260,6 @@ hiphop: aj
 hipi: aj, aj
 hipnot: pli-malpli
 hipo: hipo, hipo, hiper
-hipokamp: ambaŭflanka
 hipolit: Michon
 hipopo1: parhufuloj
 hipost: Jn, Heb, Jn, sub-stantia, hypo-stasis, ουσία
@@ -1348,7 +1339,6 @@ ia: Izrael
 iam: iama, iamaj
 icx: iĉ, zita, zorn, katiĉo, beluliĉo, instruistiĉo, vir, ul, ist, an, estr, id, O-finaĵo, anto, into, onto, ato, ito, oto, O-vortoj, Bertilo, Wennergren, II, iĉo
 id1: Louis, Beaufront, Louis, Couturat, Tolkien, Novial
-ideal: ambaŭflanka, ambaŭflankan
 ide: Zamenhof, Hegel
 ident: ab
 id: id, II, Berveling, Hassan, Mohammed, Ben
@@ -1375,8 +1365,8 @@ impera: u-modo
 imperf: E-o, longedaŭran, E-o, ad, anta
 imperi1: Iama
 imperi: Majkrosoft
-implic: SPIV, kompti, EVA, implicit, ata, ate, subkomprenAta, entenAta, Kp, kajaŭ, Perec, ĉi-ene, kuo-on, ambaŭdirekta
-implikaci: bo, aŭo, ambaŭdirekta, ambaŭdirekta
+implic: SPIV, kompti, EVA, implicit, ata, ate, subkomprenAta, entenAta, Kp, kajaŭ, Perec, ĉi-ene, kuo-on
+implikaci: bo, aŭo
 implik: Ramzes
 impost: impostevitulo
 impote: nenionkapabla
@@ -1442,7 +1432,6 @@ intele: Lutoslavski
 inteli: aj
 intenc: malbon-intenculo, mison
 intere: Boŭnan, Corsetti, BKC, Ken
-interf: ambaŭlingva
 inter: Jehuda, II, ej, interrip, aĵ
 interlingva: Alexander, Gode
 interp1: Vd
@@ -1577,7 +1566,7 @@ kanad: CA
 kana: Kanamozikai, Fudesaki
 kanajl: Gibea, Izrael
 kanak: Kananam
-kanal: akvotrinkigajn, ambaŭdirekta, PT, ĉi-sence, spir
+kanal: akvotrinkigajn, PT, ĉi-sence, spir
 kanap: apog, lante
 kancel1: Don, Fernandez, Cordova, Antonio, Ferrer
 kancerolog: Le, Thanh, Thuoc, Gyula, Kulcsár
@@ -1726,7 +1715,6 @@ klon: retroprojektado, GNU-a, Promax, Technology, Macintosh-klonon, MHz
 klor: Cl
 klorof: chloroplast
 klub: MONATO-n
-kluz: ambaŭflanke
 knab: Izabela
 knar: misoj
 knedlik: pivoj
@@ -2083,7 +2071,7 @@ lir1: Iama
 lir: Lyr
 lirik: duonjarcenton
 lirl: Jinxiu
-list: ReVo, ambaŭdirekta
+list: ReVo
 litarg: oranĝeruĝa
 litera: Goethe, Faust, iamaj, Declerck, Ĉernovcy
 literator: Puŝkin
@@ -2124,7 +2112,6 @@ luksemb: 'E, 'N, Fogra
 lukt: Lauri, Eero
 lukum: Bagdad
 lul: Infan
-lumb: ambaŭflank/e
 lum: lumoa, preterrapidantaj, dudektria, Drammensvej, prilumiteco, km/s
 lup: denove, mapli, Baden-Powell, Rudyard, Kipling, evoluo/renovigado, kan
 lupus: mem-agresa
@@ -2159,7 +2146,6 @@ maksim1: max, Bricard, ĉi-koncerne
 malajzi: MY
 malavi: MW
 maldiv: MV
-male: ambaŭflanke
 malgra: malgraŭe
 mal: ig, dis, mal, II
 mali: ML
@@ -2218,7 +2204,7 @@ mauxric: Maeterlinck
 mauxrici: MU
 mauxzo: Xia-regno
 mazurk: deksesmezuraj, Petroviĉ
-medal: ambaŭflanke, Geografio-societo
+medal: Geografio-societo
 median: Bricard, mez
 mediterane: Edwin, Kock, Santorin
 medit: dekkvarjara
@@ -2234,7 +2220,6 @@ mek: mek-mek
 meksik: 'U, 'N, CNN
 meksiki: Ketzalkoatl, Edfu, prof, Feldmann-Gonzales, London, trad, eld, chicano
 melanom: le
-membr: ambaŭflanke
 mem: sk, II, sindoneco, III, mema, memo, Neves, memon
 memor: denove, denova
 mendelevi: Md
@@ -2253,7 +2238,6 @@ metadon: Opi
 meta: ePub-formo
 metal: IUPAC-sistemo, Ge, As, Sb, Te
 metalofon: László
-metasekvoj: ambaŭflanke
 metastaz: William, Auld
 meteol: Eugeniu, Norrköping
 meteor2: ologi
@@ -2366,7 +2350,7 @@ moviment: Romberg
 mozambik: MZ
 mozart: Wolfgang, Mozart
 muel: Orekola-muelisto
-muf: ha-a, ambaŭflanke
+muf: ha-a
 muhama: al-Ĥorezmi, MONATO, ABU, AL-QASIM, MUHAMMAD, IBN, 'ABD, ALLAH, AL-MUTTALIB, HAŜIM
 mu: muu-muu-muu
 mujxik: Denisoviĉ
@@ -2788,7 +2772,6 @@ polo: poneojn, Marco
 polus: z-a
 pomad: Medikamenta
 pom: stelpomarbo, albidum, africanum, sukerpomarbo, Thanh, long, mãng, cầu, ta, sudamerikdevena
-ponard: ambaŭtranĉa
 pont: Tower, Bridge
 pop: ortodokskristana
 popl: kor
@@ -2963,7 +2946,7 @@ redakt: Ben, Liŭ, HTML-markojn, UniRed, Simredo
 reding: denove
 redund: parecbito
 redut: Cruys
-refere: deksesjarcentaj, verko/dokumento, NPIV, mise, across, traa, ambaŭdirektaj
+refere: deksesjarcentaj, verko/dokumento, NPIV, mise, across, traa
 reflek1: id, xRx
 refleks: Pavlov
 refleksologi: pied, Magda, Amer
@@ -2983,7 +2966,7 @@ rekome: esp
 rekomp: pro/por, Tycho, Brahe, Nebukadnecar
 rekrem: vinberrekremento
 rekrut: Novevarbito, plejparte
-rekt: Vd, ambaŭflanke, ĉi-sence, Bricard, rektenaskita, T-kapa, denove, ke-frazo, Karlo, Bazarov
+rekt: Vd, ĉi-sence, Bricard, rektenaskita, T-kapa, denove, ke-frazo, Karlo, Bazarov
 rektor: Inazo
 relajs: relais
 relati: Germain
@@ -3134,14 +3117,14 @@ sci: David, Saul, Ebjatar, Doe, scivoleco
 sciur: flugipovan, Sciurinae
 seaborgi: Sg, IUPAC, unnilheksio, Unnilhexium
 seborgi: Sg
-segmen: ĉi-sence, ambaŭflanke, Ĉi-sence
+segmen: ĉi-sence, Ĉi-sence
 segx: kristandemokratoj, dors, Rodrigues
 sejsxel: SC
 sekant: sec, sek, arcsec, arksek, Vd
 sekc: Bricard, secanto, Werner
 sekrec: pli-malpli
 sekret: Zir-Nana
-seks: virseksulon, Huniŭ, ambaŭseksa, ambaŭseksaj, ambaŭseksulo, ambaŭseksuloj, samseksama, samseksaman, samseksamulo, samseksamulino, virseksulo, ambaŭseksaj
+seks: virseksulon, Huniŭ, samseksama, samseksaman, samseksamulo, samseksamulino, virseksulo
 sekt: Quesnay
 sekular: kontraŭkristana
 sekund: ono
@@ -3160,7 +3143,6 @@ separatism: aj
 separatist: Chen, Yunlin, Taiwan
 septuagint: kristanatalmuda
 sepult: Artemiza
-seran: ambaŭseksa
 serasalm: Sud
 serb: CS
 seri: Oriento-Okcidento, DVD-kopiojn, Ĉangum, x-x
@@ -3222,7 +3204,6 @@ skandi: Sc
 skapol: Asarhadon
 skapulari: forĝistedzino
 skarab: Anoplophora, glabripennis
-skarp: ambaŭflanke
 skerm: Dong, Tong
 skip: opo
 skism: Opa
@@ -3562,7 +3543,7 @@ trahxom: okul
 trak: Stuttgart, bus, cm/sek
 trakta: traktato, Traktat-Organizaĵo, Traktat-Organizaĵo
 trampolin: aerblovita
-trancx: ambaŭtranĉa, y-x
+trancx: y-x
 trankv: Kp
 transc: K', Bricard, ĉi-supra
 transfuz: Wu, Dengyun
@@ -3726,7 +3707,6 @@ vespr: Audun
 vest: Zamenhof, Baal, Elsa, Olsen
 vesxt: Halman
 veteri: sepdekjara
-vet: ambaŭflanke
 vetur: pp
 vezik: Express
 v: v/o, vo, maj

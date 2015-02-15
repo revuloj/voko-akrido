@@ -184,6 +184,8 @@ antauvorto(A) --> [Rsf],
   { phrase((radv_sen_fin(Vsf,_,3),  % apliku maks. 3 sufiksojn, ĉu sufiĉas?
            [c(F,_)]),Rsf),
     atomic_list_concat([Vsf,F],'/',A) }.
+
+% eble iom dubinda ("mi-dir/i" , "ĉiu-hom/o" kompare kund kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
 antauvorto(A) --> [[v(A,_)]]; [[u(A,_)]]; [[i(A,_)]].
 
 postvorto(P,S) --> [V],
