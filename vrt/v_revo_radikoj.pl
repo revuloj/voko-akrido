@@ -26,7 +26,6 @@ r('ŝraŭb',subst).
 r('ŝrapnel',subst).
 r('ŝrank',subst).
 r('ŝraman',subst).
-r('ŝpruc',verb).
 r('ŝpin',tr).
 r('ŝpat',subst).
 r('ŝpar',tr).
@@ -706,7 +705,6 @@ r('tuval',subst).
 r('tut',adj).
 r('tusk',subst).
 r('tusilag',subst).
-r('tus',verb).
 r('turt',subst).
 r('turp',adj).
 r('turnir',subst).
@@ -985,7 +983,6 @@ r('tim',tr).
 r('tiliac',subst).
 r('tili',subst).
 r('tild',subst).
-r('tiktak',subst).
 r('tikl',tr).
 r('tik',ntr).
 r('tik',subst).
@@ -1636,7 +1633,6 @@ r('societ',subst).
 r('social',adj).
 r('soci',subst).
 r('sobr',adj).
-r('snuf',verb).
 r('snob',subst).
 r('smirg',subst).
 r('smerald',subst).
@@ -2101,7 +2097,6 @@ r('rum',subst).
 r('rulet',subst).
 r('rul',tr).
 r('rukul',verb).
-r('rukt',verb).
 r('ruin',subst).
 r('rugbe',subst).
 r('rudr',subst).
@@ -2926,7 +2921,6 @@ r('plank',subst).
 r('planimetri',subst).
 r('planedolog',subst).
 r('planed',subst).
-r('pland',subst).
 r('plan',subst).
 r('plak',subst).
 r('plagiat',subst).
@@ -4080,7 +4074,6 @@ r('mien',subst).
 r('miel',subst).
 r('midinet',subst).
 r('miceli',subst).
-r('miaŭ',verb).
 r('miasm',subst).
 r('meĥanism',subst).
 r('meĥanik',subst).
@@ -4209,7 +4202,6 @@ r('melanin',subst).
 r('melampir',subst).
 r('mel',best).
 r('mekanik',subst).
-r('mek',verb).
 r('mejtneri',subst).
 r('mejl',subst).
 r('megom',subst).
@@ -4253,7 +4245,6 @@ r('maĵor',adj).
 r('maĥinaci',subst).
 r('maĝang',subst).
 r('maĉet',subst).
-r('maĉ',verb).
 r('maĉ',subst).
 r('mazut',subst).
 r('mazurk',subst).
@@ -4853,7 +4844,6 @@ r('kvalit',subst).
 r('kvalifik',tr).
 r('kvalif',tr).
 r('kvaker',subst).
-r('kvak',verb).
 r('kvadriplegi',subst).
 r('kvadril',subst).
 r('kvadrik',subst).
@@ -4983,7 +4973,6 @@ r('krokodil',best).
 r('krokiz',verb).
 r('kroket',subst).
 r('kroat',subst).
-r('kriĉ',verb).
 r('krizolit',subst).
 r('krizokal',subst).
 r('krizantem',subst).
@@ -5045,7 +5034,6 @@ r('kreditor',subst).
 r('kredit',subst).
 r('kred',tr).
 r('kre',tr).
-r('kraŝ',verb).
 r('kraĉ',tr).
 r('kravat',subst).
 r('krati',suf).
@@ -5062,7 +5050,6 @@ r('kramf',subst).
 r('kramb',subst).
 r('kral',subst).
 r('kraken',subst).
-r('krak',verb).
 r('krak',subst).
 r('krajon',subst).
 r('krad',subst).
@@ -5522,7 +5509,6 @@ r('koagul',tr).
 r('knel',subst).
 r('knedlik',subst).
 r('kned',tr).
-r('knar',verb).
 r('knal',ntr).
 r('knab',subst).
 r('kluĉ',tr).
@@ -5530,7 +5516,6 @@ r('kluz',subst).
 r('klus',subst).
 r('klupeed',subst).
 r('klupe',best).
-r('kluk',verb).
 r('klub',subst).
 r('kloŝ',subst).
 r('klozone',subst).
@@ -5594,7 +5579,6 @@ r('klap',subst).
 r('klangul',best).
 r('klan',subst).
 r('klamid',subst).
-r('klak',verb).
 r('klaft',subst).
 r('kladoni',subst).
 r('klad',subst).
@@ -6389,7 +6373,6 @@ r('ideal',adj).
 r('ide',subst).
 r('ibised',subst).
 r('ibis',subst).
-r('ia',verb).
 r('iFon',subst).
 r('huŝ',verb).
 r('huĉin',subst).
@@ -6621,7 +6604,6 @@ r('hematolog',subst).
 r('hematit',subst).
 r('helvelac',subst).
 r('helvel',subst).
-r('help',verb).
 r('helm',subst).
 r('helium',subst).
 r('heliotrop',subst).
@@ -6732,7 +6714,6 @@ r('guzl',subst).
 r('guvern',tr).
 r('gutural',subst).
 r('gutaperk',subst).
-r('gut',subst).
 r('gust',subst).
 r('guru',subst).
 r('gurnard',subst).
@@ -6875,7 +6856,6 @@ r('gnejs',subst).
 r('gluten',subst).
 r('glute',subst).
 r('glutamat',subst).
-r('glut',verb).
 r('glum',subst).
 r('glukoz',subst).
 r('glugl',ntr).
@@ -7216,7 +7196,6 @@ r('fraz',subst).
 r('fratri',subst).
 r('fraterkul',subst).
 r('frat',parc).
-r('frap',verb).
 r('franĝ',subst).
 r('frankolin',subst).
 r('frank',subst).
@@ -8919,7 +8898,6 @@ r('boks',ntr).
 r('bokal',subst).
 r('bojkot',tr).
 r('bojar',subst).
-r('boj',verb).
 r('bogomil',subst).
 r('bodisatv',subst).
 r('bodi',subst).
@@ -8958,7 +8936,6 @@ r('blasfem',tr).
 r('blanket',subst).
 r('blank',adj).
 r('blag',subst).
-r('blabla',verb).
 r('bizon',subst).
 r('bizar',adj).
 r('bivak',subst).
@@ -9111,7 +9088,6 @@ r('batat',subst).
 r('batalion',subst).
 r('batal',ntr).
 r('batak',subst).
-r('bat',verb).
 r('baston',subst).
 r('bastion',subst).
 r('bastard',subst).

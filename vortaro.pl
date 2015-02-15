@@ -34,6 +34,7 @@ term_expansion(nr_(Vrt,Spc),(nr_(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 % vicordo gravas, vortelementoj kiel radikoj
 % rekoniĝu nur post la pli longaj "normalaj" radikoj
 :-consult('vrt/v_revo_radikoj.pl').
+:-consult('vrt/v_revo_vortoj.pl').
 :-consult('vrt/v_radikoj.pl').
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
