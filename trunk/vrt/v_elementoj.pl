@@ -74,6 +74,8 @@ s(on,subst,nombr).
 s(op,subst,nombr).
 s(uj,subst,subst).
 s(ul,best,adj).
+s(ul,best,subst). % X-hava ulo: mamulo, vertebrulo
+s(ul,best,verb). % X-anta ulo: drinkulo, rampulo
 s(um,_,_).
 s(um,tr,_). % plenumi, brakumi, krucumi, lavumi ktp.
 
@@ -96,6 +98,16 @@ p(re,verb).
 /*************** 
  * prepozicioj kiel prefiksoj
 ****************/
+
+% MANKO:
+% ofte ili transitivigas verbon,
+% oni devus montri aŭ per tria argumento "Al"
+% aŭ uzi apartan predikaton, ekz. pp(X,verb) -> tr
+
+% transitivigaj (?): al, apud, ĉe, el, en, super, sub, preter
+% ne transitivigaj (?): de, kun...? demeti/deteni (tr -> tr), deveni (ntr), desalti (ntr -> tr)
+%                     kuniri/kunsidi (ntr), kuntiri (tr->tr)
+
 p(al,verb).
 p('antaŭ',verb).
 %p('antaŭ',adv). % chu prefikso au kunderivado?
