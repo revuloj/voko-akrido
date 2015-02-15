@@ -98,6 +98,7 @@ nr('Trinidad',subst).
 nr('Toskani',subst).
 nr('Tora',subst).
 nr('Tomas',subst).
+nr('Toki',subst).
 nr('Togoland',subst).
 nr('Tobi',subst).
 nr('Tobag',subst).
@@ -596,6 +597,7 @@ nr('Harian',subst).
 nr('Hanafism',subst).
 nr('Hampŝir',subst).
 nr('Hamburg',subst).
+nr('Haman',subst).
 nr('Halovin',subst).
 nr('Haloven',subst).
 nr('Hag',subst).
@@ -997,6 +999,7 @@ nr_('trinidad',subst).
 nr_('toskani',subst).
 nr_('tora',subst).
 nr_('tomas',subst).
+nr_('toki',subst).
 nr_('togoland',subst).
 nr_('tobi',subst).
 nr_('tobag',subst).
@@ -1495,6 +1498,7 @@ nr_('harian',subst).
 nr_('hanafism',subst).
 nr_('hampŝir',subst).
 nr_('hamburg',subst).
+nr_('haman',subst).
 nr_('halovin',subst).
 nr_('haloven',subst).
 nr_('hag',subst).
