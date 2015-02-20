@@ -1,3 +1,4 @@
+bg
 a1: maj, po-signo
 aberac: UEA-lorno, plejofte
 abnega: Gandhi
@@ -1952,7 +1953,7 @@ labrador: Davisan
 laburn: Laburnum
 ladisla: Enrique, Márquez
 lag: Ŝiloaĥ
-la: land, par
+la: land
 laik: мирянин, Ĥomjakov, Kirievskij, profan, Zamenhof
 lak: lak
 lakon: pp
