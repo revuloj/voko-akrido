@@ -1,5 +1,5 @@
-:- consult(analizilo2).
-
+% :- consult(analizilo2).
+:- consult(analizilo3).
 
 a1(Vorto,Analizita,Speco) :-
   vortanalizo(Vorto,Ana,Spc),!,
@@ -14,12 +14,20 @@ an(Vorto) :- \+ ak(Vorto,_,_).
 % testo de la unua analizo
 t1(Vorto,Analizita,Speco) :-
   format('~s -> ~w: ',[Vorto,Analizita]),
-  (a1(Vorto,Analizita,Speco) -> format('bone!~n'); format('ERARO~n')).
+  once((a1(Vorto,Ana,Spc); format('ERARO~n'), fail)),
+  (Ana == Analizita, Spc == Speco
+    -> format('bone!~n')
+    ; format('ERARO [~k]~n',[Ana])
+  ).
 
 % testo de iu analizo, ne la unua tuj devas esti ĝusta...
 tk(Vorto,Analizita,Speco) :-
   format('~s -> ~w: ',[Vorto,Analizita]),
-  (ak(Vorto,Analizita,Speco) -> format('bone!~n'); format('ERARO~n')).
+  once((ak(Vorto,Ana,Spc); format('ERARO~n'), fail)),   
+  (Ana == Analizita, Spc == Speco 
+    -> format('bone!~n')
+    ; format('ERARO [~k]~n',[Ana])
+  ).
 
 % neanalizebla, negativa testo
 tn(Vorto) :-

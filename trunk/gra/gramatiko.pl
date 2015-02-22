@@ -3,7 +3,9 @@
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 
-:- dynamic min_max_len/3.
+:- dynamic min_max_len/3, '&'/1.
+
+debug(false).
 
 %%% traduki regulesprimojn al normalaj Prologo-faktoj....
 % 
@@ -34,12 +36,38 @@ rule_expression(RuleExp,RuleExp).
 
 
 debug(Depth,Msg,Scheme,Rezulto) :-
-  sub_atom('------------------------------------------------------------------------------------------',0,Depth,_,Indent),
-  format('~w ~w ~w ~w~n',[Indent,Msg,Scheme,Rezulto]).
+  debug(true)
+  ->
+    sub_atom('------------------------------------------------------------------------------------------',0,Depth,_,Indent),
+    format('~w ~w ~w ~w~n',[Indent,Msg,Scheme,Rezulto])
+  ; true.
+
+% helpofunkcioj pro uzi la gramatikon
+
+analyze(Vrt,Ana,Spc) :-
+  atom(Vrt),
+  apply_rule(&vorto(_,Spc),Vrt,Ana,0).
+
+analyze(Vrt,Ana,Spc) :-
+  is_list(Vrt),
+  atom_codes(Atom,Vrt),
+  apply_rule(&vorto(_,Spc),Atom,Ana,0).
+
+% forigas krampojn kaj spacojn el la rezulo-termo
+reduce(Term,Flat) :-
+  format(codes(A),'~w',[Term]),
+  reduce_(A,F),
+  atom_codes(Flat,F).
+
+reduce_([],[]).
+reduce_([L|Ls],[F|Fs]) :-
+  memberchk(L,"() ") 
+   -> reduce_(Ls,[F|Fs])
+   ; F=L, reduce_(Ls,Fs).
 
 % voku ekz: 
-% apply_rule(&vorto(Spc),'eniri',Rezulto).
-  
+% apply_rule(&vorto(RuleId,Spc),'eniri',Rezulto).
+
 apply_rule(RuleRef,Vrt,Rez) :- apply_rule(RuleRef,Vrt,Rez,0).
 
 % regulo unuparta
