@@ -3,6 +3,8 @@
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 
+:- dynamic min_max_len/3.
+
 %%% traduki regulesprimojn al normalaj Prologo-faktoj....
 % 
 term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
@@ -51,6 +53,7 @@ apply_rule(&RuleRef,Vrt,Rez,Depth) :-
 %  debug(Depth,provas,RuleScheme,Vrt),
   D1 is Depth+1,
   apply_rule(SubRule,Vrt,Rez,D1),
+  % apliku postkondiĉon
   (Post = [Cond] *-> Cond; true),
   debug(Depth,rezulto,RuleScheme,Rez).
 
@@ -65,6 +68,7 @@ apply_rule(&RuleRef,Vrt,Rez,Depth) :-
 %  debug(Depth,provas,RuleScheme,Vrt),
   D1 is Depth+1,
   apply_prt_rules(Partoj,Vrt,Rezultoj,D1),
+  % apliku postkondiĉon
   (Post = [Cond] *-> Cond; true),
   Rez =.. [Op|Rezultoj],
   debug(Depth,rezulto,RuleScheme,Rez).
@@ -72,7 +76,11 @@ apply_rule(&RuleRef,Vrt,Rez,Depth) :-
 % bazaj reguloj referencantaj al vortaro
 apply_rule(DictSearch,Ero,Ero,_) :-
   DictSearch =.. [Pred,Ero|_], Pred \= '&',
-  % Pred \= regulo, % se estus jam konata, ke temas pri sercho sufichus call(Sercho)...
+% pli malrapide tamen, verŝajne valorus
+% limigi la longecon nur che pli supraj regulaplikoj
+% kaj nencesus ankau interrompi, kiam
+% longeco forlasas la [min,max] intervalon
+%  check_length(DictSearch),
   call(DictSearch).
 
 
@@ -87,6 +95,30 @@ apply_prt_rules([Prt|Partoj],Vrt,[Rez|Rezultoj],Depth) :-
     % kaj uzi between + sub_atom...?
     apply_rule(Prt,V1,Rez,Depth),
     apply_prt_rules(Partoj,Rest,Rezultoj,Depth).
+
+
+check_length(DictSearch) :-
+  % analizetu la serchon
+  DictSearch =.. [Pred,Vrt|Rest],
+  length(Rest,A), Arity is A+1,
+  atom_length(Vrt,Len),
+  % kontrolu la longecon de Vrt
+  get_min_max(Pred/Arity,Min,Max),
+  between(Min,Max,Len).
+
+
+get_min_max(Pred/Arity,Min,Max) :-
+  min_max_len(Pred/Arity,Min,Max) -> true
+  ; % min/max still not known -> calculate it
+    functor(Func,Pred,Arity),
+    Func =.. [_,Vrt|_],
+    findall(L,
+	    (call(Func),atom_length(Vrt,L)),
+            Lens),
+    max_list(Lens,Max),
+    min_list(Lens,Min),
+    assert(min_max_len(Pred/Arity,Min,Max)).
+
     
 
 

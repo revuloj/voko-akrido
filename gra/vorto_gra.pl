@@ -17,7 +17,7 @@ sub(tr,verb).
 sub(perspron,pron).
 
 subspc(S1,S2) :-
-  sub(S1,S2). %,!.
+  sub(S1,S2), !.
 
 drv_per_suf(Spc,Al,De,Speco) :- 
   subspc(Spc,De), %!,
@@ -33,7 +33,7 @@ drv_per_suf(Spc,Al,De,Speco) :-
         % la sekva identigo donas la rezultan Specon, tiel
         % frat'in estas "parc" kaj ne nur "best".
 
-        (Spc=Al, %!, % se temas pri sufiksoj kiel s(aĉ,_,_),
+        (Spc=Al, !, % se temas pri sufiksoj kiel s(aĉ,_,_),
                    % fakte suficxus ekzameni, cxu AlSpeco = _
           Speco=Spc;
           Speco=Al 
@@ -55,24 +55,24 @@ sub(ntr,verb).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % simpla vorteto, ekz.  hodiaŭ, ek
-vorto(Spc) <= v(_V,Spc).
+vorto(v,Spc) <= v(_V,Spc).
 
 % simplaj mal-vortoj (malfor, malantaŭ, maltro...)
-vorto(Spc) <= p(mal,_) / v(_V,Spc) :- (Spc='adv'; Spc='prep').
+vorto(pv,Spc) <= p(mal,_) / v(_V,Spc) :- (Spc='adv'; Spc='prep').
 
 % pronomo, ekz. mi
-vorto(Spc) <= i(_Pron,Spc). 
+vorto(i,Spc) <= i(_Pron,Spc). 
 
 % pronomo, ekz. kiu
-vorto(Spc) <= u(_Pron,Spc). 
+vorto(u,Spc) <= u(_Pron,Spc). 
 
 % pron + fin, ekz. mi/n
-vorto(Spc) <= i(_Pron,Spc) / fi(_Fin,_).
+vorto(ifi,Spc) <= i(_Pron,Spc) / fi(_Fin,_).
 
 % pron + fin, ekz. kiu/jn
-vorto(Spc) <= u(_Pron,Spc) / fu(_Fin,_).
+vorto(ufu,Spc) <= u(_Pron,Spc) / fu(_Fin,_).
 
-vorto(Spc) <= &rv_sen_fin(Vs) / f(_Fin,Fs) 
+vorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_Fin,Fs) 
   ~> (subspc(Vs,Fs),  
       % eble once(...)?            
        Spc=Vs 
@@ -85,18 +85,17 @@ verbigo de substantivoj estu iel permesata, ĉu en la gramatiko aŭ per la vorta
 
 
 % radika vorto sen finaĵo (sed kun afiksoj)
-rv_sen_fin(Spc) <= r(_Rad,Spc). 
+rv_sen_fin(r,Spc) <= r(_Rad,Spc). 
 %%rv_sen_fin(Spc) <= &rv_sen_suf(Spc).
 
+% derivado per prefikso
+rv_sen_suf(pr,Spc) <= p(_Pref,De) / r(_Rad,Spc) ~> subspc(Spc,De).
+
 % rad+sufikso, ekz. san/ul
-rv_sen_fin(Spc) <= &rv_sen_fin(Vs) / s(_Suf,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
+rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_Suf,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
 
 % foje funkcias apliki prefiksojn nur post sufiksoj, ekz. ne/(venk/ebl)
-rv_sen_fin(Spc) <= p(_Pref,De) / &rv_sen_fin(Spc) ~> subspc(Spc,De). 
-
-% derivado per prefikso
-rv_sen_suf(Spc) <= p(_Pref,De) / &rv_sen_suf(Spc) ~> subspc(Spc,De).
-
+rv_sen_fin(pD,Spc) <= p(_Pref,De) / &rv_sen_fin(rvs,Spc) ~> subspc(Spc,De). 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kunderivitaj vortoj
@@ -107,29 +106,29 @@ rv_sen_suf(Spc) <= p(_Pref,De) / &rv_sen_suf(Spc) ~> subspc(Spc,De).
 %
 % PLIBONIGO: eble pro optimumigo estus bone havi antau-, kaj postkondichojn
 %            momente ":- ..." efikas kiel antaukondichoj...
-vorto(Spc) <= &kdrv(Vs) / f(_Fin,Fs) 
+vorto('Kf',Spc) <= &kdrv(_,Vs) / f(_Fin,Fs) 
   ~> (subspc(Vs,Fs),  
       % eble once(...)?            
        Spc=Vs 
      ; Spc=Fs).
 
 % foje funkcias apliki sufiksojn nur post kunderivado, ekz. (sen+pied)/ul
-vorto(Spc) <= &vrt_sen_fin(Vs) / f(_Fin,Fs) 
+vorto('Vf',Spc) <= &vrt_sen_fin(_,Vs) / f(_Fin,Fs) 
   ~> (subspc(Vs,Fs),  
       % eble once(...)?            
        Spc=Vs 
      ; Spc=Fs).
 
-vrt_sen_fin(Spc) <= &kdrv(Ks) / s(_Suf,Al,De) ~> drv_per_suf(Ks,Al,De,Spc).
+vrt_sen_fin('Ks',Spc) <= &kdrv(_,Ks) / s(_Suf,Al,De) ~> drv_per_suf(Ks,Al,De,Spc).
 
 % kunderivado per prepozicioj (ekz. sur+strat/a)
-kdrv(Al) <= p(_Prep,Al,De) + &rv_sen_fin(Spc) ~> subspc(Spc,De).
+kdrv(pD,Al) <= p(_Prep,Al,De) + &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
 
 % kunderivado per adverboj, ekz. altkreska, longdaura, plenkreska
-kdrv(adj) <= r(_Adv,Spc1) + r(_Verb,VSpc) ~> (Spc1 = adv ; Spc1 = adj), subspc(VSpc,verb).
+kdrv(rr,adj) <= r(_Adv,Spc1) + r(_Verb,VSpc) ~> (Spc1 = adv ; Spc1 = adj), subspc(VSpc,verb).
 
 % kunderivado per adjektivoj, ekz. multlingva
-kdrv(adj) <= r(_Adj,adj) + r(_Subst,SSpc) ~> subspc(SSpc,subst).
+kdrv(rr,adj) <= r(_Adj,adj) + r(_Subst,SSpc) ~> subspc(SSpc,subst).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
@@ -138,28 +137,28 @@ kdrv(adj) <= r(_Adj,adj) + r(_Subst,SSpc) ~> subspc(SSpc,subst).
 
 % nombrokunmeto, ekz. du*dek
 % KOREKTU: permesu nur dekojn kiel N2, ciferojn 1..9 kiel N1
-vorto(nombr) <= v(_N1,nombr) * v(_N2,nombr).
+vorto(nn,nombr) <= v(_N1,nombr) * v(_N2,nombr).
 
 % ekz. dom-hund/o, ...
-vorto(Spc) <= &antauvortoj(_) - &postvorto(Spc).
+vorto('AP',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
 
 % foje funkcias apliki prefiksojn nur al jam kunmetita vorto
 % ekz. ne/(progres-pov/a)
-vorto(Spc) <= p(_Pref,De) / &kunmetita(Spc) ~> subspc(Spc,De).
+vorto(pAP,Spc) <= p(_Pref,De) / &kunmetita(_,Spc) ~> subspc(Spc,De).
 
-kunmetita(Spc) <= &antauvortoj(_) - &postvorto(Spc).
-antauvortoj(Spc) <= &antauvorto(Spc).
-antauvortoj(Spc) <= &antauvorto(Spc) - &antauvortoj(Spc).
+kunmetita('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
+antauvortoj('A',Spc) <= &antauvorto(_,Spc).
+antauvortoj('A+',Spc) <= &antauvorto(_,Spc) - &antauvortoj(_,Spc).
 
-antauvorto(Spc) <= &rv_sen_fin(Spc).
-antauvorto(Spc) <= &rv_sen_fin(_) / c(_InterFin,Spc).
+antauvorto('D',Spc) <= &rv_sen_fin(_,Spc).
+antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_InterFin,Spc).
 
 % eble iom dubindaj ("mi-dir/i" , "ĉiu-hom/o" kompare kund kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
 %antauvorto(Spc) <= v(_V,Spc).
 %antauvorto(Spc) <= u(_Pron,Spc).
 %antauvorto(Spc) <= i(_Pron,Spc).
 
-postvorto(Spc) <= &rv_sen_fin(Vs) / f(_Fin,Fs) 
+postvorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_Fin,Fs) 
    ~> (subspc(Vs,Fs),  
       % eble once(...)?            
        Spc=Vs 
