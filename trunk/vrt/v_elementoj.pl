@@ -3,6 +3,7 @@
 ************/
 c(o,subst).
 c(a,adj).
+c('-',_).
 
 /********** finajxoj de radikoj, prefere ordigu la
  * vortaron law la ofteco de la vortoj 

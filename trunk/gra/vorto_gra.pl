@@ -1,11 +1,13 @@
 :- ensure_loaded(gramatiko).
 :- discontiguous vorto/2, vorto/3.
+:- dynamic min_max_len/3.
 
 % PLIBONIGU: anstau uzi user: ebligu importi tion de gramatiko...
 :- op( 1120, xfx, user:(<=) ). % disigas regulo-kapon, de regulesprimo
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 
+%gra_debug(true).
 
 sub(X,X).
 % sub(X,Z) :- sub(X,Y), sub(Y,Z).
@@ -49,6 +51,38 @@ sub(tr,verb).
 sub(ntr,verb).
 ***/
 
+% oni povus pli flekseble tion kalkuli rikure
+% el la reguloj mem...
+min_max_len(v,2,10).
+min_max_len(pv,5,13).
+min_max_len(i,2,5).
+min_max_len(u,2,5).
+min_max_len(ifi,3,6).
+min_max_len(ufu,3,7).
+min_max_len(r,2,18).
+min_max_len(f,1,3).
+min_max_len('Df',3,99).
+min_max_len(p,2,7).
+min_max_len(s,2,4).
+min_max_len(pr,4,25).
+min_max_len('Ds',4,99).
+min_max_len(pD,4,99).
+min_max_len('Kf',7,99).
+min_max_len('Vf',7,99).
+min_max_len('Ks',6,99).
+min_max_len(pD,4,99).
+min_max_len(rr,4,99).
+min_max_len(nn,5,8).
+min_max_len('A',2,33).
+min_max_len('A+',2,99).
+min_max_len('P',3,99).
+min_max_len(c,1,1).
+min_max_len('Df',3,33).
+min_max_len('D',2,33).
+min_max_len('AP',5,99).
+min_max_len('A+P',5,99).
+min_max_len(pAP,7,99).
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% simplaj, nekunmetitaj vortoj 
 %%% - nur derivado per afiksoj kaj finaĵoj
@@ -84,12 +118,12 @@ verbigo de substantivoj estu iel permesata, ĉu en la gramatiko aŭ per la vorta
 ***/
 
 
+% derivado per prefikso
+rv_sen_suf(pr,Spc) <= p(_Pref,De) / r(_Rad,Spc) ~> subspc(Spc,De).
+
 % radika vorto sen finaĵo (sed kun afiksoj)
 rv_sen_fin(r,Spc) <= r(_Rad,Spc). 
 %%rv_sen_fin(Spc) <= &rv_sen_suf(Spc).
-
-% derivado per prefikso
-rv_sen_suf(pr,Spc) <= p(_Pref,De) / r(_Rad,Spc) ~> subspc(Spc,De).
 
 % rad+sufikso, ekz. san/ul
 rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_Suf,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
@@ -135,12 +169,16 @@ kdrv(rr,adj) <= r(_Adj,adj) + r(_Subst,SSpc) ~> subspc(SSpc,subst).
 %%% kunmetitaj vortoj
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 % nombrokunmeto, ekz. du*dek
 % KOREKTU: permesu nur dekojn kiel N2, ciferojn 1..9 kiel N1
-vorto(nn,nombr) <= v(_N1,nombr) * v(_N2,nombr).
+cifero(N) :- memberchk(N,[unu,du,tri,kvar,kvin,ses,sep,ok,'naŭ']). 
+vorto(nn,nombr) <= v(N1,nombr) * v(dek,nombr) ~> cifero(N1).
+vorto(nn,nombr) <= v(N1,nombr) * v(cent,nombr) ~> cifero(N1).
+vorto(nn,nombr) <= v(N1,nombr) * v(mil,nombr) ~> cifero(N1).
 
 % ekz. dom-hund/o, ...
-vorto('AP',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
+vorto('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
 
 % foje funkcias apliki prefiksojn nur al jam kunmetita vorto
 % ekz. ne/(progres-pov/a)
@@ -152,6 +190,7 @@ antauvortoj('A+',Spc) <= &antauvorto(_,Spc) - &antauvortoj(_,Spc).
 
 antauvorto('D',Spc) <= &rv_sen_fin(_,Spc).
 antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_InterFin,Spc).
+antauvorto(nn,Spc) <= &vorto(nn,Spc).
 
 % eble iom dubindaj ("mi-dir/i" , "ĉiu-hom/o" kompare kund kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
 %antauvorto(Spc) <= v(_V,Spc).
