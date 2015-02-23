@@ -35,6 +35,10 @@ nomrad_sen_fino(Partoj) --> % Atlantikej
     sufiksoj(Sufiksoj),
     { append([[Radiko],Sufiksoj],Partoj) }.
 
+nomrad_sen_fino([n(Nom,Spc),ns(NomSuf,Ss)]) --> % karesnomo: paĉjo, Peĉjo, Anjo,..
+  { nk(Nom,Spc), atom_codes(Nom,N) }, N, ns(NomSuf,Ss),
+  { subspc(Spc,Ss) }.
+
 prefiksoj([]) --> [].
 prefiksoj([p(Prefikso,DeSpeco)|Prefiksoj]) -->
   p(Prefikso,DeSpeco),

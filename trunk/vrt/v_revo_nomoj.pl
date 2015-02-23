@@ -6,7 +6,7 @@ nr('Ŝengen',subst).
 nr('Ŝem',subst).
 nr('Ŝekspir',subst).
 nr('Ŝari',subst).
-nr('Ĵul',best).
+nr('Ĵul',pers).
 nr('Ĵerzej',subst).
 nr('Ĥiron',subst).
 nr('Ĥi',subst).
@@ -34,7 +34,7 @@ nr('Zimbabv',subst).
 nr('Zeŭs',subst).
 nr('Zeland',subst).
 nr('Zaratuŝtr',subst).
-nr('Zamenhof',best).
+nr('Zamenhof',pers).
 nr('Zambi',subst).
 nr('Vulgat',subst).
 nr('Volter',subst).
@@ -64,7 +64,7 @@ nr('Vener',subst).
 nr('Vencesla',subst).
 nr('Vaĝrajan',subst).
 nr('Vatikan',subst).
-nr('Vat',best).
+nr('Vat',pers).
 nr('Varsovi',subst).
 nr('Varingjen',subst).
 nr('Valter',subst).
@@ -148,6 +148,7 @@ nr('Sirius',subst).
 nr('Siriak',subst).
 nr('Siri',subst).
 nr('Sirdarj',subst).
+nr('Sirakuz',subst).
 nr('Simon',subst).
 nr('Simeon',subst).
 nr('Silvestr',subst).
@@ -235,7 +236,7 @@ nr('Pitagor',subst).
 nr('Pinokj',subst).
 nr('Pinjin',subst).
 nr('Pilat',subst).
-nr('Petr',subst).
+nr('Petr',pers).
 nr('Peterburg',subst).
 nr('Peru',subst).
 nr('Perse',subst).
@@ -245,7 +246,7 @@ nr('Pegaz',subst).
 nr('Paŭl',subst).
 nr('Patrik',subst).
 nr('Pasteŭr',subst).
-nr('Paskal',best).
+nr('Paskal',pers).
 nr('Pask',subst).
 nr('Pasion',subst).
 nr('Pariz',subst).
@@ -278,7 +279,7 @@ nr('Ontari',subst).
 nr('Onesim',subst).
 nr('Omar',subst).
 nr('Oman',subst).
-nr('Om',best).
+nr('Om',pers).
 nr('Oliver',subst).
 nr('Olimpik',subst).
 nr('Olimp',subst).
@@ -302,7 +303,7 @@ nr('Nimeg',subst).
 nr('Nil',subst).
 nr('Nikola',subst).
 nr('Nikodem',subst).
-nr('Neŭton',best).
+nr('Neŭton',pers).
 nr('Nevad',subst).
 nr('Nestor',subst).
 nr('Neptun',subst).
@@ -328,7 +329,7 @@ nr('Monak',subst).
 nr('Mocart',subst).
 nr('Miŝna',subst).
 nr('Miŝn',subst).
-nr('Miĥael',subst).
+nr('Miĥael',pers).
 nr('Miĉigan',subst).
 nr('Mizoram',subst).
 nr('Misuri',subst).
@@ -358,15 +359,15 @@ nr('Maĥ',subst).
 nr('Mate',subst).
 nr('Mastriĥt',subst).
 nr('Masaĉusec',subst).
-nr('Marten',subst).
+nr('Marten',pers).
 nr('Mars',subst).
 nr('Marok',subst).
 nr('Marks',subst).
-nr('Mark',subst).
+nr('Mark',pers).
 nr('Mariland',subst).
-nr('Mari',subst).
+nr('Mari',pers).
 nr('Marcial',subst).
-nr('Marcel',subst).
+nr('Marcel',pers).
 nr('Manitob',subst).
 nr('Manipur',subst).
 nr('Manik',subst).
@@ -393,7 +394,7 @@ nr('Luksemburgi',subst).
 nr('Luksemburg',subst).
 nr('Luk',subst).
 nr('Luizian',subst).
-nr('Ludovik',best).
+nr('Ludovik',pers).
 nr('Lucian',subst).
 nr('Loĵban',subst).
 nr('Loven',subst).
@@ -435,7 +436,7 @@ nr('Ladisla',subst).
 nr('Labrador',subst).
 nr('Kvirin',subst).
 nr('Kuvajt',subst).
-nr('Kulomb',best).
+nr('Kulomb',pers).
 nr('Ksitigarb',subst).
 nr('Ksenofont',subst).
 nr('Ksenofon',subst).
@@ -475,7 +476,7 @@ nr('Keral',subst).
 nr('Kepler',subst).
 nr('Kentuki',subst).
 nr('Kenj',subst).
-nr('Kelvin',best).
+nr('Kelvin',pers).
 nr('Kebeki',subst).
 nr('Kaŭkaz',subst).
 nr('Kaŝmir',subst).
@@ -513,13 +514,13 @@ nr('Jupiter',subst).
 nr('Jul',subst).
 nr('Jugoslavi',subst).
 nr('Jugoslav',subst).
-nr('Jozef',subst).
+nr('Jozef',pers).
 nr('Jork',subst).
 nr('Jordani',subst).
-nr('Jordan',best).
+nr('Jordan',pers).
 nr('Jomkipur',subst).
-nr('Johan',subst).
-nr('Joakim',subst).
+nr('Johan',pers).
+nr('Joakim',pers).
 nr('Jid',subst).
 nr('Jesu',subst).
 nr('Jerusalem',subst).
@@ -560,6 +561,7 @@ nr('Husejn',subst).
 nr('Hungari',subst).
 nr('Humbert',subst).
 nr('Hug',subst).
+nr('Hudson',subst).
 nr('Hubert',subst).
 nr('Horus',subst).
 nr('Horaci',subst).
@@ -866,7 +868,7 @@ nr('Anastazi',subst).
 nr('Anabaz',subst).
 nr('Amudarj',subst).
 nr('Amsterdam',subst).
-nr('Amper',best).
+nr('Amper',pers).
 nr('Amerik',subst).
 nr('Ambrozi',subst).
 nr('Amazon',subst).
@@ -907,7 +909,7 @@ nr_('ŝengen',subst).
 nr_('ŝem',subst).
 nr_('ŝekspir',subst).
 nr_('ŝari',subst).
-nr_('ĵul',best).
+nr_('ĵul',pers).
 nr_('ĵerzej',subst).
 nr_('ĥiron',subst).
 nr_('ĥi',subst).
@@ -935,7 +937,7 @@ nr_('zimbabv',subst).
 nr_('zeŭs',subst).
 nr_('zeland',subst).
 nr_('zaratuŝtr',subst).
-nr_('zamenhof',best).
+nr_('zamenhof',pers).
 nr_('zambi',subst).
 nr_('vulgat',subst).
 nr_('volter',subst).
@@ -965,7 +967,7 @@ nr_('vener',subst).
 nr_('vencesla',subst).
 nr_('vaĝrajan',subst).
 nr_('vatikan',subst).
-nr_('vat',best).
+nr_('vat',pers).
 nr_('varsovi',subst).
 nr_('varingjen',subst).
 nr_('valter',subst).
@@ -1049,6 +1051,7 @@ nr_('sirius',subst).
 nr_('siriak',subst).
 nr_('siri',subst).
 nr_('sirdarj',subst).
+nr_('sirakuz',subst).
 nr_('simon',subst).
 nr_('simeon',subst).
 nr_('silvestr',subst).
@@ -1136,7 +1139,7 @@ nr_('pitagor',subst).
 nr_('pinokj',subst).
 nr_('pinjin',subst).
 nr_('pilat',subst).
-nr_('petr',subst).
+nr_('petr',pers).
 nr_('peterburg',subst).
 nr_('peru',subst).
 nr_('perse',subst).
@@ -1146,7 +1149,7 @@ nr_('pegaz',subst).
 nr_('paŭl',subst).
 nr_('patrik',subst).
 nr_('pasteŭr',subst).
-nr_('paskal',best).
+nr_('paskal',pers).
 nr_('pask',subst).
 nr_('pasion',subst).
 nr_('pariz',subst).
@@ -1179,7 +1182,7 @@ nr_('ontari',subst).
 nr_('onesim',subst).
 nr_('omar',subst).
 nr_('oman',subst).
-nr_('om',best).
+nr_('om',pers).
 nr_('oliver',subst).
 nr_('olimpik',subst).
 nr_('olimp',subst).
@@ -1203,7 +1206,7 @@ nr_('nimeg',subst).
 nr_('nil',subst).
 nr_('nikola',subst).
 nr_('nikodem',subst).
-nr_('neŭton',best).
+nr_('neŭton',pers).
 nr_('nevad',subst).
 nr_('nestor',subst).
 nr_('neptun',subst).
@@ -1229,7 +1232,7 @@ nr_('monak',subst).
 nr_('mocart',subst).
 nr_('miŝna',subst).
 nr_('miŝn',subst).
-nr_('miĥael',subst).
+nr_('miĥael',pers).
 nr_('miĉigan',subst).
 nr_('mizoram',subst).
 nr_('misuri',subst).
@@ -1259,15 +1262,15 @@ nr_('maĥ',subst).
 nr_('mate',subst).
 nr_('mastriĥt',subst).
 nr_('masaĉusec',subst).
-nr_('marten',subst).
+nr_('marten',pers).
 nr_('mars',subst).
 nr_('marok',subst).
 nr_('marks',subst).
-nr_('mark',subst).
+nr_('mark',pers).
 nr_('mariland',subst).
-nr_('mari',subst).
+nr_('mari',pers).
 nr_('marcial',subst).
-nr_('marcel',subst).
+nr_('marcel',pers).
 nr_('manitob',subst).
 nr_('manipur',subst).
 nr_('manik',subst).
@@ -1294,7 +1297,7 @@ nr_('luksemburgi',subst).
 nr_('luksemburg',subst).
 nr_('luk',subst).
 nr_('luizian',subst).
-nr_('ludovik',best).
+nr_('ludovik',pers).
 nr_('lucian',subst).
 nr_('loĵban',subst).
 nr_('loven',subst).
@@ -1336,7 +1339,7 @@ nr_('ladisla',subst).
 nr_('labrador',subst).
 nr_('kvirin',subst).
 nr_('kuvajt',subst).
-nr_('kulomb',best).
+nr_('kulomb',pers).
 nr_('ksitigarb',subst).
 nr_('ksenofont',subst).
 nr_('ksenofon',subst).
@@ -1376,7 +1379,7 @@ nr_('keral',subst).
 nr_('kepler',subst).
 nr_('kentuki',subst).
 nr_('kenj',subst).
-nr_('kelvin',best).
+nr_('kelvin',pers).
 nr_('kebeki',subst).
 nr_('kaŭkaz',subst).
 nr_('kaŝmir',subst).
@@ -1414,13 +1417,13 @@ nr_('jupiter',subst).
 nr_('jul',subst).
 nr_('jugoslavi',subst).
 nr_('jugoslav',subst).
-nr_('jozef',subst).
+nr_('jozef',pers).
 nr_('jork',subst).
 nr_('jordani',subst).
-nr_('jordan',best).
+nr_('jordan',pers).
 nr_('jomkipur',subst).
-nr_('johan',subst).
-nr_('joakim',subst).
+nr_('johan',pers).
+nr_('joakim',pers).
 nr_('jid',subst).
 nr_('jesu',subst).
 nr_('jerusalem',subst).
@@ -1461,6 +1464,7 @@ nr_('husejn',subst).
 nr_('hungari',subst).
 nr_('humbert',subst).
 nr_('hug',subst).
+nr_('hudson',subst).
 nr_('hubert',subst).
 nr_('horus',subst).
 nr_('horaci',subst).
@@ -1767,7 +1771,7 @@ nr_('anastazi',subst).
 nr_('anabaz',subst).
 nr_('amudarj',subst).
 nr_('amsterdam',subst).
-nr_('amper',best).
+nr_('amper',pers).
 nr_('amerik',subst).
 nr_('ambrozi',subst).
 nr_('amazon',subst).

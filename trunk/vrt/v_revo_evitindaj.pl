@@ -27,7 +27,6 @@ evi('foliol',"foliolo").
 evi('fosf',"fosfo").
 evi('frizur',"frizuro").
 evi('gangli1',"gangliono").
-evi('hemisf',"hemisfero").
 evi('humanitar',"humanitara").
 evi('impulsiv',"impulsiva").
 evi('insurekci',"insurekcii").

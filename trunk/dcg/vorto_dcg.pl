@@ -18,8 +18,13 @@ verbigo de substantivoj estu iel permesata:
 sub(X,X).
 % sub(X,Z) :- sub(X,Y), sub(Y,Z).
 sub(best,subst).
+sub(pers,best).
+sub(pers,subst).
+
+sub(parc,pers).
 sub(parc,best).
 sub(parc,subst).
+
 sub(ntr,verb).
 sub(tr,verb).
 sub(perspron,pron).

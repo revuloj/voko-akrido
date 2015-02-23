@@ -3,7 +3,7 @@
 ************/
 c(o,subst).
 c(a,adj).
-c('-',_).
+c('-',_). % ne akurate, sed helpas analizi kunmetitajn vortojn...
 
 /********** finajxoj de radikoj, prefere ordigu la
  * vortaron law la ofteco de la vortoj 
@@ -79,6 +79,9 @@ s(ul,best,subst). % X-hava ulo: mamulo, vertebrulo
 s(ul,best,verb). % X-anta ulo: drinkulo, rampulo
 s(um,_,_).
 s(um,tr,_). % plenumi, brakumi, krucumi, lavumi ktp.
+
+ns(nj,pers).
+ns(ĉj,pers).
 
 /************ prefiksoj 
  (2) vortspeco, al kiu ghi estas aplikebla,
