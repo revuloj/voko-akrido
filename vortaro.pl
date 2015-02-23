@@ -1,4 +1,4 @@
-:- multifile r/4, v/4, mlg/1, nr/4, nr_/4.
+:- multifile r/4, v/4, mlg/1, nr/4, nr_/4, ns/4.
 %:- dynamic fv//2.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -19,6 +19,7 @@ term_expansion(v(Vrt,Spc),(v(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 term_expansion(fv(Vrt,Spc),(fv(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 term_expansion(nr(Vrt,Spc),(nr(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 term_expansion(nr_(Vrt,Spc),(nr_(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
+term_expansion(ns(Vrt,Spc),(ns(Vrt,Spc)-->Str)) :- atom_codes(Vrt,Str).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % vortaraj faktoj
@@ -46,6 +47,14 @@ r(Rad,subst) --> r(Rad,nombr). % tri -> trio
 r(Rad,adj) --> r(Rad,adv). % super -> super/a -> superulo
 %r(Rad,adv) --> r(Rad,adj). % alt/a -> alt/e -> altkreska
 
+% nomkomenco, por apliki nj, ĉj: Pa+ĉj -> Pa/ĉj
+nk(Nom,Spc) :- 
+    sub(Spc,pers),
+    (r(Nomo,Spc,_,_); nr(Nomo,Spc,_,_)),
+    sub_atom('aeioujŭrlnm',_,1,_,Lit), % PLIBONIGU: ne permesu ekz. "fr", sed nur "er", "ar"...
+    sub_atom(Nomo,B,1,_,Lit),
+    B_1 is B+1,
+    sub_atom(Nomo,0,B_1,_,Nom).
 
 /********************* sercxo en la vortaro ******************
 

@@ -288,10 +288,15 @@ revo_kls(Drv,parc) :-
   xpath(Drv,//ref(@lst),Klaso),
   Klaso='voko:parencoj'. 
 
+revo_kls(Drv,pers) :-
+  xpath(Drv,//ref(@lst),Klaso),
+  atom_concat('voko:',C,Klaso),
+  sub_class(C,personoj).
+
 revo_kls(Drv,best) :-
   xpath(Drv,//ref(@lst),Klaso),
   atom_concat('voko:',C,Klaso),
-  (sub_class(C,bestoj) ; sub_class(C,personoj)).
+  sub_class(C,bestoj).
 
 revo_gra(Drv,Speco) :-
   xpath(Drv,//gra/vspec(text),VSpeco),

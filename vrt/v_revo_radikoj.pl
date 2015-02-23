@@ -245,7 +245,7 @@ r('ĉifon',subst).
 r('ĉif',tr).
 r('ĉiel',subst).
 r('ĉibuk',subst).
-r('ĉeĥ',best).
+r('ĉeĥ',pers).
 r('ĉevron',subst).
 r('ĉevaled',subst).
 r('ĉeval',best).
@@ -1174,7 +1174,7 @@ r('tan',tr).
 r('tamul',subst).
 r('tamtam',subst).
 r('tampon',subst).
-r('tamil',best).
+r('tamil',pers).
 r('tamias',best).
 r('tamburin',subst).
 r('tambur',subst).
@@ -1579,7 +1579,7 @@ r('sorik',best).
 r('sorg',subst).
 r('sordid',adj).
 r('sorb',tr).
-r('sorab',best).
+r('sorab',pers).
 r('sopran',subst).
 r('sopir',tr).
 r('sonĝ',subst).
@@ -2048,7 +2048,7 @@ r('sal',subst).
 r('sakur',subst).
 r('saksofon',subst).
 r('saksifragac',subst).
-r('saks',best).
+r('saks',pers).
 r('sakristi',subst).
 r('sakrilegi',subst).
 r('sakrament',subst).
@@ -2086,7 +2086,7 @@ r('rusulac',subst).
 r('rusul',subst).
 r('rustik',adj).
 r('rust',subst).
-r('rus',best).
+r('rus',pers).
 r('rupi',subst).
 r('rung',subst).
 r('rund',verb).
@@ -3042,7 +3042,7 @@ r('pes',subst).
 r('perĉ',best).
 r('pervers',adj).
 r('peruk',subst).
-r('perturb',subst).
+r('perturb',tr).
 r('persvad',tr).
 r('perspektiv',subst).
 r('person',subst).
@@ -3784,7 +3784,7 @@ r('najl',subst).
 r('najbar',subst).
 r('najad',subst).
 r('naiv',adj).
-r('naga',best).
+r('naga',pers).
 r('naftol',subst).
 r('naftalin',subst).
 r('naft',subst).
@@ -5628,7 +5628,7 @@ r('kinematik',subst).
 r('kin',subst).
 r('kin',subst).
 r('kimĉi',subst).
-r('kimr',best).
+r('kimr',pers).
 r('kimon',subst).
 r('kimer',subst).
 r('kilt',subst).
@@ -6131,7 +6131,7 @@ r('iv',suf).
 r('itri',subst).
 r('itiner',subst).
 r('iterbi',subst).
-r('ital',best).
+r('ital',pers).
 r('isĥemi',subst).
 r('istm',subst).
 r('ism',suf).
@@ -6397,7 +6397,7 @@ r('husar',subst).
 r('hurl',ntr).
 r('hurd',subst).
 r('hup',subst).
-r('hungar',best).
+r('hungar',pers).
 r('hunded',subst).
 r('hund',best).
 r('hun',subst).
@@ -6608,6 +6608,7 @@ r('hemoragi',subst).
 r('hemoptiz',subst).
 r('hemoglobin',subst).
 r('hemofili',subst).
+r('hemisfer',subst).
 r('hemipter',subst).
 r('hemiplegi',subst).
 r('hemion',best).
@@ -8918,6 +8919,7 @@ r('boks',ntr).
 r('bokal',subst).
 r('bojkot',tr).
 r('bojar',subst).
+r('boj',ntr).
 r('bogomil',subst).
 r('bodisatv',subst).
 r('bodi',subst).
@@ -9940,7 +9942,7 @@ r('ajmar',subst).
 r('ajl',subst).
 r('ajgen',subst).
 r('ajatol',subst).
-r('ain',best).
+r('ain',pers).
 r('ailant',subst).
 r('aikid',subst).
 r('aidos',subst).

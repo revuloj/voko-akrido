@@ -12,8 +12,13 @@
 sub(X,X).
 % sub(X,Z) :- sub(X,Y), sub(Y,Z).
 sub(best,subst).
+sub(pers,best).
+sub(pers,subst).
+
+sub(parc,pers).
 sub(parc,best).
 sub(parc,subst).
+
 sub(ntr,verb).
 sub(tr,verb).
 sub(perspron,pron).
@@ -40,16 +45,6 @@ drv_per_suf(Spc,Al,De,Speco) :-
           Speco=Spc;
           Speco=Al 
         ).
-
-
-/***
-p(en,tr,verb).
-r(ir,ntr).
-f(i,verb).
-
-sub(tr,verb).
-sub(ntr,verb).
-***/
 
 % oni povus pli flekseble tion kalkuli rikure
 % el la reguloj mem...
@@ -130,6 +125,9 @@ rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_Suf,Al,De) ~> drv_per_suf(Vs,Al,D
 
 % foje funkcias apliki prefiksojn nur post sufiksoj, ekz. ne/(venk/ebl)
 rv_sen_fin(pD,Spc) <= p(_Pref,De) / &rv_sen_fin(rvs,Spc) ~> subspc(Spc,De). 
+
+% karesnomo
+rv_sen_fin('N',Spc) <= nk(_Nom,Spc) / ns(_NomSuf,Ss) ~> subspc(Spc,Ss).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kunderivitaj vortoj
