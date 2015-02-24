@@ -116,6 +116,13 @@ radv_sen_fin(V,S,N) -->
   { subspc(S,De), % !, 
     atomic_list_concat([Pref,Rvsf],'/',V) }.
 
+% karesnomo
+radv_sen_fin(V,Ss,N) --> { N>=0 }, 
+  [n(Nom,Ns)], 
+  [ns(NomSuf,Ss)],
+  { subspc(Ns,Ss), % !, 
+    atomic_list_concat([Nom,NomSuf],'/../',V) }.
+
 kunderiv(V,Al) --> 
   [p(Pre,Al,De)], % kunderivado per prepozicioj (ekz. sur+strat/a)
   radv_sen_fin(Vsf,VSpc,3), % apliku maks. 3 sufiksojn, ĉu sufiĉas?
