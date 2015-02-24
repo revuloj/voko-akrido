@@ -3,7 +3,7 @@
 ************/
 c(o,subst).
 c(a,adj).
-c('-',_). % ne akurate, sed helpas analizi kunmetitajn vortojn...
+% c('-',_). % ne akurate, sed helpus analizi kunmetitajn vortojn...
 
 /********** finajxoj de radikoj, prefere ordigu la
  * vortaron law la ofteco de la vortoj 

@@ -1,4 +1,3 @@
-bg
 a1: maj, po-signo
 aberac: UEA-lorno, plejofte
 abnega: Gandhi
@@ -37,7 +36,7 @@ aed: Aedes, aegytpi
 aer: Esperanto-Asocio
 aerost: sfer
 afekci: eskstera
-afekt: Kukŝin, duonvivul', Bush, Seabra, Ŝol, Stanjo, Zhang, Gordens
+afekt: Kukŝin, duonvivul', Bush, Seabra, Ŝol, Zhang, Gordens
 afer: David, Urija, Lapenna, Hadda
 afgani: AFN
 afiks: um
@@ -53,7 +52,7 @@ agoni: l'soifo
 agord: pleja, SETUP, mise
 agx: dekkvinjara, mezaĝulo, iama, mezaĝulo, Ijob, Omar, plejaĝulo, plejaĝulo, Abraham, Kjöge, samaĝulinoj
 ahmadism: Gulam, Ahmad, Kadjan, Kadjan
-ahx: Injo, baci
+ahx: baci
 aidos: Imun-Deficita
 aikid: senperforta, Ueshiba, Morihei
 ajatol: Komejni
@@ -401,7 +400,7 @@ bori: Bh, Nils, Bohr, IUPAC, unnilseptio, Unnilseptium
 bors: an
 bosn: BA
 boston1: Praskovja, Petrovna
-bot: panjo, Kaŭser, dece-konvene
+bot: Kaŭser, dece-konvene
 bov: Boo
 bovl: Eŭtikia
 brajl: Braille, Braj
@@ -1105,7 +1104,7 @@ grafe: n-grafeo, n-opeĝa, graf, pli-malpli, pluropeĝaj, pluropeĝa, graphe, d'
 grafei: Königsberg-aj
 grafem: Ralfo
 grafen: Andre, Geim, Konstantin, Novoselov
-graf: Dordonjo, perigordo, sendependiĝinta
+graf: sendependiĝinta
 grafik: ĉi-supra
 grafit: grize-nigra
 grafiti: mur
@@ -2400,7 +2399,7 @@ nitr: nitr, nitro, nitrokombinoj, nitrozogrupo, fosf, sulf
 nitrit: HNO
 nitrog: ĉi-okaze
 nivel: Jerusalem
-nj: nj, Alice, Alinjo, in, ĉj, et, II, injo, injojn, iama
+nj: nj, Alice, in, ĉj, et, II, iama
 noahx: podt, Noaĥ, No, aj
 nobel: Sir
 nobeli: No

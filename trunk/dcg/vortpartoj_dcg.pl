@@ -1,3 +1,4 @@
+:- ensure_loaded(library(http/dcg_basics)).
 
 /******************** malstrikta vortanalizo ******
  * komence analizas vorton sen konsideri
@@ -36,8 +37,8 @@ nomrad_sen_fino(Partoj) --> % Atlantikej
     { append([[Radiko],Sufiksoj],Partoj) }.
 
 nomrad_sen_fino([n(Nom,Spc),ns(NomSuf,Ss)]) --> % karesnomo: paĉjo, Peĉjo, Anjo,..
-  { nk(Nom,Spc), atom_codes(Nom,N) }, N, ns(NomSuf,Ss),
-  { subspc(Spc,Ss) }.
+  string(N), ns(NomSuf,Ss),
+  { atom_codes(Nom,N), nk(Nom,Spc), subspc(Spc,Ss) }.
 
 prefiksoj([]) --> [].
 prefiksoj([p(Prefikso,DeSpeco)|Prefiksoj]) -->
