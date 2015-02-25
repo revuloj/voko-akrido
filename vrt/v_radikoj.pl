@@ -23,13 +23,18 @@ r('si',adj).
  * aliaj pronomoj/tabelvortoj kiel radikoj
 **********/
 r('kial',subst).
+
+r('iam',adv).
 r('ĉiam',adv).
 r('tiam',adv).
+
 r('tiel',adv).
+
 r('iom',adv).
 r('kiom',adv).
 r('tiom',adv).
 r('ĉiom',adv).
+
 r('tie',adj).
 
 /**************

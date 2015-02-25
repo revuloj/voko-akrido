@@ -50,7 +50,7 @@ agl: Aqu, mar
 agluti: друзей, ей
 agoni: l'soifo
 agord: pleja, SETUP, mise
-agx: dekkvinjara, mezaĝulo, iama, mezaĝulo, Ijob, Omar, plejaĝulo, plejaĝulo, Abraham, Kjöge, samaĝulinoj
+agx: dekkvinjara, mezaĝulo, mezaĝulo, Ijob, Omar, plejaĝulo, plejaĝulo, Abraham, Kjöge, samaĝulinoj
 ahmadism: Gulam, Ahmad, Kadjan, Kadjan
 ahx: baci
 aidos: Imun-Deficita
@@ -306,7 +306,6 @@ baux1: baŭ-baŭ
 bauxd: Bd
 bauxksit: ruĝebruna, Conté
 bauxm: kvarpiedulo
-bavar: iama, Iama
 baz: um, samtiom, opoj, p-a
 beat: preskaŭsanktulo, an
 behemot: Margarita, Bulgakov
@@ -382,7 +381,6 @@ bodi: mema
 bodisatv: Kvazaŭ-budao
 bogomil: kristan-devena
 bo: bo, proedziĝan, boparenciĝi
-bojar: Iama
 bojkot: EU-konferencojn
 boleslav: Vanadzins
 bol: bol, ig, Bokarev, Eichholz, bouilleur
@@ -425,7 +423,6 @@ bubal: kvarpiedulo
 bubon: Limfonod
 buda: Congkapa, Rissho-Kosei-Kai, Wencheng, budd, Zamenhof, Anna, Emma, Buddo, bud, dh, bu, dd, ha, Waringhien, PIV-on, Régulo, Pérez, Ĥristo, Zamenhof, Maŝiaĥ, xviii, masxino, dh
 buduar: Pierre
-buhxor: iama
 buhxt: Kuk
 bulgar: iom-post-ioman, Nord-Orienten
 bul: Ĉiŭ, Jang
@@ -506,7 +503,7 @@ cxas: TEJO-estraro, kiele, Mnemosina
 cxast: senhonorigitan, Izrael
 cxef: ĉef, estr, samkiel, II
 cxe: Hor, Edoma, Zebulun, Raĥel, Sezotris, hom, Ŝol, Kant, Daniel, Rudolf, Krolewska, pli-malpli, mal, Melnikov, Cseh-instruado, Zamenhof, ĉi-lasta, II, ĉea, Japi, ĉeest, ant, malĉea, elde, ĉei, ĉeas, ĉeis, III, ĉeXi, Xi, ĉee, ĉeX, aĵ, Xo, ĉebrust, aĵ, Hadda, vatizita
-cxehx: Mez, Iama
+cxehx: Mez
 cxel: malpleja, pli-malpli, B-limfoĉeloj
 cxemiz: T-forma, T-ĉemizojn
 cxen: opo, term, Werner, Ĉi-kampa, Weg
@@ -681,7 +678,6 @@ dorm: Zamenhof, duma, samkiel, dorm, Ramzes, energi-nedependa, hibernation, susp
 dors: dors-al-dorse
 dracen: Martin, Schonghauer
 drag: Port-Saido
-drahxm: iama
 drak: Slatina, Dra
 drast: iom-post-ioma
 drasx: Gileadon
@@ -734,7 +730,7 @@ eklezi: PV-difino, KAT
 ekologi: Qomolangma, Nicholas, Georgescu-Roegen
 ekran: Platz, der, Republik, Potsdamer, Platz, Roger, Taizé, LK-ekrano, LK-ekranoj, LCD-ekranoj
 eksa: SI
-eks: eks, Iama, II, Ivagin
+eks: eks, II, Ivagin
 ekskre1: plejofte
 ekskur: Qingcheng, Dujiangyan
 ekspek: XdP, xdP
@@ -765,7 +761,6 @@ ekzist: Hamleta, Hitler, ekzistotialo, Stalin
 ekzokrin: Plejofte, plejparte
 ekzotik: Pär, Lagerkvist, Eyvind, Johnson, Martinson, Harry
 eland: kvarpiedulo
-elb: iama
 elekt: balot, elekt, Efraim, Jehuda
 elektr2: Tianjin, elektr, um, elektriz, ad, ag, ad, elektrizizi, František, Křižík, Bohemio, elektrotram, elektro-trajn-liniojn, elektriz, ad, DB
 elektr: PIV-on, elektr, um, as, adis, Zamenhof, Temelín
@@ -989,7 +984,6 @@ franci2: Fr
 francium: Fr
 frand: bongust, Elly
 frankfurt: 'E, 'N
-frank: iama
 frap: ant, Vanessa, polychloros
 frat: boparencoj, Zoja, Petrovna
 frazeologi: Zamenhof, rusa-pola-germana-franca
@@ -1008,7 +1002,7 @@ frot: GRINCI, mouth, smooth, pro-cé-so, fe-lí-ĉa, pá-ĝo
 fru: ĉi-jare, Anjo-la-Pesto, ĉi-foje
 fu: Haaaa, maljunulino-oficir-edzino
 fuk: brun
-fundam: Bulonja, kvintesenc
+fundam: kvintesenc
 funkci: fo, B-on, bo, funcio, Bricard, funkcja, kołowa, n-argumenta, n-opoj, n-opo, arc, tan, y/x, Ekz-e, cos, cosx, ĉi-supra, samtiom, Arg, kπ, Bricard, Ai
 furlong: fur, Jensen
 fusten: Sancho
@@ -1194,7 +1188,6 @@ hekto: hekto, SI
 hektol: hl
 hektom: hm
 helenistik: Carl, Brockelmann
-heler: Iama
 helik: po-signo
 helium: He
 helm: Plen
@@ -1209,7 +1202,6 @@ hermit: Charles
 herodot: Ŝarazada
 hero: Gilgameŝ, Superman
 herpet: Helicobacter, Murphy
-hes: iama
 heterodoks: Jia, Pingwa
 hevisi: Oliver, Hevisajdo
 hezit: on
@@ -1217,7 +1209,7 @@ h: maj, H-relo, ch, gh, hh, jh, sh, II
 hibacx: duonbarelforma
 hidalg: Mancha
 hidrar: Hg
-hidr: Hya, Iama, Hyi
+hidr: Hya, Hyi
 hidrof: jn
 hieronim: plejparte, s-ta
 higxab: hiĵabo, heĝabo
@@ -1261,7 +1253,7 @@ honkong: Hongkongo
 honor: honor, dign, on
 hont: senhontulinon
 hop: hopi, hopis, hopas, ĉi-supra, hop, hopludo, hinke-leg
-hopi: iama, Zamenhof
+hopi: Zamenhof
 hord: ĉi-supra
 hor: dudekkvarono, rub/hore, pohore, pohore
 horizo1: an, p-opo
@@ -1309,7 +1301,6 @@ hxolesterol: OH, Vd, Kavka
 i2: II, iodo, maj, I-fero
 ia1: I-a
 ia: Izrael
-iam: iama, iamaj
 icx: iĉ, zita, zorn, katiĉo, beluliĉo, instruistiĉo, vir, ul, ist, an, estr, id, O-finaĵo, anto, into, onto, ato, ito, oto, O-vortoj, Bertilo, Wennergren, II, iĉo
 id1: Louis, Beaufront, Louis, Couturat, Tolkien, Novial
 ide: Zamenhof, Hegel
@@ -1322,7 +1313,7 @@ ig: Kp, ig, iz, rad, enloĝ, ej, mal, prep, subst, suf, kun-ordo-igi, dis-pecoj-
 igl: Henry
 iglu: Kiŝ
 igx: ig, iĝ, prep, Ekz, rad, mal, de-flanko-iĝi, en-radiko-iĝi, de-flankiĝi, II, anta, inta, ek, ata, ita, naskiĝita, estiĝita, III, it, malfru, komenc, decid, IV, Kp
-i: Zamenhof, iama, uj, radikoj/radikaloj, an, land, uj, hom
+i: Zamenhof, uj, radikoj/radikaloj, an, land, uj, hom
 ikeban: rikka, seika, nageire, cha-bana, Nora
 ik: ik, pour, ĵurnalistiko, art, scienc, teĥnik, simboliko, ferika, kuprika, oz
 iks: Cxu, X-sistemo, x-kodo, cx, cxemizo, gx, gxi, hx, monahxejo, jx, ajxo, sx, sxipo, ux, aux, maj, X-seĝo
@@ -1336,7 +1327,6 @@ imit: brekekekeks
 impeda: omo
 impera: u-modo
 imperf: E-o, longedaŭran, E-o, ad, anta
-imperi1: Iama
 imperi: Majkrosoft
 implic: SPIV, kompti, EVA, implicit, ata, ate, subkomprenAta, entenAta, Kp, kajaŭ, Perec, ĉi-ene, kuo-on
 implikaci: bo, aŭo
@@ -1451,7 +1441,7 @@ jelp: ek
 jemen: YE
 jen: Osip, Ĥlestakov
 jerusa: 'E, 'N
-jes: iele, PAG, PIV-PAGaj, Antef, Bobrov, iama
+jes: iele, PAG, PIV-PAGaj, Antef, Bobrov
 jet: Minnaja, ekssovetiaj, MIG, duonjarcenton
 jezuit: Lojola
 johan: orbuŝulo
@@ -1463,8 +1453,7 @@ jork: Berwick-upon-Tweed, 'W, 'N
 jota: jota, SI
 jozef: Jozef, Potifar
 jubile: dudekkvinan, kvarcentjara, dudekkvina
-jud: iama, Kefas, Bet-Leĥem, Moab, Jerusalem
-jugoslav: Iama
+jud: Kefas, Bet-Leĥem, Moab, Jerusalem
 juli: ha
 jun: novgeedzoj, EURO, an, Stones, denove, virseksulo, Lukiĉ, iom-post-ioma
 jur: Georg, Heym
@@ -1487,7 +1476,7 @@ kabal: Perec, Madonna, Kaplan, Кабала, святош
 kabare1: Georges, Ŝvarc, Aniaro
 kabare: Montmartre, Raymond, Schwartz, Michalikowa, Boy, Żeleński
 kabe: Kazimerz, Bein, kabeis, kabei
-kabine: iama, delonge
+kabine: delonge
 kabin: Kirchner, Köln
 kabl: TRT, trimastulo
 kablogram: Fidel
@@ -1607,10 +1596,10 @@ kastanot: Taeniopygia, gutatta, castanotis
 kastel: Vallienne
 kastor2: Gem
 kasx: Mal, Atalja, Arne
-kasxmir: Iama, aj
+kasxmir: aj
 katabol: Krebs
 katar1: QA
-katarakt: iamaj, plejparte, Asuana, iama, http, www, utdallas, edu/dept/geoscience/remsens/Nile/OldCataract, html
+katarakt: plejparte, Asuana, http, www, utdallas, edu/dept/geoscience/remsens/Nile/OldCataract, html
 katast: Georges, Cuvier
 katedr: Neuchâtel
 katehx2: O'Connor
@@ -1799,7 +1788,7 @@ konik: cosθ, ax, by, cxy, dx, ey
 konjak: Zaur
 konjek: Fermat
 konjug: zo
-konjun3: iamaj, Mez
+konjun3: Mez
 konjun: Ekz-e, soc, culture, latinidlingvaj
 konker: Evángelos, Odysséas, Papathanassíu, Winner
 konk: duvalvuloj
@@ -1818,7 +1807,7 @@ konste: Anti-Areso, PIV-aj
 konstr: Hiukin, Iŝtar, Merodaĥ, Minnaja, ItaEsp
 kontak: malfruantajn, recenzuntojn, Spukavatem
 kontener: ISO-normita, ISO-nomo, TEU
-kontin: ter, pli-malpli, iama
+kontin: ter, pli-malpli
 kontra3: Carter, Anvar, Sadat, Menaĥim, Begin, Dayton, Hobbes, Rousseau
 kontra4: plimalpli
 kontra6: denove
@@ -1875,10 +1864,10 @@ krani: rondkraniulo
 krasx: kraŝ, Kraŝ, Fal, fal
 krati: krati, Kadafi, Jean-Jacques, Rousseau, beduenokration
 kravat: Marut
-kred: iama, Jozef, Urga, liberkredanoj
+kred: Jozef, Urga, liberkredanoj
 kredit: prunteprenanto, Douglas
 kre: Ajskilo, Zamenhof
-krejcer: Iama, Verona, Merana
+krejcer: Verona, Merana
 kremaci: Elfriede, Ernst
 krem: Plejbonaĵo
 kreol: miksrasulo
@@ -2031,13 +2020,12 @@ lini: fervojlinion, János
 link: Lyn
 linuks: GNU, GPL
 lionel: Lionel, Gray
-lir1: Iama
 lir: Lyr
 lirik: duonjarcenton
 lirl: Jinxiu
 list: ReVo
 litarg: oranĝeruĝa
-litera: Goethe, Faust, iamaj, Declerck, Ĉernovcy
+litera: Goethe, Faust, Declerck, Ĉernovcy
 literator: Puŝkin
 literaturolog: Fjodor, Dostojevskij
 literaturologi: Wolfgang, Kirschstein
@@ -2070,7 +2058,6 @@ loven: 'E, 'N, Lemmens-Instituto
 lucid: Bogee
 lud: Ivar, Arosenius, tridekkvaran, glitŝtonludo, glitŝtonludon, Anna, Sergeevna, Hadda, Cantr, II, Command, and, Conquer, Generals, Electronic, Arts, KGS, XVIa, videludindustrio, Vorto-Mozaiko, krucvortenigmo, Nisikawa, Serizawa, Kiyosi, Tokio, Esperanto-Kooperativo, dusenceco, LA-STRANGA-BUTIKO, LAST-RANGA-BUTIKO
 lu: Dorina, vicluigi
-luizian: iamajn
 luksemb: 'E, 'N, Fogra
 lukt: Lauri, Eero
 lukum: Bagdad
@@ -2100,8 +2087,7 @@ majordom: Ĉef
 majstr: Ĥuram, M'saud, Jean, Ribillard
 makabr: S-rino
 makaro1: Anna
-makedon: Iama, MK
-makedoni: Iama
+makedon: MK
 makintosx: Apple
 makrobiotik: Georges, Ohsawa
 makroekonomik: Keynes
@@ -2132,10 +2118,10 @@ mantel: Adaha
 manufa: pogrande
 map: LOdE, Cosmas, map
 maraton: du-tri
-maraved: Iama, ono
+maraved: ono
 marcxa: Petroviĉ
 mariland: Fort, Meade
-mark2: Iama, Konvertibilna, KM
+mark2: Konvertibilna, KM
 markiz: Karaba
 markot: Jiŝaj
 marks: Engels
@@ -2273,13 +2259,13 @@ modus: a-participo, denove
 mohajr: varm
 mojos: mjs-a, modern-jun-stila, NASKa, MOJOsejo
 mok: Eero, Sidorov
-moldav: Iama, MD
+moldav: MD
 molibden: Mo, transir
 molusk: duvalvuloj
 momant: X-E
 momordik: Momordica, charantia, Ji, Shengjiu
 monad: Leibniz
-monahx: Athos, iama, Alexandra, denove
+monahx: Athos, Alexandra, denove
 monak1: Nicea, MC
 mond: Haan, Guam
 mon: Tolstoj
@@ -2295,7 +2281,6 @@ monume: Zamenhof, Raĥel, Mwl, Nyerere
 moral: Hong, SokHjon
 moratori: Ryan, Illinois
 morfe: Ipno
-morgau: iama
 mor: Izrael
 mormon: Ruby, kristandevena
 mors: Samuel
@@ -2399,7 +2384,7 @@ nitr: nitr, nitro, nitrokombinoj, nitrozogrupo, fosf, sulf
 nitrit: HNO
 nitrog: ĉi-okaze
 nivel: Jerusalem
-nj: nj, Alice, in, ĉj, et, II, iama
+nj: nj, Alice, in, ĉj, et, II
 noahx: podt, Noaĥ, No, aj
 nobel: Sir
 nobeli: No
@@ -2557,7 +2542,7 @@ papaj: mezamerikdevena
 paper: Vitalij, Latronov, malpleja, Elder, Minna, pli-malpli
 pap: Filioque, rom
 papili: Vanessa, Adela, fortunei
-papu: Iama, Papuo-Nov-Gvineo, Nov, Port-Moresbo
+papu: Papuo-Nov-Gvineo, Nov, Port-Moresbo
 parabo: ax, Izrael
 paradi: tempojn/modojn
 paraglis: sailwing, David, Barish
@@ -2808,7 +2793,7 @@ progra: dorssakproblemo, ĉiesa, Firefox
 progre: Henrik, Seppik, iom-post-ioma, Stravinskij, Prokofjev
 progresiv: iom-post-ioma
 pro: Zamenhof, David, II, prokulpa, promemora, propeka, promalĉastaj, proprunte, proparolanta, propeti
-projek1: Zamenhof, iama
+projek1: Kenzo, Tange, Zamenhof
 projek: p-a, opon, pli-malpli, Bricard, projekciaĵo, retroprojekciilo, OM
 prokla: Voss
 promeci: Pm
@@ -2845,7 +2830,6 @@ psikopati: Richard, von, Krafft-Ebing, Sacher-Masoch
 pubert: Cherpillod, Friis, Hajpin
 public: Kníchal, Gercen, Herzen, Aleksandr, Ivanoviĉ
 publik: Volapük, ŝtat, ism
-pud: Iama
 puding: sekvinberoj
 puf: Plenblovita, plenblovita
 pulk: pulkvo, kvarjaraĝe
@@ -2911,7 +2895,6 @@ regul: dekduedro, dudekedroj, dx, x-a
 regx: Ekz-e, Ĥiti, Hjalmar, Paĉakutek, Ĉimuan
 re: re, Denove, denove, re/prezent, re/sum, II, ankoraŭfoje, dommastrino, retro
 rejki: Usui
-rejs: Iama
 reklam: ado
 rekome: esp
 rekomp: pro/por, Tycho, Brahe, Nebukadnecar
