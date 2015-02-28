@@ -38,6 +38,11 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   rule_ref(R1,V1,Rez1,D1,RRef1),
   rule_ref(R2,Rest,Rez2,D1,RRef2),
   splitter(RuleScheme,R1,R2,Vrt,V1,Rest,Splitter),
+  
+  (RuleScheme == pD ->
+    Sub = (RRef1, RRef1)
+  ; Sub = (RRef2,RRef1)
+  ),
 
   PredExp =  (
    debug(Depth,provas,RuleScheme,Vrt), 
@@ -45,8 +50,9 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
 %     V1 \= '', Rest \= '',
      Splitter,
      D1 is Depth +1,
-     RRef2,
-     RRef1,
+%     RRef2,
+%     RRef1,
+     Sub,
      Rez=Rezulto,
    debug(Depth,rezulto,RuleScheme,Rez) 
     ).
