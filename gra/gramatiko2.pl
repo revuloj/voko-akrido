@@ -6,42 +6,6 @@
 :- dynamic min_max_len/3, '&'/1.
 :- multifile gra_debug/1.
 
-/*********
-:- consult('../vrt/v_revo_nomoj.pl').
-
-sub(X,X).
-% sub(X,Z) :- sub(X,Y), sub(Y,Z).
-sub(best,subst).
-sub(pers,best).
-sub(pers,subst).
-
-sub(parc,pers).
-sub(parc,best).
-sub(parc,subst).
-
-sub(ntr,verb).
-sub(tr,verb).
-sub(perspron,pron).
-
-subspc(S1,S2) :-
-  sub(S1,S2), !.
-
-ns(nj,pers).
-ns(ĉj,pers).
-nr('Petr',pers).
-r(patr,parc).
-v(mi,perspron).
-
-nk(Nom,Spc) :- 
-    sub(Spc,pers),
-    (r(Nomo,Spc); nr(Nomo,Spc)),
-    sub_atom('aeioujŭrlnm',_,1,_,Lit),
-    sub_atom(Nomo,B,1,_,Lit),
-    B_1 is B+1,
-    sub_atom(Nomo,0,B_1,_,Nom).
-
-****/
-
 %%% traduki regulesprimojn al normalaj Prologo-faktoj....
 % 
 term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
@@ -73,31 +37,16 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
 
   rule_ref(R1,V1,Rez1,D1,RRef1),
   rule_ref(R2,Rest,Rez2,D1,RRef2),
-
-  get_rule_min_max(R1,Min1,Max1),
-  get_rule_min_max(R2,Min2,Max2),
+  splitter(RuleScheme,R1,R2,Vrt,V1,Rest,Splitter),
 
   PredExp =  (
    debug(Depth,provas,RuleScheme,Vrt), 
 %     atom_concat(V1,Rest,Vrt), 
 %     V1 \= '', Rest \= '',
-
-
-%     between(Min1,Max1,L1),
-%     sub_atom(Vrt,0,L1,L2,V1),
-%     between(Min2,Max2,L2),
-%     sub_atom(Vrt,L1,L2,0,Rest), 
-
-     % sufiksoj kaj finaĵoj normale
-     % estas mallongaj...	      
-     between(Min2,Max2,L2),
-     sub_atom(Vrt,L1,L2,0,Rest), 
-     between(Min1,Max1,L1),
-     sub_atom(Vrt,0,L1,L2,V1),
- 
+     Splitter,
      D1 is Depth +1,
-     RRef1,
      RRef2,
+     RRef1,
      Rez=Rezulto,
    debug(Depth,rezulto,RuleScheme,Rez) 
     ).
@@ -106,7 +55,6 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
 rule_exp(_,RuleExp,Vrt,Rez,Depth,PredExp) :-
   rule_ref(RuleExp,Vrt,Rez,Depth,PredExp).
 
-
 rule_ref(&RuleRef,Vrt,Rez,Depth,RuleCall) :- !,
   RuleRef =.. [RuleName|RuleArgs],
   append([RuleArgs,[Vrt,Rez,Depth]],Args),
@@ -114,6 +62,29 @@ rule_ref(&RuleRef,Vrt,Rez,Depth,RuleCall) :- !,
 
 rule_ref(DictSearch,Vrt,Vrt,_,DictSearch) :-
   DictSearch =.. [_,Vrt|_].
+
+splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
+    get_rule_min_max(RuleRef1,Min1,Max1),
+    get_rule_min_max(RuleRef2,Min2,Max2),
+%    !,
+    	
+     (RuleScheme == pD ->
+        % prefikso pli mallonga ol la resto...
+        Splitter = (
+          between(Min1,Max1,L1),
+          sub_atom(Vrt,0,L1,L2,V1),
+          between(Min2,Max2,L2),
+          sub_atom(Vrt,L1,L2,0,Rest)
+        )
+     ;
+       % sufiksoj kaj finaĵoj normale estas mallongaj...
+       Splitter = (
+         between(Min2,Max2,L2),
+         sub_atom(Vrt,L1,L2,0,Rest), 
+         between(Min1,Max1,L1),
+         sub_atom(Vrt,0,L1,L2,V1)
+     )).
+
 
 /********************************************************************/
 
@@ -159,24 +130,6 @@ reduce_([L|Ls],[F|Fs]) :-
    -> reduce_(Ls,[F|Fs])
    ; F=L, reduce_(Ls,Fs).
 
-
-/**
-check_length([RuleId|_],Vrt) :-
-  % kontrolu la longecon de Vrt
-  min_max_len(RuleId,Min,Max) 
-    -> atom_length(Vrt,Len), between(Min,Max,Len)
-    ; true.
-
-check_length(DictSearch) :-
-  % analizetu la serchon
-  DictSearch =.. [Pred,Vrt|Rest],
-  length(Rest,A), Arity is A+1,
-  atom_length(Vrt,Len),
-  % kontrolu la longecon de Vrt
-  get_min_max(Pred/Arity,Min,Max),
-  between(Min,Max,Len).
-**/
-
 get_rule_min_max(&RuleRef,Min,Max) :-
   RuleRef =.. [_,RuleId|_],
   (nonvar(RuleId), min_max_len(RuleId,Mn,Mx) -> 
@@ -195,8 +148,8 @@ get_rule_min_max(Search,Min,Max) :-
     get_min_max(Pred/Arity,Mn,Mx),
     Min is max(1,min(Mn,99)),
     Max is min(Mx,99),
-    debug(0,smin,RuleId,Min),
-    debug(0,smax,RuleId,Max).
+    debug(0,smin,Pred,Min),
+    debug(0,smax,Pred,Max).
 
 get_min_max(Pred/Arity,Min,Max) :-
   min_max_len(Pred/Arity,Min,Max) -> true

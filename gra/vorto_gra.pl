@@ -78,6 +78,7 @@ min_max_len('AP',5,99).
 min_max_len('A+P',5,99).
 min_max_len(pAP,7,99).
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% simplaj, nekunmetitaj vortoj 
 %%% - nur derivado per afiksoj kaj finaĵoj
