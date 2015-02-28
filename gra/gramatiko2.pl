@@ -3,7 +3,7 @@
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 
-:- dynamic min_max_len/3, '&'/1.
+:- dynamic min_max_len/3, gra_debug/1, '&'/1.
 :- multifile gra_debug/1.
 
 %%% traduki regulesprimojn al normalaj Prologo-faktoj....
@@ -33,19 +33,20 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   RuleExp =.. [Op|Refs],
   memberchk(Op,['+','/','~','-','*']),!,
   Refs = [R1,R2],
-  Rezulto =.. [Op,Rez1,Rez2], 
+%%%%  Rezulto =.. [Op,Rez1,Rez2], 
+  Rez =.. [Op,Rez1,Rez2], 
 
   rule_ref(R1,V1,Rez1,D1,RRef1),
   rule_ref(R2,Rest,Rez2,D1,RRef2),
   splitter(RuleScheme,R1,R2,Vrt,V1,Rest,Splitter),
   
   (RuleScheme == pD ->
-    Sub = (RRef1, RRef1)
+    Sub = (RRef1,RRef2)
   ; Sub = (RRef2,RRef1)
   ),
 
   PredExp =  (
-   debug(Depth,provas,RuleScheme,Vrt), 
+   debug(Depth,'?',RuleScheme,Vrt), 
 %     atom_concat(V1,Rest,Vrt), 
 %     V1 \= '', Rest \= '',
      Splitter,
@@ -53,8 +54,8 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
 %     RRef2,
 %     RRef1,
      Sub,
-     Rez=Rezulto,
-   debug(Depth,rezulto,RuleScheme,Rez) 
+%%%     Rez=Rezulto,
+   debug(Depth,'*',RuleScheme,Rez) 
     ).
 %  term_variables(PredExp, [A,B,C,D,E,F]).
 
@@ -70,23 +71,36 @@ rule_ref(DictSearch,Vrt,Vrt,_,DictSearch) :-
   DictSearch =.. [_,Vrt|_].
 
 splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
+    % PLIBONIGU: iom malavantaĝe estas, ke RuleId - unua argumento en RuleRef
+    % ofte estas "_" kaj do ne konata, oni povus rigardi chiujn eblecojn pri specifa regulo
+    % sed ofte elvenas interfvalo 2.. kiu ne multe diferencas de 1..99
     get_rule_min_max(RuleRef1,Min1,Max1),
     get_rule_min_max(RuleRef2,Min2,Max2),
+    
+%%%    get_rule_min_max(RuleScheme,MinR,MaxR),
 %    !,
     	
      (RuleScheme == pD ->
         % prefikso pli mallonga ol la resto...
         Splitter = (
+   %%%       atom_length(Vrt,L),
+   %%%       between(MinR,MaxR,L),
+
           between(Min1,Max1,L1),
           sub_atom(Vrt,0,L1,L2,V1),
+
           between(Min2,Max2,L2),
           sub_atom(Vrt,L1,L2,0,Rest)
         )
      ;
        % sufiksoj kaj finaĵoj normale estas mallongaj...
        Splitter = (
+   %%%     atom_length(Vrt,L),
+   %%%     between(MinR,MaxR,L),
+
          between(Min2,Max2,L2),
          sub_atom(Vrt,L1,L2,0,Rest), 
+
          between(Min1,Max1,L1),
          sub_atom(Vrt,0,L1,L2,V1)
      )).
@@ -131,10 +145,25 @@ reduce(Term,Flat) :-
   atom_codes(Flat,F).
 
 reduce_([],[]).
-reduce_([L|Ls],[F|Fs]) :-
-  memberchk(L,"() ") 
-   -> reduce_(Ls,[F|Fs])
-   ; F=L, reduce_(Ls,Fs).
+
+reduce_([L|Ls],F) :-
+  memberchk(L,"() "),!, 
+  reduce_(Ls,F).
+
+reduce_([L|Ls],[L|Fs]) :-
+  % \+ memberchk(L,"() "), 
+  reduce_(Ls,Fs).
+
+get_rule_min_max(RuleId,Min,Max) :-
+  atom(RuleId),
+  (min_max_len(RuleId,Mn,Mx) -> 
+     Min is max(1,min(Mn,99)),
+     Max is min(Mx,99),
+     debug(0,rmin,RuleId,Min),
+     debug(0,rmax,RuleId,Max)
+  ; 
+     Min is 1, 
+     Max is 99). 
 
 get_rule_min_max(&RuleRef,Min,Max) :-
   RuleRef =.. [_,RuleId|_],

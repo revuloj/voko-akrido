@@ -7,7 +7,8 @@
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 
-gra_debug(true).
+%:- retract(gra_debug(false)).
+%gra_debug(true).
 
 sub(X,X).
 % sub(X,Z) :- sub(X,Y), sub(Y,Z).
@@ -46,7 +47,7 @@ drv_per_suf(Spc,Al,De,Speco) :-
           Speco=Al 
         ).
 
-% oni povus pli flekseble tion kalkuli rikure
+% PLIBONIGU: oni povus pli flekseble tion kalkuli rikure
 % el la reguloj mem...
 min_max_len(v,2,10).
 min_max_len(pv,5,13).
