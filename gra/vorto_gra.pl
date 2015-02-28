@@ -116,11 +116,13 @@ verbigo de substantivoj estu iel permesata, ĉu en la gramatiko aŭ per la vorta
 
 
 % derivado per prefikso
-rv_sen_suf(pr,Spc) <= p(_Pref,De) / &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
+rv_sen_suf(pr,Spc) <= p(_Pref,De) / r(_Rad,Spc) ~> subspc(Spc,De).
+rv_sen_suf(pD,Spc) <= p(_Pref,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De).
 
 % radika vorto sen finaĵo (sed kun afiksoj)
 rv_sen_fin(r,Spc) <= r(_Rad,Spc). 
-%%rv_sen_fin(Spc) <= &rv_sen_suf(Spc).
+
+rv_sen_fin('D',Spc) <= &rv_sen_suf(_,Spc).
 
 % rad+sufikso, ekz. san/ul
 rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_Suf,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
