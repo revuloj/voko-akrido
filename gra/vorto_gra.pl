@@ -1,4 +1,4 @@
-:- ensure_loaded(gramatiko).
+:- ensure_loaded(gramatiko2).
 :- discontiguous vorto/2, vorto/3.
 :- dynamic min_max_len/3.
 
@@ -7,7 +7,7 @@
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 
-%gra_debug(true).
+gra_debug(true).
 
 sub(X,X).
 % sub(X,Z) :- sub(X,Y), sub(Y,Z).
@@ -114,7 +114,7 @@ verbigo de substantivoj estu iel permesata, ĉu en la gramatiko aŭ per la vorta
 
 
 % derivado per prefikso
-rv_sen_suf(pr,Spc) <= p(_Pref,De) / r(_Rad,Spc) ~> subspc(Spc,De).
+rv_sen_suf(pr,Spc) <= p(_Pref,De) / &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
 
 % radika vorto sen finaĵo (sed kun afiksoj)
 rv_sen_fin(r,Spc) <= r(_Rad,Spc). 
@@ -124,7 +124,7 @@ rv_sen_fin(r,Spc) <= r(_Rad,Spc).
 rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_Suf,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
 
 % foje funkcias apliki prefiksojn nur post sufiksoj, ekz. ne/(venk/ebl)
-rv_sen_fin(pD,Spc) <= p(_Pref,De) / &rv_sen_fin(rvs,Spc) ~> subspc(Spc,De). 
+rv_sen_fin(pD,Spc) <= p(_Pref,De) / &rv_sen_fin('Ds',Spc) ~> subspc(Spc,De). 
 
 % karesnomo
 rv_sen_fin('N',Spc) <= nk(_Nom,Spc) / ns(_NomSuf,Ss) ~> subspc(Spc,Ss).
