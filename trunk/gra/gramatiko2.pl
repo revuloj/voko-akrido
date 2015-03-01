@@ -1,23 +1,47 @@
 % PLIBONIGU: anstau uzi user: ebligu importi tion de gramatiko...
 :- op( 1120, xfx, user:(<=) ). % disigas regulo-kapon, de regulesprimo
+:- op( 1120, xfx, user:(<-) ). % disigas regulo-kapon, de esceptesprimo
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
+%:- op( 500, yfx, user:(~) ). % signas disigindajn vortojn
 
-:- dynamic min_max_len/3, gra_debug/1, '&'/1.
-:- multifile gra_debug/1.
+:- dynamic min_max_len/3, gra_debug/1.
+:- multifile '&'/1, gra_debug/1.
 
 %%% traduki regulesprimojn al normalaj Prologo-faktoj....
 % 
 term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
+  format('# ~k ...',[RuleHead]),
    rule_head(RuleHead,Vrt,Rez,Depth,PredHead),!,
-   once(rule_body(RuleHead,RuleBody,Vrt,Rez,Depth,PredBody)),
+   once((
+     rule_body(RuleHead,RuleBody,Vrt,Rez,Depth,PredBody)
+     ;  
+       format(atom(Exc),'transformeraro: ~w~n',[RuleHead]), 
+       throw(Exc)
+   )),
    RuleTranslated = (PredHead :- PredBody),
- format('  ~w~n',[RuleTranslated]).
+  format('bone!~n').
+% format('  ~w~n',[RuleTranslated]).
+
+% esceptoj: <- 
+% rv_sen_fin(e,subst) <- post/e/ul.
+% transformu al: rv_sen_fin(e,subst,posteul,'post/e/ul',_).
+%? au alterantive: rv_sen_fin(e,subst,Vrt,Rez,_Depth) :- Vrt = posteul, Rez = post/e/ul.
+
+term_expansion( RuleHead <- RuleBody , RuleTranslated ) :-
+  format('# ~k ...',[RuleHead]),
+   reduce_full(RuleBody,Flat),
+   RuleHead =..  [RuleName|RuleArgs],
+   append(RuleArgs,[Flat,RuleBody,_Depth],Args),
+   RuleTranslated =.. [RuleName|Args],
+   format('bone!~n').
+% format('  ~w~n',[RuleTranslated]).
 
 
 rule_head(RuleHead,Vrt,Rez,Depth,PredHead) :-
    RuleHead =..  [RuleName|RuleArgs],
- format('# ~w:~n',[RuleName]),
+%   RuleArgs = [RuleScheme|_],
+% format('# ~w(~w,_)~n',[RuleName,RuleScheme]),
    append(RuleArgs,[Vrt,Rez,Depth],Args),
    PredHead =.. [RuleName|Args].
 
@@ -27,6 +51,8 @@ rule_body(RuleHead,RuleExp ~> PostCond,Vrt,Rez,Depth,PredBody) :-
 
 rule_body(RuleHead,RuleExp,Vrt,Rez,Depth,PredBody) :-
   rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredBody).
+
+
 
 rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   RuleHead =.. [_,RuleScheme|_],
@@ -40,7 +66,7 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   rule_ref(R2,Rest,Rez2,D1,RRef2),
   splitter(RuleScheme,R1,R2,Vrt,V1,Rest,Splitter),
   
-  (RuleScheme == pD ->
+  (memberchk(RuleScheme,['pD','A+P']) ->
     Sub = (RRef1,RRef2)
   ; Sub = (RRef2,RRef1)
   ),
@@ -79,8 +105,8 @@ splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
     
 %%%    get_rule_min_max(RuleScheme,MinR,MaxR),
 %    !,
-    	
-     (RuleScheme == pD ->
+    once((	
+      memberchk(RuleScheme,['pD','A+P']),
         % prefikso pli mallonga ol la resto...
         Splitter = (
    %%%       atom_length(Vrt,L),
@@ -92,7 +118,21 @@ splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
           between(Min2,Max2,L2),
           sub_atom(Vrt,L1,L2,0,Rest)
         )
-     ;
+/***********
+      ;
+      RuleScheme == 'A+P',
+        Sum1 is Min1 + Max1,
+        Splitter = (
+          % preferu pli longajn radikojn komence...
+          between(Min1,Max1,X1),
+          plus(X1,L1,Sum1),
+          sub_atom(Vrt,0,L1,L2,V1),
+
+          between(Min2,Max2,L2),
+          sub_atom(Vrt,L1,L2,0,Rest)
+        )
+*********/
+      ; % ordinare komencu de malantaue
        % sufiksoj kaj finaĵoj normale estas mallongaj...
        Splitter = (
    %%%     atom_length(Vrt,L),
@@ -103,7 +143,8 @@ splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
 
          between(Min1,Max1,L1),
          sub_atom(Vrt,0,L1,L2,V1)
-     )).
+     )
+  )).
 
 
 /********************************************************************/
@@ -141,18 +182,23 @@ analyze_perf(Vrt,Ana,Spc) :-
 % forigas krampojn kaj spacojn el la rezulto-termo
 reduce(Term,Flat) :-
   format(codes(A),'~w',[Term]),
-  reduce_(A,F),
+  reduce_(A,F,"() "),
   atom_codes(Flat,F).
 
-reduce_([],[]).
+reduce_full(Term,Flat) :-
+  format(codes(A),'~w',[Term]),
+  reduce_(A,F,"/*+~-() "),
+  atom_codes(Flat,F).
 
-reduce_([L|Ls],F) :-
-  memberchk(L,"() "),!, 
-  reduce_(Ls,F).
+reduce_([],[],_).
 
-reduce_([L|Ls],[L|Fs]) :-
+reduce_([L|Ls],F,DelLetters) :-
+  memberchk(L,DelLetters),!, 
+  reduce_(Ls,F,DelLetters).
+
+reduce_([L|Ls],[L|Fs],DelLetters) :-
   % \+ memberchk(L,"() "), 
-  reduce_(Ls,Fs).
+  reduce_(Ls,Fs,DelLetters).
 
 get_rule_min_max(RuleId,Min,Max) :-
   atom(RuleId),
