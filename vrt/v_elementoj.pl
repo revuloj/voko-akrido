@@ -2,8 +2,15 @@
  * esti ene de vorto 
 ************/
 c(o,subst).
+c('o-',subst). % ekz. dissendo-listo
 c(a,adj).
-% c('-',_). % ne akurate, sed helpus analizi kunmetitajn vortojn...
+
+/************ literoj, kiuj povas 
+ * specialaj signoj, kiuj povas aperi ene de vortoj
+************/
+
+ls('-').
+os('/').
 
 /********** finajxoj de radikoj, prefere ordigu la
  * vortaron law la ofteco de la vortoj 

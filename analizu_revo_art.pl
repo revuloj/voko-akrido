@@ -13,13 +13,15 @@ info :-
 
 :- dynamic(verda/2).
 
-revo_xml('/home/revo/revo/xml').
+%revo_xml('/home/revo/revo/xml').
 revo_txt('/home/revo/revo/txt').
-txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
+%txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
 skribo_pado('kontrolitaj').
 revo_verda_listo('vrt/revo_verda_listo_provizora.pl').
 
 analizu_revo_art(Art) :-
+    legu_verdan_liston_se_malplena,
+
     artikolo_fonto_dosiero(Art,TxtFile),
     read_file_to_codes(TxtFile,Txt,[]),
     verda_listo(Art,BL),

@@ -1,6 +1,7 @@
 :- use_module(library(sgml)). % por xml_quote_cdata
 :-consult('vortaro3.pl').
 :-consult('gra/gramatiko2.pl').
+:-consult('gra/esceptoj.pl').
 :-consult('gra/vorto_gra.pl').
 :-ensure_loaded('dcg/teksto_dcg.pl'). % por dishaki tekston en vortojn
 
