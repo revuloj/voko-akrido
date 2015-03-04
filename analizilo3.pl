@@ -38,7 +38,11 @@ majuskligo([V|Vosto],[M|Vosto]) :- to_upper(V,M).
 
 parto_nombro(Vorto,Signo,Nombro) :-
   atomic_list_concat(Partoj,Signo,Vorto),
-  proper_length(Partoj,Nombro).
+  foldl(non_empty,Partoj,0,Nombro).
+%  proper_length(Partoj,Nombro).
+
+non_empty('',N,N):-!.
+non_empty(_,N,N_1):-succ(N,N_1).
 
 % Source: InFileName aŭ InCodes
 analizu_tekston_outfile(Source,OutFileName) :-
@@ -56,16 +60,14 @@ analizu_tekston_outfile(InCodes,OutFileName,VerdaListo) :-
 
 analizo_output(OutFileName,T,VerdaListo) :-
   setup_call_cleanup(
-    (
-      open(OutFileName,write,Out),
-      skribu_kapon
-    ),
+    open(OutFileName,write,Out),
     with_output_to(Out,
-       analizu_tekston_kopie_(T,VerdaListo)),
-    (
-      skribu_voston,
-      close(Out)
-    )
+     (
+       skribu_kapon,
+       analizu_tekston_kopie_(T,VerdaListo),
+       skribu_voston
+     )),
+    close(Out)
   ).
 
 
