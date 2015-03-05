@@ -3,10 +3,11 @@ aberac: UEA-lorno, plejofte
 abnega: Gandhi
 abon: net
 aborigen: olimpian
-abort: aidos
+abort: aidos, abortito, abortitaĵo
 abrakadabr: Emèric
 abrazi: Frot
 abrupt: iom-post-iom/a
+absid: αψίς, αψίδος
 abstra: pli-malpli, samkiel, PV-difinon, samkiel, ec, abstrakt, abstrahi
 ac: ac, ed, kompozitacoj
 acetil1: hidrokarbonido

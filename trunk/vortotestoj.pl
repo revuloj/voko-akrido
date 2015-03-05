@@ -101,6 +101,8 @@ testoj_pronomoj :-
   t1("ĉiaspeca",'ĉia+spec/a',adj);
   t1("tiaspece",'tia+spec/e',adv);
   t1("kiaspeca",'kia+spec/a',adj);
+  t1("tiaokaze",'tia+okaz/e',adv);
+  t1("ĉiudirekte",'ĉiu+direkt/e',adv);
   t1("neniaaspekta",'nenia+aspekt/a',adj);
   t1("miaflanke",'mi/a+flank/e',adv);
   t1("viavice",'vi/a+vic/e',adv).
