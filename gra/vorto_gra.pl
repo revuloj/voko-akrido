@@ -190,6 +190,17 @@ kdrv(rr,adj) <= r(_,ASpc) + r(_,VSpc) ~> (ASpc = adv ; ASpc = adj), subspc(VSpc,
 % kunderivado per adjektivoj, ekz. multlingva
 kdrv(rr,adj) <= r(_,adj) + r(_,SSpc) ~> subspc(SSpc,subst).
 
+% kunderivado per pronomo: 
+
+%   per ambaŭ manoj -> ambaŭ+mane
+kdrv(vr,adj) <= v(_,pron) + r(_,SSpc) ~> subspc(SSpc,subst).
+% PLIBONIGU: necesas permesi substantivigi verbojn
+% sed pro verbigo de substantivoj en vortaro3.pl momente riskas senfinan ciklon:
+%   al tiu celo -> tiucela (tamen verba radiko cel'i)
+%   je tia okazo -> tia+okaze, necesus substantivigi okaz'
+kdrv(ur,adj) <= u(_,_) + r(_,SSpc) ~> subspc(SSpc,subst).
+% ne scias, ekzemploj?...:
+%kdrv(ir,adj) <= i(_,_) + r(_,SSpc) ~> subspc(SSpc,subst).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kunmetitaj vortoj
@@ -217,6 +228,9 @@ kunmetita('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
 antauvortoj('A',Spc) <= &antauvorto(_,Spc).
 antauvortoj('A+',Spc) <= &antauvorto(_,Spc) - &antauvortoj(_,Spc).
 
+antauvorto('v',Spc) <= v(_,Spc).
+antauvorto('u',Spc) <= u(_,Spc).
+antauvorto('i',Spc) <= i(_,Spc). % ĉio-pova (pova de ĉio)
 antauvorto('D',Spc) <= &rv_sen_fin(_,Spc).
 antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_,Spc).
 antauvorto('D-',Spc) <= &rv_sen_fin(_,Spc) / ls(_).
