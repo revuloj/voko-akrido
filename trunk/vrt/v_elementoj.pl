@@ -4,6 +4,8 @@
 c(o,subst).
 c('o-',subst). % ekz. dissendo-listo
 c(a,adj).
+c('a-',adj). % ekz. verda-bruna
+c('e-',adv). % ekz. dece-konvene
 
 /************ literoj, kiuj povas 
  * specialaj signoj, kiuj povas aperi ene de vortoj
