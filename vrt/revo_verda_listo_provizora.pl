@@ -42,8 +42,8 @@ afer: David, Urija, Lapenna, Hadda
 afgani: AFN
 afiks: um
 afin: αx, antieco
-afrika: affricatus, affricare, ad, fricare, ekfrotata, ad, ek, adamare, ekami
-afrik: ISO, CF, Brazavila, Kinŝasa, ISO, ZA
+afrika: affricatus, affricare, ad, fricare, ek, ek/frot/at/a, ad/amare
+afrik: ISO, CF, Brazavila, Kinŝasa, ZA
 agap: far
 agent: OGPU, NKVD
 ag: ĉi-lastaj
