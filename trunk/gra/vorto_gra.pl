@@ -122,8 +122,12 @@ vorto('Mf',Spc) <= &nr_sen_fin(_,Vs) / f(_,Fs)
        Spc=Vs 
      ; Spc=Fs).
 
-rad(r,Spc) <=  r(_,Spc).
-rad('r/',Spc) <=  r(_,Spc) / os(_).
+  % radikoj...
+  % ne traktu afiksojn kiel radikoj
+  % por teĥnikaj prefiksoj kiel nitro-, kilo- k.a. difinu
+  % apartajn regulojn por predikatoj "prefikso" kaj "sufikso"
+rad(r,Spc) <=  r(_,Spc) ~>  Spc \= suf, Spc \= pref.
+rad('r/',Spc) <=  r(_,Spc) / os(_) ~>  Spc \= suf, Spc \= pref.
 
 % minusklaj nomradikoj uziĝas kiel ordinaraj
 % radikoj, ekz. trans+antlantik, pra/franc/a
