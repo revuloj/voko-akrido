@@ -1,4 +1,5 @@
 :- use_module(library(sgml)). % por xml_quote_cdata
+:- use_module(library(time)).
 :-consult('vortaro3.pl').
 :-consult('gra/gramatiko2.pl').
 :-consult('gra/esceptoj.pl').
@@ -15,11 +16,21 @@ vortanalizo(Vorto,Ana,Spc) :-
 
 
 vortanalizo(Vorto,Ana,Spc,bone) :-
-  vortanalizo(Vorto,Ana,Spc).
+  % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
+  catch(
+    call_with_time_limit(3, % max. 3s
+      vortanalizo(Vorto,Ana,Spc)),
+    Exc,
+    (sub_atom(Exc,0,_,_,'time_limit_exceeded') -> fail; true)).
 
 vortanalizo(Vorto,Ana,Spc,minuskle) :-
   minuskligo(Vorto,VrtMin), 
-  vortanalizo(VrtMin,Ana,Spc).
+  % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
+  catch(
+    call_with_time_limit(3, % max. 3s
+    vortanalizo(VrtMin,Ana,Spc)),
+    Exc,
+    (sub_atom(Exc,0,_,_,'time_limit_exceeded') -> fail; true)).
 
 
 minuskligo_atom(Vorto,Minuskle):-
@@ -93,6 +104,8 @@ analizu_tekston_kopie_([],_).
  
 analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
   length(Vorto,L), L>1, % ne analizu unuopajn literojn
+%  statistics(cputime,C1),
+%  statistics(inferences,I1),
   once((
     memberchk(Vorto,VerdaListo),
     skribu_vorton(verda,Vorto,_,_)
@@ -110,6 +123,10 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
    ;
     skribu_vorton(neanalizebla,Vorto,_,_)
   )),
+%  statistics(inferences,I2), 
+%  statistics(cputime,C2),
+%  C is C2-C1, I is I2-I1,
+%  (C>5 -> format(' [i~d,c~2f] ',[I,C]); true), 
   analizu_tekston_kopie_(Text,VerdaListo).
 
 
