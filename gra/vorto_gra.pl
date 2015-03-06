@@ -214,7 +214,8 @@ vorto(nn,nombr) <= v(N1,nombr) * v(dek,nombr) ~> cifero(N1).
 vorto(nn,nombr) <= v(N1,nombr) * v(cent,nombr) ~> cifero(N1).
 vorto(nn,nombr) <= v(N1,nombr) * v(mil,nombr) ~> cifero(N1).
 
-% ekz. dom-hund/o, ...
+% ekz. dom-hund/o, ..., preferu dupartajn kunmetitajn
+vorto('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
 vorto('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
 
 % foje funkcias apliki prefiksojn nur al jam kunmetita vorto
@@ -222,10 +223,11 @@ vorto('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
 vorto(pAP,Spc) <= p(_,De) / &kunmetita(_,Spc) ~> subspc(Spc,De).
 
 % preferu dupartajn kunmetitajn...
-%kunmetita('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
+kunmetita('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
+
 % plurpartaj...
 kunmetita('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
-antauvortoj('A',Spc) <= &antauvorto(_,Spc).
+antauvortoj('AA',Spc) <= &antauvorto(_,_) - &antauvorto(_,Spc).
 antauvortoj('A+',Spc) <= &antauvorto(_,_) - &antauvortoj(_,Spc).
 
 
