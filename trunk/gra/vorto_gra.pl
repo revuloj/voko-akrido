@@ -226,20 +226,18 @@ vorto(pAP,Spc) <= p(_,De) / &kunmetita(_,Spc) ~> subspc(Spc,De).
 % plurpartaj...
 kunmetita('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
 antauvortoj('A',Spc) <= &antauvorto(_,Spc).
-antauvortoj('A+',Spc) <= &antauvorto(_,Spc) - &antauvortoj(_,Spc).
+antauvortoj('A+',Spc) <= &antauvorto(_,_) - &antauvortoj(_,Spc).
 
-antauvorto('v',Spc) <= v(_,Spc).
-antauvorto('u',Spc) <= u(_,Spc).
-antauvorto('i',Spc) <= i(_,Spc). % ĉio-pova (pova de ĉio)
+
 antauvorto('D',Spc) <= &rv_sen_fin(_,Spc).
 antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_,Spc).
 antauvorto('D-',Spc) <= &rv_sen_fin(_,Spc) / ls(_).
 antauvorto(nn,Spc) <= &vorto(nn,Spc).
 
-% eble iom dubindaj ("mi-dir/i" , "ĉiu-hom/o" kompare kund kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
-%antauvorto(Spc) <= v(_V,Spc).
-%antauvorto(Spc) <= u(_Pron,Spc).
-%antauvorto(Spc) <= i(_Pron,Spc).
+% eble iom dubindaj ("mi-dir/i" , "ĉiu-hom/o" kompare kun kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
+antauvorto('v',Spc) <= v(_,Spc).
+antauvorto('u',Spc) <= u(_,Spc).
+antauvorto('i',Spc) <= i(_,Spc). % ĉio-pova (pova de ĉio)
 
 postvorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs) 
    ~> (subspc(Vs,Fs),  
