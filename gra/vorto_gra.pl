@@ -50,37 +50,7 @@ drv_per_suf(Spc,Al,De,Speco) :-
           Speco=Al 
         ).
 
-% PLIBONIGU: oni povus pli flekseble tion kalkuli rikure
-% el la reguloj mem...(?)
-min_max_len(v,2,10).
-min_max_len(pv,5,13).
-min_max_len(i,2,5).
-min_max_len(u,2,5).
-min_max_len(ifi,3,6).
-min_max_len(ufu,3,7).
-min_max_len(r,2,18).
-min_max_len(f,1,3).
-min_max_len('Df',3,99).
-min_max_len(p,2,7).
-min_max_len(s,2,4).
-min_max_len(pr,4,25).
-min_max_len('Ds',4,99).
-min_max_len(pD,4,99).
-min_max_len('Kf',7,99).
-min_max_len('Vf',7,99).
-min_max_len('Ks',6,99).
-min_max_len(pD,4,99).
-min_max_len(rr,4,99).
-min_max_len(nn,5,8).
-min_max_len('A',2,33).
-min_max_len('A+',2,99).
-min_max_len('P',3,99).
-min_max_len(c,1,1).
-min_max_len('Df',3,33).
-min_max_len('D',2,33).
-min_max_len('AP',5,99).
-min_max_len('A+P',5,99).
-min_max_len(pAP,7,99).
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
@@ -274,5 +244,34 @@ postvorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs)
      ; Spc=Fs).
 
 
-
-
+% PLIBONIGU: oni povus pli flekseble tion kalkuli rikure
+% el la reguloj mem...(?)
+min_max_len(v,2,10).
+min_max_len(pv,5,13).
+min_max_len(i,2,5).
+min_max_len(u,2,5).
+min_max_len(ifi,3,6).
+min_max_len(ufu,3,7).
+min_max_len(r,2,18).
+min_max_len(f,1,3).
+min_max_len('Df',3,99).
+min_max_len(p,2,7).
+min_max_len(s,2,4).
+min_max_len(pr,4,25).
+min_max_len('Ds',4,99).
+min_max_len(pD,4,99).
+min_max_len('Kf',7,99).
+min_max_len('Vf',7,99).
+min_max_len('Ks',6,99).
+min_max_len(pD,4,99).
+min_max_len(rr,4,99).
+min_max_len(nn,5,8).
+min_max_len('A',2,33).
+min_max_len('A+',2,99).
+min_max_len('P',3,99).
+min_max_len(c,1,1).
+min_max_len('Df',3,33).
+min_max_len('D',2,33).
+min_max_len('AP',5,99).
+min_max_len('A+P',5,99).
+min_max_len(pAP,7,99).

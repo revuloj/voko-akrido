@@ -17,7 +17,7 @@ info :-
 revo_txt('/home/revo/revo/txt').
 %txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
 skribo_pado('kontrolitaj').
-revo_verda_listo('vrt/revo_verda_listo_provizora.pl').
+revo_verda_listo('vrt/revo_verda_listo_provizora.txt').
 
 analizu_revo_art(Art) :-
     legu_verdan_liston_se_malplena,
