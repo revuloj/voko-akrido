@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link title="stilo" type="text/css" rel="stylesheet" href="stilo.css">
+  </head>
+  <body>
+    <h1>Klarigoj pri la vortanalizo de la Revo-artikoloj</h1>
+
+    <p>
+      La celo de la analizo estas trovi evidentajn tajperarojn en artikolojn
+      sed ankaŭ vortojn, kiuj estas uzataj en la artikoloj, sed mem mankas en
+      Revo.
+    </p>
+    <p>
+      Atentu, ke la vortanalizilo estas nek perfekta nek tiel inteligenta,
+      ke ĝi povus decidi, ĉu ne bone analizita vorto estas erara aŭ nealizebla
+      pro manko en la analizilo mem, aŭ eble fremdlingva vorto.
+      Simple ĝi helpas redukti homan kontrollegadon al kelkaj rimarkindaj lokoj.
+      Markita vorto ofte ne estas nepre korektinda aŭ aldoninda en Revo.
+      Necesas prijuĝokapablo de homo por decidi, ĉu kaj - se jes - kion fari.
+    </p>
+    <p>
+      Por prijuĝi, helpas kompreni, ke la vortanalizilo laboras laŭ la sekvaj
+      du fazoj:
+      <ol>
+       <li>Tekstdismeta fazo: la teksto estas dividata en e-aj vortoj,
+	numeroj, ne-vortaj signoj. Tio ankoraŭ ne funkcias perfekte, aparte, vortoj
+        kun enaj krampoj aŭ ne-literaj signoj estas rekonitaj kiel pluraj
+        vortetoj.
+       <li>
+         Vortanaliza fazo: La vortoj estas dismetitaj en partoj kaj
+         rekombinitaj laŭ 
+         <a href="https://code.google.com/p/vortanalizilo/source/browse/trunk/gra/vorto_gra.pl">gramatikaj 
+         reguloj</a> de 
+         derivado (afiksoj, radikoj, finaĵoj, ekz. pra/av/in/o);
+         kunderivado, ekz. "sen mono" -&gt; sen+mon/a; kunmetado, t.e. pluraj
+         radikvortoj vort-analiz/o, lern/ej/o-task/o. La reguloj estas estas sufiĉe
+         striktaj, ekz. "in" estas aplikebla nur al bestoj (inklusive la
+         homo).
+         Tial esceptaj, neregulaj aŭ maloftaj vortkunmetoj eble ne analiziĝas.  
+         Kelkaj tamen estas en
+         <a href="https://code.google.com/p/vortanalizilo/source/browse/trunk/gra/esceptoj.pl">aparta
+         listo</a>.
+     </ol>
+    </p>
+    <p>
+      Vortoj ne-esperantaj aŭ neregule formitaj, sed aperantaj en citaĵoj
+      estas registritaj
+      en <a class="verda" href="https://code.google.com/p/vortanalizilo/source/browse/trunk/vrt/revo_verda_listo_provizora.txt">verda
+      listo</a>.
+    </p>
+    <p>
+       Jen ekzemploj kiel pritaksi markitajn mankojn:
+    </p>
+    <p>
+      (1) Vortoj <span class="neanaliz">markitaj tiel</span> ne estis
+      analizeblaj. Jen kelkaj eblaj kaŭzoj:
+      <ul>
+        <li>Radiko aŭ vortelemento mankas en la vortaro. (Ekz. vortoj, kies
+        unua derivaĵo ne estas rekonebla kiel substantivo, verbo, adjektivo aŭ
+        adverbo, ne transpreniĝas en la radikoliston de la anlizilo, ankaŭ vortoj markitaj
+        per EVI en la unua derivaĵo aŭ senco ne transpreniĝas en la
+        vortaron. Se derivaĵo havas plurajn sencojn, la evitinda senco ne estu
+        en la unua loko - la ordo en la Revo-artikolo estu ŝanĝota kaj la
+        vortaro por la analizilo refarota - okazas ĉiutage.)
+        <li>La vorto estas fremdlingva aŭ nomo, ofte ili aperas en ekzemploj:
+        "Carlos".
+        <li>La radiko ankoraŭ mankas en Revo, ekz. "Atre/o", la greka
+        mitologia reĝo.
+        <li>La vorto estas malĝuste kunigita, ekz.
+        "depost". Ĝusta skribo laŭ la signifo kaj akcento estus:
+        "<em>de post</em> la tria horo", komparu "venante <em>de antaŭ</em> la domo". Korekto povus esti
+        enŝovi la spacsignon aŭ akcepti kiel escepton en la artikolo. Sed la
+        analizilo estas strikta pri tio.
+        <li>La vorto enhavas ne-ean literon aŭ alian signon kaj do estas
+        traktata en partoj: Volap|ü|k, ĝeni[n]ta k.s.
+        <li>Temas pri mallongigo, kiun la vortanalizilo ne komprenas, ekz. "ekz-e".
+       <li>verbo ne estas markita kiel transitiva, ekz. "abol/it/a".
+       <li>vorto ne estas rekonebla kiel besto en la Revo-artikolo (per
+       referenco al (sub-)klaso de bestoj, sed uzas sufikson kiel "in".
+       <li>aŭ la vorto
+       fakte estas ne kunmetita laŭgramatike. Kelkaj esceptoj kiel "posteulo",
+       "multekosta" la vortanalizilo tamen toleras.
+    </ul>
+  </p>
+  <p>
+    (3) Vortoj <span class="dubebla">markitaj tiel (?)</span>
+    havas pli ol tri radikojn, kio estas relative malofte, kaj povas signi
+    misanalizitan vorton. Se ne temas pri tajperaro en la artikolo, ni aldonu
+    ĝin al la verda listo.
+  </p>
+  <p>
+    (4) Vortoj <span class="verda">markitaj tiel</span> estas sur la verda
+    listo, t.e. aŭ ili estas evitindaj, sed permesitaj en la propra artikolo
+    aŭ ili estas aparte permesitaj vortoj en tiu ĉi artikolo; ĝustaj, kvankam
+    misanalizataj de la vortanalizilo; krome:
+    fremdlingvaj nomoj, mallongigoj, formuloj, kiuj aperas nur tie ĉi,
+    sed ne estas e-aj vortoj el la ĝenerala vortstoko.
+  </p>
+  </body>
+</html>
