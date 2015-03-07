@@ -2533,13 +2533,14 @@ palisa: viole-nigra
 palis: Arne
 palt: pardessus, angla-pola-rusa, paletot, Überzieher, overcoat, greatcoat, angla-pola-rusa, retrorigardante, kristnaskokronan
 panam: PA
+pand: ailuredoj
 pandemoni: Úrsula
 pandit: Jawaharlal, Nehru
 pane: aj
-pangxab: ਪੰਜਾਬ
-panik: ek, Trevor, Steele, Saussure, lingvo-teoriulo
+pangxab: ਪੰਜਾਬ, Panĝabio
+panik: Trevor, Steele, Saussure, Mosĥozupron
 pantal: dekdujara
-papaj: mezamerikdevena
+papaj: Mezamerikdevena
 paper: Vitalij, Latronov, malpleja, Elder, Minna, pli-malpli
 pap: Filioque, rom
 papili: Vanessa, Adela, fortunei
