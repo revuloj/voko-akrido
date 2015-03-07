@@ -7215,6 +7215,7 @@ r('fraz',subst).
 r('fratri',subst).
 r('fraterkul',subst).
 r('frat',parc).
+r('frap',tr).
 r('franĝ',subst).
 r('frankolin',subst).
 r('frank',subst).

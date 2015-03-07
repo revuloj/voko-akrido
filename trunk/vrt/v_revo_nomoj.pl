@@ -108,6 +108,7 @@ nr('Timor',subst).
 nr('Tigris',subst).
 nr('Tife',subst).
 nr('Tician',subst).
+nr('Tibet',subst).
 nr('Tiberi',pers).
 nr('Tet',subst).
 nr('Teravad',subst).
@@ -1011,6 +1012,7 @@ nr_('timor',subst).
 nr_('tigris',subst).
 nr_('tife',subst).
 nr_('tician',subst).
+nr_('tibet',subst).
 nr_('tiberi',pers).
 nr_('tet',subst).
 nr_('teravad',subst).

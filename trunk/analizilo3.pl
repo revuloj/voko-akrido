@@ -116,7 +116,8 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
    ;
     vortanalizo(Vorto,Ana,Spc,Rim), 
      (
-       nonvar(Ana), parto_nombro(Ana,'-',Nv), Nv>2 
+       nonvar(Ana), 
+       (parto_nombro(Ana,'-',Nv), Nv>2 ; parto_nombro(Ana,'~',Nv), Nv>1)
        *-> skribu_vorton(dubebla,Vorto,Ana,Spc)
        ; skribu_vorton(Rim,Vorto,Ana,Spc)
      )

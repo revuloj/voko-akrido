@@ -17,11 +17,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+% shovis specshanghojn al la gramatiko...
 % verbigo de substantivoj planado, muzikado, spicado, kau'zanta, kau'zata (nur por transitivaj)
-r(Rad,tr) :- r(Rad,subst). % kauzo -> kauzi, spico -> spici
-
-r(Rad,subst) :- r(Rad,nombr). % tri -> trio
-r(Rad,adj) :- r(Rad,adv). % super -> super/a -> superulo
+% r(Rad,tr) :- r(Rad,subst). % kauzo -> kauzi, spico -> spici
+% r(Rad,subst) :- r(Rad,nombr). % tri -> trio
+% r(Rad,adj) :- r(Rad,adv). % super -> super/a -> superulo
 
 % nomkomenco, por apliki nj, ĉj: Pa+ĉj -> Pa/ĉj
 nk(Nom,Spc) :- 
