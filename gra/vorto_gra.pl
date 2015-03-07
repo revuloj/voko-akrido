@@ -116,7 +116,7 @@ vorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs)
 % PLIBONIGU: distingu o(jn)-finaĵon (majuskle) kaj aliajn (minuskle)
 % ankorau mankas ebleco analizi majusklajn naciojn franc/ -> Franc/uj
 
-vorto('Mf',Spc) <= &nr_sen_fin(_,Vs) / f(_,Fs) 
+vorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs) 
   ~> (subspc(Vs,Fs),  
       % eble once(...)?            
        Spc=Vs 
@@ -153,8 +153,8 @@ rv_sen_fin(pD,Spc) <= p(_,De) / &rv_sen_fin('Ds',Spc) ~> subspc(Spc,De).
 rv_sen_fin('N',Spc) <= nk(_,Spc) / ns(_,Ss) ~> subspc(Spc,Ss).
 
 % majusklaj nomoj povas havi nur sufiksojn, ekz. Atlantik/ec, Rus/uj
-nr_sen_fin('M',Spc) <= nr(_,Spc). 
-nr_sen_fin('Ms',Spc) <= &nr_sen_fin(_,Ns) / s(_,Al,De) ~> drv_per_suf(Ns,Al,De,Spc).
+nm_sen_fin('M',Spc) <= nr(_,Spc). 
+nm_sen_fin('Ms',Spc) <= &nm_sen_fin(_,Ns) / s(_,Al,De) ~> drv_per_suf(Ns,Al,De,Spc).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kunderivitaj vortoj
@@ -229,6 +229,11 @@ vorto(pAP,Spc) <= p(_,De) / &kunmetita(_,Spc) ~> subspc(Spc,De).
 % preferu dupartajn kunmetitajn...
 kunmetita('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
 
+% kunmetitaj per nomoj, ekz. Centr-Afriko
+% PLIBONIGU: momente rekonighas nur centr-Afriko per
+% minuskligo en analizilo3
+kunmetita('AMf',Spc) <= &antauvorto('D-',_) - &postvorto('Nf',Spc).
+
 % plurpartaj...
 kunmetita('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
 antauvortoj('AA',Spc) <= &antauvorto(_,_) - &antauvorto(_,Spc).
@@ -251,7 +256,11 @@ postvorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs)
        Spc=Vs 
      ; Spc=Fs).
 
-
+postvorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs) 
+   ~> (subspc(Vs,Fs),  
+      % eble once(...)?            
+       Spc=Vs 
+     ; Spc=Fs).
 
 
 
