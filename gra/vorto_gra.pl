@@ -8,7 +8,7 @@
 :- op( 1120, xfx, user:(<=) ). % disigas regulo-kapon, de regulesprimo
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
-%:- op( 500, yfx, user:(~) ). % signas disigindajn vortojn
+:- op( 500, yfx, user:(~) ). % signas disigindajn vortojn
 
 %:- retract(gra_debug(false)).
 %gra_debug(true).
@@ -127,6 +127,17 @@ vorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs)
   % por teĥnikaj prefiksoj kiel nitro-, kilo- k.a. difinu
   % apartajn regulojn por predikatoj "prefikso" kaj "sufikso"
 rad(r,Spc) <=  r(_,Spc) ~>  Spc \= suf, Spc \= pref.
+
+% substantivigo de verboj
+rad(r_,subst) <= r(_,VSpc) ~> subspc(VSpc,verb). % celi -> celo, ekz. "tiu+cel/a"
+% verbigo de substantivoj
+rad(r_,tr) <= r(_,SSpc) ~> subspc(SSpc,subst). % kauzo -> kauzi, spico -> spici
+% substantivigo de nombroj
+rad(r_,subst) <= r(_,nombr). % tri -> trio
+% adjektivigo de adverboj
+rad(r_,adj) <= r(_,adv). % bele -> bela -> belulo, ( super -> super/a -> superulo ?)
+
+% permesu / post la radiko, speciale por la kapvortoj de Revo
 rad('r/',Spc) <=  r(_,Spc) / os(_) ~>  Spc \= suf, Spc \= pref.
 
 % minusklaj nomradikoj uziĝas kiel ordinaraj
@@ -200,8 +211,8 @@ kdrv(rr,adj) <= r(_,adj) + r(_,SSpc) ~> subspc(SSpc,subst).
 kdrv(vr,adj) <= v(_,pron) + r(_,SSpc) ~> subspc(SSpc,subst).
 % PLIBONIGU: necesas permesi substantivigi verbojn
 % sed pro verbigo de substantivoj en vortaro3.pl momente riskas senfinan ciklon:
-%   al tiu celo -> tiucela (tamen verba radiko cel'i)
-%   je tia okazo -> tia+okaze, necesus substantivigi okaz'
+%   al tiu celo -> tiu+cel/a (tamen verba radiko cel'i)
+%   je tia okazo -> tia+okaz/e, necesus substantivigi okaz'
 kdrv(ur,adj) <= u(_,_) + r(_,SSpc) ~> subspc(SSpc,subst).
 % ne scias, ekzemploj?...:
 %kdrv(ir,adj) <= i(_,_) + r(_,SSpc) ~> subspc(SSpc,subst).
