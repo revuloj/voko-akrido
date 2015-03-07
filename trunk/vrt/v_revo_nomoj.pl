@@ -697,6 +697,7 @@ nr('Emilian',pers).
 nr('Emil',pers).
 nr('Emanuel',pers).
 nr('Elize',subst).
+nr('Elizabet',pers).
 nr('Eli',pers).
 nr('Elb',subst).
 nr('Ekvador',subst).
@@ -1601,6 +1602,7 @@ nr_('emilian',pers).
 nr_('emil',pers).
 nr_('emanuel',pers).
 nr_('elize',subst).
+nr_('elizabet',pers).
 nr_('eli',pers).
 nr_('elb',subst).
 nr_('ekvador',subst).
