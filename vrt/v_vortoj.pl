@@ -37,6 +37,7 @@ v('do',konj).
 v('du',nombr).
 v('dum',prep).
 v('eĉ',adv).
+v('ek',intj).
 v('ekster',prep).
 v('el',prep).
 v('en',prep).
