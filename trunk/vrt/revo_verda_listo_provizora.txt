@@ -2769,11 +2769,11 @@ presti1: ĉiesa
 preter1: is-tempo
 preter: II, III
 pret: pret, Sargonon
-pretor: vi-ni-ci/us
+pretor: Vinicius
 prezen1: Ŝpekin, Jozef, Denove, reprezent, n-uma, Ekz-e
 pri: II, David, vinberbranĉon, Kp, ig
 prim: Bricard
-princ: Mary, Lermontov, Songo, Song, Sealand
+princ: Mary, Lermontov, Song, Sealand, senioro
 princi: pra
 printe: denove, Jinzhou
 privat: PIV-an
