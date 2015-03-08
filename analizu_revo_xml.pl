@@ -13,7 +13,7 @@ info :-
 
 :- dynamic(verda/2).
 
-revo_xml('/home/revo/revo/xml').
+revo_xml('http://retavortaro.de/revo/xml').
 revo_txt('/home/revo/revo/txt').
 txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
 skribo_pado('kontrolitaj').
@@ -91,7 +91,7 @@ verda_listo(Art,Listo) :-
 kontrolu_dosieron(TxtFile) :-
     fonto_celo_dosiero(TxtFile,HtmlFile),
     format('~w -> ~w~n',[TxtFile,HtmlFile]),
-    read_file_to_codes(TxtFile,Txt,[]),
+    read_file_to_codes(TxtFile,Txt,[encoding(utf8)]),
     artikolo_fonto_dosiero(Art,TxtFile),
     verda_listo(Art,BL),
     analizu_tekston_outfile(Txt,HtmlFile,BL). 
