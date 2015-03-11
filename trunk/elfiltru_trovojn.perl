@@ -4,7 +4,7 @@ $outhtml = 1;
 $REVO = "http://retavortaro.de/revo";
 
 $revo_txt_dir = $ENV{REVO}."/txt";
-$touch_seventh = 1; # tushu (renovigu) chiun sepan fontodosieron kun eraroj tiel, 
+$touch_seventh = 0; # tushu (renovigu) chiun sepan fontodosieron kun eraroj tiel, 
                     # ke la vortanalizu rekreos ghin sekvafoje - tio helpas
                     # forigi erarojn el la erarolisto, kiuj kauzighis aliloke, ekz.
                     # pro mankanta radiko en la vortaro
@@ -137,7 +137,7 @@ sub touch_modulo_seven {
 
     if ($counter % 7 == $wday) {
 	# tushu dosieron
-	my $atime = time;
+	my $atime = 0; # time;
 	my $mtime = $atime;
 	utime($atime,$mtime,$file) ||
            warn "Ne povis tushi '$file'-on: $!\n";
