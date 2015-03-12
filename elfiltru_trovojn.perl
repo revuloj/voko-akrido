@@ -88,11 +88,12 @@ sub elfiltru {
 		print "\n";
 	    }
 
+           $cnt++;
 
            # eble tushu (renovigu) fontodosieron, vd. supre
            if ($touch_seventh) {
 	       my $source_file = "$revo_txt_dir/$fileref.txt";
-	       touch_modulo_seven($source_file,$cnt++);
+	       touch_modulo_seven($source_file,$cnt);
 	   }
 
 	}
