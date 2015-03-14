@@ -29,6 +29,7 @@ v('mu',intj).
 v('miaŭ',intj).
 v('mek',intj).
 v('maĉ',intj).
+v('lo',intj).
 v('kŭaks',intj).
 v('kvivit',intj).
 v('kvak',intj).

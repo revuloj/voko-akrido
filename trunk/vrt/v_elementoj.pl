@@ -57,9 +57,11 @@ s(ar,subst,subst).
 s(ebl,adj,tr).
 s(ec,subst,adj).
 s(eg,_,_).
-s(ej,subst,verb).
-s(ej,subst,subst).
-s(em,adj,verb).
+s(ej,subst,verb). % lernejo
+s(ej,subst,subst). % vinejo
+s(ej,subst,adj). % densejo, malsekejo
+s(em,adj,verb). % kurema, purigema
+s(em,adj,adj). % dolĉema, purema
 s(end,adj,tr).
 s(er,subst,subst).
 s(estr,best,subst).
@@ -157,6 +159,8 @@ p(trans,verb).
 
 p(de,verb).
 p(kun,verb).
+p(sub,subst).
+p(super,subst).
 
 /*************
  * adverboj kiel prefiksoj

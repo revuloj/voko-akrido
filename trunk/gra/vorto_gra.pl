@@ -140,7 +140,8 @@ rv_sen_fin('D',Spc) <= &rv_sen_suf(_,Spc).
 % rad+sufikso, ekz. san/ul
 rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
 
-% foje funkcias apliki prefiksojn nur post sufiksoj, ekz. ne/(venk/ebl)
+% foje funkcias apliki prefiksojn nur post sufiksoj, 
+% ekz. ne/(venk/ebl), eks/(lern/ej/an)/oj
 rv_sen_fin(pD,Spc) <= p(_,De) / &rv_sen_fin('Ds',Spc) ~> subspc(Spc,De). 
 
 % karesnomo
@@ -305,6 +306,12 @@ postvorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs)
 % depost -> de~post
 % ekde -> ek~de
 % tiujn meti sur "bluan liston" ?
+
+% kuntirado estas konsiderata neregula vortfarado laŭ pluraj gramatikistoj
+% fakte oni ofte uzas ĝin precipe por distingi neordinaran econ de principa, ordinara eco:
+% - neordinare dika fingro (ŝvelinta) - la dikfingro (de kiu ĉiu homo havas du laŭnature)
+% - bunta pego (bele kolora pego) - buntpego (specio)
+% - seka vinbero (pro neatento sekiĝinta) - sekvinbero (produkto, speciale pretigita)
 
 vorto('Kf',Spc) <= &kv_sen_fin('DD',Vs) / f(_,Fs) ~> (subspc(Vs,Fs),  
       % eble once(...)?            

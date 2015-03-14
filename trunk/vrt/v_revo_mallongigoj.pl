@@ -33,7 +33,10 @@ mlg('CY').
 mlg('KG').
 mlg('KG').
 mlg('UK').
+mlg('CG').
+mlg('CD').
 mlg('ILO').
+mlg('MY').
 mlg('MT').
 mlg('MB').
 mlg('MT').
