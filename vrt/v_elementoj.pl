@@ -112,6 +112,10 @@ p(re,verb).
  * prepozicioj kiel prefiksoj
 ****************/
 
+p(ekster,subst). % eksterlando
+
+
+/********** Vidu pli malsupre p(el,tr,verb) ktp.
 % MANKO:
 % ofte ili transitivigas verbon,
 % oni devus montri aŭ per tria argumento "Al"
@@ -128,7 +132,9 @@ p(apud,verb).
 p('ĉe',verb).
 p('ĉirkaŭ',verb).
 p(de,verb).
-p(ekster,verb).
+
+%p(ekster,verb). % ekster...i ?
+
 p(el,verb).
 p(en,verb).
 p('ĝis',verb).
@@ -147,6 +153,7 @@ p(super,subst).
 p(sur,verb).
 p(tra,verb).
 p(trans,verb).
+****/
 
 /*************
  * adverboj kiel prefiksoj
@@ -210,9 +217,11 @@ p(trans,tr,verb). % transpagi
 **************/
 
 p(sen,adj,_).
+%p(sen,adj,subst).
+
 p(pri,adj,subst).
+
 p('laŭ',adj,adv).
-p(sen,adj,subst).
 p('laŭ',adj,adj).
 p('laŭ',adj,subst).
 
