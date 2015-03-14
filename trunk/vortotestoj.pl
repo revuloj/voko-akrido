@@ -17,7 +17,7 @@ t1(Vorto,Analizita,Speco) :-
   once((a1(Vorto,Ana,Spc); format('ERARO~n'), fail)),
   (Ana == Analizita, Spc == Speco
     -> format('bone!~n')
-    ; format('ERARO [~k]~n',[Ana])
+    ; format('ERARO [~k,~w]~n',[Ana,Spc])
   ).
 
 % testo de iu analizo, ne la unua tuj devas esti ĝusta...
@@ -26,7 +26,7 @@ tk(Vorto,Analizita,Speco) :-
   once((ak(Vorto,Ana,Spc); format('ERARO~n'), fail)),   
   (Ana == Analizita, Spc == Speco 
     -> format('bone!~n')
-    ; format('ERARO [~k]~n',[Ana])
+    ; format('ERARO [~k,~w]~n',[Ana,Spc])
   ).
 
 % neanalizebla, negativa testo
@@ -129,9 +129,33 @@ testoj_kunmeto :-
   tk("altmontaro",'alt~mont/ar/o',subst);
   tk("rizplanti",'riz~plant/i',verb);
   tk("infankaresi",'infan~kares/i',verb).
+
+
+testoj_apudmeto :-
+  t1("bela-malbela",'bel/a---mal/bel/a',adj);
+  t1("vole-nevole",'vol/e---ne/vol/e',adv);
+  t1("pli-malpli",'pli---mal/pli',adv);
+  t1("blanka-flava-nigra",'blank/a---flav/a---nigr/a',adj);
+  t1("domo-kaverno",'dom/o---kavern/o',subst);
+  t1("membro-abonanto",'membr/o---abon/ant/o',best);
+  t1("membro-abonanto-homo",'membr/o---abon/ant/o---hom/o',best).
+
+testoj_kuntiro :-
+  t1("dikfingro",'dik~fingr/o',subst);
+  t1("sekvinbero",'sek~vin-ber/o',subst);
+  t1("buntpego",'bunt~peg/o',best);
+  t1("malbonago",'mal/bon~ag/o',subst);
+  t1("junedzo",'jun~edz/o',best);
+  t1("helruĝa",'hel~ruĝ/a',adj);
+  t1("malsupreniri",'mal/supr/en~ir/i',ntr);
+  t1("pruntepreni",'prunt/e~pren/i',tr);
+  t1("depost",'de~post',prep);
+  t1("ekde",'ek~de',prep);
   % au redonu kiel neanalizeblaj
+  t1("grandsinjoro",'grand~sinjor/o',best);
+  t1("altmontaro",'alt~mont/ar/o',subst).
+
+testoj_malbonaj :-
   tn("plaĉivola");
-  tn("grandsinjoro");
-  tn("altmontaro");
   tn("rizplanti");
   tn("infankaresi").
