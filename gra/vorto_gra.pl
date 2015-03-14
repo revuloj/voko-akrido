@@ -208,11 +208,18 @@ kadj('Dc',adj) <= &rv_sen_fin(_,subst) / c(_,adj). % adjektivigo de substantivoj
 % splitigante tuj per '-'
 
 % KOREKTU: enestas senfina rekuro per "vorto"
-vorto('V-V',Spc) <=  &am_antau_subst(_,_) - &vrt(_,Spc) ~> subspc(Spc,subst).
-am_antau_subst('V-',Spc) <= &vrt(_,Spc) - ls(_) ~> subspc(Spc,subst).
+%vorto('V-V',Spc) <=  &am_antau_subst(_,_) - &vrt(_,Spc) ~> subspc(Spc,subst).
+%am_antau_subst('V-',Spc) <= &vrt(_,Spc) - ls(_) ~> subspc(Spc,subst).
 
-vorto('V-V',Spc) <=  &am_antau_adj(_,_) - &vrt(_,Spc) ~> subspc(Spc,adj).
-am_antau_adj('V-',Spc) <= &vrt(_,Spc) - ls(_) ~> subspc(Spc,adj).
+%vorto('V-V',Spc) <=  &am_antau_subst(_,_) - &vrt(_,Spc) ~> subspc(Spc,subst).
+%am_antau_subst('V-',Spc) <= &vrt(_,Spc) - ls(_) ~> subspc(Spc,subst).
+
+vorto('V-V',Spc) <=  &am_antau(_,Spc) - &vrt(_,Spc).
+vorto('V-V',Spc) <=  &am_antau2_(_,Spc) - &vrt(_,Spc).
+
+am_antau('V-',Spc) <= &vrt(_,Spc) - ls(_).
+am_antau2('V-',Spc) <= &am_antau(_,Spc) - &vrt(_,Spc).
+am_antau2_('V-',Spc) <= &am_antau2(_,Spc) - ls(_).
 
 vrt('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs) 
   ~> (subspc(Vs,Fs),  
@@ -220,6 +227,11 @@ vrt('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs)
        Spc=Vs 
      ; Spc=Fs).
 
+% simpla vorteto, ekz.  hodiaŭ, ek, pli
+vrt(v,Spc) <= v(_,Spc).
+
+% simplaj mal-vortoj (malpli, malfor, malantaŭ, maltro...)
+vrt(pv,Spc) <= p(mal,_) / v(_,Spc) ~> (Spc='adv'; Spc='prep').
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kunmetitaj vortoj
@@ -284,7 +296,7 @@ postvorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs)
 
 % dikfingro -> dik~fingr/o
 % sekvinbero -> sek~vin-ber/o
-% bundpego -> bunt~peg/o
+% buntpego -> bunt~peg/o
 % malbonago -> mal/bon~ag/o
 % junedzo -> jun~edz/o 
 % helruĝa -> hel~ruĝ/a
@@ -292,6 +304,23 @@ postvorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs)
 % depost -> de~post
 % ekde -> ek~de
 % tiujn meti sur "bluan liston" ?
+
+vorto('Kf',Spc) <= &kv_sen_fin('DD',Vs) / f(_,Fs) ~> (subspc(Vs,Fs),  
+      % eble once(...)?            
+       Spc=Vs 
+     ; Spc=Fs).
+
+kv_sen_fin('DD',Spc) <= &kv_adj('D',adj) ~ &kv_subst('D',Spc).
+kv_sen_fin('DD',Spc) <= &kv_adv('D',adv) ~ &kv_adj('D',Spc).
+kv_sen_fin('DD',Spc) <= &kv_adv('D',adv) ~ &kv_vrb('D',Spc).
+
+kv_adv('D',adv) <= &rv_sen_fin(_,adv).
+kv_adv('D',adv) <= &rv_sen_fin(_,adj). % hela -> hele
+kv_adv('D',adv) <= &rv_sen_fin(_,adv) / f(_,adv). % supre, supren
+
+kv_vrb('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,verb).
+kv_adj('D',adj) <= &rv_sen_fin(_,adj).
+kv_subst('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,subst).
 
 % PLIBONIGU: oni povus pli flekseble tion kalkuli rikure
 % el la reguloj mem...(?)
