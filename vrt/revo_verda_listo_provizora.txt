@@ -2570,7 +2570,7 @@ parsek: pc
 part: Im, Re, plejbonon
 partic: ul
 parti: Anna, Andrejevna
-pas: Volapük, pli-malpli, ha, Herhor
+pas: pasita, Volapük, pli-malpli, ha, Herhor
 pasion: Bach
 paskal: Blaise, Pa
 paspartu: paper
@@ -2796,7 +2796,7 @@ progre: Henrik, Seppik, iom-post-ioma, Stravinskij, Prokofjev
 progresiv: iom-post-ioma
 pro: Zamenhof, David, II, prokulpa, promemora, propeka, promalĉastaj, proprunte, proparolanta, propeti
 projek1: Kenzo, Tange, Zamenhof
-projek: p-a, opon, pli-malpli, Bricard, projekciaĵo, retroprojekciilo, OM
+projek: p-a, opon, pli-malpli, Bricard, projeciaĵo, retroprojekciilo, OM
 prokla: Voss
 promeci: Pm
 promes: sankt

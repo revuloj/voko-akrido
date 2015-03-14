@@ -167,6 +167,40 @@ p(mem,adj).
 p('kvazaŭ',_). % simile al pseŭdo
 p(tro,adj). % troabundeco
 
+/*************
+prepozicioj uzataj prefikse kun verboj
+*************/
+
+% PLIBONIGU:
+% dependas parte de la verbo, ĉu tia derivado
+% estas transitiva aŭ ne(?)
+p(al,tr,verb). % ekz. aliri, alveni
+p('antaŭ',tr,verb). % antaŭvidi
+p(pri,tr,verb). % ekz. priskribi
+p(apud,tr,verb). % apudmeti
+p('ĉe',tr,verb). % ĉeesti
+p('ĉirkaŭ',tr,verb). % ĉirkaŭflugi
+p(de,_,verb). % deveni (ntr), deteni(tr)
+p(el,tr,verb). % eliri
+p(en,tr,verb). % enhavi
+p(ĝis,tr,verb). % ĝisvivi
+p(inter,tr,verb). % interrompi
+p('kontraŭ',tr,verb). % kontraŭstari
+p(krom,tr,verb). % krompagi
+p(kun,_,verb). % kunludi (ntr), kunporti (tr)
+p('laŭ',tr,verb). % laŭiri
+p(per,tr,verb). % perforti, perlabori
+p(por,tr,verb). % porpeti
+p(post,tr,verb). % postpagi
+p(preter,tr,verb). % preteriri
+p(pri,tr,verb). % priparoli
+p(pro,tr,verb). % propeti
+p(sub,tr,verb). % subteni
+p(super,tr,verb). % superflugi
+p(sur,tr,verb). % surmeti
+p(tra,tr,verb). % trakuri
+p(trans,tr,verb). % transpagi 
+
 /**************
  * la sekvaj fakte ne estas prefiksoj,
  * sed uzataj en kunderivado (ekz. sen-dom-a, sed ne
@@ -185,7 +219,8 @@ p('laŭ',adj,subst).
 % chu super/sub estas kunderivado au prefikso au ambau: komparu super/bela, super+rigarda
 p(super,adj,adj).
 p(super,adj,adv).
-%p(super,_,subst). 
+%p(super,_,subst).
+p(sur,adj,subst). 
 
 p('kontraŭ',adj,subst).
 p(en,adj,subst).
@@ -197,7 +232,6 @@ p('ĉe',adj,subst).
 p('ĉirkaŭ',adj,subst).
 
 p(per,adv,subst).
-p(pri,tr,verb). % ekz. priskribi
 
 p(dum,adj,subst).
 p(dum,adv,verb).

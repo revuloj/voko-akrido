@@ -121,3 +121,17 @@ testoj_sufiksoj :-
   t1("rampulo",'ramp/ul/o',best);
   t1("neparhufulo",'ne/par-huf/ul/o',best);
   t1("drinkulo",'drink/ul/o',best).
+
+testoj_kunmeto :-
+  % malĝustaj kunmetoj : au signu tion per ~
+  tk("plaĉivola",'plaĉ/i~vol/a',adj);
+  tk("grandsinjoro",'grand~sindjor/o',best);
+  tk("altmontaro",'alt~mont/ar/o',subst);
+  tk("rizplanti",'riz~plant/i',verb);
+  tk("infankaresi",'infan~kares/i',verb).
+  % au redonu kiel neanalizeblaj
+  tn("plaĉivola");
+  tn("grandsinjoro");
+  tn("altmontaro");
+  tn("rizplanti");
+  tn("infankaresi").
