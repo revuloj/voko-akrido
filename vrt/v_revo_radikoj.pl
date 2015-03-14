@@ -360,6 +360,7 @@ r('vomit',subst).
 r('vombat',subst).
 r('vom',tr).
 r('volv',tr).
+r('volut',subst).
 r('volupt',subst).
 r('volumen',subst).
 r('volum',subst).
@@ -442,6 +443,7 @@ r('vina',subst).
 r('vin',subst).
 r('vimpl',subst).
 r('vimen',subst).
+r('vimb',subst).
 r('vilaĝ',subst).
 r('vila',subst).
 r('vil',adj).
@@ -1363,6 +1365,7 @@ r('strig',subst).
 r('strid',verb).
 r('stri',subst).
 r('streĉ',tr).
+r('stret',adj).
 r('streptomicin',subst).
 r('strek',tr).
 r('streb',ntr).
@@ -1555,6 +1558,7 @@ r('spatel',subst).
 r('spat',subst).
 r('spasm',subst).
 r('spark',subst).
+r('spared',subst).
 r('spar',subst).
 r('spaniel',subst).
 r('span',subst).
@@ -1911,6 +1915,7 @@ r('sekvojadendr',subst).
 r('sekvoj',subst).
 r('sekvestraci',verb).
 r('sekvestr',tr).
+r('sekvenc',subst).
 r('sekv',tr).
 r('sekur',adj).
 r('sekundar',adj).
@@ -2022,6 +2027,7 @@ r('samb',subst).
 r('samari',subst).
 r('sam',adj).
 r('salvi',subst).
+r('salvelin',subst).
 r('salvelen',best).
 r('salvador',subst).
 r('salv',subst).
@@ -2102,6 +2108,7 @@ r('rukul',verb).
 r('rukt',ntr).
 r('ruin',subst).
 r('rugbe',subst).
+r('ruf',adj).
 r('rudr',subst).
 r('ruditap',subst).
 r('rudiment',adj).
@@ -2345,6 +2352,7 @@ r('rege',subst).
 r('regal',tr).
 r('reg',tr).
 r('refut',tr).
+r('refren',subst).
 r('refrakt',tr).
 r('reflektor',subst).
 r('reflekt',tr).
@@ -2521,6 +2529,8 @@ r('pubert',subst).
 r('puber',adj).
 r('pub',subst).
 r('pterid',subst).
+r('psiĥologi',subst).
+r('psiĥolog',subst).
 r('psikoz',subst).
 r('psikosomat',adj).
 r('psikopati',subst).
@@ -2639,6 +2649,7 @@ r('produkt',tr).
 r('prodrom',subst).
 r('prodig',tr).
 r('prod',subst).
+r('procioned',subst).
 r('procion',subst).
 r('procez',subst).
 r('procesor',subst).
@@ -2670,6 +2681,7 @@ r('primar',adj).
 r('prim',subst).
 r('prikl',verb).
 r('preĝ',ntr).
+r('prezident',subst).
 r('prezid',tr).
 r('prezent',tr).
 r('prezenc',subst).
@@ -3325,6 +3337,7 @@ r('palis',subst).
 r('palinured',subst).
 r('palinur',best).
 r('palindrom',subst).
+r('palimpsest',subst).
 r('paliativ',subst).
 r('paletr',subst).
 r('paleozoik',subst).
@@ -3352,9 +3365,9 @@ r('pajac',subst).
 r('pagured',subst).
 r('pagur',best).
 r('pagum',best).
-r('pagr',subst).
+r('pagr',best).
 r('pagod',subst).
-r('pagel',subst).
+r('pagel',best).
 r('pagan',subst).
 r('pagaj',subst).
 r('pag',tr).
@@ -4385,6 +4398,7 @@ r('male',subst).
 r('maldiv',subst).
 r('malari',subst).
 r('malakit',subst).
+r('malaj',adj).
 r('makzel',subst).
 r('makulatur',subst).
 r('makul',subst).
@@ -4402,6 +4416,7 @@ r('makro',subst).
 r('makler',ntr).
 r('makis',subst).
 r('makiavel',adj).
+r('maket',subst).
 r('makedon',subst).
 r('makaroni',subst).
 r('makaron',subst).
@@ -4870,6 +4885,7 @@ r('kut',subst).
 r('kusp',tr).
 r('kuskus',subst).
 r('kusen',subst).
+r('kurŝ',subst).
 r('kurĉatovi',subst).
 r('kurz',subst).
 r('kurtin',subst).
@@ -6511,6 +6527,7 @@ r('hiphop',subst).
 r('hiperurani',subst).
 r('hipertrofi',subst).
 r('hipertiroidism',subst).
+r('hipertekst',subst).
 r('hiperon',subst).
 r('hiperikac',subst).
 r('hiperik',subst).
@@ -7323,6 +7340,7 @@ r('fojn',subst).
 r('foj',subst).
 r('foir',subst).
 r('foin',best).
+r('focen',subst).
 r('fobi',subst).
 r('flut',subst).
 r('flustr',tr).
@@ -9111,6 +9129,7 @@ r('batat',subst).
 r('batalion',subst).
 r('batal',ntr).
 r('batak',subst).
+r('bat',tr).
 r('baston',subst).
 r('bastion',subst).
 r('bastard',subst).
@@ -9487,7 +9506,6 @@ r('argon',subst).
 r('argil',subst).
 r('argan',subst).
 r('arest',tr).
-r('areopag',subst).
 r('areometr',subst).
 r('aren',subst).
 r('arek',subst).
@@ -9510,6 +9528,7 @@ r('araŭkari',subst).
 r('aranĝ',tr).
 r('araneed',subst).
 r('arane',subst).
+r('arame',adj).
 r('araliac',subst).
 r('arakid',subst).
 r('arak',subst).
@@ -10085,7 +10104,7 @@ r('aborigen',subst).
 r('abon',tr).
 r('abomen',tr).
 r('abolici',tr).
-r('abol',verb).
+r('abol',tr).
 r('aboc',subst).
 r('abnegaci',subst).
 r('ablativ',subst).

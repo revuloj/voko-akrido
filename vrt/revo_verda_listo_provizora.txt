@@ -2837,10 +2837,9 @@ puf: Plenblovita, plenblovita
 pulk: pulkvo, kvarjaraĝe
 puls: pp
 pump: Ant
-punk: aj
+punk: aj, eks-lernejanoj
 punkt: ĉi-lasta, µm, laŭ/el
 purgat: Dante
-pur: misan
 purim: Ester
 purita: Dante, Milton
 pusxkin: Onegin, plejparte
@@ -3154,7 +3153,7 @@ skot: land, uj
 skoti: fiŝistoj-maristoj
 skotisx: Ĵozef, Dede, Kerbeuf
 skrap: skrap-skrap-pecojn
-skrib: Guozhu, Vd, Knut, dedekstraj, desupraj, desubaj, Misa
+skrib: Guozhu, Vd, Knut, dedekstraj, desupraj, desubaj
 skurgx: Väinämöinen
 skut: Marwine
 slang: kabei
@@ -3440,7 +3439,7 @@ tip: Optima, Helvetica, Elijah
 tipograf: S-ro, Polgár, Tipograf-Lernejo
 tipogr: liter
 tipologi: Kimura, Goro, Christoph
-tiraljor: tirailleur, Z-radikaro, Wüster, misa
+tiraljor: tirailleur, Z-radikaro, Wüster
 tir: Izrael, Kerubjev, Margaritan
 titan1: Ti
 tizan: kurac
@@ -3596,7 +3595,7 @@ variab: stokast, ĉi-okaze
 varian1: X-E, Var, X-E, Y-E, Kovar, ko, PIV-a
 vari: Auld, Guglielminetti, ĉi-subaj, Guangxi
 varingjen: pers/ist', Kajam-tradukoj, III, Varengjeno
-varm: Bokarev, Krause, misa, denove, PIV-ekzemplo, mal, Ah, Clemency, Volapük, T-ĉemizon
+varm: Bokarev, Krause, denove, PIV-ekzemplo, mal, Ah, Clemency, Volapük, T-ĉemizon
 varsovi: Varsovi
 vart: Song, Qingling
 vast: pli-malpli, sinx, Vd, aĵ

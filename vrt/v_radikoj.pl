@@ -134,6 +134,7 @@ r('in',best).
 r('ind',adj).
 r('ing',subst).
 r('mal',subst).
+r('mis',adj).
 r('obl',subst).
 r('pra',adj).
 r('re',adv).
