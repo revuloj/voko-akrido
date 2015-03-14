@@ -2656,7 +2656,7 @@ pirit: CuFeS
 pirog: Ĥosravi
 piruet: Tshombe
 pis: kakas
-pistil: Tournefort
+pistil: Tournefort, pist/il/o
 plac: Baduroc, dume, Tikal
 placx: Zamenhof, plaĉivola
 plad: Kant, Yvonne

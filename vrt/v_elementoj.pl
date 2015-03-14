@@ -114,50 +114,9 @@ p(re,verb).
  * prepozicioj kiel prefiksoj
 ****************/
 
+% pri transitivigaj prefikse uzataj prepozicioj vd. malsupre
+p(de,verb).
 p(ekster,subst). % eksterlando
-
-
-/********** Vidu pli malsupre p(el,tr,verb) ktp.
-% MANKO:
-% ofte ili transitivigas verbon,
-% oni devus montri aŭ per tria argumento "Al"
-% aŭ uzi apartan predikaton, ekz. pp(X,verb) -> tr
-
-% transitivigaj (?): al, apud, ĉe, el, en, super, sub, preter
-% ne transitivigaj (?): de, kun...? demeti/deteni (tr -> tr), deveni (ntr), desalti (ntr -> tr)
-%                     kuniri/kunsidi (ntr), kuntiri (tr->tr)
-
-p(al,verb).
-p('antaŭ',verb).
-%p('antaŭ',adv). % chu prefikso au kunderivado?
-p(apud,verb).
-p('ĉe',verb).
-p('ĉirkaŭ',verb).
-p(de,verb).
-
-%p(ekster,verb). % ekster...i ?
-
-p(el,verb).
-p(en,verb).
-p('ĝis',verb).
-p(inter,verb).
-p('kontraŭ',verb).
-p(krom,verb).
-p(kun,verb).
-p('laŭ',verb).
-p(post,verb).
-p(preter,verb).
-% p(pri,verb).
-p(sub,verb).
-p(sub,subst). 
-p(super,verb).
-p(super,subst).
-p(sur,verb).
-p(tra,verb).
-p(trans,verb).
-****/
-
-p(de,verb).
 p(kun,verb).
 p(sub,subst).
 p(super,subst).
@@ -177,7 +136,7 @@ p(tiel,adj). %???
 
 p(nun,subst).
 p(mem,verb).
-p(mem,adj).
+% p(mem,adj). vd. kunderivado mem+star/a
 p('kvazaŭ',_). % simile al pseŭdo
 p(tro,adj). % troabundeco
 
@@ -215,6 +174,12 @@ p(sur,tr,verb). % surmeti
 p(tra,tr,verb). % trakuri
 p(trans,tr,verb). % transpagi 
 
+/****
+adverboj uzataj prefikse kun verboj
+***/
+
+p(mem,adj,verb).
+
 /**************
  * la sekvaj fakte ne estas prefiksoj,
  * sed uzataj en kunderivado (ekz. sen-dom-a, sed ne
@@ -236,17 +201,13 @@ p('ĉirkaŭ',adj,subst).
 p(dum,adj,subst).
 p(dum,adv,verb).
 
-
 p('kontraŭ',adj,subst).
 
 p('laŭ',adj,adv).
 p('laŭ',adj,adj).
 p('laŭ',adj,subst).
 
-
-
 p(pri,adj,subst).
-
 
 p(per,adv,subst).
 p(sen,adj,_).
@@ -260,7 +221,6 @@ p(super,adj,adv).
 p(sur,adj,subst). 
 
 p(trans,adj,subst).
-
 
 p('ĉiu',adj,subst). % de ĉiu jaro -> ĉiujara
 p('tiu',adj,subst). % de tiu jaro -> tiujara
