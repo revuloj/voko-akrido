@@ -155,6 +155,9 @@ p(tra,verb).
 p(trans,verb).
 ****/
 
+p(de,verb).
+p(kun,verb).
+
 /*************
  * adverboj kiel prefiksoj
 **************/
@@ -187,14 +190,14 @@ p(pri,tr,verb). % ekz. priskribi
 p(apud,tr,verb). % apudmeti
 p('ĉe',tr,verb). % ĉeesti
 p('ĉirkaŭ',tr,verb). % ĉirkaŭflugi
-p(de,_,verb). % deveni (ntr), deteni(tr)
+%% p(de,_,verb). % deveni (ntr), deteni(tr) -> vidu supre sub prefiksoj, char konservas (ne)transitivecon
 p(el,tr,verb). % eliri
 p(en,tr,verb). % enhavi
 p(ĝis,tr,verb). % ĝisvivi
 p(inter,tr,verb). % interrompi
 p('kontraŭ',tr,verb). % kontraŭstari
 p(krom,tr,verb). % krompagi
-p(kun,_,verb). % kunludi (ntr), kunporti (tr)
+%% p(kun,_,verb). % kunludi (ntr), kunporti (tr) -> vidu supre sub prefiksoj, char konservas (ne)transitivecon
 p('laŭ',tr,verb). % laŭiri
 p(per,tr,verb). % perforti, perlabori
 p(por,tr,verb). % porpeti
@@ -215,23 +218,9 @@ p(trans,tr,verb). % transpagi
  * ...)  
  * prepozicioj kaj pronomoj...
 **************/
+p('ambaŭ',adj,subst). % per ambaŭ manoj -> ambaŭmane
+p('ambaŭ',adj,verb). % tranĉi ambaŭ -> ambaŭtranĉe
 
-p(sen,adj,_).
-%p(sen,adj,subst).
-
-p(pri,adj,subst).
-
-p('laŭ',adj,adv).
-p('laŭ',adj,adj).
-p('laŭ',adj,subst).
-
-% chu super/sub estas kunderivado au prefikso au ambau: komparu super/bela, super+rigarda
-p(super,adj,adj).
-p(super,adj,adv).
-%p(super,_,subst).
-p(sur,adj,subst). 
-
-p('kontraŭ',adj,subst).
 p(en,adj,subst).
 p(ekster,adj,subst).
 p(inter,adj,subst).
@@ -240,15 +229,34 @@ p(apud,adj,subst).
 p('ĉe',adj,subst).
 p('ĉirkaŭ',adj,subst).
 
-p(per,adv,subst).
-
 p(dum,adj,subst).
 p(dum,adv,verb).
 
+
+p('kontraŭ',adj,subst).
+
+p('laŭ',adj,adv).
+p('laŭ',adj,adj).
+p('laŭ',adj,subst).
+
+
+
+p(pri,adj,subst).
+
+
+p(per,adv,subst).
+p(sen,adj,_).
+%p(sen,adj,subst).
+
+p(sub,adj,subst). 
+% chu super/sub estas kunderivado au prefikso au ambau: komparu super/bela, super+rigarda
+p(super,adj,adj).
+p(super,adj,adv).
+%p(super,_,subst).
+p(sur,adj,subst). 
+
 p(trans,adj,subst).
 
-p('ambaŭ',adj,subst). % per ambaŭ manoj -> ambaŭmane
-p('ambaŭ',adj,verb). % tranĉi ambaŭ -> ambaŭtranĉe
 
 p('ĉiu',adj,subst). % de ĉiu jaro -> ĉiujara
 p('tiu',adj,subst). % de tiu jaro -> tiujara
@@ -259,10 +267,6 @@ p('ĉia',adj,subst). % de ĉia speco -> ĉiaspeca
 p('tia',adj,subst). % de tia speco -> tiaspeca
 p('kia',adj,subst). % de kia speco -> kiaspeca
 p('nenia',adj,subst). % de nenia speco -> neniaspeca
-
-% MANKO: necesas reguloj por posedaj pronomoj:
-% miaflanke
-% viavice
 
 /**************
  *  j-pronomoj 

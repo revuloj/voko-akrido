@@ -10,6 +10,14 @@
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 :- op( 500, yfx, user:(~) ). % signas disigindajn vortojn
 
+/**************************************************
+pri vortfarado ĝenerale estas pluraj diversopiniaj klarigoj, vd. ekz.:
+
+  - http://akademio-de-esperanto.org/aktoj/aktoj1/vortfarado.html
+  - L. Mimó: Kompleta Lernolibro de Regula Esperanto, lec. 25 kaj sekvaj
+***********************************************/
+
+
 %:- retract(gra_debug(false)).
 %gra_debug(true).
 
@@ -247,25 +255,18 @@ vorto(nn,nombr) <= v(N1,nombr) * v(mil,nombr) ~> cifero(N1).
 
 % ekz. dom-hund/o, ..., preferu dupartajn kunmetitajn
 vorto('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
-vorto('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
 
 % foje funkcias apliki prefiksojn nur al jam kunmetita vorto
 % ekz. ne/(progres-pov/a)
-vorto(pAP,Spc) <= p(_,De) / &kunmetita(_,Spc) ~> subspc(Spc,De).
+vorto(pAP,Spc) <= p(_,De) / &kunmetita2(_,Spc) ~> subspc(Spc,De).
 
 % preferu dupartajn kunmetitajn...
-kunmetita('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
+kunmetita2('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
 
 % kunmetitaj per nomoj, ekz. Centr-Afriko
 % PLIBONIGU: momente rekonighas nur centr-Afriko per
 % minuskligo en analizilo3
-kunmetita('AMf',Spc) <= &antauvorto('D-',_) - &postvorto('Nf',Spc).
-
-% plurpartaj...
-kunmetita('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
-antauvortoj('AA',Spc) <= &antauvorto(_,_) - &antauvorto(_,Spc).
-antauvortoj('A+',Spc) <= &antauvorto(_,_) - &antauvortoj(_,Spc).
-
+kunmetita2('AMf',Spc) <= &antauvorto('D-',_) - &postvorto('Nf',Spc).
 
 antauvorto('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,subst).
 antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_,Spc) ~> subspc(Spc,subst).
@@ -321,6 +322,27 @@ kv_adv('D',adv) <= &rv_sen_fin(_,adv) / f(_,adv). % supre, supren
 kv_vrb('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,verb).
 kv_adj('D',adj) <= &rv_sen_fin(_,adj).
 kv_subst('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,subst).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%% kunmetitaj vortoj pli ol duradikaj
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+vorto('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
+
+% foje funkcias apliki prefiksojn nur al jam kunmetita vorto
+% ekz. ne/(progres-pov/a)
+vorto(pAP,Spc) <= p(_,De) / &kunmetita_pli(_,Spc) ~> subspc(Spc,De).
+
+% plurpartaj...
+kunmetita_pli('A+P',Spc) <= &antauvortoj(_,_) - &postvorto(_,Spc).
+antauvortoj('AA',Spc) <= &antauvorto(_,_) - &antauvorto(_,Spc).
+antauvortoj('A+',Spc) <= &antauvorto(_,_) - &antauvortoj(_,Spc).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%% minimumaj kaj maksimumaj longecoj 
+%%% por plirapidigi la analizadon
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 % PLIBONIGU: oni povus pli flekseble tion kalkuli rikure
 % el la reguloj mem...(?)
