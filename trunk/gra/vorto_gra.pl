@@ -129,8 +129,8 @@ rv_sen_suf(pr,Spc) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De).
 rv_sen_suf(pD,Spc) <= p(_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De).
 
 % derivado per prepozicioj uzataj prefikse
-rv_sen_suf(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb), subspc(Al,verb).
-rv_sen_suf(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb), subspc(Al,verb).
+rv_sen_suf(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
+rv_sen_suf(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
 
 % radika vorto sen finaĵo (sed kun afiksoj)
 rv_sen_fin(r,Spc) <= &rad(_,Spc). 
