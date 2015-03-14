@@ -108,7 +108,7 @@ rad(r_,subst) <= r(_,nombr). % tri -> trio
 % adjektivigo de adverboj
 rad(r_,adj) <= r(_,adv). % bele -> bela -> belulo, ( super -> super/a -> superulo ?)
 
-% permesu / post la radiko, speciale por la kapvortoj de Revo
+% permesu '/' post la radiko, speciale por la kapvortoj de Revo
 rad('r/',Spc) <=  r(_,Spc) / os(_) ~>  Spc \= suf, Spc \= pref.
 
 % minusklaj nomradikoj uziĝas kiel ordinaraj
@@ -121,8 +121,8 @@ rv_sen_suf(pr,Spc) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De).
 rv_sen_suf(pD,Spc) <= p(_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De).
 
 % derivado per prepozicioj uzataj prefikse
-rv_sen_suf(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb).
-rv_sen_suf(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb).
+rv_sen_suf(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb), subspc(Al,verb).
+rv_sen_suf(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb), subspc(Al,verb).
 
 % radika vorto sen finaĵo (sed kun afiksoj)
 rv_sen_fin(r,Spc) <= &rad(_,Spc). 
@@ -155,7 +155,8 @@ vorto('Kf',Fs) <= &kdrv(_,_) / f(_,Fs) ~> (Fs = adv ; Fs = adj).
 %       Spc=Vs 
 %     ; Spc=Fs).
 
-% foje funkcias apliki sufiksojn nur post kunderivado, ekz. (sen+pied)/ul
+% foje funkcias apliki sufiksojn nur post kunderivado, ekz. (sen+pied)/ul,
+% (ekster+land)/an
 vorto('Vf',Spc) <= &vrt_sen_fin(_,Vs) / f(_,Fs) 
   ~> (subspc(Vs,Fs),  
       % eble once(...)?            
@@ -176,20 +177,49 @@ kdrv(rr,adj) <= r(_,ASpc) + r(_,VSpc) ~> (ASpc = adv ; ASpc = adj), subspc(VSpc,
 % krome misanalizas kin/e-arto, vid/e-arto
 %%% kdrv(vr,VSpc) <= &vorto(_Adv,adv) ~ r(_Verb,VSpc) ~> subspc(VSpc,verb).
 
-% kunderivado per adjektivoj, ekz. multlingva
-kdrv(rr,adj) <= r(_,adj) + r(_,SSpc) ~> subspc(SSpc,subst).
+% kunderivado per adjektivoj, ekz. multlingva, anglalingva
+% PLIBONIGU: eble permesu ech rv_sen_fin, do kunderivado per derivitaj substantivoj
+% necesas ekzemploj...
+kdrv(rr,adj) <= &kadj(_,adj) + &rad(_,SSpc) ~> subspc(SSpc,subst).
 
 % kunderivado per pronomo: 
 
 %   per ambaŭ manoj -> ambaŭ+mane
-kdrv(vr,adj) <= v(_,pron) + r(_,SSpc) ~> subspc(SSpc,subst).
-% PLIBONIGU: necesas permesi substantivigi verbojn
-% sed pro verbigo de substantivoj en vortaro3.pl momente riskas senfinan ciklon:
-%   al tiu celo -> tiu+cel/a (tamen verba radiko cel'i)
-%   je tia okazo -> tia+okaz/e, necesus substantivigi okaz'
-kdrv(ur,adj) <= u(_,_) + r(_,SSpc) ~> subspc(SSpc,subst).
+kdrv(vr,adj) <= v(_,pron) + &rad(_,SSpc) ~> subspc(SSpc,subst).
+
+%   al tiu celo -> tiu+cel/a 
+%   je tia okazo -> tia+okaz/e
+kdrv(ur,adj) <= u(_,_) + &rad(_,SSpc) ~> subspc(SSpc,subst).
 % ne scias, ekzemploj?...:
 %kdrv(ir,adj) <= i(_,_) + r(_,SSpc) ~> subspc(SSpc,subst).
+
+kadj('D',adj) <= &rv_sen_fin(_,adj).
+kadj('D',adj) <= &rv_sen_fin(_,subst). % adjektivigo de substantivoj anglo -> angl/a, 
+                                     % eble faru per &rad anstat &kadj?
+kadj('Dc',adj) <= &rv_sen_fin(_,adj) / c(_,adj).
+kadj('Dc',adj) <= &rv_sen_fin(_,subst) / c(_,adj). % adjektivigo de substantivoj anglo -> angla
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%% apudmetitaj vortoj
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PLIBONIGU: pli efike estus, se gramatiko permesus rekte esprimi:
+% vorto(_Spc) '--' vorto(_,Spc) % alternative op !-! ?-? -- |-| 
+% splitigante tuj per '-'
+
+% KOREKTU: enestas senfina rekuro per "vorto"
+vorto('V-V',Spc) <=  &am_antau_subst(_,_) - &vrt(_,Spc) ~> subspc(Spc,subst).
+am_antau_subst('V-',Spc) <= &vrt(_,Spc) - ls(_) ~> subspc(Spc,subst).
+
+vorto('V-V',Spc) <=  &am_antau_adj(_,_) - &vrt(_,Spc) ~> subspc(Spc,adj).
+am_antau_adj('V-',Spc) <= &vrt(_,Spc) - ls(_) ~> subspc(Spc,adj).
+
+vrt('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs) 
+  ~> (subspc(Vs,Fs),  
+      % eble once(...)?            
+       Spc=Vs 
+     ; Spc=Fs).
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kunmetitaj vortoj
@@ -248,9 +278,26 @@ postvorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs)
      ; Spc=Fs).
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%% kuntiritaj vortoj
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% dikfingro -> dik~fingr/o
+% sekvinbero -> sek~vin-ber/o
+% bundpego -> bunt~peg/o
+% malbonago -> mal/bon~ag/o
+% junedzo -> jun~edz/o 
+% helruĝa -> hel~ruĝ/a
+% malsupreniri -> mal/supre/n~ir/i
+% depost -> de~post
+% ekde -> ek~de
+% tiujn meti sur "bluan liston" ?
+
 % PLIBONIGU: oni povus pli flekseble tion kalkuli rikure
 % el la reguloj mem...(?)
 min_max_len(v,2,10).
+min_max_len('V-',3,99).
+min_max_len('V-V',7,99).
 min_max_len(pv,5,13).
 min_max_len(i,2,5).
 min_max_len(u,2,5).
@@ -269,6 +316,7 @@ min_max_len('Vf',7,99).
 min_max_len('Ks',6,99).
 min_max_len(pD,4,99).
 min_max_len(rr,4,99).
+min_max_len(rc,3,99).
 min_max_len(nn,5,8).
 min_max_len('A',2,33).
 min_max_len('A+',2,99).
