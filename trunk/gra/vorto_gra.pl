@@ -1,6 +1,6 @@
 :- ensure_loaded(gramatiko2).
 
-:- multifile rv_sen_fin/5, vorto/5.
+:- multifile rv_sen_fin/5, vorto/5, min_max_len/3.
 :- discontiguous vorto/5.
 :- dynamic min_max_len/3.
 
@@ -100,7 +100,8 @@ rad(r,Spc) <=  r(_,Spc) ~>  Spc \= suf, Spc \= pref.
 
 % substantivigo de verboj
 rad(r_,subst) <= r(_,VSpc) ~> subspc(VSpc,verb). % celi -> celo, ekz. "tiu+cel/a"
-% verbigo de substantivoj
+% verbigo de substantivoj, sed foje kauzas malghustan analizon: strat/i -> sur/strat/a
+% anstataŭ sur+strat/a
 rad(r_,tr) <= r(_,SSpc) ~> subspc(SSpc,subst). % kauzo -> kauzi, spico -> spici
 % substantivigo de nombroj
 rad(r_,subst) <= r(_,nombr). % tri -> trio
@@ -118,6 +119,10 @@ rad('m/',Spc) <= nr_(_,Spc) / os(_).
 % derivado per prefikso
 rv_sen_suf(pr,Spc) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De).
 rv_sen_suf(pD,Spc) <= p(_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De).
+
+% derivado per prepozicioj uzataj prefikse
+rv_sen_suf(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb).
+rv_sen_suf(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb).
 
 % radika vorto sen finaĵo (sed kun afiksoj)
 rv_sen_fin(r,Spc) <= &rad(_,Spc). 
@@ -143,14 +148,12 @@ nm_sen_fin('Ms',Spc) <= &nm_sen_fin(_,Ns) / s(_,Al,De) ~> drv_per_suf(Ns,Al,De,S
 
 % senfinaĵa vorto + finaĵo, t.e. derivado per finaĵo
 % ekz. ŝu/o, (en+ir)/i ...
-%
-% PLIBONIGO: eble pro optimumigo estus bone havi antau-, kaj postkondichojn
-%            momente ":- ..." efikas kiel antaukondichoj...
-vorto('Kf',Spc) <= &kdrv(_,Vs) / f(_,Fs) 
-  ~> (subspc(Vs,Fs),  
-      % eble once(...)?            
-       Spc=Vs 
-     ; Spc=Fs).
+
+vorto('Kf',Fs) <= &kdrv(_,_) / f(_,Fs) ~> (Fs = adv ; Fs = adj).
+%  ~> (subspc(Vs,Fs),  
+%      % eble once(...)?            
+%       Spc=Vs 
+%     ; Spc=Fs).
 
 % foje funkcias apliki sufiksojn nur post kunderivado, ekz. (sen+pied)/ul
 vorto('Vf',Spc) <= &vrt_sen_fin(_,Vs) / f(_,Fs) 
@@ -162,7 +165,8 @@ vorto('Vf',Spc) <= &vrt_sen_fin(_,Vs) / f(_,Fs)
 vrt_sen_fin('Ks',Spc) <= &kdrv(_,Ks) / s(_,Al,De) ~> drv_per_suf(Ks,Al,De,Spc).
 
 % kunderivado per prepozicioj (ekz. sur+strat/a)
-kdrv(pD,Al) <= p(_,Al,De) + &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
+kdrv(pD,adj) <= p(_,adj,De) + &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
+kdrv(pD,adv) <= p(_,adv,De) + &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
 
 % kunderivado per adverboj, ekz. altkreska, longdaura, plenkreska
 kdrv(rr,adj) <= r(_,ASpc) + r(_,VSpc) ~> (ASpc = adv ; ASpc = adj), subspc(VSpc,verb).
@@ -221,15 +225,15 @@ antauvortoj('AA',Spc) <= &antauvorto(_,_) - &antauvorto(_,Spc).
 antauvortoj('A+',Spc) <= &antauvorto(_,_) - &antauvortoj(_,Spc).
 
 
-antauvorto('D',Spc) <= &rv_sen_fin(_,Spc).
-antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_,Spc).
-antauvorto('D-',Spc) <= &rv_sen_fin(_,Spc) / ls(_).
+antauvorto('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,subst).
+antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_,Spc) ~> subspc(Spc,subst).
+antauvorto('D-',Spc) <= &rv_sen_fin(_,Spc) / ls(_) ~> subspc(Spc,subst).
 antauvorto(nn,Spc) <= &vorto(nn,Spc).
 
 % eble iom dubindaj ("mi-dir/i" , "ĉiu-hom/o" kompare kun kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
-antauvorto('v',Spc) <= v(_,Spc).
-antauvorto('u',Spc) <= u(_,Spc).
-antauvorto('i',Spc) <= i(_,Spc). % ĉio-pova (pova de ĉio)
+%%% antauvorto('v',Spc) <= v(_,Spc).
+antauvorto('u',Spc) <= u(_,Spc) ~> subspc(Spc,pron).
+antauvorto('i',Spc) <= i(_,Spc) ~> subspc(Spc,pron). % ĉio-pova (pova de ĉio)
 
 postvorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs) 
    ~> (subspc(Vs,Fs),  
