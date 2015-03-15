@@ -275,11 +275,14 @@ antauvorto('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,subst).
 antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_,Spc) ~> subspc(Spc,subst).
 antauvorto('D-',Spc) <= &rv_sen_fin(_,Spc) / ls(_) ~> subspc(Spc,subst).
 
+antauvorto('D',Spc) <= &pref_verb(_,Spc) ~> subspc(Spc,subst).
+antauvorto('D-',Spc) <= &pref_verb(_,Spc) / ls(_) ~> subspc(Spc,subst).
+
 % derivado per prepozicioj uzataj prefikse ĉe verboj kaj posta substantivigo
 % ekz. alveno, eliro, eldono
-antauvorto(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
-antauvorto(pr,Spc) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De). % de/ir/
-antauvorto(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
+pref_verb(pr,subst) <= p(_,_,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
+pref_verb(pr,subst) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De). % de/ir/
+pref_verb(pD,subst) <= p(_,_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
 
 antauvorto(nn,Spc) <= &vorto(nn,Spc).
 
