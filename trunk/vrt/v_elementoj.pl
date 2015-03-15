@@ -95,6 +95,11 @@ s(um,tr,_). % plenumi, brakumi, krucumi, lavumi ktp.
 ns(nj,pers).
 ns(ĉj,pers).
 
+% aparta char iom longa kaj malbonigus la
+% efikecon de sufiksanalizado (longeco 2..4)
+sn(ilion,nombr,nombr). % sufiksoj por grandaj nombroj triilino - 1000^2*3 , okiliono - 1000^2*8) 
+sn(iliard,nombr,nombr). % triiliardo - 1000 * 1000^2*3, okiliardo - 1000 * 1000^2*8
+
 /************ prefiksoj 
  (2) vortspeco, al kiu ghi estas aplikebla,
      (ordinaraj prefiskoj ne shanghas la vortspecon)
