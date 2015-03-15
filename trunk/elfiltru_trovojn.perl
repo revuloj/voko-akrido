@@ -65,6 +65,7 @@ sub elfiltru {
 	  s|(<span class=\"neanaliz\">.*?</span>)|push(@eraroj,$1)|seg;
 	  s|(<span class=\"malstrikte\">.*?</span>)|push(@eraroj,$1)|seg;
 	  s|(<span class=\"dubebla\">.*?</span>)|push(@eraroj,"$1(?)")|seg;
+          s|(<span class=\"kuntirita\">.*?</span>)|push(@eraroj,"$1")|seg;
 	}
 
 	close IN;

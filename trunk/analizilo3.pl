@@ -117,9 +117,13 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
     vortanalizo(Vorto,Ana,Spc,Rim), 
      (
        nonvar(Ana), 
-       (parto_nombro(Ana,'-',Nv), Nv>2 ; parto_nombro(Ana,'~',Nv), Nv>1)
-       *-> skribu_vorton(dubebla,Vorto,Ana,Spc)
-       ; skribu_vorton(Rim,Vorto,Ana,Spc)
+       once((
+         parto_nombro(Ana,'-',Nv), Nv>2, skribu_vorton(dubebla,Vorto,Ana,Spc)
+         ; 
+         parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(kuntirita,Vorto,Ana,Spc)
+         ; 
+         skribu_vorton(Rim,Vorto,Ana,Spc)
+       ))
      )
    ;
     skribu_vorton(neanalizebla,Vorto,_,_)
@@ -181,6 +185,11 @@ skribu_vorton(dubebla,_,Analizita,_) :-
   output(html)
   -> format('<span class="dubebla">~w</span>(?)',[Analizita])
   ; format('~w(?)',[Analizita]).
+
+skribu_vorton(kuntirita,_,Analizita,_) :-
+  output(html)
+  -> format('<span class="kuntirita">~w</span>',[Analizita])
+  ; format('~w(!)',[Analizita]).
 
 skribu_vorton(verda,Vorto,_,_) :-
   output(html)

@@ -115,6 +115,8 @@ rad(r_,tr) <= r(_,SSpc) ~> subspc(SSpc,subst). % kauzo -> kauzi, spico -> spici
 rad(r_,subst) <= r(_,nombr). % tri -> trio
 % adjektivigo de adverboj
 rad(r_,adj) <= r(_,adv). % bele -> bela -> belulo, ( super -> super/a -> superulo ?)
+% verbigo de adjektivoj
+rad(r_,verb) <= r(_,adj). % simili, ĵaluzi, utili, trankvili ktp.
 
 % permesu '/' post la radiko, speciale por la kapvortoj de Revo
 rad('r/',Spc) <=  r(_,Spc) / os(_) ~>  Spc \= suf, Spc \= pref.
@@ -128,7 +130,7 @@ rad('m/',Spc) <= nr_(_,Spc) / os(_).
 rv_sen_suf(pr,Spc) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De).
 rv_sen_suf(pD,Spc) <= p(_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De).
 
-% derivado per prepozicioj uzataj prefikse
+% derivado per prepozicioj uzataj prefikse ĉe verboj
 rv_sen_suf(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
 rv_sen_suf(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
 
@@ -272,6 +274,13 @@ kunmetita2('AMf',Spc) <= &antauvorto('D-',_) - &postvorto('Nf',Spc).
 antauvorto('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,subst).
 antauvorto('Dc',Spc) <= &rv_sen_fin(_,_) / c(_,Spc) ~> subspc(Spc,subst).
 antauvorto('D-',Spc) <= &rv_sen_fin(_,Spc) / ls(_) ~> subspc(Spc,subst).
+
+% derivado per prepozicioj uzataj prefikse ĉe verboj kaj posta substantivigo
+% ekz. alveno, eliro, eldono
+antauvorto(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
+antauvorto(pr,Spc) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De). % de/ir/
+antauvorto(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
+
 antauvorto(nn,Spc) <= &vorto(nn,Spc).
 
 % eble iom dubindaj ("mi-dir/i" , "ĉiu-hom/o" kompare kun kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
@@ -324,7 +333,7 @@ kv_sen_fin('DD',Spc) <= &kv_adv('D',adv) ~ &kv_vrb('D',Spc).
 
 kv_adv('D',adv) <= &rv_sen_fin(_,adv).
 kv_adv('D',adv) <= &rv_sen_fin(_,adj). % hela -> hele
-kv_adv('D',adv) <= &rv_sen_fin(_,adv) / f(_,adv). % supre, supren
+kv_adv('D',adv) <= &rv_sen_fin(_,_) / f(_,adv). % supre, supren
 
 kv_vrb('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,verb).
 kv_adj('D',adj) <= &rv_sen_fin(_,adj).

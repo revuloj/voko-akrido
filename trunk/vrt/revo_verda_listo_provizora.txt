@@ -2596,8 +2596,8 @@ pedolo: Kiota, ped, Ĉi-okaze, ped
 pejzag: Spomenka, Ŝtimec
 pek: Izrael, prokulpa, propeka
 pelagr: Haŭt, PP-vitaminmanko
-pel: forblovata, Hvidding, Viskum, Fussingø, Adria, iele-trapele
-pend: Kvazaŭa, senpendism
+pel: Hvidding, Viskum, Fussingø, Adria
+pend: senpendism
 pen: Fanny, ah
 penicilin: aj, Flemming
 penik: sekvinberoj
