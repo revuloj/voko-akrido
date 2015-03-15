@@ -49,7 +49,8 @@ s(at,best,tr).
 s(it,best,tr).
 s(ot,best,tr).
 s('aĉ',_,_).
-s(ad,subst,verb).
+s(ad,subst,verb). % substantivigo
+s(ad,_,verb). % ripetadi
 s('aĵ',subst,adj).
 s('aĵ',subst,verb).
 s('aĵ',subst,subst).

@@ -30,20 +30,20 @@ adici: ĉi-supra, poelementa, ij, ij, ij, poterma
 adjudik: plejeble, Poket
 admon: Izraelidojn, denove
 adolesk: Vaha, Artur, Rubinstein, ĉi-vive
-adrenalin: OH, CH, OH, CH, NH-CH
+adrenalin: OH, CH, NH-CH
 adult: Beatricon, ade, Izrael
 advent: Kock
 aed: Aedes, aegytpi
 aer: Esperanto-Asocio
 aerost: sfer
 afekci: eskstera
-afekt: Kukŝin, duonvivul', Bush, Seabra, Ŝol, Zhang, Gordens
+afekt: Kukŝin, Bush, Seabra, Ŝol, Zhang, Gordens
 afer: David, Urija, Lapenna, Hadda
 afgani: AFN
 afiks: um
 afin: αx, antieco
 afrika: affricatus, affricare, ad, fricare, ek, ek/frot/at/a, ad/amare
-afrik: ISO, CF, Brazavila, Kinŝasa, ZA
+afrik: CF, Brazavila, ZA
 agap: far
 agent: OGPU, NKVD
 ag: ĉi-lastaj
@@ -149,6 +149,7 @@ ankr: PV/PIV
 anoreksi: sinvundigo
 anselm: Eriksson
 anstat: II, Rafael, Lemuel
+antark: Antarktio
 antaux: Volapük, Jakob, Isaak, Aj, Kerubjev, II, Angolm, abs, Aĥimaac, Abner, Joab, ŝipmal, Sargon, III, Xon, Xo, antaŭXi, Y-o, Xi, antaŭXi, Y-on, Z-o, antaŭXo, antaŭXa, Xa, antaŭX
 antibi: aj, aj
 antigen: T-ĉela
@@ -165,8 +166,8 @@ antverp: 'E, 'N
 apacx: Belleville
 aparat: samcelanoj, pens
 apart: ĉi-supra, Hausdorff, ĉi-lastan, сепарабельный, Vd
-apelac1: apelaci
-apel: apeli
+apelac1: apelaci, apelac/i
+apel: apeli, apel/i
 apenau: apenaŭa, apenaŭan
 aperit: Bertringer
 apert: pasive-stata, far
@@ -2589,18 +2590,15 @@ pend: senpendism
 pen: Fanny, ah
 penicilin: aj, Flemming
 penik: sekvinberoj
-pens: Volapük, Bahai-movado, wishful, thinking
+pens: Volapük, wishful, thinking, fantazi, taj
 pensi: Leo, Cooman
-pensilvani: setlas
 pentek: Mayor
-pent: batadante
 pentr: Chardin
 pep: pip
 peplom: Hajjat
-peptid: molekulojn-sondilojn
-perd: pruntedono, Poiome
+perd: Poiome
 perfid: Iskariotan
-per: II, DLT, III, pervoĉdona
+per: II, DLT, III
 permanent: Trockij, POP-servilo
 permes: GNUa
 permut: n-k, n-elementa, abc, acb, bac, bca, cab, cba
