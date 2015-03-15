@@ -8,7 +8,7 @@ abrakadabr: Emèric
 abrazi: Frot
 abrupt: iom-post-iom/a
 absid: αψίς, αψίδος
-abstra: pli-malpli, samkiel, PV-difinon, samkiel, ec, abstrakt, abstrahi
+abstra: PV-difinon, samkiel, ec, abstrakt, abstrahi
 ac: ac, ed, kompozitacoj
 acetil1: hidrokarbonido
 acetilhxolin: NO
@@ -64,7 +64,7 @@ ajxur: Eiffelturo
 akadem: Knaĥoĥŝveŭpsceg
 akajxu: pom, pir
 akcel: LT
-akcent: Zamenhof, pli-malpli, Ví, fónto, ámo, vívo, kúraĝúloj, káj, avénturístoj, embaráso, né, málkonfído
+akcent: Zamenhof, Ví, fónto, ámo, vívo, kúraĝúloj, káj, avénturístoj, embaráso, né, málkonfído
 akcept: Berlioz
 akord: Sara, pinĉ, is, Belial, an, israel-palestina, MKO, laŭa, atentado, duonjarcento, Esperanto-Asocio, Vilvoorde, kristan-demokrata, MKO, Taiwan
 akreci: poiomete
@@ -87,7 +87,7 @@ album: poŝtmarkalbumojn, Eugênio
 albumi1: Bright
 aleut: xvii, Wüster, Esperanta-Germana
 alfabe: legopovigi, alfabet, eau, ough, cx, ux, ig,'A', 'R' 
-algebr: pli-malpli, sigma-algebro, inkluzivantaj, Reiersøl, sigma-algebro
+algebr: sigma-algebro, inkluzivantaj, Reiersøl, sigma-algebro
 alg: Protoctistae, e-a
 algebr: alĝebro, algebrao, K', okazalgebrao, sigma-algebrao
 algxeb: alĝebr/o
@@ -178,7 +178,7 @@ aprec: ec, Thomson
 aprior: Kant, abs
 aproks: Bézier, desuba
 apsar: duondiinoj
-apud: pli-malpli, II, Bricard, Margarita, ĉi-apuda, ĉi-apuda, ĉi-malsupra, ĉi-supra, III
+apud: II, Bricard, Margarita, ĉi-apuda, ĉi-apuda, ĉi-malsupra, ĉi-supra, III
 arab: Arab, Rugxa, plejparto, Saud, Sa-ud
 aral: aj, aj
 arangx: n-elementa, n-p, n-p, ab, ac, bc, ba, ca, cb
@@ -469,7 +469,6 @@ cifer: IVXLCDM, ٠١٢٣٤٥٦٧٨٩, ABCDEF
 cigare: fum
 cigar: tabak
 cign: Cyg
-ci: pli-malpli
 cikl: n-elementa, n-elementan, n-ciklo, n-modulaj, K', Gal, K'/K, CO
 cikloi: t-sint, cost
 ciklon: km/h, km/h, desupre
@@ -483,7 +482,7 @@ cion: Zamenhof
 ciril: pp
 cirkel: Cir
 cirk: Benzo
-cirkl: pli-malpli, Ĉi-sence, Rachel, Zamenhof, David, jul
+cirkl: Ĉi-sence, Rachel, Zamenhof, David, jul
 cirkul: ade, latinidlingva
 cis: cis, mal, ĉi-flanke, cisalpa, cisdanuba, ĉi-flanke
 cisoid: xcosα, ycosα, ay
@@ -491,7 +490,6 @@ citolog: Theodor, Schwann, ŝvan
 citologi: Painter
 citozin: ADN, ARN
 citr: cistre, цистра
-civili1: pli-malpli
 cxad: Nĝameno, TD
 cxalet: Schönried
 cxam: fam
@@ -503,9 +501,9 @@ cxar: Konj, prop
 cxas: TEJO-estraro, kiele, Mnemosina
 cxast: senhonorigitan, Izrael
 cxef: ĉef, estr, samkiel, II
-cxe: Hor, Edoma, Zebulun, Raĥel, Sezotris, hom, Ŝol, Kant, Daniel, Rudolf, Krolewska, pli-malpli, mal, Melnikov, Cseh-instruado, Zamenhof, ĉi-lasta, II, ĉea, Japi, ĉeest, ant, malĉea, elde, ĉei, ĉeas, ĉeis, III, ĉeXi, Xi, ĉee, ĉeX, aĵ, Xo, ĉebrust, aĵ, Hadda, vatizita
+cxe: Hor, Edoma, Zebulun, Raĥel, Sezotris, hom, Ŝol, Kant, Daniel, Rudolf, Krolewska, mal, Melnikov, Cseh-instruado, Zamenhof, ĉi-lasta, II, ĉea, Japi, ĉeest, ant, malĉea, elde, ĉei, ĉeas, ĉeis, III, ĉeXi, Xi, ĉee, ĉeX, aĵ, Xo, ĉebrust, aĵ, Hadda, vatizita
 cxehx: Mez
-cxel: malpleja, pli-malpli, B-limfoĉeloj
+cxel: malpleja, B-limfoĉeloj
 cxemiz: T-forma, T-ĉemizojn
 cxen: opo, term, Werner, Ĉi-kampa, Weg
 cxeriz: cerasus, Lucullo
@@ -522,7 +520,7 @@ cxinesk: William, Auld
 cxingis: Ĉingis, Ajtmatov
 cxio: ĉionsciado, ĉionpova
 cxips: terpomtranĉaĵo, terpomfloko
-cxirka: Pli-malpli, Zamenhof,Szwejc, dekkvinmil, Koraĥ, Abiram, II, Bet-Elon, Gilgalon, Micpan, Sodom, Izrael, Arafat, III, ĉirkaŭXi, Xi, ĉe/al, Xi, ĉirkaŭXi, Yon, Xi, Yo, Yon, ante, Xi, ĉe/al, ĉirkaŭXi, Xo, ĉe/al, ĉirkaŭXi, Xante, Zo, Xante, Zon, ĉirkaŭXa, ĉirkaŭXo, Xon, ant
+cxirka: Zamenhof,Szwejc, dekkvinmil, Koraĥ, Abiram, II, Bet-Elon, Gilgalon, Micpan, Sodom, Izrael, Arafat, III, ĉirkaŭXi, Xi, ĉe/al, Xi, ĉirkaŭXi, Yon, Xi, Yo, Yon, ante, Xi, ĉe/al, ĉirkaŭXi, Xo, ĉe/al, ĉirkaŭXi, Xante, Zo, Xante, Zon, ĉirkaŭXa, ĉirkaŭXo, Xon, ant
 cxit: Solness, Hilde, psit, ts
 cxiz: Cae
 cxj: ĉj, nj, et, II, South
@@ -574,7 +572,6 @@ dekolt: V-forma
 delega: Louis, Couturat, Leau
 deleg: Hroar
 delfen: Del
-delt: Pli-malpli
 demago1: estranto
 demarkaci: Yinzhen, Aureliano, Úrsula
 demenc: Sehei
@@ -900,7 +897,7 @@ fernand: Stanislav
 feroc: ratobuĉulo
 f: maj, fa, F-kleo, F-truoj, II, fo
 fiancx: Malanja'n
-fibr: Pli-malpli, elde
+fibr: elde
 fidel: sindoneco, vivkunul, in, edz, in, amant, in, amorant, in, sunleviĝlandon, Astarte
 figar: Roberto-Diablo, ĉio-farulon
 figur: Tabor, ĉap
@@ -978,7 +975,6 @@ fotosintez: karbondioksido
 fragme: Rompopeco
 frakci: a/b, ono, fracio, Bricard, pQ, Pq, Bricard, n-uma, ono
 frak: sesdekjara
-fram: pli-malpli, trae, pli-malpli
 franc: Boulogne, Mer, sekvinberaj
 franci1: Mitterrand
 franci2: Fr
@@ -988,7 +984,7 @@ frankfurt: 'E, 'N
 frap: ant, Vanessa, polychloros
 frat: boparencoj, Zoja, Petrovna
 frazeologi: Zamenhof, rusa-pola-germana-franca
-fraz: pli-malpli, Anfisa
+fraz: Anfisa
 frekve2: atentante, Tavi
 frekve: frekvenc-morfemaro, onoj
 fremd: Jakob
@@ -1095,7 +1091,7 @@ gotik: Anna
 grad: K', grad, adv, iom-post-ioma, n-a-grada
 gradient: grad
 gradus: gr, gon
-grafe: n-grafeo, n-opeĝa, graf, pli-malpli, pluropeĝaj, pluropeĝa, graphe, d'une, n-grafeo, n-opeĝa, n-Grafeo, ĉi-supra
+grafe: n-grafeo, n-opeĝa, graf, pluropeĝaj, pluropeĝa, graphe, d'une, n-grafeo, n-opeĝa, n-Grafeo, ĉi-supra
 grafei: Königsberg-aj
 grafem: Ralfo
 grafen: Andre, Geim, Konstantin, Novoselov
@@ -1105,7 +1101,7 @@ grafit: grize-nigra
 grafiti: mur
 grak: grak, aux, grak-grak-grak-stultuleto
 gramat: obl, on, op, nombronaj, as, is, os, us, ant, int, ont, at, it, ot, aŭtem, dos, ud, Tesnière, Noam, Chomsky
-grand: Schiller, pogrande, pomalgrande, pli-malpli
+grand: Schiller, pogrande, pomalgrande
 granit: Nemere, István
 gratif1: gratif, ik
 graved: Lot
@@ -1157,8 +1153,7 @@ hadit: Al-Azhar, hadis
 hafni: Hf, transir
 hag: 'E, 'N, Lapenna
 ha: lo
-hak: pli-malpli, ligno-ŝufaristo, Dongguj, Bingĉen, Abimeleĥ
-haladz: pli-malpli
+hak: ligno-ŝufaristo, Dongguj, Bingĉen, Abimeleĥ
 halal: Roubaix
 halovin: Ŭut
 halter: pluv
@@ -1168,7 +1163,7 @@ hampsxir: Hampton
 hanafism: plejmulto
 hant: Maŭmaŭ
 hapaks: Piĉ
-har: pli-malpli, Berenica, Com, Janica
+har: Berenica, Com, Janica
 harian: Harjano
 harlem: 'E, 'N
 harmon1: ĉe-ekrane, man-en-mane
@@ -1226,7 +1221,6 @@ hipere: n-dimensiaj
 hiper: hiper, hipo
 hiphop: aj
 hipi: aj, aj
-hipnot: pli-malpli
 hipo: hipo, hipo, hiper
 hipolit: Michon
 hipost: Jn, Heb, Jn, sub-stantia, hypo-stasis, ουσία
@@ -1307,7 +1301,6 @@ id1: Louis, Beaufront, Louis, Couturat, Tolkien, Novial
 ide: Zamenhof, Hegel
 ident: ab
 id: id, II, Berveling, Hassan, Mohammed, Ben
-idiom: pli-malpli
 iel: iele
 ifon: Apple, iPod-on
 ig: Kp, ig, iz, rad, enloĝ, ej, mal, prep, subst, suf, kun-ordo-igi, dis-pecoj-igi, sub-ordo-igi, ordigi-kun, ordigi-sub, pecigi-dis, II, anta, inta, ata, ita, Zamenhof, german, Boirac, prezid, Akad, ig, suf, IV, III, Babel, disting, dolor, lim, IV
@@ -1369,7 +1362,7 @@ ingxeni: Don, Quijote, Mancha
 inhib: Mal, ĝu
 inhibi: Laborit
 in: in, II, virseksulo
-inic: pli-malpli, Osiris
+inic: Osiris
 inicia: Zamenhof, Lemuel, Omar
 ink: Sui
 inklin: ax, Abimeleĥ
@@ -1382,7 +1375,7 @@ inspek: Ester, Hegaj, florvarmejo
 inspir: Joab, Merodaĥ, Jedutun, Bileam, Zamenhof, Ramzes, Omar, Ŝem, Agnesa
 instal: Dan, Bakŝiŝev, Hadda, Massolit, Gribojedovo, Varankin, Pavel, Ivanov, Moresnet, Pasquale, Vanunu
 instan: Esperanto-Asocio
-instig: Ramzes, Adaha, ĉi-okaze, pli-malpli, instig, Zalmunan, Hongzhi, Falungong, Xiaolan
+instig: Ramzes, Adaha, ĉi-okaze, instig, Zalmunan, Hongzhi, Falungong, Xiaolan
 instru1: EK-paketo
 instru: Neskuĉnyj
 insul: Kaŭda, ĉe-Atlantikaj
@@ -1398,7 +1391,6 @@ intere: Boŭnan, Corsetti, BKC, Ken
 inter: Jehuda, II, ej, interrip, aĵ
 interlingva: Alexander, Gode
 interp1: Vd
-interp3: pli-malpli
 interv1: André, Martinet
 intest: baldaux, Karlo
 introvertit: Benczik
@@ -1748,7 +1740,7 @@ kompro1: Valienne, komprometi, komprometantajn
 kompro: Yuan, Shikai
 komput: Vd, unuuzula, energinedependan
 komun: plejmulto, Ekz-e, fo, ĉi-cele, kak, Izrael, onon, on, ono
-komuni1: pli-malpli, Hamul, Ŝem, lingwe, uniwersala, knabino-komsomolanino, CK, Omar, plejparte, treege, Zir-Nana, Herhor, kvardekjara, Clinton, Alla, Sem, mikrosekundoj, plejparte, Mentezufis, supre-malsupre, maldekstre-dekstre, propeka
+komuni1: Hamul, Ŝem, lingwe, uniwersala, knabino-komsomolanino, CK, Omar, plejparte, treege, Zir-Nana, Herhor, kvardekjara, Clinton, Alla, Sem, mikrosekundoj, plejparte, Mentezufis, supre-malsupre, maldekstre-dekstre, propeka
 komut: Bricard
 konced: Angolm
 koncen1: an, Vd, koncentr
@@ -1783,7 +1775,7 @@ konfuz: Ma
 kong: CG, Kongo-Léopoldville, CD
 kongre1: me
 kongru: IBM, PC, kun/je, opo, prof, Żelazny
-kon: pli-malpli, iĝ, cogitans, konat, aĵ, on, datenopo
+kon: iĝ, cogitans, konat, aĵ, on, datenopo
 konhxo: MN, OM, a/cosθ, ĉi-lasta
 konik: cosθ, ax, by, cxy, dx, ey
 konjak: Zaur
@@ -1808,7 +1800,7 @@ konste: Anti-Areso, PIV-aj
 konstr: Hiukin, Iŝtar, Merodaĥ, Minnaja, ItaEsp
 kontak: malfruantajn, recenzuntojn, Spukavatem
 kontener: ISO-normita, ISO-nomo, TEU
-kontin: ter, pli-malpli
+kontin: ter
 kontra3: Carter, Anvar, Sadat, Menaĥim, Begin, Dayton, Hobbes, Rousseau
 kontra4: plimalpli
 kontra6: denove
@@ -1834,7 +1826,7 @@ koregidor: José, Arcadio, Buendía
 kore: plejparte, Sud, Nord
 korekt: korekt, ad
 korela1: Kor, Kov
-korido: iojn, denove, Pli-malpli, du-tri, Mjasnickaja-strato, Victor, Švejk
+korido: iojn, denove, Mjasnickaja-strato, Victor, Švejk
 korife: William, Auld, Vaha, e-kulturo
 korneli: Simon, Voltimand
 korn: Cadok, Izrael, PEE, unukornulo, dukornulo
@@ -2010,7 +2002,7 @@ likvid1: flüssige, Laute, плавный, согласный
 lilipu: Swift
 lilit: Jung
 limaed: duvalvuloj
-limak: cosθ, pli-malpli
+limak: cosθ
 limes: lim, Bricard
 limnologi: ĉi-foja
 limona: Feniĉka
@@ -2224,7 +2216,6 @@ milit: ha, Jerusalem, krucmilitiro, milit, Jazeron, Holger, ekinta
 min1: ono
 minac: pp
 minesot: Mike, Seeger
-min: Pli-malpli
 miniat: Zoja, Ivanovna
 minibus: Gazel
 mini: Pb
@@ -2271,7 +2262,6 @@ monak1: Nicea, MC
 mond: Haan, Guam
 mon: Tolstoj
 monogr1: LP
-monokultur: pli-malpli
 monom: n-termo
 mononukleoz: Epstein-Barr
 monopo: Entrepren, ist, oj
@@ -2285,7 +2275,7 @@ morfe: Ipno
 mor: Izrael
 mormon: Ruby, kristandevena
 mors: Samuel
-mort: latinidlingvaj, Mer, Mer, Mortelle, mal, Pli-malpli, SPIRITO, HAMLETO, ĉi-foje, denove, Kade-Barnea, Varhun, Uzibitum
+mort: latinidlingvaj, Mer, Mer, Mortelle, mal, SPIRITO, HAMLETO, ĉi-foje, denove, Kade-Barnea, Varhun, Uzibitum
 morus: viole-nigra, jarcentaĝaj
 morv: ĉeval
 moskv: 'E, 'N
@@ -2311,7 +2301,6 @@ mus: Walt, Disney
 musked: Dumas
 muskol: Creuzfeldt-Jakob-malsano
 musx: multespecia
-mutaci: pli-malpli
 muzeolog: Bakony, Veszprém, Armand, David
 muzik: PIVa, iz, Raita, Pyhälä, muzikfakulo, Zelenka, Wolfgang, Reich
 muzikologi: Otto, Greiff, Haeusler
@@ -2351,7 +2340,6 @@ neg: Wen, Yiduo, Winter, memo, nen
 negoc: KBC
 negx: Grimm, Schwarzegg
 ne: Samkiel, Sara, Kp, JES, nen, Antef, Velikonskaja, Zamenhof
-nektarin: pli-malpli
 nenial: Adv
 neniel: Adv
 nenies: pron
@@ -2404,7 +2392,7 @@ nostal: denove, hejmveo
 nouxruz: tag-nokt-egalo, antaǔ-Noŭruza
 novel: Giovanni, Boccaccio
 nov: denove
-novic: Piĉ, pli-malpli, UV-tradukoj, latin, id, latinidlingvanoj
+novic: Piĉ, UV-tradukoj, latin, id, latinidlingvanoj
 novjork: 'W, 'N
 novosib: 'N, 'E
 nudel: Kiŝimen
@@ -2492,7 +2480,7 @@ origin1: mema, Dresden
 origin: Bricard
 oris: Orisn
 ort: ĉi-lasta, Bricard
-ortoce: ort, centr, ĉi-sence, pli-malpli, alt, ec
+ortoce: ort, centr, ĉi-sence, alt, ec
 ortodo: tridektria, Ramzes, XII, Miĥalski
 ortoped: Samsung
 ortope: Schönborn, Röntgen
@@ -2541,7 +2529,7 @@ pangxab: ਪੰਜਾਬ, Panĝabio
 panik: Trevor, Steele, Saussure, Mosĥozupron
 pantal: dekdujara
 papaj: Mezamerikdevena
-paper: Vitalij, Latronov, malpleja, Elder, Minna, pli-malpli
+paper: Vitalij, Latronov, malpleja, Elder, Minna
 pap: Filioque, rom
 papili: Vanessa, Adela, fortunei
 papu: Papuo-Nov-Gvineo, Nov, Port-Moresbo
@@ -2570,7 +2558,7 @@ parsek: pc
 part: Im, Re, plejbonon
 partic: ul
 parti: Anna, Andrejevna
-pas: pasita, Volapük, pli-malpli, ha, Herhor
+pas: pasita, Volapük, ha, Herhor
 pasion: Bach
 paskal: Blaise, Pa
 paspartu: paper
@@ -2662,7 +2650,6 @@ placx: Zamenhof, plaĉivola
 plad: Kant, Yvonne
 plag: longedaŭra
 pland: pland
-plankton: pli-malpli
 plant: vinberĝardenon, vinberbranĉojn, Helga, Cebaot, Izrael, vinberĝardeno, Jehuda, Xinjiang, Stalin
 plasmid: DNA-molekulo
 plastr: Medikamento
@@ -2729,7 +2716,6 @@ posed: posedmastreco
 posesi: pron, adj
 postfiks: EK, antaŭsignoj/postsignoj, Jurio, EK
 post: sk, dudekunua, Zamenhof, II, kvarpieduloj, postanto, postea, Abraham, posteume, Snipes, Makao, Boirac, gin, Zamenhof, III, postXo, Xo, Xon, Xo, postanta, postXi, Y-on, Xi, Y-o, postXa, Xo, Hadda'n, postXo, Xon
-posticx: pli-malpli
 postul: prep, esp
 posx: denove, pruntedonitaĵo
 potas: CO, sap, KOH
@@ -2796,7 +2782,7 @@ progre: Henrik, Seppik, iom-post-ioma, Stravinskij, Prokofjev
 progresiv: iom-post-ioma
 pro: Zamenhof, David, II, prokulpa, promemora, propeka, promalĉastaj, proprunte, proparolanta, propeti
 projek1: Kenzo, Tange, Zamenhof
-projek: p-a, opon, pli-malpli, Bricard, projeciaĵo, retroprojekciilo, OM
+projek: p-a, opon, Bricard, projeciaĵo, retroprojekciilo, OM
 prokla: Voss
 promeci: Pm
 promes: sankt
@@ -2978,7 +2964,6 @@ roman: William, Auld, rom, an, Lozgaĉev
 romant: Kultur-Centro, Hay, Stockard, NKVD, XX-a
 romp: unuanimecon, unutonecon, Adela, ĉiutagecon, ĵu, Strč, prst, skrz, krk
 rondel: Kaloscay, William, Auld, Marjorie, Boulton
-rond: pli-malpli
 ror: denove
 rosin: sekvinbero
 rotaci: M', OM, OM'
@@ -2991,13 +2976,13 @@ ruand: RW
 rubeol: infan
 rubidi: Rb
 rudbeki: plejofte
-rudime: pli-malpli, Proteolepas
+rudime: Proteolepas
 rudolf: denove
 rugx: John, Logie, Baird
 ruin: Miyamoto, Masao, Jerusalem, vinberĝardenon
 rukt: rukt
 rulet: Tobbogan
-rul: Tarzan, Molière, pli-malpli, Izrael, Baduroc, Jakob
+rul: Tarzan, Molière, Izrael, Baduroc, Jakob
 ruman: RO
 rum: Zuro
 run: plejparte, Tholfr, Kolbeinn
@@ -3032,7 +3017,7 @@ samb: aj, Ipanema
 sambr: Namur
 samg: sangho
 samo: WS, Iama
-sang: sangadanta, blua-lila-nigra, laŭas, sens-froid, sang-froid, pli-malpli, gin
+sang: sangadanta, blua-lila-nigra, laŭas, sens-froid, sang-froid, gin
 sankci: PV-PIV-aj, um
 sankt: Aaron, Kecalkoatl, Ĉolula, plejsanktejo, Ramajun, plejsanktejon
 sanmarin: SM
@@ -3056,13 +3041,12 @@ segx: kristandemokratoj, dors, Rodrigues
 sejsxel: SC
 sekant: sec, sek, arcsec, arksek, Vd
 sekc: Bricard, secanto, Werner
-sekrec: pli-malpli
 sekret: Zir-Nana
 seks: virseksulon, Huniŭ, samseksama, samseksaman, samseksamulo, samseksamulino, virseksulo
 sekt: Quesnay
 sekular: kontraŭkristana
 sekund: ono
-sekv: David, Barak, Kedeŝ, Pli-malpli, Mäkelä, Anna, Petrovna, Lemuel, Adaha, Peor
+sekv: David, Barak, Kedeŝ, Mäkelä, Anna, Petrovna, Lemuel, Adaha, Peor
 selim: Selim, III, II
 sem: David, Edom, denove, kvarpieduloj
 semina: dektrijara, Stoutenburg
@@ -3092,7 +3076,6 @@ seskvi: xy, Vd
 setar: aj, duongutforma
 sever: Pan
 sezon: Lost, Stargate, SG, respective
-sfer: pli-malpli
 s: maj, S-hokoj, II, so
 siberi: Nord
 sibl: Eigi, sibl, ad, Dorina
@@ -3199,11 +3182,11 @@ spektroskopi: Spektr
 speleologi: Kavern, Ján, Vajs, Narni, Umbrio
 spic: iama, Esperanto-Societo
 spin2: entjer-plus-duona
-spiral: pli-malpli, kθ, k/θ
+spiral: kθ, k/θ
 spir: Zamenhof, upostasis, hupostasis, Ragnarsson
 splint: Sui
 spong: BSE
-sport: pli-malpli, Pamela
+sport: Pamela
 spur: sp
 stabil: Keynes
 staci: Jim, Rondonpolis, Rudolf, NASA, Piĉ, Seokkye, Koori
@@ -3249,7 +3232,7 @@ sublim2: HgCl
 subsidiar: vic
 subtra: Vd
 subven: EU
-sucx: pli-malpli, mamsuĉigi, ĉiutriahorei
+sucx: ĉiutriahorei
 sudan: SD
 sud: Esav
 sufiks: ad, aĵ, an, ar, ĉj, ebl, ec, eg, ej, em, end, er, estr, et, id, ig, iĝ, il, in, ind, ing, ism, ist, nj, obl, on, op, uj, ul, um, at, it, ot, ant, int, ont, in, père, mère, il, trancher, couteau, in, e-aj, e-a, e-aj, Loch, Loch'er, tru'ilo, civiliz, aci, evolu, redakt, or, redak, inspekt, or, organiz, aci, ĉi-suprajn
@@ -3326,7 +3309,7 @@ sxultr: kvincentmil, Dieter, Winkelheim, Lojza
 sxusx: ŝ-sono, mineral'akvo
 sxut: Microsoft, Netscape
 sxva: IFA-signo, IFA
-sxveb: pli-malpli, denove, volváĵo, sopíro, vagabónda, va, duonakcenteco, Kalocsay, ĉirkaŭŝvebata
+sxveb: denove, volváĵo, sopíro, vagabónda, va, duonakcenteco, Kalocsay, ĉirkaŭŝvebata
 ta1: ta-ta-ta
 tabel: ti, ki, neni, ki-al, ki-o, neni-u, neni-a, ali-u, ali-es, kelk-om
 tabl: multehomaj, servoknabinoj
@@ -3391,7 +3374,7 @@ tel: iaman
 telomer: DNA-serio
 telur: Te
 tem: E-klubo
-temp: pli-malpli, as, is, os, it, at, Schulz, dume, Jerusalem, denove, Lexicon, Miloŝ, Srna, Eleazer, ben, Judah, Zamenhof, me, pli-malpli, UTC, mez
+temp: as, is, os, it, at, Schulz, dume, Jerusalem, denove, Lexicon, Miloŝ, Srna, Eleazer, ben, Judah, Zamenhof, me, UTC, mez
 tempi: Dume
 templ: Pi-Bast, Hator, Nebukadnecar, Jerusalem, Babel
 tenajl: Kasem
@@ -3408,7 +3391,7 @@ terakot: Atlas, Yixing
 terari: Greggs
 terbi: Tb
 terebi: elŝvitata, hidrokarbonido
-ter: an, pli-malpli, Ptah, Kain, Pli-malpli, terpomfloko, terpomfingro, pli-malpli
+ter: an, Ptah, Kain, Pli-malpli, terpomfloko, terpomfingro
 terito: Malé, Karpaty, aux, neplenkreskuloj
 term: a/b, c/d, opo, op-ero, bi, a-b, quadrat, ab, minusoj, ax, bx, n-termo, ĉi-supra
 termik: varmoa, Wüster
@@ -3419,7 +3402,7 @@ termin: Eurodicautom, tradukistoj/vortaristoj/terminaristoj
 termodinamik: etern-em-ov/an
 termos: Hagson
 terpen: beta-sisterolo
-testam: laŭas, kalemburas, pli-malpli
+testam: laŭas, kalemburas
 testud: Mar
 t: dudekkvara, T-fero, maj, II, to
 tia: adj
@@ -3467,7 +3450,7 @@ tpr: Ek, hot, kvarpiedulo
 traduk: esp-en
 traf: Hebron, celitaĵon
 tragik1: ha
-tra: ellaborota, Zamenhof, pli-malpli, trairata, celata, II, trae, III, pref, fin, tut
+tra: Zamenhof, II, III, pref, fin, tut
 trahxe: sespiedulojn, plejparte
 trahxom: okul
 trak: Stuttgart, bus, cm/sek
@@ -3565,7 +3548,6 @@ uskl: uskl, ec, on, ch, CH, Ch, CXIUJXAUXDE, Cxiujxauxde, M-u, M-c
 uson: Vaŝin, Frank, Lloyd, Wright, James, Duff, Law, United, States, of, North, America, Usonia
 utah: fiŝlago-Nacia
 utarpradesx: Utaro
-utopi: pli-malpli
 utrehxt: ring, 'E, 'N
 uvul: ro
 ux: dudeksesa, II, ŭo, u-hoko, laŭ-di, ŭa, ŭaks, ŭo
@@ -3598,7 +3580,7 @@ varingjen: pers/ist', Kajam-tradukoj, III, Varengjeno
 varm: Bokarev, Krause, denove, PIV-ekzemplo, mal, Ah, Clemency, Volapük, T-ĉemizon
 varsovi: Varsovi
 vart: Song, Qingling
-vast: pli-malpli, sinx, Vd, aĵ
+vast: sinx, Vd, aĵ
 vat1: Wh
 vatikan: Chiasso/Kiaso, Gaudí, Aznar
 vatt: Vatt/o
