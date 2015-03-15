@@ -141,6 +141,7 @@ rv_sen_fin('D',Spc) <= &rv_sen_suf(_,Spc).
 
 % rad+sufikso, ekz. san/ul
 rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
+rv_sen_fin('Ds',nombr) <= &rv_sen_fin(_,nombr) / sn(_,nombr,nombr).
 
 % foje funkcias apliki prefiksojn nur post sufiksoj, 
 % ekz. ne/(venk/ebl), eks/(lern/ej/an)/oj
