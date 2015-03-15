@@ -5,6 +5,7 @@ c(o,subst).
 c('o-',subst). % ekz. dissendo-listo
 c(a,adj).
 c('a-',adj). % ekz. verda-bruna
+% c(e,adv). % en kuntiradoj, ekz. lace~peli, multe~kosta
 c('e-',adv). % ekz. dece-konvene
 
 /************ literoj, kiuj povas 
@@ -96,13 +97,14 @@ ns(ĉj,pers).
 
 /************ prefiksoj 
  (2) vortspeco, al kiu ghi estas aplikebla,
-     (prefiskoj ne shanghas la vortspecon)
+     (ordinaraj prefiskoj ne shanghas la vortspecon)
 ************/
 p(bo,parc).
 p('ĉef',subst).
 p(dis,verb).
 p(ek,verb).
 p(eks,subst).
+p(fi,subst).
 p(ge,best).
 p(mal,_).
 p(mis,verb).
@@ -128,8 +130,8 @@ p(super,subst).
 p(ĉi,adj).
 p(ĉiam,adj). % ekz. ĉiamverda
 p(pli,adj).
-p(plu,verb).
-p(for,verb).
+%p(plu,verb).
+%p(for,verb).
 p(ne,adj).
 p(ne,subst).
 p(tiel,adj). %???
@@ -179,6 +181,8 @@ adverboj uzataj prefikse kun verboj
 ***/
 
 p(mem,adj,verb).
+p(plu,tr,verb).
+p(for,tr,verb).
 
 /**************
  * la sekvaj fakte ne estas prefiksoj,

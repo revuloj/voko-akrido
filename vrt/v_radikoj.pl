@@ -26,8 +26,12 @@ r('kial',subst).
 
 r('iam',adv).
 r('ĉiam',adv).
+r('kiam',adv).
 r('tiam',adv).
 
+r('iel',adv).
+r('ĉiel',adv).
+r('kiel',adv).
 r('tiel',adv).
 
 r('iom',adv).
@@ -126,6 +130,7 @@ r('er',subst).
 r('estr',best).
 r('et',adj).
 r('fi',intj).
+r('fi',adv).
 r('id',best).
 r('ig',tr).
 r('iĝ',ntr).
@@ -142,6 +147,10 @@ r('uj',subst).
 r('ul',best).
 r('um',ntr).
 
+/**********
+ * konjunkcioj kiel radikoj
+**********/
 
+r('kvazaŭ',adj).
 
 
