@@ -279,12 +279,6 @@ antauvorto('D-',Spc) <= &rv_sen_fin(_,Spc) / ls(_) ~> subspc(Spc,subst).
 antauvorto('D',Spc) <= &pref_verb(_,Spc) ~> subspc(Spc,subst).
 antauvorto('D-',Spc) <= &pref_verb(_,Spc) / ls(_) ~> subspc(Spc,subst).
 
-% derivado per prepozicioj uzataj prefikse ĉe verboj kaj posta substantivigo
-% ekz. alveno, eliro, eldono
-pref_verb(pr,subst) <= p(_,_,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
-pref_verb(pr,subst) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De). % de/ir/
-pref_verb(pD,subst) <= p(_,_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
-
 antauvorto(nn,Spc) <= &vorto(nn,Spc).
 
 % eble iom dubindaj ("mi-dir/i" , "ĉiu-hom/o" kompare kun kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
@@ -304,6 +298,11 @@ postvorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs)
        Spc=Vs 
      ; Spc=Fs).
 
+% derivado per prepozicioj uzataj prefikse ĉe verboj kaj posta substantivigo
+% ekz. alveno, eliro, eldono
+pref_verb(pr,subst) <= p(_,_,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
+pref_verb(pr,subst) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De). % de/ir/
+pref_verb(pD,subst) <= p(_,_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kuntiritaj vortoj
@@ -341,6 +340,7 @@ kv_adv('D',adv) <= &rv_sen_fin(_,_) / f(_,adv). % supre, supren
 
 kv_vrb('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,verb).
 kv_adj('D',adj) <= &rv_sen_fin(_,adj).
+kv_adj('D',adj) <= &rv_sen_fin(_,adj) / ls(_).
 kv_subst('D',Spc) <= &rv_sen_fin(_,Spc) ~> subspc(Spc,subst).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  

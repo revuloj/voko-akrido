@@ -2610,6 +2610,7 @@ persva: Evan
 pes: Lib
 pesimi: nigrevidulo
 peta: SI
+petal: sakura-floroj
 peterburg: 'E, 'N, Trjapiĉkin
 pet: ĉitien, propeti
 petici: Temelín
@@ -2623,7 +2624,7 @@ pied: brak, dupiedulo, kvarpiedulo, TriKRURA, kapopieduloj, Maksim, vers-pied-no
 pietist: Karl-Artur, Ekenstedt, Korskyrka, Charlotte, Löwenskold
 pigr: Potifar
 pik: Boccacio
-piko: SI
+piko: SI, biliono
 pilat: Gabata
 pil: Contrairement, ce, que, laisse, croire, son, nom, n'est, pas, une, électrique, mais, le, donné, aux, premiers, réacteurs, nucléaires, car, ils, étaient, constitués, d'éléments, matière, fissile, uranium, répartis, dans, un, empilement, briques, graphite, jouant, le, rôle, modérateur
 pilk: vulg, long-kvadrat-forma, Columbus, manpilko-turniro
@@ -2631,8 +2632,8 @@ pilol: Medikamento
 pilot: hup
 pind: ĉi-lasta
 pingl: Laŭ-Ĉeng, o-forma
-pingvi: pingvino
-pinokj: Carlo
+pingvi: pingvino, pingvin/o
+pinokj: Carlo, Collodi
 pint: Baŝana, multepinta, Avinjo, Byrne, Helga
 pionir: Luŝi-ŝin, Shanghai, Hsu, Ŝirjaev, Edmond, Privat, Song-dinastio
 pirami: n-latero
