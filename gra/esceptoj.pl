@@ -8,6 +8,8 @@
 :- multifile rv_sen_fin/5, vorto/5.
 :- discontiguous rv_sen_fin/5, vorto/5.
 
+:- encoding(utf8).
+
 rv_sen_fin(e,subst) <- post/e/ul.
 %rad(e,adj) <= si/a.
 rv_sen_fin(e,adj) <- mult/e+kost.

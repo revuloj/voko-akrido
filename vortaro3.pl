@@ -1,6 +1,8 @@
 
 :- multifile r/2, v/2, mlg/1, nr/2, nr_/2.
 
+:- encoding(utf8).
+
 :-consult('vrt/v_esceptoj2.pl').
 :-consult('vrt/v_mallongigoj.pl').
 :-consult('vrt/v_revo_mallongigoj.pl').

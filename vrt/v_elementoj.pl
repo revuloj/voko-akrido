@@ -1,3 +1,5 @@
+:- encoding(utf8).
+
 /************ literoj, kiuj povas 
  * esti ene de vorto 
 ************/
