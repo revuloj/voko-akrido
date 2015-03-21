@@ -15,7 +15,7 @@ vortanalizo(Vorto,Ana,Spc) :-
   reduce(Struct,Ana).
 
 
-vortanalizo(Vorto,Ana,Spc,bone) :-
+vortanalizo(Vorto,Ana,Spc,same) :-
   % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
   catch(
     call_with_time_limit(3, % max. 3s
@@ -32,20 +32,26 @@ vortanalizo(Vorto,Ana,Spc,minuskle) :-
     Exc,
     (sub_atom(Exc,0,_,_,'time_limit_exceeded') -> fail; true)).
 
-
+/***
 minuskligo_atom(Vorto,Minuskle):-
   atom_codes(Vorto,[V|Vosto]),
   to_lower(V,M),
   atom_codes(Minuskle,[M|Vosto]).
+***/
 
-minuskligo([V|Vosto],[M|Vosto]) :- to_lower(V,M).
+minuskligo([],[]).
+minuskligo([V|V1],[M|M1]) :- 
+    to_lower(V,M),
+    minuskligo(V1,M1).
 
+/***
 majuskligo_atom(Vorto,Majuskle):-
   atom_codes(Vorto,[V|Vosto]),
   to_upper(V,M),
   atom_codes(Majuskle,[M|Vosto]).
+***/
 
-majuskligo([V|Vosto],[M|Vosto]) :- to_upper(V,M).
+%%% majuskligo([V|Vosto],[M|Vosto]) :- to_upper(V,M).
 
 parto_nombro(Vorto,Signo,Nombro) :-
   atomic_list_concat(Partoj,Signo,Vorto),
@@ -108,25 +114,25 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
 %  statistics(inferences,I1),
   once((
     memberchk(Vorto,VerdaListo),
-    skribu_vorton(verda,Vorto,_,_)
+    skribu_vorton(verda,Vorto,_,_,_)
    ;
     atom_codes(Mlg,Vorto), 
     mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
-    skribu_vorton(mlg,Vorto,_,_)
+    skribu_vorton(mlg,Vorto,_,_,_)
    ;
-    vortanalizo(Vorto,Ana,Spc,Rim), 
+    vortanalizo(Vorto,Ana,Spc,Uskl), 
      (
        nonvar(Ana), 
        once((
-         parto_nombro(Ana,'-',Nv), Nv>2, skribu_vorton(dubebla,Vorto,Ana,Spc)
+         parto_nombro(Ana,'-',Nv), Nv>2, skribu_vorton(dubebla,Vorto,Ana,Spc,Uskl)
          ; 
-         parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(kuntirita,Vorto,Ana,Spc)
+         parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(kuntirita,Vorto,Ana,Spc,Uskl)
          ; 
-         skribu_vorton(Rim,Vorto,Ana,Spc)
+         skribu_vorton(bona,Vorto,Ana,Spc,Uskl)
        ))
      )
    ;
-    skribu_vorton(neanalizebla,Vorto,_,_)
+    skribu_vorton(neanalizebla,Vorto,_,_,_)
   )),
 %  statistics(inferences,I2), 
 %  statistics(cputime,C2),
@@ -167,36 +173,38 @@ skribu_voston :-
   -> format('~n</pre></body></html>~n')
   ; true.
 
-skribu_vorton(bone,_,Analizita,_) :-
+skribu_vorton(bona,Vorto,Analizita,_,Uskl) :-
+  (Uskl == minuskle -> format('[~s:] ',[Vorto]); true),
   format('~w',Analizita).
 
-skribu_vorton(minuskle,_,Analizita,_) :-
-  majuskligo_atom(Analizita,Majuskla),
-  format('~w',Majuskla).
+%skribu_vorton(bona,Vorto,Analizita,_,minuskle) :-
+% % majuskligo_atom(Analizita,Majuskla),
+%  format('"~s"::~w',[Vorto,Analizita]).
 
-
-
-skribu_vorton(neanalizebla,Vorto,_,_) :-
+skribu_vorton(neanalizebla,Vorto,_,_,_) :-
   output(html)
   -> format('<span class="neanaliz">~s</span>',[Vorto])
   ; format('>>>~s<<<',[Vorto]).
 
-skribu_vorton(dubebla,_,Analizita,_) :-
-  output(html)
-  -> format('<span class="dubebla">~w</span>(?)',[Analizita])
-  ; format('~w(?)',[Analizita]).
+skribu_vorton(dubebla,Vorto,Analizita,_,Uskl) :-
+  (Uskl == minuskle -> format(atom(U),'[~s:] ',[Vorto]); U=''),
+  (output(html)
+  -> format('<span class="dubebla">~w~w</span>(?)',[U,Analizita])
+  ; format('~w~w(?)',[U,Analizita])).
 
-skribu_vorton(kuntirita,_,Analizita,_) :-
-  output(html)
-  -> format('<span class="kuntirita">~w</span>',[Analizita])
-  ; format('~w(!)',[Analizita]).
 
-skribu_vorton(verda,Vorto,_,_) :-
+skribu_vorton(kuntirita,Vorto,Analizita,_,Uskl) :-
+  (Uskl == minuskle -> format(atom(U),'[~s:] ',[Vorto]); U=''),
+  (output(html)
+  -> format('<span class="kuntirita">~w~w</span>',[U,Analizita])
+  ; format('~w~w(!)',[U,Analizita])).
+
+skribu_vorton(verda,Vorto,_,_,_) :-
   output(html)
   -> format('<span class="verda">~s</span>',[Vorto])
   ; format('>>~s<<',[Vorto]).
 
-skribu_vorton(mlg,Vorto,_,_) :-
+skribu_vorton(mlg,Vorto,_,_,_) :-
   output(html)
   -> format('<span class="mlg">~s</span>',[Vorto])
   ; format('~s',[Vorto]).

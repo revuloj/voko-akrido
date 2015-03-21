@@ -5501,7 +5501,7 @@ r('kokcig',subst).
 r('kokard',subst).
 r('kokain',subst).
 r('koka',subst).
-r('kok',subst).
+r('kok',best).
 r('kojp',subst).
 r('kojot',subst).
 r('kojon',subst).
@@ -6012,6 +6012,7 @@ r('kaleŝ',subst).
 r('kalendul',subst).
 r('kalendar',subst).
 r('kalend',subst).
+r('kalembur',subst).
 r('kalejdoskop',subst).
 r('kaldron',subst).
 r('kalcitr',ntr).
@@ -6946,7 +6947,7 @@ r('glabel',subst).
 r('giĉet',subst).
 r('gitar',subst).
 r('gist',subst).
-r('gis',verb).
+r('gis',tr).
 r('giroskop',subst).
 r('girland',subst).
 r('gips',subst).
@@ -9358,7 +9359,7 @@ r('atlas',subst).
 r('ating',tr).
 r('atik',adj).
 r('atest',tr).
-r('atent',adj).
+r('atent',tr).
 r('atend',tr).
 r('atenc',tr).
 r('atelier',subst).

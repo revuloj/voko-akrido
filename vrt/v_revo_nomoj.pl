@@ -138,7 +138,7 @@ nr('Strasburg',subst).
 nr('Strabon',subst).
 nr('Sten',subst).
 nr('Stefan',pers).
-nr('Stanislav',subst).
+nr('Stanislav',pers).
 nr('Soveti',subst).
 nr('Somali',subst).
 nr('Solutre',subst).
@@ -181,6 +181,7 @@ nr('Saskaĉevan',subst).
 nr('Sarland',subst).
 nr('Santeri',subst).
 nr('Sanskrit',subst).
+nr('Samos',subst).
 nr('Samg',subst).
 nr('Sambr',subst).
 nr('Salomon',pers).
@@ -411,6 +412,7 @@ nr('London',subst).
 nr('Loglan',subst).
 nr('Liĥtenŝtejn',subst).
 nr('Litovi',subst).
+nr('Lisbon',subst).
 nr('Lionel',pers).
 nr('Linuks',subst).
 nr('Limburg',subst).
@@ -502,6 +504,7 @@ nr('Karolin',subst).
 nr('Karol',pers).
 nr('Karnatak',subst).
 nr('Karloreĝ',subst).
+nr('Karl',subst).
 nr('Karesm',subst).
 nr('Kara',subst).
 nr('Kaprikorn',subst).
@@ -740,6 +743,7 @@ nr('Dian',pers).
 nr('Demokrit',subst).
 nr('Demetri',pers).
 nr('Delavar',subst).
+nr('Dekameron',subst).
 nr('Dejm',subst).
 nr('Dedekind',subst).
 nr('David',pers).
@@ -922,6 +926,7 @@ nr('Adrian',pers).
 nr('Adolf',pers).
 nr('Adam',pers).
 nr('Adalbert',pers).
+nr('Abraham',pers).
 nr('Abidarm',subst).
 nr('Abel',subst).
 nr('Abas',pers).
@@ -1065,7 +1070,7 @@ nr_('strasburg',subst).
 nr_('strabon',subst).
 nr_('sten',subst).
 nr_('stefan',pers).
-nr_('stanislav',subst).
+nr_('stanislav',pers).
 nr_('soveti',subst).
 nr_('somali',subst).
 nr_('solutre',subst).
@@ -1108,6 +1113,7 @@ nr_('saskaĉevan',subst).
 nr_('sarland',subst).
 nr_('santeri',subst).
 nr_('sanskrit',subst).
+nr_('samos',subst).
 nr_('samg',subst).
 nr_('sambr',subst).
 nr_('salomon',pers).
@@ -1338,6 +1344,7 @@ nr_('london',subst).
 nr_('loglan',subst).
 nr_('liĥtenŝtejn',subst).
 nr_('litovi',subst).
+nr_('lisbon',subst).
 nr_('lionel',pers).
 nr_('linuks',subst).
 nr_('limburg',subst).
@@ -1429,6 +1436,7 @@ nr_('karolin',subst).
 nr_('karol',pers).
 nr_('karnatak',subst).
 nr_('karloreĝ',subst).
+nr_('karl',subst).
 nr_('karesm',subst).
 nr_('kara',subst).
 nr_('kaprikorn',subst).
@@ -1667,6 +1675,7 @@ nr_('dian',pers).
 nr_('demokrit',subst).
 nr_('demetri',pers).
 nr_('delavar',subst).
+nr_('dekameron',subst).
 nr_('dejm',subst).
 nr_('dedekind',subst).
 nr_('david',pers).
@@ -1849,6 +1858,7 @@ nr_('adrian',pers).
 nr_('adolf',pers).
 nr_('adam',pers).
 nr_('adalbert',pers).
+nr_('abraham',pers).
 nr_('abidarm',subst).
 nr_('abel',subst).
 nr_('abas',pers).

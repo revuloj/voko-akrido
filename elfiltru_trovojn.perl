@@ -57,7 +57,7 @@ sub elfiltru {
 
 
     for $file (@files) {
-	@eraroj = ();
+	my @eraroj = ();
 
 	open IN,"$file";
 
@@ -72,6 +72,7 @@ sub elfiltru {
 
 
 	if (@eraroj) {
+            my @eraroj2 = remove_duplicates(@eraroj);
 
  	    my $fileref = $file; $fileref =~ s|^.*/(.*?)\.html|$1|;
 
@@ -80,11 +81,11 @@ sub elfiltru {
 		print "<a href='$REVO/art/$fileref.html' class='redakti' ";
 		print "title='artikolo' target='_new'>&#x270E;</a>: ";
 
-		print join(', ',@eraroj);
+		print join(', ',@eraroj2);
 		print "<br/>\n";
 	    } else {
 		print "$fileref: ";
-		my @err = map { m|>(.*?)</span|; $1 } @eraroj;
+		my @err = map { m|>(.*?)</span|; $1 } @eraroj2;
 		print join(', ',@err);
 		print "\n";
 	    }
@@ -144,4 +145,9 @@ sub touch_modulo_seven {
 	utime($atime,$mtime,$file) ||
            warn "Ne povis tushi '$file'-on: $!\n";
     }
+}
+
+sub remove_duplicates {
+    my %hash = map { $_ => 1 } @_;
+    return keys %hash;
 }
