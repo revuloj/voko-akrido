@@ -182,18 +182,18 @@ analyze_perf(Vrt,Ana,Spc) :-
 % forigas krampojn kaj spacojn el la rezulto-termo
 reduce(Term,Flat) :-
   format(codes(A),'~w',[Term]),
-  reduce_(A,F,['(',')',' ']),
+  reduce_(A,F,"() "),
   atom_codes(Flat,F).
 
 reduce_full(Term,Flat) :-
   format(codes(A),'~w',[Term]),
-  reduce_(A,F,['/','*','+','~','-','(',')',' ']),
+  reduce_(A,F,"/*+~-() "),
   atom_codes(Flat,F).
 
 reduce_([],[],_).
 
 reduce_([L|Ls],F,DelLetters) :-
-  memberchk(L,DelLetters),!, 
+  string_code(_,DelLetters,L),!, % memberchk(L,DelLetters),!, 
   reduce_(Ls,F,DelLetters).
 
 reduce_([L|Ls],[L|Fs],DelLetters) :-
