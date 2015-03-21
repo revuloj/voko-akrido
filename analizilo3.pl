@@ -23,8 +23,9 @@ vortanalizo(Vorto,Ana,Spc,same) :-
     Exc,
     (sub_atom(Exc,0,_,_,'time_limit_exceeded') -> fail; true)).
 
-vortanalizo(Vorto,Ana,Spc,minuskle) :-
-  minuskligo(Vorto,VrtMin), 
+vortanalizo(Vorto,Ana,Spc,Uskl) :-
+  %minuskligo(Vorto,VrtMin), 
+  majuskloj(Vorto,VrtMin,Uskl),
   % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
   catch(
     call_with_time_limit(3, % max. 3s
@@ -52,6 +53,18 @@ majuskligo_atom(Vorto,Majuskle):-
 ***/
 
 %%% majuskligo([V|Vosto],[M|Vosto]) :- to_upper(V,M).
+
+majuskloj([],[],0:0).
+
+majuskloj([V|Vj],[M|Mj],1:R) :- 
+  upper_lower(V,M),  
+  majuskloj(Vj,Mj,U1:R1),
+  R is U1+R1.
+
+majuskloj([L|Vj],[L|Mj],0:R) :- 
+  majuskloj(Vj,Mj,U1:R1),
+  R is U1+R1.
+
 
 parto_nombro(Vorto,Signo,Nombro) :-
   atomic_list_concat(Partoj,Signo,Vorto),
@@ -174,8 +187,8 @@ skribu_voston :-
   ; true.
 
 skribu_vorton(bona,Vorto,Analizita,_,Uskl) :-
-  (Uskl == minuskle -> format('[~s:] ',[Vorto]); true),
-  format('~w',Analizita).
+  uskleco(Uskl,Vorto,U,Analizita,A),
+  format('~w~w',[U,A]).
 
 %skribu_vorton(bona,Vorto,Analizita,_,minuskle) :-
 % % majuskligo_atom(Analizita,Majuskla),
@@ -187,17 +200,16 @@ skribu_vorton(neanalizebla,Vorto,_,_,_) :-
   ; format('>>>~s<<<',[Vorto]).
 
 skribu_vorton(dubebla,Vorto,Analizita,_,Uskl) :-
-  (Uskl == minuskle -> format(atom(U),'[~s:] ',[Vorto]); U=''),
+  uskleco(Uskl,Vorto,U,Analizita,A),
   (output(html)
-  -> format('<span class="dubebla">~w~w</span>(?)',[U,Analizita])
-  ; format('~w~w(?)',[U,Analizita])).
-
+  -> format('<span class="dubebla">~w~w</span>(?)',[U,A])
+  ; format('~w~w(?)',[U,A])).
 
 skribu_vorton(kuntirita,Vorto,Analizita,_,Uskl) :-
-  (Uskl == minuskle -> format(atom(U),'[~s:] ',[Vorto]); U=''),
+  uskleco(Uskl,Vorto,U,Analizita,A),
   (output(html)
-  -> format('<span class="kuntirita">~w~w</span>',[U,Analizita])
-  ; format('~w~w(!)',[U,Analizita])).
+  -> format('<span class="kuntirita">~w~w</span>',[U,A])
+  ; format('~w~w(!)',[U,A])).
 
 skribu_vorton(verda,Vorto,_,_,_) :-
   output(html)
@@ -216,6 +228,14 @@ skribu_signojn(s(S)) :-
 skribu_nombron(n(N)) :-  format('~s',[N]).
 
 
+uskleco(_:1,Vorto,U,Analizita,Analizita) :-
+  format(atom(U),'[~s:] ',[Vorto]),!.
 
+uskleco(1:0,_,'',Analizita,Ana) :-
+  atom_codes(Analizita,[A|Nalizita]),
+  to_upper(A,A1),
+  atom_codes(Ana,[A1|Nalizita]).
+
+uskleco(_,_,'',Analizita,Analizita).
 
 
