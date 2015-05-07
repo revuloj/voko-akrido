@@ -1,0 +1,3 @@
+Vortanalizilo kapablas analizi Esperantajn vortojn dispartigante ilin en vortelementojn kaj kunmetante tiujn laŭ la reguloj de derivado kaj kunmetado. Tiel ĝi ankaŭ eltrovas la vortspecon. Aldoniĝas ankaŭ nombroanalizilo kaj primitiva frazanalizilo.
+
+Vortanalizilo is an Esperanto word analyser disassembling words and reassembling them using rules of word composition. During this also grammatical information of the word are derived. Additional tools are a number analyser and a simple sentence analyser.
