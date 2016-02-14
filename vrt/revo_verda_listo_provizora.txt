@@ -8,7 +8,7 @@ abrakadabr: Emèric
 abrazi: Frot
 abrupt: iom-post-iom/a
 absid: αψίς, αψίδος
-abstra: PV-difinon, samkiel, ec, abstrakt, abstrahi
+abstra: PV-difinon, ec, abstrakt, abstrahi
 ac: ac, ed, kompozitacoj
 acetil1: hidrokarbonido
 acetilhxolin: NO
@@ -850,6 +850,7 @@ euxzebi: Eŭzebo
 evange: Evangeli, tele-evangeliistoj
 evolu: iom-post-iome, iom-post-iomaj, iom-post-ioma
 ezok: dors, anasbeksimila
+fabac: legumenacoj
 fabel: Andersen, Perrault, Miyazawa
 fabi: AFP, Nascimento
 fabrici: Pyrrhus
@@ -1970,7 +1971,7 @@ lebeg: Henri
 lecion: mise
 legaci: Vic
 leg: legоjn, TTT-legilo, Izrael, s-ron, Edmund, Grimley, Evans, Zamenhof, lego-povigo, lego-povigi, lego-povigis, legopovigo
-legume1: legumenozoj
+legume1: legumenacoj, legumenozoj
 lejbnic: xv', xv'', v', Louis, Couturat
 lek: Ivagin
 lemn: Xiangyun
@@ -2044,7 +2045,7 @@ lokomo1: aj
 loksi: krucbekulo
 london: 'W, 'N
 longan: roz
-long: lan, Kalocsay, delonge, Vd, ko, to, IJK, jo
+long: lan, Kalocsay, delonge, Vd, ko, to, IJK, jo, me-lan-ko-li-o
 lop: alsuprante, alsubante
 lorn: Bronne
 lot: Saul, Simeon, Aaron, Jozef, unuenaskito, Aaron, Azazel, Today's, English, Azazel
@@ -2135,6 +2136,7 @@ masohxist: SCE
 mast: Lloyd
 mastr: Zamenhof
 mastrihxt: 'E, 'N, Edam, Leiden, Valkenburg
+masx: dro
 matcx: Kim, Henriksen
 mate: Ĵanaina
 matema: Pierre, Cérésole
