@@ -38,6 +38,8 @@ mlg('jc'). % jarcento
 mlg('kc'). % kaj ceteraj
 mlg('kg'). % kilogramo
 mlg('km'). % kilometro
+mlg('km/s'). % kilometro en sekundo
+mlg('km/h'). % kilometro en horo
 mlg('konj'). % Konjunkcio
 mlg('kp'). % komparu
 mlg('ks'). % kaj similaj
@@ -47,6 +49,7 @@ mlg('n-a'). % elemento kun numero "n"
 mlg('n-ro'). % numero
 mlg('ntr'). % netransitiva
 mlg('PAG'). % Plena Analiza Gramatiko
+mlg('PMEG'). % Plena Manlibro de Esperanta Gramatiko
 mlg('proks'). % rpoksimume
 mlg('pron'). % prononcu
 mlg('prop'). % propozicio
