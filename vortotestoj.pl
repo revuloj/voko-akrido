@@ -1,5 +1,4 @@
-% :- consult(analizilo2).
-:- consult(analizilo3).
+:- consult(analizilo).
 
 a1(Vorto,Analizita,Speco) :-
   vortanalizo(Vorto,Ana,Spc),!,

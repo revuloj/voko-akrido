@@ -2,7 +2,7 @@
 :- use_module(library(unix)).
 :- use_module(library(filesex)).
 
-:- consult(analizilo3).
+:- consult(analizilo).
 :- consult('dcg/vortlisto_dcg.pl'). % por enlegi la "Verdan Liston"
 
 %:- consult(revo_blanka_listo).
