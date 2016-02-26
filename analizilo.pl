@@ -1,6 +1,6 @@
 :- use_module(library(sgml)). % por xml_quote_cdata
 :- use_module(library(time)).
-:-consult('vortaro3.pl').
+:-consult('vortaro.pl').
 :-consult('gra/gramatiko2.pl').
 :-consult('gra/esceptoj.pl').
 :-consult('gra/vorto_gra.pl').
