@@ -1,3 +1,16 @@
+:-module(vortaro,[
+	     v/2, % vortoj
+	     r/2, % radikoj
+	     nr/2, % nomradikoj
+	     nr_/2, % nomradikoj minuskligitaj
+	     p/2, p/3, s/3, % prefiksoj kaj sufiksoj
+	     ns/2, sn/3, % nomsufikso (nj, ĉj)kaj nombrosufikso (ilion, iliard)
+             f/2, c/2, % finaĵoj
+	     ls/1, os/1, % ligstreko, oblikvo
+	     u/2, fu/2, % j-pronomo kaj finaĵo, ekz. kiu/j
+	     i/2, fi/2, % n-pronomo kaj finaĵo, ekz. mi/n
+	     mlg/1 % mallongigoj
+	 ]).
 
 :- multifile r/2, v/2, mlg/1, nr/2, nr_/2.
 
@@ -26,6 +39,7 @@
 % r(Rad,adj) :- r(Rad,adv). % super -> super/a -> superulo
 
 % nomkomenco, por apliki nj, ĉj: Pa+ĉj -> Pa/ĉj
+/*
 nk(Nom,Spc) :- 
     sub(Spc,pers),
     (r(Nomo,Spc); nr(Nomo,Spc)),
@@ -33,3 +47,4 @@ nk(Nom,Spc) :-
     sub_atom(Nomo,B,1,_,Lit),
     B_1 is B+1,
     sub_atom(Nomo,0,B_1,_,Nom).
+*/

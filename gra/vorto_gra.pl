@@ -1,14 +1,39 @@
-:- ensure_loaded(gramatiko).
+:- module(vorto_gra,[
+	      vorto/5, % reguloj por analizi vorton lau gramatiko en vorto_gra
+	      sub/2, % hierarkieto de vortospecoj, ekz, sub(best,pers), sub(best,subst)
+	      nk/2 % formi nomkomencon, por apliki nj, ĉj: Pa+ĉj -> Pa/ĉj
+	  ]).
+
+:- ensure_loaded(regul_trf).
+
 
 :- multifile rv_sen_fin/5, vorto/5, min_max_len/3.
-:- discontiguous vorto/5.
+:- discontiguous vorto/5, '<='/2.
 :- dynamic min_max_len/3.
+
+:- format('%# legi kaj transformi gramatikajn regulojn...').
+:- consult(esceptoj).
 
 % PLIBONIGU: anstau uzi user: ebligu importi tion de gramatiko...
 :- op( 1120, xfx, user:(<=) ). % disigas regulo-kapon, de regulesprimo
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 :- op( 500, yfx, user:(~) ). % signas disigindajn vortojn
+
+% por ebligi uzadon de diversaj vortaroj,
+% tie ĉi la diversaj predikatoj por vortelementoj estas
+% dinamike importitaj. Necesas ŝargi la vortaron antaŭ ŝargi la gramatikon, do ...
+
+:- import(vortaro:v/2),
+	 import(vortaro:r/2),
+	 import(vortaro:nr/2),
+	 import(vortaro:nr_/2),
+	 import(vortaro:p/2),  import(vortaro:p/3),  import(vortaro:s/3),
+	 import(vortaro:ns/2),  import(vortaro:sn/3),
+         import(vortaro:f/2),  import(vortaro:c/2),
+	 import(vortaro:ls/1),  import(vortaro:os/1),
+	 import(vortaro:u/2),  import(vortaro:fu/2), 
+	 import(vortaro:i/2),  import(vortaro:fi/2).
 
 /**************************************************
 pri vortfarado ĝenerale estas pluraj diversopiniaj klarigoj, vd. ekz.:
@@ -37,6 +62,16 @@ sub(perspron,pron).
 
 subspc(S1,S2) :-
   sub(S1,S2), !.
+
+% nomkomenco, por apliki nj, ĉj: Pa+ĉj -> Pa/ĉj
+nk(Nom,Spc) :- 
+    sub(Spc,pers),
+    (vortaro:r(Nomo,Spc); vortaro:nr(Nomo,Spc)),
+    sub_atom('aeioujŭrlnm',_,1,_,Lit),
+    sub_atom(Nomo,B,1,_,Lit),
+    B_1 is B+1,
+    sub_atom(Nomo,0,B_1,_,Nom).
+
 
 drv_per_suf(Spc,Al,De,Speco) :- 
   subspc(Spc,De), %!,

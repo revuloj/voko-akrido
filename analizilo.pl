@@ -5,10 +5,11 @@
 
 :- use_module(library(sgml)). % por xml_quote_cdata
 :- use_module(library(time)).
-:-consult('vortaro.pl').
-:-consult('gra/gramatiko.pl').
-:-consult('gra/esceptoj.pl').
-:-consult('gra/vorto_gra.pl').
+:- use_module(vortaro).
+:- use_module('gra/gramatiko.pl').
+%:-consult('gra/esceptoj.pl').
+%:- use_module('gra/vorto_gra.pl').
+
 :-ensure_loaded('dcg/teksto_dcg.pl'). % por dishaki tekston en vortojn
 
 output(html).
