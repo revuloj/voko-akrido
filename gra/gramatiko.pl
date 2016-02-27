@@ -99,7 +99,7 @@ rule_ref(DictSearch,Vrt,Vrt,_,DictSearch) :-
 splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
     % PLIBONIGU: iom malavantaĝe estas, ke RuleId - unua argumento en RuleRef
     % ofte estas "_" kaj do ne konata, oni povus rigardi chiujn eblecojn pri specifa regulo
-    % sed ofte elvenas interfvalo 2.. kiu ne multe diferencas de 1..99
+    % sed ofte elvenas intervalo 2.. kiu ne multe diferencas de 1..99
     get_rule_min_max(RuleRef1,Min1,Max1),
     get_rule_min_max(RuleRef2,Min2,Max2),
     

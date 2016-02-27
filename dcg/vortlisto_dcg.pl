@@ -1,4 +1,6 @@
-:- module(vortlisto_dcg,[linio//2]).
+:- module(vortlisto_dcg,[
+	      linio//2
+	  ]).
 
 :- ensure_loaded(library(http/dcg_basics)).
 

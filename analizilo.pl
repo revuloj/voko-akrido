@@ -1,7 +1,12 @@
+:- module(analizilo,[
+	      vortanalizo/3,
+	      analizu_tekston_kopie/2,
+	      analizu_tekston_outfile/3]).
+
 :- use_module(library(sgml)). % por xml_quote_cdata
 :- use_module(library(time)).
 :-consult('vortaro.pl').
-:-consult('gra/gramatiko2.pl').
+:-consult('gra/gramatiko.pl').
 :-consult('gra/esceptoj.pl').
 :-consult('gra/vorto_gra.pl').
 :-ensure_loaded('dcg/teksto_dcg.pl'). % por dishaki tekston en vortojn
