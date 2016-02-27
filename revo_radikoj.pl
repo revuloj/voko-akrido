@@ -1,3 +1,7 @@
+:- module(revo_radikoj,[
+	      revo_radikaro/0
+	  ]).
+
 :- use_module(library(sgml)).
 :- use_module(library(xpath)).
 :- use_module(library(semweb/rdf_db)).

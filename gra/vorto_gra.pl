@@ -24,16 +24,23 @@
 % tie ĉi la diversaj predikatoj por vortelementoj estas
 % dinamike importitaj. Necesas ŝargi la vortaron antaŭ ŝargi la gramatikon, do ...
 
-:- import(vortaro:v/2),
-	 import(vortaro:r/2),
-	 import(vortaro:nr/2),
-	 import(vortaro:nr_/2),
-	 import(vortaro:p/2),  import(vortaro:p/3),  import(vortaro:s/3),
-	 import(vortaro:ns/2),  import(vortaro:sn/3),
-         import(vortaro:f/2),  import(vortaro:c/2),
-	 import(vortaro:ls/1),  import(vortaro:os/1),
-	 import(vortaro:u/2),  import(vortaro:fu/2), 
-	 import(vortaro:i/2),  import(vortaro:fi/2).
+:-  import(vortaro:v/2),
+    import(vortaro:r/2),
+    import(vortaro:nr/2),
+    import(vortaro:nr_/2),
+    import(vortaro:p/2),  
+    import(vortaro:p/3),  
+    import(vortaro:s/3),
+    import(vortaro:ns/2),  
+    import(vortaro:sn/3),
+    import(vortaro:f/2),  
+    import(vortaro:c/2),
+    import(vortaro:ls/1),  
+    import(vortaro:os/1),
+    import(vortaro:u/2),  
+    import(vortaro:fu/2), 
+    import(vortaro:i/2),  
+    import(vortaro:fi/2).
 
 /**************************************************
 pri vortfarado ĝenerale estas pluraj diversopiniaj klarigoj, vd. ekz.:

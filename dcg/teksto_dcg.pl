@@ -1,4 +1,6 @@
-:- module(teksto_dcg,[teksto//1]).
+:- module(teksto_dcg,[
+	      teksto//1]
+    ).
 
 :- ensure_loaded(library(http/dcg_basics)).
 

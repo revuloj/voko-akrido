@@ -1,9 +1,16 @@
+:- module(analizu_revo_art,[
+	      analizu_revo_art/1,
+	      analizu_revo_art_novaj/0, 
+	      analizu_revo_art_prefix/1
+	  ]).
+
+
 %:- use_module(library(process)).
 :- use_module(library(unix)).
 :- use_module(library(filesex)).
 
-:- consult(analizilo).
-:- consult('dcg/vortlisto_dcg.pl'). % por enlegi la "Verdan Liston"
+:- use_module(analizilo).
+:- use_module('dcg/vortlisto_dcg.pl'). % por enlegi la "Verdan Liston"
 
 %:- consult(revo_blanka_listo).
 :- consult('vrt/v_revo_evitindaj').
