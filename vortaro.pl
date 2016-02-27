@@ -16,6 +16,12 @@
 
 :- encoding(utf8).
 
+%! v(?Vorto,?Speco).
+%! r(?Radiko,?Speco).
+%! nr(?Nomradiko,?Speco).
+%! nr_(?NomRad_minuskla,?Speco).
+%! p(?Prefikso,?AlSpeco).
+
 :-consult('vrt/v_esceptoj2.pl').
 :-consult('vrt/v_mallongigoj.pl').
 :-consult('vrt/v_revo_mallongigoj.pl').
