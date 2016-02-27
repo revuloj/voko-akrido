@@ -1,4 +1,4 @@
-:- ensure_loaded(gramatiko2).
+:- ensure_loaded(gramatiko).
 
 :- multifile rv_sen_fin/5, vorto/5, min_max_len/3.
 :- discontiguous vorto/5.
