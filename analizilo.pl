@@ -1,14 +1,28 @@
+:- module(analizilo,[
+	      vortanalizo/3,
+	      analizu_tekston_kopie/2,
+	      analizu_tekston_outfile/3]).
+
 :- use_module(library(sgml)). % por xml_quote_cdata
 :- use_module(library(time)).
-:-consult('vortaro.pl').
-:-consult('gra/gramatiko2.pl').
-:-consult('gra/esceptoj.pl').
-:-consult('gra/vorto_gra.pl').
+:- use_module(vortaro).
+:- use_module('gra/gramatiko.pl').
+%:-consult('gra/esceptoj.pl').
+%:- use_module('gra/vorto_gra.pl').
+
 :-ensure_loaded('dcg/teksto_dcg.pl'). % por dishaki tekston en vortojn
 
 output(html).
 
-/********** analizi unuopajn vortoj aŭ tutajn tekstojn ***************/
+/** <module> Vort- kaj tekstanalizilo
+
+  Vi povas analizi unuopajn vortojn aŭ tutajn tekstojn.
+*/
+
+%! vortanalizo(+Vorto:atom,-Analizita:atom,-Speco:atom) is nondet.
+%
+% Analizas unuopan vorton kaj redonas reduktitan (linearan) formon de la analizo kaj la vortspecon.
+% Se pluraj analizoj estas eblaj laŭ la reguloj ili doniĝas unu post la alia.
 
 vortanalizo(Vorto,Ana,Spc) :-
   analyze(Vorto,Struct,Spc),
@@ -74,9 +88,18 @@ parto_nombro(Vorto,Signo,Nombro) :-
 non_empty('',N,N):-!.
 non_empty(_,N,N_1):-succ(N,N_1).
 
+
 % Source: InFileName aŭ InCodes
 analizu_tekston_outfile(Source,OutFileName) :-
   analizu_tekston_outfile(Source,OutFileName,[]).
+
+
+%! analizu_tekston_outfile(+ElDosiero:atom,+AlDosiero:atom,+VerdaListo:list).
+%! analizu_tekston_outfile(+Teksto:list,+AlDosiero:atom,+VerdaListo:list).
+%
+% Analizas kompletan tekston el tekstdosiero aŭ rekte donitan kiel argumento. La rezulto estas skribita al _AlDosiero_.
+% La VerdaListo estas listo de vortoj kiel ne estos analizataj sed tuj akceptataj, kiam ili aperas en la teksto.
+% Uzu ekz-e por propraj nomoj aŭ nekutima mallongigoj.
 
 analizu_tekston_outfile(InFileName,OutFileName,VerdaListo) :-
   atom(InFileName),
@@ -87,6 +110,8 @@ analizu_tekston_outfile(InCodes,OutFileName,VerdaListo) :-
   is_list(InCodes),
   phrase(teksto(T),InCodes),!,
   analizo_output(OutFileName,T,VerdaListo).
+
+
 
 analizo_output(OutFileName,T,VerdaListo) :-
   setup_call_cleanup(
@@ -100,6 +125,12 @@ analizo_output(OutFileName,T,VerdaListo) :-
     close(Out)
   ).
 
+%! analizu_tekston_kopie(+Dosiero:atom,+VerdaListo:list). 
+%! analizu_tekston_kopie(+Fluo:stream,+VerdaListo:list).
+%! analizu_tekston_kopie(+Teksto:list,+VerdaListo:list).
+%
+% Analizas kompletan tekston el tekstdosiero aŭ datumfluo. La rezulto estas skribita al STDOUT.
+% La VerdaListo estas listo de vortoj kiel ne estos analizataj sed tuj akceptataj, kiam ili aperas en la teksto.
 
 % analizas tutan tekstodosieron, kaj redonas la tekston kun
 % ne analizeblaj vortoj markitaj

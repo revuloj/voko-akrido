@@ -1,7 +1,8 @@
 /************ 
  * esceptaj vortoj ne sekvantaj tute la normalajn derivadregulojn
 ************/
-:- ensure_loaded(gramatiko2).
+%:- ensure_loaded(gramatiko).
+
 :- op( 1120, xfx, user:(<-) ). % disigas regulo-kapon, de esceptesprimo
 :- op( 500, yfx, user:(~) ). % signas disigindajn vortojn
 

@@ -7,11 +7,39 @@
 
 :- dynamic min_max_len/3, gra_debug/1.
 :- multifile '&'/1, gra_debug/1.
+:- dynamic vorto_gra:vorto/5.
+
+
+
+gra_debug(false). % default
+
+debug(Depth,Msg,Scheme,Rezulto) :-
+  gra_debug(true)
+  ->
+    sub_atom('------------------------------------------------------------------------------------------',0,Depth,_,Indent),
+    format('~w ~w ~w ~w~n',[Indent,Msg,Scheme,Rezulto])
+  ; true.
+
+reduce_full(Term,Flat) :-
+  format(codes(A),'~w',[Term]),
+  reduce_(A,F,"/*+~-() "),
+  atom_codes(Flat,F).
+
+reduce_([],[],_).
+
+reduce_([L|Ls],F,DelLetters) :-
+  string_code(_,DelLetters,L),!, % memberchk(L,DelLetters),!, 
+  reduce_(Ls,F,DelLetters).
+
+reduce_([L|Ls],[L|Fs],DelLetters) :-
+  % \+ memberchk(L,"() "), 
+  reduce_(Ls,Fs,DelLetters).
 
 %%% traduki regulesprimojn al normalaj Prologo-faktoj....
 % 
+
 term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
-  format('# ~k ...',[RuleHead]),
+  format('%# ~k ...',[RuleHead]),
    rule_head(RuleHead,Vrt,Rez,Depth,PredHead),!,
    once((
      rule_body(RuleHead,RuleBody,Vrt,Rez,Depth,PredBody)
@@ -29,7 +57,7 @@ term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
 %? au alterantive: rv_sen_fin(e,subst,Vrt,Rez,_Depth) :- Vrt = posteul, Rez = post/e/ul.
 
 term_expansion( RuleHead <- RuleBody , RuleTranslated ) :-
-  format('# ~k ...',[RuleHead]),
+  format('%# ~k ...',[RuleHead]),
    reduce_full(RuleBody,Flat),
    RuleHead =..  [RuleName|RuleArgs],
    append(RuleArgs,[Flat,RuleBody,_Depth],Args),
@@ -99,7 +127,7 @@ rule_ref(DictSearch,Vrt,Vrt,_,DictSearch) :-
 splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
     % PLIBONIGU: iom malavantaĝe estas, ke RuleId - unua argumento en RuleRef
     % ofte estas "_" kaj do ne konata, oni povus rigardi chiujn eblecojn pri specifa regulo
-    % sed ofte elvenas interfvalo 2.. kiu ne multe diferencas de 1..99
+    % sed ofte elvenas intervalo 2.. kiu ne multe diferencas de 1..99
     get_rule_min_max(RuleRef1,Min1,Max1),
     get_rule_min_max(RuleRef2,Min2,Max2),
     
@@ -146,59 +174,6 @@ splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
      )
   )).
 
-
-/********************************************************************/
-
-gra_debug(false). % default
-
-debug(Depth,Msg,Scheme,Rezulto) :-
-  gra_debug(true)
-  ->
-    sub_atom('------------------------------------------------------------------------------------------',0,Depth,_,Indent),
-    format('~w ~w ~w ~w~n',[Indent,Msg,Scheme,Rezulto])
-  ; true.
-
-% helpofunkcioj pro uzi la gramatikon
-
-analyze(Vrt,Ana,Spc) :-
-  atom(Vrt),
-  vorto(_,Spc,Vrt,Ana,0).
-
-analyze(Vrt,Ana,Spc) :-
-  is_list(Vrt),
-  atom_codes(Atom,Vrt),
-  vorto(_,Spc,Atom,Ana,0).
-
-analyze_perf(Vrt,Ana,Spc) :-
-  statistics(process_cputime,C1),
-  statistics(inferences,I1),
-  analyze(Vrt,Ana,Spc),
-  statistics(process_cputime,C2),
-  statistics(inferences,I2),
-  I is I2-I1,
-  C is C2-C1,
-  format('inferences: ~w, cpu: ~w~n',[I,C]).
-
-% forigas krampojn kaj spacojn el la rezulto-termo
-reduce(Term,Flat) :-
-  format(codes(A),'~w',[Term]),
-  reduce_(A,F,"() "),
-  atom_codes(Flat,F).
-
-reduce_full(Term,Flat) :-
-  format(codes(A),'~w',[Term]),
-  reduce_(A,F,"/*+~-() "),
-  atom_codes(Flat,F).
-
-reduce_([],[],_).
-
-reduce_([L|Ls],F,DelLetters) :-
-  string_code(_,DelLetters,L),!, % memberchk(L,DelLetters),!, 
-  reduce_(Ls,F,DelLetters).
-
-reduce_([L|Ls],[L|Fs],DelLetters) :-
-  % \+ memberchk(L,"() "), 
-  reduce_(Ls,Fs,DelLetters).
 
 get_rule_min_max(RuleId,Min,Max) :-
   atom(RuleId),

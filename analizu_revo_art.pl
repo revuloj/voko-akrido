@@ -1,15 +1,19 @@
+:- module(analizu_revo_art,[
+	      analizu_revo_art/1,
+	      analizu_revo_art_novaj/0, 
+	      analizu_revo_art_prefix/1
+	  ]).
+
+
 %:- use_module(library(process)).
 :- use_module(library(unix)).
 :- use_module(library(filesex)).
 
-:- consult(analizilo).
-:- consult('dcg/vortlisto_dcg.pl'). % por enlegi la "Verdan Liston"
+:- use_module(analizilo).
+:- use_module('dcg/vortlisto_dcg.pl'). % por enlegi la "Verdan Liston"
 
 %:- consult(revo_blanka_listo).
 :- consult('vrt/v_revo_evitindaj').
-
-info :-
-  format('analizu_revo_art(Art); analizu_revo_art_novaj; analizu_revo_art_prefix(Komenco)').
 
 :- dynamic(verda/2).
 
@@ -19,6 +23,25 @@ revo_txt('/home/revo/revo/txt').
 skribo_pado('kontrolitaj').
 revo_verda_listo('vrt/revo_verda_listo_provizora.txt').
 
+/** <module> Analizilo por Revo-artikoloj
+
+  Antaŭsupozas, ke la artikoloj estas transformitaj al tekstoj antaŭe. Uzu la Perlo-programeton
+  $VOKO/bin/xml2txt.pl por tio. Tekstoj estas antendataj en /home/revo/revo/txt.
+
+  La predikataj enlegas tekston kaj donas la rezulton kun analizitaj vortoj kaj markiloj de neanalizeblaj vortoj. Vidu 
+  ./html/klarigoj.html
+
+*/
+
+
+helpo :-
+  format('analizu_revo_art(Art); analizu_revo_art_novaj; analizu_revo_art_prefix(Komenco)').
+
+%! analizu_revo_art(+Artikolo:atom) is det.
+%
+% Legas artikolon kun dosiernomo Artikolo (sen .txt), analizas kaj skribas la rezulton kiel HTML-kodo al STDOUT.
+% Ne analizeblaj vortoj el la verda listo estas markitaj verde anstataŭ ruĝe.
+
 analizu_revo_art(Art) :-
     legu_verdan_liston_se_malplena,
 
@@ -26,6 +49,11 @@ analizu_revo_art(Art) :-
     read_file_to_codes(TxtFile,Txt,[]),
     verda_listo(Art,BL),
     analizu_tekston_kopie(Txt,BL),!.
+
+%! analizu_revo_art_prefix(+Prefikso:atom) is det.
+%
+% Legas ĉiujn artikolojn kies Dosiernomoj komenciĝas per Prefikso, analizas ilin kaj skribas la rezulton kiel HTML-dosiero
+% al la dosierujo ./kontrolitaj
 
 analizu_revo_art_prefix(Prefix) :-
    legu_verdan_liston_se_malplena,
@@ -35,6 +63,13 @@ analizu_revo_art_prefix(Prefix) :-
       member(TxtFile,TxtFiles),
       kontrolu_dosieron(TxtFile)
    ).
+
+
+%! analizu_revo_art_novaj is det.
+%
+% Legas kaj kontrolas ĉiujn artikolojn kies dosieroj estas pli novaj ol la laste kontrolita dosiero (HTML) en dosierujo ./kontrolitaj
+
+% al la dosierujo ./kontrolitaj
 
 analizu_revo_art_novaj :-
     format('analizu novajn...~n'),

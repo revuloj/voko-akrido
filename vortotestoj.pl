@@ -1,4 +1,4 @@
-:- consult(analizilo).
+:- use_module(analizilo).
 
 a1(Vorto,Analizita,Speco) :-
   vortanalizo(Vorto,Ana,Spc),!,

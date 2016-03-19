@@ -1,3 +1,7 @@
+:- module(revo_radikoj,[
+	      revo_radikaro/0
+	  ]).
+
 :- use_module(library(sgml)).
 :- use_module(library(xpath)).
 :- use_module(library(semweb/rdf_db)).
@@ -14,40 +18,36 @@ mlg_dosiero('vrt/v_revo_mallongigoj.pl').
 
 :- rdf_register_prefix(voko,'http://purl.org/net/voko#').
 
-%% enkonduko
-%
-%  Kreas vortaron de Prolog-faktoj el Revo-artikoloj de formato XML.
-%  Rezulto estas la sekvaj dosieroj:
+/** <module> Kreilo de Revo-vortaro
 
+  Kreas vortaron de Prolog-faktoj el XML-Revo-artikoloj.
+  Rezulto estas la sekvaj dosieroj:
 
-enkonduko.
+  * vrt/v_revo_radikoj.pl
+  entenas radikojn en la formo =|r(hom,subst).|=
 
-/*  
-  $ vrt/v_revo_radikoj.pl
-  : entenas radikojn en la formo r(hom,subst).
+  * vrt/v_revo_vortoj.pl
+  entenas vortetojn en la formo =|v(tus,intj).|=
 
-  $ vrt/v_revo_vortoj.pl
-  : entenas vortetojn en la formo v(tus,intj).
+  * vrt/v_revo_nomoj.pl
+  entenas nomradikojn en la formo 
+  =|nr('Zamenhof',pers).|= kaj =|nr_('zamenhof',pers).|=
+  La minuskla formo enestas aldone pro uzado end derivado, ekz. zamenhof/a
 
-  $ vrt/v_revo_nomoj.pl
-  : entenas nomradikojn en la formo 
-    nr('Zamenhof',pers). kaj nr_('zamenhof',pers).
-    La minuskla formo enestas aldone pro uzado end derivado, ekz. zamenhof/a
+  * vrt/v_revo_evitindaj.pl
+  entenas evitindajn vortojn (markitaj per EVI en Revo)
+  en la formo =|evi('agitator',"agitatoro").|=
 
-  $ vrt/v_revo_evitindaj.pl
-  : entenas evitindajn vortojn (markitaj per EVI en Revo)
-    en la formo evi('agitator',"agitatoro").
-
-  $ vrt/v_revo_mallongigoj.pl
-  : entenas mallongigojn el Revo en la formo mlg('DNA').
-    Ĝis nune la origina kapvorto, do la signifo de la mallongigo,
-    ne estas skribata.
+  * vrt/v_revo_mallongigoj.pl
+  entenas mallongigojn el Revo en la formo =|mlg('DNA').|=
+  Ĝis nune la origina kapvorto, do la signifo de la mallongigo,
+  ne estas skribata.
 
   Por eltrovi vortspecojn kiel besto aŭ persono per referenco al Voko-klasoj
   necesas enlegi ilin el dosiero $VOKO/owl/voko.rdf antaŭ la traserĉado de la XML-artikoloj.
 
   La predikato revo_radikaro/0 procedas ĉiujn tri paŝojn: legi la voko-klasojn, 
-  traserci la artikolojn kaj skribi la rezulton.
+  traserĉi la artikolojn kaj skribi la rezulton.
 
   La procedo antaŭsupozas, ke Voko-klasoj troviĝas en /home/revo/voko/owl,
   Revo-artikoloj en /home/revo/revo/xml kaj la rezulta vortaro iros al ./vrt/
@@ -58,23 +58,28 @@ enkonduko.
 
 
 % %%%%%%%%%
-% bazaj predikatoj por traserchi artikolojn pri radikoj kaj skribi ilin
+% bazaj predikatoj por traserĉi artikolojn pri radikoj kaj skribi ilin
 % %%%%%%%%
 
 helpo :- format('revo_radikaro :- load_voko_classes, revo_trasercho, skribu.').
 
-%% revo_radikaro is det
+%% revo_radikaro is det.
 % 
 % La predikato revo_radikaro/0 procedas tiujn tri paŝojn: legi la voko-klasojn, 
-% traserci la artikolojn kaj skribi la rezulton.
-
+% traserĉi la artikolojn kaj skribi la rezulton.
+%==
+% revo_radikaro :-
+%   load_voko_classes, 
+%   revo_trasercho, 
+%   skribu.
+%==
 
 revo_radikaro :-
   load_voko_classes, 
   revo_trasercho, 
   skribu.
 
-%! revo_trasercho is det
+%! revo_trasercho is det.
 %
 
 revo_trasercho :-
@@ -100,12 +105,16 @@ revo_trasercho :-
       )
    ).
 
+%! skribu is det.
+%
+
 skribu :-
   skribu_radikojn,
   skribu_vortojn,
   skribu_nomojn,
   skribu_mallongigojn,
   skribu_evitindajn.
+
 
 
 skribu_radikojn :-

@@ -1,14 +1,90 @@
-:- ensure_loaded(gramatiko2).
+:- module(vorto_gra,[
+	      vorto/5, % reguloj por analizi vorton lau gramatiko en vorto_gra
+	      sub/2 % hierarkieto de vortospecoj, ekz, sub(best,pers), sub(best,subst)
+	  ]).
+
+:- ensure_loaded(regul_trf).
 
 :- multifile rv_sen_fin/5, vorto/5, min_max_len/3.
-:- discontiguous vorto/5.
+:- discontiguous vorto/5, '<='/2.
 :- dynamic min_max_len/3.
 
-% PLIBONIGU: anstau uzi user: ebligu importi tion de gramatiko...
+:- format('%# legi kaj transformi gramatikajn regulojn...').
+:- consult(esceptoj).
+
+/** <module> Esperanta vortanaliza gramatiko
+  
+  Jen konstituta gramatiko por analizi esperantajn vortojn laŭ vortelementoj.
+  La gramatiko estas formulita kiel nombro da reguloj en la formo
+
+    =|vortparto(Indikilo,Speco) <= konstituantoj [ ~> aldona_testo ]|=
+ 
+  ekz.:
+==  
+  rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
+== 
+  legu kiel:
+  "_Radikvorteto sen finaĵo_ konstituiĝas el alia _radikvorteto sen finaĵo_ kaj _sufikso_.
+  Aldone la sufikso devas konveni al la vortspeco _De_ kaj ŝanĝas la vortspecon al rezulta vortspeco _Al_ ".
+
+  ekz.: 
+
+    =|lern/ej (subst) <= lern (tr) / ej (verb,subst)|=
+
+  
+  ĉe tio:
+    * =rv_sen_fin= estas la nomo de la ĉefregulo, sed ankaŭ la kategorio de la analiza rezulto
+    * la etikedo ='Ds'= estas nur helpilo por identigi la regulojn inter la variaĵoj de la ĉefregulo,
+      sed iom ankaŭ kontrolas kaj limigas la analizoprocedon
+
+  La operacioj uzataj en reguloj estas la sekvaj:
+
+    | <= | legu kiel _|konstituiĝas|_      |
+    | &  | signas referencon al alia regulo |
+    | ~> | enkondukas post la ĉefa parto de la regulo aldonajn kondiĉojn en normala sintakso de Prologo |
+    | /  | dispartigas vortpartojn en derivado (apliko de afiksoj kaj finaĵoj) |
+    | -  | dispartigas vortpartojn en kunmetado (du radikvortoj, ekz. vapor-ŝip/o) |
+    | +  | dispartigas vortpartojn en kunderivado: surstrata -> sur+strat/a (kunderivado de "sur la strat[o]a") |
+    | *  | dispartigas nombrovortojn en plurobligo, ekz. du*dek/a |
+    | ~  | dispartigas vortpartojn en kuntiroj: dik~fingr/o, grand~sinjor/o |
+
+    _Noto_: tiuspecaj vort-kuntiroj estas diskuteblaj kaj diskutataj, pluraj opinias, ke ili estas evitindaj.
+     Pri diversaj teorioj de esperanta vortfarado legu ekz.
+      - http://akademio-de-esperanto.org/aktoj/aktoj1/vortfarado.html
+      - L. Mimó: Kompleta Lernolibro de Regula Esperanto, lec. 25 kaj sekvaj 
+
+  @author Wolfram Diestel
+  @license GPL
+*/
+
+
+% PLIBONIGU: anstau uzi user: ebligu importi tion de regul_trf...
 :- op( 1120, xfx, user:(<=) ). % disigas regulo-kapon, de regulesprimo
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 :- op( 500, yfx, user:(~) ). % signas disigindajn vortojn
+
+% por ebligi uzadon de diversaj vortaroj,
+% tie ĉi la diversaj predikatoj por vortelementoj estas
+% dinamike importitaj. Necesas ŝargi la vortaron antaŭ ŝargi la gramatikon, do ...
+
+:-  import(vortaro:v/2),
+    import(vortaro:r/2),
+    import(vortaro:nr/2),
+    import(vortaro:nr_/2),
+    import(vortaro:p/2),  
+    import(vortaro:p/3),  
+    import(vortaro:s/3),
+    import(vortaro:ns/2),  
+    import(vortaro:sn/3),
+    import(vortaro:f/2),  
+    import(vortaro:c/2),
+    import(vortaro:ls/1),  
+    import(vortaro:os/1),
+    import(vortaro:u/2),  
+    import(vortaro:fu/2), 
+    import(vortaro:i/2),  
+    import(vortaro:fi/2).
 
 /**************************************************
 pri vortfarado ĝenerale estas pluraj diversopiniaj klarigoj, vd. ekz.:
@@ -20,6 +96,10 @@ pri vortfarado ĝenerale estas pluraj diversopiniaj klarigoj, vd. ekz.:
 
 %:- retract(gra_debug(false)).
 %gra_debug(true).
+
+%! sub(?Subspeco:atom,?Speco:atom) is nondet.
+%
+% Malgranda hierakieto de vortspecoj: sub(best,subst), sub(tr,verb) k.a.
 
 sub(X,X).
 % sub(X,Z) :- sub(X,Y), sub(Y,Z).
@@ -37,6 +117,20 @@ sub(perspron,pron).
 
 subspc(S1,S2) :-
   sub(S1,S2), !.
+
+
+%! nk(?Nomo:atom,?Speco:atom) is nondet.
+%
+% formi nomkomencon el radikoj, por apliki nj, ĉj, ekz. paĉj': r(patr,pers) -> nk(pa,pers) 
+
+nk(Nom,Spc) :- 
+    sub(Spc,pers),
+    (vortaro:r(Nomo,Spc); vortaro:nr(Nomo,Spc)),
+    sub_atom('aeioujŭrlnm',_,1,_,Lit),
+    sub_atom(Nomo,B,1,_,Lit),
+    B_1 is B+1,
+    sub_atom(Nomo,0,B_1,_,Nom).
+
 
 drv_per_suf(Spc,Al,De,Speco) :- 
   subspc(Spc,De), %!,
@@ -59,7 +153,19 @@ drv_per_suf(Spc,Al,De,Speco) :-
         ).
 
 
-
+%! vorto(-RuleId:atom,-Speco:atom,+Vorto:atom,-Analizita:compound,+Depth:int) is nondet.
+%
+% La enirejo al la gramatiko por analizi vortojn. La predikato =vorto= sekve trairos la arbon de reguloj
+% por dismeti la vorton en siajn elementojn kaj por ĉiu trovita solvo redonos la analizitan vorton kiel esprimo de la elementoj.
+%
+% ekz.
+%
+%==
+%  ?- vorto(Regulo,Speco,'kontraŭtusilo',Analizita,0).
+%  Regulo = 'Df',
+%  Speco = subst,
+%  Analizita = kontraŭ/tus/il/o
+%==
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% simplaj, nekunmetitaj vortoj 
