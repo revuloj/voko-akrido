@@ -64,7 +64,6 @@ evi('pingvi',"pingvino").
 evi('semino',"seminormo").
 evi('skadro',"skadrono").
 evi('spektator',"spektatoro").
-evi('subjek1',"subjektiva").
 evi('sximpa',"ŝimpanzo").
 evi('tehxnologi',"teĥnologio").
 evi('tomograf',"tomografo").

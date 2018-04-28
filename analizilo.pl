@@ -1,5 +1,7 @@
 :- module(analizilo,[
 	      vortanalizo/3,
+	      vortanalizo/4,
+	      preparu_tekston/2, 
 	      analizu_tekston_kopie/2,
 	      analizu_tekston_outfile/3]).
 
@@ -111,7 +113,9 @@ analizu_tekston_outfile(InCodes,OutFileName,VerdaListo) :-
   phrase(teksto(T),InCodes),!,
   analizo_output(OutFileName,T,VerdaListo).
 
-
+preparu_tekston(InCodes,Teksto) :-    
+  is_list(InCodes),
+  phrase(teksto(Teksto),InCodes),!.
 
 analizo_output(OutFileName,T,VerdaListo) :-
   setup_call_cleanup(

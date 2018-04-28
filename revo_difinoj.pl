@@ -3,8 +3,9 @@
 :- use_module(library(sgml)).
 :- use_module(library(xpath)).
 :- use_module(library(semweb/rdf_db)).
+:- use_module(library(isub)).
 
-:- dynamic fak_difino/4, kls_difino/4.
+:- dynamic fak_difino/4, kls_difino/4, revo_difino/3.
 
 revo_xml('/home/revo/revo/xml/*.xml').
 voko_rdf_klasoj('/home/revo/voko/owl/voko.rdf').
@@ -36,12 +37,18 @@ revo_difinoj :-
   revo_trasercho, 
   skribu.
 
+revo_difinoj_similaj :-
+  load_voko_classes, 
+  revo_trasercho, 
+  similaj_difinoj(0.9,50).
+
 %! revo_trasercho is det.
 %
 
 revo_trasercho :-
   (\+ sub_class(rabobestoj,bestoj) -> throw('chu vi shargis la voko-klasojn jam?'); true),
 
+  retractall(revo_difino(_,_,_)),
   retractall(fak_difino(_,_,_,_)),
   retractall(kls_difino(_,_,_,_)),
 
@@ -67,6 +74,7 @@ revo_trasercho :-
 %
 
 skribu :-
+    export_facts_csv(revo_difino(dif,mrk,kap)),
     export_facts_csv(fak_difino(fak,dif,mrk,kap)),
     export_facts_csv(kls_difino(kls,dif,mrk,kap)).
 
@@ -76,6 +84,16 @@ load_voko_classes :-
   rdf_load(RdfFile,[]),
   rdf_set_predicate(rdfs:subClassOf,transitive(true)).
 
+similaj_difinoj(Simileco,Longeco) :-
+    forall(
+	    similaj_difinoj(Simileco,Longeco,Mrk1,Mrk2,Sim),
+	    format('~02f: ~w -- ~w~n',[Sim,Mrk1,Mrk2])
+	).
+    
+similaj_difinoj(MinSim,MinLen,Mrk1,Mrk2,Sim) :-    
+    revo_difino(Dif1,Mrk1,_Kap1), atom_length(Dif1,L1), L1>=MinLen,
+    revo_difino(Dif2,Mrk2,_Kap2), atom_length(Dif2,L2), L2>=MinLen,
+    Mrk1 \= Mrk2, isub(Dif1,Dif2,false,Sim), Sim >= MinSim.
 
 %%%%%%%%%%
 % helpaj predikatoj
@@ -134,6 +152,7 @@ revo_drv(DOM,Radiko) :-
     % debug
     format('~w kap:~w fak:~w kls:~w dif:~w~n',[Marko,Kapvorto,Fako,Klaso]),
 
+    assertz(revo_difino(Difino,Marko,Kapvorto)),
     (Fako \= '' -> assertz(fak_difino(Fako,Difino,Marko,Kapvorto)); true),
     (Klaso \= '' -> assertz(kls_difino(Klaso,Difino,Marko,Kapvorto)); true)
   )).
@@ -158,6 +177,7 @@ revo_snc(Drv,DrvMrk,Radiko,Kapvorto,DrvFako) :-
   % debug
   format('~w kap:~w fak:~w kls:~w dif:~w~n',[Marko,Kapvorto,Fako,Klaso,Difino]),
 
+  assertz(revo_difino(Difino,Marko,Kapvorto)),
   (Fako \= '' -> assertz(fak_difino(Fako,Difino,Marko,Kapvorto)); true),
   (Klaso \= '' -> assertz(kls_difino(Klaso,Difino,Marko,Kapvorto)); true).
 

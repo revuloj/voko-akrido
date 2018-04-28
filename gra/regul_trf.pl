@@ -1,3 +1,4 @@
+/* -*- Mode: Prolog -*- */
 % PLIBONIGU: anstau uzi user: ebligu importi tion de gramatiko...
 :- op( 1120, xfx, user:(<=) ). % disigas regulo-kapon, de regulesprimo
 :- op( 1120, xfx, user:(<-) ). % disigas regulo-kapon, de esceptesprimo
@@ -9,7 +10,10 @@
 :- multifile '&'/1, gra_debug/1.
 :- dynamic vorto_gra:vorto/5.
 
-
+/**
+   transformas la regulojn de la gramatiko (vorto_gra) al interpretebla Prologo-lingvo.
+   Uziĝas term_expansion por tiu transformado.
+*/
 
 gra_debug(false). % default
 
@@ -31,12 +35,19 @@ reduce_([L|Ls],F,DelLetters) :-
   string_code(_,DelLetters,L),!, % memberchk(L,DelLetters),!, 
   reduce_(Ls,F,DelLetters).
 
+reduce_([0'/,0'(,0'/,0'),0'/|Ls],[124|F],DelLetters) :- % / -> |
+  reduce_(Ls,F,DelLetters).
+
+reduce_([0'/|Ls],[183|F],DelLetters) :- % / -> middot (\u00b7)
+  reduce_(Ls,F,DelLetters).
+
 reduce_([L|Ls],[L|Fs],DelLetters) :-
   % \+ memberchk(L,"() "), 
   reduce_(Ls,Fs,DelLetters).
 
 %%% traduki regulesprimojn al normalaj Prologo-faktoj....
-% 
+%% la maldekstra parto (kapo) tradukiĝas per rule_head
+%% la dekstra parto (korpo) per rule_body
 
 term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
   format('%# ~k ...',[RuleHead]),
@@ -81,7 +92,7 @@ rule_body(RuleHead,RuleExp,Vrt,Rez,Depth,PredBody) :-
   rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredBody).
 
 
-
+% transformu regulo-esprimon (rule expression) al Prologo
 rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   RuleHead =.. [_,RuleScheme|_],
   RuleExp =.. [Op|Refs],
@@ -90,15 +101,22 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
 %%%%  Rezulto =.. [Op,Rez1,Rez2], 
   Rez =.. [Op,Rez1,Rez2], 
 
+  % kreu la Prologo-kodon por la regul-aplikoj kaj
+  % la vortdismeto (Splitter)
   rule_ref(R1,V1,Rez1,D1,RRef1),
   rule_ref(R2,Rest,Rez2,D1,RRef2),
   splitter(RuleScheme,R1,R2,Vrt,V1,Rest,Splitter),
-  
+
+  % se la regul-skemo trovita en la kapo
+  % temas pri apliko de prefikso aŭ antaŭvorto,
+  % komencu per maldekstra parto (ĉar tiu parto estas verŝajne pli mallonga)
+  % En aliaj okazoj (sufiksoj, finaĵoj, komencu per destra parto.
   (memberchk(RuleScheme,['pD','pv','pr','pAP','A+P']) ->
     Sub = (RRef1,RRef2)
   ; Sub = (RRef2,RRef1)
   ),
 
+  % kunmetu la kod-partojn al tuta predikato-korpo
   PredExp =  (
    debug(Depth,'?',RuleScheme,Vrt), 
 %     atom_concat(V1,Rest,Vrt), 
@@ -116,11 +134,13 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
 rule_exp(_,RuleExp,Vrt,Rez,Depth,PredExp) :-
   rule_ref(RuleExp,Vrt,Rez,Depth,PredExp).
 
+% la regulo-parto referencas alian regulon
 rule_ref(&RuleRef,Vrt,Rez,Depth,RuleCall) :- !,
   RuleRef =.. [RuleName|RuleArgs],
   append([RuleArgs,[Vrt,Rez,Depth]],Args),
   RuleCall =.. [RuleName|Args].
 
+% la regulo-parto estas serĉo en la vortaro, je prefiksoj, radikoj, sufiksoj, finaĵoj...
 rule_ref(DictSearch,Vrt,Vrt,_,DictSearch) :-
   DictSearch =.. [_,Vrt|_].
 
@@ -140,9 +160,14 @@ splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
    %%%       atom_length(Vrt,L),
    %%%       between(MinR,MaxR,L),
 
+          % maldekstra parto de la vorto (aŭ vortparto)
+          % havanta longecon L1, kiu estu inter Min1 kaj Max1
           between(Min1,Max1,L1),
           sub_atom(Vrt,0,L1,L2,V1),
 
+          % dekstra parto de la vorto (aŭ vortparto)
+          % havanta longecon L2 = (vortlongeco)-L1
+          % kaj estu inter Min2 kaj Max2
           between(Min2,Max2,L2),
           sub_atom(Vrt,L1,L2,0,Rest)
         )

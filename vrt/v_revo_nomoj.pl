@@ -28,6 +28,7 @@ nr('Ĉingis',pers).
 nr('Ĉili',subst).
 nr('Ĉikag',subst).
 nr('Ĉeĥi',subst).
+nr('Ĉernobil',subst).
 nr('Ĉatisgar',subst).
 nr('Ĉad',subst).
 nr('Zimbabv',subst).
@@ -42,12 +43,14 @@ nr('Volter',subst).
 nr('Volt',subst).
 nr('Volg',subst).
 nr('Volfgang',pers).
+nr('Volapuk',subst).
 nr('Vodu',subst).
 nr('Vladimir',pers).
 nr('Vjetnami',subst).
 nr('Viŝnu',subst).
 nr('Vizbaden',subst).
 nr('Vitruvi',subst).
+nr('Vit',subst).
 nr('Viskonsin',subst).
 nr('Virgini',subst).
 nr('Vindoz',subst).
@@ -63,6 +66,7 @@ nr('Vergili',pers).
 nr('Venus',subst).
 nr('Venezuel',subst).
 nr('Vener',subst).
+nr('Veneci',subst).
 nr('Vencesla',pers).
 nr('Vaŝington',pers).
 nr('Vaĝrajan',subst).
@@ -88,6 +92,7 @@ nr('Uran',subst).
 nr('Ural',subst).
 nr('Uniks',subst).
 nr('Unikod',subst).
+nr('Unesk',subst).
 nr('Ugand',subst).
 nr('Tviter',subst).
 nr('Turus',subst).
@@ -122,10 +127,14 @@ nr('Teobald',pers).
 nr('Tenesi',subst).
 nr('Telangan',subst).
 nr('Teksas',subst).
+nr('Teheran',subst).
+nr('Teb',subst).
+nr('Taŝkent',subst).
 nr('Taĝiki',subst).
 nr('Tasmani',subst).
 nr('Tanzani',subst).
 nr('Tales',subst).
+nr('Tahiti',subst).
 nr('Tade',pers).
 nr('Svisi',subst).
 nr('Svedi',subst).
@@ -190,6 +199,7 @@ nr('Salafism',subst).
 nr('Sajan',subst).
 nr('Sahar',subst).
 nr('Sadam',pers).
+nr('Sad',subst).
 nr('Ruso',subst).
 nr('Rusi',subst).
 nr('Rurik',pers).
@@ -232,6 +242,7 @@ nr('Principe',subst).
 nr('Prag',subst).
 nr('Pozidon',subst).
 nr('Portugali',subst).
+nr('Ponti',pers).
 nr('Pompej',subst).
 nr('Poluks',subst).
 nr('Poli',subst).
@@ -330,6 +341,7 @@ nr('Mozart',subst).
 nr('Mozambik',subst).
 nr('Moz',subst).
 nr('Moskv',subst).
+nr('Mose',subst).
 nr('Mors',subst).
 nr('Morfe',subst).
 nr('Montenegr',subst).
@@ -381,6 +393,7 @@ nr('Marcel',pers).
 nr('Manitob',subst).
 nr('Manipur',subst).
 nr('Manik',subst).
+nr('Mameluk',subst).
 nr('Malt',subst).
 nr('Malkolm',pers).
 nr('Malik',pers).
@@ -408,6 +421,7 @@ nr('Ludovik',pers).
 nr('Lucian',pers).
 nr('Loĵban',subst).
 nr('Loven',subst).
+nr('Loren',subst).
 nr('London',subst).
 nr('Loglan',subst).
 nr('Liĥtenŝtejn',subst).
@@ -428,6 +442,7 @@ nr('Lesb',subst).
 nr('Lepsik',subst).
 nr('Leopold',pers).
 nr('Leonard',pers).
+nr('Leningrad',subst).
 nr('Len',subst).
 nr('Lelistad',subst).
 nr('Lejbnic',subst).
@@ -568,6 +583,7 @@ nr('Interlingva',subst).
 nr('Inocent',pers).
 nr('Indr',subst).
 nr('Indiana',subst).
+nr('Iluminat',subst).
 nr('Ilinojs',subst).
 nr('Iliad',subst).
 nr('Ignac',pers).
@@ -714,6 +730,7 @@ nr('Epikur',subst).
 nr('Epifani',subst).
 nr('Ene',pers).
 nr('Emilian',pers).
+nr('Emili',pers).
 nr('Emil',pers).
 nr('Emanuel',pers).
 nr('Elize',subst).
@@ -820,6 +837,7 @@ nr('Batu',subst).
 nr('Bartolome',pers).
 nr('Barnab',pers).
 nr('Barcelon',subst).
+nr('Barbaros',subst).
 nr('Barbad',subst).
 nr('Barat',subst).
 nr('Bankok',subst).
@@ -827,6 +845,7 @@ nr('Banaĥ',subst).
 nr('Baltik',subst).
 nr('Baltazar',pers).
 nr('Balkaŝ',subst).
+nr('Balkan',subst).
 nr('Balduen',pers).
 nr('Baktri',subst).
 nr('Bajkal',subst).
@@ -922,6 +941,7 @@ nr('Ahmadism',subst).
 nr('Agni',subst).
 nr('Afrodit',subst).
 nr('Afrik',subst).
+nr('Adriatik',subst).
 nr('Adrian',pers).
 nr('Adolf',pers).
 nr('Adam',pers).
@@ -960,6 +980,7 @@ nr_('ĉingis',pers).
 nr_('ĉili',subst).
 nr_('ĉikag',subst).
 nr_('ĉeĥi',subst).
+nr_('ĉernobil',subst).
 nr_('ĉatisgar',subst).
 nr_('ĉad',subst).
 nr_('zimbabv',subst).
@@ -974,12 +995,14 @@ nr_('volter',subst).
 nr_('volt',subst).
 nr_('volg',subst).
 nr_('volfgang',pers).
+nr_('volapuk',subst).
 nr_('vodu',subst).
 nr_('vladimir',pers).
 nr_('vjetnami',subst).
 nr_('viŝnu',subst).
 nr_('vizbaden',subst).
 nr_('vitruvi',subst).
+nr_('vit',subst).
 nr_('viskonsin',subst).
 nr_('virgini',subst).
 nr_('vindoz',subst).
@@ -995,6 +1018,7 @@ nr_('vergili',pers).
 nr_('venus',subst).
 nr_('venezuel',subst).
 nr_('vener',subst).
+nr_('veneci',subst).
 nr_('vencesla',pers).
 nr_('vaŝington',pers).
 nr_('vaĝrajan',subst).
@@ -1020,6 +1044,7 @@ nr_('uran',subst).
 nr_('ural',subst).
 nr_('uniks',subst).
 nr_('unikod',subst).
+nr_('unesk',subst).
 nr_('ugand',subst).
 nr_('tviter',subst).
 nr_('turus',subst).
@@ -1054,10 +1079,14 @@ nr_('teobald',pers).
 nr_('tenesi',subst).
 nr_('telangan',subst).
 nr_('teksas',subst).
+nr_('teheran',subst).
+nr_('teb',subst).
+nr_('taŝkent',subst).
 nr_('taĝiki',subst).
 nr_('tasmani',subst).
 nr_('tanzani',subst).
 nr_('tales',subst).
+nr_('tahiti',subst).
 nr_('tade',pers).
 nr_('svisi',subst).
 nr_('svedi',subst).
@@ -1122,6 +1151,7 @@ nr_('salafism',subst).
 nr_('sajan',subst).
 nr_('sahar',subst).
 nr_('sadam',pers).
+nr_('sad',subst).
 nr_('ruso',subst).
 nr_('rusi',subst).
 nr_('rurik',pers).
@@ -1164,6 +1194,7 @@ nr_('principe',subst).
 nr_('prag',subst).
 nr_('pozidon',subst).
 nr_('portugali',subst).
+nr_('ponti',pers).
 nr_('pompej',subst).
 nr_('poluks',subst).
 nr_('poli',subst).
@@ -1262,6 +1293,7 @@ nr_('mozart',subst).
 nr_('mozambik',subst).
 nr_('moz',subst).
 nr_('moskv',subst).
+nr_('mose',subst).
 nr_('mors',subst).
 nr_('morfe',subst).
 nr_('montenegr',subst).
@@ -1313,6 +1345,7 @@ nr_('marcel',pers).
 nr_('manitob',subst).
 nr_('manipur',subst).
 nr_('manik',subst).
+nr_('mameluk',subst).
 nr_('malt',subst).
 nr_('malkolm',pers).
 nr_('malik',pers).
@@ -1340,6 +1373,7 @@ nr_('ludovik',pers).
 nr_('lucian',pers).
 nr_('loĵban',subst).
 nr_('loven',subst).
+nr_('loren',subst).
 nr_('london',subst).
 nr_('loglan',subst).
 nr_('liĥtenŝtejn',subst).
@@ -1360,6 +1394,7 @@ nr_('lesb',subst).
 nr_('lepsik',subst).
 nr_('leopold',pers).
 nr_('leonard',pers).
+nr_('leningrad',subst).
 nr_('len',subst).
 nr_('lelistad',subst).
 nr_('lejbnic',subst).
@@ -1500,6 +1535,7 @@ nr_('interlingva',subst).
 nr_('inocent',pers).
 nr_('indr',subst).
 nr_('indiana',subst).
+nr_('iluminat',subst).
 nr_('ilinojs',subst).
 nr_('iliad',subst).
 nr_('ignac',pers).
@@ -1646,6 +1682,7 @@ nr_('epikur',subst).
 nr_('epifani',subst).
 nr_('ene',pers).
 nr_('emilian',pers).
+nr_('emili',pers).
 nr_('emil',pers).
 nr_('emanuel',pers).
 nr_('elize',subst).
@@ -1752,6 +1789,7 @@ nr_('batu',subst).
 nr_('bartolome',pers).
 nr_('barnab',pers).
 nr_('barcelon',subst).
+nr_('barbaros',subst).
 nr_('barbad',subst).
 nr_('barat',subst).
 nr_('bankok',subst).
@@ -1759,6 +1797,7 @@ nr_('banaĥ',subst).
 nr_('baltik',subst).
 nr_('baltazar',pers).
 nr_('balkaŝ',subst).
+nr_('balkan',subst).
 nr_('balduen',pers).
 nr_('baktri',subst).
 nr_('bajkal',subst).
@@ -1854,6 +1893,7 @@ nr_('ahmadism',subst).
 nr_('agni',subst).
 nr_('afrodit',subst).
 nr_('afrik',subst).
+nr_('adriatik',subst).
 nr_('adrian',pers).
 nr_('adolf',pers).
 nr_('adam',pers).

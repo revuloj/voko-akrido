@@ -2,7 +2,7 @@
 	      teksto//1]
     ).
 
-:- ensure_loaded(library(http/dcg_basics)).
+:- ensure_loaded(library(dcg/basics)).
 
 % PLIBONIGENDA: uzu disjunktajn literklasojn!
 
@@ -79,8 +79,9 @@ vteksto([n(V),s(N)|T]) --> numero(V),
 %    { format('~s ',[V]) }. %for debugging%%vteksto([f(V),s(N)|T]) --> fremdvorto(V),
 %%                     neliteroj(N), vteksto(T).
 
-vteksto([v(V)]) --> vorto(V),
-   { debug(V) }.
+vteksto([v(V)]) --> vorto(V).
+%,
+   %{ debug(V) }.
 
 vteksto([n(N)]) --> numero(N).
 

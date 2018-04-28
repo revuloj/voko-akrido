@@ -44,6 +44,7 @@ f(e,adv).
 
 %! s(?Sufikso,?AlSpeco,?DeSpeco).
 %
+% Sufiksoj
 % @arg Sufikso sufikso, ekz. ul
 % @arg AlSpeco rezulto de derivado, ekz. best
 % @arg DeSpeco radikspeco, al kiu ĝi estas aplikebla, ekz. adj
@@ -100,13 +101,16 @@ s(um,_,_).
 s(um,tr,_). % plenumi, brakumi, krucumi, lavumi ktp.
 
 %! ns(?NomSufikso,?Speco).
+%
+% Nomsufiksoj, do 'nj' kaj 'ĉj'
 
 ns(nj,pers).
 ns(ĉj,pers).
 
 %! sn(?NombroSufikso,?AlSpeco,?DeSpeco).
 %
-% apartigita de la aliaj sufiksoj, ĉar iom longaj kaj do malbonigus la
+% Nombrosufiksoj: ilion kaj iliard.
+% Ili estas apartigita de la aliaj sufiksoj, ĉar iom longaj kaj do malbonigus la
 % efikecon de sufiksanalizado (ties longeco: 2..4)
 sn(ilion,nombr,nombr). % sufiksoj por grandaj nombroj triilino - 1000^2*3 , okiliono - 1000^2*8) 
 sn(iliard,nombr,nombr). % triiliardo - 1000 * 1000^2*3, okiliardo - 1000 * 1000^2*8
@@ -114,6 +118,7 @@ sn(iliard,nombr,nombr). % triiliardo - 1000 * 1000^2*3, okiliardo - 1000 * 1000^
 
 %! p(?Prefikso,?DeSpeco).
 %
+% Prefiksoj
 % @arg Prefikso prefikso, ekz. bo
 % @arg DeSpeco radikspeco, al kiu ĝi estas aplikebla, ekz. parc
 %     (ordinaraj prefiskoj ne shanghas la vortspecon)
@@ -163,8 +168,9 @@ p(tro,adj). % troabundeco
 
 %! p(?Prefikso,?AlSpeco,?DeSpeco)
 %
-% prepozicioj uzataj prefikse kun verboj,
-% adverboj uzataj prefikse kun verboj
+% Prefikse uzataj prepozicioj kaj adverboj. 
+% * prepozicioj uzataj prefikse kun verboj,
+% * adverboj uzataj prefikse kun verboj
 %
 % @tbd forigu prepoziciojn kaj pronomojn uzataj en kunderivado el la faktoj
 
@@ -256,9 +262,10 @@ p('tia',adj,subst). % de tia speco -> tiaspeca
 p('kia',adj,subst). % de kia speco -> kiaspeca
 p('nenia',adj,subst). % de nenia speco -> neniaspeca
 
+
 %! u(?Pron,?Speco).
 %
-% j-pronomoj, ekz. kiu/j 
+% j-pronomoj, ekz-e kiu/j 
 
 u(kiu,pron).
 u(tiu,pron).
@@ -274,7 +281,7 @@ u('ĉia',adj).
 
 %! fu(?Fino,?Speco).
 %
-% finaĵoj de j-pronomoj, t.e. j,n,jn
+% finaĵoj de j-pronomoj, do j,n,jn
 
 fu(jn,_).
 fu(j,_).
@@ -283,7 +290,7 @@ fu(n,_).
 
 %! i(?Pron,?Speco).
 %
-% n-pronomoj, ekz. mi/n
+% n-pronomoj, ekz-e mi/n.
 % la personaj pronomoj, estas uzeblaj ankaŭ adjektive; kie, tio...
 
 i(mi,perspron).
@@ -309,7 +316,7 @@ i(tie,adv).
 
 %! fi(?Fino,?Speco).
 %
-% finaĵo de n-pronomo, t.e. n
+% finaĵo de n-pronomo, do 'n'
 
 fi(n,_).
 

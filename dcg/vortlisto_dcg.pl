@@ -2,7 +2,7 @@
 	      linio//2
 	  ]).
 
-:- ensure_loaded(library(http/dcg_basics)).
+:- ensure_loaded(library(dcg/basics)).
 
 /****
 enlegas vortliston konsistantan el linioj en la formo:
