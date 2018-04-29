@@ -35,10 +35,13 @@ reduce_([L|Ls],F,DelLetters) :-
   string_code(_,DelLetters,L),!, % memberchk(L,DelLetters),!, 
   reduce_(Ls,F,DelLetters).
 
-reduce_([0'/,0'(,0'/,0'),0'/|Ls],[124|F],DelLetters) :- % / -> |
+reduce_([0'-,0'(,0'-,0'),0'-|Ls],[8212|F],DelLetters) :- !, % / -> |
   reduce_(Ls,F,DelLetters).
 
-reduce_([0'/|Ls],[183|F],DelLetters) :- % / -> middot (\u00b7)
+reduce_([0'/,0'(,0'/,0'),0'/|Ls],[124|F],DelLetters) :- !, % / -> |
+  reduce_(Ls,F,DelLetters).
+
+reduce_([0'/|Ls],[183|F],DelLetters) :- !, % / -> middot (\u00b7)
   reduce_(Ls,F,DelLetters).
 
 reduce_([L|Ls],[L|Fs],DelLetters) :-

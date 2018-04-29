@@ -38,7 +38,7 @@ neliteroj([N|Nj]) --> nelitero(N), neliteroj(Nj).
 neliteroj([N]) --> nelitero(N).
 
 literoj([L|Lj]) --> litero(L), literoj(Lj).
-literoj([L,O|Lj]) --> litero(L), oblikvo(O), literoj(Lj). % ne permesu / enn la komenco
+literoj([L,O|Lj]) --> litero(L), oblikvo(O), literoj(Lj). % ne permesu / en la komenco
 literoj([L,S|Lj]) --> litero(L), streketo(S), literoj(Lj). % ne permesu - en la komenco (?)
 literoj([L]) --> litero(L).
 
@@ -63,6 +63,7 @@ numero(N) --> digit(D1), digits(D), "-a", { append([[D1],D,"-a"],N) }.
 numero(N) --> digits(N).
 
 % teksto kiel alternado de vortoj kaj intersignoj
+vteksto([v(V)]) --> vorto(V).
 /**
 vteksto([v(V),s(N)|T]) --> vorto(C), { atom_codes(V,C) }, 
                      neliteroj(C1), { atom_codes(N,C1) }, vteksto(T).
@@ -79,7 +80,6 @@ vteksto([n(V),s(N)|T]) --> numero(V),
 %    { format('~s ',[V]) }. %for debugging%%vteksto([f(V),s(N)|T]) --> fremdvorto(V),
 %%                     neliteroj(N), vteksto(T).
 
-vteksto([v(V)]) --> vorto(V).
 %,
    %{ debug(V) }.
 

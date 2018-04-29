@@ -107,9 +107,21 @@ analizo(Request) :-
 %%    ajax_auth(Request),
     http_parameters(Request,
 	    [
-	    teksto(Teksto, [length>5,length<150000])
+	    teksto(Teksto, [length<150000])
 	    ]),
-    atom_codes(Teksto,Codes),
     format('Content-type: text/plain~n~n'),
-    analizu_tekston_kopie(Codes,[]).
+    atomic_list_concat(Lines,'\n',Teksto),
+    maplist(analizu_linion,Lines).
+    %concurrent_maplist(analizu_linion,Lines).
 
+/*
+analizu_liniojn_([]).
+analizu_liniojn_([Line|Lines]) :-
+    atom_codes(Line,Codes),
+    analizu_tekston_kopie(Codes,[]), nl,
+    analizu_liniojn_(Lines).
+*/
+
+analizu_linion(Line) :-
+    atom_codes(Line,Codes),
+    analizu_tekston_kopie(Codes,[]), nl.

@@ -11,6 +11,7 @@
 
 :- encoding(utf8).
 
+% 'e' = escepto
 rv_sen_fin(e,subst) <- post/e/ul.
 %rad(e,adj) <= si/a.
 rv_sen_fin(e,adj) <- mult/e+kost.
@@ -21,6 +22,8 @@ rv_sen_fin(e,tr) <- art/e~far. % (art(e)+far)/ita, farita per arto
 rv_sen_fin(e,tr) <- prunt/e~don.
 rv_sen_fin(e,tr) <- prunt/e~pren.
 rv_sen_fin(e,subst) <- bel~art.
+
+rv_sen_fin(e,adj) <- fin/it. % ne analizu fi/nit
 
 vorto(e,pron) <- unu/j.
 vorto(e,prep) <- ek-de. % = "eke de"
