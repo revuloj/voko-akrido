@@ -3,6 +3,7 @@
 	      vortanalizo/4,
 	      preparu_tekston/2, 
 	      analizu_tekston_kopie/2,
+	      analizu_tekston_liste/3,
 	      analizu_tekston_outfile/3]).
 
 :- use_module(library(sgml)). % por xml_quote_cdata
@@ -206,6 +207,78 @@ analizu_tekston_kopie_([n(N)|Text],VL) :-
 analizu_tekston_kopie_(Tekstero,_) :-
   format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
   throw(Exc).
+
+
+%%%%%%%%%
+
+analizu_tekston_liste(Txt,VerdaListo,Rezulto) :-
+    is_list(Txt),
+    phrase(teksto(T),Txt),!,
+    analizu_tekston_liste_(T,VerdaListo,Rezulto).
+
+analizu_tekston_liste_([],_,[]).
+ 
+analizu_tekston_liste_([v(Vorto)|Text],VerdaListo,[Rezulto|Resto]) :-
+  length(Vorto,L), L>1, % ne analizu unuopajn literojn
+%  statistics(cputime,C1),
+%  statistics(inferences,I1),
+  once((
+    memberchk(Vorto,VerdaListo),
+    atom_codes(V,Vorto), 
+    Rezulto = _{takso:verda,vorto:V}
+   ;
+    atom_codes(Mlg,Vorto), 
+    mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
+    Rezulto = _{takso:mlg,vorto:Mlg}
+   ;
+    vortanalizo(Vorto,Ana,Spc,Uskl), 
+     (
+       nonvar(Ana), 
+       once((
+         parto_nombro(Ana,'-',Nv), Nv>2,   
+         % uskleco(Uskl,Vorto,U2,Ana,A), 
+         atom_codes(V,Vorto), term_to_atom(Uskl,U),
+         Rezulto = _{takso:dubebla,vorto:V,analizo:Ana,speco:Spc,uskl:U}
+         ; 
+         parto_nombro(Ana,'~',Nv), Nv>1, 
+         %uskleco(Uskl,Vorto,U2,Ana,A), 
+         atom_codes(V,Vorto), term_to_atom(Uskl,U),
+         Rezulto = _{takso:kuntirita,vorto:V,analizo:Ana,speco:Spc,uskl:U}
+         ; 
+         %uskleco(Uskl,Vorto,U2,Ana,A), 
+         atom_codes(V,Vorto), term_to_atom(Uskl,U),
+         Rezulto = _{takso:bona,vorto:V,analizo:Ana,speco:Spc,uskl:U}
+       ))
+     )
+   ;
+    atom_codes(V,Vorto), 
+    Rezulto = _{takso:neanalizebla,vorto:V}
+  )),
+%  statistics(inferences,I2), 
+%  statistics(cputime,C2),
+%  C is C2-C1, I is I2-I1,
+%  (C>5 -> format(' [i~d,c~2f] ',[I,C]); true), 
+  analizu_tekston_liste_(Text,VerdaListo,Resto).
+
+
+analizu_tekston_liste_([v(V)|Text],VL,[_{takso:signo,vorto:S}|Resto]) :-
+  length(V,L), L=<1, % ne analizu unuopajn literojn
+  atom_codes(S,V),
+  analizu_tekston_liste_(Text,VL,Resto).
+
+analizu_tekston_liste_([s(S)|Text],VL,[_{takso:signo,vorto:S1}|Resto]) :-
+  atom_codes(S1,S),
+  analizu_tekston_liste_(Text,VL,Resto).
+
+analizu_tekston_liste_([n(N)|Text],VL,[_{takso:nombro,vorto:N1}|Resto]) :-
+  atom_codes(N1,N),
+   analizu_tekston_liste_(Text,VL,Resto).
+
+analizu_tekston_liste_(Tekstero,_,_) :-
+  format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
+  throw(Exc).
+
+%%%%%%%
 
 
 skribu_kapon :-

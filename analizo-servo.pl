@@ -80,7 +80,7 @@ init :-
 
 %:- http_handler(red(revo_bibliogr), revo_bibliogr, []).
 :- http_handler(root(analizo), analizo,[]). % [authentication(ajaxid)]).
-
+:- http_handler(root(analinioj), analinioj,[]). % [authentication(ajaxid)]).
 
 
 help :-
@@ -114,6 +114,22 @@ analizo(Request) :-
     maplist(analizu_linion,Lines).
     %concurrent_maplist(analizu_linion,Lines).
 
+analinioj(Request) :-
+    debug(http(ana),'ANAlinioj ~q',[Request]),
+    http_read_json(Request, json(JSON)),
+    debug(http(ana),'ANAlinioj 2 ~q',[JSON]),
+    %format('Content-type: text/plain~n~n'),
+    once((
+        selectchk(moduso=Mode,JSON,Lines)
+        ;
+        Lines = JSON, Mode=komplete
+        )),
+    maplist(analizu_linion(Mode),Lines,Rezultoj),
+    exclude(malplena,Rezultoj,Nemalplenaj),
+    reply_json(json(Nemalplenaj)).
+
+malplena(_=[]).
+
 /*
 analizu_liniojn_([]).
 analizu_liniojn_([Line|Lines]) :-
@@ -123,5 +139,13 @@ analizu_liniojn_([Line|Lines]) :-
 */
 
 analizu_linion(Line) :-
+    atom(Line),
     atom_codes(Line,Codes),
     analizu_tekston_kopie(Codes,[]), nl.
+
+analizu_linion(Mode,N=Line,N=Rez) :-
+    atom_codes(Line,Codes), %format('~w::',[N]),
+    analizu_tekston_liste(Codes,[],RList),
+    exclude(ana_ekskludo(Mode),RList,Rez).
+
+ana_ekskludo(kontrolendaj,X) :- memberchk(X.takso,[bona,signo,nombro,mlg]).
