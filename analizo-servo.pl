@@ -27,9 +27,6 @@
 
 :- use_module(library(debug)).
 
-% difinu la aplikaĵon "redaktilo"
-%%:- use_module(agordo).
-%%:- use_module(redaktilo_auth).
 :- use_module(analizilo).
 
 :- debug(http(request)).
@@ -43,42 +40,10 @@
 
 init :-
     set_prolog_flag(encoding,utf8).
-/*    
-    agordo:get_config([
-	 http_cit_root(AppRoot),
-%	 web_dir(WebDir),
-%	 voko_dir(VokoDir),
-	 http_cit_scheme(Scheme),
-	 http_cit_host(Host),
-	 http_cit_port(Port),
-	 http_session_timeout(Timeout)
-	]),
-    set_setting(http:prefix,AppRoot),
-    set_setting(http:public_scheme,Scheme),
-    set_setting(http:public_port,Port),
-    set_setting(http:public_host,Host),
-    http_set_session_options([
-	cookie(redaktilo_seanco),
-	timeout(Timeout),
-	path(AppRoot)
-	])
-    .init*/ 
-
-    % la lokaj dosierujoj el kiuj servi dosierojn
-%    assert(user:file_search_path(web,WebDir)),
-%    assert(user:file_search_path(static,web(static)))
-%    assert(user:file_search_path(voko,VokoDir)),
-
 	  
 %%http:location(cit,root(cit),[]).
 
-% redirect from / to /citajhoj/, when behind a proxy, this is a task for the proxy
 :- http_handler('/', http_redirect(moved,root(.)),[]).
-%%:- http_handler(root(.), http_redirect(moved,root('cit/')),[]).
-%:- http_handler(cit(.), reply_files, [prefix,authentication(openid)]).
-%:- http_handler(static(.), reply_static_files, [prefix]).
-
-%:- http_handler(red(revo_bibliogr), revo_bibliogr, []).
 :- http_handler(root(analizo), analizo,[]). % [authentication(ajaxid)]).
 :- http_handler(root(analinioj), analinioj,[]). % [authentication(ajaxid)]).
 
@@ -89,11 +54,11 @@ help :-
     format('~`=t~51|~n~n'),
     format('Programo por lanĉi la Analizoserĉservon. Vi povas aŭ~n'),
     format('tajpi interage ĉe la prolog-interpretilo: ~n~n'),
-    format('   server(8000) ~n~n'),
-    format('por lanĉi la servon ĉe retpordo 8000;~n'),
+    format('   server(8081). ~n~n'),
+    format('por lanĉi la servon ĉe retpordo 8081;~n'),
     format('aŭ lanĉi ĝin kiel fona servo,~n'),
     format('t.e. demono, per la predikato "daemon".~n'),
-    format('Vidu la tiucelan skripton "run-search.sh".~n~n'),
+    format('Vidu la tiucelan skripton "run-anasrv.sh".~n~n'),
     prolog.
 	       
 server(Port) :-
@@ -129,14 +94,6 @@ analinioj(Request) :-
     reply_json(json(Nemalplenaj)).
 
 malplena(_=[]).
-
-/*
-analizu_liniojn_([]).
-analizu_liniojn_([Line|Lines]) :-
-    atom_codes(Line,Codes),
-    analizu_tekston_kopie(Codes,[]), nl,
-    analizu_liniojn_(Lines).
-*/
 
 analizu_linion(Line) :-
     atom(Line),
