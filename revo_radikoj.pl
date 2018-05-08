@@ -252,13 +252,25 @@ handle_exception(Dosiero,Exception) :-
     )
   ).
 
+%! revo_art(+Dosiero).
+%
+% Trakuras XML-Revo-artikolon (DOM) kaj elkribras la
+% bezonataj informojn kiel radiko, vortspeco kaj mallongigoj.
+% La rezulto estas faktoj, el kiuj poste kreiĝos la vortlistoj.
+% Evitindaj radikoj kaj nomradikoj estas aparte traktitaj.
 
 revo_art(Dosiero) :-
   load_xml_file(Dosiero,DOM),
   catch(
         (
 	 revo_rad(DOM,Radiko,Speco),
-	 revo_mlg(DOM,Mallongigoj)
+	 revo_mlg(DOM,Mallongigoj),
+         % ne jam preta, teste... var
+	 once((
+	   revo_var(DOM,Var),
+  	   format('DBG var: ~w: ~w~n',[Dosiero,Var])
+         ; true))
+         
        % format('~w (~w)~n',[Radiko,Speco]),
         ),
         Exc,
@@ -268,6 +280,7 @@ revo_art(Dosiero) :-
            ; throw(Exc)
         )
      ),
+  %%assert_radiko(DOM,Radiko,Speco),
   once((
     % se temas pri majuskla nomo, registru 
     % kiel nomradiko, kaj ankau minuskle	
@@ -290,6 +303,28 @@ revo_art(Dosiero) :-
   )),
   assert_mlg(Mallongigoj).
 
+/*
+assert_radiko(DOM,Radiko,Speco) :-
+  once((
+    % se temas pri majuskla nomo, registru 
+    % kiel nomradiko, kaj ankau minuskle	
+    nomo_majuskla(Radiko),
+    assertz(nr(Radiko,Speco)),
+    assert_nomo_minuskla(Radiko,Speco)
+    ;
+    % interjekciojn registru kiel vort(et)o
+    Speco == intj,
+    assertz(vorto(Radiko,Speco))
+    ;
+    % normalaj radikoj
+    assertz(radiko(Radiko,Speco)),
+      % se la radiko aldone uzighas kiel interjekcio...
+      once((
+        revo_intj(DOM,_),
+        assertz(vorto(Radiko,intj))
+        ;
+        true))
+  )).*/
 
 assert_nomo_minuskla(Nomo,Speco) :-
     atom_codes(Nomo,[K|Literoj]),
@@ -336,11 +371,14 @@ revo_rad(DOM,Radiko,Speco) :-
     xpath(Drv,uzo(@tip=stl,text),'EVI'), throw(rad_evi(Kap));
     xpath(Drv,snc(1)/uzo(@tip=stl,text),'EVI'), throw(rad_evi(Kap))
   ),
+
+  % eltrovu la vortspecon de la radiko 
+  % per voko-klaso, gramatika etikedo aŭ finaĵo
   once(
-   revo_kls(Drv,Speco);
-   revo_gra(Drv,Speco);
-   revo_fin(Kap,Speco);
-   throw(eraro('speco ne eltrovita'))
+    revo_kls(Drv,Speco);
+    revo_gra(Drv,Speco);
+    revo_fin(Kap,Speco);
+    throw(eraro('speco ne eltrovita'))
   ). 
 
 revo_kls(Drv,parc) :-
@@ -393,10 +431,14 @@ revo_mlg(DOM,Mallongigoj) :-
     Mlg,
     (
       xpath(DOM,//mlg(normalize_space),Mlg),
+      % ignoru unusignajn kaj minusklajn mallongigojn
       atom_length(Mlg,L), L>1, nur_majuskloj(Mlg)
     ),
     Mallongigoj
   ).
+
+revo_var(DOM,Var) :-
+  xpath(DOM,//art/kap/var/kap(normalize_space),Var).
 
 revo_intj(DOM,VSpeco) :-
    xpath(DOM,//drv,Drv),

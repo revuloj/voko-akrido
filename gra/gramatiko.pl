@@ -35,9 +35,10 @@ analyze_perf(Vrt,Ana,Spc) :-
   format('inferences: ~w, cpu: ~w~n',[I,C]).
 
 % forigas krampojn kaj spacojn el la rezulto-termo
+% kaj anstatŭigas / per mezpunkto (\u00b7)
 reduce(Term,Flat) :-
   format(codes(A),'~w',[Term]),
-  vorto_gra:reduce_(A,F,"() "),
+  vorto_gra:reduce_(A,F,"() "), % difinta en regul_trf.pl
   atom_codes(Flat,F).
 
 

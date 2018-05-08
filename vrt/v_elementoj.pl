@@ -1,8 +1,9 @@
 :- encoding(utf8).
 
-/************ literoj, kiuj povas 
- * esti ene de vorto 
-************/
+%! c(?EnFin,?Speco).
+%
+% literoj, kiuj povas aperi ene de vorto, ekz. libr/o-vendejo. 
+
 c(o,subst).
 c('o-',subst). % ekz. dissendo-listo
 c(a,adj).
@@ -10,16 +11,18 @@ c('a-',adj). % ekz. verda-bruna
 % c(e,adv). % en kuntiradoj, ekz. lace~peli, multe~kosta
 c('e-',adv). % ekz. dece-konvene
 
-/************ literoj, kiuj povas 
- * specialaj signoj, kiuj povas aperi ene de vortoj
-************/
+%! ls(?LigStreko).
+%! os(?Oblikvo).
+%
+% specialaj signoj, kiuj povas aperi ene de vortoj
 
 ls('-').
 os('/').
 
-/********** finajxoj de radikoj, prefere ordigu la
- * vortaron law la ofteco de la vortoj 
-***********/
+%! f(?Fino,?Speco).
+%
+% finaĵoj de radikoj
+% @tbd prefere ordigu laŭ ofteco
 
 f(ojn,subst).
 f(oj,subst).
@@ -39,11 +42,13 @@ f(u,verb).
 f(en,adv).
 f(e,adv).
 
+%! s(?Sufikso,?AlSpeco,?DeSpeco).
+%
+% Sufiksoj
+% @arg Sufikso sufikso, ekz. ul
+% @arg AlSpeco rezulto de derivado, ekz. best
+% @arg DeSpeco radikspeco, al kiu ĝi estas aplikebla, ekz. adj
 
-/************** sufiksoj
- * (2)=rezulto de derivado,
- * (3)=radikspeco, al kiu gxi estas aplikebla
-**************/
 s(ant,best,verb).
 s(int,best,verb).
 s(ont,best,verb).
@@ -95,18 +100,32 @@ s(ul,best,verb). % X-anta ulo: drinkulo, rampulo
 s(um,_,_).
 s(um,tr,_). % plenumi, brakumi, krucumi, lavumi ktp.
 
+%! ns(?NomSufikso,?Speco).
+%
+% Nomsufiksoj, do 'nj' kaj 'ĉj'
+
 ns(nj,pers).
 ns(ĉj,pers).
 
-% aparta char iom longa kaj malbonigus la
-% efikecon de sufiksanalizado (longeco 2..4)
+%! sn(?NombroSufikso,?AlSpeco,?DeSpeco).
+%
+% Nombrosufiksoj: ilion kaj iliard.
+% Ili estas apartigita de la aliaj sufiksoj, ĉar iom longaj kaj do malbonigus la
+% efikecon de sufiksanalizado (ties longeco: 2..4)
 sn(ilion,nombr,nombr). % sufiksoj por grandaj nombroj triilino - 1000^2*3 , okiliono - 1000^2*8) 
 sn(iliard,nombr,nombr). % triiliardo - 1000 * 1000^2*3, okiliardo - 1000 * 1000^2*8
 
-/************ prefiksoj 
- (2) vortspeco, al kiu ghi estas aplikebla,
-     (ordinaraj prefiskoj ne shanghas la vortspecon)
-************/
+
+%! p(?Prefikso,?DeSpeco).
+%
+% Prefiksoj
+% @arg Prefikso prefikso, ekz. bo
+% @arg DeSpeco radikspeco, al kiu ĝi estas aplikebla, ekz. parc
+%     (ordinaraj prefiskoj ne shanghas la vortspecon)
+% puraj prefiksoj,
+% prepozicioj kiel prefiksoj,
+% adverboj kiel prefiksoj
+
 p(bo,parc).
 p('ĉef',subst).
 p(dis,verb).
@@ -120,20 +139,16 @@ p(pra,subst).
 p('pseŭdo',_).
 p(re,verb).
 
-/*************** 
- * prepozicioj kiel prefiksoj
-****************/
+% prepozicioj kiel prefiksoj
+% pri transitivigaj, prefikse uzataj prepozicioj vd. malsupre
 
-% pri transitivigaj prefikse uzataj prepozicioj vd. malsupre
 p(de,verb).
 p(ekster,subst). % eksterlando
 p(kun,verb).
 p(sub,subst).
 p(super,subst).
 
-/*************
- * adverboj kiel prefiksoj
-**************/
+% adverboj kiel prefiksoj
 
 p(ĉi,adj).
 p(ĉiam,adj). % ekz. ĉiamverda
@@ -150,9 +165,14 @@ p(mem,verb).
 p('kvazaŭ',_). % simile al pseŭdo
 p(tro,adj). % troabundeco
 
-/*************
-prepozicioj uzataj prefikse kun verboj
-*************/
+
+%! p(?Prefikso,?AlSpeco,?DeSpeco)
+%
+% Prefikse uzataj prepozicioj kaj adverboj. 
+% * prepozicioj uzataj prefikse kun verboj,
+% * adverboj uzataj prefikse kun verboj
+%
+% @tbd forigu prepoziciojn kaj pronomojn uzataj en kunderivado el la faktoj
 
 % PLIBONIGU:
 % dependas parte de la verbo, ĉu tia derivado
@@ -184,9 +204,7 @@ p(sur,tr,verb). % surmeti
 p(tra,tr,verb). % trakuri
 p(trans,tr,verb). % transpagi 
 
-/****
-adverboj uzataj prefikse kun verboj
-***/
+% adverboj uzataj prefikse kun verboj
 
 p(mem,adj,verb).
 p(plu,tr,verb).
@@ -196,8 +214,8 @@ p(for,tr,verb).
  * la sekvaj fakte ne estas prefiksoj,
  * sed uzataj en kunderivado (ekz. sen-dom-a, sed ne
  * sen-dom-o; internacia, internacieco, sed ne internacio
- * ...)  
- * prepozicioj kaj pronomoj...
+ * ...)  do eble forigu tie ĉi....
+ * prepozicioj kaj pronomoj... 
 **************/
 p('ambaŭ',adj,subst). % per ambaŭ manoj -> ambaŭmane
 p('ambaŭ',adj,verb). % tranĉi ambaŭ -> ambaŭtranĉe
@@ -244,9 +262,11 @@ p('tia',adj,subst). % de tia speco -> tiaspeca
 p('kia',adj,subst). % de kia speco -> kiaspeca
 p('nenia',adj,subst). % de nenia speco -> neniaspeca
 
-/**************
- *  j-pronomoj 
-***************/
+
+%! u(?Pron,?Speco).
+%
+% j-pronomoj, ekz-e kiu/j 
+
 u(kiu,pron).
 u(tiu,pron).
 u(iu,pron).
@@ -258,16 +278,21 @@ u(ia,adj).
 u(nenia,adj).
 u('ĉia',adj).
 
-/**************
- *  finajxoj de j-pronomoj 
-**************/
+
+%! fu(?Fino,?Speco).
+%
+% finaĵoj de j-pronomoj, do j,n,jn
+
 fu(jn,_).
 fu(j,_).
 fu(n,_).
 
-/**************
- *  n-pronomoj, la personaj pronomoj ekz. ankaux kiel adj. rad. 
-**************/
+
+%! i(?Pron,?Speco).
+%
+% n-pronomoj, ekz-e mi/n.
+% la personaj pronomoj, estas uzeblaj ankaŭ adjektive; kie, tio...
+
 i(mi,perspron).
 i(ci,perspron).
 i(li,perspron).
@@ -289,9 +314,10 @@ i(nenie,adv).
 i(ie,adv).
 i(tie,adv).
 
-/****************
- *  finajxo de n-pronomoj 
-*****************/
+%! fi(?Fino,?Speco).
+%
+% finaĵo de n-pronomo, do 'n'
+
 fi(n,_).
 
 

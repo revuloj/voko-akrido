@@ -1188,6 +1188,7 @@ r('tangent',subst).
 r('tanga',subst).
 r('tang',ntr).
 r('tandem',subst).
+r('tanacet',subst).
 r('tan',tr).
 r('tamul',subst).
 r('tamtam',subst).

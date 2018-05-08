@@ -39,7 +39,7 @@ helpo :-
 
 %! analizu_revo_art(+Artikolo:atom) is det.
 %
-% Legas artikolon kun dosiernomo Artikolo (sen .txt), analizas kaj skribas la rezulton kiel HTML-kodo al STDOUT.
+% Legas artikolon kun dosiernomo Art (sen .txt), analizas kaj skribas la rezulton kiel HTML-kodo al STDOUT.
 % Ne analizeblaj vortoj el la verda listo estas markitaj verde anstataŭ ruĝe.
 
 analizu_revo_art(Art) :-
@@ -52,7 +52,7 @@ analizu_revo_art(Art) :-
 
 %! analizu_revo_art_prefix(+Prefikso:atom) is det.
 %
-% Legas ĉiujn artikolojn kies Dosiernomoj komenciĝas per Prefikso, analizas ilin kaj skribas la rezulton kiel HTML-dosiero
+% Legas ĉiujn artikolojn kies dosiernomoj komenciĝas per prefikso, analizas ilin kaj skribas la rezulton kiel HTML-dosiero
 % al la dosierujo ./kontrolitaj
 
 analizu_revo_art_prefix(Prefix) :-

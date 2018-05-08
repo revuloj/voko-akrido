@@ -137,7 +137,7 @@ nr('Tasmani',subst).
 nr('Tanzani',subst).
 nr('Tales',subst).
 nr('Tahiti',subst).
-nr('Tade',subst).
+nr('Tade',pers).
 nr('Svisi',subst).
 nr('Svedi',subst).
 nr('Surinam',subst).
@@ -448,7 +448,7 @@ nr('Lesot',subst).
 nr('Lesb',subst).
 nr('Lepsik',subst).
 nr('Leopold',pers).
-nr('Leonard',subst).
+nr('Leonard',pers).
 nr('Leningrad',subst).
 nr('Len',subst).
 nr('Lelistad',subst).
@@ -1109,7 +1109,7 @@ nr_('tasmani',subst).
 nr_('tanzani',subst).
 nr_('tales',subst).
 nr_('tahiti',subst).
-nr_('tade',subst).
+nr_('tade',pers).
 nr_('svisi',subst).
 nr_('svedi',subst).
 nr_('surinam',subst).
@@ -1420,7 +1420,7 @@ nr_('lesot',subst).
 nr_('lesb',subst).
 nr_('lepsik',subst).
 nr_('leopold',pers).
-nr_('leonard',subst).
+nr_('leonard',pers).
 nr_('leningrad',subst).
 nr_('len',subst).
 nr_('lelistad',subst).

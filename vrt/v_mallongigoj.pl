@@ -4,10 +4,12 @@
 % 3) plej bone kunalizu mallongigojn kiel kc, ks kune kun la sekvanta punkto.
 %    tio pli facilighus fakte, se ni uzus m(..) anstatau mlg(...)?
 
+r('ekz-',subst). %????
 
 mlg('DNA'). % desoksiribonukleacido
 mlg('E-a'). % Esperanta
 mlg('E-o'). % Esperanto
+mlg('E-ismo'). % Esperantismo
 mlg('Esp-o'). % Esperanto
 mlg('Esp-ismo'). % Esperantismo
 mlg('Hz'). % Hertz
@@ -29,9 +31,11 @@ mlg('adv'). % adverbo
 mlg('cm'). % centimetro
 mlg('d-ro'). % doktoro
 mlg('e-a'). % esperanta
+mlg('e-isto'). % esperantisto
+mlg('e-istoj'). % esperantistoj
 mlg('ekz'). % ekzemplo
 mlg('ekz-e'). % ekzemple
-r('ekz-',subst). %????
+mlg('esp-isto'). % esperantisto
 mlg('esp-istoj'). % esperantistoj
 mlg('f-ino'). % fraŭlino
 mlg('jc'). % jarcento

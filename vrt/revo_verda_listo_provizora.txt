@@ -1969,7 +1969,7 @@ leonard: Ĝokonda, Vinci
 leon: virseksulo, Tolstoj
 lepor: salt, Lep
 lepsik: jc, Johann, Sebastian, Bach, an
-lern: Acoroj, Nikolov, meme
+lern: Nikolov, meme
 lesb: in, PACS
 lesot: LS
 leuxcisk: Dyk, Knínice
@@ -1984,7 +1984,7 @@ liberi: LR, Hju-ám-ám
 libi: LY
 libr: Ĉernjaev, Mosĥozupr, Lapenna, libr, GDR, CO, CO-librotenejo
 lid: LTL
-liegx: 'E, 'N
+liegx: 'E, 'N, Eŭ, rop
 lier: 'E, 'N
 lift: plejparte
 lig: Zamenhof, Esperanto-Ligo, so, ro, id, far
@@ -2039,7 +2039,7 @@ loven: 'E, 'N, Lemmens-Instituto
 lucid: Bogee
 lud: Ivar, Arosenius, Anna, Sergeevna, Hadda, Cantr, II, Command, and, Conquer, Generals, Electronic, Arts, KGS, XVIa, Nisikawa, Serizawa, Kiyosi, LA-STRANGA-BUTIKO, LAST-RANGA-BUTIKO
 lu: Dorina, vicluigi
-luksemb: 'E, 'N, Fogra
+luksemb: 'E, 'N, Fogra, Eŭ, rop
 lukt: Lauri, Eero
 lukum: Bagdad
 lul: Infan
