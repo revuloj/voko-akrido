@@ -1,0 +1,22 @@
+# kopiu al /etc/systemd/system
+# kaj aktivigu per:
+#   sudo systemctl enable analizilo.service
+# kaj lanĉu per:
+#   sudo systemctl start analizilo.service
+# haltigu per:
+#   sudo systemctl stop analizilo.service
+# kontrolu per:
+#   sudo systemctl status analizilo.service
+
+[Unit]
+Description=Revo-Analizilo-Servo
+
+[Service]
+# Type=simple
+Type=forking
+Restart=on-abnormal
+ExecStart=/home/revo/voko/swi/run-anasrv.sh
+ExecStop=/home/revo/voko/swi/stop-anasrv.sh
+
+[Install]
+WantedBy=multi-user.target
