@@ -48,7 +48,8 @@ analizu_revo_art(Art) :-
     artikolo_fonto_dosiero(Art,TxtFile),
     read_file_to_codes(TxtFile,Txt,[]),
     verda_listo(Art,BL),
-    analizu_tekston_kopie(Txt,BL),!.
+    forigu_esceptojn(Txt,Txt1),
+    analizu_tekston_kopie(Txt1,BL),!.
 
 %! analizu_revo_art_prefix(+Prefikso:atom) is det.
 %
@@ -131,7 +132,20 @@ kontrolu_dosieron(TxtFile) :-
     read_file_to_codes(TxtFile,Txt,[]),
     artikolo_fonto_dosiero(Art,TxtFile),
     verda_listo(Art,BL),
-    analizu_tekston_outfile(Txt,HtmlFile,BL). 
+    forigu_esceptojn(Txt,Txt1),
+    analizu_tekston_outfile(Txt1,HtmlFile,BL). 
+
+forigu_esceptojn([],[]). % ⧼...⧽ = 10748, ..., 10749
+forigu_esceptojn([10748|TxtKun],TxtSen) :- !,
+  ignoru_ghis_10749(TxtKun,TxtSen).
+forigu_esceptojn([X|TxtKun],[X|TxtSen]) :- !,
+  forigu_esceptojn(TxtKun,TxtSen).
+ignoru_ghis_10749([10749|TxtKun],TxtSen) :- !,
+  forigu_esceptojn(TxtKun,TxtSen).
+ignoru_ghis_10749([_|TxtKun],TxtSen) :- !,
+  ignoru_ghis_10749(TxtKun,TxtSen).
+ignoru_ghis_10749([],[]) :- throw(mankas_ferma_10749).
+
 
 legu_verdan_liston_se_malplena :-
     verda(_,_) -> true
