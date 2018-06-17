@@ -15,8 +15,8 @@ Description=Revo-Analizilo-Servo
 # Type=simple
 Type=forking
 Restart=on-abnormal
-ExecStart=/home/revo/voko/swi/run-anasrv.sh
-ExecStop=/home/revo/voko/swi/stop-anasrv.sh
+ExecStart=/home/revo/prolog/vortanalizilo/run-anasrv.sh
+ExecStop=/home/revo/prolog/vortanalizilo/stop-anasrv.sh
 
 [Install]
 WantedBy=multi-user.target
