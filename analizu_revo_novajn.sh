@@ -8,7 +8,9 @@ PL=/usr/local/bin/swipl
 PERL=/usr/bin/perl
 
 # exec 
+cd pro
 $PL -q -f "$plsrc" -g "$goal,halt" -t 'halt(1)' --
 
+cd ..
 $PERL elfiltru_trovojn.perl -k kontrolitaj/ 
 

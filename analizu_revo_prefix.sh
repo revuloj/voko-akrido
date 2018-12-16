@@ -7,7 +7,9 @@ goal="analizu_revo_art_prefix($1)"
 PL=/usr/local/bin/swipl
 PERL=/usr/bin/perl
 
-$PL -q -f "$plsrc" -g "$goal,halt" -t 'halt(1)' --
+cd pro
+$PL -q -f "$plsrc" -g "$goal" -t halt --
 
+cd ..
 $PERL elfiltru_trovojn.perl -k kontrolitaj/ 
 
