@@ -34,7 +34,7 @@ if [ "$user" = "revo-test" ]
 fi
 
 cd ${base}
-${PL} -q -f "${plsrc}" -g "${goal},halt" -t 'halt(1)' -p agordo=${etc} -- \
+${PL} -q -f "${plsrc}" -g "${goal}" -t "halt" -p agordo=${etc} -- \
     --port=${port} --syslog=${syslog} --pidfile=${pidfile} \
     --user=${user} --group=${user}  --workers=${workers} 
 

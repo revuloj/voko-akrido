@@ -26,7 +26,7 @@ workers=10
 
 
 cd ${base}
-${PL} -f "${plsrc}" -g "${goal},halt" -t 'halt(1)' -p agordo=${etc} --\
+${PL} -f "${plsrc}" -g "${goal}" -t "halt" -p agordo=${etc} --\
     --user=${user} --no-fork --workers=${workers} --port=${port}
     # --group=${user} --user=${user} --port=${port} --syslog=${syslog} --pidfile=${pidfile} \
 

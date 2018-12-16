@@ -1,6 +1,7 @@
 /* -*- Mode: Prolog -*- */
 :- module(analizo_servo,
-	  [ server/1			% +Port
+	  [ server/1,			% +Port
+         daemon/0
 	  ]).
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
@@ -40,6 +41,8 @@
 
 init :-
     set_prolog_flag(encoding,utf8).
+
+:- current_prolog_flag(os_argv, Argv), writeln(Argv).
 	  
 %%http:location(cit,root(cit),[]).
 
