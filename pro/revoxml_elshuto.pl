@@ -2,11 +2,10 @@
 :- use_module(library(http/http_open)).
 :- use_module(library(sgml)).
 :- use_module(library(xpath)).
-:- use_module(library(zip)).
 
 elshuto_dir('http://reta-vortaro.de/tgz/').
 elshuto_lst('dosieroj.xml').
-zip_target_dir('../xml/').
+zip_target_dir('../tmp/').
 
 xml_archive(XmlUrl,File) :-
     elshuto_dir(U1),
@@ -17,13 +16,12 @@ xml_archive(XmlUrl,File) :-
     sub_atom(File,0,_,_,'revoxml_'),
     atom_concat(U1,File,XmlUrl).
 
-
 xml_download :-
     xml_archive(XmlUrl,File),
     zip_target_dir(ZipDir),
     atom_concat(ZipDir,File,XmlFile),
-    download_file(XmlUrl,XmlFile).
-
+    (exists_file(XmlFile) -> format('jam ĉeestas: ~w~n',[XmlFile])
+    ; download_file(XmlUrl,XmlFile)).
 
 download_file(Url,File) :-
     setup_call_cleanup(
@@ -45,13 +43,4 @@ download_file(Url,File) :-
         )
     ).
 
-unzip_file(ZipFile) :-
-    zip_open(ZipFile,read,Zipper,[]),
-    zipper_goto(Zipper,first),
-    repeat,
-        zipper_file_info(Zipper,FileName,_Attrs),
-        format('~w~n',[FileName]),
-        (zipper_goto(Zipper,first) -> fail % i.e. repeat!
-        ; !), % i.e. finish
-    zip_close(Zipper).
     

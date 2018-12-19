@@ -62,6 +62,7 @@ v('glut',intj).
 v('glu',intj).
 v('fu',intj).
 v('frap',intj).
+v('fi',intj).
 v('fek',intj).
 v('ehe',intj).
 v('dirlididi',intj).
