@@ -28,7 +28,8 @@ ADD . ./
 
 RUN curl -LO https://github.com/revuloj/voko-iloj/archive/master.zip \
   && unzip master.zip voko-iloj-master/xsl/ voko-iloj-master/dtd/ voko-iloj-master/owl/ \
-  && ln -s voko-iloj-master/xsl xsl && ln -s voko-iloj-master/dtd dtd && ln -s voko-iloj-master/owl owl
+  && rm master.zip && ln -s voko-iloj-master/xsl xsl \
+  && ln -s voko-iloj-master/dtd dtd && ln -s voko-iloj-master/owl owl
 
 RUN  mkdir xml && mkdir txt && mkdir tmp \
     && bash download_and_xml2txt.sh \
@@ -50,7 +51,7 @@ USER root
 #    ekz.: docker run -it voko/akrido /home/revo/prolog/run-anasrv-revo.sh
 
 CMD ["swipl",\
-    "-s","prolog/analizo-servo.pl",\
+    "-s","pro/analizo-servo.pl",\
     "-g","daemon","-t","halt",\
     "-p","agordo=etc","--",\
     "--workers=10","--user=akrido","--port=8081","--no-fork"]

@@ -22,7 +22,7 @@ echo "zip: "$zip
 echo "aktualigante XML-dosierojn el $zip ..."
 unzip -juq ${zip} -d xml/ "revo/xml/*.xml"
 
-echo "tradukante ĉiujn pli novajn dosierojn el XML al TXT ..."
+echo "tradukante ĉiujn pli novajn dosierojn el XML al TXT ... (daŭras iom...)"
 for src in xml/*.xml; do
     
     # konstruu nomon de la txt-dosiero
@@ -31,7 +31,7 @@ for src in xml/*.xml; do
     trg=txt/${file}.txt
 
     if [ "$src" -nt "$trg" ]; then
-        printf '%s\n' "$src -> $trg"
+        # printf '%s\n' "$src -> $trg"
         # echo "$xsltproc $XSL $src 2>> tmp/${time}_x2t.log | $lynx > $trg"
         $xsltproc $XSL $src 2>> tmp/${time}_x2t.log | $lynx > $trg
     fi

@@ -8,8 +8,8 @@
 
 :- dynamic radiko/2, evi/2, mlg/1, nr/2, nr_/2, vorto/2.
 
-revo_xml('/home/revo/revo/xml/*.xml').
-voko_rdf_klasoj('/home/revo/voko/owl/voko.rdf').
+revo_xml('../xml/*.xml').
+voko_rdf_klasoj('../owl/voko.rdf').
 radik_dosiero('vrt/v_revo_radikoj.pl').
 vort_dosiero('vrt/v_revo_vortoj.pl').
 nomo_dosiero('vrt/v_revo_nomoj.pl').
