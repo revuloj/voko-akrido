@@ -32,8 +32,7 @@ RUN curl -LO https://github.com/revuloj/voko-iloj/archive/master.zip \
   && ln -s voko-iloj-master/dtd dtd && ln -s voko-iloj-master/owl owl
 
 RUN  mkdir xml && mkdir txt && mkdir tmp \
-    && bash download_and_xml2txt.sh \
-    && bash revo_radikoj.sh
+    && bash xml_download.sh && bash revo_radikoj.sh
 
 USER root
 
@@ -49,6 +48,8 @@ USER root
 # 2) Kiel analizo-servo, tiel ekz. uzata de Cetonio - la redaktilo por
 #    kontroli unupan artikolon (run-anasrv-revo.sh)
 #    ekz.: docker run -it voko/akrido /home/revo/prolog/run-anasrv-revo.sh
+#    
+#    http://localhost:8091/analizo?teksto=cxevalo
 
 CMD ["swipl",\
     "-s","pro/analizo-servo.pl",\

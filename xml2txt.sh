@@ -1,26 +1,7 @@
-#zip=$1
-
-plsrc=revoxml_elshuto.pl
-goal=xml_download
-#PL=/usr/bin/env swipl
-PL=/usr/bin/swipl
-
 lynx="/usr/bin/lynx -nolist -dump -assume_local_charset=utf8 -display_charset=utf8 -stdin"
 xsltproc=/usr/bin/xsltproc
 XSL=xsl/revotxt_eo.xsl
 time=`date +%Y%m%d_%H%M%S`
-#recent_zip="/bin/ls -Art tmp/*.zip | /usr/bin/tail -n 1"
-
-echo "elŝutante XML arĥivon de retavortaro.de ..."
-cd pro
-$PL -q -f "$plsrc" -g "$goal" -t halt --
-cd ..
-
-zip=`/bin/ls -Art tmp/*.zip | /usr/bin/tail -n 1`
-echo "zip: "$zip
-
-echo "aktualigante XML-dosierojn el $zip ..."
-unzip -juq ${zip} -d xml/ "revo/xml/*.xml"
 
 echo "tradukante ĉiujn pli novajn dosierojn el XML al TXT ... (daŭras iom...)"
 for src in xml/*.xml; do
