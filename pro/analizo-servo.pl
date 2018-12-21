@@ -82,6 +82,16 @@ analizo(Request) :-
     maplist(analizu_linion,Lines).
     %concurrent_maplist(analizu_linion,Lines).
 
+
+% legas JSON el Request, kiu enhavu objekton, kies
+% parametroj estas lininombroj kaj la valoroj estas la
+% teksto sur tiu linio
+% krome povas enesti moduso: "kontrolendaj" por rericevi
+% nur neĝuste analizitajn vorojn (eraroj kaj eblaj eraroj)
+% apriore estas moduso: "komplete" por rericevi ĉiujn vortojn
+% analizitaj/neanalizeblaj:
+% { 1: "bla bla bla", 3: "eĥoŝanĝo", 10: "ĉiuĵaŭde kaj sabate", moduso: "kontrolendaj"}
+
 analinioj(Request) :-
     debug(http(ana),'ANAlinioj ~q',[Request]),
     http_read_json(Request, json(JSON)),

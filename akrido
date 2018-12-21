@@ -1,0 +1,13 @@
+#!/bin/bash
+
+case $1 in
+preparo)
+  cd html && mkdir -p a b c d e f g h i j k l m n o p r s t u v z && cd ..
+  ;;
+artikolojn)
+  . ./xml2txt.sh && . ./analizu_revo_prefix.sh '{}'
+  ;;
+*)
+  echo "Sola argumento povas esti nur 'artikolojn'. Aliaj venos poste..."
+  ;;
+esac

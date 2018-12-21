@@ -18,9 +18,9 @@
 :- dynamic(verda/2).
 
 %revo_xml('/home/revo/revo/xml').
-revo_txt('/home/revo/revo/txt').
+revo_txt('../txt').
 %txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
-skribo_pado('kontrolitaj').
+skribo_pado('../html').
 revo_verda_listo('vrt/revo_verda_listo_provizora.txt').
 
 /** <module> Analizilo por Revo-artikoloj
