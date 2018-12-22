@@ -3,7 +3,7 @@
 function elfiltru {
   d=$1
   outformat=$2
-  revoart="http://retavortaro.de/art/"
+  revoart="http://retavortaro.de/revo/art/"
 
   #suffix=${d#html/}
 

@@ -6,7 +6,7 @@
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 %:- use_module(library(http/http_server_files)).
-%:- use_module(library(http/http_files)).
+:- use_module(library(http/http_files)).
 :- use_module(library(http/http_parameters)). % reading post data
 %%:- use_module(library(http/http_session)).
 :- use_module(library(http/json)).
@@ -44,12 +44,13 @@ init :-
 
 :- current_prolog_flag(os_argv, Argv), writeln(Argv).
 	  
-%%http:location(cit,root(cit),[]).
+user:file_search_path('html','../html').    
+http:location(akrido,root(akrido),[]).
 
-:- http_handler('/', http_redirect(moved,root(.)),[]).
+:- http_handler('/', http_redirect(moved,root(akrido)),[]).
 :- http_handler(root(analizo), analizo,[]). % [authentication(ajaxid)]).
 :- http_handler(root(analinioj), analinioj,[]). % [authentication(ajaxid)]).
-
+:- http_handler(akrido(.), http_reply_from_files(html(.),[]),[prefix]). % [authentication(ajaxid)]).
 
 help :-
     format('~`=t~51|~n'), 
