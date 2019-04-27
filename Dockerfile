@@ -21,20 +21,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash -u 1088 akrido
-USER akrido:users
 WORKDIR /home/akrido
 
 ADD . ./
 
-RUN curl -LO https://github.com/revuloj/voko-iloj/archive/master.zip \
-  && unzip master.zip voko-iloj-master/xsl/ voko-iloj-master/dtd/ voko-iloj-master/owl/ \
-  && rm master.zip && ln -s voko-iloj-master/xsl xsl \
-  && ln -s voko-iloj-master/dtd dtd && ln -s voko-iloj-master/owl owl
+RUN curl -LO https://github.com/revuloj/voko-grundo/archive/master.zip \
+  && unzip master.zip voko-grundo-master/xsl/* voko-grundo-master/dtd/* voko-grundo-master/owl/* \
+  && rm master.zip && ln -s voko-grundo-master/xsl xsl \
+  && ln -s voko-grundo-master/dtd dtd && ln -s voko-grundo-master/owl owl
 
 RUN  mkdir xml && mkdir txt && mkdir tmp \
     && bash xml_download.sh && bash revo_radikoj.sh
 
-USER root
+#USER root
 
 # Vi povas uzi la keston (Docker container) laŭ pluraj eblecoj:
 #
@@ -51,11 +50,11 @@ USER root
 #    
 #    http://localhost:8091/analizo?teksto=cxevalo
 
+USER akrido:users
+
 CMD ["swipl",\
-    "-s","pro/analizo-servo.pl",\
-    "-g","daemon","-t","halt",\
-    "-p","agordo=etc","--",\
-    "--workers=10","--user=akrido","--port=8081","--no-fork"]
+    "-s","pro/analizo-servo.pl","-g","daemon","-t","halt(1)",\
+    "-p","agordo=etc","--","--workers=10","--port=8081","--no-fork"]
 
 #
 # 3) Por krei vortaron per revo_radikoj.sh.
