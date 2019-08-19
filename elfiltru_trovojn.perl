@@ -12,7 +12,7 @@ $touch_seventh = 0; # tushu (renovigu) chiun sepan fontodosieron kun eraroj tiel
 #### opcioj:
 # -t       teksta rezulto, aliokaze html
 # -k <DIR> traktu chiujn dosierojn el ujo 
-#          kaj kreu filtrolisto por chiu komenclitero
+#          kaj kreu filtroliston por chiu komenclitero
 #          aliokaze traktu nur dosierojn de komandlinio
 #          kaj skribu rezulton en unu liston
 
@@ -50,13 +50,13 @@ exit(0);
 ################################
 
 sub elfiltru {
-    my @files = @_;
-    my $cnt = 0;
+  my @files = @_;
+  my $cnt = 0;
 
-    print_header() if ($outhtml);
+  print_header() if ($outhtml);
 
 
-    for $file (@files) {
+  for $file (@files) {
 	my @eraroj = ();
 
 	open IN,"$file";
@@ -99,7 +99,7 @@ sub elfiltru {
 	   }
 
 	}
-    }
+  }
 
     print_footer($cnt) if ($outhtml);
     return $cnt;

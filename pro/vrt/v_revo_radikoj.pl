@@ -1879,7 +1879,7 @@ r('signal',subst).
 r('sign',subst).
 r('sigm',subst).
 r('sigl',subst).
-r('sigel',verb).
+r('sigel',tr).
 r('sifon',subst).
 r('sifilis',subst).
 r('sieĝ',tr).
@@ -4208,6 +4208,7 @@ r('mikroskop',subst).
 r('mikrosekc',tr).
 r('mikroorganism',subst).
 r('mikroond',subst).
+r('mikronezi',subst).
 r('mikrometr',subst).
 r('mikrokredit',subst).
 r('mikrokosm',subst).
@@ -6284,7 +6285,7 @@ r('jurisdikci',subst).
 r('jur',subst).
 r('jup',subst).
 r('junuliĉ',subst).
-r('junt',best).
+r('junt',subst).
 r('junkr',subst).
 r('junkac',subst).
 r('junk',subst).

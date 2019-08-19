@@ -15,7 +15,7 @@ user=${suffix%%/*}
 
 # difinu pliajn variablojn por la http-demono
 
-plsrc=${base}/analizo-servo.pl
+plsrc=${base}/pro/analizo-servo.pl
 goal=analizo_servo:daemon
 #PL=/usr/bin/env swipl
 PL=/usr/bin/swipl
@@ -33,7 +33,7 @@ if [ "$user" = "revo-test" ]
       syslog=analizilo
 fi
 
-cd ${base}
+cd ${base}/pro
 ${PL} -q -f "${plsrc}" -g "${goal}" -t "halt" -p agordo=${etc} -- \
     --port=${port} --syslog=${syslog} --pidfile=${pidfile} \
     --user=${user} --group=${user}  --workers=${workers} 

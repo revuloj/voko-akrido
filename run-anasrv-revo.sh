@@ -13,7 +13,7 @@ user=revo #${suffix%%/*}
 
 # difinu pliajn variablojn por la http-demono
 
-plsrc=${base}/analizo-servo.pl
+plsrc=${base}/pro/analizo-servo.pl
 port=8081
 #goal=analizo_servo:server\(${port}\)
 goal=analizo_servo:daemon
@@ -25,7 +25,7 @@ etc=${home}/etc
 workers=10
 
 
-cd ${base}
+cd ${base}/pro
 ${PL} -f "${plsrc}" -g "${goal}" -t "halt" -p agordo=${etc} --\
     --user=${user} --no-fork --workers=${workers} --port=${port}
     # --group=${user} --user=${user} --port=${port} --syslog=${syslog} --pidfile=${pidfile} \

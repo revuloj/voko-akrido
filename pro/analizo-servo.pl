@@ -6,7 +6,7 @@
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 %:- use_module(library(http/http_server_files)).
-%:- use_module(library(http/http_files)).
+:- use_module(library(http/http_files)).
 :- use_module(library(http/http_parameters)). % reading post data
 %%:- use_module(library(http/http_session)).
 :- use_module(library(http/json)).
@@ -44,12 +44,13 @@ init :-
 
 :- current_prolog_flag(os_argv, Argv), writeln(Argv).
 	  
-%%http:location(cit,root(cit),[]).
+user:file_search_path('html','../html').    
+http:location(akrido,root(akrido),[]).
 
-:- http_handler('/', http_redirect(moved,root(.)),[]).
+:- http_handler('/', http_redirect(moved,root(akrido)),[]).
 :- http_handler(root(analizo), analizo,[]). % [authentication(ajaxid)]).
 :- http_handler(root(analinioj), analinioj,[]). % [authentication(ajaxid)]).
-
+:- http_handler(akrido(.), http_reply_from_files(html(.),[]),[prefix]). % [authentication(ajaxid)]).
 
 help :-
     format('~`=t~51|~n'), 
@@ -81,6 +82,16 @@ analizo(Request) :-
     atomic_list_concat(Lines,'\n',Teksto),
     maplist(analizu_linion,Lines).
     %concurrent_maplist(analizu_linion,Lines).
+
+
+% legas JSON el Request, kiu enhavu objekton, kies
+% parametroj estas lininombroj kaj la valoroj estas la
+% teksto sur tiu linio
+% krome povas enesti moduso: "kontrolendaj" por rericevi
+% nur neĝuste analizitajn vorojn (eraroj kaj eblaj eraroj)
+% apriore estas moduso: "komplete" por rericevi ĉiujn vortojn
+% analizitaj/neanalizeblaj:
+% { 1: "bla bla bla", 3: "eĥoŝanĝo", 10: "ĉiuĵaŭde kaj sabate", moduso: "kontrolendaj"}
 
 analinioj(Request) :-
     debug(http(ana),'ANAlinioj ~q',[Request]),
