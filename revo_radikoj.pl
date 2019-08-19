@@ -98,7 +98,9 @@ revo_trasercho :-
       catch(
         (
           % format('~w -> ',[Dosiero]),
-          revo_art(Dosiero)
+          once((
+            revo_art(Dosiero)
+          ))
         ),
         Exc,
         handle_exception(Dosiero,Exc)
