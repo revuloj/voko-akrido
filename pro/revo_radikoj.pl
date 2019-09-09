@@ -10,6 +10,9 @@
 
 revo_xml('../xml/*.xml').
 voko_rdf_klasoj('../owl/voko.rdf').
+%revo_xml('/home/revo/revo/xml/*.xml').
+%voko_rdf_klasoj('/home/revo/voko/owl/voko.rdf').
+
 radik_dosiero('vrt/v_revo_radikoj.pl').
 vort_dosiero('vrt/v_revo_vortoj.pl').
 nomo_dosiero('vrt/v_revo_nomoj.pl').
@@ -100,6 +103,8 @@ revo_trasercho :-
           % format('~w -> ',[Dosiero]),
           once((
             revo_art(Dosiero)
+            ;
+            throw(eraro(ne_analizita))
           ))
         ),
         Exc,
@@ -269,9 +274,10 @@ revo_art(Dosiero) :-
 	 revo_mlg(DOM,Mallongigoj),
          % ne jam preta, teste... var
 	 once((
-	   revo_var(DOM,Var),
-  	   format('DBG var: ~w: ~w~n',[Dosiero,Var])
-         ; true))
+     revo_var(DOM,Var) 
+       %%,
+  	   %%format('DBG var: ~w: ~w~n',[Dosiero,Var])
+       ; true))
          
        % format('~w (~w)~n',[Radiko,Speco]),
         ),
@@ -282,7 +288,11 @@ revo_art(Dosiero) :-
            ; throw(Exc)
         )
      ),
-  %%assert_radiko(DOM,Radiko,Speco),
+  assert_radiko(DOM,Radiko,Speco),
+  assert_mlg(Mallongigoj),
+  nonvar(Var) -> assert_radiko(DOM,Var,Speco); true.
+
+/*  
   once((
     % se temas pri majuskla nomo, registru 
     % kiel nomradiko, kaj ankau minuskle	
@@ -304,8 +314,8 @@ revo_art(Dosiero) :-
         true))
   )),
   assert_mlg(Mallongigoj).
+*/
 
-/*
 assert_radiko(DOM,Radiko,Speco) :-
   once((
     % se temas pri majuskla nomo, registru 
@@ -326,7 +336,7 @@ assert_radiko(DOM,Radiko,Speco) :-
         assertz(vorto(Radiko,intj))
         ;
         true))
-  )).*/
+  )).
 
 assert_nomo_minuskla(Nomo,Speco) :-
     atom_codes(Nomo,[K|Literoj]),
@@ -440,7 +450,19 @@ revo_mlg(DOM,Mallongigoj) :-
   ).
 
 revo_var(DOM,Var) :-
-  xpath(DOM,//art/kap/var/kap(normalize_space),Var).
+  %xpath(DOM,//art/kap/var/kap(normalize_space),Var).
+  xpath(DOM,//art/kap/var/kap,Kap),
+  xpath(Kap,rad(normalize_space),Var),
+  atom_length(Var,L), 
+  (L=<1 
+    -> throw(averto('ignoras unuliteran radikon')) % ne akceptu radikojn unuliterajn
+    ; true
+  ),
+  \+ (
+    xpath(Kap,uzo(@tip=stl,text),'EVI'), %throw(var_evi(Kap))
+    format('DBG var EVI: ~w~n',[Var])
+  ).
+
 
 revo_intj(DOM,VSpeco) :-
    xpath(DOM,//drv,Drv),
