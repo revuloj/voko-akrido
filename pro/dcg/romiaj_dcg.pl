@@ -5,29 +5,27 @@
 c1(10) --> "X".
 c1(1) --> "I".
 
+c5(50) --> "L".
 c5(5) --> "V".
 
 % ciferoj
 c(N) --> c1(N).
 c(N) --> c5(N).
 
-% tiuj rajtas lokigi maldekstre
-%c(N) --> c1(N).
-
-% malpermesu VV, LL, DD...!
-
 % kombinoj de pli ol du cj...
 
-nombro(N) --> c(N).
-nombro(NN) --> c1(N), c1(N), { NN is N+N }.
-nombro(NNN) --> c1(N), c1(N), c1(N), { NNN is N+N+N }.
+n(N) --> c(N).
+n(NN) --> c1(N), c1(N), { NN is N+N }.
+n(NNN) --> c1(N), c1(N), c1(N), { NNN is N+N+N }.
 
-nombro(MN) --> c1(M), c(N), { M<N, MN is N-M }.
+n(MN) --> c1(M), c(N), { M<N, MN is N-M }.
 
-nombro(NM) --> c(N), c(M), { N>M, NM is N+M }.
-nombro(NMM) --> c(N), c1(M), c1(M), { N>M, NMM is N+M+M }.
-nombro(NMMM) --> c(N), c1(M), c1(M), c1(M), { N>M, NMMM is N+M+M+M }.
+n(NM) --> c(N), c(M), { N>M, NM is N+M }.
+n(NMM) --> c(N), c1(M), c1(M), { N>M, NMM is N+M+M }.
+n(NMMM) --> c(N), c1(M), c1(M), c1(M), { N>M, NMMM is N+M+M+M }.
 
+nombro(N_)  --> n(N_).
+nombro(N_M_) --> n(N_), n(M_), { N_>M_, N_M_ is N_+M_ }.
 
 % kunmetu ambau direktojn en unu predikato
 
