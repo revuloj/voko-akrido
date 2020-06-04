@@ -9,20 +9,21 @@ c5(50) --> "L".
 c5(5) --> "V".
 
 % ciferoj
-c(N) --> c1(N).
-c(N) --> c5(N).
+%c(N) --> c1(N).
+%c(N) --> c5(N).
 
-% kombinoj de pli ol du cj...
+% II, III, XX, XXX ktp.
+a(NN) --> c1(N), c1(N), { NN is N+N }.
+a(NNN) --> c1(N), c1(N), c1(N), { NNN is N+N+N }.
 
-n(N) --> c(N).
-n(NN) --> c1(N), c1(N), { NN is N+N }.
-n(NNN) --> c1(N), c1(N), c1(N), { NNN is N+N+N }.
+% 4 (IV), 9 (IX), 40 (XL), 90 (XC), 400 (CD), 900 (CM)
+s(MN) --> c1(M), c5(N), { N is M*5, MN is N-M }.
+s(MN) --> c1(M), c1(N), { N is M*10, MN is N-M }.
 
-n(MN) --> c1(M), c(N), { M<N, MN is N-M }.
-
-%n(NM) --> c(N), c(M), { N>M, NM is N+M }.
-%n(NMM) --> c(N), c1(M), c1(M), { N>M, NMM is N+M+M }.
-%n(NMMM) --> c(N), c1(M), c1(M), c1(M), { N>M, NMMM is N+M+M+M }.
+n(N) --> c1(N).
+n(N) --> c5(N).
+n(N) --> a(N).
+n(N) --> s(N).
 
 nombro(N_)  --> n(N_).
 nombro(N_M_) --> n(N_), n(M_), { N_>M_, N_M_ is N_+M_ }.
