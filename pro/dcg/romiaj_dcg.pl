@@ -20,12 +20,13 @@ n(NNN) --> c1(N), c1(N), c1(N), { NNN is N+N+N }.
 
 n(MN) --> c1(M), c(N), { M<N, MN is N-M }.
 
-n(NM) --> c(N), c(M), { N>M, NM is N+M }.
-n(NMM) --> c(N), c1(M), c1(M), { N>M, NMM is N+M+M }.
-n(NMMM) --> c(N), c1(M), c1(M), c1(M), { N>M, NMMM is N+M+M+M }.
+%n(NM) --> c(N), c(M), { N>M, NM is N+M }.
+%n(NMM) --> c(N), c1(M), c1(M), { N>M, NMM is N+M+M }.
+%n(NMMM) --> c(N), c1(M), c1(M), c1(M), { N>M, NMMM is N+M+M+M }.
 
 nombro(N_)  --> n(N_).
 nombro(N_M_) --> n(N_), n(M_), { N_>M_, N_M_ is N_+M_ }.
+nombro(N_M_L_) --> n(N_), n(M_), n(L_), { N_>M_, M_>L_, N_M_L_ is N_+M_+L_ }.
 
 % kunmetu ambau direktojn en unu predikato
 
