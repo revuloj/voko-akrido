@@ -2,79 +2,83 @@
 
 % bazaj ciferoj
 
-c1(1) --> "I".
-c1(10) --> "X".
-c1(100) --> "C".
-c1(1000) --> "M".
+% 1..9
+i(1) --> "I".
+i(2) --> "II".
+i(3) --> "III".
 
-c5(5) --> "V".
-c5(50) --> "L".
-c5(500) --> "D".
+r1_9(N) --> i(N). % 1..3
+r1_9(4) --> "IV". 
+r1_9(5) --> "V".
+r1_9(N) --> "V", i(Ni), { N is 5+Ni }. % 6..8
+r1_9(9) --> "IX".
 
-% ciferoj
-%c(N) --> c1(N).
-%c(N) --> c5(N).
+% 1..99
+x(10) --> "X".
+x(20) --> "XX".
+x(30) --> "XXX".
 
-% adicio: II, III, XX, XXX ktp.
-a(NN) --> c1(N), c1(N), { NN is N+N }.
-a(NNN) --> c1(N), c1(N), c1(N), { NNN is N+N+N }.
-a(NM) --> c5(N), c1(M), { N is M*5, NM is N+M }. % ekz. VI
-a(NMM) --> c5(N), c1(M), c1(M), { N is M*5, NMM is N+M+M }. % ekz. VII
-a(NMMM) --> c5(N), c1(M), c1(M), c1(M), { N is M*5, NMMM is N+M+M+M }. % ekz. VIII
+r1_39(N) --> r1_9(N). % 1..9
+r1_39(N) --> x(N). % 10, 20, 30
+r1_39(N) --> x(Nx), r1_9(N_), { N is Nx+N_ }.
 
-% subtraho: 4 (IV), 9 (IX), 40 (XL), 90 (XC), 400 (CD), 900 (CM)
-s(MN) --> c1(M), c5(N), { N is M*5, MN is N-M }.
-s(MN) --> c1(M), c1(N), { N is M*10, MN is N-M }.
+r1_99(N) --> r1_39(N). % 1..39
+r1_99(40) --> "XL".
+r1_99(N) --> "XL", r1_9(N_), { N is 40+N_ }. % 41..49
+r1_99(50) --> "L".
+r1_99(N) --> "L", r1_39(N_), { N is 50+N_ }. % 51..89
+r1_99(90) --> "XC".
+r1_99(N) --> "XC", r1_9(N_), { N is 90+N_ }. % 91..99
 
-n(N) --> c1(N).
-n(N) --> c5(N).
-n(N) --> a(N).
-n(N) --> s(N).
+% 1..999
+c(100) --> "C".
+c(200) --> "CC".
+c(300) --> "CCC".
 
-%nombro(N_)  --> n(N_).
-%nombro(N_M_) --> nombro(N_), ",", n(M_), { N_>M_, N_M_ is N_+M_ }.
+r1_399(N) --> r1_99(N).
+r1_399(N) --> c(N).
+r1_399(N) --> c(Nc), r1_99(N_), { N is Nc+N_ }.
 
-%% decimala dismeto
-%rn(D) --> n(D), { D =< 10 }.
-%rn(D) --> n(D10), { D10 is div(D,10)*10, 0 is D mod 10 }.
-%rn(D) --> n(D10), n(D1), { D10 is div(D,10)*10, D1 is D mod 10 }.
+r1_999(N) --> r1_399(N).
+r1_999(400) --> "CD".
+r1_999(N) --> "CD", r1_99(N_), { N is 400+N_ }. % 401..499
+r1_999(500) --> "D".
+r1_999(N) --> "D", r1_399(N_), { N is 500+N_ }. % 501..899
+r1_999(900) --> "CM".
+r1_999(N) --> "CM", r1_99(N_), { N is 900+N_ }. % 901..999
+
+% 1..3999
+m(1000) --> "M".
+m(2000) --> "MM".
+m(3000) --> "MMM".
+
+r1_3999(N) --> r1_999(N).
+r1_3999(N) --> m(N).
+r1_3999(N) --> m(Nm), r1_999(N_), { N is Nm+N_}.
+
 romia(Dec,Rom) :-
-  number_chars(Dec,CList),
-  ndec(CList,DList),
-  rnl(DList,RList),
-  append(RList,RL1),
-  atom_codes(Rom,RL1).
+  number(Dec),
+  phrase(r1_3999(Dec),RC),
+  atom_codes(Rom,RC).
 
-ndec(CL,DL) :- ndec(CL,_,DL).
-ndec([C],1,[D]):- atom_number(C,D),!.
-ndec([C|CL],P10,[D|DL]) :-
-  ndec(CL,P,DL),
-  P10 is P*10,
-  atom_number(C,N),
-  D is P10 * N.
-
-rnl([],[]).
-rnl([D|DList],[R|RList]) :-
-  D > 0,
-  phrase(n(D),R),!,
-  rnl(DList,RList).
-rnl([D|DList],RList) :-
-  D = 0,
-  rnl(DList,RList).
-
-
-% kunmetu ambau direktojn en unu predikato
-
-%romia(Nombro,N) :-
-%  integer(N), phrase(rn(N,Codes), atom_codes(Nombro,Codes),!;
-%  atom(Nombro), atom_codes(Nombro,Codes), phrase(rn(N),Codes),!.
-
-% nombri 
+romia(Dec,Rom) :-
+  atomic(Rom),
+  atom_codes(Rom,RC),
+  phrase(r1_3999(Dec),RC).
 
 nombru(De,Ghis) :-
   between(De,Ghis,N),
   romia(N,Romia),
   write(Romia),nl,fail.
+
+renombru(De,Ghis) :-
+  between(De,Ghis,N),
+  romia(N,Romia),
+  write(Romia),
+  write(' --> '),
+  romia(N1,Romia),
+  write(N1),
+  nl,fail.
 
 
 
