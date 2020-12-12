@@ -4,7 +4,7 @@
 % 3) plej bone kunalizu mallongigojn kiel kc, ks kune kun la sekvanta punkto.
 %    tio pli facilighus fakte, se ni uzus m(..) anstatau mlg(...)?
 
-r('ekz-',subst). %????
+r('ekz-',subst,''). %????
 
 mlg('DNA'). % desoksiribonukleacido
 mlg('E-a'). % Esperanta

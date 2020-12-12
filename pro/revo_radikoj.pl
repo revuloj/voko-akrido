@@ -6,7 +6,7 @@
 :- use_module(library(xpath)).
 :- use_module(library(semweb/rdf_db)).
 
-:- dynamic radiko/2, evi/2, mlg/1, nr/2, nr_/2, vorto/2.
+:- dynamic radiko/3, evi/2, mlg/1, nr/3, nr_/3, vorto/3.
 
 revo_xml('../xml/*.xml').
 voko_rdf_klasoj('../owl/voko.rdf').
@@ -128,15 +128,15 @@ skribu_radikojn :-
 
 skribu_radikojn(Out) :-
   findall(
-    Rad-Spec,
-    radiko(Rad,Spec),
+    Rad-(Spec,Ofc),
+    radiko(Rad,Spec,Ofc),
     Chiuj),
   keysort(Chiuj,Ordigitaj),
   reverse(Ordigitaj,Renversitaj),
   forall(
-    member(R-S,Renversitaj), % renversu por ke "senil" analiziĝu antaŭ "sen/il" ktp.
+    member(R-(S,O),Renversitaj), % renversu por ke "senil" analiziĝu antaŭ "sen/il" ktp.
     % format(Out,'r(''~w'',~w) --> "~w".~n',[R,S,R])
-    format(Out,'r(''~w'',~w).~n',[R,S])  
+    format(Out,'r(''~w'',~w,''~w'').~n',[R,S,O])  
   ).
 
 skribu_vortojn :-
@@ -150,14 +150,14 @@ skribu_vortojn :-
 
 skribu_vortojn(Out) :-
   findall(
-    Vrt-Spec,
-    vorto(Vrt,Spec),
+    Vrt-(Spec,Ofc),
+    vorto(Vrt,Spec,Ofc),
     Chiuj),
   keysort(Chiuj,Ordigitaj),
   reverse(Ordigitaj,Renversitaj),
   forall(
-    member(V-S,Renversitaj), 
-    format(Out,'v(''~w'',~w).~n',[V,S])  
+    member(V-(S,O),Renversitaj), 
+    format(Out,'v(''~w'',~w,''~w'').~n',[V,S,O])  
   ).
 
 skribu_nomojn :-
@@ -174,26 +174,26 @@ skribu_nomojn :-
 
 skribu_nomojn_maj(Out) :-
   findall(
-    Rad-Spec,
-    nr(Rad,Spec),
+    Rad-(Spec,Ofc),
+    nr(Rad,Spec,Ofc),
     Chiuj),
   keysort(Chiuj,Ordigitaj),
   reverse(Ordigitaj,Renversitaj),
   forall(
-    member(R-S,Renversitaj),
-    format(Out,'nr(''~w'',~w).~n',[R,S])  
+    member(R-(S,O),Renversitaj),
+    format(Out,'nr(''~w'',~w,''~w'').~n',[R,S,O])  
   ).
 
 skribu_nomojn_min(Out) :-
   findall(
-    Rad-Spec,
-    nr_(Rad,Spec),
+  Rad-(Spec,Ofc),
+    nr_(Rad,Spec,Ofc),
     Chiuj),
   keysort(Chiuj,Ordigitaj),
   reverse(Ordigitaj,Renversitaj),
   forall(
-    member(R-S,Renversitaj), 
-    format(Out,'nr_(''~w'',~w).~n',[R,S])  
+    member(R-(S,O),Renversitaj), 
+    format(Out,'nr_(''~w'',~w,''~w'').~n',[R,S,O])  
   ).
 
 skribu_evitindajn :-
@@ -227,6 +227,10 @@ skribu_mallongigojn(Out) :-
   ).
 
 load_voko_classes :-
+  % ial dufoje legi tion ne funkcias fidinde, do ni
+  % faros nur, se bestoj ne jam troviĝas...
+  sub_class(rabobestoj,bestoj)->true
+  ;
   rdf_retractall(_,_,_),
   voko_rdf_klasoj(RdfFile),
   rdf_load(RdfFile,[]),
@@ -262,46 +266,57 @@ handle_exception(Dosiero,Exception) :-
 revo_art(Dosiero) :-
   load_xml_file(Dosiero,DOM),
   catch(
-        (
-	 revo_rad(DOM,Radiko,Speco),
-	 revo_mlg(DOM,Mallongigoj),
-         % ne jam preta, teste... var
-	 once((
-	   revo_var(DOM,Var),
-  	   format('DBG var: ~w: ~w~n',[Dosiero,Var])
-         ; true))
-         
-       % format('~w (~w)~n',[Radiko,Speco]),
-        ),
-        Exc,
-        (
-          Exc = rad_evi(Kap) 
-           -> assert_evi(Dosiero,Kap), throw(averto('EVI'))
-           ; throw(Exc)
-        )
-     ),
+    (
+      revo_rad(DOM,Radiko,Speco,Ofc),!, % enestu nur unu, 
+                % do ni ne plu serĉas aliajn radikojn //art/kap/rad 
+      revo_mlg(DOM,Mallongigoj),
+
+      % ne jam preta, teste... var - tiel NI TROVOS NUR UNU var, sed foje enestas du!
+      once((
+        revo_var(DOM,VarRad,VOfc),
+          format('DBG var: ~w: ~w~n',[Dosiero,VarRad])
+        ; true
+      ))
+          
+      % format('~w (~w)~n',[Radiko,Speco]),
+    ),
+    Exc,
+    (
+      Exc = rad_evi(Radiko) 
+        -> assert_evi(Dosiero,Radiko), throw(averto('EVI'))
+        ; throw(Exc)
+    )
+  ),
+
+  % memoru la rezulton de la analizo kiel faktoj
+  assert_vorto(DOM,Radiko,Speco,Ofc),
+  (atomic(VarRad) -> assert_vorto(DOM,VarRad,Speco,VOfc); true),
+  assert_mlg(Mallongigoj).
+
+
+assert_vorto(DOM,Radiko,Speco,Ofc) :-
   %%assert_radiko(DOM,Radiko,Speco),
   once((
     % se temas pri majuskla nomo, registru 
     % kiel nomradiko, kaj ankau minuskle	
     nomo_majuskla(Radiko),
-    assertz(nr(Radiko,Speco)),
-    assert_nomo_minuskla(Radiko,Speco)
+    assertz(nr(Radiko,Speco,Ofc)),
+    assert_nomo_minuskla(Radiko,Speco,Ofc)
     ;
     % interjekciojn registru kiel vort(et)o
     Speco == intj,
-    assertz(vorto(Radiko,Speco))
+    assertz(vorto(Radiko,Speco,Ofc))
     ;
     % normalaj radikoj
-    assertz(radiko(Radiko,Speco)),
-      % se la radiko aldone uzighas kiel interjekcio...
-      once((
-        revo_intj(DOM,_),
-        assertz(vorto(Radiko,intj))
-        ;
-        true))
-  )),
-  assert_mlg(Mallongigoj).
+    assertz(radiko(Radiko,Speco,Ofc)),
+    % se la radiko aldone uzighas kiel interjekcio...
+    once((
+      revo_intj(DOM,_),
+      assertz(vorto(Radiko,intj,Ofc))
+      ;
+      true
+    ))
+  )).
 
 /*
 assert_radiko(DOM,Radiko,Speco) :-
@@ -326,11 +341,11 @@ assert_radiko(DOM,Radiko,Speco) :-
         true))
   )).*/
 
-assert_nomo_minuskla(Nomo,Speco) :-
+assert_nomo_minuskla(Nomo,Speco,Ofc) :-
     atom_codes(Nomo,[K|Literoj]),
     upper_lower(K,M),
     atom_codes(MNomo,[M|Literoj]),
-    assertz(nr_(MNomo,Speco)).
+    assertz(nr_(MNomo,Speco,Ofc)).
 
 assert_mlg(Mallongigoj) :-
     forall(
@@ -358,7 +373,7 @@ assert_evi(Dosiero,Kap) :-
  ).
 
 
-revo_rad(DOM,Radiko,Speco) :-
+revo_rad(DOM,Radiko,Speco,Ofc) :-
   xpath(DOM,//art/kap,Kap),
   xpath(Kap,rad(normalize_space),Radiko),
   atom_length(Radiko,L), 
@@ -366,10 +381,18 @@ revo_rad(DOM,Radiko,Speco) :-
     -> throw(averto('ignoras unuliteran radikon')) % ne akceptu radikojn unuliterajn
     ; true
   ),
+
+  % evitindajn vortojn momente ni ne anailizas plu (ĵetante escepton)
   xpath(DOM,//drv(1),Drv),
   \+ (
     xpath(Drv,uzo(@tip=stl,text),'EVI'), throw(rad_evi(Kap));
     xpath(Drv,snc(1)/uzo(@tip=stl,text),'EVI'), throw(rad_evi(Kap))
+  ),
+
+  % eltrovu la oficialecon
+  once(
+    xpath(Kap,ofc(normalize_space),Ofc);
+    Ofc=''
   ),
 
   % eltrovu la vortspecon de la radiko 
@@ -437,8 +460,20 @@ revo_mlg(DOM,Mallongigoj) :-
     Mallongigoj
   ).
 
-revo_var(DOM,Var) :-
-  xpath(DOM,//art/kap/var/kap(normalize_space),Var).
+revo_var(DOM,VarRad,Ofc) :-
+  xpath(DOM,//art/kap/var/kap(normalize_space),Kap),
+  xpath(Kap,rad(normalize_space),VarRad),
+  atom_length(VarRad,L), 
+  (L=<1 
+    -> throw(averto('ignoras unuliteran radikon')) % ne akceptu radikojn unuliterajn
+    ; true
+  ),
+
+  % eltrovu la oficialecon
+  once(
+    xpath(Kap,ofc(normalize_space),Ofc);
+    Ofc=''
+  ).
 
 revo_intj(DOM,VSpeco) :-
    xpath(DOM,//drv,Drv),
