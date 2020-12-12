@@ -10,6 +10,9 @@
 
 revo_xml('../xml/*.xml').
 voko_rdf_klasoj('../owl/voko.rdf').
+%revo_xml('/home/revo/revo/xml/*.xml').
+%voko_rdf_klasoj('/home/revo/voko/owl/voko.rdf').
+
 radik_dosiero('vrt/v_revo_radikoj.pl').
 vort_dosiero('vrt/v_revo_vortoj.pl').
 nomo_dosiero('vrt/v_revo_nomoj.pl').
@@ -98,7 +101,11 @@ revo_trasercho :-
       catch(
         (
           % format('~w -> ',[Dosiero]),
-          revo_art(Dosiero)
+          once((
+            revo_art(Dosiero)
+            ;
+            throw(eraro(ne_analizita))
+          ))
         ),
         Exc,
         handle_exception(Dosiero,Exc)
@@ -290,12 +297,13 @@ revo_art(Dosiero) :-
 
   % memoru la rezulton de la analizo kiel faktoj
   assert_vorto(DOM,Radiko,Speco,Ofc),
-  (atomic(VarRad) -> assert_vorto(DOM,VarRad,Speco,VOfc); true),
+  (nonvar(VarRad) -> assert_vorto(DOM,VarRad,Speco,VOfc); true),
   assert_mlg(Mallongigoj).
 
 
 assert_vorto(DOM,Radiko,Speco,Ofc) :-
   %%assert_radiko(DOM,Radiko,Speco),
+
   once((
     % se temas pri majuskla nomo, registru 
     % kiel nomradiko, kaj ankau minuskle	
@@ -318,14 +326,14 @@ assert_vorto(DOM,Radiko,Speco,Ofc) :-
     ))
   )).
 
-/*
+
 assert_radiko(DOM,Radiko,Speco) :-
   once((
     % se temas pri majuskla nomo, registru 
     % kiel nomradiko, kaj ankau minuskle	
     nomo_majuskla(Radiko),
     assertz(nr(Radiko,Speco)),
-    assert_nomo_minuskla(Radiko,Speco)
+    assert_nomo_minuskla(Radiko,Speco,Ofc)
     ;
     % interjekciojn registru kiel vort(et)o
     Speco == intj,
@@ -339,7 +347,7 @@ assert_radiko(DOM,Radiko,Speco) :-
         assertz(vorto(Radiko,intj))
         ;
         true))
-  )).*/
+  )).
 
 assert_nomo_minuskla(Nomo,Speco,Ofc) :-
     atom_codes(Nomo,[K|Literoj]),
@@ -474,6 +482,10 @@ revo_var(DOM,VarRad,Ofc) :-
     xpath(Kap,ofc(normalize_space),Ofc);
     Ofc=''
   ).
+%  \+ (
+%    xpath(Kap,uzo(@tip=stl,text),'EVI'), %throw(var_evi(Kap))
+%    format('DBG var EVI: ~w~n',[Var])
+%  ).
 
 revo_intj(DOM,VSpeco) :-
    xpath(DOM,//drv,Drv),

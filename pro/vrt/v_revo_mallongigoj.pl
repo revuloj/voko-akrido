@@ -94,6 +94,7 @@ mlg('MB').
 mlg('MT').
 mlg('MX').
 mlg('MOM').
+mlg('MD').
 mlg('IMF').
 mlg('UN').
 mlg('NP').
@@ -113,6 +114,7 @@ mlg('ST').
 mlg('MOS').
 mlg('SN').
 mlg('OSR').
+mlg('SK').
 mlg('USSR').
 mlg('LK').
 mlg('SD').

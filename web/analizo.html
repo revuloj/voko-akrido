@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="eo">
+    
+<!--
+// (c) 2016 - 2018 - Wolfram Diestel
+// laŭ GPL 2.0
+-->
+      
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+    <link rel="stylesheet" href="css/verkotitolo.css"/>
+    <!-- link rel="SHORTCUT ICON" href="../static/revo.ico"-->
+      
+<!-- see https://code.jquery.com/ -->
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+     
+  <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
+
+
+  <script src="analizo.js"></script>
+
+  <title>Vortanalizo</title>
+
+</head>
+
+<body background="bld/papero.jpg">
+
+  <h1>Vortanalizo</h1>
+
+  <div id="analizo">
+    <div id="analizo_fono">
+        <form id="analizo_form">
+            <p id="analizo_error" class="ui-state-error ui-corner-all"></p>
+            <p style="margin-top: 0">
+              <textarea id="analizo_teksto"
+                 name="analizo_teksto" rows="15" cols="80" 
+                 placeholder="Vortoj aŭ frazoj analizendaj"></textarea>
+            </p>
+            <p>
+              <input id="analizo_submit" type="submit" class="ui-button ui-corner-all"
+                name="analizo_submit" value="Analizu"/>
+            </p>
+        </form>
+        <dl id="analizo_rezulto"></dl>
+    </div>
+  </div>
+
+</body>
+</html>
+

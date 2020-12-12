@@ -7,8 +7,6 @@ evi('alies',"alies").
 evi('aliom',"aliom").
 evi('aliu',"aliu").
 evi('alpinism',"alpinismo").
-evi('anarki1',"anarkisto").
-evi('anarki',"anarkismo").
 evi('apelac1',"apelaci").
 evi('arhxiepiskop',"arĥiepiskopo").
 evi('bidual',"bidualo").
@@ -56,8 +54,6 @@ evi('merd',"merdo").
 evi('muzulman',"muzulmano").
 evi('na',"na").
 evi('negr',"negro").
-evi('ningx',"ninĝo").
-evi('ninjxa',"ninĵao").
 evi('opak',"opaka").
 evi('perfor',"perfori").
 evi('pingvi',"pingvino").
