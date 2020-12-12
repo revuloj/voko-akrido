@@ -48,9 +48,58 @@ reduce_([L|Ls],[L|Fs],DelLetters) :-
   % \+ memberchk(L,"() "), 
   reduce_(Ls,Fs,DelLetters).
 
-%%% traduki regulesprimojn al normalaj Prologo-faktoj....
-%% la maldekstra parto (kapo) tradukiĝas per rule_head
-%% la dekstra parto (korpo) per rule_body
+%%%%%% Traduki regulesprimojn al normalaj Prologo-faktoj....
+%%
+%% 1. la maldekstra parto (kapo) tradukiĝas per *rule_head* (vd. difniojn malsupre)
+%%   kiu konsitiĝas tiel:
+%% - predikatnomo, respondas al al predikatonomo de la gramatika regulo, ekz. 'vorto'
+%% - regulnomo respondas al la unua argumento de la gramatika regulo, ekz. v, pv, Df
+%%   [ĝi estas mallongigo de la aplikata vortformada maniero, ekz Df = D)erivaĵo kun f)inaĵo]
+%% - Spc: la vortspeco deduktita el la regulo - respondanta al la dua argumento de la gramatika regulo
+%% - Vrt: la analizenda vorto
+%% - Rez: la rezulto de la analizo, kiel kombinita esprimo [komparebla al matematika termo kun operatoroj /, - kc]
+%% - Depth: la profundeco de la analizo, ni limigas ĝin por ne perdiĝi en senfineco...
+%%
+%% 2. la dekstra parto (korpo) per *rule_body* (vd. difinojn malsupre)
+%%   kiu konsistiĝas tiel:
+%% a) simpla rigardo en la vortaro, ekz. v(Vorto,Speco) 
+%% b) analizo kiel kunmeto el du partoj
+%%    - unue la analizendea vorto estas arbitre dismetita en du partojn, por optimumigi la tuton
+%%      depende de la vorter-speco ni limigas la longecon, ekz. ni scias ke prefikso havas inter 2 kaj 6 literojn.
+%%    - analizo de ambaŭ partoj: aŭ kiel faktoj el la vortaro aŭ kiel pli profunde analizita vortparto
+%%    - kontrolo de pliaj kondiĉoj (post "~>", ekz-e nur certaj vortspecoj)
+
+% Ekzemploj de transformado de gramatika regulo al
+% funkcianta Prologo-kodo:
+%
+% a) simpla vorteto, ekz. hodiaŭ, ek
+%   vorto(v,Spc) <= v(_,Spc).
+%
+% fariĝas:
+%   vorto_gra:vorto(v, Spc, V1, V1, _) :-
+%     v(V1, Spc).
+% 
+% b) simplaj mal-vortoj (malfor, malantaŭ, maltro...)
+%   vorto(pv,Spc) <= p(mal,_) / v(_,Spc) ~> (Spc='adv'; Spc='prep').
+% 
+% fariĝas:
+%   vorto_gra:vorto(pv, Spc, Vrt, mal/V1, Depth) :-
+%     % ... ni provas apliki la gramatikan regulon 'pv'
+%     debug(Depth, ?, pv, Vrt),
+%     % ni provas identigi la unuajn 2 ĝis 6 literojn per prefikso
+%     between(2, 6, L1),
+%     sub_atom(Vrt, 0, L1, L2, mal),
+%     % ni provas identigi la sekvajn 2 ĝis 10 literojn per vorteto
+%     between(2, 10, L2),
+%     sub_atom(Vrt, L1, L2, 0, V1),
+%     _ is Depth+1,
+%     p(mal, _),
+%     v(V1, Spc),
+%     % ni kontrolas, ĉu la vortspeco estas unu el 'adv', 'prep'
+%     debug(Depth, *, pv, mal/V1),
+%     (   Spc=adv
+%     ;   Spc=prep
+%     ).
 
 term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
   format('%# ~k ...',[RuleHead]),
@@ -67,8 +116,8 @@ term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
 
 % esceptoj: <- 
 % rv_sen_fin(e,subst) <- post/e/ul.
-% transformu al: rv_sen_fin(e,subst,posteul,'post/e/ul',_).
-%? au alterantive: rv_sen_fin(e,subst,Vrt,Rez,_Depth) :- Vrt = posteul, Rez = post/e/ul.
+% transformu al: rv_sen_fin(e,subst,posteul,post/e/ul,_).
+%? au alternative: rv_sen_fin(e,subst,Vrt,Rez,_Depth) :- Vrt = posteul, Rez = post/e/ul.
 
 term_expansion( RuleHead <- RuleBody , RuleTranslated ) :-
   format('%# ~k ...',[RuleHead]),
@@ -87,17 +136,24 @@ rule_head(RuleHead,Vrt,Rez,Depth,PredHead) :-
    append(RuleArgs,[Vrt,Rez,Depth],Args),
    PredHead =.. [RuleName|Args].
 
+
 rule_body(RuleHead,RuleExp ~> PostCond,Vrt,Rez,Depth,PredBody) :-
+  % kreo de la unua parto
   rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,FirstPart),
+  % alpendigo de la postkondiĉo, kiu ja estas valida Prologo-kodo per "KAJ" = ","
+  % post la unua parto
   PredBody =.. [',',FirstPart,PostCond].
 
 rule_body(RuleHead,RuleExp,Vrt,Rez,Depth,PredBody) :-
+  % se ni ne havas postkondiĉon sufiĉas krei la "unuan parton"
   rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredBody).
 
 
 % transformu regulo-esprimon (rule expression) al Prologo
 rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   RuleHead =.. [_,RuleScheme|_],
+  % ĉu la regulesprimo (dekstra parto) enhavas unu el la permesataj operatoroj,
+  % ekz. R1 / R2
   RuleExp =.. [Op|Refs],
   memberchk(Op,['+','/','~','-','*']),!,
   Refs = [R1,R2],
@@ -106,11 +162,14 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
 
   % kreu la Prologo-kodon por la regul-aplikoj kaj
   % la vortdismeto (Splitter)
+  % R1 kaj R2 referencas al la nomoj de gramatikaj reguloj
+  % kiuj povas esti aŭ vortarserĉo aŭ gramatika regulo (komenciĝanta per "&")
+  % la lasta argumento redonas la kunmetitan kodon por vokado de tiu regulo (aŭ serĉo)
   rule_ref(R1,V1,Rez1,D1,RRef1),
   rule_ref(R2,Rest,Rez2,D1,RRef2),
   splitter(RuleScheme,R1,R2,Vrt,V1,Rest,Splitter),
 
-  % se la regul-skemo trovita en la kapo
+  % por optimuma analizo: se la regul-skemo trovita en la kapo
   % temas pri apliko de prefikso aŭ antaŭvorto,
   % komencu per maldekstra parto (ĉar tiu parto estas verŝajne pli mallonga)
   % En aliaj okazoj (sufiksoj, finaĵoj, komencu per destra parto.
@@ -119,33 +178,44 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   ; Sub = (RRef2,RRef1)
   ),
 
-  % kunmetu la kod-partojn al tuta predikato-korpo
+  % kunmetu nun la kod-partojn al tuta predikato-korpo
   PredExp =  (
-   debug(Depth,'?',RuleScheme,Vrt), 
+     debug(Depth,'?',RuleScheme,Vrt), 
 %     atom_concat(V1,Rest,Vrt), 
 %     V1 \= '', Rest \= '',
-     Splitter,
-     D1 is Depth +1,
+    Splitter,
+    D1 is Depth +1,
 %     RRef2,
 %     RRef1,
-     Sub,
+    Sub,
 %%%     Rez=Rezulto,
-   debug(Depth,'*',RuleScheme,Rez) 
-    ).
+    debug(Depth,'*',RuleScheme,Rez) 
+  ).
 %  term_variables(PredExp, [A,B,C,D,E,F]).
 
+% la dektra parto povas ankaŭ esti unuparta, simpla, ekz. vortarserĉo
+% aŭ forreferenco al subordigita regulo
 rule_exp(_,RuleExp,Vrt,Rez,Depth,PredExp) :-
   rule_ref(RuleExp,Vrt,Rez,Depth,PredExp).
 
-% la regulo-parto referencas alian regulon
+
+
+% komenciĝante per "&", la regulo-parto referencas alian regulon
 rule_ref(&RuleRef,Vrt,Rez,Depth,RuleCall) :- !,
   RuleRef =.. [RuleName|RuleArgs],
   append([RuleArgs,[Vrt,Rez,Depth]],Args),
   RuleCall =.. [RuleName|Args].
 
 % la regulo-parto estas serĉo en la vortaro, je prefiksoj, radikoj, sufiksoj, finaĵoj...
+% DictSearch estas ekz-e v(Vrt,Spec,Ofc) - por vortoj kaj radikoj ni havas oficialecon
+rule_ref(DictSearch,Vrt,Vrt^Ofc,_,DictSearch) :-
+  DictSearch =.. [Srch,Vrt,_Spc,Ofc],
+  memberchk(Srch,[v,r]),!.
+
+% DictSearch estas alispeca vortero (sen oficialeco)
 rule_ref(DictSearch,Vrt,Vrt,_,DictSearch) :-
   DictSearch =.. [_,Vrt|_].
+
 
 splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
     % PLIBONIGU: iom malavantaĝe estas, ke RuleId - unua argumento en RuleRef

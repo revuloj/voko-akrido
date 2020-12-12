@@ -1,8 +1,8 @@
 :-module(vortaro,[
-	    v/2, % vortoj
-	    r/2, % radikoj
-	    nr/2, % nomradikoj
-	    nr_/2, % nomradikoj minuskligitaj
+	    v/3, % vortoj
+	    r/3, % radikoj
+	    nr/3, % nomradikoj
+	    nr_/3, % nomradikoj minuskligitaj
 	    p/2, p/3, s/3, % prefiksoj kaj sufiksoj
 	    ns/2, sn/3, % nomsufikso (nj, ĉj)kaj nombrosufikso (ilion, iliard)
         f/2, c/2, % finaĵoj
@@ -34,10 +34,10 @@
 :-consult('vrt/v_radikoj.pl').
 
 % provizore ignoru la oficialecon, poste ni devos prilabori la gramatikon por ebligi plian argumenton! 
-v(V,S) :- v(V,S,_).
-r(V,S) :- r(V,S,_).
-nr(V,S) :- nr(V,S,_).
-nr_(V,S) :- nr_(V,S,_).
+% v(V,S) :- v(V,S,_).
+% r(V,S) :- r(V,S,_).
+% nr(V,S) :- nr(V,S,_).
+% nr_(V,S) :- nr_(V,S,_).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ĝeneralaj transformoj de vorspeco ...

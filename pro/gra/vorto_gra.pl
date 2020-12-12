@@ -12,6 +12,9 @@
 :- format('%# legi kaj transformi gramatikajn regulojn...').
 :- consult(esceptoj).
 
+% ĉar ni ne rekte importas la vortaron, informu almenaŭ la sintakskontrolilon pri ĝia enhavo...
+% :- discontiguous vortaro:r/2, vortaro:nr/2, v/2, i/2, u/2.
+
 /** <module> Esperanta vortanaliza gramatiko
   
   Jen konstituta gramatiko por analizi esperantajn vortojn laŭ vortelementoj.
@@ -67,11 +70,11 @@
 % por ebligi uzadon de diversaj vortaroj,
 % tie ĉi la diversaj predikatoj por vortelementoj estas
 % dinamike importitaj. Necesas ŝargi la vortaron antaŭ ŝargi la gramatikon, do ...
-
-:-  import(vortaro:v/2),
-    import(vortaro:r/2),
-    import(vortaro:nr/2),
-    import(vortaro:nr_/2),
+% v, r, nr, nr_ estas triargumentaj, ili havas oficialecindikon!
+:-  import(vortaro:v/3), 
+    import(vortaro:r/3),
+    import(vortaro:nr/3),
+    import(vortaro:nr_/3),
     import(vortaro:p/2),  
     import(vortaro:p/3),  
     import(vortaro:s/3),
@@ -123,9 +126,9 @@ subspc(S1,S2) :-
 %
 % formi nomkomencon el radikoj, por apliki nj, ĉj, ekz. paĉj': r(patr,pers) -> nk(pa,pers) 
 
-nk(Nom,Spc) :- 
+nk(Nom,Spc,Ofc) :- 
     sub(Spc,pers),
-    (vortaro:r(Nomo,Spc); vortaro:nr(Nomo,Spc)),
+    (vortaro:r(Nomo,Spc,Ofc); vortaro:nr(Nomo,Spc,Ofc)),
     sub_atom('aeioujŭrlnm',_,1,_,Lit),
     sub_atom(Nomo,B,1,_,Lit),
     B_1 is B+1,
@@ -173,10 +176,10 @@ drv_per_suf(Spc,Al,De,Speco) :-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % simpla vorteto, ekz.  hodiaŭ, ek
-vorto(v,Spc) <= v(_,Spc).
+vorto(v,Spc) <= v(_,Spc,_).
 
 % simplaj mal-vortoj (malfor, malantaŭ, maltro...)
-vorto(pv,Spc) <= p(mal,_) / v(_,Spc) ~> (Spc='adv'; Spc='prep').
+vorto(pv,Spc) <= p(mal,_) / v(_,Spc,_) ~> (Spc='adv'; Spc='prep').
 
 % pronomo, ekz. mi
 vorto(i,Spc) <= i(_,Spc). 
@@ -210,27 +213,27 @@ vorto('Mf',Spc) <= &nm_sen_fin(_,Vs) / f(_,Fs)
   % ne traktu afiksojn kiel radikoj
   % por teĥnikaj prefiksoj kiel nitro-, kilo- k.a. difinu
   % apartajn regulojn por predikatoj "prefikso" kaj "sufikso"
-rad(r,Spc) <=  r(_,Spc) ~>  Spc \= suf, Spc \= pref.
+rad(r,Spc) <=  r(_,Spc,_) ~>  Spc \= suf, Spc \= pref.
 
 % substantivigo de verboj
-rad(r_,subst) <= r(_,VSpc) ~> subspc(VSpc,verb). % celi -> celo, ekz. "tiu+cel/a"
+rad(r_,subst) <= r(_,VSpc,_) ~> subspc(VSpc,verb). % celi -> celo, ekz. "tiu+cel/a"
 % verbigo de substantivoj, sed foje kauzas malghustan analizon: strat/i -> sur/strat/a
 % anstataŭ sur+strat/a
-rad(r_,tr) <= r(_,SSpc) ~> subspc(SSpc,subst). % kauzo -> kauzi, spico -> spici
+rad(r_,tr) <= r(_,SSpc,_) ~> subspc(SSpc,subst). % kauzo -> kauzi, spico -> spici
 % substantivigo de nombroj
-rad(r_,subst) <= r(_,nombr). % tri -> trio
+rad(r_,subst) <= r(_,nombr,_). % tri -> trio
 % adjektivigo de adverboj
-rad(r_,adj) <= r(_,adv). % bele -> bela -> belulo, ( super -> super/a -> superulo ?)
+rad(r_,adj) <= r(_,adv,_). % bele -> bela -> belulo, ( super -> super/a -> superulo ?)
 % verbigo de adjektivoj
-rad(r_,verb) <= r(_,adj). % simili, ĵaluzi, utili, trankvili ktp.
+rad(r_,verb) <= r(_,adj,_). % simili, ĵaluzi, utili, trankvili ktp.
 
 % permesu '/' post la radiko, speciale por la kapvortoj de Revo
-rad('r/',Spc) <=  r(_,Spc) / os(_) ~>  Spc \= suf, Spc \= pref.
+rad('r/',Spc) <=  r(_,Spc,_) / os(_) ~>  Spc \= suf, Spc \= pref.
 
 % minusklaj nomradikoj uziĝas kiel ordinaraj
 % radikoj, ekz. trans+antlantik, pra/franc/a
-rad(m,Spc) <= nr_(_,Spc). 
-rad('m/',Spc) <= nr_(_,Spc) / os(_). 
+rad(m,Spc) <= nr_(_,Spc,_). 
+rad('m/',Spc) <= nr_(_,Spc,_) / os(_). 
 
 % derivado per prefikso
 rv_sen_suf(pr,Spc) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De).
@@ -254,10 +257,10 @@ rv_sen_fin('Ds',nombr) <= &rv_sen_fin(_,nombr) / sn(_,nombr,nombr).
 rv_sen_fin(pD,Spc) <= p(_,De) / &rv_sen_fin('Ds',Spc) ~> subspc(Spc,De). 
 
 % karesnomo
-rv_sen_fin('N',Spc) <= nk(_,Spc) / ns(_,Ss) ~> subspc(Spc,Ss).
+rv_sen_fin('N',Spc) <= nk(_,Spc,_) / ns(_,Ss) ~> subspc(Spc,Ss).
 
 % majusklaj nomoj povas havi nur sufiksojn, ekz. Atlantik/ec, Rus/uj
-nm_sen_fin('M',Spc) <= nr(_,Spc). 
+nm_sen_fin('M',Spc) <= nr(_,Spc,_). 
 nm_sen_fin('Ms',Spc) <= &nm_sen_fin(_,Ns) / s(_,Al,De) ~> drv_per_suf(Ns,Al,De,Spc).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
@@ -288,7 +291,7 @@ kdrv(pD,adj) <= p(_,adj,De) + &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
 kdrv(pD,adv) <= p(_,adv,De) + &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
 
 % kunderivado per adverboj, ekz. altkreska, longdaura, plenkreska
-kdrv(rr,adj) <= r(_,ASpc) + r(_,VSpc) ~> (ASpc = adv ; ASpc = adj), subspc(VSpc,verb).
+kdrv(rr,adj) <= r(_,ASpc,_) + r(_,VSpc,_) ~> (ASpc = adv ; ASpc = adj), subspc(VSpc,verb).
 
 % esceptoj kiel artefarita...(?)
 % fakte ne estas vera kunderivado, chu???
@@ -303,7 +306,7 @@ kdrv(rr,adj) <= &kadj(_,adj) + &rad(_,SSpc) ~> subspc(SSpc,subst).
 % kunderivado per pronomo: 
 
 %   per ambaŭ manoj -> ambaŭ+mane
-kdrv(vr,adj) <= v(_,pron) + &rad(_,SSpc) ~> subspc(SSpc,subst).
+kdrv(vr,adj) <= v(_,pron,_) + &rad(_,SSpc) ~> subspc(SSpc,subst).
 
 %   al tiu celo -> tiu+cel/a 
 %   je tia okazo -> tia+okaz/e
@@ -346,10 +349,10 @@ vrt('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs)
      ; Spc=Fs).
 
 % simpla vorteto, ekz.  hodiaŭ, ek, pli
-vrt(v,Spc) <= v(_,Spc).
+vrt(v,Spc) <= v(_,Spc,_).
 
 % simplaj mal-vortoj (malpli, malfor, malantaŭ, maltro...)
-vrt(pv,Spc) <= p(mal,_) / v(_,Spc) ~> (Spc='adv'; Spc='prep').
+vrt(pv,Spc) <= p(mal,_) / v(_,Spc,_) ~> (Spc='adv'; Spc='prep').
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kunmetitaj vortoj
@@ -359,9 +362,9 @@ vrt(pv,Spc) <= p(mal,_) / v(_,Spc) ~> (Spc='adv'; Spc='prep').
 % nombrokunmeto, ekz. du*dek
 % KOREKTU: permesu nur dekojn kiel N2, ciferojn 1..9 kiel N1
 cifero(N) :- memberchk(N,[unu,du,tri,kvar,kvin,ses,sep,ok,'naŭ']). 
-vorto(nn,nombr) <= v(N1,nombr) * v(dek,nombr) ~> cifero(N1).
-vorto(nn,nombr) <= v(N1,nombr) * v(cent,nombr) ~> cifero(N1).
-vorto(nn,nombr) <= v(N1,nombr) * v(mil,nombr) ~> cifero(N1).
+vorto(nn,nombr) <= v(N1,nombr,_) * v(dek,nombr,_) ~> cifero(N1).
+vorto(nn,nombr) <= v(N1,nombr,_) * v(cent,nombr,_) ~> cifero(N1).
+vorto(nn,nombr) <= v(N1,nombr,_) * v(mil,nombr,_) ~> cifero(N1).
 
 % ekz. dom-hund/o, ..., preferu dupartajn kunmetitajn
 vorto('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
