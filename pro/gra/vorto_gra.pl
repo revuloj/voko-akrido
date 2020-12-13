@@ -126,13 +126,14 @@ subspc(S1,S2) :-
 %
 % formi nomkomencon el radikoj, por apliki nj, ĉj, ekz. paĉj': r(patr,pers) -> nk(pa,pers) 
 
-nk(Nom,Spc,Ofc) :- 
+nk(Nom,Spc,Rest,Ofc) :- 
     sub(Spc,pers),
     (vortaro:r(Nomo,Spc,Ofc); vortaro:nr(Nomo,Spc,Ofc)),
     sub_atom('aeioujŭrlnm',_,1,_,Lit),
     sub_atom(Nomo,B,1,_,Lit),
     B_1 is B+1,
-    sub_atom(Nomo,0,B_1,_,Nom).
+    sub_atom(Nomo,0,B_1,_,Nom),
+    sub_atom(Nomo,B_1,_,0,Rest).
 
 
 drv_per_suf(Spc,Al,De,Speco) :- 
@@ -257,7 +258,7 @@ rv_sen_fin('Ds',nombr) <= &rv_sen_fin(_,nombr) / sn(_,nombr,nombr).
 rv_sen_fin(pD,Spc) <= p(_,De) / &rv_sen_fin('Ds',Spc) ~> subspc(Spc,De). 
 
 % karesnomo
-rv_sen_fin('N',Spc) <= nk(_,Spc,_) / ns(_,Ss) ~> subspc(Spc,Ss).
+rv_sen_fin('N',Spc) <= nk(_,Spc,_,_) / ns(_,Ss) ~> subspc(Spc,Ss).
 
 % majusklaj nomoj povas havi nur sufiksojn, ekz. Atlantik/ec, Rus/uj
 nm_sen_fin('M',Spc) <= nr(_,Spc,_). 
