@@ -210,7 +210,11 @@ rule_ref(&RuleRef,Vrt,Rez,Depth,RuleCall) :- !,
 % DictSearch estas ekz-e v(Vrt,Spec,Ofc) - por vortoj kaj radikoj ni havas oficialecon
 rule_ref(DictSearch,Vrt,Vrt^Ofc,_,DictSearch) :-
   DictSearch =.. [Srch,Vrt,_Spc,Ofc],
-  memberchk(Srch,[v,r]),!.
+  memberchk(Srch,[v,r,nr,nr_]),!.
+
+% nommkomenco, t.e. mallongigita nomo kiel en Pe(tr)ĉjo
+rule_ref(DictSearch,Vrt,Vrt:Rest^Ofc,_,DictSearch) :-
+  DictSearch =.. [nk,Vrt,_Spc,Rest,Ofc],!.
 
 % DictSearch estas alispeca vortero (sen oficialeco)
 rule_ref(DictSearch,Vrt,Vrt,_,DictSearch) :-
