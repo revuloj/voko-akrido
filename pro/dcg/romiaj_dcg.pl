@@ -1,5 +1,7 @@
 /* -*- Mode: Prolog -*- */
 
+
+
 % 1..9
 i(1) --> "I".
 i(2) --> "II".
@@ -79,6 +81,43 @@ renombru(De,Ghis) :-
   nl,fail.
 
 
+/* alia pli simpla propono funkcias per limigoj (contraints), sed
+% permesus ankaŭ malbonajn kiel IIXX = 1+9+10 = 20 ...,
+% eble oni povus plie striktigi, maksimume tri el I, X, C, M estas permesitaj
+% kaj cetere ĉiu dekstra devas esti pli malgranda ol maldekstra,
+% sed ankoraŭ eblus IXV = 9+5 = 14 anst. XIV = 10 + 4:
+% roman(N0) --> "I", { 1 #=< N0, N0 #=< 3, N1 #= N0-1}, roman(N1).
 
+:- use_module(library(clpfd)).
+
+dcg(Arabic) -->
+    { Arabic in 1..3999 },
+    roman(Arabic),
+    !.
+
+roman(Total) -->
+    { Rest #>= 0 },
+    { Total #= Value + Rest },
+    digit(Value),
+    roman(Rest).
+roman(0) --> "".
+
+digit(1000) --> "M".
+digit(900) --> "CM".
+digit(500) --> "D".
+digit(400) --> "CD".
+digit(100) --> "C".
+digit(90) --> "XC".
+digit(50) --> "L".
+digit(40) --> "XL".
+digit(10) --> "X".
+digit(9) --> "IX".
+digit(5) --> "V".
+digit(4) --> "IV".
+digit(1) --> "I".
+
+% ?- phrase(dcg(N),`CCXCVIII`).
+% ?- phrase(dcg(1298), Rs).
+*/
 
 
