@@ -44,13 +44,16 @@ init :-
 
 :- current_prolog_flag(os_argv, Argv), writeln(Argv).
 	  
-user:file_search_path('html','../html').    
+user:file_search_path('web','../web').    
 http:location(akrido,root(akrido),[]).
 
 :- http_handler('/', http_redirect(moved,root(akrido)),[]).
+% analizo akceptas parametron "teksto" kaj redonas la rezulton de la analizo same kiel nuda teksto
 :- http_handler(root(analizo), analizo,[]). % [authentication(ajaxid)]).
+% analinioj akceptas JSON kun po-linia analizaĵo kaj redonas kontrolendajn vortoj kun lininumeroj
 :- http_handler(root(analinioj), analinioj,[]). % [authentication(ajaxid)]).
-:- http_handler(akrido(.), http_reply_from_files(html(.),[]),[prefix]). % [authentication(ajaxid)]).
+% statikaj dosieroj por retpaĝa interfaco
+:- http_handler(akrido(.), http_reply_from_files(web(.),[]),[prefix]). % [authentication(ajaxid)]).
 
 help :-
     format('~`=t~51|~n'), 
@@ -80,7 +83,7 @@ analizo(Request) :-
 	    ]),
     format('Content-type: text/plain~n~n'),
     atomic_list_concat(Lines,'\n',Teksto),
-    maplist(analizu_linion,Lines).
+    concurrent_maplist(analizu_linion,Lines).
     %concurrent_maplist(analizu_linion,Lines).
 
 
@@ -103,7 +106,7 @@ analinioj(Request) :-
         ;
         Lines = JSON, Mode=komplete
         )),
-    maplist(analizu_linion(Mode),Lines,Rezultoj),
+        concurrent_maplist(analizu_linion(Mode),Lines,Rezultoj),
     exclude(malplena,Rezultoj,Nemalplenaj),
     reply_json(json(Nemalplenaj)).
 
@@ -117,6 +120,8 @@ analizu_linion(Line) :-
 analizu_linion(Mode,N=Line,N=Rez) :-
     atom_codes(Line,Codes), %format('~w::',[N]),
     analizu_tekston_liste(Codes,[],RList),
+    % redukto la rezulton al linioj kun kontrolendaj/eraraj vortoj 
     exclude(ana_ekskludo(Mode),RList,Rez).
 
+% por ekskludi ĉiujn liniojn en la rezulto, kiuj ne entenas kontrolendajn aŭ eraroj/neanalizeblajn vortojn
 ana_ekskludo(kontrolendaj,X) :- memberchk(X.takso,[bona,signo,nombro,mlg]).
