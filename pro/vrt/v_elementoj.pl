@@ -298,6 +298,7 @@ i(ci,perspron).
 i(li,perspron).
 i('ŝi',perspron).
 i('ĝi',perspron).
+i('ri',perspron). % neoficiala sekneŭtrala pronomo
 i(oni,perspron).
 i(ni,perspron).
 i(vi,perspron).

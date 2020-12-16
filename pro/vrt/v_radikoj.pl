@@ -13,6 +13,7 @@ r('ci',adj,'*').
 r('li',adj,'*').
 r('ŝi',adj,'*').
 r('ĝi',adj,'*').
+r('ri',adj,''). % neoficiala
 r('oni',adj,'*').
 r('ni',adj,'*').
 r('vi',adj,'*').
