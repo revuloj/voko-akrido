@@ -300,8 +300,18 @@ skribu_voston :-
 
 skribu_vorton(bona,Vorto,Analizita,_,Uskl) :-
   uskleco(Uskl,Vorto,U,Analizita,A),
-  %oficialeco(A,AO),
-  format('~w~w',[U,A]).
+  oficialeco(A,LOfc,AO),
+  once((
+    LOfc = [], % neniu aparta oficialec-informo
+    format('~w~w',[U,AO])
+    ;
+    output(html)
+    -> 
+    (
+      ofc_classes(LOfc,Cls), % kreu klasliston de oficialeco
+      format('<span class="~w">~w~w</span>',[Cls,U,AO])
+    ); format('~w~w',[U,AO])
+  )).
 
 %skribu_vorton(bona,Vorto,Analizita,_,minuskle) :-
 % % majuskligo_atom(Analizita,Majuskla),
@@ -355,35 +365,39 @@ uskleco(1:0,_,'',Analizita,Ana) :-
 
 uskleco(_,_,'',Analizita,Analizita).
 
-/*
-% oficialeco enestas kiel ^...
+
+% oficialeco enestas kiel [...]
 % ni enmetos <sup>...</sup> tiuloke
-% KOREKTU: ni ankoraŭ ne traktas ofiialecon kiel '^1959'
-% nek malplenan oficialecon
-oficialeco(A,A1) :-
-  sub_atom(A,N,1,_,'^'),
-  N1 is N+1,
-  sub_atom(A,N1,1,_,Ofc),
-  memberchk(Ofc,['*','0','1','2','3','4','5','6','7','8','9']),!,
-  % traktu la reston
-  N2 is N1+1,
-  sub_atom(A,0,N,_,Left),
-  sub_atom(A,N2,_,0,Right),
-  oficialeco(Right,R1),
-  atomic_list_concat([Left,'<sup>',Ofc,'</sup>',R1],A1).
+oficialeco(A,[Ofc|ORest],A1) :-
+  sub_atom(A,Left,1,_,'['),
+  sub_atom(A,Right,1,_,']'),!,
+  % rigardu, ĉu dekstre estas pliaj [...]
+  sub_atom(A,0,Left,_,ALeft),
+  R1 is Right+1, sub_atom(A,R1,_,0,ARight),
+  oficialeco(ARight,ORest,ARest),
+  % malplena krampo signifas neoficiala!
+  Len is Right-Left-1, 
+  once((
+    Len = 0,
+    Ofc = n,
+    atomic_list_concat([ALeft,ARest],A1)
+    ;
+    Len < 5, L1 is Left+1,
+    sub_atom(A,L1,Len,_,Ofc),
+    atomic_list_concat([ALeft,'<sup>',Ofc,'</sup>',ARest],A1)
+    ;
+    throw('Nevalida oficialeco, tro longa!')
+  )).
 
-% neoficiala...
-oficialeco(A,A1) :-
-  sub_atom(A,N,1,_,'^'),
-  N1 is N+1,
-  sub_atom(A,N1,1,_,Ofc),
-  memberchk(Ofc,['·','-','/','+','~','*']),!,
-  % traktu la reston
-  N2 is N1+1,
-  sub_atom(A,0,N,_,Left),
-  sub_atom(A,N2,_,0,Right),
-  oficialeco(Right,R1),
-  atomic_list_concat([Left,'<sup>!</sup>',R1],A1).
+% se ne plu enestas [...]
+oficialeco(A,[],A).
 
-oficialeco(A,A).
-*/
+ofc_classes(LOfc,Classes) :-
+  maplist(ofc_cls,LOfc,LCls),
+  setof(C,member(C,LCls),CSet),
+  atomic_list_concat(CSet,' ',Classes).
+
+ofc_cls('*','o_f'):-!.
+ofc_cls(O,C) :- atom_concat(o_, O, C).
+
+

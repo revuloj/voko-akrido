@@ -83,7 +83,8 @@ analizo(Request) :-
 	    ]),
     format('Content-type: text/plain~n~n'),
     atomic_list_concat(Lines,'\n',Teksto),
-    concurrent_maplist(analizu_linion,Lines).
+    maplist(analizu_linion,Lines).
+    % ni ne povas uzi concurrent_ dum ni skribas rekte al STDOUT!
     %concurrent_maplist(analizu_linion,Lines).
 
 
