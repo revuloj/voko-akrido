@@ -82,7 +82,8 @@ majuskloj([L|Vj],[L|Mj],0:R) :-
   majuskloj(Vj,Mj,U1:R1),
   R is U1+R1.
 
-
+% Nombro donas, el kiom da partoj apartigitaj per Signo konsistas Vorto
+% malplenaj partoj ne kalkuliĝas!
 parto_nombro(Vorto,Signo,Nombro) :-
   atomic_list_concat(Partoj,Signo,Vorto),
   foldl(non_empty,Partoj,0,Nombro).
@@ -173,14 +174,17 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
      (
        nonvar(Ana), 
        once((
+         % kunmetita vorto kun pli ol du radikoj: kontrolenda
          parto_nombro(Ana,'-',Nv), Nv>2, skribu_vorton(dubebla,Vorto,Ana,Spc,Uskl)
          ; 
-         parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(kuntirita,Vorto,Ana,Spc,Uskl)
+         % kuntirita vorto: kontrolenda
+        parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(kuntirita,Vorto,Ana,Spc,Uskl)
          ; 
          skribu_vorton(bona,Vorto,Ana,Spc,Uskl)
        ))
      )
    ;
+    % la vorto ne estis analizebla
     skribu_vorton(neanalizebla,Vorto,_,_,_)
   )),
 %  statistics(inferences,I2), 
@@ -296,6 +300,7 @@ skribu_voston :-
 
 skribu_vorton(bona,Vorto,Analizita,_,Uskl) :-
   uskleco(Uskl,Vorto,U,Analizita,A),
+  %oficialeco(A,AO),
   format('~w~w',[U,A]).
 
 %skribu_vorton(bona,Vorto,Analizita,_,minuskle) :-
@@ -336,8 +341,12 @@ skribu_signojn(s(S)) :-
 skribu_nombron(n(N)) :-  format('~s',[N]).
 
 
+
 uskleco(_:1,Vorto,U,Analizita,Analizita) :-
   format(atom(U),'[~s:] ',[Vorto]),!.
+
+% uskleco dum analizo perdiĝis, do ni remetas ĝin
+% laŭ la origina vorto
 
 uskleco(1:0,_,'',Analizita,Ana) :-
   atom_codes(Analizita,[A|Nalizita]),
@@ -346,4 +355,35 @@ uskleco(1:0,_,'',Analizita,Ana) :-
 
 uskleco(_,_,'',Analizita,Analizita).
 
+/*
+% oficialeco enestas kiel ^...
+% ni enmetos <sup>...</sup> tiuloke
+% KOREKTU: ni ankoraŭ ne traktas ofiialecon kiel '^1959'
+% nek malplenan oficialecon
+oficialeco(A,A1) :-
+  sub_atom(A,N,1,_,'^'),
+  N1 is N+1,
+  sub_atom(A,N1,1,_,Ofc),
+  memberchk(Ofc,['*','0','1','2','3','4','5','6','7','8','9']),!,
+  % traktu la reston
+  N2 is N1+1,
+  sub_atom(A,0,N,_,Left),
+  sub_atom(A,N2,_,0,Right),
+  oficialeco(Right,R1),
+  atomic_list_concat([Left,'<sup>',Ofc,'</sup>',R1],A1).
 
+% neoficiala...
+oficialeco(A,A1) :-
+  sub_atom(A,N,1,_,'^'),
+  N1 is N+1,
+  sub_atom(A,N1,1,_,Ofc),
+  memberchk(Ofc,['·','-','/','+','~','*']),!,
+  % traktu la reston
+  N2 is N1+1,
+  sub_atom(A,0,N,_,Left),
+  sub_atom(A,N2,_,0,Right),
+  oficialeco(Right,R1),
+  atomic_list_concat([Left,'<sup>!</sup>',R1],A1).
+
+oficialeco(A,A).
+*/

@@ -31,22 +31,49 @@ reduce_full(Term,Flat) :-
 
 reduce_([],[],_).
 
+% oficialeco: ^.. -> [..]
+reduce_([0'^,0'(,0'*,0')|Ls],[0'[,0'*,0']|F],DelLetters) :- !, 
+  reduce_(Ls,F,DelLetters). % ^(*) -> [*]
+reduce_([0'^|Ls],Reduced,DelLetters) :- !, 
+  reduce_ofc(Ls,Ofc,Rest), % ^9 -> [9] ktp
+  reduce_(Rest,R1,DelLetters),
+  append(Ofc,R1,Reduced).
+
+% se la unua litero troviĝas en forigendaj (DelLetters), ellasu ĝin
 reduce_([L|Ls],F,DelLetters) :-
   string_code(_,DelLetters,L),!, % memberchk(L,DelLetters),!, 
   reduce_(Ls,F,DelLetters).
 
-reduce_([0'-,0'(,0'-,0'),0'-|Ls],[8212|F],DelLetters) :- !, % / -> |
+% tri strekoj al longa streko
+reduce_([0'-,0'(,0'-,0'),0'-|Ls],[8212|F],DelLetters) :- !, % -(-)- -> —
   reduce_(Ls,F,DelLetters).
 
-reduce_([0'/,0'(,0'/,0'),0'/|Ls],[124|F],DelLetters) :- !, % / -> |
+% tri oblikvoj al rekta streko
+reduce_([0'/,0'(,0'/,0'),0'/|Ls],[124|F],DelLetters) :- !, % /(/)/ -> |
   reduce_(Ls,F,DelLetters).
 
+% unu oblikvo al mezpunkto
 reduce_([0'/|Ls],[183|F],DelLetters) :- !, % / -> middot (\u00b7)
   reduce_(Ls,F,DelLetters).
 
+% ĉiujn aliajn signojn konservu en la rezulto
 reduce_([L|Ls],[L|Fs],DelLetters) :-
   % \+ memberchk(L,"() "), 
   reduce_(Ls,Fs,DelLetters).
+
+% ni legas ĉion ĝis '''' kiel oficialeco
+reduce_ofc(Ls,[0'[|Ofc],Rest) :-
+  reduce_ofc_(Ls,O,Rest),
+  append(O,[0']],Ofc).
+
+reduce_ofc_([L|Ls],[L|Ofc],Rest) :-
+  string_code(_,"1234567890*e",L),!,
+  reduce_ofc_(Ls,Ofc,Rest). 
+
+reduce_ofc_(Ls,[],Ls):-!.
+%reduce_ofc_([],[],[]). % ne devus okazi, ke ) mankas entute!
+
+reduce_ofc_(_,_,_) :- throw("Nevalida sintakso ĉe indiko de oficialeco!?").
 
 %%%%%% Traduki regulesprimojn al normalaj Prologo-faktoj....
 %%
