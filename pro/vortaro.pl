@@ -24,13 +24,13 @@
 
 :-consult('vrt/v_esceptoj2.pl').
 :-consult('vrt/v_mallongigoj.pl').
-:-consult('vrt/v_revo_mallongigoj.pl').
+:-consult('revo/v_revo_mallongigoj.pl').
 :-consult('vrt/v_elementoj.pl').
 :-consult('vrt/v_vortoj.pl').
 :-consult('vrt/v_fremdvortoj.pl').
-:-consult('vrt/v_revo_nomoj.pl').
-:-consult('vrt/v_revo_radikoj.pl').
-:-consult('vrt/v_revo_vortoj.pl').
+:-consult('revo/v_revo_nomoj.pl').
+:-consult('revo/v_revo_radikoj.pl').
+:-consult('revo/v_revo_vortoj.pl').
 :-consult('vrt/v_radikoj.pl').
 
 % provizore ignoru la oficialecon, poste ni devos prilabori la gramatikon por ebligi plian argumenton! 

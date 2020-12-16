@@ -8,16 +8,16 @@
 
 :- dynamic radiko/3, evi/2, mlg/1, nr/3, nr_/3, vorto/3.
 
-revo_xml('../xml/*.xml').
-voko_rdf_klasoj('../owl/voko.rdf').
+revo_xml('./xml/*.xml').
+voko_rdf_klasoj('./owl/voko.rdf').
 %revo_xml('/home/revo/revo/xml/*.xml').
 %voko_rdf_klasoj('/home/revo/voko/owl/voko.rdf').
 
-radik_dosiero('vrt/v_revo_radikoj.pl').
-vort_dosiero('vrt/v_revo_vortoj.pl').
-nomo_dosiero('vrt/v_revo_nomoj.pl').
-evi_dosiero('vrt/v_revo_evitindaj.pl').
-mlg_dosiero('vrt/v_revo_mallongigoj.pl').
+radik_dosiero('pro/revo/v_revo_radikoj.pl').
+vort_dosiero('pro/revo/v_revo_vortoj.pl').
+nomo_dosiero('pro/revo/v_revo_nomoj.pl').
+evi_dosiero('pro/revo/v_revo_evitindaj.pl').
+mlg_dosiero('pro/revo/v_revo_mallongigoj.pl').
 
 :- rdf_register_prefix(voko,'http://purl.org/net/voko#').
 
@@ -326,7 +326,7 @@ assert_vorto(DOM,Radiko,Speco,Ofc) :-
     ))
   )).
 
-
+/**
 assert_radiko(DOM,Radiko,Speco) :-
   once((
     % se temas pri majuskla nomo, registru 
@@ -348,6 +348,7 @@ assert_radiko(DOM,Radiko,Speco) :-
         ;
         true))
   )).
+**/
 
 assert_nomo_minuskla(Nomo,Speco,Ofc) :-
     atom_codes(Nomo,[K|Literoj]),
@@ -434,6 +435,7 @@ revo_gra(Drv,Speco) :-
     VSpeco = x -> Speco = tr;
     VSpeco = sufikso -> Speco = suf;
     VSpeco = prefikso -> Speco = pref;
+    VSpeco = pronomo -> Speco = pron;
     VSpeco = sonimito -> Speco = intj;
     sub_atom(VSpeco,_,_,_,ekkrio) -> Speco = intj
   ).
