@@ -7,6 +7,17 @@
 .redakti {font-size: larger; color: black}
 .mlg {font-weight: bold}
 
+/* neoficiala radiko 
+  metu post oficialaj, ĉar povas aperi listo de pluraj klasoj po vorto
+*/
+.o_n {
+    color: blue;
+}
+
+#analizo_rezulto sup {
+    font-size: 8pt;
+}
+
 
 A.redakti {text-decoration: none; color: black}
 A.redakti:link {text-decoration: none; color: black}
