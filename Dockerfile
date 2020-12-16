@@ -31,7 +31,7 @@ RUN curl -LO https://github.com/revuloj/voko-grundo/archive/master.zip \
   && ln -s voko-grundo-master/dtd dtd && ln -s voko-grundo-master/owl owl
 
 RUN  mkdir xml && mkdir txt && mkdir tmp \
-    && bash xml_download.sh && bash revo_radikoj.sh
+    && bin/xml_download.sh && bin/revo_radikoj.sh
 
 #USER root
 
