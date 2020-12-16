@@ -1,4 +1,4 @@
-v('ŭoŭ',intj,'').
+v('ŭaŭ',intj,'').
 v('ŝŝ',intj,'').
 v('ŝpruc',intj,'*').
 v('ĉit',intj,'').
@@ -15,6 +15,7 @@ v('tiktak',intj,'').
 v('ta',intj,'').
 v('sss',intj,'').
 v('snuf',intj,'').
+v('sal',intj,'').
 v('rukt',intj,'*').
 v('ruk',intj,'').
 v('raĉ',intj,'').
@@ -24,12 +25,12 @@ v('pland',intj,'*').
 v('pep',intj,'*').
 v('paf',intj,'*').
 v('pa',intj,'').
+v('okej',intj,'').
 v('oj',intj,'').
 v('mu',intj,'').
 v('miaŭ',intj,'1').
 v('mek',intj,'').
 v('maĉ',intj,'*').
-v('lo',intj,'').
 v('kŭaks',intj,'').
 v('kvivit',intj,'').
 v('kvak',intj,'').
@@ -41,6 +42,7 @@ v('krak',intj,'*').
 v('knar',intj,'4').
 v('kluk',intj,'4').
 v('klak',intj,'3').
+v('jej',intj,'').
 v('ia',intj,'').
 v('huŝ',intj,'').
 v('hura',intj,'3').
@@ -52,10 +54,7 @@ v('hop',intj,'').
 v('ho',intj,'*').
 v('hm',intj,'').
 v('hihi',intj,'').
-v('help',intj,'*').
-v('hej',intj,'').
 v('he',intj,'1').
-v('halt',intj,'*').
 v('ha',intj,'*').
 v('gut',intj,'*').
 v('glut',intj,'*').
