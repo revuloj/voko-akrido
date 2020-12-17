@@ -24,11 +24,11 @@
  
   ekz.:
 ==  
-  rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
+  rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(Suf,_,_) ~> drv_per_suf(Suf,Vs,Spc).
 == 
   legu kiel:
   "_Radikvorteto sen finaĵo_ konstituiĝas el alia _radikvorteto sen finaĵo_ kaj _sufikso_.
-  Aldone la sufikso devas konveni al la vortspeco _De_ kaj ŝanĝas la vortspecon al rezulta vortspeco _Al_ ".
+  Aldone la sufikso devas konveni al la vortspeco _Vs_ kaj ŝanĝas la vortspecon al rezulta vortspeco _Spc_ ".
 
   ekz.: 
 
@@ -38,7 +38,11 @@
   ĉe tio:
     * =rv_sen_fin= estas la nomo de la ĉefregulo, sed ankaŭ la kategorio de la analiza rezulto
     * la etikedo ='Ds'= estas nur helpilo por identigi la regulojn inter la variaĵoj de la ĉefregulo,
-      sed iom ankaŭ kontrolas kaj limigas la analizoprocedon
+      sed iom ankaŭ kontrolas kaj limigas la analizoprocedon. Minuskloj en regulnomoj reprezentas 
+      la bazajn vortelementojn (ekz-e s = sufikso, m = minuskla nomo)
+      kaj majuskloj jam derivitajn/kunmetitajn (ekz-e D = derivaĵo) kun escepto de 
+      M = majuskla nomo. Vi povas uzi tiujn etikedojn por orientiĝi
+      dum sencimigo per =|debug(gramatiko).|=
 
   La operacioj uzataj en reguloj estas la sekvaj:
 
@@ -135,7 +139,7 @@ nk(Nom,Spc,Rest,Ofc) :-
     sub_atom(Nomo,0,B_1,_,Nom),
     sub_atom(Nomo,B_1,_,0,Rest).
 
-
+/*
 drv_per_suf(Spc,Al,De,Speco) :- 
   subspc(Spc,De), %!,
         % Se temas pri sufikso kun nedifinita DeSpeco, 
@@ -155,7 +159,17 @@ drv_per_suf(Spc,Al,De,Speco) :-
           Speco=Spc;
           Speco=Al 
         ).
+      */
 
+% la origina drv_per_suf kaŭzis problemojn, ekz. "popularig",
+% analiziĝis al pop/ul/ar/ig, sed s(ig,adj) ne estas en la unua
+% loko, ĉar la algoritmo ne plu serĉis alternativojn post trovi s(ig,subst)
+% do la nova ricevas nur la vorspecon Spc de la maldektra vorto kaj la 
+% sufikson mem, kaj rigardas, ĉu ekzistas taŭgan varianton kun la ĝusta
+% vorstpeco alaplikenda.
+drv_per_suf(Suf,Spc,Speco) :-
+  s(Suf,Speco,De),
+  subspc(Spc,De).
 
 %! vorto(-RuleId:atom,-Speco:atom,+Vorto:atom,-Analizita:compound,+Depth:int) is nondet.
 %
@@ -194,8 +208,8 @@ vorto(ifi,Spc) <= i(_,Spc) / fi(_,_).
 % pron + fin, ekz. kiu/jn
 vorto(ufu,Spc) <= u(_,Spc) / fu(_,_).
 
-vorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs) 
-  ~> (subspc(Vs,Fs),  
+vorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs)
+  ~> (subspc(Vs,Fs),  % la finaĵo estu aplikebla al tiu vortspeco...:
       % eble once(...)?            
        Spc=Vs 
      ; Spc=Fs).
@@ -236,6 +250,10 @@ rad('r/',Spc) <=  r(_,Spc,_) / os(_) ~>  Spc \= suf, Spc \= pref.
 rad(m,Spc) <= nr_(_,Spc,_). 
 rad('m/',Spc) <= nr_(_,Spc,_) / os(_). 
 
+/*****
+ *   radikvortoj sen sufikso  
+ ***/
+
 % derivado per prefikso
 rv_sen_suf(pr,Spc) <= p(_,De) / &rad(_,Spc) ~> subspc(Spc,De).
 rv_sen_suf(pD,Spc) <= p(_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De).
@@ -244,25 +262,33 @@ rv_sen_suf(pD,Spc) <= p(_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De).
 rv_sen_suf(pr,Al) <= p(_,Al,De) / &rad(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
 rv_sen_suf(pD,Al) <= p(_,Al,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(De,verb). %, subspc(Al,verb).
 
-% radika vorto sen finaĵo (sed kun afiksoj)
-rv_sen_fin(r,Spc) <= &rad(_,Spc). 
+/*****
+ *  radika vorto sen finaĵo (sed kun afiksoj)
+ ***/
 
+rv_sen_fin(r,Spc) <= &rad(_,Spc). 
 rv_sen_fin('D',Spc) <= &rv_sen_suf(_,Spc).
 
 % rad+sufikso, ekz. san/ul
-rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(_,Al,De) ~> drv_per_suf(Vs,Al,De,Spc).
+rv_sen_fin('Ds',Spc) <= &rv_sen_fin(_,Vs) / s(Suf,_,_) ~> drv_per_suf(Suf,Vs,Spc).
 rv_sen_fin('Ds',nombr) <= &rv_sen_fin(_,nombr) / sn(_,nombr,nombr).
 
 % foje funkcias apliki prefiksojn nur post sufiksoj, 
 % ekz. ne/(venk/ebl), eks/(lern/ej/an)/oj
 rv_sen_fin(pD,Spc) <= p(_,De) / &rv_sen_fin('Ds',Spc) ~> subspc(Spc,De). 
+rv_sen_fin(pD,Al) <= p(_,Al,De) / &rv_sen_fin('Ds',Spc) ~> subspc(Spc,De). 
+
+/*****
+ * nomo sen finaĵo
+ ***/
 
 % karesnomo
 rv_sen_fin('N',Spc) <= nk(_,Spc,_,_) / ns(_,Ss) ~> subspc(Spc,Ss).
 
 % majusklaj nomoj povas havi nur sufiksojn, ekz. Atlantik/ec, Rus/uj
 nm_sen_fin('M',Spc) <= nr(_,Spc,_). 
-nm_sen_fin('Ms',Spc) <= &nm_sen_fin(_,Ns) / s(_,Al,De) ~> drv_per_suf(Ns,Al,De,Spc).
+nm_sen_fin('Ms',Spc) <= &nm_sen_fin(_,Ns) / s(Suf,_,_) ~> drv_per_suf(Suf,Ns,Spc).
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 %%% kunderivitaj vortoj
@@ -285,7 +311,11 @@ vorto('Vf',Spc) <= &vrt_sen_fin(_,Vs) / f(_,Fs)
        Spc=Vs 
      ; Spc=Fs).
 
-vrt_sen_fin('Ks',Spc) <= &kdrv(_,Ks) / s(_,Al,De) ~> drv_per_suf(Ks,Al,De,Spc).
+/*****
+ * vorto sen finaĵo, sed kun sufikso
+ ***/
+
+vrt_sen_fin('Ks',Spc) <= &kdrv(_,Ks) / s(Suf,_,_) ~> drv_per_suf(Suf,Ks,Spc).
 
 % kunderivado per prepozicioj (ekz. sur+strat/a)
 kdrv(pD,adj) <= p(_,adj,De) + &rv_sen_fin(_,Spc) ~> subspc(Spc,De).
