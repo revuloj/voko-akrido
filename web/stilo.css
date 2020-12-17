@@ -1,9 +1,12 @@
 
+body {
+  background-color: lightgoldenrodyellow;
+}
 .malstrikte { color: brown }
 .neanaliz { color:red; font-weight: bold}
 .dubebla { color: #bb2222 }
 .verda { color: green }
-.kuntirita { color: #7c3300 }
+.kuntirita { color: darkorange }
 .redakti {font-size: larger; color: black}
 .mlg {font-weight: bold}
 
@@ -14,10 +17,14 @@
     color: blue;
 }
 
+#analizo_rezulto {
+  border: 1px dotted orange;
+  max-width: 45em;
+}
+
 #analizo_rezulto sup {
     font-size: 8pt;
 }
-
 
 A.redakti {text-decoration: none; color: black}
 A.redakti:link {text-decoration: none; color: black}

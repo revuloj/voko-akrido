@@ -1,10 +1,12 @@
 
 when_doc_ready(
     function() { 
+        //const submit = document.getElementById("analizo_submit");
         const form = document.getElementById("analizo_form");
         const url = form.getAttribute("action");
+        //form.removeAttribute("action");
 
-        form.addEventListener("click", function(event) {
+        form.addEventListener("submit", function(event) {
             event.preventDefault();
 
             const teksto = document.getElementById("analizo_teksto").value;
