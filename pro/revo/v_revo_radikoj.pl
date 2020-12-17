@@ -130,10 +130,12 @@ r('ĵuri',subst,'').
 r('ĵuras',subst,'').
 r('ĵur',tr,'*').
 r('ĵud',subst,'9').
+r('ĵonk',subst,'').
 r('ĵongl',ntr,'*').
 r('ĵoker',subst,'').
 r('ĵoke',subst,'9').
 r('ĵip',subst,'').
+r('ĵinz',subst,'').
 r('ĵig',subst,'').
 r('ĵig',subst,'').
 r('ĵib',subst,'').
@@ -154,6 +156,8 @@ r('ĵak',subst,'').
 r('ĵak',subst,'').
 r('ĵabutikab',subst,'').
 r('ĵabot',subst,'').
+r('ĥromosom',subst,'').
+r('ĥrom',subst,'').
 r('ĥore',subst,'').
 r('ĥord',subst,'').
 r('ĥoral',subst,'').
@@ -163,6 +167,7 @@ r('ĥolesterol',subst,'').
 r('ĥolesterin',subst,'').
 r('ĥoler',subst,'*').
 r('ĥolecistit',subst,'').
+r('ĥmer',subst,'').
 r('ĥlamid',subst,'').
 r('ĥiton',subst,'').
 r('ĥitin',subst,'').
@@ -178,6 +183,7 @@ r('ĥet',subst,'').
 r('ĥet',subst,'').
 r('ĥemi',subst,'*').
 r('ĥeloni',subst,'').
+r('ĥejrant',subst,'').
 r('ĥediv',subst,'').
 r('ĥeder',subst,'').
 r('ĥazar',subst,'').
@@ -196,6 +202,7 @@ r('ĥameleoned',best,'').
 r('ĥameleon',best,'').
 r('ĥalkolitik',subst,'').
 r('ĥalkogen',subst,'').
+r('ĥalif',subst,'').
 r('ĥalde',subst,'').
 r('ĥalat',subst,'').
 r('ĝust',adj,'*').
@@ -210,6 +217,7 @@ r('ĝin',subst,'2').
 r('ĝin',subst,'').
 r('ĝin',subst,'').
 r('ĝihad',subst,'').
+r('ĝig',subst,'').
 r('ĝib',subst,'*').
 r('ĝet',subst,'').
 r('ĝerman',subst,'').
@@ -224,6 +232,7 @@ r('ĝen',tr,'*').
 r('ĝemel',subst,'4').
 r('ĝem',ntr,'*').
 r('ĝelab',subst,'').
+r('ĝaz',subst,'').
 r('ĝarden',subst,'*').
 r('ĝangal',subst,'').
 r('ĝajn',subst,'').
@@ -245,6 +254,8 @@ r('ĉinologi',subst,'').
 r('ĉinesk',subst,'').
 r('ĉin',subst,'9').
 r('ĉimpanz',best,'9').
+r('ĉim',subst,'').
+r('ĉil',subst,'').
 r('ĉikan',tr,'*').
 r('ĉigong',subst,'').
 r('ĉifr',subst,'3').
@@ -305,6 +316,7 @@ r('zum',ntr,'*').
 r('zulu',pers,'').
 r('zuav',subst,'1').
 r('zosterops',subst,'').
+r('zosterop',subst,'').
 r('zori',subst,'').
 r('zorg',tr,'*').
 r('zooplankton',subst,'').
@@ -410,6 +422,7 @@ r('viz',subst,'4').
 r('vivisekci',subst,'6').
 r('vivered',subst,'').
 r('viver',best,'').
+r('vivari',subst,'').
 r('viv',ntr,'*').
 r('vitriol',subst,'*').
 r('vitrin',subst,'').
@@ -438,6 +451,7 @@ r('virg',adj,'*').
 r('vir',subst,'*').
 r('vipured',subst,'').
 r('vipur',best,'*').
+r('viper',best,'8').
 r('vip',subst,'*').
 r('violonĉel',subst,'*').
 r('violon',subst,'*').
@@ -717,6 +731,7 @@ r('uleks',subst,'').
 r('ulcer',subst,'*').
 r('ulan',subst,'2').
 r('ukulel',subst,'').
+r('ukrajn',subst,'').
 r('ukrain',subst,'').
 r('ukaz',subst,'2').
 r('ujutn',adj,'').
@@ -775,6 +790,8 @@ r('tuberkul',subst,'3').
 r('tuber',subst,'*').
 r('tub',subst,'*').
 r('tualet',subst,'*').
+r('tsunam',subst,'').
+r('tsetse',subst,'').
 r('trut',best,'*').
 r('trust',subst,'2').
 r('truso',subst,'').
@@ -866,6 +883,7 @@ r('traŭmatologi',subst,'').
 r('traŭmatolog',subst,'').
 r('traŭmatiz',verb,'').
 r('traŭmat',subst,'').
+r('traŭm',subst,'').
 r('traĥom',subst,'').
 r('traĥe',subst,'*').
 r('travesti',tr,'').
@@ -899,6 +917,7 @@ r('traktori',subst,'').
 r('traktor',subst,'8').
 r('traktat',subst,'1').
 r('trakt',tr,'*').
+r('trakom',subst,'').
 r('trake',subst,'').
 r('trak',subst,'').
 r('trajt',subst,'*').
@@ -916,6 +935,7 @@ r('traduk',tr,'*').
 r('tradici',subst,'1').
 r('trabant',subst,'').
 r('trab',subst,'*').
+r('toŭfu',subst,'').
 r('totem',subst,'').
 r('total',adj,'').
 r('tost',subst,'3').
@@ -993,6 +1013,7 @@ r('tipul',subst,'').
 r('tipometr',subst,'').
 r('tipologi',subst,'').
 r('tipolog',subst,'').
+r('tipol',subst,'').
 r('tipografi',subst,'1').
 r('tipograf',subst,'7').
 r('tipi',subst,'').
@@ -1005,6 +1026,7 @@ r('tineed',subst,'').
 r('tine',best,'*').
 r('tindr',subst,'2').
 r('tin',subst,'').
+r('tin',best,'').
 r('timus',subst,'').
 r('timpan',subst,'').
 r('timon',subst,'*').
@@ -1033,12 +1055,15 @@ r('teĥnolog',subst,'').
 r('teĥnokrati',subst,'').
 r('teĥnokrat',subst,'').
 r('teĥnik',subst,'3').
+r('teĥneci',subst,'').
 r('tezaŭr',subst,'').
 r('tez',subst,'*').
 r('tetrarĥ',subst,'').
+r('tetrark',subst,'').
 r('tetraon',subst,'').
 r('tetraedr',subst,'').
 r('tetra',subst,'*').
+r('tetra',subst,'').
 r('tetr',subst,'*').
 r('tetan',subst,'*').
 r('tet',subst,'').
@@ -1152,6 +1177,10 @@ r('tekstur',subst,'').
 r('tekstur',subst,'').
 r('tekst',subst,'*').
 r('teks',tr,'*').
+r('teknolog',subst,'').
+r('teknokrati',subst,'').
+r('teknokrat',subst,'').
+r('teknik',subst,'3').
 r('tekneci',subst,'').
 r('tekil',subst,'').
 r('tek',subst,'').
@@ -1214,12 +1243,14 @@ r('tang',ntr,'').
 r('tandem',subst,'2').
 r('tanacet',subst,'').
 r('tan',tr,'*').
+r('tamul',pers,'').
 r('tamtam',subst,'2').
 r('tampon',subst,'').
 r('tamil',pers,'').
 r('tamias',best,'').
 r('tamburin',subst,'2').
 r('tambur',subst,'*').
+r('tamarisk',subst,'').
 r('tamarind',subst,'').
 r('tamarikac',subst,'').
 r('tamarik',subst,'').
@@ -1228,6 +1259,7 @@ r('talp',best,'*').
 r('talon',subst,'').
 r('talmud',subst,'2').
 r('talk',subst,'2').
+r('talium',subst,'').
 r('talisman',subst,'2').
 r('talib',subst,'').
 r('tali',subst,'*').
@@ -1250,8 +1282,10 @@ r('taksimetr',subst,'').
 r('taksi',subst,'9').
 r('taks',tr,'*').
 r('takipet',subst,'').
+r('takikardi',subst,'').
 r('takel',subst,'').
 r('tajĝiĉuan',subst,'').
+r('tajĝi',subst,'').
 r('tajvan',subst,'').
 r('tajposkript',subst,'').
 r('tajp',tr,'8').
@@ -1278,6 +1312,7 @@ r('tabaned',subst,'').
 r('taban',subst,'*').
 r('tabak',subst,'*').
 r('tab',subst,'').
+r('ta',subst,'').
 r('svop',subst,'').
 r('svis',subst,'').
 r('sving',tr,'*').
@@ -1351,6 +1386,7 @@ r('suflor',subst,'1').
 r('sufiĉ',adj,'*').
 r('sufiks',subst,'*').
 r('sufer',tr,'*').
+r('sued',subst,'').
 r('sudok',subst,'').
 r('sud',subst,'*').
 r('subvenci',subst,'4').
@@ -1478,6 +1514,7 @@ r('stenotajp',verb,'').
 r('stenogram',subst,'').
 r('stenografi',subst,'3').
 r('stenograf',verb,'3').
+r('stenodaktilograf',verb,'').
 r('stenodaktil',verb,'').
 r('stencil',subst,'').
 r('stele',subst,'').
@@ -1507,6 +1544,7 @@ r('standard',subst,'*').
 r('stand',subst,'').
 r('stanc',subst,'').
 r('stan',subst,'*').
+r('stampf',ntr,'').
 r('stamp',verb,'*').
 r('stamin',subst,'').
 r('stamf',ntr,'').
@@ -1541,6 +1579,7 @@ r('sport',subst,'1').
 r('sporad',adj,'').
 r('spor',subst,'').
 r('spontane',adj,'3').
+r('spontan',adj,'').
 r('sponsor',subst,'').
 r('spong',subst,'*').
 r('sponde',subst,'2').
@@ -1550,6 +1589,8 @@ r('splint',subst,'').
 r('splen',subst,'4').
 r('spit',tr,'*').
 r('spiroĥet',subst,'').
+r('spiroket',subst,'').
+r('spiritualism',adj,'2').
 r('spiritual',adj,'').
 r('spiritist',subst,'1').
 r('spirit',subst,'*').
@@ -1755,6 +1796,7 @@ r('skat',subst,'').
 r('skarp',subst,'*').
 r('skarlatin',subst,'1').
 r('skarlat',subst,'*').
+r('skarifik',tr,'').
 r('skarif',tr,'').
 r('skarabed',subst,'').
 r('skarab',subst,'*').
@@ -1774,6 +1816,7 @@ r('skal',subst,'*').
 r('skafark',subst,'').
 r('skafandr',subst,'').
 r('skafald',subst,'').
+r('skadron',subst,'').
 r('skadr',subst,'*').
 r('skabioz',subst,'').
 r('skabi',subst,'*').
@@ -1822,6 +1865,7 @@ r('sinestezi',subst,'').
 r('sinergi',subst,'').
 r('sinekur',subst,'').
 r('sinekdoĥ',subst,'').
+r('sinekdok',subst,'').
 r('sinedri',subst,'2').
 r('sindrom',subst,'').
 r('sindikat',subst,'2').
@@ -1926,6 +1970,7 @@ r('septim',subst,'').
 r('septet',subst,'2').
 r('septembr',subst,'*').
 r('sept',subst,'').
+r('sepsemi',subst,'').
 r('seps',subst,'').
 r('sepi',subst,'*').
 r('separatist',subst,'').
@@ -1964,6 +2009,7 @@ r('selakt',subst,'*').
 r('sel',subst,'*').
 r('sekvojadendr',subst,'').
 r('sekvoj',subst,'').
+r('sekvestraci',tr,'').
 r('sekvestr',tr,'').
 r('sekvenc',subst,'').
 r('sekv',tr,'*').
@@ -1990,6 +2036,11 @@ r('sekal',subst,'*').
 r('sek',adj,'*').
 r('sejŝel',subst,'').
 r('sejn',subst,'').
+r('seismologi',subst,'').
+r('seismolog',subst,'').
+r('seismogram',subst,'').
+r('seismograf',subst,'').
+r('seism',adj,'').
 r('segment',subst,'2').
 r('seg',tr,'*').
 r('sefard',subst,'').
@@ -2001,8 +2052,10 @@ r('sebum',subst,'').
 r('seborgi',subst,'').
 r('seb',subst,'*').
 r('seanc',subst,'').
+r('seaborgi',subst,'').
 r('sciured',subst,'').
 r('sciur',best,'*').
+r('scintilografi',subst,'').
 r('scintil',verb,'').
 r('scintigrafi',subst,'').
 r('scienc',subst,'*').
@@ -2109,10 +2162,12 @@ r('saksifragac',subst,'').
 r('saks',pers,'').
 r('sakristi',subst,'2').
 r('sakrilegi',subst,'').
+r('sakrileg',subst,'').
 r('sakrament',subst,'1').
 r('sakr',subst,'*').
 r('sakr',ntr,'').
 r('sake',subst,'').
+r('sakaroz',subst,'').
 r('sak',subst,'*').
 r('sajmiri',best,'').
 r('saj',subst,'').
@@ -2189,6 +2244,7 @@ r('rotaci',ntr,'9').
 r('rot',subst,'*').
 r('rot',subst,'').
 r('rostr',subst,'*').
+r('rostbif',subst,'').
 r('rostbef',subst,'').
 r('rost',tr,'*').
 r('rosmaren',subst,'*').
@@ -2222,6 +2278,7 @@ r('roj',subst,'').
 r('rohinĝ',subst,'').
 r('rododendr',subst,'').
 r('rodi',subst,'').
+r('rod',tr,'').
 r('rod',subst,'*').
 r('robotik',subst,'').
 r('robot',subst,'9').
@@ -2314,6 +2371,7 @@ r('revolver',subst,'1').
 r('revoluci',subst,'1').
 r('revizor',subst,'3').
 r('revizi',tr,'3').
+r('reviz',tr,'').
 r('revers',subst,'').
 r('revelaci',subst,'3').
 r('rev',tr,'*').
@@ -2384,6 +2442,7 @@ r('relief',subst,'1').
 r('relegaci',tr,'').
 r('relativ',adj,'2').
 r('relajs',subst,'').
+r('relaj',subst,'').
 r('rel',subst,'*').
 r('rekvizit',subst,'').
 r('rekvizici',tr,'').
@@ -2447,6 +2506,7 @@ r('recesi',subst,'').
 r('recept',subst,'1').
 r('recenz',tr,'3').
 r('rebus',subst,'1').
+r('realism',adj,'3').
 r('real',adj,'1').
 r('real',subst,'').
 r('reaktor',subst,'').
@@ -2464,6 +2524,7 @@ r('raviol',subst,'').
 r('ravin',subst,'').
 r('ravelin',subst,'').
 r('rav',tr,'*').
+r('ratifik',verb,'').
 r('ratif',verb,'').
 r('rat',best,'*').
 r('rastr',subst,'').
@@ -2586,6 +2647,7 @@ r('pul',subst,'*').
 r('pul',subst,'').
 r('pugn',subst,'*').
 r('pug',subst,'').
+r('pufin',subst,'').
 r('pufen',subst,'').
 r('puf',subst,'3').
 r('puebl',subst,'').
@@ -2603,6 +2665,13 @@ r('puber',adj,'').
 r('pub',subst,'9').
 r('pterosaŭr',subst,'').
 r('pterid',subst,'').
+r('psiĥosomat',adj,'').
+r('psiĥopat',subst,'').
+r('psiĥologi',subst,'').
+r('psiĥolog',subst,'').
+r('psiĥiatri',subst,'').
+r('psiĥiatr',subst,'').
+r('psiĥ',subst,'').
 r('psikoz',subst,'').
 r('psikosomat',adj,'').
 r('psikopati',subst,'').
@@ -2617,6 +2686,7 @@ r('psi',subst,'').
 r('pseŭdoskorpi',subst,'').
 r('pseŭdoscienc',subst,'').
 r('pseŭdopod',subst,'').
+r('pseŭdonom',subst,'').
 r('pseŭdonim',subst,'2').
 r('pseŭdo',pref,'').
 r('pseŭd',adj,'').
@@ -2689,8 +2759,10 @@ r('promoci',tr,'').
 r('prometi',subst,'').
 r('promes',tr,'*').
 r('promen',ntr,'*').
+r('promeci',subst,'').
 r('prolog',subst,'1').
 r('prolifer',verb,'').
+r('proletari',subst,'3').
 r('prolet',subst,'8').
 r('prokuror',subst,'').
 r('prokur',subst,'').
@@ -2710,6 +2782,7 @@ r('prognoz',subst,'1').
 r('profund',adj,'*').
 r('profit',tr,'*').
 r('profilaktik',subst,'').
+r('profilakt',subst,'').
 r('profil',subst,'1').
 r('profet',subst,'*').
 r('profesor',subst,'1').
@@ -2892,12 +2965,15 @@ r('polo',subst,'').
 r('polm',subst,'').
 r('polk',subst,'1').
 r('poliĥet',subst,'').
+r('politologi',subst,'').
+r('politolog',subst,'').
 r('politikologi',subst,'').
 r('politikolog',subst,'').
 r('politik',subst,'1').
 r('politeknik',subst,'').
 r('politeist',subst,'').
 r('politeism',subst,'2').
+r('polistirol',subst,'').
 r('polistiren',subst,'').
 r('polisemi',subst,'').
 r('polisem',subst,'').
@@ -2955,6 +3031,7 @@ r('poac',subst,'').
 r('pneŭmonologi',subst,'').
 r('pneŭmonolog',subst,'').
 r('pneŭmoni',subst,'').
+r('pneŭmolog',subst,'').
 r('pneŭmokok',subst,'').
 r('pneŭmatik',subst,'1').
 r('pneŭ',subst,'').
@@ -2971,6 +3048,7 @@ r('plumb',subst,'*').
 r('plum',subst,'*').
 r('pluk',tr,'').
 r('plug',tr,'*').
+r('ploziv',subst,'').
 r('plot',best,'*').
 r('plosiv',subst,'').
 r('plor',ntr,'*').
@@ -3056,6 +3134,7 @@ r('pir',subst,'*').
 r('pips',subst,'*').
 r('piprujac',subst,'').
 r('pipr',subst,'*').
+r('piperac',subst,'').
 r('pip',subst,'*').
 r('pioĉ',subst,'4').
 r('pionir',subst,'*').
@@ -3264,9 +3343,11 @@ r('pavan',subst,'').
 r('pav',subst,'*').
 r('patron',subst,'1').
 r('patrol',subst,'*').
+r('patriotism',subst,'1').
 r('patriot',subst,'1').
 r('patrici',subst,'4').
 r('patric',subst,'').
+r('patriarĥ',subst,'').
 r('patriark',subst,'').
 r('patri',subst,'').
 r('patr',parc,'*').
@@ -3277,6 +3358,7 @@ r('patin',subst,'').
 r('patent',subst,'*').
 r('patel',subst,'').
 r('patel',subst,'').
+r('patat',subst,'').
 r('pat',subst,'*').
 r('pastr',subst,'*').
 r('pastoral',subst,'').
@@ -3343,6 +3425,7 @@ r('parazit',subst,'*').
 r('paratif',subst,'').
 r('parataks',subst,'').
 r('parapsiĥologi',subst,'').
+r('parapsikologi',subst,'').
 r('paraplegi',subst,'').
 r('parapet',subst,'').
 r('paranormal',adj,'').
@@ -3477,6 +3560,7 @@ r('ozon',subst,'2').
 r('oz',suf,'').
 r('ovul',subst,'').
 r('ovr',tr,'').
+r('ovol',subst,'').
 r('ovibov',subst,'').
 r('ovari',subst,'').
 r('oval',subst,'*').
@@ -3531,6 +3615,7 @@ r('original',adj,'1').
 r('origin',subst,'1').
 r('origan',subst,'').
 r('origami',subst,'').
+r('origam',subst,'').
 r('orific',subst,'').
 r('orientalistik',subst,'').
 r('orientalist',subst,'').
@@ -3587,6 +3672,7 @@ r('opci',subst,'').
 r('opank',subst,'').
 r('opal',subst,'*').
 r('ontologi',subst,'').
+r('ontogeni',subst,'').
 r('ontogenez',subst,'').
 r('onomatope',subst,'').
 r('onobrik',subst,'2').
@@ -3617,6 +3703,8 @@ r('oligopsoni',subst,'').
 r('oligopol',subst,'').
 r('oligocen',subst,'').
 r('oligarĥi',subst,'3').
+r('oligarĥ',subst,'7').
+r('oligarki',subst,'').
 r('oligark',subst,'7').
 r('oliban',subst,'').
 r('oleandr',subst,'4').
@@ -3635,6 +3723,7 @@ r('oktobr',subst,'*').
 r('oktav',subst,'2').
 r('oktant',subst,'').
 r('okt',subst,'').
+r('oksitocin',subst,'').
 r('oksimor',subst,'').
 r('oksikok',subst,'*').
 r('oksigen',subst,'*').
@@ -3752,6 +3841,7 @@ r('nomes',subst,'').
 r('nomenklatur',subst,'').
 r('nombr',subst,'*').
 r('nomarĥ',subst,'').
+r('nomark',subst,'').
 r('nomad',subst,'2').
 r('nom',subst,'*').
 r('nokturn',subst,'').
@@ -3807,6 +3897,7 @@ r('neŭtral',adj,'2').
 r('neŭtr',adj,'2').
 r('neŭroz',subst,'').
 r('neŭrotransmisi',verb,'').
+r('neŭropter',subst,'').
 r('neŭron',subst,'').
 r('neŭrologi',subst,'').
 r('neŭrolog',subst,'').
@@ -3866,6 +3957,7 @@ r('nazal',subst,'').
 r('naz',subst,'*').
 r('navigaci',subst,'3').
 r('navig',ntr,'').
+r('navet',subst,'').
 r('naved',subst,'').
 r('navaĥ',subst,'').
 r('nav',subst,'1').
@@ -3924,6 +4016,7 @@ r('muson',subst,'').
 r('muslin',subst,'*').
 r('musli',subst,'').
 r('muskol',subst,'*').
+r('musket',subst,'').
 r('musked',subst,'').
 r('muskat',subst,'*').
 r('musk',subst,'*').
@@ -3982,6 +4075,7 @@ r('moskovi',subst,'').
 r('moskit',subst,'8').
 r('moske',subst,'1').
 r('mosk',subst,'1').
+r('morĥel',subst,'').
 r('morv',subst,'').
 r('morusac',subst,'').
 r('morus',subst,'*').
@@ -4027,6 +4121,7 @@ r('monolog',subst,'1').
 r('monolit',subst,'').
 r('monokultur',subst,'').
 r('monokl',subst,'').
+r('monojd',subst,'').
 r('monoid',subst,'').
 r('monogram',subst,'2').
 r('monografi',subst,'').
@@ -4041,6 +4136,8 @@ r('monaĥ',subst,'*').
 r('monat',subst,'*').
 r('monarĥi',subst,'8').
 r('monarĥ',subst,'*').
+r('monarki',subst,'8').
+r('monark',subst,'8').
 r('monal',subst,'').
 r('monad',subst,'').
 r('mon',subst,'*').
@@ -4095,11 +4192,13 @@ r('mitoĥondri',subst,'').
 r('mitoz',subst,'').
 r('mitologi',subst,'1').
 r('mitolog',subst,'7').
+r('mitokondri',subst,'').
 r('miting',subst,'').
 r('mit',subst,'1').
 r('mistral',subst,'').
 r('mistik',subst,'2').
 r('mistifik',tr,'8').
+r('mistif',tr,'').
 r('mister',subst,'*').
 r('miso',subst,'').
 r('misi',subst,'*').
@@ -4130,6 +4229,7 @@ r('miogal',best,'*').
 r('miocen',subst,'').
 r('minut',subst,'*').
 r('minuskl',subst,'9').
+r('minstrel',subst,'').
 r('minoritat',subst,'').
 r('minor',adj,'').
 r('ministr',subst,'1').
@@ -4160,6 +4260,7 @@ r('milion',subst,'*').
 r('milimetr',subst,'2').
 r('mililitr',subst,'').
 r('miligram',subst,'2').
+r('milici',subst,'').
 r('milic',subst,'').
 r('miliard',subst,'1').
 r('mili',subst,'*').
@@ -4167,6 +4268,7 @@ r('mili',pref,'').
 r('mild',adj,'2').
 r('mikstur',subst,'').
 r('miks',tr,'*').
+r('mikroŝtat',subst,'').
 r('mikrot',best,'').
 r('mikrosoci',subst,'').
 r('mikroslip',subst,'').
@@ -4232,6 +4334,7 @@ r('meteorolog',subst,'7').
 r('meteorit',subst,'').
 r('meteorism',subst,'').
 r('meteor',subst,'2').
+r('meteologi',subst,'').
 r('meteolog',subst,'').
 r('metempsikoz',subst,'2').
 r('metatez',subst,'').
@@ -4249,6 +4352,7 @@ r('metaloid',subst,'').
 r('metalofon',subst,'').
 r('metal',subst,'*').
 r('metakarpe',subst,'').
+r('metakarp',subst,'').
 r('metafor',subst,'1').
 r('metafizik',subst,'1').
 r('metadon',subst,'').
@@ -4294,6 +4398,7 @@ r('menstru',verb,'9').
 r('mensog',tr,'*').
 r('mens',subst,'3').
 r('menonit',subst,'').
+r('menmoteĥnik',subst,'').
 r('menisk',subst,'').
 r('meningit',subst,'').
 r('mening',subst,'').
@@ -4332,6 +4437,8 @@ r('melanism',subst,'').
 r('melanin',subst,'').
 r('melampir',subst,'').
 r('mel',best,'*').
+r('mekanism',subst,'8').
+r('mekanik',subst,'8').
 r('mejtneri',subst,'').
 r('mejoz',subst,'').
 r('mejl',subst,'*').
@@ -4372,6 +4479,7 @@ r('maŭrici',subst,'').
 r('maŭr',subst,'').
 r('maŝin',subst,'*').
 r('maŝ',subst,'*').
+r('maĵori',subst,'').
 r('maĵor',adj,'').
 r('maĥinaci',subst,'').
 r('maĝang',subst,'').
@@ -4382,6 +4490,7 @@ r('maĉ',subst,'').
 r('mazut',subst,'').
 r('mazurk',subst,'1').
 r('mazda',subst,'').
+r('matĉ',subst,'').
 r('matur',adj,'*').
 r('matros',subst,'').
 r('matron',subst,'').
@@ -4462,6 +4571,7 @@ r('manuskript',subst,'1').
 r('manufaktur',subst,'2').
 r('mantr',subst,'').
 r('mantoŭ',subst,'').
+r('manto',subst,'').
 r('mantis',subst,'').
 r('mantil',subst,'').
 r('mantel',subst,'*').
@@ -4595,6 +4705,7 @@ r('lustr',subst,'*').
 r('lupus',subst,'').
 r('lupol',subst,'*').
 r('lupin',subst,'').
+r('lupen',subst,'').
 r('lupe',subst,'').
 r('lup',best,'*').
 r('lunĉ',subst,'').
@@ -4605,6 +4716,7 @@ r('lun',subst,'*').
 r('luminesk',ntr,'').
 r('lumbriked',subst,'').
 r('lumbrik',subst,'4').
+r('lumbalgi',subst,'').
 r('lumbag',subst,'').
 r('lumb',subst,'*').
 r('lum',ntr,'*').
@@ -4665,6 +4777,7 @@ r('log',tr,'*').
 r('log',subst,'').
 r('lofi',best,'').
 r('lof',subst,'').
+r('loes',subst,'').
 r('lodikl',subst,'').
 r('lod',subst,'*').
 r('lobi',subst,'').
@@ -4842,6 +4955,7 @@ r('legumin',subst,'').
 r('legom',subst,'*').
 r('legitimaci',subst,'').
 r('legitim',tr,'3').
+r('legion',subst,'').
 r('legi',subst,'*').
 r('legend',subst,'*').
 r('legat',subst,'2').
@@ -4999,6 +5113,7 @@ r('kvantum',subst,'').
 r('kvant',subst,'*').
 r('kvalit',subst,'1').
 r('kvalifik',tr,'').
+r('kvalif',tr,'').
 r('kvaker',subst,'9').
 r('kvak',ntr,'').
 r('kvadriplegi',subst,'').
@@ -5166,6 +5281,8 @@ r('krip',subst,'').
 r('krinolin',subst,'').
 r('kring',subst,'*').
 r('krin',subst,'').
+r('krimologi',subst,'').
+r('krimolog',subst,'').
 r('kriminologi',subst,'').
 r('kriminolog',subst,'').
 r('kriminal',adj,'*').
@@ -5218,6 +5335,7 @@ r('krasul',subst,'').
 r('krank',subst,'').
 r('krani',subst,'*').
 r('kran',subst,'*').
+r('krampf',subst,'').
 r('kramp',subst,'*').
 r('kramf',subst,'9').
 r('kramb',subst,'').
@@ -5280,6 +5398,7 @@ r('korund',subst,'').
 r('kortizon',subst,'').
 r('kortizol',subst,'').
 r('kortik',subst,'').
+r('korteks',subst,'').
 r('kort',subst,'*').
 r('korset',subst,'1').
 r('korsaĵ',subst,'2').
@@ -5318,7 +5437,9 @@ r('koregoned',subst,'').
 r('koregon',best,'').
 r('koregidor',subst,'').
 r('kore',subst,'').
+r('kore',subst,'').
 r('korduroj',subst,'').
+r('kordov',subst,'').
 r('kordon',subst,'').
 r('kordob',subst,'').
 r('kord',subst,'*').
@@ -5440,6 +5561,7 @@ r('konkordanc',subst,'').
 r('konkord',subst,'3').
 r('konkologi',subst,'').
 r('konkolog',subst,'').
+r('konkoid',subst,'').
 r('konklud',tr,'*').
 r('konklav',subst,'').
 r('konkistador',subst,'').
@@ -5519,6 +5641,7 @@ r('komuni',tr,'*').
 r('komun',adj,'*').
 r('komputor',subst,'').
 r('komputik',subst,'').
+r('komputer',subst,'').
 r('komput',verb,'9').
 r('kompromit',tr,'3').
 r('kompromis',subst,'2').
@@ -5562,6 +5685,7 @@ r('komitat',subst,'*').
 r('komisur',subst,'').
 r('komision',subst,'4').
 r('komisi',tr,'*').
+r('komisari',subst,'').
 r('komisar',subst,'1').
 r('komiks',subst,'').
 r('komik',adj,'1').
@@ -5608,10 +5732,12 @@ r('kolombed',subst,'').
 r('kolomb',best,'*').
 r('kolokint',subst,'').
 r('kolokazi',subst,'').
+r('kolokasi',subst,'').
 r('koloid',subst,'').
 r('kolofon',subst,'*').
 r('kolofon',subst,'').
 r('kolodi',subst,'2').
+r('kolocint',subst,'').
 r('kolizi',ntr,'4').
 r('koliri',subst,'').
 r('kolimbet',subst,'').
@@ -5619,6 +5745,7 @@ r('kolimb',subst,'*').
 r('kolik',subst,'1').
 r('kolier',subst,'').
 r('kolibr',best,'*').
+r('kolesterol',subst,'').
 r('kolerik',adj,'').
 r('koler',verb,'*').
 r('koleopter',subst,'').
@@ -5660,6 +5787,7 @@ r('koincid',ntr,'4').
 r('kohort',subst,'').
 r('koher',adj,'9').
 r('kognitiv',adj,'').
+r('kogn',adj,'').
 r('kofr',subst,'1').
 r('kofer',subst,'').
 r('kofaktor',subst,'').
@@ -5735,15 +5863,20 @@ r('klerik',subst,'').
 r('kler',adj,'*').
 r('klepsidr',subst,'').
 r('klementin',subst,'').
+r('klematid',subst,'').
 r('klemat',subst,'').
 r('klem',subst,'').
+r('klef',subst,'').
 r('kle',subst,'').
 r('klaŭz',subst,'').
+r('klaŭstrofobi',subst,'').
+r('klaŭstr',subst,'').
 r('klaŭn',subst,'').
 r('klaĉ',ntr,'4').
 r('klavikord',subst,'').
 r('klavikl',subst,'').
 r('klavicen',subst,'').
+r('klavecen',subst,'').
 r('klav',subst,'*').
 r('klasik',adj,'1').
 r('klasifik',tr,'3').
@@ -5754,6 +5887,7 @@ r('klar',adj,'*').
 r('klap',subst,'*').
 r('klangul',best,'').
 r('klan',subst,'').
+r('klamid',subst,'').
 r('klak',ntr,'3').
 r('klaft',subst,'*').
 r('kladoni',subst,'').
@@ -5762,10 +5896,16 @@ r('klab',subst,'').
 r('kiĉ',subst,'').
 r('kivi',best,'').
 r('kiv',subst,'').
+r('kiton',subst,'').
+r('kitivak',subst,'').
+r('kitin',subst,'').
 r('kiti',subst,'').
 r('kitel',subst,'*').
+r('kitar',subst,'').
 r('kis',tr,'*').
 r('kirŝ',subst,'2').
+r('kirurgi',subst,'8').
+r('kirurg',subst,'8').
 r('kirl',tr,'3').
 r('kirk',subst,'').
 r('kirgiz',subst,'').
@@ -5797,6 +5937,7 @@ r('kilogram',subst,'*').
 r('kilobitok',subst,'').
 r('kilo',pref,'').
 r('kil',subst,'*').
+r('kikerik',ntr,'').
 r('kiker',subst,'').
 r('kikar',subst,'').
 r('kidnap',verb,'').
@@ -5805,6 +5946,7 @@ r('kiborg',subst,'').
 r('kibernetik',subst,'').
 r('kiang',best,'').
 r('keĉup',subst,'').
+r('keĉap',subst,'').
 r('kevlar',subst,'').
 r('kest',subst,'*').
 r('kerub',subst,'*').
@@ -5820,6 +5962,7 @@ r('kenopodiac',subst,'').
 r('kenopodi',subst,'').
 r('kena',subst,'').
 r('ken',subst,'*').
+r('kemi',subst,'8').
 r('kelt',subst,'').
 r('kelner',subst,'*').
 r('kelk',adj,'*').
@@ -5830,6 +5973,7 @@ r('kejl',subst,'8').
 r('keirant',subst,'').
 r('kegl',subst,'*').
 r('kefir',subst,'').
+r('kediv',subst,'').
 r('kecal',subst,'').
 r('kebab',subst,'').
 r('kaŭĉuk',subst,'1').
@@ -5844,6 +5988,7 @@ r('kaŝ',tr,'*').
 r('kaĵol',tr,'').
 r('kaĥeksi',subst,'').
 r('kaĝ',subst,'*').
+r('kaĉaloted',subst,'').
 r('kaĉalot',subst,'').
 r('kaĉ',subst,'*').
 r('kazuistik',subst,'').
@@ -5856,6 +6001,7 @@ r('kaze',subst,'*').
 r('kazaĥ',subst,'').
 r('kazak',subst,'').
 r('kaz',subst,'*').
+r('kavied',subst,'').
 r('kaviar',subst,'*').
 r('kavern',subst,'*').
 r('kavalkad',subst,'').
@@ -5874,6 +6020,9 @@ r('kateĥism',subst,'').
 r('kateter',subst,'').
 r('katet',subst,'').
 r('katen',subst,'*').
+r('katekiz',tr,'3').
+r('katekist',subst,'3').
+r('katekism',subst,'').
 r('kategori',subst,'1').
 r('katedral',subst,'2').
 r('katedr',subst,'1').
@@ -5892,6 +6041,7 @@ r('katalepsi',subst,'1').
 r('katakomb',subst,'2').
 r('kataklism',subst,'').
 r('katakana',subst,'').
+r('katakan',subst,'').
 r('katafalk',subst,'1').
 r('katabol',subst,'').
 r('kat',best,'*').
@@ -5948,6 +6098,7 @@ r('karmezin',subst,'').
 r('karmanjol',subst,'').
 r('karm',subst,'').
 r('karlin',subst,'').
+r('karitat',subst,'').
 r('karit',subst,'').
 r('karism',subst,'').
 r('kariotip',subst,'').
@@ -5996,6 +6147,7 @@ r('karat',subst,'1').
 r('karas',best,'*').
 r('karapac',subst,'').
 r('karaoke',subst,'').
+r('karaok',subst,'').
 r('karamel',subst,'2').
 r('karambol',ntr,'1').
 r('karaktr',subst,'').
@@ -6049,6 +6201,7 @@ r('kapacit',subst,'').
 r('kapabl',adj,'*').
 r('kap',subst,'*').
 r('kap',subst,'').
+r('kaos',subst,'').
 r('kaolin',subst,'').
 r('kanĵi',subst,'').
 r('kanzon',subst,'8').
@@ -6120,8 +6273,11 @@ r('kamerling',subst,'').
 r('kamera',subst,'').
 r('kamer',subst,'*').
 r('kamen',subst,'*').
+r('kamemor',subst,'').
 r('kamembert',subst,'').
 r('kameli',subst,'1').
+r('kameleoned',best,'').
+r('kameleon',best,'').
 r('kameled',subst,'').
 r('kamel',subst,'*').
 r('kameciparid',subst,'').
@@ -6170,6 +6326,7 @@ r('kalcit',subst,'').
 r('kalcin',tr,'').
 r('kalci',subst,'9').
 r('kalaŝnikov',subst,'').
+r('kalandra',subst,'').
 r('kalandr',subst,'').
 r('kalandr',subst,'').
 r('kalandr',tr,'').
@@ -6207,6 +6364,7 @@ r('kadi',subst,'').
 r('kadet',subst,'1').
 r('kadenc',subst,'1').
 r('kadavr',subst,'1').
+r('kadastr',subst,'').
 r('kacuon',best,'').
 r('kac',subst,'').
 r('kabuk',subst,'').
@@ -6215,6 +6373,7 @@ r('kablogram',subst,'').
 r('kabl',subst,'1').
 r('kabinet',subst,'5').
 r('kabaret',subst,'').
+r('kabared',subst,'').
 r('kaban',subst,'2').
 r('kab',subst,'').
 r('juĝ',tr,'*').
@@ -6242,6 +6401,7 @@ r('juk',tr,'*').
 r('jujub',subst,'').
 r('jugoslav',subst,'').
 r('juglandujac',subst,'').
+r('juglandac',subst,'').
 r('jugland',subst,'*').
 r('jug',subst,'*').
 r('jud',subst,'3').
@@ -6257,6 +6417,7 @@ r('joniz',verb,'').
 r('jon',subst,'').
 r('jokto',pref,'').
 r('jojk',subst,'').
+r('jogurt',subst,'').
 r('jog',subst,'').
 r('jodoform',subst,'').
 r('jod',subst,'1').
@@ -6272,6 +6433,7 @@ r('jaŝir',subst,'').
 r('jaĥt',subst,'').
 r('jatagan',subst,'').
 r('jat',subst,'').
+r('jaspis',subst,'').
 r('jasp',subst,'').
 r('jasmen',subst,'*').
 r('jard',subst,'').
@@ -6350,6 +6512,7 @@ r('invad',tr,'3').
 r('inund',tr,'4').
 r('inuit',subst,'').
 r('intuici',subst,'').
+r('intu',subst,'').
 r('introvertit',subst,'').
 r('introvert',adj,'').
 r('introspekt',subst,'').
@@ -6430,6 +6593,7 @@ r('iniciativ',subst,'').
 r('iniciat',tr,'*').
 r('inicial',subst,'').
 r('inic',tr,'').
+r('inhibici',verb,'').
 r('inhib',verb,'').
 r('inhal',tr,'').
 r('ingven',subst,'*').
@@ -6443,6 +6607,7 @@ r('infrason',subst,'').
 r('infraruĝ',adj,'').
 r('infra',pref,'').
 r('informatik',subst,'').
+r('informadik',subst,'').
 r('inform',tr,'1').
 r('influenc',subst,'').
 r('influ',tr,'*').
@@ -6550,6 +6715,7 @@ r('igvan',subst,'').
 r('igumen',subst,'').
 r('ignor',tr,'2').
 r('ignam',subst,'').
+r('iglu',subst,'').
 r('igl',subst,'').
 r('ig',suf,'*').
 r('idu',subst,'').
@@ -6563,6 +6729,7 @@ r('ideolog',subst,'').
 r('ideogram',subst,'').
 r('ideografi',subst,'3').
 r('ident',adj,'1').
+r('idealism',subst,'3').
 r('ideal',subst,'1').
 r('ide',subst,'*').
 r('ibised',subst,'').
@@ -6669,6 +6836,7 @@ r('hirund',subst,'*').
 r('hirud',subst,'*').
 r('hirt',adj,'3').
 r('hiragana',subst,'').
+r('hiragan',subst,'').
 r('hipster',subst,'').
 r('hipoĥondri',subst,'').
 r('hipotroĥoid',subst,'').
@@ -6681,8 +6849,10 @@ r('hipopotamed',subst,'').
 r('hipopotam',subst,'1').
 r('hipoksi',subst,'').
 r('hipokrit',tr,'*').
+r('hipokondri',subst,'').
 r('hipokaŝtanac',subst,'').
 r('hipokaŝtan',subst,'').
+r('hipokastanac',subst,'').
 r('hipokamp',subst,'').
 r('hipokamp',subst,'').
 r('hipogrif',subst,'').
@@ -6725,6 +6895,7 @@ r('hil',subst,'').
 r('hiksos',subst,'').
 r('hik',ntr,'').
 r('hihi',verb,'').
+r('higumen',subst,'').
 r('higroskop',subst,'').
 r('higrometr',subst,'2').
 r('higien',subst,'1').
@@ -6732,6 +6903,7 @@ r('hieroglif',subst,'2').
 r('hierodul',subst,'').
 r('hieratik',adj,'').
 r('hierarĥi',subst,'3').
+r('hierarki',subst,'3').
 r('hiened',subst,'').
 r('hien',best,'1').
 r('hidrozo',subst,'').
@@ -6764,6 +6936,7 @@ r('hibrid',subst,'').
 r('hibisk',subst,'').
 r('hibaĉ',subst,'').
 r('hiat',subst,'').
+r('hiacint',subst,'').
 r('hiacint',subst,'1').
 r('heĝ',subst,'8').
 r('heĝ',verb,'').
@@ -6833,6 +7006,7 @@ r('helik',subst,'2').
 r('helic',subst,'4').
 r('heliantem',subst,'').
 r('heliant',subst,'').
+r('heli',subst,'').
 r('heler',subst,'').
 r('helenistik',subst,'').
 r('helen',subst,'').
@@ -6920,12 +7094,15 @@ r('hajk',subst,'').
 r('hajduk',subst,'').
 r('hafni',subst,'').
 r('hadron',subst,'').
+r('hadit',subst,'').
 r('hadis',subst,'').
 r('haciend',subst,'').
 r('gvid',tr,'*').
 r('gvat',tr,'').
 r('gvardi',subst,'*').
 r('gvaran',subst,'').
+r('gvajakol',subst,'').
+r('gvajak',subst,'').
 r('guŝ',subst,'').
 r('guĉin',subst,'').
 r('guzl',subst,'').
@@ -7061,6 +7238,7 @@ r('gol',ntr,'').
 r('goj',subst,'').
 r('goelet',subst,'').
 r('gobi',best,'*').
+r('gobelin',subst,'').
 r('gobelen',subst,'').
 r('gobang',subst,'').
 r('go',subst,'').
@@ -7077,6 +7255,7 @@ r('glute',subst,'').
 r('glutamat',subst,'').
 r('glut',tr,'*').
 r('glum',subst,'').
+r('glukoz',subst,'8').
 r('glugl',ntr,'').
 r('glucid',subst,'').
 r('glu',tr,'*').
@@ -7190,6 +7369,7 @@ r('geometr',best,'7').
 r('geologi',subst,'1').
 r('geolog',subst,'3').
 r('geokomputik',subst,'').
+r('geokemi',subst,'').
 r('geografi',subst,'*').
 r('geograf',subst,'7').
 r('geofizik',subst,'').
@@ -7293,6 +7473,7 @@ r('galon',subst,'*').
 r('galium',subst,'').
 r('galion',subst,'').
 r('galinul',subst,'').
+r('galinol',subst,'').
 r('galimati',subst,'').
 r('galicism',subst,'').
 r('gali',subst,'').
@@ -7310,6 +7491,7 @@ r('galant',subst,'2').
 r('galant',adj,'').
 r('galaktoz',subst,'').
 r('galaksi',subst,'9').
+r('galabij',subst,'').
 r('galabij',subst,'').
 r('gal',subst,'*').
 r('gak',verb,'').
@@ -7374,6 +7556,7 @@ r('fuk',subst,'2').
 r('fug',subst,'').
 r('fuel',subst,'').
 r('ftiz',subst,'*').
+r('frustraci',verb,'').
 r('frustr',verb,'9').
 r('fruntal',subst,'').
 r('frunt',subst,'*').
@@ -7432,6 +7615,7 @@ r('frangol',subst,'*').
 r('frandz',tr,'').
 r('frand',tr,'*').
 r('francium',subst,'').
+r('franci',subst,'').
 r('franc',subst,'*').
 r('framb',subst,'*').
 r('framason',subst,'*').
@@ -7601,6 +7785,7 @@ r('fisk',subst,'3').
 r('fisi',subst,'').
 r('first',subst,'').
 r('firmament',subst,'').
+r('firma',subst,'').
 r('firm',adj,'*').
 r('firm',subst,'').
 r('fiol',subst,'').
@@ -7634,6 +7819,7 @@ r('filigran',subst,'').
 r('fili',subst,'3').
 r('filharmoni',subst,'').
 r('filer',subst,'').
+r('filateli',subst,'').
 r('filatel',subst,'').
 r('filantropi',subst,'1').
 r('filantrop',subst,'1').
@@ -7763,6 +7949,7 @@ r('farmakologi',subst,'').
 r('farmakolog',subst,'').
 r('farmaci',subst,'1').
 r('farm',tr,'*').
+r('farize',subst,'').
 r('farise',subst,'').
 r('faring',subst,'*').
 r('farbit',subst,'').
@@ -7803,6 +7990,7 @@ r('falar',subst,'').
 r('falanster',subst,'').
 r('falangi',subst,'').
 r('falang',subst,'2').
+r('falafl',subst,'').
 r('falafel',subst,'').
 r('fal',ntr,'*').
 r('fakultativ',adj,'').
@@ -7816,6 +8004,7 @@ r('faktitiv',subst,'').
 r('fakt',subst,'1').
 r('faksimil',subst,'1').
 r('faks',tr,'').
+r('fakoĥer',subst,'').
 r('fakoĉer',subst,'').
 r('fakir',subst,'2').
 r('fak',subst,'*').
@@ -7848,6 +8037,7 @@ r('eŭsk',subst,'').
 r('eŭropi',subst,'').
 r('eŭr',subst,'9').
 r('eŭnuk',subst,'2').
+r('eŭkaristi',subst,'').
 r('eŭkariot',subst,'').
 r('eŭkalipt',subst,'9').
 r('eŭgenik',subst,'').
@@ -7928,6 +8118,7 @@ r('estetik',adj,'1').
 r('ester',subst,'').
 r('establ',tr,'4').
 r('est',ntr,'*').
+r('est',subst,'').
 r('esprim',tr,'*').
 r('esplor',tr,'*').
 r('esplanad',subst,'').
@@ -7939,9 +8130,11 @@ r('espart',subst,'').
 r('espanjolet',subst,'').
 r('esoter',adj,'').
 r('eskvir',subst,'').
+r('eskuz',tr,'').
 r('eskud',subst,'').
 r('eskort',subst,'2').
 r('eskim',subst,'').
+r('eskatologi',subst,'').
 r('eskarp',subst,'').
 r('eskar',subst,'').
 r('eskap',tr,'8').
@@ -7961,6 +8154,7 @@ r('erp',tr,'*').
 r('erozi',tr,'').
 r('erotomani',subst,'').
 r('erotik',adj,'3').
+r('erot',adj,'').
 r('erod',verb,'').
 r('ermit',subst,'*').
 r('ermen',best,'*').
@@ -8040,6 +8234,7 @@ r('envult',tr,'').
 r('envi',tr,'*').
 r('envergur',subst,'').
 r('envelop',subst,'').
+r('enukleaci',tr,'').
 r('enukle',tr,'').
 r('enu',tr,'*').
 r('entuziast',subst,'').
@@ -8176,9 +8371,11 @@ r('elastan',subst,'').
 r('elast',adj,'*').
 r('eland',subst,'').
 r('el',subst,'').
+r('ekzotik',adj,'').
 r('ekzoterm',adj,'').
 r('ekzot',adj,'').
 r('ekzoskelet',subst,'').
+r('ekzorciz',tr,'').
 r('ekzorc',tr,'').
 r('ekzomid',subst,'').
 r('ekzokrin',adj,'').
@@ -8195,6 +8392,7 @@ r('ekzekutiv',subst,'').
 r('ekzekut',tr,'*').
 r('ekzekuci',tr,'').
 r('ekzegez',subst,'').
+r('ekzarĥ',subst,'').
 r('ekzark',subst,'').
 r('ekzantem',subst,'').
 r('ekzamen',tr,'*').
@@ -8219,6 +8417,7 @@ r('ekstrem',adj,'*').
 r('ekstravertit',subst,'').
 r('ekstravert',adj,'').
 r('ekstravaganc',subst,'').
+r('ekstrapol',tr,'').
 r('ekstrakt',subst,'1').
 r('ekstradici',tr,'').
 r('ekstr',adj,'*').
@@ -8281,14 +8480,21 @@ r('eklezi',subst,'1').
 r('eklektik',adj,'').
 r('eklampsi',subst,'').
 r('ekip',tr,'2').
+r('ekinoderm',subst,'').
+r('ekin',subst,'').
+r('ekimoz',subst,'').
+r('ekidn',subst,'').
 r('eki',subst,'').
 r('ekbali',subst,'').
 r('ekarte',subst,'').
 r('ekart',subst,'').
 r('ejnŝtejni',subst,'').
+r('ejnstejni',subst,'').
+r('ejgen',subst,'').
 r('ejakul',tr,'').
 r('egret',subst,'').
 r('egopodi',subst,'').
+r('egoism',subst,'1').
 r('ego',subst,'').
 r('eglefin',subst,'').
 r('eglanteri',subst,'').
@@ -8388,6 +8594,7 @@ r('dramaturgi',subst,'').
 r('dram',subst,'1').
 r('drakunkol',subst,'').
 r('drakon',adj,'').
+r('drakm',subst,'2').
 r('drak',subst,'*').
 r('dragon',subst,'1').
 r('drag',tr,'').
@@ -8424,6 +8631,7 @@ r('dolmen',subst,'').
 r('dolman',subst,'').
 r('doliĥocefal',subst,'').
 r('dolin',subst,'').
+r('dolikocefal',subst,'').
 r('dolar',subst,'1').
 r('dol',subst,'').
 r('dokumentari',subst,'').
@@ -8572,6 +8780,7 @@ r('dig',subst,'*').
 r('difuz',ntr,'').
 r('diftong',subst,'1').
 r('difterit',subst,'1').
+r('difteri',subst,'8').
 r('difraktometr',subst,'').
 r('difrakt',tr,'').
 r('difin',tr,'*').
@@ -8596,6 +8805,7 @@ r('diastaz',subst,'').
 r('diaspor',subst,'').
 r('dias',subst,'').
 r('diartroz',subst,'').
+r('diartr',subst,'').
 r('diare',subst,'').
 r('diapozitiv',subst,'').
 r('diapazon',subst,'2').
@@ -8613,6 +8823,7 @@ r('dialekt',subst,'1').
 r('diakron',adj,'').
 r('diakrit',tr,'').
 r('diakon',subst,'1').
+r('diakilon',subst,'').
 r('diakil',subst,'').
 r('diagram',subst,'').
 r('diagonal',subst,'1').
@@ -8632,6 +8843,7 @@ r('deĵor',ntr,'*').
 r('deĉifr',tr,'*').
 r('dezir',tr,'*').
 r('dezert',subst,'*').
+r('dezajn',tr,'').
 r('devoni',subst,'').
 r('devon',subst,'').
 r('deviz',subst,'*').
@@ -8826,6 +9038,7 @@ r('citron',subst,'*').
 r('citr',subst,'*').
 r('citozin',subst,'').
 r('citosol',subst,'').
+r('citosin',subst,'').
 r('citoplasm',subst,'').
 r('citologi',subst,'').
 r('citolog',subst,'').
@@ -8895,6 +9108,7 @@ r('cic',subst,'9').
 r('cibori',subst,'').
 r('cibol',subst,'').
 r('cibet',subst,'').
+r('cibernetik',subst,'').
 r('cian',subst,'').
 r('ci',pron,'*').
 r('cezur',subst,'').
@@ -9028,8 +9242,10 @@ r('bufon',subst,'').
 r('bufed',subst,'*').
 r('bufed',subst,'').
 r('buf',best,'*').
+r('budĝet',subst,'3').
 r('buduar',subst,'1').
 r('budle',subst,'').
+r('budd',subst,'').
 r('buda',subst,'').
 r('bud',subst,'*').
 r('bucer',subst,'').
@@ -9098,6 +9314,7 @@ r('braman',subst,'2').
 r('bram',best,'*').
 r('bram',subst,'').
 r('brakte',subst,'').
+r('brakicefal',subst,'').
 r('brak',subst,'*').
 r('brajl',subst,'').
 r('brajl',tr,'').
@@ -9236,9 +9453,11 @@ r('biontologi',subst,'').
 r('bionik',subst,'').
 r('biomeĥanik',subst,'').
 r('biometri',subst,'').
+r('biomekanik',subst,'').
 r('biomas',subst,'').
 r('biologi',subst,'1').
 r('biolog',subst,'7').
+r('biokemi',subst,'').
 r('biografi',subst,'2').
 r('biograf',subst,'7').
 r('biogeografi',subst,'').
@@ -9322,6 +9541,7 @@ r('belorus',subst,'').
 r('belg',subst,'8').
 r('beletristik',subst,'1').
 r('beletr',subst,'9').
+r('belarus',subst,'').
 r('beladon',subst,'*').
 r('bel',adj,'*').
 r('bel',subst,'').
@@ -9450,6 +9670,7 @@ r('balg',subst,'').
 r('balet',subst,'6').
 r('balened',subst,'').
 r('balen',best,'*').
+r('baled',subst,'').
 r('baldaken',subst,'*').
 r('balbut',tr,'*').
 r('balbo',subst,'').
@@ -9501,6 +9722,7 @@ r('aŭtomobil',subst,'1').
 r('aŭtomatik',subst,'').
 r('aŭtomat',subst,'1').
 r('aŭtomaci',subst,'').
+r('aŭtokton',subst,'').
 r('aŭtokrati',subst,'3').
 r('aŭtokrat',subst,'2').
 r('aŭtografi',subst,'').
@@ -9512,6 +9734,7 @@ r('aŭtodafe',subst,'').
 r('aŭtobus',subst,'8').
 r('aŭtobiografi',subst,'2').
 r('aŭtism',subst,'').
+r('aŭtentik',adj,'1').
 r('aŭtent',adj,'').
 r('aŭtarki',subst,'').
 r('aŭtarci',subst,'').
@@ -9626,6 +9849,7 @@ r('asteri',subst,'').
 r('asterac',subst,'').
 r('aster',subst,'').
 r('asteni',subst,'').
+r('astaten',subst,'').
 r('astat',subst,'').
 r('astaked',subst,'').
 r('astak',best,'').
@@ -9673,6 +9897,11 @@ r('arŝin',subst,'').
 r('arĥiv',subst,'3').
 r('arĥitektur',subst,'*').
 r('arĥitekt',subst,'3').
+r('arĥipelag',subst,'3').
+r('arĥiduk',subst,'').
+r('arĥetip',subst,'').
+r('arĥeologi',subst,'3').
+r('arĥeolog',subst,'3').
 r('arĥe',subst,'').
 r('arĥaism',subst,'*').
 r('arĥaik',adj,'3').
@@ -9713,17 +9942,23 @@ r('arme',subst,'1').
 r('armatur',subst,'').
 r('arm',tr,'*').
 r('arleken',subst,'*').
+r('arkiv',subst,'3').
 r('arkitrav',subst,'').
+r('arkitektur',subst,'8').
+r('arkitekt',subst,'3').
 r('arkipelag',subst,'3').
 r('arkimandrit',subst,'').
 r('arkiduk',subst,'').
 r('arketip',subst,'').
 r('arkeopterik',subst,'').
+r('arkeopterig',subst,'').
 r('arkeologi',subst,'3').
 r('arkeolog',subst,'3').
 r('arkebuz',subst,'').
 r('arkean',subst,'').
 r('arke',subst,'').
+r('arke',subst,'').
+r('arkaik',adj,'3').
 r('arkad',subst,'1').
 r('ark',subst,'*').
 r('aritmetik',subst,'1').
@@ -9783,6 +10018,7 @@ r('aprior',adj,'').
 r('april',subst,'*').
 r('aprez',tr,'').
 r('apretur',tr,'').
+r('aprec',tr,'').
 r('apr',subst,'*').
 r('apoĝatur',subst,'').
 r('apozici',subst,'2').
@@ -9941,6 +10177,7 @@ r('androgen',subst,'').
 r('andezit',subst,'').
 r('andant',subst,'').
 r('andaluz',subst,'').
+r('anaĥronism',subst,'').
 r('anaĥoret',subst,'').
 r('anatomi',subst,'1').
 r('anatom',subst,'').
@@ -9949,6 +10186,7 @@ r('anastigmat',adj,'').
 r('anased',subst,'').
 r('anas',best,'*').
 r('anarĥi',subst,'3').
+r('anarki',subst,'3').
 r('anapest',subst,'2').
 r('ananas',subst,'*').
 r('anamnez',subst,'').
@@ -9963,6 +10201,7 @@ r('analeptik',subst,'').
 r('analekt',subst,'').
 r('anal',subst,'').
 r('anakronism',subst,'2').
+r('anakoret',subst,'').
 r('anakolut',subst,'').
 r('anakardiac',subst,'').
 r('anakardi',subst,'').
@@ -9979,6 +10218,7 @@ r('amput',tr,'1').
 r('ampol',subst,'8').
 r('amplitud',subst,'').
 r('amplifikator',subst,'').
+r('amplifik',tr,'').
 r('amplif',tr,'').
 r('ampleks',subst,'*').
 r('ampermetr',subst,'').
@@ -10001,6 +10241,7 @@ r('amfor',subst,'1').
 r('amfiteatr',subst,'2').
 r('amfikrin',adj,'').
 r('amfibraĥ',subst,'').
+r('amfibrak',subst,'').
 r('amfibi',subst,'*').
 r('ametist',subst,'2').
 r('americi',subst,'').
@@ -10065,9 +10306,12 @@ r('alofon',subst,'').
 r('alo',subst,'4').
 r('aln',subst,'*').
 r('almoz',subst,'*').
+r('almanaĥ',subst,'').
 r('almanak',subst,'1').
 r('alkov',subst,'1').
 r('alkohol',subst,'1').
+r('alkemil',subst,'').
+r('alkemi',subst,'8').
 r('alkazar',subst,'').
 r('alkaloid',subst,'').
 r('alkal',subst,'').
@@ -10109,6 +10353,7 @@ r('aldehid',subst,'').
 r('ald',subst,'2').
 r('alcioned',subst,'').
 r('alcion',best,'*').
+r('alced',best,'').
 r('alce',subst,'').
 r('alburn',subst,'').
 r('alburn',best,'').
@@ -10155,6 +10400,7 @@ r('aktor',subst,'1').
 r('aktiv',adj,'*').
 r('aktinium',subst,'').
 r('aktini',subst,'').
+r('aktini',subst,'').
 r('aktin',subst,'').
 r('akt',subst,'1').
 r('akson',subst,'').
@@ -10177,6 +10423,7 @@ r('akredit',tr,'').
 r('akreci',subst,'').
 r('akre',subst,'').
 r('akr',adj,'*').
+r('akr',subst,'').
 r('akordion',subst,'').
 r('akord',subst,'1').
 r('akonit',subst,'').
@@ -10202,6 +10449,7 @@ r('akaĵu',subst,'').
 r('akar',subst,'*').
 r('akapar',tr,'2').
 r('akant',subst,'').
+r('akaism',subst,'8').
 r('akademi',subst,'1').
 r('akaci',subst,'1').
 r('ajut',subst,'').
@@ -10211,9 +10459,11 @@ r('ajmar',subst,'').
 r('ajl',subst,'*').
 r('ajgen',subst,'').
 r('ajatol',subst,'').
+r('ain',pers,'').
 r('ailant',subst,'').
 r('aikid',subst,'').
 r('aidos',subst,'9').
+r('aides',subst,'').
 r('agropir',subst,'').
 r('agronomi',subst,'1').
 r('agronom',subst,'7').
@@ -10321,6 +10571,7 @@ r('acipenser',best,'').
 r('acid',adj,'*').
 r('aceton',subst,'').
 r('acetilĥolin',subst,'').
+r('acetilkolin',subst,'').
 r('acetilen',subst,'').
 r('acetil',subst,'').
 r('acetat',subst,'').

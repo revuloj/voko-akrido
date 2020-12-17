@@ -1,3 +1,4 @@
+v('ŭoŭ',intj,'').
 v('ŭaŭ',intj,'').
 v('ŝŝ',intj,'').
 v('ŝpruc',intj,'*').
@@ -27,6 +28,7 @@ v('paf',intj,'*').
 v('pa',intj,'').
 v('okej',intj,'').
 v('oj',intj,'').
+v('o kej',intj,'').
 v('mu',intj,'').
 v('miaŭ',intj,'1').
 v('mek',intj,'').
@@ -54,6 +56,7 @@ v('hop',intj,'').
 v('ho',intj,'*').
 v('hm',intj,'').
 v('hihi',intj,'').
+v('hej',intj,'').
 v('he',intj,'1').
 v('ha',intj,'*').
 v('gut',intj,'*').

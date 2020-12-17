@@ -471,7 +471,7 @@ revo_mlg(DOM,Mallongigoj) :-
   ).
 
 revo_var(DOM,VarRad,Ofc) :-
-  xpath(DOM,//art/kap/var/kap(normalize_space),Kap),
+  xpath(DOM,//art/kap/var/kap,Kap),
   xpath(Kap,rad(normalize_space),VarRad),
   atom_length(VarRad,L), 
   (L=<1 
