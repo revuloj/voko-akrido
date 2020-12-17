@@ -1,5 +1,7 @@
 /************ 
- * esceptaj vortoj ne sekvantaj tute la normalajn derivadregulojn
+ * 1. esceptaj vortoj ne sekvantaj tute la normalajn derivadregulojn (prunt/e~don/i)
+ * 2. vortoj, kiujn la analizilo pro la ordo de la analizo ne ĝuste
+ *    analizas en la unua provo, ekz- nask-iĝ-tag/o anst. nask/iĝ-tag/o
 ************/
 %:- ensure_loaded(gramatiko).
 
@@ -11,8 +13,15 @@
 
 :- encoding(utf8).
 
+% PLIBONIGU: la malsupraj vortoj estas kunmetitaj de fundamentaj vortelementoj
+% sed ni ne povas indiki tion momente, ni devus subteni trian argumenton en 
+% rule_ref (rv_sen_fin)...
+
 % 'e' = escepto
+rv_sen_fin(e,subst) <- nask/'iĝ'. % por faciligi rekoni kunmetitajn kiel naskiĝtago
 rv_sen_fin(e,subst) <- post/e/ul.
+rv_sen_fin(e,adj) <- postul/em. % por eviti misanalizon post/ulem
+
 %rad(e,adj) <= si/a.
 rv_sen_fin(e,adj) <- mult/e+kost.
 rv_sen_fin(e,adj) <- mult/e+kolor.
