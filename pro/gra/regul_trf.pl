@@ -6,8 +6,8 @@
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
 %:- op( 500, yfx, user:(~) ). % signas disigindajn vortojn
 
-:- dynamic min_max_len/3, gra_debug/1.
-:- multifile '&'/1, gra_debug/1.
+:- dynamic min_max_len/3. %, gra_debug/1.
+:- multifile '&'/1. %, gra_debug/1.
 :- dynamic vorto_gra:vorto/5.
 
 /**
@@ -15,6 +15,7 @@
    Uziĝas term_expansion por tiu transformado.
 */
 
+/*
 gra_debug(false). % default
 
 debug(Depth,Msg,Scheme,Rezulto) :-
@@ -23,6 +24,22 @@ debug(Depth,Msg,Scheme,Rezulto) :-
     sub_atom('------------------------------------------------------------------------------------------',0,Depth,_,Indent),
     format('~w ~w ~w ~w~n',[Indent,Msg,Scheme,Rezulto])
   ; true.
+*/
+
+% vi povas ŝalti sencimigajn mesaĝojn per debug(gramatiko).
+% kaj malŝalti per nodebug(gramatiko).
+debug(Depth,Msg,Scheme,Rezulto) :-
+  debugging(gramatiko) -> (
+    sub_atom('------------------------------------------------------------------------------------------',0,Depth,_,Indent),
+    debug(gramatiko,'~w ~q ~q ~q',[Indent,Msg,Scheme,Rezulto])
+  ); true.
+
+% sencimigi ekde certa linio en vorto_gra.pl 
+debug_gra(Line) :-
+  source_file(F),
+  sub_atom(F,_,_,0,'vorto_gra.pl'),
+  set_breakpoint(F,Line,0,_),
+  debug.
 
 reduce_full(Term,Flat) :-
   format(codes(A),'~w',[Term]),
@@ -200,6 +217,7 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   % temas pri apliko de prefikso aŭ antaŭvorto,
   % komencu per maldekstra parto (ĉar tiu parto estas verŝajne pli mallonga)
   % En aliaj okazoj (sufiksoj, finaĵoj, komencu per destra parto.
+
   (memberchk(RuleScheme,['pD','pv','pr','pAP','A+P']) ->
     Sub = (RRef1,RRef2)
   ; Sub = (RRef2,RRef1)
@@ -207,24 +225,23 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
 
   % kunmetu nun la kod-partojn al tuta predikato-korpo
   PredExp =  (
-     debug(Depth,'?',RuleScheme,Vrt), 
-%     atom_concat(V1,Rest,Vrt), 
-%     V1 \= '', Rest \= '',
+    debug(Depth,'?',RuleScheme,Vrt), 
     Splitter,
     D1 is Depth +1,
-%     RRef2,
-%     RRef1,
     Sub,
-%%%     Rez=Rezulto,
     debug(Depth,'*',RuleScheme,Rez) 
   ).
-%  term_variables(PredExp, [A,B,C,D,E,F]).
 
-% la dektra parto povas ankaŭ esti unuparta, simpla, ekz. vortarserĉo
+% la dekstra parto povas ankaŭ esti unuparta, simpla, ekz. vortarserĉo
 % aŭ forreferenco al subordigita regulo
-rule_exp(_,RuleExp,Vrt,Rez,Depth,PredExp) :-
-  rule_ref(RuleExp,Vrt,Rez,Depth,PredExp).
-
+rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
+  rule_ref(RuleExp,Vrt,Rez,Depth,PredSmp),
+  RuleHead =.. [_,RuleScheme|_],
+  PredExp =  (
+    debug(Depth,'?',RuleScheme,Vrt), 
+    PredSmp,
+    debug(Depth,'*',RuleScheme,Rez)
+  ).
 
 
 % komenciĝante per "&", la regulo-parto referencas alian regulon
