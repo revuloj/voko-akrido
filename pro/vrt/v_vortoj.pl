@@ -20,7 +20,7 @@ v('apud',prep,'*').
 v('aŭ',konj,'*').
 v('baldaŭ',adv,'*').
 v('cent',nombr,'*').
-v('ĉar',konj,'*','*').
+v('ĉar',konj,'*').
 v('ĉe',prep,'*').
 v('ĉi',advpart,'*').
 v('ĉial',adv,'*').
@@ -114,6 +114,7 @@ v('preskaŭ',adv,'*').
 v('preter',prep,'*').
 v('pri',prep,'*').
 v('pro',prep,'*').
+v('ri',perspron,''). % neoficiala perspron.
 v('se',subj,'*').
 v('sed',konj,'*').
 v('sen',prep,'*').

@@ -163,9 +163,16 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
 %  statistics(cputime,C1),
 %  statistics(inferences,I1),
   once((
+    % PLIBONIGU: okaze forigu verdan liston, ĉar ni nun markas
+    % per <nom>, <nac>, <frm> en Revo-artikoloj, ni povos
+    % jam anticipe escpeti tiujn vortojn
     memberchk(Vorto,VerdaListo),
     skribu_vorton(verda,Vorto,_,_,_)
    ;
+    atom_codes(Nf,Vorto), 
+    nf(Nf,_), % nomo-fremda
+    skribu_vorton(verda,Vorto,_,_,_)
+   ;   
     atom_codes(Mlg,Vorto), 
     mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
     skribu_vorton(mlg,Vorto,_,_,_)
@@ -227,9 +234,16 @@ analizu_tekston_liste_([v(Vorto)|Text],VerdaListo,[Rezulto|Resto]) :-
 %  statistics(cputime,C1),
 %  statistics(inferences,I1),
   once((
+    % PLIBONIGU: okaze forigu verdan liston, ĉar ni nun markas
+    % per <nom>, <nac>, <frm> en Revo-artikoloj, ni povos
+    % jam anticipe escpeti tiujn vortojn
     memberchk(Vorto,VerdaListo),
     atom_codes(V,Vorto), 
     Rezulto = _{takso:verda,vorto:V}
+   ;
+    atom_codes(Nf,Vorto), 
+    nf(Nf,_), % nomo-fremda
+    skribu_vorton(verda,Vorto,_,_,_)    
    ;
     atom_codes(Mlg,Vorto), 
     mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto

@@ -3,6 +3,7 @@
 	    r/3, % radikoj
 	    nr/3, % nomradikoj
 	    nr_/3, % nomradikoj minuskligitaj
+		nf/2, % nomo fremda
 	    p/2, p/3, s/3, % prefiksoj kaj sufiksoj
 	    ns/2, sn/3, % nomsufikso (nj, ĉj)kaj nombrosufikso (ilion, iliard)
         f/2, c/2, % finaĵoj
@@ -27,11 +28,12 @@
 :-consult('revo/v_revo_mallongigoj.pl').
 :-consult('vrt/v_elementoj.pl').
 :-consult('vrt/v_vortoj.pl').
-:-consult('vrt/v_fremdvortoj.pl').
+:-consult('vrt/v_radikoj.pl').
+:-consult('vrt/v_nomoj_fremdaj.pl').
+
 :-consult('revo/v_revo_nomoj.pl').
 :-consult('revo/v_revo_radikoj.pl').
 :-consult('revo/v_revo_vortoj.pl').
-:-consult('vrt/v_radikoj.pl').
 
 % provizore ignoru la oficialecon, poste ni devos prilabori la gramatikon por ebligi plian argumenton! 
 % v(V,S) :- v(V,S,_).

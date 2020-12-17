@@ -77,12 +77,12 @@ s(estr,best,subst).
 s(et,_,_).
 s(id,best,best).
 s(ig,tr,subst).
-s(ig,tr,ntr).
 s(ig,tr,adj).
+s(ig,tr,ntr).
 s(ig,tr,nombr).
 s('iĝ',ntr,subst).
-s('iĝ',ntr,tr).
 s('iĝ',ntr,adj).
+s('iĝ',ntr,tr).
 s('iĝ',ntr,nombr).
 s(il,subst,verb).
 s(in,_,best).
@@ -298,7 +298,7 @@ i(ci,perspron).
 i(li,perspron).
 i('ŝi',perspron).
 i('ĝi',perspron).
-i('ri',perspron). % neoficiala sekneŭtrala pronomo
+i('ri',perspron). % neoficiala sekneŭtrala pronomo, necesas difini por anailizi ri/n
 i(oni,perspron).
 i(ni,perspron).
 i(vi,perspron).
