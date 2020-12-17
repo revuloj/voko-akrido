@@ -11,9 +11,11 @@ mlg('°C'). % gradoj Celsiusaj (kodita askie)
 mlg('AdE'). % Akademio de Esperanto
 mlg('AI'). % Amnestio Internacia; artefarita inteligenteco
 mlg('ALS'). % Amiotrofa lateralsklerozo
+mlg('BEMI'). % Biciklista E-Movado Internacia
 mlg('BIPM'). % Buroo Internacia pri Pezoj kaj Mezuroj 
 mlg('BNP'). % brutta nacia produktado
 mlg('Bq'). % bekerelo
+mlg('ĈEJ'). % Ĉeĥa E-Junularo
 mlg('CGS').  % fizika sistemo de unuoj, metra sistemo surbaze de Centimetro, Gramo kaj Sekundo
 mlg('CO'). % centra oficeo (de UEA)
 mlg('DDT'). % Diklor-difenil-trikloretano
@@ -73,6 +75,7 @@ mlg('RNA'). % ribonukleacido
 mlg('Rim'). % rimarko
 mlg('SAT'). % Sennacia Asocio Tutmonda
 mlg('SI'). % Sistemo Internacia de Unuoj
+mlg('SKEJ'). % Slovaka E-Junularo
 mlg('SOS'). % anlge: Save our souls, helpkria signalo, aparte surmara, morse ... --- ...
 %mlg('SQL'). % angle Structured Query Language
 mlg('TEJO'). % Tutmonda Esperanto-Junularo
@@ -82,6 +85,7 @@ mlg('UEA'). % Universala Esperanto Asocio
 mlg('URI'). % Unuforma Rimeda Identigilo ~ Unueca Referenca Identigilo
 mlg('URL'). % Unuforma Rimeda Lokindiko ~ Unueca Referenca Lokilo
 mlg('USB'). %  Universala Seria Buso
+mlg('UTC'). %  Universala Tempo Kunordigita, Coordinated Universal Time
 mlg('UV'). % Universala Vortaro
 mlg('Vd'). % Vidu
 mlg('Z'). % Zamenhofo

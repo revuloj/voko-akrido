@@ -18,9 +18,25 @@
 % rule_ref (rv_sen_fin)...
 
 % 'e' = escepto
+rv_sen_fin(e,adj) <- 'daŭr'/i~pov. % 
+
+rv_sen_fin(e,tr) <- diskut. % por eviti misanalizon dis/kut
+rv_sen_fin(e,ntr) <- glu-mark. % por eviti misanalizon glum-ark
+
+rv_sen_fin(e,subst) <- grup/et. % por eviti analizon grupet/
+
+rv_sen_fin(e,subst) <- jar/dek. % por eviti analizon jard-ek/
+
+rv_sen_fin(e,ntr) <- membr/'iĝ'. % por eviti misanalizon mem/briĝ
+rv_sen_fin(e,subst) <- membr/ec. % por eviti misanalizon mem/brec
+
 rv_sen_fin(e,subst) <- nask/'iĝ'. % por faciligi rekoni kunmetitajn kiel naskiĝtago
+
+rv_sen_fin(e,adj) <- respond/ec.
+
 rv_sen_fin(e,subst) <- post/e/ul.
 rv_sen_fin(e,adj) <- postul/em. % por eviti misanalizon post/ulem
+rv_sen_fin(e,adj) <- postul/at. % por eviti misanalizon postulat/
 
 %rad(e,adj) <= si/a.
 rv_sen_fin(e,adj) <- mult/e+kost.
