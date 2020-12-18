@@ -19,6 +19,7 @@ nf('Christopher',pers).
 nf('Clark',pers).
 nf('David',pers).
 nf('Dublin',subst).
+nf('Duisburg',subst).
 nf('Duncan',pers).
 nf('Ertl',pers).
 nf('Eugênio',pers).
@@ -43,9 +44,11 @@ nf('Matos',pers).
 nf('Murphy',pers).
 nf('Niels',pers).
 nf('Netflix',subst).
+nf('Oliver',pers).
 nf('Qomolangma',pers).
 nf('Pereira',pers).
 nf('Perrault',pers).
+nf('Peter',pers).
 nf('Reiersøl',pers).
 nf('Robert',pers).
 nf('Rudolf',pers).

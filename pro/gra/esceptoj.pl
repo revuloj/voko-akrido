@@ -28,6 +28,7 @@ rv_sen_fin(e,subst) <- grup/et. % por eviti analizon grupet/
 rv_sen_fin(e,subst) <- jar/dek. % por eviti analizon jard-ek/
 
 rv_sen_fin(e,ntr) <- membr/'iĝ'. % por eviti misanalizon mem/briĝ
+rv_sen_fin(e,subst) <- membr/o-kvant. % por eviti misanalizon mem/brok/vant
 rv_sen_fin(e,subst) <- membr/ec. % por eviti misanalizon mem/brec
 
 rv_sen_fin(e,subst) <- nask/'iĝ'. % por faciligi rekoni kunmetitajn kiel naskiĝtago
