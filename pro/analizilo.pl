@@ -338,15 +338,33 @@ skribu_vorton(neanalizebla,Vorto,_,_,_) :-
 
 skribu_vorton(dubebla,Vorto,Analizita,_,Uskl) :-
   uskleco(Uskl,Vorto,U,Analizita,A),
-  (output(html)
-  -> format('<span class="dubebla">~w~w</span>(?)',[U,A])
-  ; format('~w~w(?)',[U,A])).
+  oficialeco(A,LOfc,AO),
+  once((
+    LOfc = [], % neniu aparta oficialec-informo
+    format('~w~w',[U,AO])
+    ;
+    output(html)
+    -> 
+    (
+      ofc_classes(LOfc,Cls), % kreu klasliston de oficialeco
+     format('<span class="dubebla ~w">~w~w</span>(?)',[Cls,U,AO])
+    ); format('~w~w(?)',[U,A])
+  )).
 
 skribu_vorton(kuntirita,Vorto,Analizita,_,Uskl) :-
   uskleco(Uskl,Vorto,U,Analizita,A),
-  (output(html)
-  -> format('<span class="kuntirita">~w~w</span>',[U,A])
-  ; format('~w~w(!)',[U,A])).
+  oficialeco(A,LOfc,AO),
+  once((
+    LOfc = [], % neniu aparta oficialec-informo
+    format('~w~w',[U,AO])
+    ;
+    output(html)
+    -> 
+    (
+      ofc_classes(LOfc,Cls), % kreu klasliston de oficialeco
+      format('<span class="kuntirita ~w">~w~w</span>',[Cls,U,AO])
+    ); format('~w~w(!)',[U,A])
+  )).
 
 skribu_vorton(verda,Vorto,_,_,_) :-
   output(html)

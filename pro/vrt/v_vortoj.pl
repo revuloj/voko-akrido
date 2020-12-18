@@ -4,7 +4,8 @@
 v('aĉ',intj,'1').
 v('adiaŭ',intj,'*').
 v('aj',intj,'').
-v('ajn',advpart,'*').
+%v('ajn',adv,'*').
+v('ajn',advpart,'*'). % ĝis nun ni ne havas gramatikan regulon pro ĝi
 v('aĥ',intj,'').
 v('al',prep,'*').
 v('almenaŭ',adv,'*').
@@ -22,7 +23,8 @@ v('baldaŭ',adv,'*').
 v('cent',nombr,'*').
 v('ĉar',konj,'*').
 v('ĉe',prep,'*').
-v('ĉi',advpart,'*').
+%v('ĉi',adv,'*'). 
+v('ĉi',advpart,'*'). % ĝis nun ni ne havas gramatikan regulon pro ĝi
 v('ĉial',adv,'*').
 v('ĉiam',adv,'*').
 v('ĉiel',adv,'*').

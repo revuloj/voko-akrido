@@ -33,6 +33,7 @@ rv_sen_fin(e,subst) <- membr/ec. % por eviti misanalizon mem/brec
 
 rv_sen_fin(e,subst) <- nask/'iĝ'. % por faciligi rekoni kunmetitajn kiel naskiĝtago
 
+rv_sen_fin(e,adv) <- plej~part.
 rv_sen_fin(e,adj) <- respond/ec.
 
 rv_sen_fin(e,subst) <- post/e/ul.
