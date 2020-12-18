@@ -455,6 +455,7 @@ pref_verb(pD,subst) <= p(_,_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(
 % junedzo -> jun~edz/o 
 % helruĝa -> hel~ruĝ/a
 % malsupreniri -> mal/supre/n~ir/i
+% tutcerta -> tut~cert/a
 % depost -> de~post
 % ekde -> ek~de
 % tiujn meti sur "bluan liston" ?
@@ -464,15 +465,27 @@ pref_verb(pD,subst) <= p(_,_,De) / &rv_sen_suf(_,Spc) ~> subspc(Spc,De), subspc(
 % - neordinare dika fingro (ŝvelinta) - la dikfingro (de kiu ĉiu homo havas du laŭnature)
 % - bunta pego (bele kolora pego) - buntpego (specio)
 % - seka vinbero (pro neatento sekiĝinta) - sekvinbero (produkto, speciale pretigita)
+% sed foje estas simple ellasita spaco kaj eventuale finaĵo (desupre = de supre, tutcerte = tute certe)
 
 vorto('Kf',Spc) <= &kv_sen_fin('DD',Vs) / f(_,Fs) ~> (subspc(Vs,Fs),  
       % eble once(...)?            
        Spc=Vs 
      ; Spc=Fs).
 
+vorto('Kf',Spc) <= &kv_sen_fin('vD',Vs) / f(_,Fs) ~> (subspc(Vs,Fs),  
+    % eble once(...)?            
+     Spc=Vs 
+   ; Spc=Fs).
+
 kv_sen_fin('DD',Spc) <= &kv_adj('D',adj) ~ &kv_subst('D',Spc).
 kv_sen_fin('DD',Spc) <= &kv_adv('D',adv) ~ &kv_adj('D',Spc).
 kv_sen_fin('DD',Spc) <= &kv_adv('D',adv) ~ &kv_vrb('D',Spc).
+
+
+% desupre...?
+kv_sen_fin('vD',Spc) <= v(_,prep,_) ~ &kv_adv('D',Spc).
+%kv_sen_fin('vv',adv) <= v(_,prep,_) ~ v(_,adv,_).
+%kv_sen_fin('vv',adv) <= v(_,prep,_) ~ v(_,adj,_).
 
 kv_adv('D',adv) <= &rv_sen_fin(_,adv).
 kv_adv('D',adv) <= &rv_sen_fin(_,adj). % hela -> hele
@@ -526,6 +539,7 @@ min_max_len('Kf',7,99).
 min_max_len('Vf',7,99).
 min_max_len('Ks',6,99).
 min_max_len(pD,4,99).
+min_max_len(vD,4,99).
 min_max_len(rr,4,99).
 min_max_len(rc,3,99).
 min_max_len(nn,5,8).

@@ -74,6 +74,7 @@ r('antaŭ',tr,'*').
 r('apud',adv,'*').
 r('ĉirkaŭ',adv,'*').
 r('ĉirkaŭ',tr,'*').
+r('dum',adv,'*').
 r('ekster',adv,'*').
 r('el',adv,'*').
 r('en',adv,'*').

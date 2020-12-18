@@ -218,7 +218,7 @@ rule_exp(RuleHead,RuleExp,Vrt,Rez,Depth,PredExp) :-
   % komencu per maldekstra parto (ĉar tiu parto estas verŝajne pli mallonga)
   % En aliaj okazoj (sufiksoj, finaĵoj, komencu per destra parto.
 
-  (memberchk(RuleScheme,['pD','pv','pr','pAP','A+P']) ->
+  (memberchk(RuleScheme,['pD','vD','pv','pr','pAP','A+P']) ->
     Sub = (RRef1,RRef2)
   ; Sub = (RRef2,RRef1)
   ),
@@ -275,7 +275,7 @@ splitter(RuleScheme,RuleRef1,RuleRef2,Vrt,V1,Rest,Splitter) :-
 %%%    get_rule_min_max(RuleScheme,MinR,MaxR),
 %    !,
     once((	
-      memberchk(RuleScheme,['pD','pv','pr','pAP','A+P']),
+      memberchk(RuleScheme,['pD','vD','pv','pr','pAP','A+P']),
         % prefikso pli mallonga ol la resto...
         Splitter = (
    %%%       atom_length(Vrt,L),
