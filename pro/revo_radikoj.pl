@@ -7,6 +7,7 @@
 :- use_module(library(semweb/rdf_db)).
 
 :- dynamic radiko/3, evi/2, mlg/1, nr/3, nr_/3, vorto/3.
+:- multifile r/3, v/3.
 
 :-consult('vrt/v_esceptoj2.pl').
 :-consult('vrt/v_mallongigoj.pl').
@@ -140,16 +141,20 @@ skribu_radikojn :-
   ).
 
 skribu_radikojn(Out) :-
-  findall(
+  setof(
     Rad-(Spec,Ofc),
     radiko(Rad,Spec,Ofc),
     Chiuj),
-  keysort(Chiuj,Ordigitaj),
-  reverse(Ordigitaj,Renversitaj),
+  %keysort(Chiuj,Ordigitaj),
+  reverse(Chiuj,Renversitaj),
   forall(
     member(R-(S,O),Renversitaj), % renversu por ke "senil" analiziĝu antaŭ "sen/il" ktp.
     % format(Out,'r(''~w'',~w) --> "~w".~n',[R,S,R])
-    format(Out,'r(''~w'',~w,''~w'').~n',[R,S,O])  
+    once((
+      r(R,S,O) % se estas en la baza vortaro ne skribu al revo-vortaro
+      ;
+      format(Out,'r(''~w'',~w,''~w'').~n',[R,S,O]) 
+    ))
   ).
 
 skribu_vortojn :-
@@ -162,15 +167,19 @@ skribu_vortojn :-
   ).
 
 skribu_vortojn(Out) :-
-  findall(
+  setof(
     Vrt-(Spec,Ofc),
     vorto(Vrt,Spec,Ofc),
     Chiuj),
-  keysort(Chiuj,Ordigitaj),
-  reverse(Ordigitaj,Renversitaj),
+  %keysort(Chiuj,Ordigitaj),
+  reverse(Chiuj,Renversitaj),
   forall(
     member(V-(S,O),Renversitaj), 
-    format(Out,'v(''~w'',~w,''~w'').~n',[V,S,O])  
+    once((
+      v(V,S,O) % se estas en la baza vortaro ne skribu al revo-vortaro
+      ;
+      format(Out,'v(''~w'',~w,''~w'').~n',[V,S,O])  
+    ))
   ).
 
 skribu_nomojn :-
@@ -186,24 +195,24 @@ skribu_nomojn :-
   ).
 
 skribu_nomojn_maj(Out) :-
-  findall(
+  setof(
     Rad-(Spec,Ofc),
     nr(Rad,Spec,Ofc),
     Chiuj),
-  keysort(Chiuj,Ordigitaj),
-  reverse(Ordigitaj,Renversitaj),
+  %keysort(Chiuj,Ordigitaj),
+  reverse(Chiuj,Renversitaj),
   forall(
     member(R-(S,O),Renversitaj),
     format(Out,'nr(''~w'',~w,''~w'').~n',[R,S,O])  
   ).
 
 skribu_nomojn_min(Out) :-
-  findall(
-  Rad-(Spec,Ofc),
+  setof(
+    Rad-(Spec,Ofc),
     nr_(Rad,Spec,Ofc),
     Chiuj),
-  keysort(Chiuj,Ordigitaj),
-  reverse(Ordigitaj,Renversitaj),
+  %keysort(Chiuj,Ordigitaj),
+  reverse(Chiuj,Renversitaj),
   forall(
     member(R-(S,O),Renversitaj), 
     format(Out,'nr_(''~w'',~w,''~w'').~n',[R,S,O])  
@@ -316,13 +325,6 @@ assert_vorto(DOM,Radiko,Speco,Ofc) :-
     assertz(nr(Radiko,Speco,Ofc)),
     assert_nomo_minuskla(Radiko,Speco,Ofc)
     ;
-    % la vorto jam enestas kun samaj indikoj en la baza vortaro, tiam ni
-    % ne denove registru ĝin
-    Speco == intj,
-    vorto(Radiko,Speco,Ofc)
-    ;
-    radiko(Radiko,Speco,Ofc)
-    ;
     % interjekciojn registru kiel vort(et)o
     Speco == intj,
     assertz(vorto(Radiko,Speco,Ofc))
@@ -407,18 +409,24 @@ revo_rad(DOM,Radiko,Speco,Ofc) :-
     ; true
   ),
 
-  % evitindajn vortojn momente ni ne anailizas plu (ĵetante escepton)
+  % ni bezonos la unua derivaĵon en la artikolo
+  % por analizi EVI, vorspecon, klasojn
   xpath(DOM,//drv(1),Drv),
-  \+ (
-    xpath(Drv,uzo(@tip=stl,text),'EVI'), throw(rad_evi(Kap));
-    xpath(Drv,snc(1)/uzo(@tip=stl,text),'EVI'), throw(rad_evi(Kap))
-  ),
 
   % eltrovu la oficialecon
-  once(
-    xpath(Kap,ofc(normalize_space),Ofc);
+  once((
+    xpath(Kap,ofc(normalize_space),Ofc)
+    ;
+  % evitindecon de neoficialaj vortoj (en drv[1] aŭ drv[1]/snc[1] ni tie notas kiel 'e')
+    xpath(Drv,uzo(@tip=stl,text),'EVI'),
+    Ofc = 'e'
+    ;
+    xpath(Drv,snc(1)/uzo(@tip=stl,text),'EVI'),
+    Ofc = 'e'
+    ;
+    % nek oficiala nek evitinda:
     Ofc=''
-  ),
+  )),
 
   % eltrovu la vortspecon de la radiko 
   % per voko-klaso, gramatika etikedo aŭ finaĵo
@@ -496,10 +504,22 @@ revo_var(DOM,VarRad,Ofc) :-
   ),
 
   % eltrovu la oficialecon
-  once(
-    xpath(Kap,ofc(normalize_space),Ofc);
+  once((
+    xpath(Kap,ofc(normalize_space),Ofc)
+    ;
+%%    % PLIBONIGU: la sekvan ni jam faras en revo_rad, ĉu ni fakte ripetu tie ĉi?
+%%    % evitindecon de neoficialaj vortoj (en drv[1] aŭ drv[1]/snc[1] ni tie notas kiel 'e')
+%%    xpath(DOM,//drv(1),Drv),
+%%    (
+%%      xpath(Drv,uzo(@tip=stl,text),'EVI');
+%%      xpath(Drv,snc(1)/uzo(@tip=stl,text),'EVI')
+%%    ),
+%%    Ofc = 'e'
+%%    ;
+%%    % nek oficiala nek evitinda:
     Ofc=''
-  ).
+  )).
+
 %  \+ (
 %    xpath(Kap,uzo(@tip=stl,text),'EVI'), %throw(var_evi(Kap))
 %    format('DBG var EVI: ~w~n',[Var])

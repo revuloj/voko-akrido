@@ -1,5 +1,6 @@
 nr('Ŝverin',subst,'').
 nr('Ŝopen',subst,'').
+nr('Ŝlesvigholstini',subst,'').
 nr('Ŝlejer',subst,'').
 nr('Ŝjian',subst,'').
 nr('Ŝiva',subst,'').
@@ -67,6 +68,7 @@ nr('Zagreb',subst,'').
 nr('Vurtemberg',subst,'').
 nr('Vulgat',subst,'').
 nr('Vuhan',subst,'').
+nr('Vroclav',subst,'').
 nr('Volter',subst,'').
 nr('Volt',subst,'').
 nr('Volsung',subst,'').
@@ -111,6 +113,7 @@ nr('Velington',subst,'').
 nr('Vaŝinton',subst,'').
 nr('Vaŝington',subst,'*').
 nr('Vaĝrajan',subst,'').
+nr('Vatt',subst,'e').
 nr('Vatikan',subst,'').
 nr('Vat',pers,'').
 nr('Varsovi',subst,'*').
@@ -148,6 +151,7 @@ nr('Ukraini',subst,'').
 nr('Ugand',subst,'').
 nr('Tviter',subst,'').
 nr('Tuval',subst,'').
+nr('Turus',subst,'').
 nr('Turkmeni',subst,'').
 nr('Turki',subst,'').
 nr('Turingi',subst,'').
@@ -242,19 +246,19 @@ nr('Stanislav',pers,'').
 nr('Srilank',subst,'').
 nr('Spinoz',pers,'').
 nr('Soveti',subst,'').
+nr('Sopot',subst,'').
 nr('Somali',subst,'').
 nr('Solutre',subst,'').
 nr('Sokrat',pers,'').
 nr('Sofokl',pers,'').
-nr('Sofi',pers,'*').
 nr('Sofi',subst,'').
+nr('Sofi',pers,'*').
 nr('Sloveni',subst,'').
 nr('Slovaki',subst,'').
 nr('Slavon',subst,'').
 nr('Skoti',subst,'').
 nr('Skopj',subst,'').
 nr('Skiti',subst,'').
-nr('Skeld',subst,'').
 nr('Skeld',subst,'').
 nr('Skandinavi',subst,'').
 nr('Skajp',subst,'').
@@ -296,6 +300,7 @@ nr('Saĥalen',subst,'').
 nr('Savoj',subst,'').
 nr('Saturn',subst,'').
 nr('Saskaĉevan',subst,'').
+nr('Sarland',subst,'').
 nr('Sarajev',subst,'').
 nr('Sar',subst,'').
 nr('Santome',subst,'').
@@ -316,8 +321,8 @@ nr('Sambr',subst,'').
 nr('Samarkand',subst,'').
 nr('Samari',subst,'').
 nr('Salvador',subst,'').
-nr('Salomon',pers,'').
 nr('Salomon',subst,'').
+nr('Salomon',pers,'').
 nr('Salafism',subst,'').
 nr('Sajgon',subst,'').
 nr('Sajan',subst,'').
@@ -458,8 +463,8 @@ nr('Osvald',pers,'').
 nr('Ostend',subst,'').
 nr('Osman',pers,'').
 nr('Osl',subst,'').
-nr('Oskar',pers,'').
 nr('Oskar',subst,'').
+nr('Oskar',pers,'').
 nr('Osak',subst,'').
 nr('Orlean',subst,'').
 nr('Ork',subst,'').
@@ -500,6 +505,7 @@ nr('Novosibirsk',subst,'').
 nr('Novial',subst,'').
 nr('Novgorod',subst,'').
 nr('Norvegi',subst,'').
+nr('Nordrejn-Vestfali',subst,'').
 nr('Noaĥ',pers,'').
 nr('Niĝer',subst,'').
 nr('Niĉiren',subst,'').
@@ -572,6 +578,7 @@ nr('Molier',pers,'').
 nr('Moldavi',subst,'').
 nr('Mohamed',pers,'').
 nr('Mogadiŝ',subst,'').
+nr('Mocart',subst,'').
 nr('Mocart',pers,'').
 nr('Mjanma',subst,'').
 nr('Miŝna',subst,'').
@@ -597,14 +604,17 @@ nr('Meĥlen',subst,'').
 nr('Mezopotami',subst,'').
 nr('Metodi',pers,'').
 nr('Merkur',subst,'').
+nr('Mengzi',subst,'e').
 nr('Mengzi',subst,'').
 nr('Menefr',subst,'').
 nr('Mendelev',pers,'').
 nr('Mence',subst,'').
 nr('Memfis',subst,'').
 nr('Melburn',subst,'').
+nr('Meksiki',subst,'e').
 nr('Meksik',subst,'8').
 nr('Mekong',subst,'').
+nr('Meklenburgo-Antaŭpomeri',subst,'').
 nr('Meklenburgi',subst,'').
 nr('Meklenburg',subst,'').
 nr('Mekk',subst,'').
@@ -758,6 +768,7 @@ nr('Kulomb',pers,'').
 nr('Kub',subst,'8').
 nr('Kuala-Lumpur',subst,'').
 nr('Ksitigarb',subst,'').
+nr('Ksenofont',subst,'').
 nr('Ksenofont',pers,'').
 nr('Ksenofon',pers,'').
 nr('Ksaver',pers,'').
@@ -769,6 +780,7 @@ nr('Kristian',pers,'').
 nr('Krist',subst,'*').
 nr('Krime',subst,'').
 nr('Kret',subst,'').
+nr('Krakov',subst,'').
 nr('Koŝi',subst,'').
 nr('Kotdivuar',subst,'').
 nr('Kostarik',subst,'8').
@@ -785,6 +797,7 @@ nr('Konstantinopol',subst,'').
 nr('Konstanten',pers,'').
 nr('Konrad',pers,'').
 nr('Kong',subst,'').
+nr('Konfuzi',subst,'e').
 nr('Konfuce',pers,'').
 nr('Konektikut',subst,'').
 nr('Konakri',subst,'').
@@ -792,6 +805,7 @@ nr('Komsomol',subst,'').
 nr('Komod',subst,'').
 nr('Komeni',subst,'').
 nr('Kolĥid',subst,'').
+nr('Kolĉid',subst,'e').
 nr('Kolĉid',subst,'').
 nr('Kolumbi',subst,'').
 nr('Kolumb',pers,'').
@@ -828,6 +842,7 @@ nr('Kembriĝ',subst,'').
 nr('Kelvin',pers,'').
 nr('Kebeki',subst,'').
 nr('Kebek',subst,'').
+nr('Kaŭkazi',subst,'e').
 nr('Kaŭkaz',subst,'').
 nr('Kaŝmir',subst,'').
 nr('Kazimir',pers,'').
@@ -910,7 +925,6 @@ nr('Jenisej',subst,'').
 nr('Jemen',subst,'').
 nr('Jehov',subst,'').
 nr('Jazon',pers,'').
-nr('Jav',subst,'').
 nr('Jav',subst,'').
 nr('Jaund',subst,'').
 nr('Jaroslav',pers,'').
@@ -1158,6 +1172,7 @@ nr('Elb',subst,'').
 nr('Elam',subst,'').
 nr('Ekvador',subst,'8').
 nr('Ejnŝtejn',pers,'').
+nr('Ejnstejn',subst,'').
 nr('Ejnstejn',pers,'').
 nr('Ejfel',subst,'').
 nr('Egipti',subst,'').
@@ -1180,7 +1195,6 @@ nr('Dubaj',subst,'').
 nr('Duala',subst,'').
 nr('Dresden',subst,'').
 nr('Drent',subst,'').
-nr('Dovr',subst,'').
 nr('Dovr',subst,'').
 nr('Dover',subst,'').
 nr('Dorote',pers,'').
@@ -1281,6 +1295,7 @@ nr('Bocvan',subst,'').
 nr('Blis',subst,'').
 nr('Blez',subst,'').
 nr('Blazi',pers,'').
+nr('Bjalistok',subst,'').
 nr('Biŝkek',subst,'').
 nr('Bizanti',subst,'').
 nr('Bizanci',subst,'').
@@ -1307,6 +1322,7 @@ nr('Benedikt',pers,'').
 nr('Belorusi',subst,'').
 nr('Beliz',subst,'').
 nr('Belgi',subst,'').
+nr('Belfast',subst,'').
 nr('Belarusi',subst,'').
 nr('Bel-Horizont',subst,'').
 nr('Bejrut',subst,'').
@@ -1342,6 +1358,7 @@ nr('Baham',subst,'').
 nr('Baha',subst,'').
 nr('Bagdad',subst,'').
 nr('Bagavadgit',subst,'').
+nr('Baden-Virtemberg',subst,'').
 nr('Badaĥoz',subst,'').
 nr('Babiloni',subst,'').
 nr('Babilon',subst,'').
@@ -1448,8 +1465,8 @@ nr('Alfons',pers,'').
 nr('Alep',subst,'').
 nr('Aleksandri',subst,'').
 nr('Aleksandr',pers,'*').
-nr('Albert',pers,'').
 nr('Albert',subst,'').
+nr('Albert',pers,'').
 nr('Albani',subst,'').
 nr('Alask',subst,'').
 nr('Alan',pers,'').
@@ -1481,6 +1498,7 @@ nr('Abel',pers,'').
 nr('Abas',pers,'').
 nr_('ŝverin',subst,'').
 nr_('ŝopen',subst,'').
+nr_('ŝlesvigholstini',subst,'').
 nr_('ŝlejer',subst,'').
 nr_('ŝjian',subst,'').
 nr_('ŝiva',subst,'').
@@ -1548,6 +1566,7 @@ nr_('zagreb',subst,'').
 nr_('vurtemberg',subst,'').
 nr_('vulgat',subst,'').
 nr_('vuhan',subst,'').
+nr_('vroclav',subst,'').
 nr_('volter',subst,'').
 nr_('volt',subst,'').
 nr_('volsung',subst,'').
@@ -1592,6 +1611,7 @@ nr_('velington',subst,'').
 nr_('vaŝinton',subst,'').
 nr_('vaŝington',subst,'*').
 nr_('vaĝrajan',subst,'').
+nr_('vatt',subst,'e').
 nr_('vatikan',subst,'').
 nr_('vat',pers,'').
 nr_('varsovi',subst,'*').
@@ -1629,6 +1649,7 @@ nr_('ukraini',subst,'').
 nr_('ugand',subst,'').
 nr_('tviter',subst,'').
 nr_('tuval',subst,'').
+nr_('turus',subst,'').
 nr_('turkmeni',subst,'').
 nr_('turki',subst,'').
 nr_('turingi',subst,'').
@@ -1723,19 +1744,19 @@ nr_('stanislav',pers,'').
 nr_('srilank',subst,'').
 nr_('spinoz',pers,'').
 nr_('soveti',subst,'').
+nr_('sopot',subst,'').
 nr_('somali',subst,'').
 nr_('solutre',subst,'').
 nr_('sokrat',pers,'').
 nr_('sofokl',pers,'').
-nr_('sofi',pers,'*').
 nr_('sofi',subst,'').
+nr_('sofi',pers,'*').
 nr_('sloveni',subst,'').
 nr_('slovaki',subst,'').
 nr_('slavon',subst,'').
 nr_('skoti',subst,'').
 nr_('skopj',subst,'').
 nr_('skiti',subst,'').
-nr_('skeld',subst,'').
 nr_('skeld',subst,'').
 nr_('skandinavi',subst,'').
 nr_('skajp',subst,'').
@@ -1777,6 +1798,7 @@ nr_('saĥalen',subst,'').
 nr_('savoj',subst,'').
 nr_('saturn',subst,'').
 nr_('saskaĉevan',subst,'').
+nr_('sarland',subst,'').
 nr_('sarajev',subst,'').
 nr_('sar',subst,'').
 nr_('santome',subst,'').
@@ -1797,8 +1819,8 @@ nr_('sambr',subst,'').
 nr_('samarkand',subst,'').
 nr_('samari',subst,'').
 nr_('salvador',subst,'').
-nr_('salomon',pers,'').
 nr_('salomon',subst,'').
+nr_('salomon',pers,'').
 nr_('salafism',subst,'').
 nr_('sajgon',subst,'').
 nr_('sajan',subst,'').
@@ -1939,8 +1961,8 @@ nr_('osvald',pers,'').
 nr_('ostend',subst,'').
 nr_('osman',pers,'').
 nr_('osl',subst,'').
-nr_('oskar',pers,'').
 nr_('oskar',subst,'').
+nr_('oskar',pers,'').
 nr_('osak',subst,'').
 nr_('orlean',subst,'').
 nr_('ork',subst,'').
@@ -1981,6 +2003,7 @@ nr_('novosibirsk',subst,'').
 nr_('novial',subst,'').
 nr_('novgorod',subst,'').
 nr_('norvegi',subst,'').
+nr_('nordrejn-Vestfali',subst,'').
 nr_('noaĥ',pers,'').
 nr_('niĝer',subst,'').
 nr_('niĉiren',subst,'').
@@ -2053,6 +2076,7 @@ nr_('molier',pers,'').
 nr_('moldavi',subst,'').
 nr_('mohamed',pers,'').
 nr_('mogadiŝ',subst,'').
+nr_('mocart',subst,'').
 nr_('mocart',pers,'').
 nr_('mjanma',subst,'').
 nr_('miŝna',subst,'').
@@ -2078,14 +2102,17 @@ nr_('meĥlen',subst,'').
 nr_('mezopotami',subst,'').
 nr_('metodi',pers,'').
 nr_('merkur',subst,'').
+nr_('mengzi',subst,'e').
 nr_('mengzi',subst,'').
 nr_('menefr',subst,'').
 nr_('mendelev',pers,'').
 nr_('mence',subst,'').
 nr_('memfis',subst,'').
 nr_('melburn',subst,'').
+nr_('meksiki',subst,'e').
 nr_('meksik',subst,'8').
 nr_('mekong',subst,'').
+nr_('meklenburgo-Antaŭpomeri',subst,'').
 nr_('meklenburgi',subst,'').
 nr_('meklenburg',subst,'').
 nr_('mekk',subst,'').
@@ -2239,6 +2266,7 @@ nr_('kulomb',pers,'').
 nr_('kub',subst,'8').
 nr_('kuala-Lumpur',subst,'').
 nr_('ksitigarb',subst,'').
+nr_('ksenofont',subst,'').
 nr_('ksenofont',pers,'').
 nr_('ksenofon',pers,'').
 nr_('ksaver',pers,'').
@@ -2250,6 +2278,7 @@ nr_('kristian',pers,'').
 nr_('krist',subst,'*').
 nr_('krime',subst,'').
 nr_('kret',subst,'').
+nr_('krakov',subst,'').
 nr_('koŝi',subst,'').
 nr_('kotdivuar',subst,'').
 nr_('kostarik',subst,'8').
@@ -2266,6 +2295,7 @@ nr_('konstantinopol',subst,'').
 nr_('konstanten',pers,'').
 nr_('konrad',pers,'').
 nr_('kong',subst,'').
+nr_('konfuzi',subst,'e').
 nr_('konfuce',pers,'').
 nr_('konektikut',subst,'').
 nr_('konakri',subst,'').
@@ -2273,6 +2303,7 @@ nr_('komsomol',subst,'').
 nr_('komod',subst,'').
 nr_('komeni',subst,'').
 nr_('kolĥid',subst,'').
+nr_('kolĉid',subst,'e').
 nr_('kolĉid',subst,'').
 nr_('kolumbi',subst,'').
 nr_('kolumb',pers,'').
@@ -2309,6 +2340,7 @@ nr_('kembriĝ',subst,'').
 nr_('kelvin',pers,'').
 nr_('kebeki',subst,'').
 nr_('kebek',subst,'').
+nr_('kaŭkazi',subst,'e').
 nr_('kaŭkaz',subst,'').
 nr_('kaŝmir',subst,'').
 nr_('kazimir',pers,'').
@@ -2391,7 +2423,6 @@ nr_('jenisej',subst,'').
 nr_('jemen',subst,'').
 nr_('jehov',subst,'').
 nr_('jazon',pers,'').
-nr_('jav',subst,'').
 nr_('jav',subst,'').
 nr_('jaund',subst,'').
 nr_('jaroslav',pers,'').
@@ -2639,6 +2670,7 @@ nr_('elb',subst,'').
 nr_('elam',subst,'').
 nr_('ekvador',subst,'8').
 nr_('ejnŝtejn',pers,'').
+nr_('ejnstejn',subst,'').
 nr_('ejnstejn',pers,'').
 nr_('ejfel',subst,'').
 nr_('egipti',subst,'').
@@ -2661,7 +2693,6 @@ nr_('dubaj',subst,'').
 nr_('duala',subst,'').
 nr_('dresden',subst,'').
 nr_('drent',subst,'').
-nr_('dovr',subst,'').
 nr_('dovr',subst,'').
 nr_('dover',subst,'').
 nr_('dorote',pers,'').
@@ -2762,6 +2793,7 @@ nr_('bocvan',subst,'').
 nr_('blis',subst,'').
 nr_('blez',subst,'').
 nr_('blazi',pers,'').
+nr_('bjalistok',subst,'').
 nr_('biŝkek',subst,'').
 nr_('bizanti',subst,'').
 nr_('bizanci',subst,'').
@@ -2788,6 +2820,7 @@ nr_('benedikt',pers,'').
 nr_('belorusi',subst,'').
 nr_('beliz',subst,'').
 nr_('belgi',subst,'').
+nr_('belfast',subst,'').
 nr_('belarusi',subst,'').
 nr_('bel-Horizont',subst,'').
 nr_('bejrut',subst,'').
@@ -2823,6 +2856,7 @@ nr_('baham',subst,'').
 nr_('baha',subst,'').
 nr_('bagdad',subst,'').
 nr_('bagavadgit',subst,'').
+nr_('baden-Virtemberg',subst,'').
 nr_('badaĥoz',subst,'').
 nr_('babiloni',subst,'').
 nr_('babilon',subst,'').
@@ -2929,8 +2963,8 @@ nr_('alfons',pers,'').
 nr_('alep',subst,'').
 nr_('aleksandri',subst,'').
 nr_('aleksandr',pers,'*').
-nr_('albert',pers,'').
 nr_('albert',subst,'').
+nr_('albert',pers,'').
 nr_('albani',subst,'').
 nr_('alask',subst,'').
 nr_('alan',pers,'').
