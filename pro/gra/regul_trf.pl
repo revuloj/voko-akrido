@@ -49,8 +49,10 @@ reduce_full(Term,Flat) :-
 reduce_([],[],_).
 
 % oficialeco: ^.. -> [..]
-reduce_([0'^,0'(,0'*,0')|Ls],[0'[,0'*,0']|F],DelLetters) :- !, 
+reduce_([0'^,0'(,Ofc,0')|Ls],[0'[,Ofc,0']|F],DelLetters) :- 
+  memberchk(Ofc,[0'*,0'!,0'+]), !, 
   reduce_(Ls,F,DelLetters). % ^(*) -> [*]
+
 reduce_([0'^|Ls],Reduced,DelLetters) :- !, 
   reduce_ofc(Ls,Ofc,Rest), % ^9 -> [9] ktp
   reduce_(Rest,R1,DelLetters),
@@ -84,7 +86,8 @@ reduce_ofc(Ls,[0'[|Ofc],Rest) :-
   append(O,[0']],Ofc).
 
 reduce_ofc_([L|Ls],[L|Ofc],Rest) :-
-  string_code(_,"1234567890*e",L),!,
+  string_code(_,"1234567890*!+",L),!, % fakte * ! + ne devus okazi tie ĉi, 
+                    % ĉar anstataŭ inter (..) ili aperas citile (vd. supre)
   reduce_ofc_(Ls,Ofc,Rest). 
 
 reduce_ofc_(Ls,[],Ls):-!.

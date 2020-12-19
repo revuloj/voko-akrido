@@ -11,18 +11,23 @@ body {
 .mlg {font-weight: bold}
 
 /* neoficiala radiko 
-  metu post oficialaj, ĉar povas aperi listo de pluraj klasoj po vorto
-*/
-.o_n {
-    color: blue;
+  metu post oficialaj, ĉar povas aperi listo de pluraj klasoj po vorto */
+.o_n { color: blue; }
+/* evitinda radiko */
+.o_evi { color: #c11; }
+
+
+#analizo_rezulto,
+#legendo {
+  max-width: 45em;
 }
 
 #analizo_rezulto {
   border: 1px dotted orange;
-  max-width: 45em;
 }
 
-#analizo_rezulto sup {
+#analizo_rezulto sup,
+#legendo sup {
     font-size: 8pt;
 }
 

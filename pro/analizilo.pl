@@ -400,6 +400,10 @@ uskleco(_,_,'',Analizita,Analizita).
 
 % oficialeco enestas kiel [...]
 % ni enmetos <sup>...</sup> tiuloke
+% plibonigu anst. serĉi kaj anstaŭigi [...]
+% estus pli bone difini formulbazitan
+% transformilon Analizita -> HTML
+% kaj Analizita -> Text, evtl-e ankaŭ JSON?
 oficialeco(A,[Ofc|ORest],A1) :-
   sub_atom(A,Left,1,_,'['),
   sub_atom(A,Right,1,_,']'),!,
@@ -410,7 +414,7 @@ oficialeco(A,[Ofc|ORest],A1) :-
   % malplena krampo signifas neoficiala!
   Len is Right-Left-1, 
   once((
-    Len = 0,
+    Len = 0, % ne devus plu oakzi, ĉar ni nun uzas '+' ans. '' por neoficialaj
     Ofc = n,
     atomic_list_concat([ALeft,ARest],A1)
     ;
@@ -430,6 +434,8 @@ ofc_classes(LOfc,Classes) :-
   atomic_list_concat(CSet,' ',Classes).
 
 ofc_cls('*','o_f'):-!.
+ofc_cls('!','evi'):-!.
+ofc_cls('+','o_n'):-!.
 ofc_cls(O,C) :- atom_concat(o_, O, C).
 
 
