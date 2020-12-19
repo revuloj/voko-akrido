@@ -2,7 +2,6 @@ mlg('DNA').
 mlg('RNA').
 mlg('AF').
 mlg('AFN').
-mlg('AF').
 mlg('CF').
 mlg('ZA').
 mlg('AL').
@@ -12,7 +11,6 @@ mlg('AO').
 mlg('AG').
 mlg('SA').
 mlg('AR').
-mlg('AM').
 mlg('AM').
 mlg('AU').
 mlg('AT').
@@ -63,14 +61,12 @@ mlg('GM').
 mlg('GH').
 mlg('GLAT').
 mlg('DE').
-mlg('DE').
 mlg('GT').
 mlg('GR').
 mlg('GD').
 mlg('GL').
 mlg('GY').
 mlg('GF').
-mlg('GT').
 mlg('GN').
 mlg('GW').
 mlg('GQ').
@@ -98,11 +94,9 @@ mlg('CA').
 mlg('GE').
 mlg('QA').
 mlg('KZ').
-mlg('KZ').
 mlg('KE').
 mlg('KT').
 mlg('CY').
-mlg('KG').
 mlg('KG').
 mlg('KI').
 mlg('LKK').
@@ -126,7 +120,6 @@ mlg('LY').
 mlg('LT').
 mlg('MG').
 mlg('MK').
-mlg('MK').
 mlg('MY').
 mlg('MW').
 mlg('MV').
@@ -138,14 +131,11 @@ mlg('MA').
 mlg('MH').
 mlg('MU').
 mlg('MB').
-mlg('MT').
 mlg('MX').
-mlg('MOM').
 mlg('MOM').
 mlg('FM').
 mlg('MD').
 mlg('MC').
-mlg('MK').
 mlg('IMF').
 mlg('MZ').
 mlg('UN').
@@ -193,7 +183,6 @@ mlg('SS').
 mlg('SZ').
 mlg('SE').
 mlg('TJ').
-mlg('TJ').
 mlg('TW').
 mlg('TH').
 mlg('TZ').
@@ -205,7 +194,6 @@ mlg('NATO').
 mlg('TT').
 mlg('TN').
 mlg('MOT').
-mlg('TM').
 mlg('TM').
 mlg('TR').
 mlg('TV').

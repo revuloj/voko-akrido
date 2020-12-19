@@ -371,7 +371,11 @@ assert_nomo_minuskla(Nomo,Speco,Ofc) :-
 assert_mlg(Mallongigoj) :-
     forall(
       member(Mlg,Mallongigoj),
-      assertz(mlg(Mlg))
+      once((
+        mlg(Mlg) % se jam enestas, ne re-registru !
+        ;
+        assertz(mlg(Mlg))
+      ))
     ).
 	  
 
