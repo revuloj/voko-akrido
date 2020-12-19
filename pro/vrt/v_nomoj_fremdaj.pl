@@ -18,6 +18,7 @@ nf('Christoph',pers).
 nf('Christopher',pers).
 nf('Clark',pers).
 nf('David',pers).
+nf('Donald',pers).
 nf('Dublin',subst).
 nf('Duisburg',subst).
 nf('Duncan',pers).
@@ -35,6 +36,8 @@ nf('Hans',pers).
 nf('Harry',pers).
 nf('Instagram',subst).
 nf('Izrael',subst).
+nf('Jerome',pers).
+nf('Joseph',pers).
 nf('Kafka',pers).
 nf('Kalocsay',pers).
 nf('Margarita',pers).
