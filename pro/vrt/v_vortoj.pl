@@ -51,6 +51,7 @@ v('ho',intj,'*').
 v('hieraŭ',adv,'*').
 v('hodiaŭ',adv,'*').
 v('hura',intj,'3').
+v('ia',adj,'*').
 v('ial',adv,'*').
 v('iam',adv,'*').
 v('iel',adv,'*').
