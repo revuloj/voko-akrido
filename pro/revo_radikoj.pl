@@ -8,6 +8,12 @@
 
 :- dynamic radiko/3, evi/2, mlg/1, nr/3, nr_/3, vorto/3.
 
+:-consult('vrt/v_esceptoj2.pl').
+:-consult('vrt/v_mallongigoj.pl').
+:-consult('vrt/v_vortoj.pl').
+:-consult('vrt/v_radikoj.pl').
+
+
 revo_xml('./xml/*.xml').
 voko_rdf_klasoj('./owl/voko.rdf').
 %revo_xml('/home/revo/revo/xml/*.xml').
@@ -278,10 +284,9 @@ revo_art(Dosiero) :-
                 % do ni ne plu serĉas aliajn radikojn //art/kap/rad 
       revo_mlg(DOM,Mallongigoj),
 
-      % ne jam preta, teste... var - tiel NI TROVOS NUR UNU var, sed foje enestas du!
+      % ne jam preta, teste... var - TIEL NI TROVOS NUR UNU var! sed foje enestas du!
       once((
-        revo_var(DOM,VarRad,VOfc),
-          format('DBG var: ~w: ~w~n',[Dosiero,VarRad])
+        revo_var(DOM,VarRad,VOfc) %, format('DBG var: ~w: ~w~n',[Dosiero,VarRad])
         ; true
       ))
           
@@ -310,6 +315,13 @@ assert_vorto(DOM,Radiko,Speco,Ofc) :-
     nomo_majuskla(Radiko),
     assertz(nr(Radiko,Speco,Ofc)),
     assert_nomo_minuskla(Radiko,Speco,Ofc)
+    ;
+    % la vorto jam enestas kun samaj indikoj en la baza vortaro, tiam ni
+    % ne denove registru ĝin
+    Speco == intj,
+    vorto(Radiko,Speco,Ofc)
+    ;
+    radiko(Radiko,Speco,Ofc)
     ;
     % interjekciojn registru kiel vort(et)o
     Speco == intj,
