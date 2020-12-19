@@ -4,8 +4,13 @@
 
 % "normalajn radikojn" legu el Revo-radikoj
 
+% tiuj ne rekoniĝas kiel homo/besto el Revo-artiokoloj,
+% manke de klaso besta aŭ parenca...
 r('sinjor',best,*).
 r('Sinjor',best,*).
+r('edz',best,*).
+r('reĝ',best,*).
+r('princ',best,*).
 
 % ni ordigis la vortaro tiel, ke ofc='' venas post aliaj!
 % r('est',ntr,*). % pro konfuzeblo kun nefundamenta est/o (= estono).
