@@ -18,14 +18,19 @@
 % rule_ref (rv_sen_fin)...
 
 % 'e' = escepto
+rv_sen_fin(e,subst) <- ban/dom. % ne band-om
 rv_sen_fin(e,adj) <- 'daŭr'/i~pov. % 
 
 rv_sen_fin(e,tr) <- diskut. % por eviti misanalizon dis/kut
+rv_sen_fin(e,tr) <- en/ter/ig % ne ent/er/ig
 rv_sen_fin(e,ntr) <- glu-mark. % por eviti misanalizon glum-ark
 
 rv_sen_fin(e,subst) <- grup/et. % por eviti analizon grupet/
 
 rv_sen_fin(e,subst) <- jar/dek. % por eviti analizon jard-ek/
+
+rv_sen_fin(e,subst) <- kol-har/ar. % ne kol-Harar/
+
 
 rv_sen_fin(e,ntr) <- membr/'iĝ'. % por eviti misanalizon mem/briĝ
 rv_sen_fin(e,subst) <- membr/o-kvant. % por eviti misanalizon mem/brok/vant
@@ -39,6 +44,17 @@ rv_sen_fin(e,adj) <- respond/ec.
 rv_sen_fin(e,subst) <- post/e/ul.
 rv_sen_fin(e,adj) <- postul/em. % por eviti misanalizon post/ulem
 rv_sen_fin(e,adj) <- postul/at. % por eviti misanalizon postulat/
+
+rv_sen_fin(e,adv) <- prov/ant. % ne pro/vant
+rv_sen_fin(e,ntr) <- sen/vest/'iĝ'. % ne sen/vestiĝ/
+
+
+%rv_sen_fin(e,best) <- sinjor. % evitu misanalizon per sufikso nj
+
+rv_sen_fin(e,subst) <- suveren/ec. % evitu misnalizon suv/er+en/ec
+
+rv_sen_fin(e,subst) <- 'ŝak'/tabul.
+rv_sen_fin(e,pers) <- traf/at. % evitu misanalizon tra/fat/
 
 %rad(e,adj) <= si/a.
 rv_sen_fin(e,adj) <- mult/e+kost.

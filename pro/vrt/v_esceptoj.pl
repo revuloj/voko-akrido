@@ -1,5 +1,7 @@
 /************ 
  * esceptaj vortoj ne sekvantaj tute la normalajn derivadregulojn
+ * 
+ * Ne plu uzata tiel, ni nun dismetis al vrt/eseceptoj2.pl kaj gra/esceptoj.pl
 ************/
 r('post/e/ul',subst) --> "posteul".
 r('pra',adj) --> "pra".
