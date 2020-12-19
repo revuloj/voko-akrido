@@ -270,6 +270,7 @@ p('nenia',adj,subst). % de nenia speco -> neniaspeca
 u(kiu,pron).
 u(tiu,pron).
 u(iu,pron).
+u(unu,pron).
 u(neniu,pron).
 u('ĉiu',pron).
 u(kia,adj).
