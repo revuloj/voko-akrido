@@ -4,6 +4,14 @@
 
 % "normalajn radikojn" legu el Revo-radikoj
 
+% ni ordigis la vortaro tiel, ke ofc='' venas post aliaj!
+% r('est',ntr,'*'). % pro konfuzeblo kun nefundamenta est/o (= estono).
+% r('kri',ntr,'*'). % konfuzeblo kun kri/o (indiano)
+% r('kri',tr,'*'). % konfuzeblo kun kri/o (indiano
+% r('bel',adj,'*'). % konfuzeblo kun bel/o (mezuro)
+% r('pi',adj,'*'). % kopnfuzeblo kun pi/o (greka litero)
+
+
 /*****************
   personaj pronomoj kiel rad. 
 *****************/

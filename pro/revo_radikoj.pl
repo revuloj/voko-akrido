@@ -142,19 +142,22 @@ skribu_radikojn :-
 
 skribu_radikojn(Out) :-
   setof(
-    Rad-(Spec,Ofc),
+    Rad-(Ofc,Spec), % ordigu oficialecon antaŭ vortspeco por havi '' post la oficialaj!
     radiko(Rad,Spec,Ofc),
     Chiuj),
   %keysort(Chiuj,Ordigitaj),
   reverse(Chiuj,Renversitaj),
   forall(
-    member(R-(S,O),Renversitaj), % renversu por ke "senil" analiziĝu antaŭ "sen/il" ktp.
+    member(R-(O_,S),Renversitaj), % renversu por ke "senil" analiziĝu antaŭ "sen/il" ktp.
     % format(Out,'r(''~w'',~w) --> "~w".~n',[R,S,R])
-    once((
-      r(R,S,O) % se estas en la baza vortaro ne skribu al revo-vortaro
-      ;
-      format(Out,'r(''~w'',~w,''~w'').~n',[R,S,O]) 
-    ))
+    (
+      vrt_ofc(O_,O),
+      once((
+        r(R,S,O) % se estas en la baza vortaro ne skribu al revo-vortaro
+        ;
+        format(Out,'r(~q,~q,~q).~n',[R,S,O]) 
+      ))
+    )
   ).
 
 skribu_vortojn :-
@@ -168,18 +171,21 @@ skribu_vortojn :-
 
 skribu_vortojn(Out) :-
   setof(
-    Vrt-(Spec,Ofc),
+    Vrt-(Ofc,Spec), % ordigu oficialecon antaŭ vortspeco por havi '' post la oficialaj!
     vorto(Vrt,Spec,Ofc),
     Chiuj),
   %keysort(Chiuj,Ordigitaj),
   reverse(Chiuj,Renversitaj),
   forall(
-    member(V-(S,O),Renversitaj), 
-    once((
-      v(V,S,O) % se estas en la baza vortaro ne skribu al revo-vortaro
-      ;
-      format(Out,'v(''~w'',~w,''~w'').~n',[V,S,O])  
-    ))
+    member(V-(O_,S),Renversitaj), 
+    (
+      vrt_ofc(O_,O),
+      once((
+        v(V,S,O) % se estas en la baza vortaro ne skribu al revo-vortaro
+        ;
+        format(Out,'v(~q,~q,~q).~n',[V,S,O])  
+      ))
+    )
   ).
 
 skribu_nomojn :-
@@ -196,26 +202,32 @@ skribu_nomojn :-
 
 skribu_nomojn_maj(Out) :-
   setof(
-    Rad-(Spec,Ofc),
+    Rad-(Ofc,Spec), % ordigu oficialecon antaŭ vortspeco por havi '' post la oficialaj!
     nr(Rad,Spec,Ofc),
     Chiuj),
   %keysort(Chiuj,Ordigitaj),
   reverse(Chiuj,Renversitaj),
   forall(
-    member(R-(S,O),Renversitaj),
-    format(Out,'nr(''~w'',~w,''~w'').~n',[R,S,O])  
+    member(R-(O_,S),Renversitaj),
+    (
+      vrt_ofc(O_,O),
+      format(Out,'nr(~q,~q,~q).~n',[R,S,O])  
+    )
   ).
 
 skribu_nomojn_min(Out) :-
   setof(
-    Rad-(Spec,Ofc),
+    Rad-(Ofc,Spec), % ordigu oficialecon antaŭ vortspeco por havi '' post la oficialaj!
     nr_(Rad,Spec,Ofc),
     Chiuj),
   %keysort(Chiuj,Ordigitaj),
   reverse(Chiuj,Renversitaj),
   forall(
-    member(R-(S,O),Renversitaj), 
-    format(Out,'nr_(''~w'',~w,''~w'').~n',[R,S,O])  
+    member(R-(O_,S),Renversitaj), 
+    (
+      vrt_ofc(O_,O),
+      format(Out,'nr_(~q,~q,~q).~n',[R,S,O])
+    )
   ).
 
 skribu_evitindajn :-
@@ -245,7 +257,7 @@ skribu_mallongigojn :-
 skribu_mallongigojn(Out) :-
   forall(
     mlg(Mlg),
-    format(Out,'mlg(''~w'').~n',[Mlg])
+    format(Out,'mlg(~q).~n',[Mlg])
   ).
 
 load_voko_classes :-
@@ -317,24 +329,25 @@ revo_art(Dosiero) :-
 
 assert_vorto(DOM,Radiko,Speco,Ofc) :-
   %%assert_radiko(DOM,Radiko,Speco),
+  ofc_vrt(Ofc,OVrt),!,
 
   once((
     % se temas pri majuskla nomo, registru 
     % kiel nomradiko, kaj ankau minuskle	
     nomo_majuskla(Radiko),
-    assertz(nr(Radiko,Speco,Ofc)),
-    assert_nomo_minuskla(Radiko,Speco,Ofc)
+    assertz(nr(Radiko,Speco,OVrt)),
+    assert_nomo_minuskla(Radiko,Speco,OVrt)
     ;
     % interjekciojn registru kiel vort(et)o
     Speco == intj,
-    assertz(vorto(Radiko,Speco,Ofc))
+    assertz(vorto(Radiko,Speco,OVrt))
     ;
     % normalaj radikoj
-    assertz(radiko(Radiko,Speco,Ofc)),
+    assertz(radiko(Radiko,Speco,OVrt)),
     % se la radiko aldone uzighas kiel interjekcio...
     once((
-      revo_intj(DOM,_),
-      assertz(vorto(Radiko,intj,Ofc))
+      revo_intj(DOM,_),      
+      assertz(vorto(Radiko,intj,OVrt))
       ;
       true
     ))
@@ -368,7 +381,8 @@ assert_nomo_minuskla(Nomo,Speco,Ofc) :-
     atom_codes(Nomo,[K|Literoj]),
     upper_lower(K,M),
     atom_codes(MNomo,[M|Literoj]),
-    assertz(nr_(MNomo,Speco,Ofc)).
+    ofc_vrt(Ofc,OVrt),!,
+    assertz(nr_(MNomo,Speco,OVrt)).
 
 assert_mlg(Mallongigoj) :-
     forall(
@@ -530,6 +544,24 @@ revo_intj(DOM,VSpeco) :-
    xpath(Drv,/drv/kap(text),''),
    xpath(Drv,/drv/gra/vspec(text),VSpeco),
    (VSpeco = sonimito ;  sub_atom(VSpeco,_,_,_,ekkrio)).
+
+% ĉar ni inverse ordigos la vortaron ni
+% uzos signojn por oficialeco, kiuj en
+% Askio estas en la dezirata loko:
+% ! = evitinda
+% + = vorto neoficiale aldonita
+% 1-9, 1953 ks = per oficiala aldono
+% F = fundamenta
+ofc_vrt('*','F').
+ofc_vrt('','+').
+ofc_vrt('e','!').
+ofc_vrt(O,O) :- nonvar(O).
+ofc_vrt(_,'+').
+
+% retraduki F -> * antaŭ sekurigi!
+vrt_ofc('F','*').
+vrt_ofc(O,O).
+
 
 nomo_majuskla(Nomo) :-
   atom_codes(Nomo,[L|_]),
