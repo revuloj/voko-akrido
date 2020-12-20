@@ -3,14 +3,15 @@ when_doc_ready(
     function() { 
         //const submit = document.getElementById("analizo_submit");
         const form = document.getElementById("analizo_form");
-        const url = form.getAttribute("action");
+        const shrg_btn = document.getElementById("url_shargi");
+        const form_url = form.getAttribute("action");
         //form.removeAttribute("action");
 
         form.addEventListener("submit", function(event) {
             event.preventDefault();
 
             const teksto = document.getElementById("analizo_teksto").value;
-            HTTPRequest('POST', url, {
+            HTTPRequest('POST', form_url, {
                     teksto: teksto
                 },
                 function(data) {
@@ -23,7 +24,25 @@ when_doc_ready(
         
                     rezulto.append(...doc.body.children);
                 });
-        })
+        });
+
+        shrg_btn.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          const url = document.getElementById("analizo_url").value;
+          if (url) {
+            HTTPRequest('POST', "/http_proxy", {
+              url: url
+            },
+            function(data) {
+                // Success!
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(data,"text/html");
+                const teksto = document.getElementById("analizo_teksto");
+                text.value = doc.textContent;
+            });
+          }
+        });
     }
 );
 

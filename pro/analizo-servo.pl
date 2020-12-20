@@ -16,7 +16,7 @@
 %:- use_module(library(http/http_openid)).
 :- use_module(library(http/http_path)).
 :- use_module(library(http/html_write)).
-%%:- use_module(library(http/http_open)).
+:- use_module(library(http/http_open)).
 %:- use_module(library(settings)).
 :- use_module(library(xpath)).
 
@@ -52,6 +52,8 @@ http:location(akrido,root(akrido),[]).
 :- http_handler(root(analizo), analizo,[]). % [authentication(ajaxid)]).
 % analinioj akceptas JSON kun po-linia analizaĵo kaj redonas kontrolendajn vortoj kun lininumeroj
 :- http_handler(root(analinioj), analinioj,[]). % [authentication(ajaxid)]).
+% proxy: legu retpaĝon de alia servilo (pro CORS tio ofte ne eblas rekte de la kliento!)
+:- http_handler(root(http_proxy), http_proxy,[]). % [authentication(ajaxid)]).
 % statikaj dosieroj por retpaĝa interfaco
 :- http_handler(akrido(.), http_reply_from_files(web(.),[]),[prefix]). % [authentication(ajaxid)]).
 
@@ -126,3 +128,14 @@ analizu_linion(Mode,N=Line,N=Rez) :-
 
 % por ekskludi ĉiujn liniojn en la rezulto, kiuj ne entenas kontrolendajn aŭ eraroj/neanalizeblajn vortojn
 ana_ekskludo(kontrolendaj,X) :- memberchk(X.takso,[bona,signo,nombro,mlg]).
+
+http_proxy(Request) :-
+    http_parameters(Request,
+	    [
+	    url(Url, [length<500])
+	    ]),
+    http_open(Url,StreamIn,[status_code(_Status),headers(content_type(ContentType))]),!,
+    format('Content-type: ~w~n~n',[ContentType]),
+    copy_stream_data(StreamIn, current_output),
+    close(StreamIn).
+    
