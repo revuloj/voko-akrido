@@ -476,6 +476,9 @@ vorto('Kf',Spc) <= &kv_sen_fin('vD',Vs) / f(_,Fs) ~> (subspc(Vs,Fs),
      Spc=Vs 
    ; Spc=Fs).
 
+% ekz-e de~post, al~sur k.s.
+vorto('vv',prep) <= v(_,prep,_) ~ v(_,prep,_).  
+
 kv_sen_fin('DD',Spc) <= &kv_adj('D',adj) ~ &kv_subst('D',Spc).
 kv_sen_fin('DD',Spc) <= &kv_adv('D',adv) ~ &kv_adj('D',Spc).
 kv_sen_fin('DD',Spc) <= &kv_adv('D',adv) ~ &kv_vrb('D',Spc).
@@ -519,6 +522,7 @@ antauvortoj('A+',Spc) <= &antauvorto(_,_) - &antauvortoj(_,Spc).
 % PLIBONIGU: oni povus pli flekseble tion kalkuli rikure
 % el la reguloj mem...(?)
 min_max_len(v,2,10).
+min_max_len(vv,4,13).
 min_max_len('V-',3,99).
 min_max_len('V-V',7,99).
 min_max_len(pv,5,13).

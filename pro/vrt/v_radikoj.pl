@@ -80,6 +80,7 @@ r('mil',nombr,*).
 ******************/
 
 r('ajn',adj,*).
+r('ambaŭ',adj,*).
 r('anstataŭ',adv,*).
 r('anstataŭ',tr,*).
 r('antaŭ',adv,*).
@@ -87,6 +88,7 @@ r('al',adv,*).
 r('antaŭ',adv,*).
 r('antaŭ',tr,*).
 r('apud',adv,*).
+r('baldaŭ',adj,*).
 r('ĉirkaŭ',adv,*).
 r('ĉirkaŭ',tr,*).
 r('dum',adv,*).
@@ -106,6 +108,7 @@ r('ne',tr,*).
 r('nun',adv,*).
 r('nur',adv,*).
 r('post',adv,*).
+r('preskaŭ',adj,*).
 r('preter',adv,*).
 r('per',tr,*).
 r('pli',adv,*).
