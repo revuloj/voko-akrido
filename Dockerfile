@@ -1,8 +1,13 @@
 FROM swipl:stable
 
+# Kreu kaj lanĉu per:
+#   docker build -t voko-akrido .
+#   docker run -p8081:8081 voko-akrido
+
 # FARENDA:
 #
-# Ĉar la skripto por prepari tekstojn funkcias per Perl
+# Ĉar la skripto por prepari Revo-artikol-tekstojn funkcias per Perl
+# (vd. sub bin/analizu_revo_* + elfiltru_rovojn.perl)
 # verŝajne estus bone dismeti ambaŭ funkcojn al diversaj kestoj.
 # Eble oni povas uzi du-fazan-kestigon, sed tiel fariĝus la
 # tekstoj nur unufoje - oni ja volas regule aktualigi la
@@ -13,7 +18,7 @@ FROM swipl:stable
 # per rettranssendo (scp, rsync, git...?)
 #
 # Principe oni povus ankaŭ reverki la transforman Perlo-skripton
-# en Prologo kaj uzi unu keston por ĉiuj tri taskoj ekz. lanĉante
+# en Prologo aŭ Bash kaj uzi unu keston por ĉiuj tri taskoj ekz. lanĉante
 # apartan instancon por ĉiu tasko.
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -51,10 +56,14 @@ RUN  mkdir xml && mkdir txt && mkdir tmp \
 #    http://localhost:8091/analizo?teksto=cxevalo
 
 USER akrido:users
-
+WORKDIR /home/akrido/pro
 CMD ["swipl",\
-    "-s","pro/analizo-servo.pl","-g","daemon","-t","halt(1)",\
-    "-p","agordo=etc","--","--workers=10","--port=8081","--no-fork"]
+    "-s","analizo-servo.pl","-g","daemon","-t","halt(1)",\
+    "--","--workers=10","--port=8081","--no-fork"]
+
+#CMD ["swipl",\
+#    "-s","pro/analizo-servo.pl","-g","daemon","-t","halt(1)",\
+#    "-p","agordo=etc","--","--workers=10","--port=8081","--no-fork"]
 
 #
 # 3) Por krei vortaron per revo_radikoj.sh.

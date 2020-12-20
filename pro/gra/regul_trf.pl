@@ -167,12 +167,12 @@ term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
 %? au alternative: rv_sen_fin(e,subst,Vrt,Rez,_Depth) :- Vrt = posteul, Rez = post/e/ul.
 
 term_expansion( RuleHead <- RuleBody , RuleTranslated ) :-
-  format('%# ~k ...',[RuleHead]),
-   reduce_full(RuleBody,Flat),
-   RuleHead =..  [RuleName|RuleArgs],
-   append(RuleArgs,[Flat,RuleBody,_Depth],Args),
-   RuleTranslated =.. [RuleName|Args],
-   format('bone!~n').
+  % silentu pri escpetoj, tro multaj linioj: format('%# ~k ...',[RuleHead]),
+  reduce_full(RuleBody,Flat),
+  RuleHead =..  [RuleName|RuleArgs],
+  append(RuleArgs,[Flat,RuleBody,_Depth],Args),
+  RuleTranslated =.. [RuleName|Args].
+  % silentu pri escpetoj, tro multaj linioj: format('bone!~n').
 % format('  ~w~n',[RuleTranslated]).
 
 

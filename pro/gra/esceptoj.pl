@@ -22,7 +22,7 @@ rv_sen_fin(e,subst) <- ban/dom. % ne band-om
 rv_sen_fin(e,adj) <- 'daŭr'/i~pov. % 
 
 rv_sen_fin(e,tr) <- diskut. % por eviti misanalizon dis/kut
-rv_sen_fin(e,tr) <- en/ter/ig % ne ent/er/ig
+rv_sen_fin(e,tr) <- en/ter/ig. % ne ent/er/ig
 rv_sen_fin(e,ntr) <- glu-mark. % por eviti misanalizon glum-ark
 
 rv_sen_fin(e,subst) <- grup/et. % por eviti analizon grupet/

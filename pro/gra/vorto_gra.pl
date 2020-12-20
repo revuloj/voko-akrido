@@ -9,7 +9,7 @@
 :- discontiguous vorto/5, '<='/2.
 :- dynamic min_max_len/3.
 
-:- format('%# legi kaj transformi gramatikajn regulojn...').
+:- format('%# legi kaj transformi gramatikajn regulojn...~n').
 :- consult(esceptoj).
 
 % ĉar ni ne rekte importas la vortaron, informu almenaŭ la sintakskontrolilon pri ĝia enhavo...
