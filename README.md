@@ -44,6 +44,14 @@ Ni ofertas ankaŭ servan interfacon, kiu estas uzata de la redaktilo por fone se
   kaj rericevi la erarojn kaj kontrolendajn vortojn. 
 
 ### Retpaĝo
- Fine, ni laboras pri retinterfaco uzebla de homo por enigi tekston por analizado.
+ Fine, ni laboras pri retinterfaco uzebla de homo por enigi tekston por analizado. Se vi havas `docker`vi povas
+ jam uzi simplan retpaĝon loke en via koputilo:
+ ```
+ docker build -t voko-akrido .
+ docker run -p8081:8081 voko-akrido
+```
+
+Poste iru la `http://localhost:8081`
+
 
 
