@@ -6,11 +6,12 @@
 
 % tiuj ne rekoniĝas kiel homo/besto el Revo-artiokoloj,
 % manke de klaso besta aŭ parenca...
+r('edz',best,*).
+r('parenc',parc,*). % permesu bo/parenc/
+r('princ',best,*).
+r('reĝ',best,*).
 r('sinjor',best,*).
 r('Sinjor',best,*).
-r('edz',best,*).
-r('reĝ',best,*).
-r('princ',best,*).
 
 % ni ordigis la vortaro tiel, ke ofc='' venas post aliaj!
 % r('est',ntr,*). % pro konfuzeblo kun nefundamenta est/o (= estono).
@@ -104,9 +105,11 @@ r('kontraŭ',adv,*).
 r('kontraŭ',tr,*).
 r('krom',adv,*).
 r('kun',adv,*).
+r('laŭ',adv,*).
 r('ne',tr,*).
 r('nun',adv,*).
 r('nur',adv,*).
+r('plej',adj,*).
 r('post',adv,*).
 r('preskaŭ',adj,*).
 r('preter',adv,*).

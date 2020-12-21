@@ -102,7 +102,7 @@ v('nu',intj,*).
 v('nul',nombr,*).
 v('nun',adv,*).
 v('nur',adv,*).
-v('ok',nomr,*).
+v('ok',nombr,*).
 v('ol',konj,*).
 v('per',prep,*).
 v('plej',adv,*).

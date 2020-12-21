@@ -143,6 +143,7 @@ p(re,verb).
 % pri transitivigaj, prefikse uzataj prepozicioj vd. malsupre
 
 p(de,verb).
+p(ekster,adj). % eksterordinara
 p(ekster,subst). % eksterlando
 p(kun,verb).
 p(sub,subst).
