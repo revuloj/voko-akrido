@@ -4,6 +4,8 @@ when_doc_ready(
         //const submit = document.getElementById("analizo_submit");
         const form = document.getElementById("analizo_form");
         const shrg_btn = document.getElementById("url_shargi");
+        const forg_btn = document.getElementById("analizo_forigu");
+        const kash_box = document.getElementById("analizo_kashu");
         const form_url = form.getAttribute("action");
         //form.removeAttribute("action");
 
@@ -39,8 +41,30 @@ when_doc_ready(
                 var parser = new DOMParser();
                 var doc = parser.parseFromString(data,"text/html");
                 const teksto = document.getElementById("analizo_teksto");
-                text.value = doc.textContent;
+                const normalized = doc.body.textContent
+                  .replace(/[\t ]+\n/g,"\n") // forigu spacojn antaŭ linirompoj
+                  .replace(/\n\n+/g,"\n\n") // maksimume du sinsekvaj linirompoj
+                  .replace(/([\.?!]\n)([^\n])/g,"\1\n\2"); // aldonu linirompon ĉe alineo
+                teksto.value = normalized;
             });
+          }
+        });
+
+        forg_btn.addEventListener("click", function(event) {
+          event.preventDefault();
+            document.getElementById("analizo_url").value='';
+            document.getElementById("analizo_teksto").value='';
+            document.getElementById("analizo_rezulto").textContent='';
+        });
+
+        kash_box.addEventListener("click", function(event) {
+          const kashu = event.target.checked;
+          const rezulto = document.getElementById("analizo_rezulto");
+
+          if (kashu) {
+            rezulto.classList.add("hidden_text");
+          } else {
+            rezulto.classList.remove("hidden_text");
           }
         });
     }

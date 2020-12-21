@@ -39,6 +39,9 @@
 :- initialization(help,main).
 %%%%%%%%%%%:- thread_initialization(thread_init).
 
+max_char(500000). % maksimuma longeco de analizenda teksto
+    % pli bone mallongigu kaj postulu sendi alineojn anst. tutaj dokumentoj!
+
 init :-
     set_prolog_flag(encoding,utf8).
 
@@ -79,9 +82,10 @@ daemon :-
 
 analizo(Request) :-
 %%    ajax_auth(Request),
+    max_char(MaxChr),
     http_parameters(Request,
 	    [
-	    teksto(Teksto, [length<150000])
+	    teksto(Teksto, [length<MaxChr])
 	    ]),
     format('Content-type: text/plain~n~n'),
     atomic_list_concat(Lines,'\n',Teksto),
@@ -133,9 +137,13 @@ http_proxy(Request) :-
     http_parameters(Request,
 	    [
 	    url(Url, [length<500])
-	    ]),
-    http_open(Url,StreamIn,[status_code(_Status),headers(content_type(ContentType))]),!,
+        ]),
+    debug(analizilo(proxy),'malfermonte ~q...',[Url]),
+    http_open(Url,StreamIn,[status_code(Status),header(content_type,ContentType)]),!,
+    debug(analizilo(proxy),'status: ~q, contentType: ~q',[Status,ContentType]),
     format('Content-type: ~w~n~n',[ContentType]),
+    set_stream(StreamIn,encoding(utf8)),
+    set_stream(current_output,encoding(utf8)),
     copy_stream_data(StreamIn, current_output),
     close(StreamIn).
     
