@@ -15,12 +15,7 @@ body {
 /* evitinda radiko */
 .o_evi { color: #c11; font-size: 12pt; }
 
-.hidden_text { 
-  font-size: 0;
-}
-.hidden_text span::before {
-  content: "\a0| ";
-}
+
 
 #analizo_rezulto,
 #legendo {
@@ -35,6 +30,15 @@ body {
 #legendo sup {
     font-size: 67%;
 }
+
+.hidden_text li p { 
+  font-size: 0;
+}
+
+.hidden_text span::before {
+  content: " \a0| ";
+}
+
 
 /*
 por aldoni skribilon cele al redaktado de artikolo: 

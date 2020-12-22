@@ -85,9 +85,11 @@ analizo(Request) :-
     max_char(MaxChr),
     http_parameters(Request,
 	    [
+        numero(Numero, [integer,optional(true)]),
 	    teksto(Teksto, [length<MaxChr])
 	    ]),
     format('Content-type: text/plain~n~n'),
+    (nonvar(Numero) -> format('<span class="nro">~d</span>',[Numero]);true),
     atomic_list_concat(Lines,'\n',Teksto),
     maplist(analizu_linion,Lines).
     % ni ne povas uzi concurrent_ dum ni skribas rekte al STDOUT!
