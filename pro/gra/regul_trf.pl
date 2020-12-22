@@ -173,7 +173,7 @@ term_expansion( RuleHead <- RuleBody , RuleTranslated ) :-
   append(RuleArgs,[Flat,RuleBody,_Depth],Args),
   RuleTranslated =.. [RuleName|Args].
   % silentu pri escpetoj, tro multaj linioj: format('bone!~n').
-% format('  ~w~n',[RuleTranslated]).
+  % format('  ~w~n',[RuleTranslated]).
 
 
 rule_head(RuleHead,Vrt,Rez,Depth,PredHead) :-

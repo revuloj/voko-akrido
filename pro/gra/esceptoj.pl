@@ -26,6 +26,7 @@
 % sed ni ne povas indiki tion momente, ni devus subteni trian argumenton en 
 % rule_ref (rv_sen_fin)...
 
+rv_sen_fin(h,best) <- ali+land/ul. % ne al/il+and/ul
 rv_sen_fin(h,tr) <- alt/ig. % ne al/tig
 
 rv_sen_fin(h,subst) <- ban/dom. % ne band-om
@@ -33,8 +34,8 @@ rv_sen_fin(h,subst) <- ban/dom. % ne band-om
 rv_sen_fin(h,adj) <- 'daŭr'/i~pov. % 
 rv_sen_fin(h,tr) <- diskut. % por eviti misanalizon dis/kut
 
+rv_sen_fin(h,best) <- eksterm/ant. % ne ent/er/ig
 rv_sen_fin(h,tr) <- en/ter/ig. % ne ent/er/ig
-
 rv_sen_fin(h,ntr) <- est/'iĝ'. % konfuzeblo "esti" kun "esto" (estono)
 
 rv_sen_fin(h,tr) <- far/ad. % ne analizu farad/
@@ -63,6 +64,7 @@ rv_sen_fin(h,adj) <- respond/ec.
 
 rv_sen_fin(h,subst) <- sak/strat.
 rv_sen_fin(h,ntr) <- sen/vest/'iĝ'. % ne sen/vestiĝ/
+rv_sen_fin(h,subst) <- sun-lev/'iĝ'.
 rv_sen_fin(h,subst) <- suveren/ec. % evitu misnalizon suv/er+en/ec
 
 rv_sen_fin(h,subst) <- 'ŝak'/tabul.
@@ -83,8 +85,12 @@ rv_sen_fin(e,subst) <- esperant/id.
 rv_sen_fin(e,subst) <- bel~art.
 
 % adverba anst. ellaso aŭ subst. finaĵo ĉe kunderivado/kunmetado
+
+rv_sen_fin(e,tr) <- kun/e~frap.
+
 rv_sen_fin(e,adj) <- mult/e+kost. % pli ĝuste estus mult+kost/a
 rv_sen_fin(e,adj) <- mult/e+kolor.
+rv_sen_fin(e,adj) <- mult/e+nombr.
 rv_sen_fin(e,adj) <- mult/e+sci.
 rv_sen_fin(e,adj) <- mult/e+frukt.
 rv_sen_fin(e,tr) <- art/e~far. % (art(e)+far)/ita, farita per arto
