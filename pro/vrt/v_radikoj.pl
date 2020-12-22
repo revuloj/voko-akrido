@@ -6,7 +6,9 @@
 
 % tiuj ne rekoniĝas kiel homo/besto el Revo-artiokoloj,
 % manke de klaso besta aŭ parenca...
+r('doktor',best,*).
 r('edz',best,*).
+r('mastr',best,*).
 r('parenc',parc,*). % permesu bo/parenc/
 r('princ',best,*).
 r('reĝ',best,*).

@@ -26,7 +26,9 @@
 % sed ni ne povas indiki tion momente, ni devus subteni trian argumenton en 
 % rule_ref (rv_sen_fin)...
 
+rv_sen_fin(h,adj) <- ali+land. % ne al/il+and
 rv_sen_fin(h,best) <- ali+land/ul. % ne al/il+and/ul
+rv_sen_fin(h,adv) <- ali+lok. % ne al/il+ok/e
 rv_sen_fin(h,tr) <- alt/ig. % ne al/tig
 
 rv_sen_fin(h,subst) <- ban/dom. % ne band-om
@@ -40,6 +42,7 @@ rv_sen_fin(h,ntr) <- est/'iĝ'. % konfuzeblo "esti" kun "esto" (estono)
 
 rv_sen_fin(h,tr) <- far/ad. % ne analizu farad/
 rv_sen_fin(h,adj) <- fin/it. % ne analizu fi/nit
+rv_sen_fin(h,tr) <- for/star/ig. % ne analizu farad/
 
 rv_sen_fin(h,ntr) <- glu-mark. % por eviti misanalizon glum-ark
 rv_sen_fin(h,subst) <- grup/et. % por eviti analizon grupet/
@@ -48,28 +51,41 @@ rv_sen_fin(h,subst) <- jar/dek. % por eviti analizon jard-ek/
 
 rv_sen_fin(h,subst) <- kol-har/ar. % ne kol-Harar/
 
+rv_sen_fin(h,best) <- mal/ferm/at. % ne fermat/
+rv_sen_fin(h,tr) <- mal/supr/en~ig.
 rv_sen_fin(h,ntr) <- membr/'iĝ'. % por eviti misanalizon mem/briĝ
 rv_sen_fin(h,subst) <- membr/o-kvant. % por eviti misanalizon mem/brok/vant
 rv_sen_fin(h,subst) <- membr/ec. % por eviti misanalizon mem/brec
 
 rv_sen_fin(h,subst) <- nask/'iĝ'. % por faciligi rekoni kunmetitajn kiel naskiĝtago
+rv_sen_fin(h,subst) <- naz/o-tru. % por faciligi rekoni kunmetitajn kiel naskiĝtago
 
 rv_sen_fin(h,adv) <- plej~part.
+rv_sen_fin(h,best) <- pord/eg/ist.
+rv_sen_fin(h,best) <- pord/ist.
 rv_sen_fin(h,subst) <- post/e/ul.
 rv_sen_fin(h,adj) <- postul/em. % por eviti misanalizon post/ulem
 rv_sen_fin(h,adj) <- postul/at. % por eviti misanalizon postulat/
 rv_sen_fin(h,adv) <- prov/ant. % ne pro/vant
 
+rv_sen_fin(h,tr) <- 'reĝ'/ig.
 rv_sen_fin(h,adj) <- respond/ec.
 
 rv_sen_fin(h,subst) <- sak/strat.
+rv_sen_fin(h,tr) <- sen/ig. % seno estas ankaŭ monunuo!
 rv_sen_fin(h,ntr) <- sen/vest/'iĝ'. % ne sen/vestiĝ/
 rv_sen_fin(h,subst) <- sun-lev/'iĝ'.
+rv_sen_fin(h,tr) <- supr/en~ig.
 rv_sen_fin(h,subst) <- suveren/ec. % evitu misnalizon suv/er+en/ec
 
 rv_sen_fin(h,subst) <- 'ŝak'/tabul.
 
+rv_sen_fin(h,adv) <- tri+foj. % tri/o estas ankaŭ muzikpeco
+rv_sen_fin(h,adv) <- tri/a+foj. % tri/o estas ankaŭ muzikpeco
+rv_sen_fin(h,adj) <- tri+tag. % evitu misanalizon trit-ag/
 rv_sen_fin(h,pers) <- traf/at. % evitu misanalizon tra/fat/
+
+rv_sen_fin(h,adj) <- unu+tag. % evitu misanalizon trit-ag/
 
 /**
  * esceptoj: tiuj estas tiom maloftaj aŭ esceptaj ke ni hezitas

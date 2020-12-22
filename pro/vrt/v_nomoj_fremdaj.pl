@@ -5,6 +5,7 @@
 nf('Aleksandroviĉ',pers).
 nf('Albert',pers).
 nf('Alfred',pers).
+nf('Andersen',pers).
 nf('Bean',pers).
 nf('Berlioz',pers).
 nf('Brendon',pers).
@@ -34,8 +35,10 @@ nf('Grimm',pers).
 nf('Gudzinskas',pers).
 nf('Hans',pers).
 nf('Harry',pers).
+nf('Heine',pers).
 nf('Instagram',subst).
 nf('Izrael',subst).
+nf('Jeremia',pers).
 nf('Jerome',pers).
 nf('Joseph',pers).
 nf('Kafka',pers).
@@ -45,6 +48,7 @@ nf('Mark',pers).
 nf('Mary',pers).
 nf('Matos',pers).
 nf('Murphy',pers).
+nf('Natan',pers).
 nf('Niels',pers).
 nf('Netflix',subst).
 nf('Oliver',pers).
