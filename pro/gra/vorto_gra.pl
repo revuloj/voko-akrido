@@ -37,8 +37,9 @@
   
   ĉe tio:
     * =rv_sen_fin= estas la nomo de la ĉefregulo, sed ankaŭ la kategorio de la analiza rezulto
-    * la etikedo ='Ds'= estas nur helpilo por identigi la regulojn inter la variaĵoj de la ĉefregulo,
-      sed iom ankaŭ kontrolas kaj limigas la analizoprocedon. Minuskloj en regulnomoj reprezentas 
+    * la etikedo ='Ds'= estas ofte nur helpilo por identigi la regulojn inter la variaĵoj de la ĉefregulo,
+      sed iom ankaŭ kontrolas kaj limigas la analizoprocedon, ekz. distingante subkazojn.
+      Minuskloj en regulnomoj reprezentas 
       la bazajn vortelementojn (ekz-e s = sufikso, m = minuskla nomo)
       kaj majuskloj jam derivitajn/kunmetitajn (ekz-e D = derivaĵo) kun escepto de 
       M = majuskla nomo. Vi povas uzi tiujn etikedojn por orientiĝi
@@ -392,9 +393,24 @@ vrt(pv,Spc) <= p(mal,_) / v(_,Spc,_) ~> (Spc='adv'; Spc='prep').
 % nombrokunmeto, ekz. du*dek
 % KOREKTU: permesu nur dekojn kiel N2, ciferojn 1..9 kiel N1
 cifero(N) :- memberchk(N,[unu,du,tri,kvar,kvin,ses,sep,ok,'naŭ']). 
+deko(N) :- memberchk(N,[dek,cent,mil]). 
+cent_mil(N) :- memberchk(N,[cent,mil]). 
 vorto(nn,nombr) <= v(N1,nombr,_) * v(dek,nombr,_) ~> cifero(N1).
 vorto(nn,nombr) <= v(N1,nombr,_) * v(cent,nombr,_) ~> cifero(N1).
 vorto(nn,nombr) <= v(N1,nombr,_) * v(mil,nombr,_) ~> cifero(N1).
+
+% ! kuntiraĵoj: dek~du, tri*dek~mil, normale estu spaco, kien
+% ni metos ~
+
+% dekmil, centmil, milmil (cu?)
+vorto('n~n',nombr) <= v(N1,nombr,_) ~ v(mil,nombr,_) ~> deko(N1).
+% ekz-e tri*dek~mil
+vorto('n~n',nombr) <= &vorto(nn,nombr) ~ v(mil,nombr,_).
+% ekz-e dek~du, cent~tri
+vorto('n~n',nombr) <= v(N1,nombr,_) ~ v(N2,nombr,_) ~> deko(N1), cifero(N2).
+% ekz-e cent~tridek, mil~ok*cent
+vorto('n~n',nombr) <= v(N1,nombr,_) ~ &vorto(nn,nombr) ~> cent_mil(N1).
+
 
 % ekz. dom-hund/o, ..., preferu dupartajn kunmetitajn
 vorto('AP',Spc) <= &antauvorto(_,_) - &postvorto(_,Spc).
@@ -546,6 +562,7 @@ min_max_len(vD,4,99).
 min_max_len(rr,4,99).
 min_max_len(rc,3,99).
 min_max_len(nn,5,8).
+min_max_len(n~n,5,99).
 min_max_len('A',2,33).
 min_max_len('A+',2,99).
 min_max_len('P',3,99).
