@@ -27,12 +27,12 @@ v(paf,intj,*).
 v(pa,intj,+).
 v(okej,intj,+).
 v(oj,intj,+).
+v(oh,intj,+).
 v('o kej',intj,+).
 v(mu,intj,+).
 v(miaŭ,intj,'1').
 v(mek,intj,+).
 v(maĉ,intj,*).
-v(lo,intj,+).
 v(kŭaks,intj,+).
 v(kvivit,intj,+).
 v(kvak,intj,+).
@@ -58,6 +58,7 @@ v(hej,intj,+).
 v(he,intj,'1').
 v(ha,intj,*).
 v(gut,intj,*).
+v('gruk-ru',intj,+).
 v(glut,intj,*).
 v(glu,intj,+).
 v(fu,intj,+).
@@ -74,7 +75,5 @@ v(bat,intj,*).
 v(baf,intj,+).
 v(bac,intj,+).
 v(aŭ,intj,+).
-v(aĥ,intj,+).
-v(aj,intj,+).
 v(aha,intj,+).
 v(ah,intj,+).
