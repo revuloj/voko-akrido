@@ -13,6 +13,7 @@
 :-consult('vrt/v_mallongigoj.pl').
 :-consult('vrt/v_vortoj.pl').
 :-consult('vrt/v_radikoj.pl').
+:-consult('vrt/v_elementoj.pl').
 
 
 revo_xml('./xml/*.xml').
@@ -419,7 +420,7 @@ revo_rad(DOM,Radiko,Speco,Ofc) :-
   xpath(Kap,rad(normalize_space),Radiko),
   atom_length(Radiko,L), 
   (L=<1 
-    -> throw(averto('ignoras unuliteran radikon')) % ne akceptu radikojn unuliterajn
+    -> throw(averto('ellasante unuliteran radikon')) % ne akceptu radikojn unuliterajn
     ; true
   ),
 
@@ -448,8 +449,36 @@ revo_rad(DOM,Radiko,Speco,Ofc) :-
     revo_kls(Drv,Speco);
     revo_gra(Drv,Speco);
     revo_fin(Kap,Speco);
-    throw(eraro('speco ne eltrovita'))
+    throw_netrovita(Radiko)
   ). 
+
+throw_netrovita(Radiko) :-
+  once((
+    % estas en baza vortaro
+    p(Radiko,_), 
+    format(atom(Msg),'speco ne eltrovita, sed estas ~q- en baza vortaro',[Radiko]),
+    throw(averto(Msg))
+    ;
+    s(Radiko,_,_), 
+    format(atom(Msg),'speco ne eltrovita, sed estas -~q- en baza vortaro',[Radiko]),
+    throw(averto(Msg))
+    ;
+    f(Radiko,_), 
+    format(atom(Msg),'speco ne eltrovita, sed estas -~q en baza vortaro',[Radiko]),
+    throw(averto(Msg))
+    ;
+    (v(Radiko,Speco,_);i(Radiko,Speco);u(Radiko,Speco)), 
+    format(atom(Msg),'speco ne eltrovita, sed estas ~q,~q en baza vortaro',[Radiko,Speco]),
+    throw(averto(Msg))
+    ;
+    r(Radiko,Speco,_), 
+    format(atom(Msg),'speco ne eltrovita, sed estas ~q/,~q en baza vortaro',[Radiko,Speco]),
+    throw(averto(Msg))
+    ;
+    % ne estas en baza vortaro
+    format(atom(Msg),'speco de ''~w'' ne eltrovita, ellasante la vorton',[Radiko]),
+    throw(eraro(Msg))
+  )).
 
 revo_kls(Drv,parc) :-
   xpath(Drv,//ref(@lst),Klaso),
