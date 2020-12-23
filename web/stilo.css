@@ -13,7 +13,7 @@ body {
   metu post oficialaj, ĉar povas aperi listo de pluraj klasoj po vorto */
 .o_n { color: blue; font-size: 12pt; }
 /* evitinda radiko */
-.o_evi { color: #c11; font-size: 12pt; }
+.evi { color: #c11; font-size: 12pt; }
 
 
 
@@ -31,7 +31,8 @@ body {
     font-size: 67%;
 }
 
-.hidden_text li p { 
+.hidden_text li p,
+span.hidden { 
   font-size: 0;
 }
 

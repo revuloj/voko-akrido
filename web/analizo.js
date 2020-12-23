@@ -13,13 +13,16 @@ when_doc_ready(
         form.addEventListener("submit", function(event) {
             event.preventDefault();
 
+            const kashu_ripetojn = document.getElementById("analizo_kashu").checked;
+            var viditaj = [];
+
             const teksto = document.getElementById("analizo_teksto").value;
             const rezulto = document.getElementById("analizo_rezulto");
             rezulto.innerHTML = "<ol></ol>";
 
-            // Ni sendas la tekston alieno post alineo por pli rapide vidi unuajn
+            // Ni sendas la tekston alineo post alineo por pli rapide vidi unuajn
             // rezultojn...
-            teksto.split(/[\.?! \t]+\n/).map(
+            teksto.split(/[\.?! \t\r]+\n/).map(
               function (alineo,nro) {
                 HTTPRequest('POST', form_url, {
                   numero: (nro+1),
@@ -30,6 +33,19 @@ when_doc_ready(
                     const parser = new DOMParser();
                     const doc = parser.parseFromString("<li><p>"+data+"</p></li>","text/html");
                     const ol = rezulto.querySelector("ol");
+
+                    // kaŝu ripetojn
+                    if (kashu_ripetojn) {
+                      for (let span of doc.body.querySelectorAll("span")) {
+                        if (! span.classList.contains("nro")) {
+                          if ( viditaj.indexOf(span.textContent) > 0 )
+                            span.classList.add("hidden");
+                          else
+                            viditaj.push(span.textContent);
+                        }
+                      }
+                    }
+
                     // elprenu la numeron el la rezulto kaj metu kiel li@value
                     const li = doc.body.querySelector("li");
                     if (li) {
@@ -91,14 +107,26 @@ when_doc_ready(
 
         // Kaŝi la oficialajn vortojn por elstarigi la kontrolendajn 
         // t.e. neoficialaj, dubindaj, eraraj, neanalizeblaj
+        // kaj kaŝu ankaŭ ties ripetojn por ne tedi kontrolleganton
         kash_box.addEventListener("click", function(event) {
           const kashu = event.target.checked;
           const rezulto = document.getElementById("analizo_rezulto");
 
-          if (kashu) {
+          if (kashu) {            
             rezulto.classList.add("hidden_text");
+            // kaŝu ripetojn
+            var viditaj = [];
+            for (let span of rezulto.querySelectorAll("span")) {
+              if ( viditaj.indexOf(span.textContent) > 0 )
+                span.classList.add("hidden");
+              else
+                viditaj.push(span.textContent);
+            }
           } else {
             rezulto.classList.remove("hidden_text");
+            // malkaŝu ripetojn
+            for (let span of rezulto.querySelectorAll(".hidden")) 
+              span.classList.remove("hidden");
           }
         });
     }
