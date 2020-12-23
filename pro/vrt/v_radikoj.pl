@@ -8,6 +8,7 @@
 % manke de klaso besta aŭ parenca...
 r('doktor',best,*).
 r('edz',best,*).
+r('fianĉ',best,*).
 r('mastr',best,*).
 r('parenc',parc,*). % permesu bo/parenc/
 r('princ',best,*).
