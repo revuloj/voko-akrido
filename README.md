@@ -51,7 +51,7 @@ Ni ofertas ankaŭ servan interfacon, kiu estas uzata de la redaktilo por fone se
  docker run -p8081:8081 voko-akrido
 ```
 
-Poste iru la `http://localhost:8081`
+Poste iru al `http://localhost:8081`
 
 
 
