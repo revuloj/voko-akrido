@@ -45,6 +45,7 @@ rv_sen_fin(h,adj) <- dis/blov/at. % verŝajne ntr de blov/ kaŭzas analiz-proble
         % okaze kontrolu la gramatikon, per dis ni ja ekhavas tr
 rv_sen_fin(h,adj) <- dis/blov/it.
 rv_sen_fin(h,tr) <- dis/membr/ig.
+rv_sen_fin(h,adj) <- distr/at. % ne dis/trat
 
 rv_sen_fin(h,best) <- eksterm/ant. % ne ent/er/ig
 rv_sen_fin(h,best) <- eksterm/ot. % ne ekster/mot/
@@ -157,6 +158,8 @@ rv_sen_fin(e,adj) <- mult/e+frukt.
 rv_sen_fin(e,tr) <- art/e~far. % (art(e)+far)/ita, farita per arto
 rv_sen_fin(e,tr) <- prunt/e~don.
 rv_sen_fin(e,tr) <- prunt/e~pren.
+
+rv_sen_fin(e,best) <- sol/e~nask/it.
 
 rv_sen_fin(e,subst) <- unu/a~'aĵ'.
 rv_sen_fin(e,best) <- unu/e~nask/it.

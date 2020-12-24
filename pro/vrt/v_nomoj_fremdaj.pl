@@ -2,12 +2,16 @@
 % analoge al nr - nomoradiko...
 % PLIBONIGU: eble aldonu nf_ - deriveblan version por
 % derivado: nf_('Alfred',pers) -> Alfred-a, Alfred-on
+nf('Abraham',pers).
+nf('Adam',pers).
 nf('Aleksandroviĉ',pers).
 nf('Albert',pers).
 nf('Alfred',pers).
 nf('Andersen',pers).
 nf('Antwerpen',subst).
 nf('Bean',pers).
+nf('Benjamen',pers).
+nf('Benjamin',pers).
 nf('Berlioz',pers).
 nf('Boulogne',subst).
 nf('Brendon',pers).
@@ -23,6 +27,7 @@ nf('Christoph',pers).
 nf('Christopher',pers).
 nf('Clark',pers).
 nf('Clemency',pers).
+nf('Daniel',pers).
 nf('David',pers).
 nf('Donald',pers).
 nf('Dresden',subst).
@@ -46,12 +51,14 @@ nf('Hans',pers).
 nf('Harry',pers).
 nf('Heine',pers).
 nf('Instagram',subst).
+nf('Isaak',best).
 nf('Izrael',subst).
 nf('Jakob',pers).
 nf('Jehuda',pers).
 nf('Jeremia',pers).
 nf('Jerome',pers).
 nf('Jerusalem',subst).
+nf('Jesaja',pers).
 nf('Joseph',pers).
 nf('Kafka',pers).
 nf('Kalocsay',pers).
@@ -79,6 +86,7 @@ nf('Rytjkov',pers).
 nf('Sartre',pers).
 nf('Shakespeare',pers).
 nf('Silfer',pers).
+nf('Simon',pers).
 nf('Stalin',pers).
 nf('Steiner',pers).
 nf('Swift',pers).
