@@ -1,26 +1,27 @@
-Jen gheneralaj konsideroj, ne ekzakte realigitaj tiel en la kodo. Konsideru kiel plano por la evoluigo de la kodo...
+Jen Äeneralaj konsideroj, ne ekzakte realigitaj tiel en la kodo. 
+Konsideru kiel (iama) plano por la evoluigo de la kodo...
 
 --------------------------------
 
-La vortelementoj en la vortaro estas klasataj laı
-plurştupa sistemo. La unuaj du ştupoj rolas por la
-vortfarado, la dua kaj pliaj ştupoj por la frazfarado.
+La vortelementoj en la vortaro estas klasataj laÅ­
+plurÅtupa sistemo. La unuaj du Åtupoj rolas por la
+vortfarado, la dua kaj pliaj Åtupoj por la frazfarado.
 Atentu ke iuj vortelementoj povas aperi en pluraj lokoj
 de la sistemo. Ekz. la preopzicioj aperas en la kategorioj
 "v" kaj "p".
 
 
-Unua ştupo:
+Unua Åtupo:
 -----------
 
-Øi certigu, ke vortoj estas sintakse øuste formitaj.
+Äœi certigu, ke vortoj estas sintakse Äuste formitaj.
 Ekzistas la sekvaj elementoklasoj:
 
 r radikoj
     abel, abi, am ...
 
-v vortetoj sen fina¼o
-    adiaı, ajn, al ...
+v vortetoj sen finaÄµo
+    adiaÅ­, ajn, al ...
 
 i vortetoj kiuj permesas n
     mi, io, ie ...
@@ -29,33 +30,33 @@ u vortetoj kiuj permesas j
     iu, ia ..
 
 p prefiksoj
-    bo, dis, antaı, ...
+    bo, dis, antaÅ­, ...
 
 s sufiksoj
     ant, ul, um, ...
 
-f fina¼oj aplikeblaj al "r", sed ne akceptantaj "n", "j"
+f finaÄµoj aplikeblaj al "r", sed ne akceptantaj "n", "j"
     ', as, is, os, us, i, u
 
-o fina¼oj aplikeblaj al "r" kaj akceptantaj "n", "j"
+o finaÄµoj aplikeblaj al "r" kaj akceptantaj "n", "j"
     o, a
 
-e fina¼oj aplikeblaj al "r" kaj akceptantaj "n"
+e finaÄµoj aplikeblaj al "r" kaj akceptantaj "n"
     e
 
-j fina¼o aplikebla al "o", "u"
+j finaÄµo aplikebla al "o", "u"
     j
 
-n fina¼o aplikebla al "e", "o", "i", "u", "j"
+n finaÄµo aplikebla al "e", "o", "i", "u", "j"
     n
 
-c envortaj fina¼oj, aplikeblaj al "r"
+c envortaj finaï¿½oj, aplikeblaj al "r"
     a, o
 
 
 Eblas la sekvaj kombinoj (derivado kaj kunmetado, fakte
-ankoraı mankas kunderivado) laı la unua ştupo 
-(vsf = vorto sen fina¼o, vrt = vorto, 
+ankoraÅ­ mankas kunderivado) laï¿½ la unua Åtupo 
+(vsf = vorto sen finaÄµo, vrt = vorto, 
 unu = unua parto de kunmetita vorto, knm = kunmetita vorto):
 
 vsf = r
@@ -76,13 +77,13 @@ unu = unu+unu
 knm = unu+vrt
 
 
-Dua ştupo
+Dua Åtupo
 ---------
 
-La dua ştupo certigu, ke la vortoj estu semantike øuste
+La dua Åtupo certigu, ke la vortoj estu semantike Äuste
 formitaj, permesante derivado per prefiksoj kaj
-sufiksoj nur laı striktaj reguloj, ekz. "ul" povas aplikiøi
-al "eca" vorto kaj rezultas en "besta" vorto, "bo" aplikiøas
+sufiksoj nur laÅ­ striktaj reguloj, ekz. "ul" povas aplikiÄi
+al "eca" vorto kaj rezultas en "besta" vorto, "bo" aplikiÄas
 al "parenca" vorto.
 
 Necesas do distingi la sekvajn subklasojn de "r":
@@ -92,8 +93,8 @@ adv adverbaj
 eca ecaj, adjektivaj
       grand, absolut, absurd ...
 trn transitivaj (at, ig)
-      bat, aæet, manø ...
-ntr netransitivaj (ant, iø)
+      bat, aÄ‰et, manÄ ...
+ntr netransitivaj (ant, iÄ)
       ir, ag, aper ...
 obj objektaj, substantivaj
       abi, adres, ...
@@ -119,59 +120,59 @@ Nun la afiksojn oni povas klasigi jene:
 
 sufiksoj (aplikeblaj al/rezultantaj en):
 
-*   -> *  : aæ et um eg (klaskonservaj)
+*   -> *  : aÄ‰ et um eg (klaskonservaj)
 *   -> obj: ism
 *   -> bst: ist
-eca -> obj: a¼ ec
+eca -> obj: aÄµ ec
 eca -> viv: ul
 eca -> trn: ig
-eca -> ntr: iø
+eca -> ntr: iÄ
 ntr -> trn: ig
-trn -> ntr: iø
+trn -> ntr: iÄ
 trn -> bst: at it ot
 trn -> eca: ebl end ind
 vrb -> bst: ant int ont
-vrb -> obj: ad a¼ ej il
+vrb -> obj: ad aÄµ ej il
 vrb -> eca: em
-obj -> obj: a¼ ar ej er ing uj
+obj -> obj: aÄµ ar ej er ing uj
 obj -> bst: an estr
 bst -> bst: id in
 nmb -> obj: obl on op 
 
 prefiksoj (aplikeblaj al):
 
-*  : mal pseıdo
+*  : mal pseÅ­do
 prc: bo
 bst: ge
 obj: eks pra
 adj: pli plej (sed eble temas pri kunmetado/kunderivado?)
-vrb: dis ek mis re, al antaı apud æe æirkaı de ekster el en
-     øis kontraı krom kun laı post preter pri sub super sur tra 
+vrb: dis ek mis re, al antaÅ­ apud Ä‰e Ä‰irkaÅ­ de ekster el en
+     Äis kontraÅ­ krom kun laÅ­ post preter pri sub super sur tra 
      trans, for
 
 Rim:
 
 1) vrb estas helpklaso por pli facila apliko de la afiksoj.
-   Tamen la radikoj havu trn kaj/aı ntr por ebligi la aplikadon
-   de at, it, ot, ig, iø
-2) Eble oni bezonas ankaı klason plantojn,
-   æar "in" povas aplikiøi ankaı al plantseksoj kaj
-   "id" al æiaj viva¼oj, kiuj havas posteulojn
-   Ankaı ekzistas la neoficiala sufikso "ac", kiu aplikiøas 
+   Tamen la radikoj havu trn kaj/aÅ­ ntr por ebligi la aplikadon
+   de at, it, ot, ig, iÄ
+2) Eble oni bezonas ankaÅ­ klason plantojn,
+   Ä‰ar "in" povas aplikiÄi ankaÅ­ al plantseksoj kaj
+   "id" al Ä‰iaj vivaÄµoj, kiuj havas posteulojn
+   AnkaÅ­ ekzistas la neoficiala sufikso "ac", kiu aplikiÄas 
    al certaj plantnomoj.
 
-Pliaj ştupoj
+Pliaj Åtupoj
 ------------
 
-eble ankorau unu shtupo che vortanalizo, kiu permesas
-au malpermesas apartajn aferojn pro semantiko, oni povas
-ekz. formi malsur, malantaı, sed ne maltrans (æar ne havas sencon)
+eble ankoraÅ­ unu Åtupo Ä‰e vortanalizo, kiu permesas
+aÅ­ malpermesas apartajn aferojn pro semantiko, oni povas
+ekz. formi malsur, malantaÅ­, sed ne maltrans (Ä‰ar ne havas sencon)
 
-Pliaj ştupoj por frazanalizo:
+Pliaj Åtupoj por frazanalizo:
 
-1) Vortspecoj: subst, prep, adv, konj ktp. laı sintaksa funkcio
+1) Vortspecoj: subst, prep, adv, konj ktp. laÅ­ sintaksa funkcio
                en la frazo
-2) Signifogrupoj: loko, maniero, tempo, ulo ktp. laı la semantika rolo
+2) Signifogrupoj: loko, maniero, tempo, ulo ktp. laÅ­ la semantika rolo
                en la frazo
 
 

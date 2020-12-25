@@ -1,6 +1,6 @@
 /* ANALIZILO POR ESPERANTAJ VORTOJ 
  *
- * (c) GPLv3, 1996, 2014-2020 cxe Wolfram Diestel
+ * (c) GPLv3, 1996, 2014-2020 ĉe Wolfram Diestel
  * kelkaj ideoj kaj la baza vortlisto estas 
  * prenitaj de Simono Pejno
  *
@@ -11,9 +11,9 @@
  *
  * Kiel funkcias la analizilo:
  *
- * Gxi provas dispartigi vorton kaj rekombini la partojn
- * lau la reguloj de derivado kaj kunmetado. Se eblas, tiel
- * valida dispartigo estas trovita. Ekzistas ankaw pli
+ * Ĝi provas dispartigi vorton kaj rekombini la partojn
+ * laŭ la reguloj de derivado kaj kunmetado. Se eblas, tiel
+ * valida dispartigo estas trovita. Ekzistas ankaŭ pli
  * malstrikta analizo kiu ne konsideras la derivadregulojn.
  *
  * 
@@ -22,20 +22,20 @@
  * Ekzistas la sekvaj manieroj kombini vortelementojn:
  * derivado, kunmetado kaj kunderivado (sur-strat-a).
  *
- * Cxiu vortelemento havas vortspecon (tipon, ekz. subst, verb)
- * Cxe derivado foje konservigxas la tipo, foje gxi estas
- * sxangxita de la afikso. Cxe kunmetado konservigxas la
+ * Ĉiu vortelemento havas vortspecon (tipon, ekz. subst, verb)
+ * Ĉe derivado foje konserviĝas la tipo, foje ĝi estas
+ * ŝanĝita de la afikso. Ĉe kunmetado konserviĝas la
  * tipo de la baza, malantawa vorto. 
  *
- * La afiksoj povas aplikigxi nur al certaj tipoj.
- * La sufiksoj foje sxangxas la vorttipon de la
- * vortelemento, al kiu ili aplikigxas.
+ * La afiksoj povas aplikiĝi nur al certaj tipoj.
+ * La sufiksoj foje sxanĝas la vorttipon de la
+ * vortelemento, al kiu ili aplikiĝas.
  * 
  * La vortelementoj kun la tipoj estas listigitaj
  * en la vortaro. 
  *
  * La diversaj vortelementoj estas:
- *   radikoj (r), finajxoj (f), envortaj kunmetoliteroj (c),
+ *   radikoj (r), finaĵoj (f), envortaj kunmetoliteroj (c),
  *   vortoj (v), sufiksoj (s), prefiskoj (p), pluralaj pronomoj (u),
  *   ties finajxoj (fu), nepluralaj pronomoj (i), ties finajxoj (fi)
  *
@@ -43,8 +43,8 @@
  *   best, subst, verb, tr, ntr, adv, adj, pron, perspron,
  *   nombr, intj, advintj, konj, subj, prep, art, parc
  * La specialaj vorspecoj parc (parenco), best (besto), tr, ntr
- * ekzistas, cxar certaj afiskoj (bo, in, ig, igx) aplikigxas
- * al tiuj aw rezultigas en tiuj specoj. 
+ * ekzistas, ĉar certaj afiskoj (bo, in, ig, iĝ) aplikiĝas
+ * al tiuj aŭ rezultigas en tiuj specoj. 
 */
 
 

@@ -53,5 +53,21 @@ Ni ofertas ankaŭ servan interfacon, kiu estas uzata de la redaktilo por fone se
 
 Poste iru al `http://localhost:8081`
 
+## Iom pri la historio
+
+Ĉirkaŭ la jaro 1996, detalojn mi ne memoras, estis diskuto kun Simono Pejno, kiel realigi vortanalizilon por
+realigi iom pli inteligentan ortografian kontrolilon, kiu scias ne nur pri finaĵoj, sed ankaŭ ekz-e pri afiksoj.
+Parto de la baza vortaro kaj kelkaj ideoj fluis en unuan simplan vortanalizilon, per kiu mi lernis la belan programlingvo Prologo. La rezultanta programo tamen tiutempe ne estis tre utila al mi pro limigita kapacito
+de tiamaj komputiloj, malfacileco de Prologo tiutempe interfaci kun aliaj aplikaĵoj - solaj eblecoj ŝajnis aŭ legi tekston koditan laŭ Prologo el dosiero aŭ legi dosieron signon post signo unue analizante ĝian sintakson kaj ekstrakti la informojn.
+
+En 2012 mi remalkovris Prologon, lige al mia programarĥitekta laboro, kiel lingvo por lerte labori kun informmodeloj kaj trovis, ke la lingvo en la realigo de `SWI-Prolog` multe evoluis, precipe pri subteno de HTTP, XML, JSON, RDF ktp. kiujn oni bezonas por interfaci kun aliaj aplikaĵoj. En 2014 mi komencis reverki la vortanalizilon. Kiel 2a ŝtupo de la analizo mi aldonis rekombinan paŝon, kiu atentas, al kiuj vortspecoj sufikso povas aplikiĝi, kaj kiuspeca estas la rezulto.
+Krome mi distingis la diversajn vortformadajn metodojn: derivado, kunderivado, kunmetado k.a. (vd ĉe la gramatika parto en `pro/gra/`). Poste por plia efikeco mi kombinis la bazan disanalizon kaj pli inteligentan rekombinon en
+kombinita analizo per gramatiko, kiu uzas sian propran gramatik-lingvon kaj per la meta-lingvaj rimedoj de 
+Prologo, en la komenco de la programo estas transformata al ordinaraj predikatoj, kiuj realigas la aplikadon de la
+analizo.
+
+Krome aldoniĝis skripto, kiu eltiras la vortojn kaj radikojn el Reta Vortaro komplementante la bazan vortaron.
+La rezulta aplikaĵo ekuziĝis por kontroli artikolojn en Reta Vortaro je vortoj, kiuj ne estas analizeblaj aŭ
+dubindaj, tiel trovante kaj erarojn kaj mankantajn en Revo radikojn. Fine de 2020 aldoniĝis ankoraŭ markado de oficialeco ĉe la uzataj radikoj kaj vortelementoj, kaj ankaŭ retpaĝo por trakribri iun ajn tekston aŭ retpaĝon je nekonataj al Revo vortoj.
 
 
