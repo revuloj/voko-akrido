@@ -38,9 +38,10 @@ jobs:
         ls -l $GITHUB_WORKSPACE
     - name: Analizu REvo-artikolojn a-d
       run: docker run --name voko-analizo 
+        -w /home/akrido
         -v $GITHUB_WORKSPACE/html:/home/akrido/html 
         docker.pkg.github.com/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }} 
-        ./akrido preparo && ./akrido a-d
+        bash -c "./akrido preparo && ./akrido a-d"
     - name: Retrovu la rezultojn
       #id: retrovu_zip
       run: |
