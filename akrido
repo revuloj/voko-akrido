@@ -47,6 +47,6 @@ s-z)
     && . bin/analizu_revo_prefix.sh 'z' 
   ;;
 *)
-  echo "Sola argumento povas esti nur 'preparo', 'artikolojn', 'a-d', 'e-j', 'k-m', 'n-r' aŭ 's-z'.
+  echo "Sola argumento povas esti nur 'preparo', 'artikolojn', 'a-d', 'e-j', 'k-m', 'n-r' aŭ 's-z'."
   ;;  
 esac
