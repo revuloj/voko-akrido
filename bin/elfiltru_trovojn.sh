@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# ni rigardas en dosierujojn html/a .. html/z kaj elfiltras la trovojn
+# de antaŭ analizo kaj kreas dosierojn html/a_trovoj.html .. html/z_trovoj.html
+# Se dosierujo html/x ne ekzistas aŭ estas malplena ni transsaltas ĝin
+
 function elfiltru {
   d=$1
   outformat=$2
@@ -25,10 +29,16 @@ function elfiltru {
 EOH
 
     echo "elfiltru en $d..."
-    # trovi dubindajn/erarajn vortojn, forigu duoblajn kaj grupigu laŭ dosiernomo
-    grep -oH "<span class=.*</span>" "$d"/* | sed 's/.*html\///' | awk '!a[$0]++' - | \
-      awk -F":" '{a[$1]=a[$1] ? a[$1]", "$2 : $2} END \
-      {for (i in a) {print "<a href=\47"i"\47>"i"</a> "\
+    # 1. grep: trovi neanlizeblajn/dubindajn/kuntiritajn vortojn
+    #    (-o = only matching, -H with filename -E extended regex syntax (, ) etc)
+    # 2. sed: forigu prefikson kaj sufikson de la artikola dosiernomo
+    # 3. awk: forigu duoblajn vortojn
+    # 4. awk: grupigu trovojn laŭ dosiernomo kaj eligu kiel html kun a-referencoj
+    grep -oHE '<span class="[^">]*(neanaliz|dubebla|kuntirita)[^<]*"[^"]+</span>' "$d"/* \
+      | sed 's/.*html\/.\///' | sed 's/\.html//' | \
+      awk '!a[$0]++' - | \
+      awk -v d=${d#*/} -F":" '{a[$1]=a[$1] ? a[$1]", "$2 : $2} END \
+      {for (i in a) {print "<a href=\47"d"/"i".html\47>"i"</a> "\
       "<a href=\47'$revoart'"substr(i,3)"\47 class=\47redakti\47 target=\47_new\47\
       title=\47artikolo\47>&#x270E;</a>: "a[i]"<br>"}}' - \
       >> "$outfile"
@@ -65,7 +75,7 @@ EOF
 
 for dir in html/[a-z]
 do
-  if [ -d "$dir" ]; then
+  if [ -d "$dir" ] && [ ! -z "$(ls -A $dir)" ]; then
     echo "rigardante $dir..."
     elfiltru "$dir" html
   fi
