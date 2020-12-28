@@ -10,18 +10,18 @@
 :- use_module(library(filesex)).
 
 :- use_module(analizilo).
-:- use_module('dcg/vortlisto_dcg.pl'). % por enlegi la "Verdan Liston"
+%:- use_module('dcg/vortlisto_dcg.pl'). % por enlegi la "Verdan Liston"
 
 %:- consult(revo_blanka_listo).
-:- consult('vrt/v_revo_evitindaj').
+%:- consult('vrt/v_revo_evitindaj').
 
-:- dynamic(verda/2).
+%:- dynamic(verda/2).
 
 %revo_xml('/home/revo/revo/xml').
 revo_txt('../txt').
 %txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
 skribo_pado('../html').
-revo_verda_listo('vrt/revo_verda_listo_provizora.txt').
+%revo_verda_listo('vrt/revo_verda_listo_provizora.txt').
 
 /** <module> Analizilo por Revo-artikoloj
 
@@ -43,13 +43,13 @@ helpo :-
 % Ne analizeblaj vortoj el la verda listo estas markitaj verde anstataŭ ruĝe.
 
 analizu_revo_art(Art) :-
-    legu_verdan_liston_se_malplena,
+    %legu_verdan_liston_se_malplena,
 
     artikolo_fonto_dosiero(Art,TxtFile),
     read_file_to_codes(TxtFile,Txt,[]),
-    verda_listo(Art,BL),
+    %verda_listo(Art,BL),
     forigu_esceptojn(Txt,Txt1),
-    analizu_tekston_kopie(Txt1,BL),!.
+    analizu_tekston_kopie(Txt1,[]),!. %BL),!.
 
 %! analizu_revo_art_prefix(+Prefikso:atom) is det.
 %
@@ -57,7 +57,7 @@ analizu_revo_art(Art) :-
 % al la dosierujo ./kontrolitaj
 
 analizu_revo_art_prefix(Prefix) :-
-   legu_verdan_liston_se_malplena,
+   %legu_verdan_liston_se_malplena,
 
    fonto_dosieroj(Prefix,TxtFiles),
    forall(
@@ -74,13 +74,14 @@ analizu_revo_art_prefix(Prefix) :-
 
 analizu_revo_art_novaj :-
     format('analizu novajn...~n'),
-    legu_verdan_liston_se_malplena,
+    %legu_verdan_liston_se_malplena,
     novaj_fonto_dosieroj(Novaj),
     forall(
       member(TxtFile,Novaj),
       kontrolu_dosieron(TxtFile)
     ).
 
+/*
 artikolo_verda_listo :-
     revo_verda_listo(Infile),
     format('legas ''~w''~n',[Infile]),
@@ -108,8 +109,13 @@ artikolo_verda_listo_(In) :-
       fail % read next line
     )
   ).
+*/
 
-
+/*
+% kunigu en liston evitindajn kaj verda listo de tiu artikolo
+% ni ne plu bezonas intertempe, ĉar ni markas "verdajn" vortojn
+% per <nac>,<nom>,<esc>
+% kaj evitindajn ni nun havas en la vortaro, sed kun etikedo "!"
 verda_listo(Art,Listo) :-
   once((
       atom_concat('/',Art1,Art);
@@ -124,16 +130,16 @@ verda_listo(Art,Listo) :-
       Vrt1 = []
     )),
   append(Vrt1,Lst,Listo).
-
+*/
 
 kontrolu_dosieron(TxtFile) :-
     fonto_celo_dosiero(TxtFile,HtmlFile),
     format('~w -> ~w~n',[TxtFile,HtmlFile]),
     read_file_to_codes(TxtFile,Txt,[]),
-    artikolo_fonto_dosiero(Art,TxtFile),
-    verda_listo(Art,BL),
+    %artikolo_fonto_dosiero(Art,TxtFile),
+    %verda_listo(Art,BL),
     forigu_esceptojn(Txt,Txt1),
-    analizu_tekston_outfile(Txt1,HtmlFile,BL). 
+    analizu_tekston_outfile(Txt1,HtmlFile,[]). %BL). 
 
 forigu_esceptojn([],[]). % ⧼...⧽ = 10748, ..., 10749
 forigu_esceptojn([10748|TxtKun],TxtSen) :- !,
@@ -146,7 +152,7 @@ ignoru_ghis_10749([_|TxtKun],TxtSen) :- !,
   ignoru_ghis_10749(TxtKun,TxtSen).
 ignoru_ghis_10749([],[]) :- throw(mankas_ferma_10749).
 
-
+/*
 legu_verdan_liston_se_malplena :-
     verda(_,_) -> true
     ;  % enlegu la verdan liston se ankorau ne antaue... 
@@ -155,7 +161,7 @@ legu_verdan_liston_se_malplena :-
 	 Exc,
 	 format('~w~n',[Exc]) % print exception and proceed
     ).
-			
+*/			
 
 artikolo_fonto_dosiero(Art,TxtFile) :-
     atom(Art),
