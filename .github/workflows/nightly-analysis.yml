@@ -1,0 +1,47 @@
+name: analizo-de-la-tago
+
+on:
+  schedule:
+  # ĉiunokte
+  # * estas speciala signo, do nepre uzu citilojn
+  - cron:  '15 2 * * *'
+  #- cron:  '34 19 * * 2'
+
+
+env:
+  # image tag {latest|stabila}
+  IMAGE_TAG: latest
+  # permesu set-env en eligaĵoj...
+  # vd. https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+  
+# https://github.com/actions/create-release
+# https://help.github.com/en/actions/reference/development-tools-for-github-actions
+# https://github.com/actions/github-script
+
+jobs:
+  analizo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Saluto al docker.pkg.github.com
+        # https://github.community/t5/GitHub-Actions/Use-docker-images-from-GitHub-Package-Registry/td-p/30407    
+        # https://github.com/actions/starter-workflows/blob/master/ci/docker-push.yml    
+      run: docker login docker.pkg.github.com -u $GITHUB_ACTOR -p $GITHUB_TOKEN
+      env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - name: Prenu procesumon voko-analizo
+      run: docker pull "docker.pkg.github.com/revuloj/voko-analizo/voko-analizo:${{ env.IMAGE_TAG }}"
+    - name: Kreu dosierujojn por konservi la rezultojn ...
+      run: |
+        mkdir $GITHUB_WORKSPACE/html
+        chmod 777 $GITHUB_WORKSPACE/html
+        ls -l $GITHUB_WORKSPACE
+    - name: Analizu REvo-artikolojn a-d
+      run: docker run --name voko-analizo 
+        -v $GITHUB_WORKSPACE/html:/home/akrido/html 
+        docker.pkg.github.com/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }} 
+        ./akrido preparo && ./akrido a-d
+    - name: Retrovu la rezultojn
+      #id: retrovu_zip
+      run: |
+        ls -l $GITHUB_WORKSPACE/html/*
