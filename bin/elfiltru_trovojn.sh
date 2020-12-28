@@ -34,7 +34,7 @@ EOH
     # 2. sed: forigu prefikson kaj sufikson de la artikola dosiernomo
     # 3. awk: forigu duoblajn vortojn
     # 4. awk: grupigu trovojn laŭ dosiernomo kaj eligu kiel html kun a-referencoj
-    grep -oHE '<span class="[^">]*(neanaliz|dubebla|kuntirita)[^<]*"[^"]+</span>' "$d"/* \
+    grep -oHE '<span class="[^">]*(neanaliz|dubebla|kuntirita|evi)[^<]*"[^"]+</span>' "$d"/* \
       | sed 's/.*html\/.\///' | sed 's/\.html//' | \
       awk '!a[$0]++' - | \
       awk -v d=${d#*/} -F":" '{a[$1]=a[$1] ? a[$1]", "$2 : $2} END \
