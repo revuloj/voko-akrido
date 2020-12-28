@@ -68,7 +68,8 @@ analizu_revo_art_prefix(Prefix) :-
 
 %! analizu_revo_art_novaj is det.
 %
-% Legas kaj kontrolas ĉiujn artikolojn kies dosieroj estas pli novaj ol la laste kontrolita dosiero (HTML) en dosierujo ./kontrolitaj
+% Legas kaj kontrolas ĉiujn artikolojn kies dosieroj estas pli novaj ol la laste
+% kontrolita dosiero (HTML) en dosierujo html/
 
 % al la dosierujo ./kontrolitaj
 
@@ -204,7 +205,7 @@ novaj_fonto_dosieroj(NovajDosieroj) :-
          once((
 	      \+ exists_file(Celo)
 	     ;
-              set_time_file(File,[modified(FntTempo)],[]),
+        set_time_file(File,[modified(FntTempo)],[]),
 	      set_time_file(Celo,[modified(CelTempo)],[]),
 	      FntTempo > CelTempo
 	     ))

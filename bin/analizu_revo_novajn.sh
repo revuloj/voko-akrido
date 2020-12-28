@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # base=<absolute-path-to-source>
 plsrc=analizu_revo_art.pl
@@ -12,5 +12,5 @@ cd pro
 $PL -q -f "$plsrc" -g "$goal,halt" -t 'halt(1)' --
 
 cd ..
-$PERL elfiltru_trovojn.perl -k kontrolitaj/ 
+source bin/elfiltru_trovojn.sh # -k html/ 
 

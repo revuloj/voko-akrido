@@ -5,46 +5,24 @@ preparo)
   cd html && mkdir -p a b c d e f g h i j k l m n o p r s t u v z && cd ..
   ;;
 artikolojn)
-  . bin/xml_download.sh && bin/xml2txt.sh && . bin/analizu_revo_prefix.sh '{}'
+  . bin/xml_download.sh && bin/xml2txt.sh && bin/analizu_revo_prefix.sh '{}'
   ;;
 # ĉar kompleta kuro daŭras tre longe, ni permesas kuri nur por kelkaj literoj
 # kio signifas 2000..3000 artikoloj en unu kuro
 a-d)
-  . bin/xml_download.sh && bin/xml2txt.sh [a-d] \
-    && . bin/analizu_revo_prefix.sh 'a' \
-    && . bin/analizu_revo_prefix.sh 'b' \
-    && . bin/analizu_revo_prefix.sh 'c' \
-    && . bin/analizu_revo_prefix.sh 'd' 
+  . bin/xml_download.sh && bin/xml2txt.sh [a-d]  && bin/analizu_revo_novajn.sh
   ;;
 e-j)
-  . bin/xml_download.sh && bin/xml2txt.sh [e-j] \
-    && . bin/analizu_revo_prefix.sh 'e' \
-    && . bin/analizu_revo_prefix.sh 'f' \
-    && . bin/analizu_revo_prefix.sh 'g' \
-    && . bin/analizu_revo_prefix.sh 'h' \
-    && . bin/analizu_revo_prefix.sh 'i' \
-    && . bin/analizu_revo_prefix.sh 'j' 
+  . bin/xml_download.sh && bin/xml2txt.sh [e-j]  && bin/analizu_revo_novajn.sh
   ;;
 k-m)
-  . bin/xml_download.sh && bin/xml2txt.sh [k-m] \
-    && . bin/analizu_revo_prefix.sh 'k' \
-    && . bin/analizu_revo_prefix.sh 'l' \
-    && . bin/analizu_revo_prefix.sh 'm' 
+  . bin/xml_download.sh && bin/xml2txt.sh [k-m]  && bin/analizu_revo_novajn.sh
   ;;
 n-r)
-  . bin/xml_download.sh && bin/xml2txt.sh [n-r] \
-    && . bin/analizu_revo_prefix.sh 'n' \
-    && . bin/analizu_revo_prefix.sh 'o' \
-    && . bin/analizu_revo_prefix.sh 'p' \
-    && . bin/analizu_revo_prefix.sh 'r' 
+  . bin/xml_download.sh && bin/xml2txt.sh [n-r] && bin/analizu_revo_novajn.sh
   ;;
 s-z)
-  . bin/xml_download.sh && bin/xml2txt.sh [s-z] \
-    && . bin/analizu_revo_prefix.sh 's' \
-    && . bin/analizu_revo_prefix.sh 't' \
-    && . bin/analizu_revo_prefix.sh 'u' \
-    && . bin/analizu_revo_prefix.sh 'v' \
-    && . bin/analizu_revo_prefix.sh 'z' 
+  . bin/xml_download.sh && bin/xml2txt.sh [s-z]  && bin/analizu_revo_novajn.sh
   ;;
 *)
   echo "Sola argumento povas esti nur 'preparo', 'artikolojn', 'a-d', 'e-j', 'k-m', 'n-r' aŭ 's-z'."
