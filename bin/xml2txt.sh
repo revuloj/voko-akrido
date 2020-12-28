@@ -10,7 +10,7 @@ xsltproc=/usr/bin/xsltproc
 XSL=xsl/revotxt_eo.xsl
 time=`date +%Y%m%d_%H%M%S`
 
-echo "tradukante ĉiujn pli novajn dosierojn el XML al TXT ... (daŭras iom...) ${1}*.xml"
+echo "tradukante ĉiujn aktualigitajn dosierojn el XML al TXT ... (daŭras iom...) ${1}*.xml"
 for src in xml/${1}*.xml; do
     
     # konstruu nomon de la txt-dosiero
