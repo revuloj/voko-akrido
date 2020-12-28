@@ -4,5 +4,6 @@ txt/
 xml/
 xsl/
 owl/
-html/
+html/?_trovoj.html
+html/*/*.html
 
