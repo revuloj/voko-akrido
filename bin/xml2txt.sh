@@ -10,9 +10,7 @@ xsltproc=/usr/bin/xsltproc
 XSL=xsl/revotxt_eo.xsl
 time=`date +%Y%m%d_%H%M%S`
 
-ls xml/${1}*.xml
-
-echo "tradukante ĉiujn pli novajn dosierojn el XML al TXT ... (daŭras iom...)"
+echo "tradukante ĉiujn pli novajn dosierojn el XML al TXT ... (daŭras iom...) ${1}*.xml"
 for src in xml/${1}*.xml; do
     
     # konstruu nomon de la txt-dosiero
@@ -23,7 +21,7 @@ for src in xml/${1}*.xml; do
     #printf '%s\n' "$src -> $trg ?"
 
     if [ "$src" -nt "$trg" ]; then
-        printf '%s\n' "$src -> $trg"
+        # printf '%s\n' "$src -> $trg"
         # echo "$xsltproc $XSL $src 2>> tmp/${time}_x2t.log | $lynx > $trg"
         $xsltproc $XSL $src 2>> tmp/${time}_x2t.log | $lynx > $trg
     fi
