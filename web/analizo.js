@@ -1,3 +1,8 @@
+// alineo por ni finiĝas ĉe frazsigno antaŭ linirompo aŭ ĉe pluraj linirompoj
+const eop = /([\.?!\n]+[ \t\r]*)\n+/g; 
+// ĉe tro longaj alineoj ni enŝovos alineojn meze ĉe frazfinoj
+const max_par_len = 500; 
+const eos = /([\.?!;:]+)[ \t]+/g;
 
 when_doc_ready(
     function() { 
@@ -88,11 +93,13 @@ when_doc_ready(
                 var parser = new DOMParser();
                 var doc = parser.parseFromString(data,"text/html");
                 const teksto = document.getElementById("analizo_teksto");
-                const normalized = doc.body.innerText // textContent enhavus ankaŭ skriptojn k.s.
+                /*
+                const normalized = doc.body.innerText
                   .replace(/[\t ]+\n/g,"\n") // forigu spacojn antaŭ linirompoj
                   .replace(/\n\n+/g,"\n\n") // maksimume du sinsekvaj linirompoj
-                  .replace(/([\.?!]\n)([^\n])/g,"\1\n\2"); // aldonu linirompon ĉe alineo
-                teksto.value = normalized;
+                  .replace(/([\.?!]\n)([^\n])/g,"$1\n$2"); // aldonu linirompon ĉe alineo
+                  */
+                teksto.value = alineoj(doc.body.innerText) // textContent enhavus ankaŭ skriptojn k.s.;
             });
           }
         });
@@ -216,4 +223,61 @@ function HTTPRequest(method, url, params, onSuccess,
     onStart, onFinish, onError);
 }
 
+
+// aldonu malplenajn liniojn ĉe alineoj
+// kaj tro longajn alineojn devidu en plurajn
+function alineoj(text) {
+  var alineoj = [];
+  var a, last = 0;
+
+  //console.debug(text);
+
+  function normalize(str) {
+    //console.debug("str: "+str);
+    return str
+      .replace(/[\t ]+\n/g,"\n") // forigu spacojn antaŭ linirompoj
+      .replace(/^([ \t]{4})[ \t]+/g,"$1") // maksimume 4 spacoj alinekomence
+      .replace(/(\n[ \t]{4})[ \t]+/g,"$1") // maksimume 4 spacoj linikomence
+      .replace(/[\s]*$/,"\n") // anst. finajn spacojn per sola linirompo
+      //.replace(/\n\n+/g,"\n\n"); // maksimume du sinsekvaj linirompoj
+  }
+
+  function aldonu(aln) {
+    if (aln.length > max_par_len) {
+      sub_alineoj(aln);
+    } else {
+      //console.debug("aln: "+aln);
+      if (/\w/.test(aln)) alineoj.push(aln);
+    }
+  }
+
+  function sub_alineoj(long) { 
+    var s, l=0;
+    // trovu frazojn ĝis max_len kaj
+    // tie kreu apartan alineon
+    while (s = eos.exec(long)) {
+      const e = s.index+s[0].length;
+      if (e-l > max_par_len) {
+        const sa = long.substring(l,e);
+        alineoj.push(sa+"\n");
+        l = e; 
+      }
+    }
+    // aldonu reston
+    alineoj.push(long.substring(l));
+  }
+  
+  // trakuru la tekston serĉante alineojn...
+  while (a = eop.exec(text)) {
+    const ei = a.index+a[0].length;
+    //console.debug("last: "+text.substr(last,20)+ "...\nei: "+text.substr(ei,20)+"...")
+    aldonu(normalize(text.substring(last,ei)));
+    last = ei;
+  }
+  
+  // aldonu la reston
+  aldonu(normalize(text.substring(last)));
+
+  return alineoj.join("\n");
+}
 
