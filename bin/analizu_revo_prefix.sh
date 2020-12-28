@@ -1,4 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+
+# uzu argumenton ab  por analizi la artikolojn txt/ab*.txt
+# kaj '' por analizi ĉiujn artikolojn
 
 # base=<absolute-path-to-source>
 plsrc=analizu_revo_art.pl
@@ -11,5 +14,6 @@ cd pro
 $PL -q -f "$plsrc" -g "$goal" -t halt --
 
 cd ..
-source elfiltru_trovojn.sh # -k html/ 
+source bin/elfiltru_trovojn.sh # -k html/ 
+#elfiltru_trovojn.sh # -k html/ 
 
