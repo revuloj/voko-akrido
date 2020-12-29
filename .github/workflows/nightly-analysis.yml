@@ -29,15 +29,15 @@ jobs:
       run: docker login docker.pkg.github.com -u $GITHUB_ACTOR -p $GITHUB_TOKEN
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    - name: Prenu procesumon voko-analizo
-      run: docker pull "docker.pkg.github.com/revuloj/voko-analizo/voko-analizo:${{ env.IMAGE_TAG }}"
+    - name: Prenu procesumon voko-akrido
+      run: docker pull "docker.pkg.github.com/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }}"
     - name: Kreu dosierujojn por konservi la rezultojn ...
       run: |
         mkdir $GITHUB_WORKSPACE/html
         chmod 777 $GITHUB_WORKSPACE/html
         ls -l $GITHUB_WORKSPACE
     - name: Analizu REvo-artikolojn a-d
-      run: docker run --name voko-analizo 
+      run: docker run --name voko-akrido 
         -w /home/akrido
         -v $GITHUB_WORKSPACE/html:/home/akrido/html 
         docker.pkg.github.com/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }} 
