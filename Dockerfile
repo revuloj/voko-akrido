@@ -6,23 +6,12 @@ FROM swipl:stable
 
 # FARENDA:
 #
-# Ĉar la skripto por prepari Revo-artikol-tekstojn funkcias per Perl
-# (vd. sub bin/analizu_revo_* + elfiltru_rovojn.perl)
-# verŝajne estus bone dismeti ambaŭ funkcojn al diversaj kestoj.
-# Eble oni povas uzi du-fazan-kestigon, sed tiel fariĝus la
-# tekstoj nur unufoje - oni ja volas regule aktualigi la
-# artikolojn kaj la vortaron... do verŝajne pli bone
-# havi unu aktualigan kaj unu kontrolan parton
-# Necesas elpensi kiel la kontrola parto ricevas la rezultojn
-# de la aktualiga - ekz. per komuna dosierujo aŭ
-# per rettranssendo (scp, rsync, git...?)
-#
-# Principe oni povus ankaŭ reverki la transforman Perlo-skripton
-# en Prologo aŭ Bash kaj uzi unu keston por ĉiuj tri taskoj ekz. lanĉante
-# apartan instancon por ĉiu tasko.
+# Kiel aktualigi la rezultopaĝojn post analizo?
+# ĉu per rettranssendo (scp, rsync, git...?)
+
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    lynx xsltproc unzip curl ca-certificates \
+    lynx xsltproc unzip curl ca-certificates openssh-client rsync \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash -u 1088 akrido

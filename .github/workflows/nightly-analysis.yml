@@ -36,10 +36,12 @@ jobs:
         mkdir $GITHUB_WORKSPACE/html
         chmod 777 $GITHUB_WORKSPACE/html
         ls -l $GITHUB_WORKSPACE
-    - name: Analizu REvo-artikolojn a-d
+    - name: Analizu Revo-artikolojn a-d
       run: docker run --name voko-akrido 
         -w /home/akrido
-        -v $GITHUB_WORKSPACE/html:/home/akrido/html 
+        -v $GITHUB_WORKSPACE/html:/home/akrido/html
+        -e AKRIDO_HOST=${{secrets.AKRIDO_HOST}}
+        -e AKRIDO_KEY=${{secrets.AKRIDO_KEY}}
         docker.pkg.github.com/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }} 
         bash -c "./akrido preparo && ./akrido a-d"
     - name: Retrovu la rezultojn

@@ -1,6 +1,6 @@
-
 body {
-  background-color: lightgoldenrodyellow;
+    background-color: lightgoldenrodyellow;
+    font-size: 12pt;
 }
 .malstrikte { color: brown; font-size: 12pt; }
 .neanaliz { color:red; font-weight: bold; font-size: 12pt;}
@@ -10,41 +10,10 @@ body {
 .mlg {font-weight: bold}
 
 /* neoficiala radiko 
-  metu post oficialaj, ĉar povas aperi listo de pluraj klasoj po vorto */
-.o_n { color: blue; font-size: 12pt; }
+metu post oficialaj, ĉar povas aperi listo de pluraj klasoj po vorto */
+/*.o_n { color: blue; font-size: 12pt; }*/
 /* evitinda radiko */
-.evi { color: #c11; font-size: 12pt; }
-
-
-
-#analizo_rezulto,
-#legendo {
-  max-width: 45em;
-}
-
-#analizo_rezulto {
-  border: 1px dotted orange;
-}
-
-#analizo_rezulto sup,
-#legendo sup {
-    font-size: 67%;
-}
-
-.hidden_text li p,
-span.hidden { 
-  font-size: 0;
-}
-
-.hidden_text span::before {
-  content: " \a0| ";
-}
-
-
-/*
-por aldoni skribilon cele al redaktado de artikolo: 
-.redakti {font-size: larger; color: black}
+.evi { color: #c11; font-size: 12pt; } 
 
 A.redakti {text-decoration: none; color: black}
 A.redakti:link {text-decoration: none; color: black}
-*/
