@@ -20,7 +20,7 @@ if [ -z "${AKRIDO_HOST}"] || [ -z "${AKRIDO_KEY}"]; then
 fi
 
 # transdonu la ŝlosilo al la agento
-ssh-add - <<<< ${AKRIDO_KEY}
+ssh-add - <<< ${AKRIDO_KEY}
 
 # -v = verbose, -r = subdosierujoj, -z = komprimite, -c = nur kies kontrolsumoj diferencas
 # -n montru, kio okazus, sed ne efektive sinkronigu!
