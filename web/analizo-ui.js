@@ -18,7 +18,6 @@ when_doc_ready(
         form.addEventListener("submit", function(event) {
             event.preventDefault();
 
-            const kashu_ripetojn = document.getElementById("analizo_kashu").checked;
             var viditaj = [];
 
             const teksto = document.getElementById("analizo_teksto").value;
@@ -40,7 +39,7 @@ when_doc_ready(
                     const ol = rezulto.querySelector("ol");
 
                     // kaŝu ripetojn
-                    if (kashu_ripetojn) {
+                    if (document.getElementById("analizo_kashu").checked) {
                       for (let span of doc.body.querySelectorAll("span")) {
                         if (! span.classList.contains("nro")) {
                           if ( viditaj.indexOf(span.textContent) > 0 )
@@ -115,6 +114,7 @@ when_doc_ready(
         // Kaŝi la oficialajn vortojn por elstarigi la kontrolendajn 
         // t.e. neoficialaj, dubindaj, eraraj, neanalizeblaj
         // kaj kaŝu ankaŭ ties ripetojn por ne tedi kontrolleganton
+        // PLIBONIGU: se ni premas tion dum la analizo ni havas interferencon inter ambaŭ....
         kash_box.addEventListener("click", function(event) {
           const kashu = event.target.checked;
           const rezulto = document.getElementById("analizo_rezulto");
