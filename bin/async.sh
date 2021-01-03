@@ -13,13 +13,14 @@
 # tie ĉi malaperis, sed ne kreis ĉiujn do forigus aliokaze tutajn
 # dosierujojn en la cela servilo!
 
-if [ -z "${AKRIDO_HOST}"] || [ -z "${AKRIDO_KEY}"]; then
+if [ -z "${AKRIDO_HOST}" ] || [ -z "${AKRIDO_KEY}" ]; then
     echo "Mankas unu el AKRIDO_HOST aŭ AKRIDO_KEY."
     echo "Do ni ne kopias rezultajn dosierojn al la servilo."
     exit 1
 fi
 
 # transdonu la ŝlosilo al la agento
+eval `ssh-agent -s`
 ssh-add - <<< ${AKRIDO_KEY}
 
 # -v = verbose, -r = subdosierujoj, -z = komprimite, -c = nur kies kontrolsumoj diferencas

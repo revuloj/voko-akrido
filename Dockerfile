@@ -8,7 +8,7 @@ FROM swipl:stable
 #
 # Kiel aktualigi la rezultopaĝojn post analizo?
 # ĉu per rettranssendo (scp, rsync, git...?)
-
+#
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     lynx xsltproc unzip curl ca-certificates openssh-client rsync \
@@ -22,7 +22,12 @@ ADD . ./
 RUN curl -LO https://github.com/revuloj/voko-grundo/archive/master.zip \
   && unzip master.zip voko-grundo-master/xsl/* voko-grundo-master/dtd/* voko-grundo-master/owl/* \
   && rm master.zip && ln -s voko-grundo-master/xsl xsl \
-  && ln -s voko-grundo-master/dtd dtd && ln -s voko-grundo-master/owl owl
+  && ln -s voko-grundo-master/dtd dtd && ln -s voko-grundo-master/owl owl \
+# Pro pli da kontrolo ni mane plenigis .ssh/known_hosts per 
+# ssh-keyscan ${AKRIDO_HOST} > .ssh/known_hosts && ssh-keyscan 85.214.67.151 >> .ssh/known_hosts 
+# ŝajne ambaŭ IP kaj servilo-nomo estas bezonataj tie...
+# Oni povus tion ankaŭ aŭtomate fari en Dockerfile RUN...
+  && chown -R akrido.akrido .ssh && chmod 700 .ssh && chmod 400 .ssh/*
 
 RUN  mkdir xml && mkdir txt && mkdir tmp \
     && bin/xml_download.sh && bin/revo_radikoj.sh \
