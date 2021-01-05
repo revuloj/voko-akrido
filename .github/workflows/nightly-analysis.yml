@@ -4,7 +4,7 @@ on:
   schedule:
   # ĉiunokte
   # * estas speciala signo, do nepre uzu citilojn
-  - cron:  '15 2 * * *'
+  - cron:  '15 2 * * 1-5'
   #- cron:  '34 19 * * 2'
 
 
@@ -13,7 +13,7 @@ env:
   IMAGE_TAG: latest
   # permesu set-env en eligaĵoj...
   # vd. https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/
-  # ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
   
 # https://github.com/actions/create-release
 # https://help.github.com/en/actions/reference/development-tools-for-github-actions
@@ -23,6 +23,12 @@ jobs:
   analizo:
     runs-on: ubuntu-latest
     steps:
+    - name: "Literoj laŭ tago..."
+      # la orodo estas 0=dimanĉo ... 6=sabato, sed la semajnfonon ni ellasos per conr supre
+      # permesitaj liter-intervaloj vd. la skripton 'akrido'
+      run: |
+        Tagoj=(e-j a-d e-j k-m n-r s-z a-d)
+        echo "::set-env name=TAGO::${Tagoj[ $(date +'%w') ]}"
     - name: Saluto al docker.pkg.github.com
         # https://github.community/t5/GitHub-Actions/Use-docker-images-from-GitHub-Package-Registry/td-p/30407    
         # https://github.com/actions/starter-workflows/blob/master/ci/docker-push.yml    
@@ -36,7 +42,7 @@ jobs:
         mkdir $GITHUB_WORKSPACE/html
         chmod 777 $GITHUB_WORKSPACE/html
         ls -l $GITHUB_WORKSPACE
-    - name: Analizu Revo-artikolojn a-d
+    - name: Analizu Revo-artikolojn ${{ env.TAGO }}
       env:
           AKRIDO_HOST: ${{secrets.AKRIDO_HOST}}
           AKRIDO_KEY: ${{secrets.AKRIDO_KEY}}
@@ -45,7 +51,7 @@ jobs:
         -v $GITHUB_WORKSPACE/html:/home/akrido/html
         -e AKRIDO_HOST -e AKRIDO_KEY
         docker.pkg.github.com/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }}
-        bash -c "./akrido preparo && ./akrido a-d"
+        bash -c "./akrido preparo && ./akrido ${{ env.TAGO }}"
     - name: Retrovu la rezultojn
       #id: retrovu_zip
       run: |
