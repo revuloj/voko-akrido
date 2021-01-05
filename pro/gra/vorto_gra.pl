@@ -58,7 +58,7 @@
 
     _Noto_: tiuspecaj vort-kuntiroj estas diskuteblaj kaj diskutataj, pluraj opinias, ke ili estas evitindaj.
      Pri diversaj teorioj de esperanta vortfarado legu ekz.
-      - http://akademio-de-esperanto.org/aktoj/aktoj1/vortfarado.html
+      - http://akademio-de-esperanto.org/aktoj/aktoj1/vortfarado.html, sekcio X - XVI
       - L. Mimó: Kompleta Lernolibro de Regula Esperanto, lec. 25 kaj sekvaj 
 
   @author Wolfram Diestel
@@ -99,6 +99,7 @@ pri vortfarado ĝenerale estas pluraj diversopiniaj klarigoj, vd. ekz.:
 
   - http://akademio-de-esperanto.org/aktoj/aktoj1/vortfarado.html
   - L. Mimó: Kompleta Lernolibro de Regula Esperanto, lec. 25 kaj sekvaj
+  - Marcel Leereveld: http://bonalingvo.net/index.php/Vortpluformado
 ***********************************************/
 
 
@@ -339,6 +340,9 @@ kdrv(rr,adj) <= &kadj(_,adj) + &rad(_,SSpc) ~> subspc(SSpc,subst).
 %   per ambaŭ manoj -> ambaŭ+mane
 kdrv(vr,adj) <= v(_,pron,_) + &rad(_,SSpc) ~> subspc(SSpc,subst).
 
+%   per nombro de tri stratoj -> tristrata, je du fojoj -> dufoje
+kdrv(vr,adj) <= v(_,nombr,_) + &rad(_,SSpc) ~> subspc(SSpc,subst).
+
 %   al tiu celo -> tiu+cel/a 
 %   je tia okazo -> tia+okaz/e
 kdrv(ur,adj) <= u(_,_) + &rad(_,SSpc) ~> subspc(SSpc,subst).
@@ -393,11 +397,16 @@ vrt(pv,Spc) <= p(mal,_) / v(_,Spc,_) ~> (Spc='adv'; Spc='prep').
 % nombrokunmeto, ekz. du*dek
 % KOREKTU: permesu nur dekojn kiel N2, ciferojn 1..9 kiel N1
 cifero(N) :- memberchk(N,[unu,du,tri,kvar,kvin,ses,sep,ok,'naŭ']). 
+kvanto(N) :- memberchk(N,[kelk,plur,mult]).
 deko(N) :- memberchk(N,[dek,cent,mil]). 
 cent_mil(N) :- memberchk(N,[cent,mil]). 
-vorto(nn,nombr) <= v(N1,nombr,_) * v(dek,nombr,_) ~> cifero(N1).
-vorto(nn,nombr) <= v(N1,nombr,_) * v(cent,nombr,_) ~> cifero(N1).
-vorto(nn,nombr) <= v(N1,nombr,_) * v(mil,nombr,_) ~> cifero(N1).
+
+% ekzaktaj dekobloj
+vorto(nn,nombr) <= v(N1,nombr,_) * v(N2,nombr,_) ~> cifero(N1), deko(N2).
+
+% neekzaktaj deobloj
+vorto(nn,nombr) <= r(N1,adj,_) * v(N2,nombr,_) ~> kvanto(N1), deko(N2).
+
 
 % ! kuntiraĵoj: dek~du, tri*dek~mil, normale estu spaco, kien
 % ni metos ~

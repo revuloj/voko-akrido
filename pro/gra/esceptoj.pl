@@ -144,6 +144,10 @@ rv_sen_fin(e,subst) <- esperant/id.
 rv_sen_fin(e,subst) <- bel~art.
 rv_sen_fin(e,subst) <- 'ĉio'/n~sci/ad.
 
+% laŭ kunderivado kun nombr+foje : trifoje
+% eblas ankaŭ ankoraŭ+unu+fojo -> ankoraŭ+foj/e
+rv_sen_fin(e,adv) <- 'ankoraŭ'+foj.
+
 % adverba anst. ellaso aŭ subst. finaĵo ĉe kunderivado/kunmetado
 
 rv_sen_fin(e,tr) <- kun/e~frap.
