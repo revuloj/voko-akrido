@@ -97,6 +97,7 @@ nf('Vaŝington',pers).
 nf('Veronika',pers).
 nf('Vinař',pers).
 nf('Volapük',subst).
+nf('Waringhien',pers).
 nf('Washington',pers).
 nf('Wheatstone',pers).
 nf('Wüster',pers).
