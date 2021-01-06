@@ -23,6 +23,8 @@ revo_txt('../txt').
 skribo_pado('../html').
 %revo_verda_listo('vrt/revo_verda_listo_provizora.txt').
 
+dosiero_max_infer(10000000000). % 10 mrd. rezonoj ne sufiĉas por dosiero, ĉesu!
+
 /** <module> Analizilo por Revo-artikoloj
 
   Antaŭsupozas, ke la artikoloj estas transformitaj al tekstoj antaŭe. Uzu la Perlo-programeton
@@ -41,6 +43,7 @@ helpo :-
 %
 % Legas artikolon kun dosiernomo Art (sen .txt), analizas kaj skribas la rezulton kiel HTML-kodo al STDOUT.
 % Ne analizeblaj vortoj el la verda listo estas markitaj verde anstataŭ ruĝe.
+
 
 analizu_revo_art(Art) :-
     %legu_verdan_liston_se_malplena,
@@ -133,6 +136,14 @@ verda_listo(Art,Listo) :-
   append(Vrt1,Lst,Listo).
 */
 
+/*
+catch(
+  call_with_time_limit(3, % max. 3s
+  vortanalizo(VrtMin,Ana,Spc)),
+  Exc,
+  (sub_atom(Exc,0,_,_,'time_limit_exceeded') -> fail; true)).
+*/
+
 kontrolu_dosieron(TxtFile) :-
     fonto_celo_dosiero(TxtFile,HtmlFile),
     format('~w -> ~w~n',[TxtFile,HtmlFile]),
@@ -140,7 +151,18 @@ kontrolu_dosieron(TxtFile) :-
     %artikolo_fonto_dosiero(Art,TxtFile),
     %verda_listo(Art,BL),
     forigu_esceptojn(Txt,Txt1),
-    analizu_tekston_outfile(Txt1,HtmlFile,[]). %BL). 
+% ne funkcias interrompi ĉe lud.xml....    
+%    dosiero_max_sec(MaxSec),
+%    call_with_time_limit(MaxSec, % atendu rezulton max. MaxSec s
+%      analizu_tekston_outfile(Txt1,HtmlFile,[]) %,BL). 
+%    ). 
+    dosiero_max_infer(MaxI),
+    call_with_inference_limit(
+      analizu_tekston_outfile(Txt1,HtmlFile,[]), %,BL). 
+      %10000000000,
+      MaxI,
+      _
+    ). 
 
 forigu_esceptojn([],[]). % ⧼...⧽ = 10748, ..., 10749
 forigu_esceptojn([10748|TxtKun],TxtSen) :- !,

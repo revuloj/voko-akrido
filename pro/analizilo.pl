@@ -17,6 +17,9 @@
 
 output(html).
 
+vorto_max_infer(10000000). % 10 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru vortanalizo
+
+
 /** <module> Vort- kaj tekstanalizilo
 
   Vi povas analizi unuopajn vortojn aŭ tutajn tekstojn.
@@ -28,27 +31,44 @@ output(html).
 % Se pluraj analizoj estas eblaj laŭ la reguloj ili doniĝas unu post la alia.
 
 vortanalizo(Vorto,Ana,Spc) :-
-  analyze(Vorto,Struct,Spc),
-  reduce(Struct,Ana).
+  vorto_max_infer(MaxI),
+  call_with_inference_limit(
+      (
+      analyze(Vorto,Struct,Spc),
+      reduce(Struct,Ana)
+      ),
+      MaxI,
+      _
+  ).
 
 
 vortanalizo(Vorto,Ana,Spc,same) :-
   % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
+  vorto_max_infer(MaxI),
   catch(
-    call_with_time_limit(3, % max. 3s
-      vortanalizo(Vorto,Ana,Spc)),
-    Exc,
-    (sub_atom(Exc,0,_,_,'time_limit_exceeded') -> fail; true)).
+    call_with_inference_limit( 
+      vortanalizo(Vorto,Ana,Spc),
+      MaxI,
+      Result
+    ),
+    _Exc,
+    (Result='inference_limit_exceeded' -> fail; true)
+  ).
 
 vortanalizo(Vorto,Ana,Spc,Uskl) :-
   %minuskligo(Vorto,VrtMin), 
   majuskloj(Vorto,VrtMin,Uskl),
   % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
+  vorto_max_infer(MaxI),
   catch(
-    call_with_time_limit(3, % max. 3s
-    vortanalizo(VrtMin,Ana,Spc)),
-    Exc,
-    (sub_atom(Exc,0,_,_,'time_limit_exceeded') -> fail; true)).
+    call_with_inference_limit(
+      vortanalizo(VrtMin,Ana,Spc),
+      MaxI,
+      Result
+    ),
+    _Exc,
+    (Result='inference_limit_exceeded' -> fail; true)
+  ).
 
 /***
 minuskligo_atom(Vorto,Minuskle):-
@@ -162,6 +182,9 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
   length(Vorto,L), L>1, % ne analizu unuopajn literojn
 %  statistics(cputime,C1),
 %  statistics(inferences,I1),
+
+  debug(analizo,'~s',[Vorto]),
+
   once((
     % PLIBONIGU: okaze forigu verdan liston, ĉar ni nun markas
     % per <nom>, <nac>, <frm> en Revo-artikoloj, ni povos
@@ -177,19 +200,22 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
     mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
     skribu_vorton(mlg,Vorto,_,_,_)
    ;
-    vortanalizo(Vorto,Ana,Spc,Uskl), 
-     (
-       nonvar(Ana), 
+    vortanalizo(Vorto,Ana,Spc,Uskl), !,
+     %(
+       %nonvar(Ana), 
        once((
+         var(Ana), % neanalizita
+         skribu_vorton(neanalizebla,Vorto,_,_,_)
+         ;
          % kunmetita vorto kun pli ol du radikoj: kontrolenda
          parto_nombro(Ana,'-',Nv), Nv>2, skribu_vorton(dubebla,Vorto,Ana,Spc,Uskl)
          ; 
          % kuntirita vorto: kontrolenda
-        parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(kuntirita,Vorto,Ana,Spc,Uskl)
+         parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(kuntirita,Vorto,Ana,Spc,Uskl)
          ; 
          skribu_vorton(bona,Vorto,Ana,Spc,Uskl)
        ))
-     )
+     %)
    ;
     % la vorto ne estis analizebla
     skribu_vorton(neanalizebla,Vorto,_,_,_)
@@ -249,10 +275,14 @@ analizu_tekston_liste_([v(Vorto)|Text],VerdaListo,[Rezulto|Resto]) :-
     mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
     Rezulto = _{takso:mlg,vorto:Mlg}
    ;
-    vortanalizo(Vorto,Ana,Spc,Uskl), 
-     (
-       nonvar(Ana), 
+    vortanalizo(Vorto,Ana,Spc,Uskl), !,
+     %(
+       %nonvar(Ana) -> 
        once((
+         var(Ana), % neanalizebla
+         atom_codes(V,Vorto), 
+         Rezulto = _{takso:neanalizebla,vorto:V}
+         ;
          parto_nombro(Ana,'-',Nv), Nv>2,   
          % uskleco(Uskl,Vorto,U2,Ana,A), 
          atom_codes(V,Vorto), term_to_atom(Uskl,U),
@@ -267,7 +297,7 @@ analizu_tekston_liste_([v(Vorto)|Text],VerdaListo,[Rezulto|Resto]) :-
          atom_codes(V,Vorto), term_to_atom(Uskl,U),
          Rezulto = _{takso:bona,vorto:V,analizo:Ana,speco:Spc,uskl:U}
        ))
-     )
+     %)
    ;
     atom_codes(V,Vorto), 
     Rezulto = _{takso:neanalizebla,vorto:V}
