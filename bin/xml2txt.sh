@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#set -x
+
 # Vi povas doni prefikson kiel unua argumento: xml2txt.sh k
 # tiam konvertiĝas nur xml/k*.xml, se ili estas pli novaj ol 
 # la korespondaj txt/k*.xml

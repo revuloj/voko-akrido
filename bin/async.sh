@@ -23,11 +23,11 @@ fi
 eval `ssh-agent -s`
 ssh-add - <<< ${AKRIDO_KEY}
 
+#rsync -v -r -c -z --delete --stats ...
 # -v = verbose, -r = subdosierujoj, -z = komprimite, -c = nur kies kontrolsumoj diferencas
 # -n montru, kio okazus, sed ne efektive sinkronigu!
-#rsync -v -r -c -z --delete --stats ...
-rsync -v -n -r -c -z --stats html/$1 revo@${AKRIDO_HOST}:/var/www/html/revokontrolo
-rsync -v -n    -c -z --stats html/$1_trovoj.html html/stilo.css html/klarigoj.html revo@${AKRIDO_HOST}:/var/www/html/revokontrolo
+rsync -v -r -c -z --stats html/$1 revo@${AKRIDO_HOST}:/var/www/html/revokontrolo
+rsync -v    -c -z --stats html/$1_trovoj.html html/stilo.css html/klarigoj.html revo@${AKRIDO_HOST}:/var/www/html/revokontrolo
 
 
 
