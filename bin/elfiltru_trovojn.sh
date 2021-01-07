@@ -39,7 +39,7 @@ EOH
       awk '!a[$0]++' - | \
       awk -v d=${d#*/} -F":" '{a[$1]=a[$1] ? a[$1]", "$2 : $2} END \
       {for (i in a) {print "<a href=\47"d"/"i".html\47>"i"</a> "\
-      "<a href=\47'$revoart'"substr(i,3)"\47 class=\47redakti\47 target=\47_new\47\
+      "<a href=\47'$revoart'"i".html\47 class=\47redakti\47 target=\47_new\47\
       title=\47artikolo\47>&#x270E;</a>: "a[i]"<br>"}}' - \
       >> "$outfile"
     # $ sort -u input.txt
