@@ -136,14 +136,6 @@ verda_listo(Art,Listo) :-
   append(Vrt1,Lst,Listo).
 */
 
-/*
-catch(
-  call_with_time_limit(3, % max. 3s
-  vortanalizo(VrtMin,Ana,Spc)),
-  Exc,
-  (sub_atom(Exc,0,_,_,'time_limit_exceeded') -> fail; true)).
-*/
-
 kontrolu_dosieron(TxtFile) :-
     fonto_celo_dosiero(TxtFile,HtmlFile),
     format('~w -> ~w~n',[TxtFile,HtmlFile]),

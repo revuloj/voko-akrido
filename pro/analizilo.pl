@@ -444,7 +444,7 @@ oficialeco(A,[Ofc|ORest],A1) :-
   % malplena krampo signifas neoficiala!
   Len is Right-Left-1, 
   once((
-    Len = 0, % ne devus plu oakzi, ĉar ni nun uzas '+' ans. '' por neoficialaj
+    Len = 0, % ne devus plu okazi, ĉar ni nun uzas '+' anst. '' por neoficialaj
     Ofc = n,
     atomic_list_concat([ALeft,ARest],A1)
     ;
@@ -452,7 +452,8 @@ oficialeco(A,[Ofc|ORest],A1) :-
     sub_atom(A,L1,Len,_,Ofc),
     atomic_list_concat([ALeft,'<sup>',Ofc,'</sup>',ARest],A1)
     ;
-    throw('Nevalida oficialeco, tro longa!')
+    %throw('Nevalida oficialeco, tro longa!')
+    format('Nevalida oficialeco, tro longa!')
   )).
 
 % se ne plu enestas [...]

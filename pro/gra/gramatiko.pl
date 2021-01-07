@@ -36,6 +36,7 @@ analyze_perf(Vrt,Ana,Spc) :-
 
 % forigas krampojn kaj spacojn el la rezulto-termo
 % kaj anstatŭigas / per mezpunkto (\u00b7)
+% la predikatoj por vorto_gra:reduce estas en regul_trf.pl
 reduce(Term,Flat) :-
   format(codes(A),'~w',[Term]),
   vorto_gra:reduce_(A,F,"() "), % difinta en regul_trf.pl
