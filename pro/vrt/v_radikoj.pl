@@ -42,22 +42,30 @@ r('si',adj,*).
 /**********
  * aliaj pronomoj/tabelvortoj kiel radikoj
 **********/
-r('kial',subst,*).
 
-r('iam',adv,*).
-r('ĉiam',adv,*).
-r('kiam',adv,*).
-r('tiam',adv,*).
+r('tia',adj,*). % tiaulo
 
-r('iel',adv,*).
-r('ĉiel',adv,*).
-r('kiel',adv,*).
-r('tiel',adv,*).
+r('kial',subst,*). % kialo
+r('tial',subst,*). % tialo
 
-r('iom',adv,*).
-r('kiom',adv,*).
-r('tiom',adv,*).
-r('ĉiom',adv,*).
+r('iam',adv,*). % iame
+r('ĉiam',adv,*). % ĉiame
+r('kiam',adv,*). % kiame
+r('tiam',adv,*). % tiame
+
+r('ĉie',adj,*).
+
+r('iel',adv,*). % iele
+r('ĉiel',adv,*). % ĉiele
+r('kiel',adv,*). % kiele
+r('tiel',adv,*). % tiele
+
+r('ĉies',adj,*). % ĉiesulino
+
+r('iom',adv,*). % iomete
+r('kiom',adv,*). % kiome
+r('tiom',adv,*). % tiome
+r('ĉiom',adv,*). % ĉiome
 
 r('tie',adj,*).
 
