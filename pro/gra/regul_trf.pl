@@ -49,8 +49,30 @@ vform('+','+').
 vform('-','-').
 vform('~','~').
 
+ofc_cls('*','o_f').
 ofc_cls('!',evi).
 ofc_cls(O,Cls) :- atom_concat('o_',O,Cls).
+
+ofc_sup('*','*').
+ofc_sup('!','⁽⁻⁾').
+ofc_sup('+','⁽⁺⁾').
+ofc_sup(N,S) :- 
+  atom_codes(N,C),
+  n_sup(C,Cs),
+  atom_codes(S,Cs).
+
+n_sup(`3`,`³`).
+n_sup(`4`,`⁴`).
+n_sup(`5`,`⁵`).
+n_sup(`6`,`⁶`).
+n_sup(`2`,`²`).
+n_sup(`7`,`⁷`).
+n_sup(`8`,`⁸`).
+n_sup(`1`,`¹`).
+n_sup(`9`,`⁹`).
+n_sup(`0`,`⁰`).
+n_sup([N|Rest],[Ns|Rs]) :- n_sup([N],[Ns]), n_sup(Rest,Rs).
+
 
 ana_html(Ana,[span(class(Classes),Content)]) :-
   ana_html_(Ana,Content,ClsLst),
@@ -72,6 +94,27 @@ ana_html_(A^O,[A,sup(O)],[Cls]) :-
 
 % vortelemento
 ana_html_(A,[A],[]) :-
+  atomic(A).
+
+ana_txt(Ana,Txt) :-
+  ana_txt_(Ana,Lst),
+  atomic_list_concat(Lst,Txt).
+
+ana_txt_(Ana,Lst) :-
+  Ana =..[ S1,A,B],
+  vform(S1,S2),
+  ana_txt_(A,Ha),
+  ana_txt_(B,Hb),
+  append([Ha,[S2],Hb],Lst).
+
+% oficialeco
+ana_txt_(A^O,[A,Os]) :-
+  atomic(A),
+  atomic(O),
+  ofc_sup(O,Os).
+
+% vortelemento
+ana_txt_(A,[A]) :-
   atomic(A).
 
 
