@@ -30,6 +30,7 @@ when_doc_ready(
               function (alineo,nro) {
                 HTTPRequest('POST', form_url, {
                   numero: (nro+1),
+                  formato: 'html',
                   teksto: alineo
                 },
                 function(data) {

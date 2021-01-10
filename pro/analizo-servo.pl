@@ -94,12 +94,12 @@ analizo(Request) :-
         format('Content-type: text/html~n~n'),
         (nonvar(Numero) -> format('<span class="nro">~d</span>',[Numero]);true),
         atomic_list_concat(Lines,'\n',Teksto),
-        maplist(analizu_linion,Lines,html)
+        maplist(analizu_linion(html),Lines)
         ;
         format('Content-type: text/plain~n~n'),
         (nonvar(Numero) -> format('~d. ',[Numero]);true),
         atomic_list_concat(Lines,'\n',Teksto),
-        maplist(analizu_linion,Lines,text)
+        maplist(analizu_linion(text),Lines)
         % ni ne povas uzi concurrent_ dum ni skribas rekte al STDOUT!
         %concurrent_maplist(analizu_linion,Lines).
     )).
@@ -130,7 +130,7 @@ analinioj(Request) :-
 
 malplena(_=[]).
 
-analizu_linion(Line,Format) :-
+analizu_linion(Format,Line) :-
     atom(Line),
     atom_codes(Line,Codes),
     analizu_tekston_kopie(Codes,Format), nl.

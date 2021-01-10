@@ -55,7 +55,7 @@ ofc_cls('!',evi).
 ofc_cls(O,Cls) :- atom_concat('o_',O,Cls).
 
 %ofc_sup('*','\u02d9'). %'⁰'). %'\u202f\u20f0'). %'⭑ᶠ⭑٭*').
-ofc_sup('*','\u202f\u20f0'). 
+ofc_sup('*','ᶠ'). 
 ofc_sup('!','⁽⁻⁾').
 ofc_sup('+','⁽⁺⁾').
 ofc_sup(N,S) :- 
@@ -96,7 +96,11 @@ ana_html_(Ana,Html,Cls) :-
 ana_html_(A^O,[A,Os],[Cls]) :-
   atomic(A),
   atomic(O),
-  ofc_sup(O,Os),
+  once((
+    O='*', Os=element(sup,[],['⭑'])
+    ;
+    ofc_sup(O,Os)
+  )),
   ofc_cls(O,Cls).
 
 

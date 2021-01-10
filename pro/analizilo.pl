@@ -385,10 +385,10 @@ skribu_vorton(text,mlg,Mlg,_,_,_) :-
   format('~w',[Mlg]).
 
 
-skribu_vorton(html,bona,_Vorto,Analizita,_,Uskl) :- 
-  %traktu poste... :uskleco(Uskl,Vorto,U,Analizita,A),
-  format('~q',[Uskl]),
-  html_write(Analizita,[]).
+skribu_vorton(html,bona,Vorto,Analizita,_,Uskl) :- 
+  %format('~q',[Uskl]),
+  uskleco(Uskl,Vorto,_,Analizita,A),
+  html_write(A,[]).
 
 %skribu_vorton(bona,Vorto,Analizita,_,minuskle) :-
 % % majuskligo_atom(Analizita,Majuskla),
@@ -398,19 +398,19 @@ skribu_vorton(html,neanalizebla,Vorto,_,_,_) :-
   atom_codes(V,Vorto),
   html_write([element(span,[class=neanaliz],[V])],[]).
 
-skribu_vorton(html,dubebla,_Vorto,Analizita,_,Uskl) :-
-  format('~q',[Uskl]),
-  % uskleco(Uskl,Vorto,U,Analizita,A),
+skribu_vorton(html,dubebla,Vorto,Analizita,_,Uskl) :-
+  %format('~q',[Uskl]),
+  uskleco(Uskl,Vorto,_,Analizita,A),
   % PLIBONIGU: temas pri longaj kunmetoj (pli ol 3 partoj)
   % aŭ aldonu la klason jam en regul_trf:ana_html
   % aŭ ŝovu gin ene de la span-elemento troviĝante en Analizita
   % momente ni havas nestitan span-en-span!
-  html_write([element(span,[class=dubebla],Analizita)],[]).
+  html_write([element(span,[class=dubebla],A)],[]).
 
-skribu_vorton(html,kuntirita,_Vorto,Analizita,_,Uskl) :-
-  format('~q',[Uskl]),
-  %uskleco(Uskl,Vorto,U,Analizita,A),
-  html_write(Analizita,[]).
+skribu_vorton(html,kuntirita,Vorto,Analizita,_,Uskl) :-
+  %format('~q',[Uskl]),
+  uskleco(Uskl,Vorto,_,Analizita,A),
+  html_write(A,[]).
 
 skribu_vorton(html,verda,Vorto,_,_,_) :-
   atom_codes(V,Vorto),
@@ -428,17 +428,34 @@ skribu_signojn(html,s(S)) :-
 skribu_nombron(n(N)) :-  format('~s',[N]).
 
 
+% uzenda kiel: uskleco(Uskl,Vorto,U,Analizita,A)
+% Uskl povas esti: 
+% - same
+% - 1:0 (komenca majusklo)
+% - 1:1 (tutmajuskla)
+
+% ni ne facile povas remeti la origina majusklecon
+% sed ni montras la originan en [...] antaŭ la
+% analizita vorto
+
 uskleco(_:1,Vorto,U,Analizita,Analizita) :-
   format(atom(U),'[~s:] ',[Vorto]),!.
 
-% uskleco dum analizo perdiĝis, do ni remetas ĝin
+% uskleco dum analizo perdiĝis, sed ni remetas ĝin
 % laŭ la origina vorto
-
 uskleco(1:0,_,'',Analizita,Ana) :-
+  atomic(Analizita), % Formato=text
   atom_codes(Analizita,[A|Nalizita]),
   to_upper(A,A1),
   atom_codes(Ana,[A1|Nalizita]).
 
+% Formato=html
+uskleco(1:0,_,'',[element(El,Attr,[C|Ontent])],[element(El,Attr,[C1|Ontent])]) :-
+  atom_codes(C,[A|R]),
+  to_upper(A,A1),
+  atom_codes(C1,[A1|R]).
+
+% senŝanĝa
 uskleco(_,_,'',Analizita,Analizita).
 
 /***
