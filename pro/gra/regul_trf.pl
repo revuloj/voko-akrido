@@ -41,6 +41,40 @@ debug_gra(Line) :-
   set_breakpoint(F,Line,0,_),
   debug.
 
+% transformo de analiz-rezulto al HTML-strukturo
+
+vform('/','·').
+vform('*','×').
+vform('+','+').
+vform('-','-').
+vform('~','~').
+
+ofc_cls('!',evi).
+ofc_cls(O,Cls) :- atom_concat('o_',O,Cls).
+
+ana_html(Ana,[span(class(Classes),Content)]) :-
+  ana_html_(Ana,Content,ClsLst),
+  atomic_list_concat(ClsLst,' ',Classes).
+
+ana_html_(Ana,Html,Cls) :-
+  Ana =..[ S1,A,B],
+  vform(S1,S2),
+  ana_html_(A,Ha,Cls1),
+  ana_html_(B,Hb,Cls2),
+  append(Cls1,Cls2,Cls),
+  append([Ha,[S2],Hb],Html).
+
+% oficialeco
+ana_html_(A^O,[A,sup(O)],[Cls]) :-
+  atomic(A),
+  atomic(O),
+  ofc_cls(O,Cls).
+
+% vortelemento
+ana_html_(A,[A],[]) :-
+  atomic(A).
+
+
 reduce_full(Term,Flat) :-
   format(codes(A),'~w',[Term]),
   reduce_(A,F,"/*+~-() "),
