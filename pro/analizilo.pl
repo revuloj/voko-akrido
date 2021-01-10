@@ -35,7 +35,8 @@ vortanalizo(Vorto,Ana,Spc) :-
   call_with_inference_limit(
       (
       analyze(Vorto,Struct,Spc),
-      reduce(Struct,Ana)
+      %reduce(Struct,Ana)
+      ana_txt(Struct,Ana)
       ),
       MaxI,
       _
@@ -333,6 +334,7 @@ skribu_kapon :-
   output(html) 
   -> format('<html><head>'),
      format('<meta http-equiv="content-type" content="text/html; charset=utf-8">'),
+     format('<meta name="viewport" content="width=device-width,initial-scale=1">'),
      format('<link title="stilo" type="text/css" rel="stylesheet" href="../stilo.css">'),
      format('</head><body><a href="../klarigoj.html">vidu ankaŭ la klarigojn</a><pre>~n')
   ; true.
