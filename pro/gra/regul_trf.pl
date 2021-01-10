@@ -50,10 +50,12 @@ vform('-','-').
 vform('~','~').
 
 ofc_cls('*','o_f').
+ofc_cls('+','o_n').
 ofc_cls('!',evi).
 ofc_cls(O,Cls) :- atom_concat('o_',O,Cls).
 
-ofc_sup('*','*').
+%ofc_sup('*','\u02d9'). %'⁰'). %'\u202f\u20f0'). %'⭑ᶠ⭑٭*').
+ofc_sup('*','\u202f\u20f0'). 
 ofc_sup('!','⁽⁻⁾').
 ofc_sup('+','⁽⁺⁾').
 ofc_sup(N,S) :- 
@@ -74,31 +76,33 @@ n_sup(`0`,`⁰`).
 n_sup([N|Rest],[Ns|Rs]) :- n_sup([N],[Ns]), n_sup(Rest,Rs).
 
 
-ana_html(Ana,[span(class(Classes),Content)]) :-
-  ana_html_(Ana,Content,ClsLst),
-  atomic_list_concat(ClsLst,' ',Classes).
-
 ana_html_(Ana,Html,Cls) :-
-  Ana =..[ S1,A,B],
+  Ana =..[S1,A,B],
   vform(S1,S2),
   ana_html_(A,Ha,Cls1),
   ana_html_(B,Hb,Cls2),
-  append(Cls1,Cls2,Cls),
+  (S1='~' 
+    -> append([[kuntirita],Cls1,Cls2],Cls)
+    ;  append(Cls1,Cls2,Cls)
+  ),
   append([Ha,[S2],Hb],Html).
 
 % oficialeco
-ana_html_(A^O,[A,sup(O)],[Cls]) :-
+%ana_html_(A^O,[A,element(sup,[],[O])],[Cls]) :-
+%  atomic(A),
+%  atomic(O),
+%  ofc_cls(O,Cls).
+
+ana_html_(A^O,[A,Os],[Cls]) :-
   atomic(A),
   atomic(O),
+  ofc_sup(O,Os),
   ofc_cls(O,Cls).
+
 
 % vortelemento
 ana_html_(A,[A],[]) :-
   atomic(A).
-
-ana_txt(Ana,Txt) :-
-  ana_txt_(Ana,Lst),
-  atomic_list_concat(Lst,Txt).
 
 ana_txt_(Ana,Lst) :-
   Ana =..[ S1,A,B],
@@ -117,14 +121,15 @@ ana_txt_(A^O,[A,Os]) :-
 ana_txt_(A,[A]) :-
   atomic(A).
 
-
+/*** ni bezonas ankoraŭ en term_expanson.... */
 reduce_full(Term,Flat) :-
   format(codes(A),'~w',[Term]),
-  reduce_(A,F,"/*+~-() "),
+  reduce_(A,F,"/*+~-^() "),
   atom_codes(Flat,F).
 
 reduce_([],[],_).
 
+/**
 % oficialeco: ^.. -> [..]
 reduce_([0'^,0'(,Ofc,0')|Ls],[0'[,Ofc,0']|F],DelLetters) :- 
   memberchk(Ofc,[0'*,0'!,0'+]), !, 
@@ -134,12 +139,14 @@ reduce_([0'^|Ls],Reduced,DelLetters) :- !,
   reduce_ofc(Ls,Ofc,Rest), % ^9 -> [9] ktp
   reduce_(Rest,R1,DelLetters),
   append(Ofc,R1,Reduced).
+***/
 
 % se la unua litero troviĝas en forigendaj (DelLetters), ellasu ĝin
 reduce_([L|Ls],F,DelLetters) :-
   string_code(_,DelLetters,L),!, % memberchk(L,DelLetters),!, 
   reduce_(Ls,F,DelLetters).
 
+/***
 % tri strekoj al longa streko
 reduce_([0'-,0'(,0'-,0'),0'-|Ls],[8212|F],DelLetters) :- !, % -(-)- -> —
   reduce_(Ls,F,DelLetters).
@@ -151,12 +158,14 @@ reduce_([0'/,0'(,0'/,0'),0'/|Ls],[124|F],DelLetters) :- !, % /(/)/ -> |
 % unu oblikvo al mezpunkto
 reduce_([0'/|Ls],[183|F],DelLetters) :- !, % / -> middot (\u00b7)
   reduce_(Ls,F,DelLetters).
+***/
 
 % ĉiujn aliajn signojn konservu en la rezulto
 reduce_([L|Ls],[L|Fs],DelLetters) :-
   % \+ memberchk(L,"() "), 
   reduce_(Ls,Fs,DelLetters).
 
+/***
 % ni legas ĉion ĝis '''' kiel oficialeco
 reduce_ofc(Ls,[0'[|Ofc],Rest) :-
   reduce_ofc_(Ls,O,Rest),
@@ -171,6 +180,7 @@ reduce_ofc_(Ls,[],Ls):-!.
 %reduce_ofc_([],[],[]). % ne devus okazi, ke ) mankas entute!
 
 reduce_ofc_(_,_,_) :- throw("Nevalida sintakso ĉe indiko de oficialeco!?").
+***/
 
 %%%%%% Traduki regulesprimojn al normalaj Prologo-faktoj....
 %%
@@ -238,8 +248,9 @@ term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
   format('bone!~n').
 % format('  ~w~n',[RuleTranslated]).
 
-% esceptoj: <- 
-% rv_sen_fin(e,subst) <- post/e/ul.
+% esceptojn ni difinas per simpla sageto: <- 
+%    rv_sen_fin(e,subst) <- post/e/ul.
+%
 % transformu al: rv_sen_fin(e,subst,posteul,post/e/ul,_).
 %? au alternative: rv_sen_fin(e,subst,Vrt,Rez,_Depth) :- Vrt = posteul, Rez = post/e/ul.
 

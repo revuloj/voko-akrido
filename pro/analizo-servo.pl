@@ -86,14 +86,23 @@ analizo(Request) :-
     http_parameters(Request,
 	    [
         numero(Numero, [integer,optional(true)]),
+        formato(Formato, [oneof([text,html]),default(text)]),
 	    teksto(Teksto, [length<MaxChr])
-	    ]),
-    format('Content-type: text/plain~n~n'),
-    (nonvar(Numero) -> format('<span class="nro">~d</span>',[Numero]);true),
-    atomic_list_concat(Lines,'\n',Teksto),
-    maplist(analizu_linion,Lines).
-    % ni ne povas uzi concurrent_ dum ni skribas rekte al STDOUT!
-    %concurrent_maplist(analizu_linion,Lines).
+        ]),
+    once((
+        Formato=html,
+        format('Content-type: text/html~n~n'),
+        (nonvar(Numero) -> format('<span class="nro">~d</span>',[Numero]);true),
+        atomic_list_concat(Lines,'\n',Teksto),
+        maplist(analizu_linion,Lines,html)
+        ;
+        format('Content-type: text/plain~n~n'),
+        (nonvar(Numero) -> format('~d. ',[Numero]);true),
+        atomic_list_concat(Lines,'\n',Teksto),
+        maplist(analizu_linion,Lines,text)
+        % ni ne povas uzi concurrent_ dum ni skribas rekte al STDOUT!
+        %concurrent_maplist(analizu_linion,Lines).
+    )).
 
 
 % legas JSON el Request, kiu enhavu objekton, kies
@@ -121,14 +130,14 @@ analinioj(Request) :-
 
 malplena(_=[]).
 
-analizu_linion(Line) :-
+analizu_linion(Line,Format) :-
     atom(Line),
     atom_codes(Line,Codes),
-    analizu_tekston_kopie(Codes,[]), nl.
+    analizu_tekston_kopie(Codes,Format), nl.
 
 analizu_linion(Mode,N=Line,N=Rez) :-
     atom_codes(Line,Codes), %format('~w::',[N]),
-    analizu_tekston_liste(Codes,[],RList),
+    analizu_tekston_liste(Codes,text,RList),
     % redukto la rezulton al linioj kun kontrolendaj/eraraj vortoj 
     exclude(ana_ekskludo(Mode),RList,Rez).
 

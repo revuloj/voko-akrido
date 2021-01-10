@@ -1,6 +1,6 @@
 :- module(gramatiko,[
 	      analyze/3, % analizado de vorto
-	      reduce/2, % forigi krampojn kaj spacojn el analizita esprimo
+	      %reduce/2, % forigi krampojn kaj spacojn el analizita esprimo
         ana_html/2,
         ana_txt/2 
 	  ]).
@@ -39,12 +39,14 @@ analyze_perf(Vrt,Ana,Spc) :-
 % forigas krampojn kaj spacojn el la rezulto-termo
 % kaj anstatŭigas / per mezpunkto (\u00b7)
 % la predikatoj por vorto_gra:reduce estas en regul_trf.pl
+/***
 reduce(Term,Flat) :-
   format(codes(A),'~w',[Term]),
   vorto_gra:reduce_(A,F,"() "), % difinta en regul_trf.pl
   atom_codes(Flat,F).
+***/
 
-ana_html(Ana,[span(class(Classes),Content)]) :-
+ana_html(Ana,[element(span,[class=Classes],Content)]) :-
   vorto_gra:ana_html_(Ana,Content,ClsLst),!, % vd. en regul_trf
   atomic_list_concat(ClsLst,' ',Classes).
 

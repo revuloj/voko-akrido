@@ -52,7 +52,7 @@ analizu_revo_art(Art) :-
     read_file_to_codes(TxtFile,Txt,[]),
     %verda_listo(Art,BL),
     forigu_esceptojn(Txt,Txt1),
-    analizu_tekston_kopie(Txt1,[]),!. %BL),!.
+    analizu_tekston_kopie(Txt1,html),!. %BL),!.
 
 %! analizu_revo_art_prefix(+Prefikso:atom) is det.
 %
@@ -150,7 +150,7 @@ kontrolu_dosieron(TxtFile) :-
 %    ). 
     dosiero_max_infer(MaxI),
     call_with_inference_limit(
-      analizu_tekston_outfile(Txt1,HtmlFile,[]), %,BL). 
+      analizu_tekston_outfile(Txt1,HtmlFile,html), %,BL). 
       %10000000000,
       MaxI,
       _

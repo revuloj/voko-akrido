@@ -1,6 +1,7 @@
 :- module(analizilo,[
 	      vortanalizo/3,
 	      vortanalizo/4,
+	      vortanalizo/5,
 	      preparu_tekston/2, 
 	      analizu_tekston_kopie/2,
 	      analizu_tekston_liste/3,
@@ -15,7 +16,7 @@
 
 :-ensure_loaded('dcg/teksto_dcg.pl'). % por dishaki tekston en vortojn
 
-output(html).
+%output(html).
 
 vorto_max_infer(10000000). % 10 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru vortanalizo
 
@@ -31,6 +32,9 @@ vorto_max_infer(10000000). % 10 mio: maksimume tiom da rezonpaŝoj (inferences) 
 % Se pluraj analizoj estas eblaj laŭ la reguloj ili doniĝas unu post la alia.
 
 vortanalizo(Vorto,Ana,Spc) :-
+  vortanalizo(Vorto,Ana,Spc,text).
+
+vortanalizo(Vorto,Ana,Spc,text) :-
   vorto_max_infer(MaxI),
   call_with_inference_limit(
       (
@@ -42,13 +46,34 @@ vortanalizo(Vorto,Ana,Spc) :-
       _
   ).
 
+vortanalizo(Vorto,Struct,Spc,struct) :-
+  vorto_max_infer(MaxI),
+  call_with_inference_limit(
+      (
+      analyze(Vorto,Struct,Spc)
+      ),
+      MaxI,
+      _
+  ).
 
-vortanalizo(Vorto,Ana,Spc,same) :-
+vortanalizo(Vorto,Ana,Spc,html) :-
+  vorto_max_infer(MaxI),
+  call_with_inference_limit(
+      (
+      analyze(Vorto,Struct,Spc),
+      %reduce(Struct,Ana)
+      ana_html(Struct,Ana)
+      ),
+      MaxI,
+      _
+  ).
+
+vortanalizo(Vorto,Ana,Spc,same,Format) :-
   % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
   vorto_max_infer(MaxI),
   catch(
     call_with_inference_limit( 
-      vortanalizo(Vorto,Ana,Spc),
+      vortanalizo(Vorto,Ana,Spc,Format),
       MaxI,
       Result
     ),
@@ -56,14 +81,14 @@ vortanalizo(Vorto,Ana,Spc,same) :-
     (Result='inference_limit_exceeded' -> fail; true)
   ).
 
-vortanalizo(Vorto,Ana,Spc,Uskl) :-
+vortanalizo(Vorto,Ana,Spc,Uskl,Format) :-
   %minuskligo(Vorto,VrtMin), 
   majuskloj(Vorto,VrtMin,Uskl),
   % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
   vorto_max_infer(MaxI),
   catch(
     call_with_inference_limit(
-      vortanalizo(VrtMin,Ana,Spc),
+      vortanalizo(VrtMin,Ana,Spc,Format),
       MaxI,
       Result
     ),
@@ -116,70 +141,69 @@ non_empty(_,N,N_1):-succ(N,N_1).
 
 % Source: InFileName aŭ InCodes
 analizu_tekston_outfile(Source,OutFileName) :-
-  analizu_tekston_outfile(Source,OutFileName,[]).
+  analizu_tekston_outfile(Source,OutFileName,text).
 
 
-%! analizu_tekston_outfile(+ElDosiero:atom,+AlDosiero:atom,+VerdaListo:list).
-%! analizu_tekston_outfile(+Teksto:list,+AlDosiero:atom,+VerdaListo:list).
+%! analizu_tekston_outfile(+ElDosiero:atom,+AlDosiero:atom,+Format:atom).
+%! analizu_tekston_outfile(+Teksto:list,+AlDosiero:atom,+Format:atp,).
 %
 % Analizas kompletan tekston el tekstdosiero aŭ rekte donitan kiel argumento. La rezulto estas skribita al _AlDosiero_.
-% La VerdaListo estas listo de vortoj kiel ne estos analizataj sed tuj akceptataj, kiam ili aperas en la teksto.
-% Uzu ekz-e por propraj nomoj aŭ nekutima mallongigoj.
+% Format povas esti text aŭ html.
 
-analizu_tekston_outfile(InFileName,OutFileName,VerdaListo) :-
+analizu_tekston_outfile(InFileName,OutFileName,Format) :-
   atom(InFileName),
   phrase_from_file(teksto(T),InFileName,[encoding(utf8)]),!,
-  analizo_output(OutFileName,T,VerdaListo).
+  analizo_output(OutFileName,T,Format).
 
-analizu_tekston_outfile(InCodes,OutFileName,VerdaListo) :-
+analizu_tekston_outfile(InCodes,OutFileName,Format) :-
   is_list(InCodes),
   phrase(teksto(T),InCodes),!,
-  analizo_output(OutFileName,T,VerdaListo).
+  analizo_output(OutFileName,T,Format).
 
 preparu_tekston(InCodes,Teksto) :-    
   is_list(InCodes),
   phrase(teksto(Teksto),InCodes),!.
 
-analizo_output(OutFileName,T,VerdaListo) :-
+analizo_output(OutFileName,T,Format) :-
   setup_call_cleanup(
     open(OutFileName,write,Out),
     with_output_to(Out,
      (
-       skribu_kapon,
-       analizu_tekston_kopie_(T,VerdaListo),
-       skribu_voston
+       skribu_kapon(Format),
+       analizu_tekston_kopie_(T,Format),
+       skribu_voston(Format)
      )),
     close(Out)
   ).
 
-%! analizu_tekston_kopie(+Dosiero:atom,+VerdaListo:list). 
-%! analizu_tekston_kopie(+Fluo:stream,+VerdaListo:list).
-%! analizu_tekston_kopie(+Teksto:list,+VerdaListo:list).
+%! analizu_tekston_kopie(+Dosiero:atom,+Format:atom). 
+%! analizu_tekston_kopie(+Fluo:stream,+Format:atom).
+%! analizu_tekston_kopie(+Teksto:list,+Format:atom).
 %
 % Analizas kompletan tekston el tekstdosiero aŭ datumfluo. La rezulto estas skribita al STDOUT.
-% La VerdaListo estas listo de vortoj kiel ne estos analizataj sed tuj akceptataj, kiam ili aperas en la teksto.
+% Format povas esti text aŭ html
 
 % analizas tutan tekstodosieron, kaj redonas la tekston kun
 % ne analizeblaj vortoj markitaj
-analizu_tekston_kopie(FileName,VerdaListo) :-
+analizu_tekston_kopie(FileName,Format) :-
   atom(FileName),
   phrase_from_file(teksto(T),FileName,[encoding(utf8)]),!,
-  analizu_tekston_kopie_(T,VerdaListo),!.
+  analizu_tekston_kopie_(T,Format),!.
 
-analizu_tekston_kopie(Stream,VerdaListo) :-
+analizu_tekston_kopie(Stream,Format) :-
   is_stream(Stream),
   phrase_from_stream(teksto(T),Stream),!,
-  analizu_tekston_kopie_(T,VerdaListo),!.
+  analizu_tekston_kopie_(T,Format),!.
 
-analizu_tekston_kopie(Txt,VerdaListo) :-
+analizu_tekston_kopie(Txt,Format) :-
   is_list(Txt),
   phrase(teksto(T),Txt),!,
-  analizu_tekston_kopie_(T,VerdaListo),!.
+  analizu_tekston_kopie_(T,Format),!.
 
 
 analizu_tekston_kopie_([],_).
  
-analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
+analizu_tekston_kopie_([v(Vorto)|Text],Format) :-
   length(Vorto,L), L>1, % ne analizu unuopajn literojn
 %  statistics(cputime,C1),
 %  statistics(inferences,I1),
@@ -187,60 +211,61 @@ analizu_tekston_kopie_([v(Vorto)|Text],VerdaListo) :-
   debug(analizo,'~s',[Vorto]),
 
   once((
-    % PLIBONIGU: okaze forigu verdan liston, ĉar ni nun markas
+    /* forigante verdan liston, ĉar ni nun markas
     % per <nom>, <nac>, <frm> en Revo-artikoloj, ni povos
     % jam anticipe escpeti tiujn vortojn
-    memberchk(Vorto,VerdaListo),
+    memberchk(Vorto,Format),
     skribu_vorton(verda,Vorto,_,_,_)
-   ;
+   ;*/
     atom_codes(Nf,Vorto), 
     nf(Nf,_), % nomo-fremda
-    skribu_vorton(verda,Vorto,_,_,_)
+    skribu_vorton(Format,verda,Vorto,_,_,_)
    ;   
     atom_codes(Mlg,Vorto), 
     mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
-    skribu_vorton(mlg,Vorto,_,_,_)
+    skribu_vorton(Format,mlg,Mlg,_,_,_)
    ;
-    vortanalizo(Vorto,Ana,Spc,Uskl), !,
+    vortanalizo(Vorto,Ana,Spc,Uskl,Format), !,
      %(
        %nonvar(Ana), 
        once((
          var(Ana), % neanalizita
-         skribu_vorton(neanalizebla,Vorto,_,_,_)
+         skribu_vorton(Format,neanalizebla,Vorto,_,_,_)
          ;
          % kunmetita vorto kun pli ol du radikoj: kontrolenda
-         parto_nombro(Ana,'-',Nv), Nv>2, skribu_vorton(dubebla,Vorto,Ana,Spc,Uskl)
-         ; 
-         % kuntirita vorto: kontrolenda
-         parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(kuntirita,Vorto,Ana,Spc,Uskl)
-         ; 
-         skribu_vorton(bona,Vorto,Ana,Spc,Uskl)
+%% KOREKTU: momente en HTML ne plu funkcias!!!         
+%%         parto_nombro(Ana,'-',Nv), Nv>2, skribu_vorton(Format,dubebla,Vorto,Ana,Spc,Uskl)
+%%         ; 
+%%         % kuntirita vorto: kontrolenda
+%%         parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(Format,kuntirita,Vorto,Ana,Spc,Uskl)
+%%         ; 
+         skribu_vorton(Format,bona,Vorto,Ana,Spc,Uskl)
        ))
      %)
    ;
     % la vorto ne estis analizebla
-    skribu_vorton(neanalizebla,Vorto,_,_,_)
+    skribu_vorton(Format,neanalizebla,Vorto,_,_,_)
   )),
 %  statistics(inferences,I2), 
 %  statistics(cputime,C2),
 %  C is C2-C1, I is I2-I1,
 %  (C>5 -> format(' [i~d,c~2f] ',[I,C]); true), 
-  analizu_tekston_kopie_(Text,VerdaListo).
+  analizu_tekston_kopie_(Text,Format).
 
 
-analizu_tekston_kopie_([v(V)|Text],VL) :-
+analizu_tekston_kopie_([v(V)|Text],Format) :-
   length(V,L), L=<1, % ne analizu unuopajn literojn
-  skribu_signojn(s(V)),
-  analizu_tekston_kopie_(Text,VL).
+  skribu_signojn(Format,s(V)),
+  analizu_tekston_kopie_(Text,Format).
 
 
-analizu_tekston_kopie_([s(S)|Text],VL) :-
-  skribu_signojn(s(S)),
-  analizu_tekston_kopie_(Text,VL).
+analizu_tekston_kopie_([s(S)|Text],Format) :-
+  skribu_signojn(Format,s(S)),
+  analizu_tekston_kopie_(Text,Format).
 
-analizu_tekston_kopie_([n(N)|Text],VL) :-
+analizu_tekston_kopie_([n(N)|Text],Format) :-
   skribu_nombron(n(N)),
-  analizu_tekston_kopie_(Text,VL).
+  analizu_tekston_kopie_(Text,Format).
 
 analizu_tekston_kopie_(Tekstero,_) :-
   format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
@@ -249,34 +274,34 @@ analizu_tekston_kopie_(Tekstero,_) :-
 
 %%%%%%%%%
 
-analizu_tekston_liste(Txt,VerdaListo,Rezulto) :-
+analizu_tekston_liste(Txt,Format,Rezulto) :-
     is_list(Txt),
     phrase(teksto(T),Txt),!,
-    analizu_tekston_liste_(T,VerdaListo,Rezulto).
+    analizu_tekston_liste_(T,Format,Rezulto).
 
 analizu_tekston_liste_([],_,[]).
  
-analizu_tekston_liste_([v(Vorto)|Text],VerdaListo,[Rezulto|Resto]) :-
+analizu_tekston_liste_([v(Vorto)|Text],Format,[Rezulto|Resto]) :-
   length(Vorto,L), L>1, % ne analizu unuopajn literojn
 %  statistics(cputime,C1),
 %  statistics(inferences,I1),
   once((
-    % PLIBONIGU: okaze forigu verdan liston, ĉar ni nun markas
+    /* forigante verdan liston, ĉar ni nun markas
     % per <nom>, <nac>, <frm> en Revo-artikoloj, ni povos
     % jam anticipe escpeti tiujn vortojn
     memberchk(Vorto,VerdaListo),
     atom_codes(V,Vorto), 
     Rezulto = _{takso:verda,vorto:V}
-   ;
+   ;*/
     atom_codes(Nf,Vorto), 
     nf(Nf,_), % nomo-fremda
-    skribu_vorton(verda,Vorto,_,_,_)    
+    skribu_vorton(Format,verda,Vorto,_,_,_)    
    ;
     atom_codes(Mlg,Vorto), 
     mlg(Mlg), % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
     Rezulto = _{takso:mlg,vorto:Mlg}
    ;
-    vortanalizo(Vorto,Ana,Spc,Uskl), !,
+    vortanalizo(Vorto,Ana,Spc,Uskl,Format), !,
      %(
        %nonvar(Ana) -> 
        once((
@@ -307,21 +332,21 @@ analizu_tekston_liste_([v(Vorto)|Text],VerdaListo,[Rezulto|Resto]) :-
 %  statistics(cputime,C2),
 %  C is C2-C1, I is I2-I1,
 %  (C>5 -> format(' [i~d,c~2f] ',[I,C]); true), 
-  analizu_tekston_liste_(Text,VerdaListo,Resto).
+  analizu_tekston_liste_(Text,Format,Resto).
 
 
-analizu_tekston_liste_([v(V)|Text],VL,[_{takso:signo,vorto:S}|Resto]) :-
+analizu_tekston_liste_([v(V)|Text],Format,[_{takso:signo,vorto:S}|Resto]) :-
   length(V,L), L=<1, % ne analizu unuopajn literojn
   atom_codes(S,V),
-  analizu_tekston_liste_(Text,VL,Resto).
+  analizu_tekston_liste_(Text,Format,Resto).
 
-analizu_tekston_liste_([s(S)|Text],VL,[_{takso:signo,vorto:S1}|Resto]) :-
+analizu_tekston_liste_([s(S)|Text],Format,[_{takso:signo,vorto:S1}|Resto]) :-
   atom_codes(S1,S),
-  analizu_tekston_liste_(Text,VL,Resto).
+  analizu_tekston_liste_(Text,Format,Resto).
 
-analizu_tekston_liste_([n(N)|Text],VL,[_{takso:nombro,vorto:N1}|Resto]) :-
+analizu_tekston_liste_([n(N)|Text],Format,[_{takso:nombro,vorto:N1}|Resto]) :-
   atom_codes(N1,N),
-   analizu_tekston_liste_(Text,VL,Resto).
+   analizu_tekston_liste_(Text,Format,Resto).
 
 analizu_tekston_liste_(Tekstero,_,_) :-
   format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
@@ -330,90 +355,77 @@ analizu_tekston_liste_(Tekstero,_,_) :-
 %%%%%%%
 
 
-skribu_kapon :-
-  output(html) 
-  -> format('<html><head>'),
-     format('<meta http-equiv="content-type" content="text/html; charset=utf-8">'),
-     format('<meta name="viewport" content="width=device-width,initial-scale=1">'),
-     format('<link title="stilo" type="text/css" rel="stylesheet" href="../stilo.css">'),
-     format('</head><body><a href="../klarigoj.html">vidu ankaŭ la klarigojn</a><pre>~n')
-  ; true.
+skribu_kapon(text).
+skribu_kapon(html) :-
+  format('<html><head>'),
+  format('<meta http-equiv="content-type" content="text/html; charset=utf-8">'),
+  format('<meta name="viewport" content="width=device-width,initial-scale=1">'),
+  format('<link title="stilo" type="text/css" rel="stylesheet" href="../stilo.css">'),
+  format('</head><body><a href="../klarigoj.html">vidu ankaŭ la klarigojn</a><pre>~n').
 
-skribu_voston :-
-  output(html) 
-  -> format('~n</pre></body></html>~n')
-  ; true.
+skribu_voston(text).
+skribu_voston(html) :-
+  format('~n</pre></body></html>~n').
 
-skribu_vorton(bona,Vorto,Analizita,_,Uskl) :-
+
+skribu_vorton(text,bona,Vorto,Analizita,_,Uskl) :-
   uskleco(Uskl,Vorto,U,Analizita,A),
-  oficialeco(A,LOfc,AO),
-  once((
-    LOfc = [], % neniu aparta oficialec-informo
-    format('~w~w',[U,AO])
-    ;
-    output(html)
-    -> 
-    (
-      ofc_classes(LOfc,Cls), % kreu klasliston de oficialeco
-      format('<span class="~w">~w~w</span>',[Cls,U,AO])
-    ); format('~w~w',[U,AO])
-  )).
+  format('~w~w',[U,A]).
+skribu_vorton(text,neanalizebla,Vorto,_,_,_) :-
+  format('>>>~s<<<',[Vorto]).
+skribu_vorton(text,dubebla,Vorto,Analizita,_,Uskl) :-
+  uskleco(Uskl,Vorto,U,Analizita,A),
+  format('~w~w(?)',[U,A]).
+skribu_vorton(text,kuntirita,Vorto,Analizita,_,Uskl) :-
+  uskleco(Uskl,Vorto,U,Analizita,A),
+  format('~w~w(!)',[U,A]).
+skribu_vorton(text,verda,Vorto,_,_,_) :-
+  format('>>~s<<',[Vorto]).
+skribu_vorton(text,mlg,Mlg,_,_,_) :-
+  format('~w',[Mlg]).
+
+
+skribu_vorton(html,bona,_Vorto,Analizita,_,Uskl) :- 
+  %traktu poste... :uskleco(Uskl,Vorto,U,Analizita,A),
+  format('~q',[Uskl]),
+  html_write(Analizita,[]).
 
 %skribu_vorton(bona,Vorto,Analizita,_,minuskle) :-
 % % majuskligo_atom(Analizita,Majuskla),
 %  format('"~s"::~w',[Vorto,Analizita]).
 
-skribu_vorton(neanalizebla,Vorto,_,_,_) :-
-  output(html)
-  -> format('<span class="neanaliz">~s</span>',[Vorto])
-  ; format('>>>~s<<<',[Vorto]).
+skribu_vorton(html,neanalizebla,Vorto,_,_,_) :-
+  atom_codes(V,Vorto),
+  html_write([element(span,[class=neanaliz],[V])],[]).
 
-skribu_vorton(dubebla,Vorto,Analizita,_,Uskl) :-
-  uskleco(Uskl,Vorto,U,Analizita,A),
-  oficialeco(A,LOfc,AO),
-  once((
-    LOfc = [], % neniu aparta oficialec-informo
-    format('~w~w',[U,AO])
-    ;
-    output(html)
-    -> 
-    (
-      ofc_classes(LOfc,Cls), % kreu klasliston de oficialeco
-     format('<span class="dubebla ~w">~w~w</span>(?)',[Cls,U,AO])
-    ); format('~w~w(?)',[U,A])
-  )).
+skribu_vorton(html,dubebla,_Vorto,Analizita,_,Uskl) :-
+  format('~q',[Uskl]),
+  % uskleco(Uskl,Vorto,U,Analizita,A),
+  % PLIBONIGU: temas pri longaj kunmetoj (pli ol 3 partoj)
+  % aŭ aldonu la klason jam en regul_trf:ana_html
+  % aŭ ŝovu gin ene de la span-elemento troviĝante en Analizita
+  % momente ni havas nestitan span-en-span!
+  html_write([element(span,[class=dubebla],Analizita)],[]).
 
-skribu_vorton(kuntirita,Vorto,Analizita,_,Uskl) :-
-  uskleco(Uskl,Vorto,U,Analizita,A),
-  oficialeco(A,LOfc,AO),
-  once((
-    LOfc = [], % neniu aparta oficialec-informo
-    format('~w~w',[U,AO])
-    ;
-    output(html)
-    -> 
-    (
-      ofc_classes(LOfc,Cls), % kreu klasliston de oficialeco
-      format('<span class="kuntirita ~w">~w~w</span>',[Cls,U,AO])
-    ); format('~w~w(!)',[U,A])
-  )).
+skribu_vorton(html,kuntirita,_Vorto,Analizita,_,Uskl) :-
+  format('~q',[Uskl]),
+  %uskleco(Uskl,Vorto,U,Analizita,A),
+  html_write(Analizita,[]).
 
-skribu_vorton(verda,Vorto,_,_,_) :-
-  output(html)
-  -> format('<span class="verda">~s</span>',[Vorto])
-  ; format('>>~s<<',[Vorto]).
+skribu_vorton(html,verda,Vorto,_,_,_) :-
+  atom_codes(V,Vorto),
+  html_write([element(span,[class=verda],[V])],[]).
 
-skribu_vorton(mlg,Vorto,_,_,_) :-
-  output(html)
-  -> format('<span class="mlg">~s</span>',[Vorto])
-  ; format('~s',[Vorto]).
+skribu_vorton(html,mlg,Mlg,_,_,_) :-  
+  html_write([element(span,[class=mlg],[Mlg])],[]).
 
-skribu_signojn(s(S)) :-  
- output(html)
- -> atom_codes(Sgn,S), xml_quote_cdata(Sgn,Quoted,utf8), write(Quoted)
- ; format('~s',[S]).
+
+skribu_signojn(text,s(S)) :-  
+  format('~s',[S]).
+skribu_signojn(html,s(S)) :-  
+  atom_codes(Sgn,S), xml_quote_cdata(Sgn,Quoted,utf8), write(Quoted).
+
 skribu_nombron(n(N)) :-  format('~s',[N]).
-
 
 
 uskleco(_:1,Vorto,U,Analizita,Analizita) :-
@@ -429,6 +441,7 @@ uskleco(1:0,_,'',Analizita,Ana) :-
 
 uskleco(_,_,'',Analizita,Analizita).
 
+/***
 
 % oficialeco enestas kiel [...]
 % ni enmetos <sup>...</sup> tiuloke
@@ -470,5 +483,7 @@ ofc_cls('*','o_f'):-!.
 ofc_cls('!','evi'):-!.
 ofc_cls('+','o_n'):-!.
 ofc_cls(O,C) :- atom_concat(o_, O, C).
+
+***/
 
 
