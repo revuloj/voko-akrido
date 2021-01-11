@@ -149,6 +149,8 @@ rv_sen_fin(h,adj) <- dis^'*'/blov^'*'/it.
 %rv_sen_fin(h,adj) <- fort^'*'/o+plen^'*'. % ne for/top-len/
 %rv_sen_fin(h,best) <- form^'*'/ant. % ne for/mant/
 
+rv_sen_fin(h,best) <- ge/sam^'*'~ide^'*'/an. 
+
 %rv_sen_fin(h,ntr) <- glu^'*'-mark^'*'. % por eviti misanalizon glum-ark
 %rv_sen_fin(h,subst) <- grup^'*'/et. % por eviti analizon grupet/
 
@@ -168,7 +170,7 @@ rv_sen_fin(h,tr) <- je^'*'/'ĵur'^'*'. % en BdV, cu ni permesu 'je' kiel prefiks
 rv_sen_fin(h,tr) <- mal/supr^'*'/en~ig.
 %rv_sen_fin(h,ntr) <- membr^'*'/'iĝ'. % por eviti misanalizon mem/briĝ
 %rv_sen_fin(h,subst) <- membr^'*'/o-kvant^'*'. % por eviti misanalizon mem/brok/vant
-rv_sen_fin(h,subst) <- membr^'*'/ec. % por eviti misanalizon mem/brec
+%rv_sen_fin(h,subst) <- membr^'*'/ec. % por eviti misanalizon mem/brec
 %rv_sen_fin(h,subst) <- mur^'*'-dent^'*'. % ne murd-ent
 
 rv_sen_fin(h,subst) <- nask^'*'/'iĝ'. % por faciligi rekoni kunmetitajn kiel naskiĝtago
@@ -190,7 +192,7 @@ rv_sen_fin(h,adv) <- prov^'*'/ant. % ne pro/vant
 
 %rv_sen_fin(h,best) <- reg^'*'/ist. % ne re/gist/
 %rv_sen_fin(h,tr) <- 'reĝ'^'*'/ig.
-rv_sen_fin(h,adj) <- respond^'*'/ec.
+%rv_sen_fin(h,adj) <- respond^'*'/ec.
 rv_sen_fin(h,adj) <- rigl^'*'/it. % verŝajne mankas (tr)
 %rv_sen_fin(h,subst) <- romp^'*'/o-pec^'*'. % ne rom-pop/ec
 
@@ -199,12 +201,12 @@ rv_sen_fin(h,adj) <- rigl^'*'/it. % verŝajne mankas (tr)
 %rv_sen_fin(h,tr) <- sen^'*'/ig. % seno estas ankaŭ monunuo!
 %rv_sen_fin(h,ntr) <- sen^'*'/vest^'*'/'iĝ'. % ne sen/vestiĝ/
 %rv_sen_fin(h,subst) <- sent^'*'/et. % ne sen/tet
-rv_sen_fin(h,subst) <- sinjor^'*'/ec. % ne sin+jor/eco
+%rv_sen_fin(h,subst) <- sinjor^'*'/ec. % ne sin+jor/eco
 %rv_sen_fin(h,subst) <- skrib^'*'-tabul^'*'. % ne skrib-tab-ul
 rv_sen_fin(h,subst) <- sun^'*'-lev^'*'/'iĝ'.
 rv_sen_fin(h,tr) <- supr^'*'/en~ig.
 rv_sen_fin(h,adj) <- supr^'*'/e~montr^'*'/it.
-rv_sen_fin(h,subst) <- suveren^'+'/ec. % evitu misnalizon suv/er+en/ec
+%rv_sen_fin(h,subst) <- suveren^'+'/ec. % evitu misnalizon suv/er+en/ec
 
 %rv_sen_fin(h,subst) <- 'ŝak'^'*'-tabul^'*'.
 %

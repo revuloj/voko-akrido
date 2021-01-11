@@ -64,7 +64,8 @@ s('aĵ',subst,subst).
 s(an,best,subst).
 s(ar,subst,subst).
 s(ebl,adj,tr).
-s(ec,subst,adj).
+s(ec,subst,adj).   % grandeco...
+s(ec,subst,subst). % membreco, kaoseco k.a.
 s(eg,_,_).
 s(ej,subst,verb). % lernejo
 s(ej,subst,subst). % vinejo

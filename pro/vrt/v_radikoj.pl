@@ -120,6 +120,7 @@ r('kontraŭ',tr,*).
 r('krom',adv,*).
 r('kun',adv,*).
 r('laŭ',adv,*).
+r('mem',subst,*). % memo
 r('ne',tr,*).
 r('nun',adv,*).
 r('nur',adv,*).
