@@ -96,6 +96,34 @@ vortanalizo(Vorto,Ana,Spc,Uskl,Format) :-
     (Result='inference_limit_exceeded' -> fail; true)
   ).
 
+v3(Vorto,Ana,Spc,Pt) :- 
+
+aggregate(
+  min(P,A-S),
+    limit(4, distinct(( % distinct altigas la ŝancon ke ni trovos la plej bonan solvon, 
+                        % aparte ĉe longaj vortoj kiel "laktobovino", "ordotenanta",
+                        % sed postulas ja kompense pli da kalkultempo!
+      analyze_pt(Vorto,A,S,P),
+      format('~dp: ~w~n',[P,A]),
+      (P=<3,!;P>3) % se poeintoj estas 
+    ))),
+    min(Pt,Ana-Spc)).
+
+    /*
+  %repeat,
+  findall(
+    N-Pt-Ana,
+    (
+      between(1,3,N),
+      analyze_pt(Vorto,Ana,Spc,Pt),
+      format('~d: ~w~n',[Pt,Ana]),
+      (Pt>3; Pt=<3)
+    ),
+  Sols),
+  print(Sols).
+*/
+
+
 /***
 minuskligo_atom(Vorto,Minuskle):-
   atom_codes(Vorto,[V|Vosto]),
@@ -131,7 +159,8 @@ majuskloj([L|Vj],[L|Mj],0:R) :-
 % Nombro donas, el kiom da partoj apartigitaj per Signo konsistas Vorto
 % malplenaj partoj ne kalkuliĝas!
 parto_nombro(Vorto,Signo,Nombro) :-
-  atomic_list_concat(Partoj,Signo,Vorto),
+  format(atom(V),'~w',[Vorto]),
+  atomic_list_concat(Partoj,Signo,V),
   foldl(non_empty,Partoj,0,Nombro).
 %  proper_length(Partoj,Nombro).
 
@@ -233,12 +262,15 @@ analizu_tekston_kopie_([v(Vorto)|Text],Format) :-
          skribu_vorton(Format,neanalizebla,Vorto,_,_,_)
          ;
          % kunmetita vorto kun pli ol du radikoj: kontrolenda
-%% KOREKTU: momente en HTML ne plu funkcias!!!         
-%%         parto_nombro(Ana,'-',Nv), Nv>2, skribu_vorton(Format,dubebla,Vorto,Ana,Spc,Uskl)
-%%         ; 
-%%         % kuntirita vorto: kontrolenda
-%%         parto_nombro(Ana,'~',Nv), Nv>1, skribu_vorton(Format,kuntirita,Vorto,Ana,Spc,Uskl)
-%%         ; 
+         Format=text,
+         parto_nombro(Ana,'-',Nv), Nv>2, 
+         skribu_vorton(Format,dubebla,Vorto,Ana,Spc,Uskl)
+         ; 
+         % kuntirita vorto: kontrolenda
+         Format=text,
+         parto_nombro(Ana,'~',Nv), Nv>1, 
+         skribu_vorton(Format,kuntirita,Vorto,Ana,Spc,Uskl)
+         ; 
          skribu_vorton(Format,bona,Vorto,Ana,Spc,Uskl)
        ))
      %)

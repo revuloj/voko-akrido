@@ -404,7 +404,7 @@ cent_mil(N) :- memberchk(N,[cent,mil]).
 % ekzaktaj dekobloj
 vorto(nn,nombr) <= v(N1,nombr,_) * v(N2,nombr,_) ~> cifero(N1), deko(N2).
 
-% neekzaktaj deobloj
+% neekzaktaj dekobloj
 vorto(nn,nombr) <= r(N1,adj,_) * v(N2,nombr,_) ~> kvanto(N1), deko(N2).
 
 
@@ -447,8 +447,9 @@ antauvorto(nn,Spc) <= &vorto(nn,Spc).
 
 % eble iom dubindaj ("mi-dir/i" , "ĉiu-hom/o" kompare kun kunderivado "ambaŭ+pied/e", "ĉiu+jar/a"
 %%% antauvorto('v',Spc) <= v(_,Spc).
-antauvorto('u',Spc) <= u(_,Spc) ~> subspc(Spc,pron).
-antauvorto('i',Spc) <= i(_,Spc) ~> subspc(Spc,pron). % ĉio-pova (pova de ĉio)
+% provizore ne uzu, se ni vere bezonos, difinu en vrt/esceptoj.pl
+%% antauvorto('u',Spc) <= u(_,Spc) ~> subspc(Spc,pron).
+%% antauvorto('i',Spc) <= i(_,Spc) ~> subspc(Spc,pron). % ĉio-pova (pova de ĉio)
 
 postvorto('Df',Spc) <= &rv_sen_fin(_,Vs) / f(_,Fs) 
    ~> (subspc(Vs,Fs),  

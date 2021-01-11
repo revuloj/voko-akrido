@@ -1,5 +1,6 @@
 :- module(gramatiko,[
 	      analyze/3, % analizado de vorto
+        analyze_pt/4,
 	      %reduce/2, % forigi krampojn kaj spacojn el analizita esprimo
         ana_html/2,
         ana_txt/2 
@@ -25,6 +26,10 @@ analyze(Vrt,Ana,Spc) :-
   is_list(Vrt),
   atom_codes(Atom,Vrt),
   vorto(_,Spc,Atom,Ana,0).
+
+analyze_pt(Vrt,Ana,Spc,Pt) :-
+  analyze(Vrt,Ana,Spc),
+  vorto_gra:poentoj(Ana,Pt).
 
 analyze_perf(Vrt,Ana,Spc) :-
   statistics(process_cputime,C1),

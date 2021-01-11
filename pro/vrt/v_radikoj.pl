@@ -6,9 +6,12 @@
 
 % tiuj ne rekoniĝas kiel homo/besto el Revo-artiokoloj,
 % manke de klaso besta aŭ parenca...
+r('bov',best,*). % okaze aldonu lst-ref en bov/o
 r('doktor',best,*).
 r('edz',best,*).
 r('fianĉ',best,*).
+r('kamel',best,*). % okaze aldonu lst-ref en kamel/o
+r('knab',best,*).
 r('mastr',best,*).
 r('parenc',parc,*). % permesu bo/parenc/
 r('princ',best,*).

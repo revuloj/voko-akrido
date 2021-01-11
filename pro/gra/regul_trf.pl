@@ -75,7 +75,19 @@ n_sup(`9`,`⁹`).
 n_sup(`0`,`⁰`).
 n_sup([N|Rest],[Ns|Rs]) :- n_sup([N],[Ns]), n_sup(Rest,Rs).
 
+% kunmetoj (-) kun almenaŭ tri partoj
+ana_html_(A1-A2-A3,Html,Cls) :-
+  % vin-ber estas tiel ofte, 
+  % ke ni esceptas ĝin tie ĉi el la dubeblaj
+  A1-A2 \= vin^_-ber^_,
+  vform('-',S),
+  ana_html_(A1,H1,Cls1),
+  ana_html_(A2,H2,Cls2),
+  ana_html_(A3,H3,Cls3),
+  append([[dubebla],Cls1,Cls2,Cls3],Cls),
+  append([H1,[S],H2,[S],H3],Html).
 
+% duopoj kun meza operatoro (/,-,~,+,*)
 ana_html_(Ana,Html,Cls) :-
   Ana =..[S1,A,B],
   vform(S1,S2),
@@ -124,6 +136,29 @@ ana_txt_(A^O,[A,Os]) :-
 % vortelemento
 ana_txt_(A,[A]) :-
   atomic(A).
+
+% punoj, por trovi plej bonan
+% analizon inter pluraj
+% ĉiu oficiala parto: 1p
+% ĉiu neoficiala parto: 3p
+% ĉiu kunmeto (-): 2p
+
+poentoj(A1-A2,Poentoj) :-
+  poentoj(A1,P1),
+  poentoj(A2,P2),!,
+  Poentoj is 2 + P1 + P2.
+
+poentoj(Ana,Poentoj) :-
+  Ana =..[S,A1,A2],
+  vform(S,_),
+  poentoj(A1,P1),
+  poentoj(A2,P2),!,
+  Poentoj is P1+P2.
+
+poentoj(_^'+',3). % neoficialaj
+poentoj(_^'!',3). % evitindaj
+poentoj(_^_,1).
+poentoj(_,1).
 
 /*** ni bezonas ankoraŭ en term_expanson.... */
 reduce_full(Term,Flat) :-
