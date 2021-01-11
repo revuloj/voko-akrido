@@ -38,19 +38,8 @@ vortanalizo(Vorto,Ana,Spc,text) :-
   vorto_max_infer(MaxI),
   call_with_inference_limit(
       (
-      analyze(Vorto,Struct,Spc),
-      %reduce(Struct,Ana)
+      analyze(Vorto,Struct,Spc,_),
       ana_txt(Struct,Ana)
-      ),
-      MaxI,
-      _
-  ).
-
-vortanalizo(Vorto,Struct,Spc,struct) :-
-  vorto_max_infer(MaxI),
-  call_with_inference_limit(
-      (
-      analyze(Vorto,Struct,Spc)
       ),
       MaxI,
       _
@@ -60,9 +49,21 @@ vortanalizo(Vorto,Ana,Spc,html) :-
   vorto_max_infer(MaxI),
   call_with_inference_limit(
       (
-      analyze(Vorto,Struct,Spc),
-      %reduce(Struct,Ana)
+      analyze(Vorto,Struct,Spc,_), % lasta argumento estas la poentoj
+        % ni povus transdoni ĝin al ana_html por aldoni klason por
+        % multpoentaj (t.e. malfidindaj) solvoj
       ana_html(Struct,Ana)
+      ),
+      MaxI,
+      _
+  ).
+
+vortanalizo(Vorto,Struct,Spc,struct) :-
+  vorto_max_infer(MaxI),
+  call_with_inference_limit(
+      (
+      analyze(Vorto,Struct,Spc) % por struct ni ne kalkulas la poentojn, sed
+        % redonas solvon post solvo. Uzanto mem trovu la plej taŭgan!
       ),
       MaxI,
       _
@@ -96,32 +97,6 @@ vortanalizo(Vorto,Ana,Spc,Uskl,Format) :-
     (Result='inference_limit_exceeded' -> fail; true)
   ).
 
-v3(Vorto,Ana,Spc,Pt) :- 
-
-aggregate(
-  min(P,A-S),
-    limit(4, distinct(( % distinct altigas la ŝancon ke ni trovos la plej bonan solvon, 
-                        % aparte ĉe longaj vortoj kiel "laktobovino", "ordotenanta",
-                        % sed postulas ja kompense pli da kalkultempo!
-      analyze_pt(Vorto,A,S,P),
-      format('~dp: ~w~n',[P,A]),
-      (P=<3,!;P>3) % se poeintoj estas 
-    ))),
-    min(Pt,Ana-Spc)).
-
-    /*
-  %repeat,
-  findall(
-    N-Pt-Ana,
-    (
-      between(1,3,N),
-      analyze_pt(Vorto,Ana,Spc,Pt),
-      format('~d: ~w~n',[Pt,Ana]),
-      (Pt>3; Pt=<3)
-    ),
-  Sols),
-  print(Sols).
-*/
 
 
 /***

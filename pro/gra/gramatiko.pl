@@ -1,6 +1,6 @@
 :- module(gramatiko,[
-	      analyze/3, % analizado de vorto
-        analyze_pt/4,
+	      analyze/3, % analizado de vorto, solvo psot solvo redonota
+        analyze/4, % analizado de 1 ĝis pluraj solvoj kaj redono de la malplej punata (poentoj)
 	      %reduce/2, % forigi krampojn kaj spacojn el analizita esprimo
         ana_html/2,
         ana_txt/2 
@@ -30,6 +30,17 @@ analyze(Vrt,Ana,Spc) :-
 analyze_pt(Vrt,Ana,Spc,Pt) :-
   analyze(Vrt,Ana,Spc),
   vorto_gra:poentoj(Ana,Pt).
+
+analyze(Vorto,Ana,Spc,Pt) :- 
+  aggregate(min(P,A-S),
+    limit(4, distinct(( % distinct() altigas la ŝancon ke ni trovos la plej bonan solvon, 
+                        % aparte ĉe iom longaj vortoj kiel "laktobovino", "ordotenanta",
+                        % sed postulas ja kompense pli da kalkultempo!
+      analyze_pt(Vorto,A,S,P),
+      debug(analizo,'~dp: ~w~n',[P,A]),
+      (P=<3,!;P>3) % se poeintoj estas 
+    ))),
+    min(Pt,Ana-Spc)).
 
 analyze_perf(Vrt,Ana,Spc) :-
   statistics(process_cputime,C1),
