@@ -64,7 +64,9 @@ v(glu,intj,+).
 v(fu,intj,+).
 v(frap,intj,*).
 v(fek,intj,'9').
+v(ej,intj,+).
 v(ehe,intj,+).
+v(eh,intj,+).
 v(dirlididi,intj,+).
 v(bum,intj,+).
 v(brr,intj,+).
