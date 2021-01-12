@@ -6,18 +6,34 @@
 
 % tiuj ne rekoniĝas kiel homo/besto el Revo-artiokoloj,
 % manke de klaso besta aŭ parenca...
+r('atlet',best,*).
 r('bov',best,*). % okaze aldonu lst-ref en bov/o
 r('doktor',best,*).
 r('edz',best,*).
 r('fianĉ',best,*).
 r('kamel',best,*). % okaze aldonu lst-ref en kamel/o
+r('kamarad',best,*).
 r('knab',best,*).
 r('mastr',best,*).
 r('parenc',parc,*). % permesu bo/parenc/
 r('princ',best,*).
+r('pasaĝer',best,*).
 r('reĝ',best,*).
+r('rival',best,*).
 r('sinjor',best,*).
 r('Sinjor',best,*).
+
+%% interjekcioj / sonimitoj uzataj ankaŭ verbe, sed
+%% ne aŭtomate vortarigataj kiel revo-radikoj...
+r(vaŭ,ntr,+).
+r(snuf,ntr,+).
+r(raĉ,ntr,+).
+r(pum,ntr,+).
+r(okej,ntr,+).
+r(miaŭ,ntr,'1').
+r(mek,ntr,+).
+r(kvivit,ntr,+).
+r(hop,ntr,+).
 
 % ni ordigis la vortaro tiel, ke ofc='' venas post aliaj!
 % r('est',ntr,*). % pro konfuzeblo kun nefundamenta est/o (= estono).

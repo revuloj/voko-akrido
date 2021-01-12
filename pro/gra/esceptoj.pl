@@ -193,7 +193,7 @@ rv_sen_fin(h,adv) <- prov^'*'/ant. % ne pro/vant
 %rv_sen_fin(h,best) <- reg^'*'/ist. % ne re/gist/
 %rv_sen_fin(h,tr) <- 'reĝ'^'*'/ig.
 %rv_sen_fin(h,adj) <- respond^'*'/ec.
-rv_sen_fin(h,adj) <- rigl^'*'/it. % verŝajne mankas (tr)
+%rv_sen_fin(h,adj) <- rigl^'*'/it. % verŝajne mankas (tr)
 %rv_sen_fin(h,subst) <- romp^'*'/o-pec^'*'. % ne rom-pop/ec
 
 %rv_sen_fin(h,subst) <- sak^'*'-strat^'*'.
