@@ -18,7 +18,7 @@
 
 %output(html).
 
-vorto_max_infer(10000000). % 10 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru vortanalizo
+vorto_max_infer(20000000). % 20 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru vortanalizo
 
 
 /** <module> Vort- kaj tekstanalizilo
