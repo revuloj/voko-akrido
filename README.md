@@ -76,7 +76,11 @@ Alternative vi povas instali SWI-Prologo kaj voki
 
 ### Instalado kiel konstanta servo en Linukso
 
-Por tio servas la dosiero akrido.service, kiun vi povas uzi kun `systemd`-bazita sistemo.
+Por tio servas la dosiero akrido.service, kiun vi povas uzi kun `systemd`-bazita sistemo. Krome vi devas zorgi, ke la vortaro regule rekreiĝu el Reta Vortaro. Por tio vi povas instali `cron`-taskon, kiu vokas:
+  ```
+  bin/xml_download.sh && bin/revo_radikoj.sh
+  ```
+Poste necesas relanĉi la servon (`systemctl restart akrido.service`). Tion kompreneble vi ankaŭ povas difini kiel `cron`-taskon, ekz-e unu- aŭ du horojn post la aktualigo.
 
 ## Iom pri la historio
 
