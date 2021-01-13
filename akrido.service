@@ -1,0 +1,22 @@
+# kopiu al /etc/systemd/system
+# kaj aktivigu per:
+#   sudo systemctl enable akrido.service
+# kaj lanĉu per:
+#   sudo systemctl start akrido.service
+# haltigu per:
+#   sudo systemctl stop akrido.service
+# kontrolu per:
+#   sudo systemctl status akrido.service
+
+[Unit]
+Description=Revo-Analizo-Servo
+
+[Service]
+# Type=simple
+Type=forking
+Restart=on-abnormal
+ExecStart=/home/revo/voko-akrido/bin/run-anasrv.sh
+ExecStop=/home/revo/voko-akrido/bin/stop-anasrv.sh
+
+[Install]
+WantedBy=multi-user.target
