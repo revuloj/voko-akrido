@@ -17,6 +17,7 @@ when_doc_ready(
         // Sendi la tekston por analizo
         form.addEventListener("submit", function(event) {
             event.preventDefault();
+            document.getElementById("analizo_eraro").textContent = "";
 
             var viditaj = [];
 
@@ -74,7 +75,7 @@ when_doc_ready(
                     // en ĉiuj aliaj kazoj: unua aŭ lasta elemento, neniu n-ro
                     // simple alepndigu ĉion en la fino
                     rezulto.querySelector("ol").append(...doc.body.children);
-                });
+                },  null, null, show_http_error);
               }
             );
         });
@@ -82,6 +83,7 @@ when_doc_ready(
         // Ŝargi tekston de URL el la reto
         shrg_btn.addEventListener("click", function(event) {
           event.preventDefault();
+          document.getElementById("analizo_eraro").textContent = "";
 
           const url = document.getElementById("analizo_url").value;
           if (url) {
@@ -100,7 +102,7 @@ when_doc_ready(
                   .replace(/([\.?!]\n)([^\n])/g,"$1\n$2"); // aldonu linirompon ĉe alineo
                   */
                 teksto.value = alineoj(doc.body.innerText) // textContent enhavus ankaŭ skriptojn k.s.;
-            });
+            }, null, null, show_http_error);
           }
         });
 
@@ -147,6 +149,19 @@ function when_doc_ready(onready_fn) {
     } else {
       document.addEventListener('DOMContentLoaded',  onready_fn);
     }
+}
+
+function show_http_error(request,response) {
+  //console.log("HTTP ERROR:"+response);
+  const err = document.getElementById("analizo_eraro");
+  err.textContent="Eraro dum ŝargo de enhavo! ";
+
+  if (response) {
+    const json=JSON.parse(response);
+    err.textContent += json.code + ": "+ json.message;
+  } else {
+    err.textContent += "Neniu respondo de la servilo!";
+  }
 }
 
 // ajax http request
@@ -202,7 +217,7 @@ function HTTPRequestFull(method, url, headers, params, onSuccess,
       } else {
           // post konektiĝo okazis eraro
           console.error('Eraro dum ŝargo de ' + url);  
-          if (onError) onError(request);
+          if (onError) onError(this,this.response);
       }
       if (onFinish) onFinish();
     };
@@ -210,7 +225,7 @@ function HTTPRequestFull(method, url, headers, params, onSuccess,
     request.onerror = function() {
       // konekteraro
       console.error('Eraro dum konektiĝo por ' + url);
-      if (onError) onError(request);
+      if (onError) onError(this,this.response);
       if (onFinish) onFinish();
     };
     

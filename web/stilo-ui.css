@@ -16,6 +16,10 @@ body {
 .evi { color: #c11; font-size: 12pt; }
 
 
+#analizo_eraro {
+  color: darkred;
+  font-weight: bold;
+}
 
 #analizo_rezulto,
 #legendo {
