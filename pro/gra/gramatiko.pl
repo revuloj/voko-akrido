@@ -38,7 +38,7 @@ analyze(Vorto,Ana,Spc,Pt) :-
                         % sed postulas ja kompense pli da kalkultempo!
       analyze_pt(Vorto,A,S,P),
       debug(analizo,'~dp: ~w~n',[P,A]),
-      (P=<3,!;P>3) % se poeintoj estas 
+      (P=<4,!;P>4) % se poentoj estas pli ol kvar serĉu alternativajn analizeblojn
     ))),
     min(Pt,Ana-Spc)).
 
@@ -62,10 +62,15 @@ reduce(Term,Flat) :-
   atom_codes(Flat,F).
 ***/
 
-ana_html(Ana,[element(span,[class=Classes],Content)]) :-
+ana_html(Ana,[element(span,ClsAttr,Content)]) :-
   vorto_gra:ana_html_(Ana,Content,ClsLst),!, % vd. en regul_trf
-  setof(C,(member(C,ClsLst),C\=''),CL),
-  atomic_list_concat(CL,' ',Classes).
+  once((
+    setof(C,(member(C,ClsLst),C\=''),CL),
+    atomic_list_concat(CL,' ',Classes),
+    ClsAttr = [class=Classes]
+    ; 
+    ClsAttr = []
+  )).
 
 ana_txt(Ana,Txt) :-
   vorto_gra:ana_txt_(Ana,Lst),!, % vd. en regul_trf

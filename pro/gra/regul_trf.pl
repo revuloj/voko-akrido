@@ -145,17 +145,25 @@ ana_txt_(A,[A]) :-
 % ĉiu neoficiala parto: 3p
 % ĉiu kunmeto (-): 2p
 
-poentoj(A1-A2,Poentoj) :-
-  poentoj(A1,P1),
-  poentoj(A2,P2),!,
-  Poentoj is 2 + P1 + P2.
+op_pt('-',2).
+op_pt('+',1).
+op_pt('~',1).
+op_pt('*',0).
+op_pt('/',0).
+
+%poentoj(A1-A2,Poentoj) :-
+%  poentoj(A1,P1),
+%  poentoj(A2,P2),!,
+%  Poentoj is 2 + P1 + P2.
+
 
 poentoj(Ana,Poentoj) :-
   Ana =..[S,A1,A2],
-  vform(S,_),
+  op_pt(S,Po),
+  %vform(S,_),
   poentoj(A1,P1),
   poentoj(A2,P2),!,
-  Poentoj is P1+P2.
+  Poentoj is P1+Po+P2.
 
 poentoj(_^'+',3). % neoficialaj
 poentoj(_^'!',3). % evitindaj
