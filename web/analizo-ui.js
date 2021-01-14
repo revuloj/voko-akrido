@@ -28,54 +28,58 @@ when_doc_ready(
             // Ni sendas la tekston alineo post alineo por pli rapide vidi unuajn
             // rezultojn...
             teksto.split(/[\.?! \t\r]+\n/).map(
+
               function (alineo,nro) {
-                HTTPRequest('POST', form_url, {
-                  numero: (nro+1),
-                  formato: 'html',
-                  teksto: alineo
-                },
-                function(data) {
-                    // Success!
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString("<li><p>"+data+"</p></li>","text/html");
-                    const ol = rezulto.querySelector("ol");
+                setTimeout(() => { // por indulgi la servilon
+                    // ni sendas ĉiun alineon nur post nro sekundoj
+                  HTTPRequest('POST', form_url, {
+                    numero: (nro+1),
+                    formato: 'html',
+                    teksto: alineo
+                  },
+                  function(data) {
+                      // Success!
+                      const parser = new DOMParser();
+                      const doc = parser.parseFromString("<li><p>"+data+"</p></li>","text/html");
+                      const ol = rezulto.querySelector("ol");
 
-                    // kaŝu ripetojn
-                    if (document.getElementById("analizo_kashu").checked) {
-                      for (let span of doc.body.querySelectorAll("span")) {
-                        if (! span.classList.contains("nro")) {
-                          if ( viditaj.indexOf(span.textContent) > 0 )
-                            span.classList.add("hidden");
-                          else
-                            viditaj.push(span.textContent);
-                        }
-                      }
-                    }
-
-                    // elprenu la numeron el la rezulto kaj metu kiel li@value
-                    const li = doc.body.querySelector("li");
-                    if (li) {
-                      const span = li.querySelector("span.nro");
-                      if (span) {
-                        li.setAttribute("value",span.textContent);
-                        span.remove(); 
-
-                        const nro = parseInt(span.textContent);
-                        // trovu la ĝustan lokon por enŝovi
-
-                        for (let l_ of ol.querySelectorAll("li")) {
-                          const v = parseInt(l_.getAttribute("value"));
-                          if (v && v > nro) {
-                            ol.insertBefore(li,l_);
-                            return;
+                      // kaŝu ripetojn
+                      if (document.getElementById("analizo_kashu").checked) {
+                        for (let span of doc.body.querySelectorAll("span")) {
+                          if (! span.classList.contains("nro")) {
+                            if ( viditaj.indexOf(span.textContent) > 0 )
+                              span.classList.add("hidden");
+                            else
+                              viditaj.push(span.textContent);
                           }
                         }
-                      } 
-                    }
-                    // en ĉiuj aliaj kazoj: unua aŭ lasta elemento, neniu n-ro
-                    // simple alepndigu ĉion en la fino
-                    rezulto.querySelector("ol").append(...doc.body.children);
-                },  null, null, show_http_error);
+                      }
+
+                      // elprenu la numeron el la rezulto kaj metu kiel li@value
+                      const li = doc.body.querySelector("li");
+                      if (li) {
+                        const span = li.querySelector("span.nro");
+                        if (span) {
+                          li.setAttribute("value",span.textContent);
+                          span.remove(); 
+
+                          const nro = parseInt(span.textContent);
+                          // trovu la ĝustan lokon por enŝovi
+
+                          for (let l_ of ol.querySelectorAll("li")) {
+                            const v = parseInt(l_.getAttribute("value"));
+                            if (v && v > nro) {
+                              ol.insertBefore(li,l_);
+                              return;
+                            }
+                          }
+                        } 
+                      }
+                      // en ĉiuj aliaj kazoj: unua aŭ lasta elemento, neniu n-ro
+                      // simple alepndigu ĉion en la fino
+                      rezulto.querySelector("ol").append(...doc.body.children);
+                  },  null, null, show_http_error);
+                }, nro*1000);
               }
             );
         });
