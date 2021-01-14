@@ -51,6 +51,7 @@ vform('~','~').
 
 ofc_cls('*','o_f').
 ofc_cls('+','o_n').
+ofc_cls('','').
 ofc_cls('!',evi).
 ofc_cls(O,Cls) :- atom_concat('o_',O,Cls).
 
@@ -73,6 +74,7 @@ n_sup(`8`,`⁸`).
 n_sup(`1`,`¹`).
 n_sup(`9`,`⁹`).
 n_sup(`0`,`⁰`).
+n_sup([],[]).
 n_sup([N|Rest],[Ns|Rs]) :- n_sup([N],[Ns]), n_sup(Rest,Rs).
 
 % kunmetoj (-) kun almenaŭ tri partoj

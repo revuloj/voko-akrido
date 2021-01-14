@@ -64,7 +64,8 @@ reduce(Term,Flat) :-
 
 ana_html(Ana,[element(span,[class=Classes],Content)]) :-
   vorto_gra:ana_html_(Ana,Content,ClsLst),!, % vd. en regul_trf
-  atomic_list_concat(ClsLst,' ',Classes).
+  setof(C,(member(C,ClsLst),C\=''),CL),
+  atomic_list_concat(CL,' ',Classes).
 
 ana_txt(Ana,Txt) :-
   vorto_gra:ana_txt_(Ana,Lst),!, % vd. en regul_trf
