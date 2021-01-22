@@ -189,6 +189,11 @@ analizo_output(OutFileName,T,Format) :-
 
 % analizas tutan tekstodosieron, kaj redonas la tekston kun
 % ne analizeblaj vortoj markitaj
+
+% PLIBONIGU: ĉiam anlizu liste kun rezulto kiel "dict" kaj nur poste
+% skribu la rezultojn uzante tiujn strukturojn
+% avantaĝoj: nur unufoje la analizo-logiko, principe eblas konkura trakto de listeroj
+
 analizu_tekston_kopie(FileName,Format) :-
   atom(FileName),
   phrase_from_file(teksto(T),FileName,[encoding(utf8)]),!,
@@ -215,9 +220,18 @@ analizu_tekston_liste(Txt,Format,Rezulto) :-
   % ni ne uzas concurrent_maplist, ĉar tio jam estas sur
   % pli alta ebeno (linioj en analinioj)
   maplist(analizu_eron2(Format),T,Rezulto).
+
+% helpaj predikatoj por analizo de kunmetoj (xxxx-yyyy)
+string_vorto(S,v(V)) :- string_codes(S,V).
+neanalizebla(Dict) :- Dict.takso = neanalizebla.
  
-analizu_eron(_,v(Vorto)) :-
-  length(Vorto,L), L=<1, !. % ne analizu unuopajn literojn
+
+analizu_eron(Format,s(S)) :-
+  skribu_signojn(Format,s(S)).
+
+analizu_eron(Format,v(V)) :-
+  length(V,L), L=<1, % ne analizu unuopajn literojn
+  skribu_signojn(Format,s(V)).
 
 analizu_eron(Format,v(Vorto)) :-
   debug(analizo,'~s',[Vorto]),
@@ -229,6 +243,19 @@ analizu_eron(Format,v(Vorto)) :-
   atom_codes(Mlg,Vorto), 
   mlg(Mlg),!, % che kelkaj mallongigoj oni devus kontroli chu poste venas punkto
   skribu_vorton(Format,mlg,Mlg,_,_,_).
+
+% kunmetitaj vortoj x-y-z...
+analizu_eron(Format,v(Vorto)) :-
+  split_string(Vorto,'-','',Partoj),
+  length(Partoj,L), L>1,
+  maplist(string_vorto,Partoj,Vortoj),
+  maplist(analizu_eron2(Format),Vortoj,Rezultoj),
+  include(neanalizebla,Rezultoj,[]), 
+  % daŭrigu do nur se neniu neanalizebla rezultero: []  
+  %write(Rezultoj),
+  Rezultoj = [First|Rest],
+  skribu_vdict(Format,'',First),
+  maplist(skribu_vdict(Format,'-'),Rest).
 
 analizu_eron(Format,v(Vorto)) :-
   vortanalizo(Vorto,Ana,Spc,Uskl,Format), !,
@@ -252,13 +279,6 @@ analizu_eron(Format,v(Vorto)) :-
 analizu_eron(Format,v(Vorto)) :-
   % la vorto ne estis analizebla
   skribu_vorton(Format,neanalizebla,Vorto,_,_,_).
-
-analizu_eron(Format,v(V)) :-
-  length(V,L), L=<1, % ne analizu unuopajn literojn
-  skribu_signojn(Format,s(V)).
-
-analizu_eron(Format,s(S)) :-
-  skribu_signojn(Format,s(S)).
 
 analizu_eron(_,n(N)) :-
   skribu_nombron(n(N)).
@@ -393,6 +413,12 @@ skribu_signojn(html,s(S)) :-
 
 skribu_nombron(n(N)) :-  format('~s',[N]).
 
+skribu_vdict(Format,Prefix,Dict) :-
+  write(Prefix),
+  Def = _{takso:_,analizo:_,vorto:_,speco:_,uskl:_}, Dict:<Def,
+  skribu_vorton(Format,
+    Def.get(takso),Def.get(vorto),
+    Def.get(analizo),Def.get(speco),Def.get(uskl)).
 
 % uzenda kiel: uskleco(Uskl,Vorto,U,Analizita,A)
 % Uskl povas esti: 
@@ -424,49 +450,5 @@ uskleco(1:0,_,'',[element(El,Attr,[C|Ontent])],[element(El,Attr,[C1|Ontent])]) :
 % senŝanĝa
 uskleco(_,_,'',Analizita,Analizita).
 
-/***
-
-% oficialeco enestas kiel [...]
-% ni enmetos <sup>...</sup> tiuloke
-% plibonigu anst. serĉi kaj anstaŭigi [...]
-% estus pli bone difini formulbazitan
-% transformilon Analizita -> HTML
-% kaj Analizita -> Text, evtl-e ankaŭ JSON?
-oficialeco(A,[Ofc|ORest],A1) :-
-  sub_atom(A,Left,1,_,'['),
-  sub_atom(A,Right,1,_,']'),!,
-  % rigardu, ĉu dekstre estas pliaj [...]
-  sub_atom(A,0,Left,_,ALeft),
-  R1 is Right+1, sub_atom(A,R1,_,0,ARight),
-  oficialeco(ARight,ORest,ARest),
-  % malplena krampo signifas neoficiala!
-  Len is Right-Left-1, 
-  once((
-    Len = 0, % ne devus plu okazi, ĉar ni nun uzas '+' anst. '' por neoficialaj
-    Ofc = n,
-    atomic_list_concat([ALeft,ARest],A1)
-    ;
-    Len < 5, L1 is Left+1,
-    sub_atom(A,L1,Len,_,Ofc),
-    atomic_list_concat([ALeft,'<sup>',Ofc,'</sup>',ARest],A1)
-    ;
-    %throw('Nevalida oficialeco, tro longa!')
-    format('Nevalida oficialeco, tro longa!')
-  )).
-
-% se ne plu enestas [...]
-oficialeco(A,[],A).
-
-ofc_classes(LOfc,Classes) :-
-  maplist(ofc_cls,LOfc,LCls),
-  setof(C,member(C,LCls),CSet),
-  atomic_list_concat(CSet,' ',Classes).
-
-ofc_cls('*','o_f'):-!.
-ofc_cls('!','evi'):-!.
-ofc_cls('+','o_n'):-!.
-ofc_cls(O,C) :- atom_concat(o_, O, C).
-
-***/
 
 
