@@ -249,7 +249,7 @@ analizu_eron(Format,v(Vorto)) :-
   split_string(Vorto,'-','',Partoj),
   length(Partoj,L), L>1,
   maplist(string_vorto,Partoj,Vortoj),
-  maplist(analizu_eron2(Format),Vortoj,Rezultoj),
+  once(maplist(analizu_eron2(Format),Vortoj,Rezultoj)),
   include(neanalizebla,Rezultoj,[]), 
   % daŭrigu do nur se neniu neanalizebla rezultero: []  
   %write(Rezultoj),
