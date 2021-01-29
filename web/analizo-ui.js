@@ -1,7 +1,12 @@
 // alineo por ni finiĝas ĉe frazsigno antaŭ linirompo aŭ ĉe pluraj linirompoj
 const eop = /([\.?!\n]+[ \t\r]*)\n+/g; 
 // ĉe tro longaj alineoj ni enŝovos alineojn meze ĉe frazfinoj
-const max_par_len = 500; 
+const max_par_len = 1000; 
+// ni limigas la longecon de analizebla teksto por ne "eterne" ŝargi la servilon
+const max_sgn_ana = 500000;
+// ni sendas analiz-petojn nur laŭ intervaloj al la servilo, por iom protekti gin de tro granda ŝarĝo
+const time_between_req = 1200;
+
 const eos = /([\.?!;:]+)[ \t]+/g;
 
 when_doc_ready(
@@ -14,12 +19,16 @@ when_doc_ready(
         const form_url = form.getAttribute("action");
         //form.removeAttribute("action");
 
-        // Sendi la tekston por analizo
+        /***********************************************************
+        //   Sendi la tekston por analizo          
+        /***********************************************************/
+
         form.addEventListener("submit", function(event) {
             event.preventDefault();
             document.getElementById("analizo_eraro").textContent = "";
 
             var viditaj = [];
+            var signoj = 0;
 
             const teksto = document.getElementById("analizo_teksto").value;
             const rezulto = document.getElementById("analizo_rezulto");
@@ -27,9 +36,10 @@ when_doc_ready(
 
             // Ni sendas la tekston alineo post alineo por pli rapide vidi unuajn
             // rezultojn...
-            teksto.split(/[\.?! \t\r]+\n/).map(
+            teksto.split(/[\.?! \t\r]+\n/).every(
 
               function (alineo,nro) {
+
                 setTimeout(() => { // por indulgi la servilon
                     // ni sendas ĉiun alineon nur post nro sekundoj
                   HTTPRequest('POST', form_url, {
@@ -79,12 +89,22 @@ when_doc_ready(
                       // simple alepndigu ĉion en la fino
                       rezulto.querySelector("ol").append(...doc.body.children);
                   },  null, null, show_http_error);
-                }, nro*1000);
+
+                }, nro*time_between_req); // post (nro*time_between_req) ms ni sendas 
+                              // la alineon por analizo - tio iom protektas la
+                              // servilon kaj la retumilon de tro da samtempaj
+                              // demandoj 
+                // ni limigas la analizon al cirkaŭ miliono da signoj
+                signoj += alineo.length;
+                return (signoj < max_sgn_ana);
               }
             );
         });
 
+        /***********************************************************
         // Ŝargi tekston de URL el la reto
+        /***********************************************************/
+
         shrg_btn.addEventListener("click", function(event) {
           event.preventDefault();
           document.getElementById("analizo_eraro").textContent = "";
@@ -105,7 +125,15 @@ when_doc_ready(
                   .replace(/\n\n+/g,"\n\n") // maksimume du sinsekvaj linirompoj
                   .replace(/([\.?!]\n)([^\n])/g,"$1\n$2"); // aldonu linirompon ĉe alineo
                   */
-                teksto.value = alineoj(doc.body.innerText) // textContent enhavus ankaŭ skriptojn k.s.;
+                teksto.value = alineoj(doc.body.innerText); // textContent enhavus ankaŭ skriptojn k.s.;
+                const len = teksto.value.length;
+                document.getElementById("analizo_eraro").textContent += "La teksto ampleksas " +
+                  (len>9999? Math.round(len/1000)+ " mil" : len) +" signojn.";
+                if (len > max_sgn_ana) {
+                  document.getElementById("analizo_eraro").textContent +=
+                    " Atentu, ke analiziĝos nur "+(max_sgn_ana/1000)+" mil unuajn signojn. " +
+                    "Bv. dividu la tekston kaj analizu parton post parto.";
+                }
             }, null, null, show_http_error);
           }
         });
@@ -118,10 +146,12 @@ when_doc_ready(
             document.getElementById("analizo_rezulto").textContent='';
         });
 
+        /***********************************************************
         // Kaŝi la oficialajn vortojn por elstarigi la kontrolendajn 
         // t.e. neoficialaj, dubindaj, eraraj, neanalizeblaj
         // kaj kaŝu ankaŭ ties ripetojn por ne tedi kontrolleganton
         // PLIBONIGU: se ni premas tion dum la analizo ni havas interferencon inter ambaŭ....
+        /***********************************************************/
         kash_box.addEventListener("click", function(event) {
           const kashu = event.target.checked;
           const rezulto = document.getElementById("analizo_rezulto");
@@ -145,6 +175,7 @@ when_doc_ready(
         });
     }
 );
+
 
 // por prepari paĝon post kiam ĝi estas ŝargita
 function when_doc_ready(onready_fn) {
