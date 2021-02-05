@@ -4,6 +4,7 @@
 # kiel servo, necesas iom da manipulado por eltrovi
 # la uzanton (ordinare revo aŭ revo-test)
 
+
 # eltrovu absolutan padon de tiu ĉi skripto
 script=$(readlink -f "$BASH_SOURCE")
 base=$(dirname "$script")

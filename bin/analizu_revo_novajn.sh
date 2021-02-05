@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # base=<absolute-path-to-source>
-plsrc=analizu_revo_art.pl
+plsrc=revo_kontrolo.pl
 goal=analizu_revo_art_novaj
 #PL=/usr/bin/env swipl
 PL=/usr/bin/swipl

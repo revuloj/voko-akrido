@@ -4,7 +4,7 @@
 # kaj '' por analizi ĉiujn artikolojn
 
 # base=<absolute-path-to-source>
-plsrc=analizu_revo_art.pl
+plsrc=revo_kontrolo.pl
 goal="analizu_revo_art_prefix($1)"
 #PL=/usr/bin/env swipl
 PL=/usr/bin/swipl

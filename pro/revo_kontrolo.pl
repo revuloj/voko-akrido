@@ -63,10 +63,11 @@ analizu_revo_art_prefix(Prefix) :-
    %legu_verdan_liston_se_malplena,
 
    fonto_dosieroj(Prefix,TxtFiles),
-   forall(
-      member(TxtFile,TxtFiles),
-      kontrolu_dosieron(TxtFile)
-   ).
+   concurrent_maplist(kontrolu_dosieron,TxtFiles).
+%   forall(
+%      member(TxtFile,TxtFiles),
+%      kontrolu_dosieron(TxtFile)
+%   ).
 
 
 %! analizu_revo_art_novaj is det.
@@ -80,61 +81,12 @@ analizu_revo_art_novaj :-
     format('analizu novajn...~n'),
     %legu_verdan_liston_se_malplena,
     novaj_fonto_dosieroj(Novaj),
-    forall(
-      member(TxtFile,Novaj),
-      kontrolu_dosieron(TxtFile)
-    ).
+    concurrent_maplist(kontrolu_dosieron,Novaj).
+%    forall(
+%      member(TxtFile,Novaj),
+%      kontrolu_dosieron(TxtFile)
+%    ).
 
-/*
-artikolo_verda_listo :-
-    revo_verda_listo(Infile),
-    format('legas ''~w''~n',[Infile]),
-    retractall(verda(_,_)),
-    setup_call_cleanup(
-      open(Infile,read,In),
-      artikolo_verda_listo_(In),
-      close(In)		 
-    ).
-
-artikolo_verda_listo_(In) :-
-  (
-    repeat,
-    read_line_to_codes(In,Linio),
-    ( Linio == end_of_file -> !
-      ;
-      once((
-	phrase(linio(Art,Vortoj),Linio)
-	   ; atom_codes(L,Linio), throw(sintakseraro(L))
-      )),
-      % debugging:
-      % format('~s~n',[Art,Vortoj]),
-      atom_codes(Artikolo,Art),
-      assert(verda(Artikolo,Vortoj)),
-      fail % read next line
-    )
-  ).
-*/
-
-/*
-% kunigu en liston evitindajn kaj verda listo de tiu artikolo
-% ni ne plu bezonas intertempe, ĉar ni markas "verdajn" vortojn
-% per <nac>,<nom>,<esc>
-% kaj evitindajn ni nun havas en la vortaro, sed kun etikedo "!"
-verda_listo(Art,Listo) :-
-  once((
-      atom_concat('/',Art1,Art);
-      Art1 = Art
-    )),
-  once((
-      verda(Art1,Lst); 
-      Lst = []
-    )),
-  once((
-      evi(Art1,Vrt), Vrt1 = [Vrt];
-      Vrt1 = []
-    )),
-  append(Vrt1,Lst,Listo).
-*/
 
 kontrolu_dosieron(TxtFile) :-
     fonto_celo_dosiero(TxtFile,HtmlFile),
@@ -165,18 +117,7 @@ ignoru_ghis_10749([10749|TxtKun],TxtSen) :- !,
   forigu_esceptojn(TxtKun,TxtSen).
 ignoru_ghis_10749([_|TxtKun],TxtSen) :- !,
   ignoru_ghis_10749(TxtKun,TxtSen).
-ignoru_ghis_10749([],[]) :- throw(mankas_ferma_10749).
-
-/*
-legu_verdan_liston_se_malplena :-
-    verda(_,_) -> true
-    ;  % enlegu la verdan liston se ankorau ne antaue... 
-    catch(
-	 artikolo_verda_listo,
-	 Exc,
-	 format('~w~n',[Exc]) % print exception and proceed
-    ).
-*/			
+ignoru_ghis_10749([],[]) :- throw(mankas_ferma_10749).	
 
 artikolo_fonto_dosiero(Art,TxtFile) :-
     atom(Art),

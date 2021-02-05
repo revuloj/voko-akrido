@@ -8,6 +8,9 @@
 # kontrolu per:
 #   sudo systemctl status akrido.service
 
+# pri adapti postulemon per "nice"
+# ekz-e vd. https://github.com/mikebrady/shairport-sync/issues/205
+
 [Unit]
 Description=Revo-Analizo-Servo
 
@@ -15,6 +18,7 @@ Description=Revo-Analizo-Servo
 # Type=simple
 Type=forking
 Restart=on-abnormal
+Nice=5
 ExecStart=/home/revo/voko-akrido/bin/run-anasrv.sh
 ExecStop=/home/revo/voko-akrido/bin/stop-anasrv.sh
 
