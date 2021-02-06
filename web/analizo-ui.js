@@ -131,7 +131,7 @@ when_doc_ready(
                   (len>9999? Math.round(len/1000)+ " mil" : len) +" signojn.";
                 if (len > max_sgn_ana) {
                   document.getElementById("analizo_eraro").textContent +=
-                    " Atentu, ke analiziĝos nur "+(max_sgn_ana/1000)+" mil unuajn signojn. " +
+                    " Atentu, ke analiziĝos nur la "+(max_sgn_ana/1000)+" mil unuaj signoj. " +
                     "Bv. dividu la tekston kaj analizu parton post parto.";
                 }
             }, null, null, show_http_error);
