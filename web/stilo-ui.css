@@ -5,7 +5,7 @@ body {
 .malstrikte { color: brown; font-size: 12pt; }
 .neanaliz { color:red; font-weight: bold; font-size: 12pt;}
 .dubebla { color: #bb2222; font-size: 12pt; }
-.verda { color: green; font-size: 12pt; }
+.verda { color: green; font-size: 12pt; font-style: italic;}
 .kuntirita { color: brown; font-size: 12pt; }
 .mlg {font-weight: bold}
 
