@@ -40,6 +40,8 @@ when_doc_ready(
 
               function (alineo,nro) {
 
+                if (! alineo.trim()) return; // ignoru malplenajn alineojn
+                
                 setTimeout(() => { // por indulgi la servilon
                     // ni sendas ĉiun alineon nur post nro sekundoj
                   HTTPRequest('POST', form_url, {
