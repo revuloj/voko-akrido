@@ -2,7 +2,7 @@
 
 Vortanalizilo, kiu uzas gramatikon. Uzata por kontroli Revo-artikolojn.
 
-Tio estas vortanalizilo por Esperantaj vortoj uzanta gramatikon por limigi misanalizojn kaj eviti troan tolerecon. Eble kelkaj vortojn tial ne analiziĝas, sed la celo estas trovi erarajn vortojn, eĉ se estas kelkaj
+Tio estas vortanalizilo por Esperantaj vortoj uzanta gramatikon por limigi misanalizojn kaj eviti troan tolerecon. Eble kelkaj vortoj tial ne analiziĝas, sed la celo estas trovi erarajn vortojn, eĉ se estas kelkaj
 malĝustaj plendoj.
 
 Okazas nun provoj restrukturi la redaktilon de Reta Vortaro kiel servetoj (`docker`-procezujoj), 
