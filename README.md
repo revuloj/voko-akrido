@@ -2,7 +2,7 @@
 
 Vortanalizilo, kiu uzas gramatikon. Uzata por kontroli Revo-artikolojn.
 
-Tio estas vortanalizilo por Esperantaj vortoj uzanta gramatikon por limigi misanalizojn kaj eviti troan tolerecon. Eble kelkaj vortojn tial ne analiziĝas, sed la celo estas trovi erarajn vortojn, eĉ se estas kelkaj
+Tio estas vortanalizilo por Esperantaj vortoj uzanta gramatikon por limigi misanalizojn kaj eviti troan tolerecon. Eble kelkaj vortoj tial ne analiziĝas, sed la celo estas trovi erarajn vortojn, eĉ se estas kelkaj
 malĝustaj plendoj.
 
 Okazas nun provoj restrukturi la redaktilon de Reta Vortaro kiel servetoj (`docker`-procezujoj), 
@@ -17,7 +17,7 @@ La nomo "akrido" elektiĝis pro ioma aliteracio kun analizo kaj pro la besteta i
 
 ##  Kiel uzi la analizilon
 
-Prepare vi bezonas eble aktualan vortaron. Ĝi estas farita el stabila baza vortaro kaj la XML-tekstoj de Revo-artikoloj. El la artikoloj nur la kapvortoj (radikoj) estas konsiderataj ne derivitaj vortoj - por tio ni uzas la gramatikon. Sed la algoritmo provas diveni vortspecon ks. el la indikoj en la artikolo.
+Prepare vi bezonas eble aktualan vortaron. Ĝi estas farita el stabila baza vortaro kaj la XML-tekstoj de Revo-artikoloj. El la artikoloj nur la kapvortoj (radikoj) estas konsiderataj ne derivitaj vortoj - por tio ni uzas la gramatikon. Sed la algoritmo provas diveni vortspecon ks. el la indikoj en la vortara artikolo.
 
 Por krei aktualan vortaron vi ŝargas la XML-tekstojn de Revo (`bin/xml_download.sh`) kiu metas ilin loke en dosierujon xml/ kaj poste vokas la skripton `bin/revo_radikoj.sh`. Se vi uzas `docker build`... tio estas jam parto de la aŭtomata procedo.
 
@@ -25,8 +25,8 @@ Por krei aktualan vortaron vi ŝargas la XML-tekstojn de Revo (`bin/xml_download
 
 Por analizi unuopajn vortojn aŭ tekst-dosierojn vi povas uzi la komandlinion:
 ```
-    cd pro
-    swipl analizilo.pl
+    $ cd pro
+    $ swipl analizilo.pl
     ?- vortanalizo(malsanulejo,A,S).
     A = 'mal·sanᶠ·ul·ej·o',
     S = subst
@@ -42,7 +42,7 @@ Por analizi unuopajn vortojn aŭ tekst-dosierojn vi povas uzi la komandlinion:
   ?- debug(analizo).
   ?- debug(gramatiko).
 ```
-  La lastan vi foje devas voki dufoje, verŝajne pro la meta-transformado la unua fojo la sencimiga temo `gramatiko` ne estas trovata.
+  La lastan vi foje devas voki dufoje, verŝajne pro la meta-transformado la unuan fojon la sencimiga temo `gramatiko` ne estas trovata.
 
 
 ### Aŭtomata kontrolo de Revo-artikolo
@@ -67,10 +67,10 @@ Ni ofertas ankaŭ servan interfacon, kiu estas uzata de la redaktilo por fone se
 
 Poste iru al `http://localhost:8081`
 
-Alternative vi povas instali SWI-Prologo kaj voki
+Alternative vi povas instali SWI-Prologon kaj voki
   ```
-    cd pro
-    swipl analizo-servo.pl
+    $ cd pro
+    $ swipl analizo-servo.pl
     ?- server(8081).
   ```
 
@@ -86,7 +86,7 @@ Poste necesas relanĉi la servon (`systemctl restart akrido.service`). Tion komp
 
 Ĉirkaŭ la jaro 1996, detalojn mi ne memoras, estis diskuto kun Simono Pejno, kiel realigi vortanalizilon por
 ekhavi iom pli inteligentan ortografian kontrolilon, kiu scias ne nur pri finaĵoj, sed ankaŭ ekz-e pri afiksoj.
-Parto de lia baza vortaro kaj kelkaj ideoj fluis en unuan simplan vortanalizilon, per kiu mi lernis la belan programlingvo Prologo. La rezultanta programo tamen tiutempe ne estis tre utila al mi pro limigita kapacito
+Parto de lia baza vortaro kaj kelkaj ideoj fluis en unuan simplan vortanalizilon, per kiu mi lernis la belan programlingvon Prologo. La rezultanta programo tamen tiutempe ne estis tre utila al mi pro limigita kapacito
 de tiamaj komputiloj kaj malfacileco de Prologo tiutempe interfaci kun aliaj aplikaĵoj - solaj eblecoj ŝajnis aŭ legi tekston koditan laŭ Prologo el dosiero aŭ legi dosieron signon post signo unue analizante ĝian sintakson kaj ekstrakti la informojn.
 
 En 2012 mi remalkovris Prologon, lige al mia programarĥitekta laboro, kiel lingvo por lerte labori kun informmodeloj kaj trovis, ke la lingvo en la realigo de `SWI-Prolog` multe evoluis, precipe pri subteno de HTTP, XML, JSON, RDF ktp. kiujn oni bezonas por interfaci kun aliaj aplikaĵoj. En 2014 mi komencis reverki la vortanalizilon. Kiel 2a ŝtupo de la analizo mi aldonis rekombinan paŝon, kiu atentas, al kiuj vortspecoj sufikso povas aplikiĝi, kaj kiuspeca estas la rezulto.
