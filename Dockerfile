@@ -35,7 +35,7 @@ RUN  mkdir xml && mkdir txt && mkdir tmp \
 
 #USER root
 
-# Vi povas uzi la keston (Docker container) laŭ pluraj eblecoj:
+# Vi povas uzi la procezujon (Docker container) laŭ pluraj eblecoj:
 #
 # 1) Kiel analizilo por Vortaro-artikoloj:
 #    metu la artikolojn kiel teksto sub ~revo/txt (vd. malsupre)

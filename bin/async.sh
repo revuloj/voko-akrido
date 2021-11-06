@@ -21,7 +21,7 @@ if [ -z "${AKRIDO_HOST}" ] || [ -z "${AKRIDO_KEY}" ]; then
     exit 1
 fi
 
-# transdonu la ŝlosilo al la agento
+# transdonu la ŝlosilon al la agento
 eval `ssh-agent -s`
 ssh-add - <<< ${AKRIDO_KEY}
 
