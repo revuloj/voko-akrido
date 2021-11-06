@@ -5,6 +5,9 @@
 
 case $1 in
 preparo)
+  echo "Certigu, ke vi ligis aŭ kopiis la dosierujojn dtd/ xsl/ kaj owl/ el voko-grundo tien ĉi!"
+  echo "Kreiĝas nun se ne jam ekzistas labor-dosierujoj xml/ txt/ html/ tmp/"
+  mkdir -p xml txt html tmp
   cd html && mkdir -p a b c d e f g h i j k l m n o p r s t u v z && cd ..
   cp web/stilo.css html/
   cp web/klarigoj.html html/
