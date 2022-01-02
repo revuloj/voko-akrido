@@ -12,8 +12,10 @@ on:
       - v*
       - stabila
 
-  # Run tests for any PRs.
-  pull_request:
+  schedule:
+  # kaj aktualigu dufoje semajne (por havi aktualan radikaron)
+  # * estas speciala signo, do nepre uzu citilojn
+  - cron:  '15 14 * * 1,5'
 
 env:
   # image name.
