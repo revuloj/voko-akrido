@@ -84,6 +84,8 @@ jobs:
 
       - name: Push image
         run: |
+          docker image load -i image/${IMAGE_NAME}.tar
+
           #IMAGE_ID=ghcr.io/${{ github.repository }}/$IMAGE_NAME
           # ĉu eblas ankau nur /revuloj/ ($ORGANIZATION) ?
           IMAGE_ID=ghcr.io/${{ github.repository }}/$IMAGE_NAME
