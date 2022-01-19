@@ -34,6 +34,15 @@ jobs:
       - name: checkout
         uses: actions/checkout@v1
 
+      - name: Kreo de ${{ env.IMAGE_NAME }}
+        run: |
+           docker build . --file Dockerfile --tag $IMAGE_NAME
+
+      - name: Testoj de ${{ env.IMAGE_NAME }}
+        run: |
+          tst/docker-test.sh $IMAGE_NAME
+
+
 #      - name: Run tests
 #        run: |
 #          if [ -f docker-compose.test.yml ]; then
@@ -42,12 +51,16 @@ jobs:
 #          else
 #            docker build . --file Dockerfile
 #          fi
-#      - name: testoj
-#        run: |
-#           docker build . --file Dockerfile --tag $IMAGE_NAME
-#           docker run $IMAGE_NAME $IMAGE_ENTRY med-medio
-#           docker run $IMAGE_NAME $IMAGE_ENTRY inx-?
-#           docker run $IMAGE_NAME $IMAGE_ENTRY tez-?
+
+      - name: Arĥivo de ${{ env.IMAGE_NAME }}
+        run: |
+           docker image save -o ${IMAGE_NAME}.tar ${IMAGE_NAME}
+
+      - name: Konservo de ${{ env.IMAGE_NAME }} por la sekvonta tasko
+        uses: actions/upload-artifact@v1
+        with:
+          name: ${{ env.IMAGE_NAME }}
+          path: ${{ env.IMAGE_NAME }}.tar
 
   # Push image to GitHub Package Registry.
   # See also https://docs.docker.com/docker-hub/builds/
@@ -56,13 +69,15 @@ jobs:
     needs: test
 
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+    #if: github.event_name == 'push'
 
     steps:
-      - uses: actions/checkout@v1
 
-      - name: Build image
-        run: docker build . --file Dockerfile --tag $IMAGE_NAME
+      - name: Reakiro de ${{ env.IMAGE_NAME }}
+        uses: actions/download-artifact@v1
+        with:
+          name: ${{ env.IMAGE_NAME }}
+          path: image
 
       - name: Saluto al ghcr.io
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
