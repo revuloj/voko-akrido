@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# tuj finu se unuopa komando fiaskas 
+# - necesas por distingi sukcesan de malsukcesa testaro
+set -e
+
 docker_image="${1:-voko-akrido:latest}"
 
 # lanĉi la test-procezujon
@@ -29,20 +33,20 @@ done
 # ni povus ankaŭ pli detale rigardi ĉu la enhavo estas kiel atendita...
 
 echo ""; echo "Petante indeks-paĝon..."
-curl -fI "http://$HPORT/akrido/"
+curl -fsI "http://$HPORT/akrido/"
 
 echo ""; echo "Kontrolante JSON (2 linioj kun 2 eraroj)..."
-curl -f -X POST "http://$HPORT/analinioj" \
+curl -fs -X POST "http://$HPORT/analinioj" \
    -H 'Content-Type: application/json' \
    -d '{"1":"tiu ĉi linio enhvas unu eraron.","5":"tiu ĉi ankŭ unu eraron!","moduso":"kontrolendaj"}'
 
 echo ""; echo ""; echo "Analizo kun eligo TEXT (1 linio)..."
-curl -X POST "http://$HPORT/analizo" \
+curl -fs -X POST "http://$HPORT/analizo" \
    -H "Content-Type: application/x-www-form-urlencoded" \
    -d "numero=12&formato=text&teksto=Ju+laboro+pli+publica,+des+pli+granda+la+krtiko" 
 
 echo ""; echo ""; echo "Analizo kun eligo HTML (1 linio)..."
-curl -X POST "http://$HPORT/analizo" \
+curl -fs -X POST "http://$HPORT/analizo" \
    -H "Content-Type: application/x-www-form-urlencoded" \
    -d "numero=12&formato=html&teksto=teksto+kun+eraaaro" 
 
