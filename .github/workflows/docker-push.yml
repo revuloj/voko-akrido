@@ -43,7 +43,6 @@ jobs:
         run: |
           tst/docker-test.sh $IMAGE_NAME
 
-
 #      - name: Run tests
 #        run: |
 #          if [ -f docker-compose.test.yml ]; then
