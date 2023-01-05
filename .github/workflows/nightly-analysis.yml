@@ -29,7 +29,8 @@ jobs:
     - name: Prenu procesumon voko-akrido
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      run: echo "$GITHUB_TOKEN" | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin 
+      run: |
+        echo "$GITHUB_TOKEN" | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin 
         docker pull "ghcr.io/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }}"
     - name: Kreu dosierujojn por konservi la rezultojn ...
       run: |
