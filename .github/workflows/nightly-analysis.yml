@@ -11,9 +11,6 @@ on:
 env:
   # image tag {latest|stabila}
   IMAGE_TAG: latest
-  # permesu set-env en eligaĵoj...
-  # vd. https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/
-  # ACTIONS_ALLOW_UNSECURE_COMMANDS: true
   
 # https://github.com/actions/create-release
 # https://help.github.com/en/actions/reference/development-tools-for-github-actions
@@ -28,15 +25,13 @@ jobs:
       # permesitaj liter-intervaloj vd. la skripton 'akrido'
       run: |
         Tagoj=(e-j a-d e-j k-m n-r s-z a-d)
-        echo "TAGO=${Tagoj[ $(date +'%w') ]}" >> $GITHUB_ENV
-    - name: Saluto al docker.pkg.github.com
-        # https://github.community/t5/GitHub-Actions/Use-docker-images-from-GitHub-Package-Registry/td-p/30407    
-        # https://github.com/actions/starter-workflows/blob/master/ci/docker-push.yml    
-      run: docker login docker.pkg.github.com -u $GITHUB_ACTOR -p $GITHUB_TOKEN
+        echo "TAGO=${Tagoj[ $(date +'%w') ]}" >> $GITHUB_ENV     
+    - name: Prenu procesumon voko-akrido
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    - name: Prenu procesumon voko-akrido
-      run: docker pull "docker.pkg.github.com/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }}"
+      run: |
+        echo "$GITHUB_TOKEN" | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin 
+        docker pull "ghcr.io/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }}"
     - name: Kreu dosierujojn por konservi la rezultojn ...
       run: |
         mkdir $GITHUB_WORKSPACE/html
@@ -50,7 +45,7 @@ jobs:
         -w /home/akrido
         -v $GITHUB_WORKSPACE/html:/home/akrido/html
         -e AKRIDO_HOST -e AKRIDO_KEY
-        docker.pkg.github.com/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }}
+        ghcr.io/revuloj/voko-akrido/voko-akrido:${{ env.IMAGE_TAG }}
         bash -c "./akrido preparo && ./akrido ${{ env.TAGO }}"
     - name: Retrovu la rezultojn
       #id: retrovu_zip
