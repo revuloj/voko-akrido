@@ -1,3 +1,8 @@
+#### staĝo 1: certigu, ke vi antaŭe kompilis voko-grundo aŭ ŝargis de Github kiel pakaĵo
+ARG VERSION=latest
+FROM ghcr.io/revuloj/voko-grundo/voko-grundo:${VERSION} as grundo
+
+#### staĝo 2: kreu procezujon surbase de Swi-Prolog
 FROM swipl:stable
 
 # Kreu kaj lanĉu per:
@@ -19,19 +24,28 @@ WORKDIR /home/akrido
 
 ADD . ./
 
-RUN curl -LO https://github.com/revuloj/voko-grundo/archive/master.zip \
-  && unzip master.zip voko-grundo-master/xsl/* voko-grundo-master/dtd/* voko-grundo-master/owl/* \
-  && rm master.zip && ln -s voko-grundo-master/xsl xsl \
-  && ln -s voko-grundo-master/dtd dtd && ln -s voko-grundo-master/owl owl \
+#RUN curl -LO https://github.com/revuloj/voko-grundo/archive/master.zip \
+#  && unzip master.zip voko-grundo-master/xsl/* voko-grundo-master/dtd/* voko-grundo-master/owl/* \
+#  && rm master.zip && ln -s voko-grundo-master/xsl xsl \
+#  && ln -s voko-grundo-master/dtd dtd && ln -s voko-grundo-master/owl owl \
+## Pro pli da kontrolo ni mane plenigis .ssh/known_hosts per 
+## ssh-keyscan ${AKRIDO_HOST} > .ssh/known_hosts && ssh-keyscan 85.214.67.151 >> .ssh/known_hosts 
+## ŝajne ambaŭ IP kaj servilo-nomo estas bezonataj tie...
+## Oni povus tion ankaŭ aŭtomate fari en Dockerfile RUN...
+#  && chown -R akrido.akrido .ssh && chmod 700 .ssh && chmod 400 .ssh/*
+
+COPY --from=grundo build/ /home/akrido/voko/
+
+RUN  ln -s voko/xsl xsl && ln -s voko/dtd dtd && ln -s voko/owl owl \
+  && mkdir xml && mkdir txt && mkdir tmp \
+  && bin/xml_download.sh && bin/revo_radikoj.sh \
+  && rm xml/* && chown akrido.akrido xml txt tmp \
 # Pro pli da kontrolo ni mane plenigis .ssh/known_hosts per 
 # ssh-keyscan ${AKRIDO_HOST} > .ssh/known_hosts && ssh-keyscan 85.214.67.151 >> .ssh/known_hosts 
 # ŝajne ambaŭ IP kaj servilo-nomo estas bezonataj tie...
 # Oni povus tion ankaŭ aŭtomate fari en Dockerfile RUN...
-  && chown -R akrido.akrido .ssh && chmod 700 .ssh && chmod 400 .ssh/*
+  && chown -R akrido.akrido .ssh && chmod 700 .ssh && chmod 400 .ssh/* 
 
-RUN  mkdir xml && mkdir txt && mkdir tmp \
-    && bin/xml_download.sh && bin/revo_radikoj.sh \
-    && rm xml/* && chown akrido.akrido xml txt tmp
 
 #USER root
 
