@@ -20,7 +20,7 @@ WORKDIR /home/akrido
 ADD . ./
 
 RUN curl -LO https://github.com/revuloj/voko-grundo/archive/master.zip \
-  && unzip master.zip voko-grundo-master/xsl/* voko-grundo-master/dtd/*  voko-grundo-master/owl/* \
+  && unzip master.zip voko-grundo-master/xsl/* voko-grundo-master/dtd/* voko-grundo-master/owl/* \
   && rm master.zip && ln -s voko-grundo-master/xsl xsl \
   && ln -s voko-grundo-master/dtd dtd && ln -s voko-grundo-master/owl owl \
 # Pro pli da kontrolo ni mane plenigis .ssh/known_hosts per 
