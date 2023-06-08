@@ -30,7 +30,6 @@ etikedo)
 kreo)
     echo "Kreante lokan procezujon (por docker) voko-araneo por eldono ${eldono}..."
     docker pull ghcr.io/revuloj/${procezujo}/${procezujo}:${eldono}
-    docker build --build-arg VERSION=${eldono} --build-arg VG_TAG=v${eldono} \
-        -t ${procezujo} .
+    docker build --build-arg VERSION=${eldono} -t ${procezujo} .
     ;;
 esac
