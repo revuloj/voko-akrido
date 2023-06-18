@@ -33,7 +33,13 @@ s-z)
   . bin/xml_download.sh && bin/xml2txt.sh [s-z] && bin/analizu_revo_novajn.sh && bin/async.sh [s-z]
   ;;
 test)
+  echo "ŝargas abel.xml kaj konvertas xml/abel.xml al txt/abel.txt per xml2txt.sh"
+  curl -q -o xml/abel.xml https://raw.githubusercontent.com/revuloj/revo-fonto/master/revo/abel.xml
   bin/xml2txt.sh abel
+  echo "kontroli enhavon de txt/abel.txt"
+  wc txt/abel.txt
+  # la rezulto havu pli ol 20 liniojn da teksto
+  set -- $(wc -l txt/abel.txt) ; [[ "$1" -gt 20 ]]
   ;;
 *)
   echo "Sola argumento povas esti nur 'preparo', 'artikolojn', 'a-d', 'e-j', 'k-m', 'n-r' aŭ 's-z'."

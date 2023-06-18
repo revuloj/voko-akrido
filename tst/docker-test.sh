@@ -52,7 +52,7 @@ curl -fs -X POST "http://$HPORT/analizo" \
    -d "numero=12&formato=html&teksto=teksto+kun+eraaaro" 
 
 echo ""; echo ""; echo "Provu transformi abel.xml al abel.txt"
-docker exec akrido-test bash -c 'cd /home/akrido && ./akrido preparo && ./akrido test && wc txt/abel.txt'
+docker exec -w /home/akrido akrido-test bash -c './akrido preparo && ./akrido test && wc txt/abel.txt'
 
 echo ""; echo "Forigi..."
 docker kill akrido-test
