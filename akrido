@@ -32,6 +32,9 @@ n-r)
 s-z)
   . bin/xml_download.sh && bin/xml2txt.sh [s-z] && bin/analizu_revo_novajn.sh && bin/async.sh [s-z]
   ;;
+test)
+  bin/xml2txt.sh abel
+  ;;
 *)
   echo "Sola argumento povas esti nur 'preparo', 'artikolojn', 'a-d', 'e-j', 'k-m', 'n-r' aŭ 's-z'."
   ;;  
