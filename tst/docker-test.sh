@@ -36,6 +36,7 @@ echo ""; echo "Petante indeks-paĝon..."
 curl -fsI "http://$HPORT/akrido/"
 
 echo ""; echo "Kontrolante JSON (2 linioj kun 2 eraroj)..."
+# do la du malsupraj tajperaroj estas intencaj!
 curl -fs -X POST "http://$HPORT/analinioj" \
    -H 'Content-Type: application/json' \
    -d '{"1":"tiu ĉi linio enhvas unu eraron.","5":"tiu ĉi ankŭ unu eraron!","moduso":"kontrolendaj"}'
@@ -50,6 +51,8 @@ curl -fs -X POST "http://$HPORT/analizo" \
    -H "Content-Type: application/x-www-form-urlencoded" \
    -d "numero=12&formato=html&teksto=teksto+kun+eraaaro" 
 
+echo ""; echo ""; echo "Provu transformi abel.xml al abel.txt"
+docker exec -w /home/akrido akrido-test bash -c './akrido preparo && ./akrido test'
 
 echo ""; echo "Forigi..."
 docker kill akrido-test
