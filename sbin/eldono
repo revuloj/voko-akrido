@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # kreas/eldonas la procezujon kun la analizilo
-eldono=2i
+eldono=2j
 
 # ni komprenas preparo | kreo | docker | servilo | etikedo
 # kaj supozas "docker", se nenio donita argumente
@@ -28,7 +28,7 @@ etikedo)
     git tag -f v${eldono} && git push && git push origin v${eldono} -f
     ;;
 kreo)
-    echo "Kreante lokan procezujon (por docker) voko-araneo por eldono ${eldono}..."
+    echo "Kreante lokan procezujon (por docker) voko-akrido por eldono ${eldono}..."
     docker pull ghcr.io/revuloj/${procezujo}/${procezujo}:${eldono}
     docker build --build-arg VERSION=${eldono} -t ${procezujo} .
     ;;
