@@ -51,7 +51,7 @@ analyze(Vorto,Ana,Spc,Pt) :-
         debug(analizo,'~dp: ~w~n',[P,A]),
         (P=<4,! ; P>4) % se poentoj estas pli ol kvar serĉu alternativajn analizeblojn
     ))),
-    min(Pt,Ana-Spc)).
+    min(Pt,Ana-Spc)),!.
 
 analyze_perf(Vrt,Ana,Spc) :-
   statistics(process_cputime,C1),

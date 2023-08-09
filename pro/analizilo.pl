@@ -34,7 +34,7 @@ vortanalizo(Vorto,Ana,Spc) :-
 
 vortanalizo(Vorto,Ana,Spc,text) :-
   analyze(Vorto,Struct,Spc,_),
-  ana_txt(Struct,Ana).
+  ana_txt(Struct,Ana),!.
 
 vortanalizo(Vorto,Ana,Spc,html) :-
   analyze(Vorto,Struct,Spc,_), % lasta argumento estas la poentoj

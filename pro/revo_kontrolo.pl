@@ -4,26 +4,16 @@
 	      analizu_revo_art_prefix/1
 	  ]).
 
-
-%:- use_module(library(process)).
 :- use_module(library(unix)).
 :- use_module(library(filesex)).
 
 :- use_module(analizilo).
-%:- use_module('dcg/vortlisto_dcg.pl'). % por enlegi la "Verdan Liston"
 
-%:- consult(revo_blanka_listo).
-%:- consult('vrt/v_revo_evitindaj').
-
-%:- dynamic(verda/2).
-
-%revo_xml('/home/revo/revo/xml').
 revo_txt('../txt').
-%txt_xsl('/home/revo/voko/xsl/revotxt_eo.xsl').
 skribo_pado('../html').
-%revo_verda_listo('vrt/revo_verda_listo_provizora.txt').
 
 dosiero_max_infer(10000000000). % se 10 mrd. rezonoj ne sufiĉas por dosiero, ĉesu!
+concurrent(true).
 
 /** <module> Analizilo por Revo-artikoloj
 
@@ -63,11 +53,12 @@ analizu_revo_art_prefix(Prefix) :-
    %legu_verdan_liston_se_malplena,
 
    fonto_dosieroj(Prefix,TxtFiles),
-   concurrent_maplist(kontrolu_dosieron,TxtFiles).
-%   forall(
-%      member(TxtFile,TxtFiles),
-%      kontrolu_dosieron(TxtFile)
-%   ).
+   once((
+     concurrent(true),
+     concurrent_maplist(kontrolu_dosieron,TxtFiles)
+    ;
+     maplist(kontrolu_dosieron,TxtFiles)
+   )).
 
 
 %! analizu_revo_art_novaj is det.
@@ -81,25 +72,19 @@ analizu_revo_art_novaj :-
     format('analizu novajn...~n'),
     %legu_verdan_liston_se_malplena,
     novaj_fonto_dosieroj(Novaj),
-    concurrent_maplist(kontrolu_dosieron,Novaj).
-%    forall(
-%      member(TxtFile,Novaj),
-%      kontrolu_dosieron(TxtFile)
-%    ).
+    once((
+      concurrent(true),
+      concurrent_maplist(kontrolu_dosieron,Novaj)
+      ;
+      maplist(kontrolu_dosieron,Novaj)
+    )).
 
 
 kontrolu_dosieron(TxtFile) :-
     fonto_celo_dosiero(TxtFile,HtmlFile),
     format('~w -> ~w~n',[TxtFile,HtmlFile]),
     read_file_to_codes(TxtFile,Txt,[]),
-    %artikolo_fonto_dosiero(Art,TxtFile),
-    %verda_listo(Art,BL),
     forigu_esceptojn(Txt,Txt1),
-% ne funkcias interrompi ĉe lud.xml....    
-%    dosiero_max_sec(MaxSec),
-%    call_with_time_limit(MaxSec, % atendu rezulton max. MaxSec s
-%      analizu_tekston_outfile(Txt1,HtmlFile,[]) %,BL). 
-%    ). 
     dosiero_max_infer(MaxI),
     call_with_inference_limit(
       analizu_tekston_outfile(Txt1,HtmlFile,html), %,BL). 
