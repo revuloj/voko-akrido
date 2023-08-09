@@ -54,6 +54,7 @@ v(hot,intj,+).
 v(hop,intj,+).
 v(hm,intj,+).
 v(hihi,intj,+).
+v(heŭreka,intj,+).
 v(hej,intj,+).
 v(he,intj,'1').
 v(ha,intj,*).
@@ -73,9 +74,9 @@ v(brr,intj,+).
 v(boj,intj,*).
 v(blabla,intj,+).
 v(baŭ,intj,+).
-v(bat,intj,*).
 v(baf,intj,+).
 v(bac,intj,+).
+v(ba,intj,+).
 v(aŭ,intj,+).
 v(aha,intj,+).
 v(ah,intj,+).

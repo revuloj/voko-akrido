@@ -102,6 +102,7 @@ mlg('KI').
 mlg('LKK').
 mlg('KM').
 mlg('AK').
+mlg('EEK').
 mlg('UK').
 mlg('IJK').
 mlg('CG').
@@ -110,7 +111,6 @@ mlg('CR').
 mlg('HR').
 mlg('CU').
 mlg('KW').
-mlg('ILO').
 mlg('LA').
 mlg('HNL').
 mlg('LS').
@@ -148,7 +148,10 @@ mlg('NE').
 mlg('NI').
 mlg('NBN').
 mlg('NO').
+mlg('CO').
 mlg('NRO').
+mlg('ILO').
+mlg('OSKE').
 mlg('PK').
 mlg('PW').
 mlg('PA').
@@ -199,6 +202,7 @@ mlg('TR').
 mlg('TV').
 mlg('UG').
 mlg('UA').
+mlg('EU').
 mlg('UY').
 mlg('US').
 mlg('VU').
