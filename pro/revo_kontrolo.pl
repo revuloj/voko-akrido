@@ -23,7 +23,7 @@ revo_txt('../txt').
 skribo_pado('../html').
 %revo_verda_listo('vrt/revo_verda_listo_provizora.txt').
 
-dosiero_max_infer(10000000000). % 10 mrd. rezonoj ne sufiĉas por dosiero, ĉesu!
+dosiero_max_infer(10000000000). % se 10 mrd. rezonoj ne sufiĉas por dosiero, ĉesu!
 
 /** <module> Analizilo por Revo-artikoloj
 
