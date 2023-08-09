@@ -12,6 +12,22 @@ xsltproc=/usr/bin/xsltproc
 XSL=xsl/revotxt_eo.xsl
 time=`date +%Y%m%d_%H%M%S`
 
+# kontrolu ĉu programoj estas instalitaj 
+if [[ -z "$(which lynx)" ]]; then
+    echo "Mankas lynx!"
+    exit 1
+fi
+
+if [[ -z "$(which xsltproc)" ]]; then
+    echo "Mankas xsltproc"
+    exit 1
+fi
+
+if [[ ! -f "$XSL" ]]; then
+    echo "Mankas XSL-dosiero."
+    exit 1
+fi
+
 echo "tradukante ĉiujn aktualigitajn dosierojn el XML al TXT ... (daŭras iom...) ${1}*.xml"
 for src in xml/${1}*.xml; do
     
