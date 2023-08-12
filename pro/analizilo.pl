@@ -7,6 +7,11 @@
 	      analizu_tekston_liste/3,
 	      analizu_tekston_outfile/3]).
 
+/** <module> Vort- kaj tekstanalizilo
+
+  Vi povas analizi unuopajn vortojn aŭ tutajn tekstojn.
+*/      
+
 :- use_module(library(sgml)). % por xml_quote_cdata
 :- use_module(library(time)).
 :- use_module(vortaro).
@@ -19,11 +24,6 @@
 %output(html).
 
 
-/** <module> Vort- kaj tekstanalizilo
-
-  Vi povas analizi unuopajn vortojn aŭ tutajn tekstojn.
-*/
-
 %! vortanalizo(+Vorto:atom,-Analizita:atom,-Speco:atom) is nondet.
 %
 % Analizas unuopan vorton kaj redonas reduktitan (linearan) formon de la analizo kaj la vortspecon.
@@ -31,6 +31,13 @@
 
 vortanalizo(Vorto,Ana,Spc) :-
   vortanalizo(Vorto,Ana,Spc,text).
+
+%! vortanalizo(+Vorto:atom,-Analizita:atom,-Speco:atom,Formato:atom) is nondet.
+%
+% Analizas unuopan vorton kaj redonas rezulton de la analizo 
+% en unu el la foramtoj text, html, struct kaj la vortspecon.
+%
+% Se pluraj analizoj estas eblaj laŭ la reguloj ili doniĝas unu post la alia.
 
 vortanalizo(Vorto,Ana,Spc,text) :-
   analyze(Vorto,Struct,Spc,_),
@@ -45,6 +52,16 @@ vortanalizo(Vorto,Ana,Spc,html) :-
 vortanalizo(Vorto,Struct,Spc,struct) :-
   analyze(Vorto,Struct,Spc). % por struct ni ne kalkulas la poentojn, sed
     % redonas solvon post solvo. Uzanto mem trovu la plej taŭgan!
+
+%! vortanalizo(+Vorto:atom,-Analizita:atom,-Speco:atom,Uskleco:atom,Formato:atom) is nondet.
+%
+% Analizas unuopan vorton kaj redonas rezulton de la analizo 
+% en unu el la foramtoj text, html, struct kaj la vortspecon.
+%
+% Se Uskleco=same, nur la donita formo sen ŝanĝo al minuskloj/majuskloj estas
+% analizita. Aliokaze ankaŭ majuskla formo estas analizita.
+%
+% Se pluraj analizoj estas eblaj laŭ la reguloj ili doniĝas unu post la alia.
 
 vortanalizo(Vorto,Ana,Spc,same,Format) :-
   vortanalizo(Vorto,Ana,Spc,Format).
@@ -376,13 +393,15 @@ skribu_vdict(Format,Prefix,Dict) :-
     Def.get(takso),Def.get(vorto),
     Def.get(analizo),Def.get(speco),Def.get(uskl)).
 
-% uzenda kiel: uskleco(Uskl,Vorto,U,Analizita,A)
+%! uskleco(Skemo,Vorto:atom,Uskl:atom,Analizita:atom,AnalizitaUskl:atom)
+%
+% Uzenda kiel: uskleco(Uskl,Vorto,U,Analizita,A)
 % Uskl povas esti: 
 % - same
 % - 1:0 (komenca majusklo)
 % - 1:1 (tutmajuskla)
-
-% ni ne facile povas remeti la origina majusklecon
+%
+% ni ne facile povas remeti la originan majusklecon
 % sed ni montras la originan en [...] antaŭ la
 % analizita vorto
 

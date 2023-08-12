@@ -294,7 +294,7 @@ handle_exception(Dosiero,Exception) :-
 %! revo_art(+Dosiero).
 %
 % Trakuras XML-Revo-artikolon (DOM) kaj elkribras la
-% bezonataj informojn kiel radiko, vortspeco kaj mallongigoj.
+% bezonatajn informojn kiel radikon, vortspecon kaj mallongigojn.
 % La rezulto estas faktoj, el kiuj poste kreiĝos la vortlistoj.
 % Evitindaj radikoj kaj nomradikoj estas aparte traktitaj.
 
