@@ -27,7 +27,7 @@ env:
 jobs:
   # Run tests.
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/
-  test:
+  kreo_testo:
     runs-on: ubuntu-latest
 
     steps:
@@ -65,9 +65,9 @@ jobs:
 
   # Push image to GitHub Package Registry.
   # See also https://docs.docker.com/docker-hub/builds/
-  push:
+  sendo:
     # Ensure test job passes before pushing image.
-    needs: test
+    needs: kreo_testo
 
     runs-on: ubuntu-latest
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
