@@ -33,7 +33,7 @@ jobs:
     steps:
       # https://github.com/actions/checkout
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Kreo de ${{ env.IMAGE_NAME }}
         run: |
@@ -58,7 +58,7 @@ jobs:
 
       # https://github.com/actions/upload-artifact
       - name: Konservo de ${{ env.IMAGE_NAME }} por la sekvonta tasko
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.IMAGE_NAME }}
           path: ${{ env.IMAGE_NAME }}.tar
@@ -77,7 +77,7 @@ jobs:
 
       # https://github.com/actions/download-artifact
       - name: Reakiro de ${{ env.IMAGE_NAME }}
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ env.IMAGE_NAME }}
           path: image
