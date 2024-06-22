@@ -36,7 +36,7 @@ ADD . ./
 
 COPY --from=grundo build/ /home/akrido/voko/
 
-RUN  ln -s voko/xsl xsl && ln -s voko/dtd dtd && ln -s voko/owl owl \
+RUN ln -s voko/xsl xsl && ln -s voko/dtd dtd && ln -s voko/owl owl \
   && mkdir xml && mkdir txt && mkdir tmp \
   && bin/xml_download.sh && bin/revo_radikoj.sh \
   && rm xml/* && chown akrido.akrido xml txt tmp \
