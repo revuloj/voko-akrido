@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # kreas/eldonas la procezujon kun la analizilo
-eldono=2m
+eldono=2n
 
 # ni komprenas preparo | kreo | docker | servilo | etikedo
 # kaj supozas "docker", se nenio donita argumente
