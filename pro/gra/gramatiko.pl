@@ -12,6 +12,9 @@
 %:- multifile '&'/1, gra_debug/1.
 %:- dynamic vorto_gra:vorto/5.
 
+analyze_max_infer(1000000). % 1 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru analizo
+% analyze_max_infer(10000000). % 10 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru analizo
+
 /********************************************************************/
 
 
@@ -28,19 +31,27 @@ analyze(Vrt,Ana,Spc) :-
   vorto(_,Spc,Atom,Ana,0).
 
 analyze_pt(Vrt,Ana,Spc,Pt) :-
-  analyze(Vrt,Ana,Spc),
-  vorto_gra:poentoj(Ana,Pt).
+  analyze_max_infer(MaxI),
+  call_with_inference_limit(
+    analyze(Vrt,Ana,Spc),
+    MaxI,
+    EI),
+  once((
+    EI = inference_limit_exceeded, fail
+    ;
+    nonvar(Ana), vorto_gra:poentoj(Ana,Pt)
+  )).
 
 analyze(Vorto,Ana,Spc,Pt) :- 
   aggregate(min(P,A-S),
     limit(4, distinct(( % distinct() altigas la ŝancon ke ni trovos la plej bonan solvon, 
                         % aparte ĉe iom longaj vortoj kiel "laktobovino", "ordotenanta",
                         % sed postulas ja kompense pli da kalkultempo!
-      analyze_pt(Vorto,A,S,P),
-      debug(analizo,'~dp: ~w~n',[P,A]),
-      (P=<4,!;P>4) % se poentoj estas pli ol kvar serĉu alternativajn analizeblojn
+        analyze_pt(Vorto,A,S,P),
+        debug(analizo,'~dp: ~w~n',[P,A]),
+        (P=<4,! ; P>4) % se poentoj estas pli ol kvar serĉu alternativajn analizeblojn
     ))),
-    min(Pt,Ana-Spc)).
+    min(Pt,Ana-Spc)),!.
 
 analyze_perf(Vrt,Ana,Spc) :-
   statistics(process_cputime,C1),

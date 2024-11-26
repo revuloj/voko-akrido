@@ -18,8 +18,6 @@
 
 %output(html).
 
-vorto_max_infer(20000000). % 20 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru vortanalizo
-
 
 /** <module> Vort- kaj tekstanalizilo
 
@@ -35,68 +33,26 @@ vortanalizo(Vorto,Ana,Spc) :-
   vortanalizo(Vorto,Ana,Spc,text).
 
 vortanalizo(Vorto,Ana,Spc,text) :-
-  vorto_max_infer(MaxI),
-  call_with_inference_limit(
-      (
-      analyze(Vorto,Struct,Spc,_),
-      ana_txt(Struct,Ana)
-      ),
-      MaxI,
-      _
-  ).
+  analyze(Vorto,Struct,Spc,_),
+  ana_txt(Struct,Ana),!.
 
 vortanalizo(Vorto,Ana,Spc,html) :-
-  vorto_max_infer(MaxI),
-  call_with_inference_limit(
-      (
-      analyze(Vorto,Struct,Spc,_), % lasta argumento estas la poentoj
-        % ni povus transdoni ĝin al ana_html por aldoni klason por
-        % multpoentaj (t.e. malfidindaj) solvoj
-      ana_html(Struct,Ana)
-      ),
-      MaxI,
-      _
-  ).
+  analyze(Vorto,Struct,Spc,_), % lasta argumento estas la poentoj
+    % ni povus transdoni ĝin al ana_html por aldoni klason por
+    % multpoentaj (t.e. malfidindaj) solvoj
+  ana_html(Struct,Ana).
 
 vortanalizo(Vorto,Struct,Spc,struct) :-
-  vorto_max_infer(MaxI),
-  call_with_inference_limit(
-      (
-      analyze(Vorto,Struct,Spc) % por struct ni ne kalkulas la poentojn, sed
-        % redonas solvon post solvo. Uzanto mem trovu la plej taŭgan!
-      ),
-      MaxI,
-      _
-  ).
+  analyze(Vorto,Struct,Spc). % por struct ni ne kalkulas la poentojn, sed
+    % redonas solvon post solvo. Uzanto mem trovu la plej taŭgan!
 
 vortanalizo(Vorto,Ana,Spc,same,Format) :-
-  % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
-  vorto_max_infer(MaxI),
-  catch(
-    call_with_inference_limit( 
-      vortanalizo(Vorto,Ana,Spc,Format),
-      MaxI,
-      Result
-    ),
-    _Exc,
-    (Result='inference_limit_exceeded' -> fail; true)
-  ).
+  vortanalizo(Vorto,Ana,Spc,Format).
 
 vortanalizo(Vorto,Ana,Spc,Uskl,Format) :-
   %minuskligo(Vorto,VrtMin), 
   majuskloj(Vorto,VrtMin,Uskl),
-  % PLIBONIGU: uzu anstataue la pli novan call_with_inference_limit(.. 1000000)
-  vorto_max_infer(MaxI),
-  catch(
-    call_with_inference_limit(
-      vortanalizo(VrtMin,Ana,Spc,Format),
-      MaxI,
-      Result
-    ),
-    _Exc,
-    (Result='inference_limit_exceeded' -> fail; true)
-  ).
-
+  vortanalizo(VrtMin,Ana,Spc,Format).
 
 
 /***

@@ -22,7 +22,6 @@ r(ŝtel,tr,*).
 r(ŝtat,subst,*).
 r(ŝtal,subst,*).
 r(ŝrump,ntr,'6').
-r(ŝroter,subst,+).
 r(ŝrot,subst,+).
 r(ŝrik,ntr,+).
 r(ŝraŭb,subst,*).
@@ -54,7 +53,7 @@ r(ŝmink,tr,+).
 r(ŝmac,ntr,*).
 r(ŝlos,tr,*).
 r(ŝlim,subst,*).
-r(ŝlif,verb,+).
+r(ŝlif,tr,+).
 r(ŝlemil,subst,+).
 r(ŝlem,subst,+).
 r(ŝlak,subst,+).
@@ -154,8 +153,11 @@ r(ĵaket,subst,'3').
 r(ĵak,subst,+).
 r(ĵabutikab,subst,+).
 r(ĵabot,subst,+).
+r(ĥronik,adj,+).
 r(ĥromosom,subst,+).
 r(ĥrom,subst,+).
+r(ĥoreografi,subst,+).
+r(ĥoreograf,subst,+).
 r(ĥore,subst,+).
 r(ĥord,subst,+).
 r(ĥoral,subst,+).
@@ -166,6 +168,7 @@ r(ĥolesterin,subst,+).
 r(ĥoler,subst,*).
 r(ĥolecistit,subst,+).
 r(ĥmer,subst,+).
+r(ĥlamidi,subst,+).
 r(ĥlamid,subst,+).
 r(ĥiton,subst,+).
 r(ĥitin,subst,+).
@@ -176,6 +179,7 @@ r(ĥin,subst,+).
 r(ĥimer,subst,*).
 r(ĥim,subst,+).
 r(ĥil,subst,+).
+r(ĥiasm,subst,+).
 r(ĥi,subst,+).
 r(ĥet,subst,+).
 r(ĥemi,subst,*).
@@ -220,6 +224,7 @@ r(ĝerman,subst,+).
 r(ĝerm,subst,*).
 r(ĝentleman,subst,+).
 r(ĝentil,adj,*).
+r(ĝentelmen,subst,+).
 r(ĝenr,subst,+).
 r(ĝeni,subst,+).
 r(ĝeneral,adj,'1').
@@ -229,9 +234,12 @@ r(ĝemel,subst,'4').
 r(ĝem,ntr,*).
 r(ĝelab,subst,+).
 r(ĝaz,subst,+).
+r(ĝatak,subst,+).
+r(ĝarter,subst,+).
 r(ĝarden,subst,*).
 r(ĝangal,subst,+).
 r(ĝajn,subst,+).
+r(ĉuvaŝ,subst,+).
 r(ĉurask,subst,+).
 r(ĉur,subst,+).
 r(ĉukĉ,subst,+).
@@ -246,6 +254,7 @@ r(ĉiz,tr,*).
 r(ĉirp,ntr,+).
 r(ĉir,subst,+).
 r(ĉips,subst,+).
+r(ĉip,adj,+).
 r(ĉinĉil,subst,+).
 r(ĉinologi,subst,+).
 r(ĉinesk,subst,+).
@@ -267,6 +276,7 @@ r(ĉeval,best,*).
 r(ĉes,ntr,*).
 r(ĉervonc,subst,+).
 r(ĉerp,tr,*).
+r(ĉerok,subst,+).
 r(ĉernozem,subst,+).
 r(ĉerkes,subst,+).
 r(ĉerk,subst,*).
@@ -312,8 +322,8 @@ r(ĉabrak,subst,+).
 r(zum,ntr,*).
 r(zulu,pers,+).
 r(zuav,subst,'1').
-r(zosterops,subst,+).
-r(zosterop,subst,+).
+r(zosterops,best,+).
+r(zosterop,best,+).
 r(zori,subst,+).
 r(zorg,tr,*).
 r(zooplankton,subst,+).
@@ -328,6 +338,7 @@ r(zom,subst,+).
 r(zodiak,subst,'1').
 r(zo,subst,+).
 r(zlot,subst,+).
+r(zizif,subst,+).
 r(zizel,best,*).
 r(zirkoni,subst,+).
 r(zirkon,subst,+).
@@ -362,7 +373,7 @@ r(zarzuel,subst,+).
 r(zantoksil,subst,+).
 r(zakusk,subst,+).
 r(vuvuzel,subst,+).
-r(vund,tr,*).
+r(vund,verb,*).
 r(vulv,subst,'9').
 r(vultur,subst,*).
 r(vultu,adj,+).
@@ -389,6 +400,7 @@ r(volut,subst,+).
 r(volupt,subst,*).
 r(volumen,subst,'4').
 r(volum,subst,*).
+r(voltmetr,subst,+).
 r(volont,adv,*).
 r(volitiv,subst,+).
 r(volfram,subst,+).
@@ -397,6 +409,7 @@ r(volb,subst,+).
 r(vol,tr,*).
 r(vokt,subst,+).
 r(vokativ,subst,'2').
+r(vokaliz,verb,+).
 r(vokal,subst,*).
 r(vok,tr,*).
 r(vojevodi,subst,+).
@@ -433,6 +446,7 @@ r(vit,subst,'8').
 r(visteri,subst,+).
 r(vist,subst,'1').
 r(viskoz,subst,+).
+r(viskoz,adj,+).
 r(viski,subst,'2').
 r(visk,subst,'1').
 r(visigot,subst,+).
@@ -446,8 +460,8 @@ r(virtual,adj,'9').
 r(virt,subst,*).
 r(virg,adj,*).
 r(vir,subst,*).
-r(vipured,subst,+).
 r(vipur,best,*).
+r(vipered,subst,+).
 r(viper,best,'8').
 r(vip,subst,*).
 r(violonĉel,subst,*).
@@ -489,6 +503,7 @@ r(vid,tr,*).
 r(vici,subst,+).
 r(vic,subst,*).
 r(viburn,subst,*).
+r(vibri,subst,+).
 r(vibrafon,subst,+).
 r(vibr,ntr,'1').
 r(viatik,subst,+).
@@ -571,9 +586,12 @@ r(velar,subst,+).
 r(vel,subst,*).
 r(vektor,subst,+).
 r(vekt,subst,*).
+r(veksilologi,subst,+).
+r(veksilolog,subst,+).
 r(vek,tr,*).
 r(vejĉi,subst,+).
 r(vejn,subst,*).
+r(vehikl,subst,+).
 r(vegetativ,adj,+).
 r(vegetar,adj,'2').
 r(vegetalin,subst,+).
@@ -595,6 +613,7 @@ r(vasabi,subst,+).
 r(vart,tr,*).
 r(varp,subst,+).
 r(varm,adj,*).
+r(variolaci,subst,+).
 r(variol,subst,*).
 r(varik,subst,+).
 r(variete,subst,+).
@@ -668,6 +687,7 @@ r(utopi,subst,'1').
 r(util,adj,*).
 r(uter,subst,*).
 r(uten,subst,+).
+r(ustilag,subst,+).
 r(uskl,subst,+).
 r(urĝ,tr,'1').
 r(urtikac,subst,+).
@@ -750,6 +770,7 @@ r(tus,ntr,*).
 r(turt,subst,*).
 r(turp,adj,+).
 r(turnir,subst,*).
+r(turniket,subst,+).
 r(turne,ntr,+).
 r(turn,tr,*).
 r(turment,tr,*).
@@ -767,6 +788,8 @@ r(turban,subst,*).
 r(turb,subst,'3').
 r(tur,subst,*).
 r(tunik,subst,'2').
+r(tunguz,adj,+).
+r(tungus,adj,+).
 r(tungsten,subst,+).
 r(tunel,subst,'1').
 r(tundr,subst,+).
@@ -841,6 +864,7 @@ r(triolet,subst,+).
 r(triod,subst,+).
 r(trinom,subst,+).
 r(trink,tr,*).
+r(tring,subst,+).
 r(trimestr,subst,+).
 r(trilogi,subst,+).
 r(trilion,subst,!).
@@ -864,7 +888,7 @@ r(tribord,subst,+).
 r(trib,subst,'9').
 r(triatlon,subst,+).
 r(trias,subst,+).
-r(tri,subst,+).
+r(trial,subst,+).
 r(trezor,subst,*).
 r(tret,tr,'9').
 r(tres,subst,+).
@@ -921,6 +945,8 @@ r(trak,subst,+).
 r(trajt,subst,*).
 r(trajn,subst,'8').
 r(trajektori,subst,+).
+r(tragopogon,subst,+).
+r(tragopog,subst,+).
 r(tragikomedi,subst,'1').
 r(tragik,adj,'3').
 r(tragelaf,subst,+).
@@ -984,6 +1010,7 @@ r(toluen,subst,+).
 r(toltek,subst,+).
 r(toler,tr,*).
 r(tol,subst,*).
+r(toksoplasmoz,subst,+).
 r(toksologi,subst,+).
 r(toksolog,subst,+).
 r(toksin,subst,+).
@@ -999,6 +1026,7 @@ r(toast,subst,+).
 r(tjurk,subst,+).
 r(tizan,subst,+).
 r(tiu,pron,*).
+r(titr,subst,+).
 r(titol,subst,*).
 r(titan,subst,'1').
 r(titan,subst,+).
@@ -1037,6 +1065,7 @@ r(timbal,subst,+).
 r(tim,tr,*).
 r(tili,subst,*).
 r(tild,subst,+).
+r(tiktak,subst,+).
 r(tikl,tr,*).
 r(tik,subst,+).
 r(tik,ntr,+).
@@ -1054,6 +1083,7 @@ r(teĥnologi,subst,+).
 r(teĥnolog,subst,+).
 r(teĥnokrati,subst,+).
 r(teĥnokrat,subst,+).
+r(teĥnikum,subst,+).
 r(teĥnik,subst,'3').
 r(teĥneci,subst,+).
 r(tezaŭr,subst,+).
@@ -1074,6 +1104,7 @@ r(test,subst,'9').
 r(terur,subst,*).
 r(terpen,subst,+).
 r(teror,subst,+).
+r(teropod,subst,+).
 r(tern,ntr,*).
 r(termos,subst,+).
 r(termonukle,adj,+).
@@ -1114,6 +1145,7 @@ r(teolog,subst,'1').
 r(teokrati,subst,'2').
 r(teokrat,subst,'7').
 r(teodolit,subst,+).
+r(teodice,subst,+).
 r(tentakl,subst,+).
 r(tent,tr,*).
 r(tensi,subst,+).
@@ -1144,6 +1176,7 @@ r(temerar,adj,+).
 r(tembr,subst,+).
 r(tem,subst,*).
 r(telur,subst,+).
+r(telugu,adj,+).
 r(telomer,subst,+).
 r(telik,adj,+).
 r(telfer,subst,+).
@@ -1170,15 +1203,19 @@ r(teleaŭtograf,subst,+).
 r(tele,pref,+).
 r(tel,subst,+).
 r(tekvond,subst,+).
+r(tektonik,adj,+).
 r(tekton,subst,+).
+r(tekton,adj,+).
 r(tekstur,subst,+).
 r(tekst,subst,*).
 r(teks,tr,*).
 r(teknolog,subst,+).
 r(teknokrati,subst,+).
 r(teknokrat,subst,+).
+r(teknikum,subst,+).
 r(teknik,subst,'3').
 r(tekneci,subst,+).
+r(tekn,subst,+).
 r(tekil,subst,+).
 r(tek,subst,+).
 r(teist,subst,'2').
@@ -1188,6 +1225,7 @@ r(tegol,subst,'3').
 r(tegment,subst,*).
 r(teg,tr,*).
 r(teflon,subst,+).
+r(tedeum,subst,+).
 r(ted,tr,*).
 r(teatr,subst,*).
 r(team,subst,+).
@@ -1281,7 +1319,6 @@ r(takikardi,subst,+).
 r(takel,subst,+).
 r(tajĝiĉuan,subst,+).
 r(tajĝi,subst,+).
-r(tajvan,subst,+).
 r(tajposkript,subst,+).
 r(tajp,tr,'8').
 r(tajlor,subst,*).
@@ -1318,7 +1355,7 @@ r(sved,subst,'8').
 r(svazi,subst,+).
 r(svat,tr,*).
 r(svastik,subst,+).
-r(svarm,ntr,'1').
+r(svarm,verb,'1').
 r(svag,adj,+).
 r(suŝi,subst,+).
 r(suĉ,tr,*).
@@ -1339,6 +1376,7 @@ r(surpriz,tr,*).
 r(surplis,subst,+).
 r(surogat,subst,+).
 r(surjekci,subst,+).
+r(surikat,subst,+).
 r(surfac,subst,'8').
 r(surf,subst,+).
 r(surd,adj,*).
@@ -1351,6 +1389,7 @@ r(suplik,tr,+).
 r(suplement,subst,'8').
 r(supl,adj,+).
 r(superstiĉ,subst,*).
+r(supermarkt,subst,+).
 r(superlativ,subst,'1').
 r(superb,adj,+).
 r(sup,subst,*).
@@ -1401,7 +1440,7 @@ r(subjunktiv,subst,'2').
 r(subjunkci,subst,+).
 r(subjektiv,adj,'2').
 r(subjekt,subst,*).
-r(subit,adj,*).
+r(subit,adv,*).
 r(subaltern,adj,+).
 r(sturned,subst,+).
 r(sturn,best,*).
@@ -1439,6 +1478,7 @@ r(strid,verb,+).
 r(stri,subst,*).
 r(streĉ,tr,*).
 r(stret,adj,+).
+r(stres,subst,+).
 r(streptomicin,subst,+).
 r(streptokok,subst,+).
 r(strek,tr,*).
@@ -1460,6 +1500,7 @@ r(stotink,subst,+).
 r(stopl,subst,'3').
 r(stomp,tr,+).
 r(stomak,subst,*).
+r(stolon,subst,+).
 r(stol,subst,+).
 r(stokast,adj,+).
 r(stok,subst,'9').
@@ -1486,6 +1527,7 @@ r(steven,subst,+).
 r(stevard,subst,+).
 r(stetoskop,subst,+).
 r(stertor,subst,*).
+r(steroid,subst,+).
 r(sternum,subst,+).
 r(stern,tr,*).
 r(sterling,subst,+).
@@ -1541,7 +1583,7 @@ r(stand,subst,+).
 r(stanc,subst,+).
 r(stan,subst,*).
 r(stampf,ntr,+).
-r(stamp,verb,*).
+r(stamp,tr,*).
 r(stamin,subst,+).
 r(stamf,ntr,+).
 r(stamen,subst,'4').
@@ -1582,6 +1624,7 @@ r(sponde,subst,'2').
 r(spok,subst,+).
 r(split,subst,'3').
 r(splint,subst,+).
+r(splend,adj,+).
 r(splen,subst,'4').
 r(spit,tr,*).
 r(spiroĥet,subst,+).
@@ -1641,6 +1684,7 @@ r(spaniel,subst,+).
 r(span,subst,+).
 r(spam,subst,+).
 r(spalir,subst,*).
+r(spalier,subst,+).
 r(spajr,subst,+).
 r(spahi,subst,+).
 r(spaget,subst,+).
@@ -1659,6 +1703,7 @@ r(soroban,subst,+).
 r(soriked,subst,+).
 r(sorik,best,*).
 r(sorg,subst,'8').
+r(sordin,subst,+).
 r(sordid,adj,+).
 r(sorb,tr,*).
 r(sorab,pers,+).
@@ -1678,7 +1723,7 @@ r(somer,subst,*).
 r(sombr,adj,+).
 r(somateri,subst,+).
 r(somal,subst,+).
-r(solvent,adj,+).
+r(solvent,adj,'4').
 r(solv,tr,*).
 r(solstic,subst,+).
 r(solist,subst,'1').
@@ -1735,8 +1780,10 @@ r(slab,subst,+).
 r(skvaŝ,subst,+).
 r(skvar,subst,+).
 r(skvam,subst,*).
+r(skval,subst,+).
 r(skut,ntr,+).
 r(skurĝ,subst,*).
+r(skuril,adj,+).
 r(skunk,subst,+).
 r(skun,subst,+).
 r(skulptur,subst,+).
@@ -1747,6 +1794,7 @@ r(skrot,subst,+).
 r(skrofulariac,subst,+).
 r(skrofulari,subst,+).
 r(skrofol,subst,*).
+r(skript,subst,+).
 r(skrib,tr,*).
 r(skrap,tr,*).
 r(skrabl,subst,+).
@@ -1780,6 +1828,7 @@ r(skiz,subst,*).
 r(skit,subst,+).
 r(skist,subst,+).
 r(skism,subst,'1').
+r(skirp,subst,+).
 r(skip,subst,+).
 r(skink,subst,+).
 r(ski,subst,'8').
@@ -1826,6 +1875,7 @@ r(situaci,subst,*).
 r(situ,subst,'8').
 r(sitel,subst,*).
 r(sitar,subst,+).
+r(sit,best,+).
 r(sistr,subst,+).
 r(sistol,subst,+).
 r(sistematik,subst,+).
@@ -1848,6 +1898,7 @@ r(sintez,subst,'2').
 r(sintaks,subst,'1').
 r(sintagm,subst,+).
 r(sinoptik,adj,'2').
+r(sinopl,subst,+).
 r(sinonimi,subst,+).
 r(sinonim,subst,'1').
 r(sinod,subst,'1').
@@ -1857,9 +1908,11 @@ r(sinkretism,subst,+).
 r(sinkop,subst,'1').
 r(sink,verb,+).
 r(sinjor,subst,*).
+r(sinistr,adj,+).
 r(singult,ntr,*).
 r(singular,subst,'8').
 r(sinestezi,subst,+).
+r(sinestez,subst,+).
 r(sinergi,subst,+).
 r(sinekur,subst,+).
 r(sinekdoĥ,subst,+).
@@ -1899,6 +1952,7 @@ r(silikoz,subst,+).
 r(silikon,subst,+).
 r(silik,subst,*).
 r(silici,subst,'9').
+r(silic,subst,+).
 r(silf,subst,+).
 r(silent,ntr,*).
 r(silab,subst,*).
@@ -1908,6 +1962,7 @@ r(sikl,subst,+).
 r(sikari,subst,+).
 r(sik,subst,+).
 r(signif,tr,*).
+r(signatur,subst,+).
 r(signal,subst,*).
 r(sign,subst,*).
 r(sigm,subst,+).
@@ -1920,6 +1975,7 @@ r(siest,subst,+).
 r(sid,ntr,*).
 r(sibl,ntr,*).
 r(sibarit,subst,+).
+r(sib,parc,+).
 r(sfinkter,subst,'2').
 r(sfinks,subst,'2').
 r(sfer,subst,'1').
@@ -1930,6 +1986,7 @@ r(sezon,subst,*).
 r(sezam,subst,+).
 r(sevrug,best,'2').
 r(sever,adj,*).
+r(setl,verb,+).
 r(setari,subst,+).
 r(setar,subst,+).
 r(sesterc,subst,+).
@@ -1952,6 +2009,7 @@ r(serp,subst,+).
 r(seroz,subst,+).
 r(serotonin,subst,+).
 r(serioz,adj,*).
+r(serigrafi,subst,+).
 r(serif,subst,+).
 r(seri,subst,*).
 r(serenad,subst,'2').
@@ -1966,7 +2024,7 @@ r(ser,subst,+).
 r(sepult,tr,+).
 r(septim,subst,+).
 r(septet,subst,'2').
-r(septembr,subst,*).
+r(septembr,subst,+).
 r(sept,subst,+).
 r(sept,subst,!).
 r(sepsemi,subst,+).
@@ -1977,6 +2035,7 @@ r(separatism,subst,+).
 r(separ,subst,+).
 r(sepal,subst,+).
 r(senvitaminoz,subst,+).
+r(sentinel,subst,+).
 r(sentimental,adj,'2').
 r(sentiment,adj,+).
 r(sentenc,subst,*).
@@ -2036,6 +2095,7 @@ r(sekal,subst,*).
 r(sek,adj,*).
 r(sejŝel,subst,+).
 r(sejn,subst,+).
+r(sejm,subst,+).
 r(seismologi,subst,+).
 r(seismolog,subst,+).
 r(seismogram,subst,+).
@@ -2067,6 +2127,7 @@ r(sbir,subst,+).
 r(saŭrkraŭt,subst,+).
 r(saŭr,subst,+).
 r(saŭn,subst,+).
+r(saŭdad,subst,+).
 r(saŭc,subst,*).
 r(saŝim,subst,+).
 r(saĥaroz,subst,+).
@@ -2094,11 +2155,13 @@ r(sark,tr,*).
 r(sarir,subst,+).
 r(sarin,subst,+).
 r(sari,subst,+).
+r(sargas,subst,+).
 r(sardon,adj,+).
 r(sardin,best,+).
 r(sardel,best,*).
 r(sard,subst,+).
 r(sarafan,subst,+).
+r(saracen,subst,+).
 r(saraband,subst,+).
 r(sapotac,subst,+).
 r(sapot,subst,+).
@@ -2114,6 +2177,7 @@ r(sansevier,subst,+).
 r(sansar,subst,+).
 r(sankt,adj,*).
 r(sankci,subst,*).
+r(sanitari,adj,+).
 r(sanitar,adj,+).
 r(sangvin,adj,+).
 r(sangri,subst,+).
@@ -2124,6 +2188,7 @@ r(sandal,subst,'1').
 r(sanatori,subst,+).
 r(san,adj,*).
 r(samuraj,subst,+).
+r(sampl,subst,+).
 r(samovar,subst,'2').
 r(samnit,subst,+).
 r(samizdat,subst,+).
@@ -2165,6 +2230,7 @@ r(sakristi,subst,'2').
 r(sakrilegi,subst,+).
 r(sakrileg,subst,+).
 r(sakrament,subst,'1').
+r(sakral,adj,+).
 r(sakr,subst,*).
 r(sakr,ntr,+).
 r(sake,subst,+).
@@ -2209,6 +2275,7 @@ r(rund,subst,+).
 r(run,subst,+).
 r(rumor,ntr,+).
 r(rumeks,subst,+).
+r(rumb,subst,+).
 r(ruman,subst,'8').
 r(rum,subst,*).
 r(rulet,subst,'9').
@@ -2255,10 +2322,13 @@ r(rosin,subst,+).
 r(ros,subst,*).
 r(ror,ntr,+).
 r(ronĝ,tr,'9').
+r(ronto,pref,+).
 r(ronron,ntr,+).
 r(ronk,ntr,*).
+r(rongorong,subst,+).
 r(rondel,subst,+).
 r(rond,subst,*).
+r(rona,pref,+).
 r(romp,tr,*).
 r(romboid,subst,+).
 r(romboedr,subst,+).
@@ -2299,6 +2369,7 @@ r(rival,subst,+).
 r(ritornel,subst,+).
 r(ritm,subst,'1').
 r(rit,subst,'3').
+r(risurc,subst,+).
 r(risort,subst,*).
 r(rism,subst,'1').
 r(risk,tr,*).
@@ -2381,6 +2452,7 @@ r(retrovirus,subst,+).
 r(retrospektiv,subst,+).
 r(retrokupl,tr,+).
 r(retroir,ntr,+).
+r(retrofleks,verb,+).
 r(retroefik,verb,+).
 r(retroderiv,tr,+).
 r(retroced,verb,+).
@@ -2395,6 +2467,8 @@ r(retikul,subst,+).
 r(retabl,subst,+).
 r(ret,subst,*).
 r(resurs,subst,+).
+r(resurekt,ntr,+).
+r(resum,tr,+).
 r(restrikt,tr,+).
 r(restoraci,subst,*).
 r(restaŭr,verb,+).
@@ -2415,10 +2489,12 @@ r(represi,subst,+).
 r(reporter,subst,+).
 r(replik,tr,+).
 r(repertuar,subst,'1').
+r(reparaci,subst,+).
 r(rep,subst,+).
 r(reostat,subst,+).
 r(renvers,tr,*).
 r(rentgeni,subst,+).
+r(rentgen,adj,+).
 r(rent,subst,*).
 r(renom,subst,+).
 r(renminbi,subst,+).
@@ -2463,13 +2539,15 @@ r(reklamaci,verb,+).
 r(reklam,tr,'1').
 r(rek,subst,+).
 r(rejs,subst,+).
+r(rehabilit,verb,+).
 r(regulator,subst,+).
 r(regul,subst,*).
 r(regres,ntr,+).
 r(regol,best,*).
 r(regn,subst,*).
 r(reglament,verb,+).
-r(registr,verb,*).
+r(registr,subst,*).
+r(registr,subst,+).
 r(region,subst,*).
 r(regiment,subst,*).
 r(regi,subst,+).
@@ -2526,14 +2604,15 @@ r(raviol,subst,+).
 r(ravin,subst,+).
 r(ravelin,subst,+).
 r(rav,tr,*).
-r(ratifik,verb,+).
-r(ratif,verb,+).
+r(ratifik,tr,+).
+r(ratif,tr,+).
 r(rat,best,*).
 r(rastr,subst,+).
 r(rast,tr,*).
 r(rasp,tr,*).
 r(ras,subst,'1').
 r(rar,adj,+).
+r(rapsodi,subst,+).
 r(rapsod,subst,+).
 r(raport,tr,*).
 r(rapir,subst,*).
@@ -2551,11 +2630,13 @@ r(rampl,subst,+).
 r(ramp,ntr,*).
 r(ramnac,subst,+).
 r(ramn,subst,+).
+r(rami,subst,+).
 r(rambutan,subst,+).
 r(ramadan,subst,+).
 r(raled,subst,+).
 r(ral,subst,+).
 r(rakont,tr,*).
+r(rakled,subst,+).
 r(rakit,subst,+).
 r(raket,subst,'1').
 r(raked,subst,'9').
@@ -2618,6 +2699,7 @@ r(pustul,subst,'1').
 r(pus,subst,*).
 r(purpur,subst,*).
 r(puritan,subst,'2').
+r(purin,subst,+).
 r(purgatori,subst,'2').
 r(pure,subst,+).
 r(pur,adj,*).
@@ -2649,8 +2731,8 @@ r(pul,subst,*).
 r(pul,subst,+).
 r(pugn,subst,*).
 r(pug,subst,+).
-r(pufin,subst,+).
-r(pufen,subst,+).
+r(pufin,best,+).
+r(pufen,best,+).
 r(puf,subst,'3').
 r(puebl,subst,+).
 r(pudr,subst,*).
@@ -2660,6 +2742,7 @@ r(pudend,subst,+).
 r(pudel,subst,*).
 r(pud,subst,+).
 r(pucel,subst,+).
+r(puc,adj,+).
 r(publik,subst,*).
 r(public,tr,+).
 r(pubert,subst,+).
@@ -2740,6 +2823,7 @@ r(prostraci,subst,+).
 r(prostitu,tr,'2').
 r(prostat,subst,'9').
 r(prosper,ntr,*).
+r(prospektor,subst,+).
 r(prospektiv,subst,+).
 r(prospekt,subst,'1').
 r(proskripci,subst,+).
@@ -2767,6 +2851,7 @@ r(prolifer,verb,+).
 r(proletari,subst,'3').
 r(prolet,subst,'8').
 r(prokuror,subst,+).
+r(prokurator,subst,+).
 r(prokur,subst,+).
 r(proksimal,adj,+).
 r(proksim,adj,*).
@@ -2775,7 +2860,8 @@ r(proklam,tr,*).
 r(prokariot,subst,+).
 r(projekt,subst,*).
 r(projekci,subst,'1').
-r(prohib,verb,+).
+r(prohibici,subst,+).
+r(prohib,subst,+).
 r(progresiv,adj,+).
 r(progresi,subst,+).
 r(progres,ntr,*).
@@ -2814,6 +2900,7 @@ r(privat,adj,*).
 r(prism,subst,'1').
 r(prioritat,subst,+).
 r(prior,subst,'2').
+r(prion,subst,+).
 r(printemp,subst,*).
 r(print,tr,+).
 r(princip,subst,*).
@@ -2856,6 +2943,7 @@ r(prepost,subst,+).
 r(prepar,tr,*).
 r(pren,tr,*).
 r(premis,subst,'2').
+r(premier,subst,+).
 r(premi,subst,*).
 r(prem,tr,*).
 r(prelud,subst,'1').
@@ -2912,6 +3000,7 @@ r(postul,tr,*).
 r(postskript,subst,+).
 r(postpozici,subst,+).
 r(postiĉ,subst,+).
+r(postiljon,subst,+).
 r(postilion,subst,+).
 r(postfiks,subst,+).
 r(posten,subst,*).
@@ -2927,7 +3016,9 @@ r(porter,subst,*).
 r(portepe,subst,+).
 r(portal,subst,'2').
 r(port,tr,*).
+r(poroz,adj,+).
 r(pornografi,subst,+).
+r(porn,subst,+).
 r(porked,subst,+).
 r(pork,subst,*).
 r(poriĝ,subst,+).
@@ -2955,6 +3046,7 @@ r(pomp,subst,'2').
 r(pomel,subst,+).
 r(pomad,subst,'1').
 r(pom,subst,*).
+r(polvoz,adj,!).
 r(polv,subst,*).
 r(polus,subst,*).
 r(polur,subst,*).
@@ -2987,6 +3079,7 @@ r(polip,subst,'2').
 r(poliomjelit,subst,+).
 r(polinom,subst,+).
 r(polimorf,adj,+).
+r(polimeraz,subst,+).
 r(polimer,subst,+).
 r(poliklinik,subst,+).
 r(poligonac,subst,+).
@@ -3000,7 +3093,6 @@ r(poliedr,subst,+).
 r(polic,subst,*).
 r(poliandri,subst,+).
 r(poliamid,subst,+).
-r(poli,subst,+).
 r(polent,subst,+).
 r(polenologi,subst,+).
 r(polen,subst,'9').
@@ -3010,7 +3102,6 @@ r(polder,subst,+).
 r(polaroid,subst,+).
 r(polariz,tr,+).
 r(pol,subst,*).
-r(pol,tr,+).
 r(poker,subst,+).
 r(pokal,subst,*).
 r(pojn,subst,+).
@@ -3028,6 +3119,7 @@ r(podi,subst,'4').
 r(podestat,subst,+).
 r(podajr,subst,+).
 r(podagr,subst,'1').
+r(poci,subst,+).
 r(pob,subst,+).
 r(poac,subst,+).
 r(pneŭmonologi,subst,+).
@@ -3051,6 +3143,7 @@ r(plum,subst,*).
 r(pluk,tr,+).
 r(plug,tr,*).
 r(ploziv,subst,+).
+r(ploton,subst,+).
 r(plot,best,*).
 r(plosiv,subst,+).
 r(plor,ntr,*).
@@ -3075,6 +3168,7 @@ r(plekt,tr,*).
 r(plejstocen,subst,+).
 r(plejd,subst,+).
 r(pled,ntr,'2').
+r(plebiscit,subst,+).
 r(pleb,subst,'4').
 r(plaŭd,ntr,*).
 r(plaĝ,subst,+).
@@ -3115,6 +3209,7 @@ r(piz,subst,*).
 r(pivot,subst,'4').
 r(pitoresk,adj,+).
 r(piton,best,+).
+r(pit,adj,+).
 r(pistol,subst,*).
 r(pistil,subst,'2').
 r(pistak,subst,*).
@@ -3126,7 +3221,9 @@ r(piroteknik,subst,+).
 r(pirol,subst,*).
 r(pirog,subst,+).
 r(pirit,subst,*).
+r(pirimidin,subst,+).
 r(pirik,subst,+).
+r(piretr,subst,+).
 r(pirat,subst,'1').
 r(piraruku,subst,+).
 r(piranj,best,+).
@@ -3196,6 +3293,7 @@ r(petuni,subst,+).
 r(petrosel,subst,*).
 r(petromiz,subst,*).
 r(petrol,subst,*).
+r(petr,subst,+).
 r(petol,ntr,*).
 r(petiol,subst,+).
 r(petici,subst,+).
@@ -3225,7 +3323,7 @@ r(persist,ntr,*).
 r(persimon,subst,+).
 r(persik,subst,*).
 r(persekut,tr,*).
-r(pers,subst,+).
+r(pers,pers,+).
 r(perpleks,adj,+).
 r(perpendikular,adj,+).
 r(perpendikl,subst,+).
@@ -3248,10 +3346,12 @@ r(peristil,subst,'2').
 r(periskop,subst,'9').
 r(peripl,subst,+).
 r(peripeti,subst,+).
+r(peripatetik,subst,+).
 r(periost,subst,+).
 r(period,subst,'1').
 r(perine,subst,+).
 r(perimetr,subst,'2').
+r(perikop,subst,+).
 r(perikarp,subst,+).
 r(perikard,subst,+).
 r(periheli,subst,+).
@@ -3263,6 +3363,7 @@ r(pergol,subst,+).
 r(pergamen,subst,*).
 r(perfor,verb,!).
 r(perfid,tr,*).
+r(perfektiv,subst,+).
 r(perfekt,adj,*).
 r(perfekt,subst,+).
 r(pere,ntr,*).
@@ -3278,6 +3379,7 @@ r(peoniac,subst,+).
 r(peoni,subst,'2').
 r(peon,subst,+).
 r(pentr,tr,*).
+r(pentoz,subst,+).
 r(pentatom,subst,+).
 r(pentametr,subst,'2').
 r(pentagram,subst,+).
@@ -3294,6 +3396,7 @@ r(penetr,tr,*).
 r(pendol,subst,*).
 r(pend,ntr,*).
 r(penc,subst,'1').
+r(penat,subst,+).
 r(pen,ntr,*).
 r(pelv,subst,*).
 r(pelt,subst,*).
@@ -3302,6 +3405,7 @@ r(pelmel,subst,+).
 r(pelikaned,subst,+).
 r(pelikan,subst,*).
 r(pelerin,subst,'4').
+r(pelasg,subst,+).
 r(pelargoni,subst,+).
 r(pelamid,subst,+).
 r(pelagr,subst,+).
@@ -3364,6 +3468,7 @@ r(patent,subst,*).
 r(patel,subst,+).
 r(patat,subst,+).
 r(pat,subst,*).
+r(pat,subst,+).
 r(pastr,subst,*).
 r(pastoral,subst,+).
 r(pastor,subst,+).
@@ -3473,6 +3578,7 @@ r(pantun,subst,+).
 r(pantomim,subst,'1').
 r(pantofl,subst,*).
 r(panter,subst,*).
+r(panteon,subst,+).
 r(panteist,subst,'2').
 r(panteism,subst,'2').
 r(pantalon,subst,*).
@@ -3524,11 +3630,13 @@ r(paleoklimatolog,subst,+).
 r(paleoklimat,subst,+).
 r(paleografi,subst,'2').
 r(paleograf,subst,'7').
+r(paleocen,subst,+).
 r(paleoantropologi,subst,+).
 r(paleoantropolog,subst,+).
 r(paleo,pref,+).
 r(paled,subst,+).
 r(pale,subst,+).
+r(palavr,verb,+).
 r(palatal,subst,+).
 r(palat,subst,*).
 r(palanken,subst,'2').
@@ -3539,6 +3647,7 @@ r(pal,adj,*).
 r(pakt,subst,+).
 r(pakiderm,subst,+).
 r(pak,tr,*).
+r(pajnt,subst,+).
 r(pajl,subst,*).
 r(pajac,subst,+).
 r(pagured,subst,+).
@@ -3588,6 +3697,8 @@ r(osmoz,subst,+).
 r(osmi,subst,+).
 r(osmant,subst,+).
 r(osk,subst,+).
+r(oset,subst,+).
+r(osciloskop,subst,+).
 r(oscilator,subst,+).
 r(oscil,verb,+).
 r(osced,ntr,*).
@@ -3675,10 +3786,12 @@ r(oper,subst,'1').
 r(opci,subst,+).
 r(opank,subst,+).
 r(opal,subst,*).
-r(opak,adj,!).
+r(opak,adj,+).
 r(ontologi,subst,+).
 r(ontogeni,subst,+).
 r(ontogenez,subst,+).
+r(ononis,subst,+).
+r(ononid,subst,+).
 r(onomatope,subst,+).
 r(onobrik,subst,'2').
 r(onkologi,subst,+).
@@ -3689,12 +3802,17 @@ r(oniks,subst,'2').
 r(ondol,subst,+).
 r(ondatr,best,+).
 r(ond,subst,*).
+r(onagrac,subst,+).
+r(omometr,subst,+).
 r(omnibus,subst,'1').
+r(ommetr,subst,+).
 r(omlet,subst,+).
 r(omikron,subst,+).
 r(omer,subst,+).
 r(omen,subst,+).
 r(omeg,subst,+).
+r(ombudsman,subst,+).
+r(ombud,subst,+).
 r(ombrel,subst,*).
 r(ombr,subst,*).
 r(omaĝ,subst,'9').
@@ -3724,7 +3842,7 @@ r(okup,tr,*).
 r(okult,adj,'2').
 r(okulari,subst,+).
 r(okul,subst,*).
-r(oktobr,subst,*).
+r(oktobr,subst,+).
 r(oktav,subst,'2').
 r(oktant,subst,+).
 r(okt,subst,+).
@@ -3745,6 +3863,7 @@ r(okapi,subst,+).
 r(oka,subst,+).
 r(ojstred,subst,+).
 r(ojstr,subst,+).
+r(ojdi,subst,+).
 r(oid,suf,+).
 r(oguz,pers,+).
 r(ogr,subst,+).
@@ -3787,6 +3906,7 @@ r(observ,tr,*).
 r(obsed,tr,+).
 r(obscen,adj,+).
 r(obol,subst,'2').
+r(oblong,adj,+).
 r(oblikv,adj,'1').
 r(obligaci,subst,'2').
 r(oblat,subst,*).
@@ -3811,6 +3931,7 @@ r(numer,subst,*).
 r(numeni,subst,+).
 r(nul,subst,*).
 r(nuks,subst,*).
+r(nukleozid,subst,+).
 r(nukleotid,subst,+).
 r(nukleon,subst,+).
 r(nukle,subst,+).
@@ -3824,17 +3945,19 @@ r(nuanc,subst,*).
 r(nu,subst,+).
 r(noĉ,tr,+).
 r(novic,subst,*).
-r(novembr,subst,*).
+r(novembr,subst,+).
 r(novel,subst,'1').
 r(noval,subst,+).
 r(nova,subst,+).
 r(nov,adj,*).
 r(notic,subst,+).
 r(notari,subst,*).
+r(notaci,subst,+).
 r(not,tr,*).
 r(nostalgi,subst,'1').
 r(norveg,subst,'8').
 r(normand,subst,+).
+r(norman,subst,+).
 r(normal,adj,'1').
 r(norm,subst,'2').
 r(nori,subst,+).
@@ -3863,7 +3986,6 @@ r(nobl,adj,*).
 r(nobeli,subst,+).
 r(nobel,subst,*).
 r(no,subst,+).
-r(niĝeri,subst,+).
 r(niĉ,subst,*).
 r(niz,subst,'2').
 r(nivel,subst,*).
@@ -3943,6 +4065,7 @@ r(negoc,subst,*).
 r(negliĝ,subst,*).
 r(neglekt,tr,'8').
 r(negatron,subst,+).
+r(negaton,subst,+).
 r(negativ,adj,'2').
 r(negaci,subst,+).
 r(neg,tr,+).
@@ -4008,12 +4131,14 @@ r(muĝ,ntr,*).
 r(muzulman,subst,!).
 r(muzikologi,subst,+).
 r(muzikolog,subst,+).
+r(muzikal,subst,+).
 r(muzik,subst,*).
 r(muzeologi,subst,+).
 r(muzeolog,subst,+).
 r(muzel,subst,'8').
 r(muze,subst,'1').
 r(muz,subst,'1').
+r(mutual,adj,+).
 r(mutil,verb,+).
 r(mutaci,subst,+).
 r(mut,adj,*).
@@ -4039,7 +4164,9 @@ r(muon,subst,+).
 r(munt,tr,'4').
 r(municip,subst,+).
 r(munici,subst,'1').
+r(mungot,subst,+).
 r(mung,verb,+).
+r(mung,subst,+).
 r(mumps,subst,+).
 r(mumi,subst,'1').
 r(mulĉ,subst,+).
@@ -4063,13 +4190,14 @@ r(muel,tr,*).
 r(mudehar,subst,+).
 r(mucilag,subst,+).
 r(mucid,adj,+).
-r(muar,tr,+).
+r(muar,ntr,+).
 r(mu,subst,+).
 r(moŝt,subst,*).
 r(moĉi,subst,+).
 r(mozaik,subst,'2').
 r(moviment,subst,+).
 r(mov,tr,*).
+r(motorcikl,subst,+).
 r(motor,subst,'1').
 r(motocikl,subst,+).
 r(motiv,subst,'1').
@@ -4096,6 +4224,7 @@ r(moroned,subst,+).
 r(morn,adj,+).
 r(mormon,subst,+).
 r(morkel,subst,+).
+r(morganat,adj,+).
 r(morfosintaks,subst,+).
 r(morfologi,subst,+).
 r(morfin,subst,'1').
@@ -4173,6 +4302,7 @@ r(modul,tr,'1').
 r(modul,subst,+).
 r(modlur,subst,+).
 r(modl,tr,+).
+r(modifik,tr,+).
 r(modif,tr,'3').
 r(modest,adj,*).
 r(modern,adj,'1').
@@ -4210,6 +4340,7 @@ r(mistifik,tr,'8').
 r(mistif,tr,+).
 r(mister,subst,*).
 r(miso,subst,+).
+r(misil,subst,+).
 r(misi,subst,*).
 r(mis,pref,'1929').
 r(mirtel,subst,*).
@@ -4262,6 +4393,7 @@ r(mimik,subst,'1').
 r(mimetism,subst,+).
 r(mimeografi,subst,+).
 r(mimeograf,subst,+).
+r(mim,subst,+).
 r(milv,subst,'2').
 r(militarism,subst,+).
 r(milit,ntr,*).
@@ -4311,6 +4443,7 @@ r(midz,tr,+).
 r(midinet,subst,+).
 r(miceli,subst,+).
 r(miasm,subst,'1').
+r(mi,pron,*).
 r(meĥanism,subst,'8').
 r(meĥanik,subst,*).
 r(meĉ,subst,*).
@@ -4407,6 +4540,7 @@ r(ment,subst,*).
 r(menstru,verb,'9').
 r(mensog,tr,*).
 r(mens,subst,'3').
+r(menopaŭz,subst,+).
 r(menonit,subst,+).
 r(menmoteĥnik,subst,+).
 r(menisk,subst,+).
@@ -4439,6 +4573,7 @@ r(melilot,subst,+).
 r(meliac,subst,+).
 r(meli,subst,+).
 r(meleagr,subst,*).
+r(meldu,subst,+).
 r(melatonin,subst,+).
 r(melas,subst,'1').
 r(melantiac,subst,+).
@@ -4467,6 +4602,7 @@ r(megabitok,subst,+).
 r(mega,pref,+).
 r(mefit,subst,+).
 r(meduz,subst,'1').
+r(medrese,subst,+).
 r(medol,subst,'4').
 r(medium,subst,'2').
 r(medit,verb,*).
@@ -4502,10 +4638,12 @@ r(maĉ,subst,+).
 r(mazut,subst,+).
 r(mazurk,subst,'1').
 r(mazda,subst,+).
+r(mav,adj,+).
 r(matĉ,subst,+).
 r(matur,adj,*).
 r(matros,subst,+).
 r(matron,subst,+).
+r(matrjoŝk,subst,+).
 r(matrimoni,subst,+).
 r(matrikul,subst,+).
 r(matric,subst,'9').
@@ -4519,6 +4657,7 @@ r(matematik,subst,'1').
 r(mate,subst,'9').
 r(matador,subst,'2').
 r(mat,subst,*).
+r(mat,subst,+).
 r(masturb,tr,+).
 r(mastr,subst,*).
 r(mastodont,subst,+).
@@ -4545,8 +4684,9 @@ r(marĉ,subst,*).
 r(martir,subst,'1').
 r(martes,best,+).
 r(martel,subst,*).
-r(mart,subst,*).
+r(mart,subst,+).
 r(marsupi,subst,+).
+r(marsk,subst,+).
 r(marseljez,subst,+).
 r(marot,subst,+).
 r(maron,subst,+).
@@ -4562,6 +4702,7 @@ r(markiz,subst,'1').
 r(markez,subst,+).
 r(mark,subst,*).
 r(mark,subst,+).
+r(mariĥuan,subst,+).
 r(marisk,subst,+).
 r(marionet,subst,'1').
 r(marin,tr,'2').
@@ -4574,7 +4715,8 @@ r(maraved,subst,+).
 r(maraton,subst,+).
 r(marasm,subst,'2').
 r(marak,subst,+).
-r(marabu,subst,+).
+r(marabut,subst,+).
+r(marabu,best,+).
 r(mar,subst,*).
 r(map,subst,'8').
 r(maori,subst,+).
@@ -4592,6 +4734,7 @@ r(mant,subst,+).
 r(mansard,subst,'2').
 r(manovr,ntr,*).
 r(manometr,subst,'2').
+r(manks,adj,+).
 r(mank,ntr,*).
 r(manis,subst,+).
 r(manipulator,subst,+).
@@ -4615,6 +4758,7 @@ r(mandolin,subst,'1').
 r(mandibl,subst,+).
 r(mandat,subst,'1').
 r(mandarin,subst,'9').
+r(mandarin,subst,+).
 r(mandaren,subst,'2').
 r(mandal,subst,+).
 r(mancinel,subst,+).
@@ -4677,8 +4821,9 @@ r(major,subst,'2').
 r(majonez,subst,'9').
 r(majolik,subst,'2').
 r(majest,adj,*).
+r(majdan,subst,+).
 r(maja,subst,+).
-r(maj,subst,*).
+r(maj,subst,+).
 r(maiz,subst,*).
 r(mahut,subst,+).
 r(mahagon,subst,'1').
@@ -4702,14 +4847,17 @@ r(magi,subst,*).
 r(magazin,subst,+).
 r(magazen,subst,*).
 r(mag,subst,+).
+r(mafin,subst,+).
 r(mafi,subst,+).
 r(madz,subst,+).
 r(madrigal,subst,+).
+r(madras,subst,+).
 r(madon,subst,'1').
 r(macer,verb,+).
 r(macedon,subst,+).
 r(mac,subst,*).
 r(maat,subst,+).
+r(luĝ,subst,+).
 r(luzern,subst,+).
 r(lutreol,best,+).
 r(lutr,best,*).
@@ -4738,6 +4886,7 @@ r(lul,tr,*).
 r(lukum,subst,+).
 r(lukt,ntr,'2').
 r(luks,subst,*).
+r(lukr,verb,+).
 r(lukaned,subst,+).
 r(lukan,subst,+).
 r(luk,subst,'8').
@@ -4820,7 +4969,7 @@ r(liti,subst,+).
 r(literaturologi,subst,+).
 r(literaturolog,subst,+).
 r(literatur,subst,*).
-r(literator,subst,!).
+r(literator,subst,+).
 r(liter,subst,*).
 r(litargir,subst,+).
 r(litani,subst,*).
@@ -4919,6 +5068,7 @@ r(leŭg,subst,+).
 r(leŭcisk,subst,+).
 r(leŭcin,subst,+).
 r(leĝitim,adj,+).
+r(leĝer,adj,+).
 r(leĝ,subst,*).
 r(lez,tr,+).
 r(levrel,subst,+).
@@ -5110,11 +5260,13 @@ r(kvinsland,subst,+).
 r(kvino,subst,+).
 r(kvik,verb,+).
 r(kviet,adj,*).
+r(kveta,pref,+).
 r(kvestor,subst,'2').
 r(kvest,verb,+).
 r(kverk,subst,*).
 r(kverel,ntr,'4').
 r(kver,ntr,+).
+r(kvekto,pref,+).
 r(kvazar,subst,+).
 r(kvaternar,subst,+).
 r(kvast,subst,'3').
@@ -5146,7 +5298,7 @@ r(kuŝ,ntr,*).
 r(kuz,parc,*).
 r(kuv,subst,*).
 r(kutr,subst,+).
-r(kutim,ntr,*).
+r(kutim,tr,*).
 r(kut,subst,+).
 r(kustard,subst,+).
 r(kusp,tr,+).
@@ -5289,6 +5441,7 @@ r(kriptozoologi,subst,+).
 r(kriptospeci,subst,+).
 r(kripton,subst,+).
 r(kriptomeri,subst,+).
+r(kriptologi,subst,+).
 r(kriptolog,subst,+).
 r(kriptograf,subst,+).
 r(kriptogam,subst,+).
@@ -5326,6 +5479,7 @@ r(kresk,ntr,*).
 r(krescent,subst,+).
 r(kres,subst,'2').
 r(krepusk,subst,*).
+r(krepit,verb,+).
 r(krepid,subst,+).
 r(krep,subst,*).
 r(kreozot,subst,'2').
@@ -5450,6 +5604,8 @@ r(korife,subst,'2').
 r(koridor,subst,'1').
 r(koriandr,subst,+).
 r(korespond,ntr,*).
+r(koreografi,subst,+).
+r(koreograf,subst,+).
 r(korelativ,adj,'2').
 r(korelaci,subst,+).
 r(korekt,tr,*).
@@ -5520,7 +5676,7 @@ r(kontrafagot,subst,+).
 r(kontradmiral,subst,+).
 r(kontradanc,subst,+).
 r(kontrabas,subst,'1').
-r(kontraband,subst,'2').
+r(kontraband,tr,'2').
 r(kontor,subst,*).
 r(kontinu,adj,'4').
 r(kontingent,subst,+).
@@ -5569,7 +5725,7 @@ r(konsci,tr,*).
 r(konotaci,subst,+).
 r(konosament,subst,+).
 r(konoid,subst,+).
-r(konkurs,tr,*).
+r(konkurs,subst,*).
 r(konkurenc,subst,'3').
 r(konkur,tr,*).
 r(konkubin,subst,+).
@@ -5640,6 +5796,7 @@ r(kondiĉ,subst,*).
 r(kondiment,subst,+).
 r(kondicional,subst,'4').
 r(kondensator,subst,+).
+r(kondens,tr,+).
 r(kondamn,tr,*).
 r(konciz,adj,'2').
 r(koncip,tr,+).
@@ -5721,6 +5878,7 @@ r(kombine,subst,+).
 r(kombinatorik,subst,+).
 r(kombinat,subst,+).
 r(kombin,tr,*).
+r(kombajn,subst,+).
 r(komb,tr,*).
 r(komat,subst,+).
 r(komanĉ,subst,+).
@@ -5763,6 +5921,7 @@ r(kolizi,ntr,'4').
 r(koliri,subst,+).
 r(kolimbet,subst,+).
 r(kolimb,subst,*).
+r(kolimat,verb,+).
 r(kolik,subst,'1').
 r(kolier,subst,+).
 r(kolibr,best,*).
@@ -5834,6 +5993,8 @@ r(koalici,subst,+).
 r(koal,subst,+).
 r(koaks,subst,*).
 r(koagul,tr,+).
+r(knut,subst,+).
+r(knufl,verb,+).
 r(knot,subst,+).
 r(knid,subst,+).
 r(knel,subst,+).
@@ -5841,6 +6002,7 @@ r(knedlik,subst,+).
 r(kned,tr,*).
 r(knar,ntr,'4').
 r(knal,ntr,+).
+r(knajp,subst,+).
 r(knab,subst,*).
 r(kmer,subst,+).
 r(kluĉ,tr,+).
@@ -5859,6 +6021,7 @@ r(kloroz,subst,+).
 r(kloroplast,subst,+).
 r(kloroform,subst,+).
 r(klorofil,subst,+).
+r(klorid,subst,+).
 r(klor,subst,'4').
 r(klopod,ntr,*).
 r(klonik,adj,+).
@@ -5881,6 +6044,7 @@ r(klimaks,subst,+).
 r(klik,subst,+).
 r(klif,subst,+).
 r(klient,subst,'1').
+r(klezmer,subst,+).
 r(klerikal,adj,!).
 r(klerik,subst,+).
 r(kler,adj,*).
@@ -5904,12 +6068,15 @@ r(klav,subst,*).
 r(klasik,adj,'1').
 r(klasifik,tr,'3').
 r(klas,subst,*).
+r(klaroskur,subst,+).
+r(klarobskur,subst,+).
 r(klarnet,subst,*).
 r(klarion,subst,+).
 r(klar,adj,*).
 r(klap,subst,*).
 r(klangul,best,+).
 r(klan,subst,+).
+r(klamidi,subst,+).
 r(klamid,subst,+).
 r(klak,ntr,'3').
 r(klaft,subst,*).
@@ -5964,15 +6131,20 @@ r(kil,subst,*).
 r(kikerik,ntr,+).
 r(kiker,subst,+).
 r(kikar,subst,+).
+r(kifoz,subst,+).
 r(kidnap,verb,+).
 r(kibuc,subst,'9').
 r(kiborg,subst,+).
+r(kibic,subst,+).
 r(kibernetik,subst,+).
+r(kiasm,subst,+).
 r(kiang,best,+).
 r(keĉup,subst,+).
+r(keĉu,subst,+).
 r(keĉap,subst,+).
 r(kevlar,subst,+).
 r(keton,subst,+).
+r(ketamin,subst,+).
 r(kest,subst,*).
 r(kerub,subst,*).
 r(kerosen,subst,+).
@@ -5981,6 +6153,7 @@ r(kermes,subst,+).
 r(kerkedul,subst,+).
 r(keri,subst,+).
 r(ker,subst,*).
+r(kepr,subst,+).
 r(kep,subst,'2').
 r(kenozoik,subst,+).
 r(kenopodiac,subst,+).
@@ -6007,6 +6180,7 @@ r(kaŭteriz,tr,*).
 r(kaŭstik,adj,+).
 r(kaŭr,ntr,'2').
 r(kaŭci,subst,'2').
+r(kaŝub,subst,+).
 r(kaŝtan,subst,*).
 r(kaŝbu,subst,+).
 r(kaŝ,tr,*).
@@ -6049,6 +6223,7 @@ r(katekiz,tr,'3').
 r(katekist,subst,'3').
 r(katekism,subst,+).
 r(kategori,subst,'1').
+r(kategori,adj,+).
 r(katedral,subst,'2').
 r(katedr,subst,'1').
 r(katastrof,subst,'1').
@@ -6057,6 +6232,7 @@ r(katarted,subst,+).
 r(katarakt,subst,*).
 r(katarakt,subst,!).
 r(katar,subst,*).
+r(katar,subst,+).
 r(katapult,subst,'9').
 r(kataplasm,subst,*).
 r(katamaran,subst,+).
@@ -6117,6 +6293,7 @@ r(karoseri,subst,'9').
 r(karol,subst,+).
 r(karob,subst,*).
 r(karo,subst,*).
+r(karnaŭb,subst,+).
 r(karnaval,subst,*).
 r(karn,subst,'1').
 r(karmin,subst,*).
@@ -6152,7 +6329,7 @@ r(kardiolog,subst,+).
 r(kardioid,subst,+).
 r(kardinal,subst,'2').
 r(kardi,subst,+).
-r(kardel,subst,*).
+r(kardel,best,*).
 r(kardan,subst,+).
 r(kardamom,subst,+).
 r(kardamin,subst,+).
@@ -6185,6 +6362,7 @@ r(karakteristik,subst,+).
 r(karakter,subst,*).
 r(karakol,ntr,+).
 r(karaf,subst,*).
+r(karadri,subst,+).
 r(karabinjer,subst,+).
 r(karaben,subst,*).
 r(karabed,subst,+).
@@ -6239,6 +6417,7 @@ r(kantor,subst,*).
 r(kantonment,ntr,+).
 r(kanton,subst,'2').
 r(kantin,subst,+).
+r(kantilevr,subst,+).
 r(kantilen,subst,+).
 r(kantik,subst,+).
 r(kanti,adj,+).
@@ -6336,6 +6515,7 @@ r(kalik,subst,*).
 r(kaligrafi,subst,+).
 r(kaligraf,subst,+).
 r(kalifornium,subst,+).
+r(kaliforni,subst,+).
 r(kalif,subst,'2').
 r(kalibr,subst,'2').
 r(kali,subst,'4').
@@ -6387,6 +6567,7 @@ r(kaduce,subst,+).
 r(kadrat,subst,+).
 r(kadr,subst,*).
 r(kadmi,subst,+).
+r(kadiŝ,subst,+).
 r(kadi,subst,+).
 r(kadet,subst,'1').
 r(kadenc,subst,'1').
@@ -6420,10 +6601,10 @@ r(junkr,subst,+).
 r(junkac,subst,+).
 r(junk,subst,'1').
 r(juniper,subst,*).
-r(juni,subst,*).
+r(juni,subst,+).
 r(jung,tr,*).
 r(jun,adj,*).
-r(juli,subst,*).
+r(juli,subst,+).
 r(juka,subst,+).
 r(juk,tr,*).
 r(jujub,subst,+).
@@ -6432,6 +6613,7 @@ r(juglandujac,subst,+).
 r(juglandac,subst,+).
 r(jugland,subst,*).
 r(jug,subst,*).
+r(juft,subst,+).
 r(judaism,subst,'3').
 r(jud,subst,'3').
 r(jubile,subst,'1').
@@ -6449,10 +6631,12 @@ r(jojk,subst,+).
 r(jogurt,subst,+).
 r(jog,subst,+).
 r(jodoform,subst,+).
+r(jodl,ntr,+).
 r(jod,subst,'1').
 r(jid,subst,+).
 r(jeŝiv,subst,+).
 r(jezuit,subst,'1').
+r(jezid,subst,+).
 r(jeti,subst,+).
 r(jet,subst,+).
 r(jeralaŝ,subst,+).
@@ -6469,7 +6653,7 @@ r(jard,subst,+).
 r(jar,subst,*).
 r(japanesk,subst,+).
 r(japan,subst,'9').
-r(januar,subst,*).
+r(januar,subst,+).
 r(janki,subst,+).
 r(janiĉar,subst,+).
 r(jamb,subst,+).
@@ -6522,10 +6706,13 @@ r(iredent,adj,+).
 r(ir,ntr,*).
 r(ipsilon,subst,'9').
 r(ips,subst,+).
+r(ionik,adj,+).
+r(ion,adj,+).
 r(inĝenier,subst,*).
 r(inĝeni,adj,+).
 r(involukr,subst,+).
 r(involuci,subst,+).
+r(invok,verb,+).
 r(invit,tr,*).
 r(investitur,subst,+).
 r(invest,tr,+).
@@ -6615,6 +6802,7 @@ r(inkluziv,adj,'2').
 r(inklud,tr,+).
 r(inklin,adj,*).
 r(inkandesk,adj,+).
+r(inka,subst,+).
 r(ink,subst,*).
 r(injektor,subst,+).
 r(injekt,tr,'8').
@@ -6682,6 +6870,7 @@ r(indeks,subst,'4').
 r(inciziv,subst,+).
 r(incit,tr,*).
 r(incident,subst,+).
+r(incidenc,subst,+).
 r(incid,ntr,+).
 r(incest,subst,+).
 r(incens,subst,'2').
@@ -6766,6 +6955,7 @@ r(ideal,subst,'1').
 r(ide,subst,*).
 r(ibised,subst,+).
 r(ibis,best,*).
+r(iber,subst,+).
 r(ibeks,subst,+).
 r(iFon,subst,+).
 r(huŝ,verb,+).
@@ -6781,12 +6971,13 @@ r(hundiĉ,subst,+).
 r(hunded,subst,+).
 r(hund,best,*).
 r(hun,subst,+).
+r(humus,subst,+).
 r(humur,subst,+).
 r(humor,subst,*).
 r(humil,adj,*).
 r(humid,adj,'8').
 r(humer,subst,'2').
-r(humanitar,adj,!).
+r(humanitar,adj,+).
 r(humanistik,subst,+).
 r(human,adj,'1').
 r(hum,subst,'4').
@@ -6804,6 +6995,7 @@ r(hos,subst,+).
 r(hortulan,subst,*).
 r(hortikultur,subst,+).
 r(hortensi,subst,'2').
+r(hort,subst,+).
 r(horoskop,subst,'2').
 r(horor,subst,+).
 r(hormon,subst,'9').
@@ -6820,7 +7012,6 @@ r(hont,tr,*).
 r(honorari,subst,'6').
 r(honor,tr,*).
 r(honest,adj,*).
-r(hondur,subst,+).
 r(homotop,adj,+).
 r(homoteti,subst,+).
 r(homoseksual,adj,+).
@@ -6844,6 +7035,7 @@ r(holografi,subst,+).
 r(holocen,subst,+).
 r(holmi,subst,+).
 r(holivud,subst,+).
+r(holism,subst,+).
 r(hold,subst,+).
 r(hoke,subst,+).
 r(hok,subst,*).
@@ -6883,6 +7075,7 @@ r(hipostil,subst,+).
 r(hipostaz,subst,+).
 r(hipopotamed,subst,+).
 r(hipopotam,subst,'1').
+r(hiponim,subst,+).
 r(hipoksi,subst,+).
 r(hipokrit,tr,*).
 r(hipokondri,subst,+).
@@ -6933,6 +7126,7 @@ r(higumen,subst,+).
 r(higroskop,subst,+).
 r(higrometr,subst,'2').
 r(higien,subst,'1').
+r(hif,subst,+).
 r(hieroglif,subst,'2').
 r(hierodul,subst,+).
 r(hieratik,adj,+).
@@ -6950,6 +7144,7 @@ r(hidrometr,subst,+).
 r(hidrologi,subst,+).
 r(hidrolog,subst,+).
 r(hidroksid,subst,+).
+r(hidrokarbon,subst,+).
 r(hidrokarbid,subst,+).
 r(hidrogen,subst,*).
 r(hidrofobi,subst,'1').
@@ -6957,6 +7152,7 @@ r(hidroelektr,adj,+).
 r(hidrodinamik,subst,+).
 r(hidrocefal,subst,+).
 r(hidroaeroplan,subst,+).
+r(hidrelektr,adj,+).
 r(hidred,subst,+).
 r(hidraŭlik,subst,+).
 r(hidrat,subst,+).
@@ -6972,6 +7168,7 @@ r(hibaĉ,subst,+).
 r(hiat,subst,+).
 r(hiacint,subst,'1').
 r(hiacint,subst,+).
+r(heŭristik,subst,+).
 r(heĝ,subst,'8').
 r(heĝ,verb,+).
 r(hezit,ntr,'3').
@@ -6996,7 +7193,7 @@ r(hermafrodit,adj,'2').
 r(herezolog,subst,+).
 r(herez,subst,*).
 r(hered,tr,*).
-r(herd,subst,+).
+r(herd,subst,!).
 r(herc,subst,+).
 r(herbicid,subst,+).
 r(herbari,subst,+).
@@ -7060,6 +7257,7 @@ r(hekatomb,subst,'1').
 r(hejt,tr,*).
 r(hejm,subst,*).
 r(hegemoni,subst,'4').
+r(hegemon,subst,+).
 r(hedonist,subst,+).
 r(hedonism,subst,+).
 r(hedisar,subst,+).
@@ -7126,6 +7324,7 @@ r(hak,tr,*).
 r(hajl,subst,*).
 r(hajk,subst,+).
 r(hajduk,subst,+).
+r(hagiografi,subst,+).
 r(hafni,subst,+).
 r(hadron,subst,+).
 r(hadit,subst,+).
@@ -7135,6 +7334,7 @@ r(gvid,tr,*).
 r(gvat,tr,+).
 r(gvardi,subst,*).
 r(gvaran,subst,+).
+r(gvanak,subst,+).
 r(gvajakol,subst,+).
 r(gvajak,subst,+).
 r(guŝ,subst,+).
@@ -7175,11 +7375,11 @@ r(grumel,subst,+).
 r(grumbl,ntr,'2').
 r(grum,subst,+).
 r(grued,subst,+).
-r(gru,subst,*).
+r(gru,best,*).
 r(groŝ,subst,*).
 r(grotesk,adj,'2').
 r(grot,subst,*).
-r(grosujac,subst,+).
+r(grosulariac,subst,+).
 r(gros,subst,*).
 r(grop,subst,+).
 r(grog,subst,'2').
@@ -7210,7 +7410,7 @@ r(greft,tr,+).
 r(greb,best,+).
 r(graŭl,ntr,+).
 r(gravur,tr,*).
-r(gravit,ntr,+).
+r(gravit,verb,+).
 r(graviol,subst,+).
 r(graved,adj,*).
 r(grav,adj,*).
@@ -7223,6 +7423,7 @@ r(gras,subst,*).
 r(grapol,subst,+).
 r(grapl,subst,+).
 r(grapfrukt,subst,+).
+r(granul,subst,+).
 r(granol,subst,+).
 r(granit,subst,*).
 r(grandioz,adj,'1').
@@ -7350,7 +7551,7 @@ r(gis,tr,+).
 r(giroskop,subst,+).
 r(giromitr,subst,+).
 r(girland,subst,'1').
-r(gir,ntr,+).
+r(gir,tr,+).
 r(gipur,subst,+).
 r(gips,subst,*).
 r(gipaet,subst,+).
@@ -7379,8 +7580,10 @@ r(gibon,subst,+).
 r(gib,tr,+).
 r(geum,subst,+).
 r(geta,subst,+).
+r(get,subst,+).
 r(gest,subst,*).
 r(gerundi,subst,'1').
+r(gerontologi,subst,+).
 r(germanium,subst,+).
 r(german,subst,*).
 r(gerlen,subst,+).
@@ -7434,6 +7637,7 @@ r(genealog,subst,'7').
 r(gencianac,subst,+).
 r(gencian,subst,'4').
 r(gen,subst,'9').
+r(gemut,adj,+).
 r(gemologi,subst,+).
 r(gemolog,subst,+).
 r(gem,subst,'2').
@@ -7447,6 +7651,7 @@ r(gejser,subst,+).
 r(gej,subst,+).
 r(gehen,subst,+).
 r(gaŭĉ,pers,+).
+r(gaŭl,subst,+).
 r(gazon,subst,+).
 r(gazet,subst,*).
 r(gazel,subst,*).
@@ -7506,6 +7711,8 @@ r(galvan,adj,+).
 r(galoŝ,subst,*).
 r(galop,subst,'1').
 r(galon,subst,*).
+r(gall,subst,+).
+r(galjon,subst,+).
 r(galium,subst,+).
 r(galion,subst,+).
 r(galinul,subst,+).
@@ -7537,8 +7744,11 @@ r(gajl,subst,*).
 r(gajakol,subst,+).
 r(gajak,subst,+).
 r(gaj,adj,*).
+r(gage,subst,+).
 r(gagat,subst,+).
 r(gaf,subst,+).
+r(gael,subst,+).
+r(gadulk,subst,+).
 r(gadolini,subst,+).
 r(gadmes,subst,+).
 r(gaded,subst,+).
@@ -7565,6 +7775,7 @@ r(furlong,subst,+).
 r(furioz,adj,*).
 r(furier,subst,+).
 r(furi,subst,'1').
+r(furgon,subst,+).
 r(furaĝ,subst,*).
 r(fur,subst,+).
 r(fuort,subst,+).
@@ -7592,8 +7803,8 @@ r(fuk,subst,'2').
 r(fug,subst,+).
 r(fuel,subst,+).
 r(ftiz,subst,*).
-r(frustraci,verb,+).
-r(frustr,verb,'9').
+r(frustraci,tr,+).
+r(frustr,tr,'9').
 r(fruntal,subst,+).
 r(frunt,subst,*).
 r(fruktoz,subst,+).
@@ -7612,6 +7823,7 @@ r(friz,tr,*).
 r(frivol,adj,'1').
 r(fritilari,subst,+).
 r(frit,tr,'1').
+r(frit,subst,+).
 r(frisk,adj,+).
 r(fris,subst,'2').
 r(fris,subst,+).
@@ -7620,6 +7832,7 @@ r(fringel,subst,*).
 r(fringed,subst,+).
 r(fring,subst,*).
 r(frikativ,subst,+).
+r(frikas,verb,+).
 r(frid,adj,+).
 r(freŝ,adj,*).
 r(frez,verb,+).
@@ -7657,6 +7870,7 @@ r(franc,subst,*).
 r(framb,subst,*).
 r(framason,subst,*).
 r(fram,subst,'9').
+r(fraktal,subst,+).
 r(fraksen,subst,*).
 r(frakci,subst,'1').
 r(frakas,tr,*).
@@ -7749,6 +7963,7 @@ r(folad,subst,+).
 r(fol,adj,+).
 r(fokus,subst,*).
 r(fokstrot,subst,+).
+r(foksen,best,+).
 r(foked,subst,+).
 r(fok,best,*).
 r(fojn,subst,*).
@@ -7871,6 +8086,7 @@ r(fil,parc,*).
 r(fiktiv,adj,'1').
 r(fiks,tr,'1').
 r(fikci,subst,'4').
+r(fikari,subst,+).
 r(fik,tr,+).
 r(figur,subst,*).
 r(fig,subst,*).
@@ -7951,7 +8167,7 @@ r(fek,ntr,'9').
 r(federal,adj,!).
 r(federaci,subst,'1').
 r(feder,tr,'8').
-r(februar,subst,*).
+r(februar,subst,+).
 r(febr,subst,*).
 r(febl,adj,+).
 r(fe,subst,*).
@@ -8074,11 +8290,12 @@ r(fabel,subst,*).
 r(fabac,subst,+).
 r(fab,subst,*).
 r(eŭĥaristi,subst,+).
+r(eŭtanazi,subst,+).
 r(eŭsk,subst,+).
 r(eŭropi,subst,+).
 r(eŭr,subst,'9').
 r(eŭnuk,subst,'2').
-r(eŭkaristi,subst,+).
+r(eŭkaristi,subst,'2').
 r(eŭkariot,subst,+).
 r(eŭkalipt,subst,'9').
 r(eŭgenik,subst,+).
@@ -8151,6 +8368,7 @@ r(estuar,subst,+).
 r(estron,subst,+).
 r(estrogen,subst,+).
 r(estriol,subst,+).
+r(estragon,subst,+).
 r(estradiol,subst,+).
 r(estrad,subst,'1').
 r(eston,subst,'8').
@@ -8197,7 +8415,7 @@ r(erozi,tr,+).
 r(erotomani,subst,+).
 r(erotik,adj,'3').
 r(erot,adj,+).
-r(erod,verb,+).
+r(erod,tr,+).
 r(ermit,subst,*).
 r(ermen,best,*).
 r(erizipel,subst,'2').
@@ -8362,7 +8580,7 @@ r(emboli,subst,+).
 r(embol,subst,+).
 r(emblem,subst,'1').
 r(emberiz,subst,+).
-r(embarg,tr,+).
+r(embarg,subst,+).
 r(embaras,tr,*).
 r(emancip,tr,'1').
 r(emanaci,verb,+).
@@ -8393,7 +8611,6 @@ r(elektromagnet,subst,+).
 r(elektroliz,tr,+).
 r(elektrolit,subst,+).
 r(elektrofor,subst,+).
-r(elektrodinamometr,subst,+).
 r(elektrod,subst,+).
 r(elektriz,verb,+).
 r(elektrism,subst,+).
@@ -8452,6 +8669,7 @@ r(ekvator,subst,'1').
 r(ekvaci,subst,'2').
 r(ekv,subst,+).
 r(ekumen,subst,+).
+r(eku,subst,+).
 r(ektropi,subst,+).
 r(ektopi,subst,+).
 r(eksvot,subst,+).
@@ -8481,6 +8699,7 @@ r(ekspon,tr,+).
 r(ekspluat,tr,'2').
 r(eksplod,ntr,*).
 r(eksplik,tr,+).
+r(eksplic,verb,+).
 r(ekspertiz,tr,+).
 r(ekspert,subst,+).
 r(eksperiment,subst,'1').
@@ -8489,6 +8708,7 @@ r(ekspekt,subst,+).
 r(ekspedici,subst,+).
 r(eksped,tr,*).
 r(ekspansi,subst,+).
+r(eksomid,subst,+).
 r(ekslibris,subst,+).
 r(ekskuz,tr,+).
 r(ekskurs,subst,*).
@@ -8499,6 +8719,7 @@ r(ekskomunik,tr,'2').
 r(ekskluziv,adj,'2').
 r(eksklud,verb,+).
 r(eksklamaci,subst,+).
+r(eksklam,subst,+).
 r(ekscitator,subst,+).
 r(ekscit,tr,*).
 r(eksces,subst,'2').
@@ -8535,6 +8756,7 @@ r(ekart,subst,+).
 r(ejnŝtejni,subst,+).
 r(ejnstejni,subst,+).
 r(ejgen,subst,+).
+r(ejektiv,subst,+).
 r(ejakul,tr,+).
 r(egret,subst,+).
 r(egopodi,subst,+).
@@ -8555,6 +8777,7 @@ r(efervesk,ntr,+).
 r(efemerid,subst,+).
 r(efemered,subst,+).
 r(efemer,adj,'3').
+r(efemer,best,+).
 r(efelid,subst,+).
 r(efektiv,adj,*).
 r(efekt,subst,'3').
@@ -8604,6 +8827,7 @@ r(duel,subst,'1').
 r(dubni,subst,+).
 r(dublon,subst,+).
 r(dubl,tr,+).
+r(dubel,subst,+).
 r(dub,tr,*).
 r(dualism,subst,'2').
 r(dual,subst,+).
@@ -8652,7 +8876,8 @@ r(dors,subst,*).
 r(dorn,subst,*).
 r(dorm,ntr,*).
 r(dorlot,tr,*).
-r(dorik,subst,+).
+r(dorik,adj,+).
+r(dori,adj,+).
 r(dopamin,subst,+).
 r(donĵuan,subst,+).
 r(donkiĥot,subst,+).
@@ -8717,6 +8942,7 @@ r(ditiramb,subst,'2').
 r(disĉipl,subst,'3').
 r(disuri,subst,+).
 r(disturb,verb,+).
+r(distrofi,subst,+).
 r(distrikt,subst,*).
 r(distribuci,subst,+).
 r(distribu,tr,'8').
@@ -8762,6 +8988,7 @@ r(disert,ntr,+).
 r(disenteri,subst,'1').
 r(disdegn,tr,+).
 r(disciplin,subst,'2').
+r(dirigent,subst,+).
 r(direktric,subst,+).
 r(direktori,subst,+).
 r(direktor,subst,'1').
@@ -8788,6 +9015,7 @@ r(diocez,subst,+).
 r(dinoteri,subst,+).
 r(dinosaŭr,subst,+).
 r(dinornit,subst,+).
+r(ding,subst,+).
 r(dinasti,subst,'1').
 r(dinar,subst,+).
 r(dinamotor,subst,+).
@@ -8867,7 +9095,7 @@ r(dialektolog,subst,+).
 r(dialektik,subst,'2').
 r(dialekt,subst,'1').
 r(diakron,adj,+).
-r(diakrit,tr,+).
+r(diakrit,subst,+).
 r(diakon,subst,'1').
 r(diakilon,subst,+).
 r(diakil,subst,+).
@@ -8894,6 +9122,7 @@ r(dezajn,tr,+).
 r(devoni,subst,+).
 r(devon,subst,+).
 r(deviz,subst,*).
+r(deviz,subst,+).
 r(devi,ntr,+).
 r(devanc,tr,+).
 r(devanagar,adj,+).
@@ -8901,9 +9130,11 @@ r(dev,tr,*).
 r(detru,tr,*).
 r(detonaci,verb,+).
 r(determin,tr,'2').
+r(detergent,subst,+).
+r(detergant,subst,+).
 r(detektor,subst,+).
 r(detektiv,subst,'9').
-r(detekt,verb,+).
+r(detekt,tr,+).
 r(detal,subst,*).
 r(destrojer,subst,+).
 r(destin,tr,'1').
@@ -8928,7 +9159,7 @@ r(depresi,subst,+).
 r(depozici,verb,+).
 r(depot,subst,+).
 r(depon,tr,'3').
-r(deploj,verb,+).
+r(deploj,tr,+).
 r(depeŝ,subst,'1').
 r(departement,subst,'2').
 r(deontologi,subst,+).
@@ -8938,6 +9169,7 @@ r(dent,subst,*).
 r(dens,adj,*).
 r(denotaci,subst,+).
 r(denominator,subst,+).
+r(deng,subst,+).
 r(dendrokronologi,subst,+).
 r(dendrit,subst,+).
 r(denar,subst,*).
@@ -8972,6 +9204,7 @@ r(delic,subst,+).
 r(delfini,subst,+).
 r(delfened,subst,+).
 r(delfen,best,*).
+r(delekt,verb,+).
 r(delegaci,subst,'3').
 r(deleg,tr,'1').
 r(dekt,subst,+).
@@ -9022,11 +9255,11 @@ r(decigram,subst,'2').
 r(decidu,adj,+).
 r(decid,tr,*).
 r(deci,pref,+).
-r(decembr,subst,*).
+r(decembr,subst,+).
 r(dec,ntr,*).
 r(debut,ntr,+).
 r(debitor,subst,+).
-r(debit,subst,+).
+r(debit,subst,!).
 r(debet,subst,'3').
 r(debat,subst,'2').
 r(debarkader,subst,+).
@@ -9034,6 +9267,7 @@ r(deal,adv,+).
 r(daŭr,ntr,*).
 r(daŭb,subst,+).
 r(daŭ,subst,+).
+r(daĉ,subst,+).
 r(daziped,subst,+).
 r(dazip,subst,+).
 r(datur,subst,*).
@@ -9044,6 +9278,7 @@ r(data,subst,+).
 r(dat,subst,*).
 r(dartr,subst,+).
 r(darmŝtati,subst,+).
+r(darkemon,subst,+).
 r(darf,verb,+).
 r(danĝer,subst,*).
 r(dank,tr,*).
@@ -9096,6 +9331,7 @@ r(citadel,subst,'1').
 r(cit,tr,*).
 r(cistern,subst,'3').
 r(cistac,subst,+).
+r(cist,subst,+).
 r(cisoid,subst,+).
 r(cirus,subst,+).
 r(cirsi,subst,+).
@@ -9118,6 +9354,7 @@ r(ciprin,best,+).
 r(cipresac,subst,+).
 r(cipres,subst,*).
 r(ciperac,subst,+).
+r(ciper,subst,+).
 r(cinism,subst,!).
 r(cinik,adj,'2').
 r(cindr,subst,*).
@@ -9188,6 +9425,7 @@ r(cerambik,subst,+).
 r(cep,subst,'8').
 r(cenzur,tr,'1').
 r(cenzor,subst,+).
+r(centuri,subst,+).
 r(centripet,adj,+).
 r(centriol,subst,+).
 r(centrifug,adj,+).
@@ -9214,6 +9452,7 @@ r(cembr,subst,+).
 r(celuloz,subst,'2').
 r(celuloid,subst,+).
 r(celulit,subst,+).
+r(celtal,subst,+).
 r(celoidin,subst,+).
 r(celofan,subst,+).
 r(celibat,subst,+).
@@ -9260,6 +9499,7 @@ r(burk,subst,+).
 r(burjat,adj,+).
 r(burgund,pers,+).
 r(burg,subst,+).
+r(buret,subst,+).
 r(bure,subst,+).
 r(burd,subst,*).
 r(burbon,subst,+).
@@ -9274,6 +9514,7 @@ r(bulten,subst,'5').
 r(bulk,subst,*).
 r(buljon,subst,*).
 r(bulimi,subst,+).
+r(bulgur,subst,+).
 r(bulgar,subst,'8').
 r(bulen,subst,+).
 r(bule,subst,+).
@@ -9348,6 +9589,7 @@ r(breton,pers,+).
 r(bret,subst,*).
 r(brems,subst,'5').
 r(brelok,subst,+).
+r(brek,subst,+).
 r(bred,tr,'8').
 r(brec,subst,+).
 r(braŭning,subst,+).
@@ -9379,7 +9621,7 @@ r(bovl,subst,'8').
 r(boved,subst,+).
 r(bov,subst,*).
 r(botel,subst,*).
-r(botaŭr,subst,+).
+r(botaŭr,best,+).
 r(botanik,subst,'1').
 r(bot,subst,*).
 r(boston,subst,+).
@@ -9459,6 +9701,7 @@ r(blokad,subst,'3').
 r(blok,subst,'3').
 r(blog,subst,+).
 r(blit,subst,+).
+r(blink,verb,+).
 r(blind,adj,*).
 r(blenore,subst,+).
 r(blenoragi,subst,+).
@@ -9473,7 +9716,7 @@ r(blastomer,subst,+).
 r(blasfem,tr,'1').
 r(blanket,subst,+).
 r(blank,adj,*).
-r(blag,subst,+).
+r(blag,tr,+).
 r(bizon,subst,'9').
 r(bizar,adj,+).
 r(bivak,subst,'1').
@@ -9485,6 +9728,7 @@ r(bit,subst,'9').
 r(bit,subst,+).
 r(bisturi,subst,'2').
 r(bistr,subst,+).
+r(bistort,subst,+).
 r(bismut,subst,*).
 r(biskvit,subst,*).
 r(bisin,subst,+).
@@ -9574,6 +9818,7 @@ r(beriber,subst,+).
 r(bergamot,subst,+).
 r(beret,subst,+).
 r(berberis,subst,+).
+r(berber,subst,+).
 r(ber,subst,*).
 r(benzol,subst,+).
 r(benzodiazepin,subst,+).
@@ -9676,6 +9921,7 @@ r(barbud,subst,+).
 r(barbir,subst,*).
 r(barbarism,subst,+).
 r(barbar,subst,'1').
+r(barbaku,subst,+).
 r(barbakan,subst,+).
 r(barb,subst,*).
 r(barakt,ntr,*).
@@ -9739,10 +9985,12 @@ r(bal,subst,*).
 r(bakŝiŝ,subst,+).
 r(bakteriologi,subst,+).
 r(bakteriolog,subst,+).
+r(bakteriofaĝ,subst,+).
 r(bakteriofag,subst,+).
 r(bakteri,subst,'2').
 r(bakgamon,subst,+).
 r(bakelit,subst,+).
+r(bakarat,subst,+).
 r(bakanal,subst,+).
 r(bakalaŭr,subst,+).
 r(bak,tr,*).
@@ -9804,6 +10052,7 @@ r(aŭkci,subst,'1').
 r(aŭk,subst,+).
 r(aŭgust,subst,+).
 r(aŭgur,tr,'6').
+r(aŭgmentativ,subst,+).
 r(aŭditori,subst,'2').
 r(aŭdienc,subst,'1').
 r(aŭdac,ntr,'8').
@@ -9867,9 +10116,9 @@ r(ato,pref,+).
 r(atmosfer,subst,'1').
 r(atletik,subst,+).
 r(atlet,subst,'1').
+r(atlas,subst,'8').
 r(atlas,subst,'2').
 r(ating,tr,*).
-r(atik,adj,+).
 r(atest,tr,*).
 r(atent,tr,*).
 r(atend,tr,*).
@@ -9979,6 +10228,7 @@ r(arsenal,subst,+).
 r(arsen,subst,+).
 r(arpeĝ,subst,'1').
 r(arorut,subst,+).
+r(aromat,adj,+).
 r(arom,subst,'1').
 r(arok,tr,+).
 r(arogant,adj,*).
@@ -10007,6 +10257,8 @@ r(arkeolog,subst,'3').
 r(arkebuz,subst,+).
 r(arkean,subst,+).
 r(arke,subst,+).
+r(arkan,subst,+).
+r(arkaism,subst,'8').
 r(arkaik,adj,'3').
 r(arkad,subst,'1').
 r(ark,subst,*).
@@ -10046,6 +10298,7 @@ r(arbalest,subst,'2').
 r(arb,subst,*).
 r(araŭkariac,subst,+).
 r(araŭkari,subst,+).
+r(araĥid,subst,+).
 r(aranĝ,tr,*).
 r(araneed,subst,+).
 r(arane,subst,*).
@@ -10064,7 +10317,7 @@ r(apsar,subst,+).
 r(aproksim,ntr,+).
 r(aprob,tr,*).
 r(aprior,adj,+).
-r(april,subst,*).
+r(april,subst,+).
 r(aprez,tr,+).
 r(apretur,tr,+).
 r(aprec,tr,+).
@@ -10106,7 +10359,6 @@ r(apepsi,subst,+).
 r(apendicit,subst,+).
 r(apendic,subst,+).
 r(apelaci,tr,'3').
-r(apelac,verb,!).
 r(apel,verb,+).
 r(apaĉ,subst,+).
 r(apatit,subst,+).
@@ -10171,6 +10423,7 @@ r(antem,subst,+).
 r(antecedent,subst,+).
 r(antagonist,subst,+).
 r(antagonism,subst,+).
+r(anstrom,subst,+).
 r(anser,best,*).
 r(ans,subst,+).
 r(anormal,adj,+).
@@ -10200,6 +10453,7 @@ r(anhel,ntr,+).
 r(angvised,subst,+).
 r(angvis,best,+).
 r(angul,subst,*).
+r(angstrom,subst,+).
 r(angor,subst,'6').
 r(anglikan,subst,+).
 r(anglez,subst,+).
@@ -10279,6 +10533,7 @@ r(amorf,adj,+).
 r(amor,subst,'4').
 r(amonit,subst,+).
 r(amoniak,subst,*).
+r(amni,subst,+).
 r(amnezi,subst,+).
 r(amnesti,subst,'1').
 r(amiŝ,subst,+).
@@ -10370,6 +10625,7 @@ r(alkaloid,subst,+).
 r(alkal,subst,+).
 r(alkad,subst,+).
 r(alk,best,*).
+r(alize,subst,+).
 r(aliz,subst,+).
 r(aliteraci,subst,+).
 r(aline,subst,'2').
@@ -10422,6 +10678,7 @@ r(alban,subst,'8').
 r(alb,subst,+).
 r(alaŭded,subst,+).
 r(alaŭd,subst,*).
+r(alavit,subst,+).
 r(alarm,tr,'1').
 r(alanin,subst,+).
 r(alabastr,subst,'1').
@@ -10442,7 +10699,7 @@ r(akuzativ,subst,*).
 r(akuz,tr,'3').
 r(akut,adj,'2').
 r(akustik,subst,+).
-r(akurat,adj,'1').
+r(akurat,adv,'1').
 r(akupunktur,subst,'9').
 r(akumulator,subst,+).
 r(akumul,tr,+).
@@ -10485,6 +10742,7 @@ r(akn,subst,*).
 r(akme,subst,+).
 r(aklimatiz,verb,+).
 r(aklam,tr,'3').
+r(akj,subst,+).
 r(akir,tr,*).
 r(akile,subst,+).
 r(akciz,subst,'1').
@@ -10495,12 +10753,12 @@ r(akci,subst,'1').
 r(akcesor,adj,'3').
 r(akcept,tr,*).
 r(akcent,tr,*).
+r(akcelometr,subst,+).
 r(akcel,tr,*).
 r(akaĵu,subst,+).
 r(akar,subst,*).
 r(akapar,tr,'2').
 r(akant,subst,+).
-r(akaism,subst,'8').
 r(akademi,subst,'1').
 r(akaci,subst,'1').
 r(ajut,subst,+).
@@ -10509,6 +10767,7 @@ r(ajnu,pers,+).
 r(ajmar,subst,+).
 r(ajl,subst,*).
 r(ajgen,subst,+).
+r(ajatolah,subst,+).
 r(ajatol,subst,+).
 r(ain,pers,+).
 r(ailant,subst,+).
@@ -10601,6 +10860,7 @@ r(admitanc,subst,+).
 r(admiralitat,subst,'3').
 r(admiral,subst,'1').
 r(admir,tr,*).
+r(administrator,subst,+).
 r(administraci,subst,'3').
 r(administr,tr,*).
 r(adjutant,subst,'1').
@@ -10610,8 +10870,10 @@ r(adjudant,subst,+).
 r(adjektiv,subst,*).
 r(adici,tr,'2').
 r(adiant,subst,+).
+r(adiabat,adj,+).
 r(adher,ntr,+).
 r(adept,subst,'1').
+r(adenozin,subst,+).
 r(adenin,subst,+).
 r(adekvat,adj,+).
 r(adaĝ,subst,+).
@@ -10632,6 +10894,7 @@ r(acerac,subst,+).
 r(acer,subst,*).
 r(abĵur,verb,+).
 r(abutment,subst,+).
+r(abutil,subst,+).
 r(abund,adj,'3').
 r(absurd,adj,'1').
 r(abstrakt,adj,'1').

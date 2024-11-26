@@ -1,7 +1,10 @@
-dtd/
+dtd
+dtd/*
 tmp/
 txt/
 xml/
-xsl/
-owl/
+xsl
+xsl/*
+owl
+owl/*
 html/

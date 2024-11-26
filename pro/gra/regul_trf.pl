@@ -74,6 +74,11 @@ n_sup(`8`,`⁸`).
 n_sup(`1`,`¹`).
 n_sup(`9`,`⁹`).
 n_sup(`0`,`⁰`).
+n_sup(`(`,`⁽`).
+n_sup(`)`,`⁾`).
+n_sup([_],`ₓ`).
+% n_sup([X],_) :- format(atom(Msg),'Ne valida ofc: ~d!',[X]), throw(Msg).
+
 n_sup([],[]).
 n_sup([N|Rest],[Ns|Rs]) :- n_sup([N],[Ns]), n_sup(Rest,Rs).
 
