@@ -2,7 +2,9 @@ v(ŭoŭ,intj,+).
 v(ŭaŭ,intj,+).
 v(ŝŝ,intj,+).
 v(ŝpruc,intj,*).
+v(ŝmac,intj,*).
 v(ĉit,intj,+).
+v(ĉirp,intj,+).
 v(zzz,intj,+).
 v(vaŭ,intj,+).
 v(ups,intj,+).
@@ -18,8 +20,10 @@ v(snuf,intj,+).
 v(sal,intj,+).
 v(rukt,intj,*).
 v(ruk,intj,+).
+v(ronk,intj,*).
 v(raĉ,intj,+).
 v(pum,intj,+).
+v(pu,intj,+).
 v(plaŭ,intj,+).
 v(pland,intj,*).
 v(pep,intj,*).
@@ -73,7 +77,9 @@ v(bum,intj,+).
 v(brr,intj,+).
 v(boj,intj,*).
 v(blabla,intj,+).
+v(be,intj,+).
 v(baŭ,intj,+).
+v(bat,intj,*).
 v(baf,intj,+).
 v(bac,intj,+).
 v(ba,intj,+).
