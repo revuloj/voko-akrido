@@ -15,7 +15,7 @@ FROM swipl:stable
 # ĉu per rettranssendo (scp, rsync, git...?)
 #
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends  \
     lynx xsltproc unzip curl ca-certificates openssh-client rsync \
 	&& rm -rf /var/lib/apt/lists/*
 
