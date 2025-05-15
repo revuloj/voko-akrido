@@ -17,6 +17,16 @@ artikolojn)
   ;;
 # ĉar kompleta kuro daŭras tre longe, ni permesas kuri nur por kelkaj literoj
 # kio signifas 2000..3000 artikoloj en unu kuro
+tage)
+  if [ ! -d html ]; then
+    echo "ERARO: unuafoje necesas prepari la dosierujojn per celo preparo)"
+    exit 1
+  fi
+  literoj=(e-j a-d e-j k-m n-r s-z a-d)
+  LITEROJ=${literoj[ $(date +'%w') ]}  
+  . bin/xml_download.sh && bin/xml2txt.sh [${LITEROJ}] && bin/analizu_revo_novajn.sh
+  ;;
+## la sekvaj estas intencitaj por uzi el GH-ago, do fine ili sinkronigas la rezultojn
 a-d)
   . bin/xml_download.sh && bin/xml2txt.sh [a-d] && bin/analizu_revo_novajn.sh && bin/async.sh [a-d]
   ;;
