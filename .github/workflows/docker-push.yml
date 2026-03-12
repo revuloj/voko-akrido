@@ -33,7 +33,7 @@ jobs:
     steps:
       # https://github.com/actions/checkout
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Kreo de ${{ env.IMAGE_NAME }}
         run: |
