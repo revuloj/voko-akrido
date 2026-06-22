@@ -113,6 +113,7 @@ mlg('KN').
 mlg('HR').
 mlg('CU').
 mlg('KW').
+mlg('IK').
 mlg('LA').
 mlg('HNL').
 mlg('LS').
@@ -141,6 +142,7 @@ mlg('MD').
 mlg('IMF').
 mlg('MC').
 mlg('MZ').
+mlg('LDN').
 mlg('UN').
 mlg('NA').
 mlg('NR').
@@ -207,6 +209,8 @@ mlg('TV').
 mlg('UG').
 mlg('UA').
 mlg('EU').
+mlg('IUTAK').
+mlg('IUPAK').
 mlg('UY').
 mlg('US').
 mlg('VU').

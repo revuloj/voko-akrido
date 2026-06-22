@@ -1,5 +1,6 @@
 nr('Ŝverin',subst,+).
 nr('Ŝopen',subst,+).
+nr('Ŝoah',subst,+).
 nr('Ŝlejer',pers,+).
 nr('Ŝjian',subst,+).
 nr('Ŝiva',subst,+).
@@ -8,6 +9,7 @@ nr('Ŝinkansen',subst,+).
 nr('Ŝimŝon',subst,+).
 nr('Ŝiller',subst,*).
 nr('Ŝil',subst,+).
+nr('Ŝikag',subst,+).
 nr('Ŝijaism',subst,+).
 nr('Ŝetland',subst,'10').
 nr('Ŝenĵen',subst,+).
@@ -15,6 +17,7 @@ nr('Ŝenjang',subst,+).
 nr('Ŝengen',subst,+).
 nr('Ŝem',subst,'10').
 nr('Ŝekspir',subst,+).
+nr('Ŝav',subst,+).
 nr('Ŝari',subst,+).
 nr('Ŝanĥaj',subst,+).
 nr('Ŝanhaj',subst,'10').
@@ -41,6 +44,7 @@ nr('Ĝid',subst,+).
 nr('Ĝibuti',subst,'10').
 nr('Ĝibut',subst,+).
 nr('Ĝibraltar',subst,'10').
+nr('Ĝermanik',subst,+).
 nr('Ĝerald',pers,+).
 nr('Ĝenov',subst,+).
 nr('Ĝenev',subst,'10').
@@ -66,6 +70,8 @@ nr('Ĉangĉun',subst,+).
 nr('Ĉad',subst,'10').
 nr('Zurik',subst,'10').
 nr('Zoroastr',subst,+).
+nr('Zofi',pers,+).
+nr('Ziz',subst,+).
 nr('Zimbabv',subst,'10').
 nr('Zib',subst,+).
 nr('Zeŭs',subst,'10').
@@ -84,6 +90,7 @@ nr('Vulfil',pers,+).
 nr('Vuhan',subst,+).
 nr('Vroclav',subst,+).
 nr('Volter',subst,+).
+nr('Volta',subst,+).
 nr('Volt',subst,+).
 nr('Volsung',subst,+).
 nr('Volg',subst,'10').
@@ -100,7 +107,7 @@ nr('Vizbaden',subst,+).
 nr('Vittenberg',subst,+).
 nr('Vitruvi',subst,+).
 nr('Vitenberg',subst,+).
-nr('Vit',subst,+).
+nr('Vit',pers,+).
 nr('Viskonsin',subst,+).
 nr('Virtemberg',subst,+).
 nr('Virgini',subst,+).
@@ -111,6 +118,7 @@ nr('Vinaj',subst,+).
 nr('Vilnius',subst,+).
 nr('Viln',subst,+).
 nr('Vilhelm',pers,*).
+nr('Vilfrid',pers,+).
 nr('Viktori',subst,+).
 nr('Viktor',pers,+).
 nr('Vikipedi',subst,+).
@@ -155,6 +163,7 @@ nr('Vajmar',subst,+).
 nr('Vahabism',subst,+).
 nr('Vagadugu',subst,+).
 nr('Vaduz',subst,+).
+nr('Uzbekistan',subst,+).
 nr('Uzbeki',subst,+).
 nr('Utreĥt',subst,+).
 nr('Utarpradeŝ',subst,+).
@@ -185,6 +194,7 @@ nr('Turki',subst,+).
 nr('Turingi',subst,+).
 nr('Tunizi',subst,'8').
 nr('Tuniz',subst,+).
+nr('Tunisi',subst,+).
 nr('Tunis',subst,+).
 nr('Tuluz',subst,+).
 nr('Tukidid',pers,+).
@@ -226,7 +236,7 @@ nr('Timbuktu',subst,+).
 nr('Tigris',subst,'10').
 nr('Tiflis',subst,+).
 nr('Tife',subst,+).
-nr('Tician',subst,+).
+nr('Tician',pers,+).
 nr('Tibet',subst,'10').
 nr('Tiberi',pers,+).
 nr('Tiber',subst,+).
@@ -255,6 +265,7 @@ nr('Taĝiki',subst,+).
 nr('Tatr',subst,+).
 nr('Tatari',subst,+).
 nr('Tasmani',subst,'10').
+nr('Tartar',subst,+).
 nr('Tars',subst,+).
 nr('Tanzani',subst,'10').
 nr('Tantal',subst,+).
@@ -270,6 +281,7 @@ nr('Tahiti',subst,+).
 nr('Tade',pers,+).
 nr('Sĥeld',subst,+).
 nr('Svisi',subst,+).
+nr('Svetoni',subst,+).
 nr('Svedi',subst,+).
 nr('Svalbard',subst,+).
 nr('Suĝoŭ',subst,+).
@@ -285,6 +297,7 @@ nr('Sumatr',subst,'10').
 nr('Sulaves',subst,+).
 nr('Sukot',subst,+).
 nr('Suez',subst,+).
+nr('Suetoni',subst,+).
 nr('Sudan',subst,'8').
 nr('Stutgart',subst,+).
 nr('Strasburg',subst,'10').
@@ -294,6 +307,7 @@ nr('Stiri',subst,+).
 nr('Sten',subst,+).
 nr('Stefan',pers,*).
 nr('Stanislav',pers,+).
+nr('Stambul',subst,+).
 nr('Stalin',pers,+).
 nr('Srilank',subst,'10').
 nr('Spinoz',pers,+).
@@ -342,6 +356,7 @@ nr('Silezi',subst,'10').
 nr('Silen',subst,+).
 nr('Sikst',pers,+).
 nr('Sikim',subst,+).
+nr('Signun',subst,+).
 nr('Sigmund',pers,+).
 nr('Sigismund',pers,+).
 nr('Sieraleon',subst,'10').
@@ -361,8 +376,10 @@ nr('Senegal',subst,'10').
 nr('Selim',pers,+).
 nr('Sejŝel',subst,'10').
 nr('Sejn',subst,+).
+nr('Seder',subst,+).
 nr('Seborg',subst,+).
 nr('Sebastian',pers,+).
+nr('Scipion',pers,+).
 nr('Scil',subst,+).
 nr('Scientologi',subst,+).
 nr('Saŭl',subst,+).
@@ -418,6 +435,7 @@ nr('Rubikon',subst,+).
 nr('Ruand',subst,'10').
 nr('Roĝer',pers,+).
 nr('Roterdam',subst,'10').
+nr('Romul',pers,+).
 nr('Romi',subst,+).
 nr('Rome',pers,+).
 nr('Romanĉi',subst,+).
@@ -442,6 +460,7 @@ nr('Reuni',subst,'10').
 nr('Renat',pers,+).
 nr('Rems',subst,+).
 nr('Remington',subst,+).
+nr('Rem',pers,+).
 nr('Rejnland-Palatinat',subst,+).
 nr('Rejn',subst,'10').
 nr('Rejms',subst,+).
@@ -465,6 +484,7 @@ nr('Purim',subst,+).
 nr('Pune',subst,+).
 nr('Ptolome',pers,+).
 nr('Ptoleme',pers,+).
+nr('Psiĥe',subst,+).
 nr('Psiĥ',subst,+).
 nr('Prusi',subst,+).
 nr('Provenc',subst,+).
@@ -513,6 +533,7 @@ nr('Pilzen',subst,+).
 nr('Pilsen',subst,+).
 nr('Pilat',subst,+).
 nr('Picburg',subst,+).
+nr('Pi',pers,+).
 nr('Peŝavar',subst,+).
 nr('Petr',pers,*).
 nr('Peterburg',subst,'10').
@@ -558,6 +579,7 @@ nr('Palestin',subst,'10').
 nr('Palerm',subst,+).
 nr('Palaŭ',subst,'10').
 nr('Pakistan',subst,'8').
+nr('Pajn',subst,+).
 nr('Pafos',subst,+).
 nr('Pad',subst,+).
 nr('Pacifik',subst,'8').
@@ -576,6 +598,7 @@ nr('Oskar',pers,+).
 nr('Oseti',subst,+).
 nr('Osak',subst,'10').
 nr('Orong',subst,+).
+nr('Ormuz',subst,+).
 nr('Orlean',subst,+).
 nr('Orkad',subst,+).
 nr('Ork',subst,+).
@@ -629,6 +652,7 @@ nr('Noaĥ',pers,+).
 nr('Niĝeri',subst,'10').
 nr('Niĝer',subst,'10').
 nr('Niĉiren',subst,+).
+nr('Nisan',subst,+).
 nr('Nis',subst,+).
 nr('Nirvan',subst,+).
 nr('Niniv',subst,+).
@@ -658,10 +682,12 @@ nr('Neptun',subst,+).
 nr('Nepjid',subst,+).
 nr('Neper',subst,+).
 nr('Nepal',subst,'10').
+nr('Nemez',subst,+).
 nr('Nekar',subst,+).
 nr('Nederland',subst,'8').
 nr('Nebrask',subst,+).
 nr('Nazaret',subst,+).
+nr('Navar',subst,+).
 nr('Naur',subst,'10').
 nr('Nasaŭ',subst,+).
 nr('Narcis',pers,+).
@@ -677,6 +703,7 @@ nr('Najrobi',subst,+).
 nr('Najrob',subst,+).
 nr('Nagoj',subst,+).
 nr('Nagasak',subst,'10').
+nr('Nafar',subst,+).
 nr('Muzaik',subst,+).
 nr('Munĥen',subst,+).
 nr('Munken',subst,'10').
@@ -697,6 +724,7 @@ nr('Moresnet',subst,+).
 nr('Moravi',subst,'10').
 nr('Montreal',subst,'10').
 nr('Montpelier',subst,'10').
+nr('Montmartr',subst,+).
 nr('Montevide',subst,'10').
 nr('Montenegr',subst,'10').
 nr('Montekarl',subst,+).
@@ -737,6 +765,7 @@ nr('Micen',subst,+).
 nr('Meĥlen',subst,+).
 nr('Mezopotami',subst,'10').
 nr('Metodi',pers,+).
+nr('Mesi',subst,*).
 nr('Merkur',subst,+).
 nr('Mengzi',subst,+).
 nr('Menefr',subst,+).
@@ -791,6 +820,7 @@ nr('Marcial',pers,+).
 nr('Marcel',pers,+).
 nr('Maraton',subst,'10').
 nr('Marakajb',subst,+).
+nr('Marakaib',subst,+).
 nr('Maput',subst,+).
 nr('Manĵusr',subst,+).
 nr('Manĉestr',subst,+).
@@ -806,6 +836,7 @@ nr('Manaŭ',subst,+).
 nr('Manam',subst,+).
 nr('Managv',subst,+).
 nr('Mameluk',subst,+).
+nr('Maltus',pers,+).
 nr('Malt',subst,'10').
 nr('Malkolm',pers,+).
 nr('Malik',pers,+).
@@ -815,6 +846,7 @@ nr('Maldiv',subst,'10').
 nr('Malavi',subst,'10').
 nr('Malak',subst,+).
 nr('Malajzi',subst,'10').
+nr('Malagasi',subst,+).
 nr('Maksimilian',pers,+).
 nr('Makintoŝ',subst,+).
 nr('Makedoni',subst,+).
@@ -826,6 +858,8 @@ nr('Majkrosoft',subst,+).
 nr('Majenc',subst,'10').
 nr('Maj',subst,*).
 nr('Mahomet',subst,+).
+nr('Mahdi',subst,+).
+nr('Mahd',subst,+).
 nr('Mahavir',subst,+).
 nr('Maharaŝtr',subst,+).
 nr('Mahajan',subst,+).
@@ -849,6 +883,7 @@ nr('Ludovik',pers,*).
 nr('Lucian',pers,+).
 nr('Luci',pers,'10').
 nr('Lucern',subst,'10').
+nr('Lubumbaŝ',subst,+).
 nr('Luar',subst,+).
 nr('Luand',subst,+).
 nr('Loĵban',subst,+).
@@ -968,10 +1003,11 @@ nr('Koran',subst,*).
 nr('Kopernik',pers,+).
 nr('Kopenhag',subst,'10').
 nr('Konstantinopol',subst,'10').
+nr('Konstantinopl',subst,+).
 nr('Konstanten',pers,+).
 nr('Konrad',pers,+).
 nr('Kong',subst,'10').
-nr('Konfuzi',subst,!).
+nr('Konfuzi',pers,+).
 nr('Konfuce',pers,+).
 nr('Konektikut',subst,+).
 nr('Konakri',subst,+).
@@ -989,6 +1025,7 @@ nr('Kolorad',subst,'10').
 nr('Kolonj',subst,'10').
 nr('Kolombi',subst,'10').
 nr('Kolkat',subst,'10').
+nr('Kokakola',subst,+).
 nr('Koblenc',subst,+).
 nr('Kluĵ',subst,+).
 nr('Kluĉevskaj',subst,+).
@@ -1018,6 +1055,7 @@ nr('Kepler',subst,+).
 nr('Kentuki',subst,+).
 nr('Kenj',subst,'10').
 nr('Kenigsberg',subst,+).
+nr('Kenet',pers,+).
 nr('Kembriĝ',subst,'10').
 nr('Kelvin',pers,+).
 nr('Kebeki',subst,'10').
@@ -1103,6 +1141,7 @@ nr('Jukon',subst,+).
 nr('Jugoslavi',subst,+).
 nr('Jude',subst,+).
 nr('Jozef',pers,*).
+nr('Jov',subst,+).
 nr('Josu',pers,+).
 nr('Josef',pers,+).
 nr('Jork',subst,'10').
@@ -1113,6 +1152,7 @@ nr('Jokoham',subst,'10').
 nr('Johanesburg',subst,+).
 nr('Johan',pers,*).
 nr('Joakim',pers,+).
+nr('Jin',subst,+).
 nr('Jid',subst,+).
 nr('Jesu',subst,'3').
 nr('Jeruzalem',subst,+).
@@ -1130,7 +1170,9 @@ nr('Jaroslav',pers,+).
 nr('Japani',subst,+).
 nr('Januar',subst,*).
 nr('Jansen',subst,+).
+nr('Janikul',subst,+).
 nr('Jangzi',subst,+).
+nr('Jang',subst,+).
 nr('Jamusukr',subst,+).
 nr('Jamajk',subst,'10').
 nr('Jama',subst,+).
@@ -1176,6 +1218,7 @@ nr('Iliri',subst,+).
 nr('Ilion',subst,+).
 nr('Ilinojs',subst,+).
 nr('Iliad',subst,+).
+nr('Ikar',subst,+).
 nr('Ignac',pers,+).
 nr('Idah',subst,+).
 nr('Id',subst,+).
@@ -1189,6 +1232,7 @@ nr('Hug',pers,+).
 nr('Hudson',subst,+).
 nr('Hubert',pers,+).
 nr('Horus',subst,+).
+nr('Hormuz',subst,+).
 nr('Horaci',pers,+).
 nr('Honŝu',subst,'10').
 nr('Honkong',subst,'10').
@@ -1204,6 +1248,7 @@ nr('Hitler',subst,+).
 nr('Hispaniol',subst,+).
 nr('Hispani',subst,+).
 nr('Hiroŝim',subst,'10').
+nr('Hipsikl',subst,+).
 nr('Hipolit',pers,+).
 nr('Hipokrat',subst,+).
 nr('Hindustan',subst,+).
@@ -1309,6 +1354,7 @@ nr('Goljat',subst,+).
 nr('Golgot',subst,+).
 nr('Golem',subst,+).
 nr('Godfred',pers,+).
+nr('Gobi',subst,+).
 nr('Goa',subst,+).
 nr('Glasgov',subst,+).
 nr('Glagolic',subst,+).
@@ -1317,8 +1363,11 @@ nr('Ginevr',subst,+).
 nr('Gilgameŝ',subst,+).
 nr('Gilbert',pers,+).
 nr('Gibraltar',subst,+).
+nr('Gestun',subst,+).
+nr('Gestap',subst,+).
 nr('Gervaz',pers,+).
 nr('Gertrud',pers,+).
+nr('Germanik',subst,+).
 nr('Germani',subst,+).
 nr('Gerard',pers,+).
 nr('Georg',pers,*).
@@ -1432,7 +1481,9 @@ nr('Epiros',subst,+).
 nr('Epir',subst,+).
 nr('Epikur',pers,+).
 nr('Epifani',subst,'2').
+nr('Entent',subst,+).
 nr('Ene',pers,+).
+nr('Ems',subst,+).
 nr('Emilian',pers,+).
 nr('Emili',pers,*).
 nr('Emil',pers,+).
@@ -1454,6 +1505,7 @@ nr('Egipti',subst,+).
 nr('Ege',subst,'10').
 nr('Efez',subst,+).
 nr('Efes',subst,+).
+nr('Edvin',pers,+).
 nr('Edvard',pers,+).
 nr('Eduard',pers,+).
 nr('Edmund',pers,+).
@@ -1486,6 +1538,7 @@ nr('Doha',subst,+).
 nr('Doh',subst,+).
 nr('Dodoma',subst,+).
 nr('Dodom',subst,+).
+nr('Dnestr',subst,+).
 nr('Dnepr',subst,+).
 nr('Dirak',pers,+).
 nr('Dioskur',subst,+).
@@ -1506,6 +1559,7 @@ nr('Delavar',subst,+).
 nr('Dekameron',subst,+).
 nr('Dejm',subst,+).
 nr('Dedekind',pers,+).
+nr('Dedal',subst,+).
 nr('Decembr',subst,*).
 nr('David',pers,+).
 nr('Darvin',pers,+).
@@ -1513,6 +1567,7 @@ nr('Darmapad',subst,+).
 nr('Darm',subst,+).
 nr('Dari',pers,+).
 nr('Daresalam',subst,+).
+nr('Dardanel',subst,+).
 nr('Danub',subst,'10').
 nr('Daniel',pers,+).
 nr('Dani',subst,+).
@@ -1525,6 +1580,7 @@ nr('Dalas',subst,'10').
 nr('Dakot',subst,+).
 nr('Dakar',subst,+).
 nr('Dak',subst,'10').
+nr('Dajdal',subst,+).
 nr('Dagobert',pers,+).
 nr('Ciril',pers,+).
 nr('Ciren',subst,+).
@@ -1632,6 +1688,8 @@ nr('Bern',subst,'10').
 nr('Berlin',subst,*).
 nr('Bering',pers,+).
 nr('Bergen',subst,'10').
+nr('Berenik',pers,+).
+nr('Berenic',pers,+).
 nr('Beovulf',subst,+).
 nr('Beograd',subst,'10').
 nr('Benjamen',pers,+).
@@ -1662,12 +1720,13 @@ nr('Barnab',pers,+).
 nr('Barejn',subst,'10').
 nr('Barcelon',subst,'10').
 nr('Barbud',subst,'10').
-nr('Barbaros',subst,+).
+nr('Barbaros',pers,+).
 nr('Barbad',subst,'10').
 nr('Barat',subst,'10').
 nr('Bankok',subst,'10').
 nr('Bangladeŝ',subst,'10').
 nr('Bangkok',subst,+).
+nr('Bangalor',subst,+).
 nr('Bang',subst,+).
 nr('Bandung',subst,+).
 nr('Banaĥ',pers,+).
@@ -1696,6 +1755,7 @@ nr('Aŭvernj',subst,+).
 nr('Aŭstronezi',subst,'10').
 nr('Aŭstri',subst,+).
 nr('Aŭstrali',subst,'8').
+nr('Aŭstralazi',subst,+).
 nr('Aŭrelian',pers,+).
 nr('Aŭgusten',pers,+).
 nr('Aŭgust',subst,*).
@@ -1724,6 +1784,8 @@ nr('Atalant',subst,+).
 nr('Asuncion',subst,+).
 nr('Asturi',subst,+).
 nr('Astan',subst,+).
+nr('Asklepios',subst,+).
+nr('Asklepi',subst,+).
 nr('Aski',subst,+).
 nr('Asiri',subst,'10').
 nr('Asen',subst,+).
@@ -1755,6 +1817,7 @@ nr('April',subst,*).
 nr('Apolon',subst,'10').
 nr('Apol',subst,+).
 nr('Api',subst,+).
+nr('Apenin',subst,+).
 nr('Anunciaci',subst,*).
 nr('Antverpen',subst,'10').
 nr('Antoni',pers,+).
@@ -1768,6 +1831,8 @@ nr('Antananariv',subst,+).
 nr('Anselm',pers,+).
 nr('Ann',pers,*).
 nr('Ankar',subst,+).
+nr('Anik',pers,+).
+nr('Angur',subst,+).
 nr('Angol',subst,'10').
 nr('Angli',subst,+).
 nr('Angkor',subst,+).
@@ -1845,6 +1910,7 @@ nr('Abel',pers,+).
 nr('Abas',pers,+).
 nr_(ŝverin,subst,+).
 nr_(ŝopen,subst,+).
+nr_(ŝoah,subst,+).
 nr_(ŝlejer,pers,+).
 nr_(ŝjian,subst,+).
 nr_(ŝiva,subst,+).
@@ -1853,6 +1919,7 @@ nr_(ŝinkansen,subst,+).
 nr_(ŝimŝon,subst,+).
 nr_(ŝiller,subst,*).
 nr_(ŝil,subst,+).
+nr_(ŝikag,subst,+).
 nr_(ŝijaism,subst,+).
 nr_(ŝetland,subst,'10').
 nr_(ŝenĵen,subst,+).
@@ -1860,6 +1927,7 @@ nr_(ŝenjang,subst,+).
 nr_(ŝengen,subst,+).
 nr_(ŝem,subst,'10').
 nr_(ŝekspir,subst,+).
+nr_(ŝav,subst,+).
 nr_(ŝari,subst,+).
 nr_(ŝanĥaj,subst,+).
 nr_(ŝanhaj,subst,'10').
@@ -1886,6 +1954,7 @@ nr_(ĝid,subst,+).
 nr_(ĝibuti,subst,'10').
 nr_(ĝibut,subst,+).
 nr_(ĝibraltar,subst,'10').
+nr_(ĝermanik,subst,+).
 nr_(ĝerald,pers,+).
 nr_(ĝenov,subst,+).
 nr_(ĝenev,subst,'10').
@@ -1911,6 +1980,8 @@ nr_(ĉangĉun,subst,+).
 nr_(ĉad,subst,'10').
 nr_(zurik,subst,'10').
 nr_(zoroastr,subst,+).
+nr_(zofi,pers,+).
+nr_(ziz,subst,+).
 nr_(zimbabv,subst,'10').
 nr_(zib,subst,+).
 nr_(zeŭs,subst,'10').
@@ -1929,6 +2000,7 @@ nr_(vulfil,pers,+).
 nr_(vuhan,subst,+).
 nr_(vroclav,subst,+).
 nr_(volter,subst,+).
+nr_(volta,subst,+).
 nr_(volt,subst,+).
 nr_(volsung,subst,+).
 nr_(volg,subst,'10').
@@ -1945,7 +2017,7 @@ nr_(vizbaden,subst,+).
 nr_(vittenberg,subst,+).
 nr_(vitruvi,subst,+).
 nr_(vitenberg,subst,+).
-nr_(vit,subst,+).
+nr_(vit,pers,+).
 nr_(viskonsin,subst,+).
 nr_(virtemberg,subst,+).
 nr_(virgini,subst,+).
@@ -1956,6 +2028,7 @@ nr_(vinaj,subst,+).
 nr_(vilnius,subst,+).
 nr_(viln,subst,+).
 nr_(vilhelm,pers,*).
+nr_(vilfrid,pers,+).
 nr_(viktori,subst,+).
 nr_(viktor,pers,+).
 nr_(vikipedi,subst,+).
@@ -2000,6 +2073,7 @@ nr_(vajmar,subst,+).
 nr_(vahabism,subst,+).
 nr_(vagadugu,subst,+).
 nr_(vaduz,subst,+).
+nr_(uzbekistan,subst,+).
 nr_(uzbeki,subst,+).
 nr_(utreĥt,subst,+).
 nr_(utarpradeŝ,subst,+).
@@ -2030,6 +2104,7 @@ nr_(turki,subst,+).
 nr_(turingi,subst,+).
 nr_(tunizi,subst,'8').
 nr_(tuniz,subst,+).
+nr_(tunisi,subst,+).
 nr_(tunis,subst,+).
 nr_(tuluz,subst,+).
 nr_(tukidid,pers,+).
@@ -2071,7 +2146,7 @@ nr_(timbuktu,subst,+).
 nr_(tigris,subst,'10').
 nr_(tiflis,subst,+).
 nr_(tife,subst,+).
-nr_(tician,subst,+).
+nr_(tician,pers,+).
 nr_(tibet,subst,'10').
 nr_(tiberi,pers,+).
 nr_(tiber,subst,+).
@@ -2100,6 +2175,7 @@ nr_(taĝiki,subst,+).
 nr_(tatr,subst,+).
 nr_(tatari,subst,+).
 nr_(tasmani,subst,'10').
+nr_(tartar,subst,+).
 nr_(tars,subst,+).
 nr_(tanzani,subst,'10').
 nr_(tantal,subst,+).
@@ -2115,6 +2191,7 @@ nr_(tahiti,subst,+).
 nr_(tade,pers,+).
 nr_(sĥeld,subst,+).
 nr_(svisi,subst,+).
+nr_(svetoni,subst,+).
 nr_(svedi,subst,+).
 nr_(svalbard,subst,+).
 nr_(suĝoŭ,subst,+).
@@ -2130,6 +2207,7 @@ nr_(sumatr,subst,'10').
 nr_(sulaves,subst,+).
 nr_(sukot,subst,+).
 nr_(suez,subst,+).
+nr_(suetoni,subst,+).
 nr_(sudan,subst,'8').
 nr_(stutgart,subst,+).
 nr_(strasburg,subst,'10').
@@ -2139,6 +2217,7 @@ nr_(stiri,subst,+).
 nr_(sten,subst,+).
 nr_(stefan,pers,*).
 nr_(stanislav,pers,+).
+nr_(stambul,subst,+).
 nr_(stalin,pers,+).
 nr_(srilank,subst,'10').
 nr_(spinoz,pers,+).
@@ -2187,6 +2266,7 @@ nr_(silezi,subst,'10').
 nr_(silen,subst,+).
 nr_(sikst,pers,+).
 nr_(sikim,subst,+).
+nr_(signun,subst,+).
 nr_(sigmund,pers,+).
 nr_(sigismund,pers,+).
 nr_(sieraleon,subst,'10').
@@ -2206,8 +2286,10 @@ nr_(senegal,subst,'10').
 nr_(selim,pers,+).
 nr_(sejŝel,subst,'10').
 nr_(sejn,subst,+).
+nr_(seder,subst,+).
 nr_(seborg,subst,+).
 nr_(sebastian,pers,+).
+nr_(scipion,pers,+).
 nr_(scil,subst,+).
 nr_(scientologi,subst,+).
 nr_(saŭl,subst,+).
@@ -2263,6 +2345,7 @@ nr_(rubikon,subst,+).
 nr_(ruand,subst,'10').
 nr_(roĝer,pers,+).
 nr_(roterdam,subst,'10').
+nr_(romul,pers,+).
 nr_(romi,subst,+).
 nr_(rome,pers,+).
 nr_(romanĉi,subst,+).
@@ -2287,6 +2370,7 @@ nr_(reuni,subst,'10').
 nr_(renat,pers,+).
 nr_(rems,subst,+).
 nr_(remington,subst,+).
+nr_(rem,pers,+).
 nr_('rejnland-Palatinat',subst,+).
 nr_(rejn,subst,'10').
 nr_(rejms,subst,+).
@@ -2310,6 +2394,7 @@ nr_(purim,subst,+).
 nr_(pune,subst,+).
 nr_(ptolome,pers,+).
 nr_(ptoleme,pers,+).
+nr_(psiĥe,subst,+).
 nr_(psiĥ,subst,+).
 nr_(prusi,subst,+).
 nr_(provenc,subst,+).
@@ -2358,6 +2443,7 @@ nr_(pilzen,subst,+).
 nr_(pilsen,subst,+).
 nr_(pilat,subst,+).
 nr_(picburg,subst,+).
+nr_(pi,pers,+).
 nr_(peŝavar,subst,+).
 nr_(petr,pers,*).
 nr_(peterburg,subst,'10').
@@ -2403,6 +2489,7 @@ nr_(palestin,subst,'10').
 nr_(palerm,subst,+).
 nr_(palaŭ,subst,'10').
 nr_(pakistan,subst,'8').
+nr_(pajn,subst,+).
 nr_(pafos,subst,+).
 nr_(pad,subst,+).
 nr_(pacifik,subst,'8').
@@ -2421,6 +2508,7 @@ nr_(oskar,pers,+).
 nr_(oseti,subst,+).
 nr_(osak,subst,'10').
 nr_(orong,subst,+).
+nr_(ormuz,subst,+).
 nr_(orlean,subst,+).
 nr_(orkad,subst,+).
 nr_(ork,subst,+).
@@ -2474,6 +2562,7 @@ nr_(noaĥ,pers,+).
 nr_(niĝeri,subst,'10').
 nr_(niĝer,subst,'10').
 nr_(niĉiren,subst,+).
+nr_(nisan,subst,+).
 nr_(nis,subst,+).
 nr_(nirvan,subst,+).
 nr_(niniv,subst,+).
@@ -2503,10 +2592,12 @@ nr_(neptun,subst,+).
 nr_(nepjid,subst,+).
 nr_(neper,subst,+).
 nr_(nepal,subst,'10').
+nr_(nemez,subst,+).
 nr_(nekar,subst,+).
 nr_(nederland,subst,'8').
 nr_(nebrask,subst,+).
 nr_(nazaret,subst,+).
+nr_(navar,subst,+).
 nr_(naur,subst,'10').
 nr_(nasaŭ,subst,+).
 nr_(narcis,pers,+).
@@ -2522,6 +2613,7 @@ nr_(najrobi,subst,+).
 nr_(najrob,subst,+).
 nr_(nagoj,subst,+).
 nr_(nagasak,subst,'10').
+nr_(nafar,subst,+).
 nr_(muzaik,subst,+).
 nr_(munĥen,subst,+).
 nr_(munken,subst,'10').
@@ -2542,6 +2634,7 @@ nr_(moresnet,subst,+).
 nr_(moravi,subst,'10').
 nr_(montreal,subst,'10').
 nr_(montpelier,subst,'10').
+nr_(montmartr,subst,+).
 nr_(montevide,subst,'10').
 nr_(montenegr,subst,'10').
 nr_(montekarl,subst,+).
@@ -2582,6 +2675,7 @@ nr_(micen,subst,+).
 nr_(meĥlen,subst,+).
 nr_(mezopotami,subst,'10').
 nr_(metodi,pers,+).
+nr_(mesi,subst,*).
 nr_(merkur,subst,+).
 nr_(mengzi,subst,+).
 nr_(menefr,subst,+).
@@ -2636,6 +2730,7 @@ nr_(marcial,pers,+).
 nr_(marcel,pers,+).
 nr_(maraton,subst,'10').
 nr_(marakajb,subst,+).
+nr_(marakaib,subst,+).
 nr_(maput,subst,+).
 nr_(manĵusr,subst,+).
 nr_(manĉestr,subst,+).
@@ -2651,6 +2746,7 @@ nr_(manaŭ,subst,+).
 nr_(manam,subst,+).
 nr_(managv,subst,+).
 nr_(mameluk,subst,+).
+nr_(maltus,pers,+).
 nr_(malt,subst,'10').
 nr_(malkolm,pers,+).
 nr_(malik,pers,+).
@@ -2660,6 +2756,7 @@ nr_(maldiv,subst,'10').
 nr_(malavi,subst,'10').
 nr_(malak,subst,+).
 nr_(malajzi,subst,'10').
+nr_(malagasi,subst,+).
 nr_(maksimilian,pers,+).
 nr_(makintoŝ,subst,+).
 nr_(makedoni,subst,+).
@@ -2671,6 +2768,8 @@ nr_(majkrosoft,subst,+).
 nr_(majenc,subst,'10').
 nr_(maj,subst,*).
 nr_(mahomet,subst,+).
+nr_(mahdi,subst,+).
+nr_(mahd,subst,+).
 nr_(mahavir,subst,+).
 nr_(maharaŝtr,subst,+).
 nr_(mahajan,subst,+).
@@ -2694,6 +2793,7 @@ nr_(ludovik,pers,*).
 nr_(lucian,pers,+).
 nr_(luci,pers,'10').
 nr_(lucern,subst,'10').
+nr_(lubumbaŝ,subst,+).
 nr_(luar,subst,+).
 nr_(luand,subst,+).
 nr_(loĵban,subst,+).
@@ -2813,10 +2913,11 @@ nr_(koran,subst,*).
 nr_(kopernik,pers,+).
 nr_(kopenhag,subst,'10').
 nr_(konstantinopol,subst,'10').
+nr_(konstantinopl,subst,+).
 nr_(konstanten,pers,+).
 nr_(konrad,pers,+).
 nr_(kong,subst,'10').
-nr_(konfuzi,subst,!).
+nr_(konfuzi,pers,+).
 nr_(konfuce,pers,+).
 nr_(konektikut,subst,+).
 nr_(konakri,subst,+).
@@ -2834,6 +2935,7 @@ nr_(kolorad,subst,'10').
 nr_(kolonj,subst,'10').
 nr_(kolombi,subst,'10').
 nr_(kolkat,subst,'10').
+nr_(kokakola,subst,+).
 nr_(koblenc,subst,+).
 nr_(kluĵ,subst,+).
 nr_(kluĉevskaj,subst,+).
@@ -2863,6 +2965,7 @@ nr_(kepler,subst,+).
 nr_(kentuki,subst,+).
 nr_(kenj,subst,'10').
 nr_(kenigsberg,subst,+).
+nr_(kenet,pers,+).
 nr_(kembriĝ,subst,'10').
 nr_(kelvin,pers,+).
 nr_(kebeki,subst,'10').
@@ -2948,6 +3051,7 @@ nr_(jukon,subst,+).
 nr_(jugoslavi,subst,+).
 nr_(jude,subst,+).
 nr_(jozef,pers,*).
+nr_(jov,subst,+).
 nr_(josu,pers,+).
 nr_(josef,pers,+).
 nr_(jork,subst,'10').
@@ -2958,6 +3062,7 @@ nr_(jokoham,subst,'10').
 nr_(johanesburg,subst,+).
 nr_(johan,pers,*).
 nr_(joakim,pers,+).
+nr_(jin,subst,+).
 nr_(jid,subst,+).
 nr_(jesu,subst,'3').
 nr_(jeruzalem,subst,+).
@@ -2975,7 +3080,9 @@ nr_(jaroslav,pers,+).
 nr_(japani,subst,+).
 nr_(januar,subst,*).
 nr_(jansen,subst,+).
+nr_(janikul,subst,+).
 nr_(jangzi,subst,+).
+nr_(jang,subst,+).
 nr_(jamusukr,subst,+).
 nr_(jamajk,subst,'10').
 nr_(jama,subst,+).
@@ -3021,6 +3128,7 @@ nr_(iliri,subst,+).
 nr_(ilion,subst,+).
 nr_(ilinojs,subst,+).
 nr_(iliad,subst,+).
+nr_(ikar,subst,+).
 nr_(ignac,pers,+).
 nr_(idah,subst,+).
 nr_(id,subst,+).
@@ -3034,6 +3142,7 @@ nr_(hug,pers,+).
 nr_(hudson,subst,+).
 nr_(hubert,pers,+).
 nr_(horus,subst,+).
+nr_(hormuz,subst,+).
 nr_(horaci,pers,+).
 nr_(honŝu,subst,'10').
 nr_(honkong,subst,'10').
@@ -3049,6 +3158,7 @@ nr_(hitler,subst,+).
 nr_(hispaniol,subst,+).
 nr_(hispani,subst,+).
 nr_(hiroŝim,subst,'10').
+nr_(hipsikl,subst,+).
 nr_(hipolit,pers,+).
 nr_(hipokrat,subst,+).
 nr_(hindustan,subst,+).
@@ -3154,6 +3264,7 @@ nr_(goljat,subst,+).
 nr_(golgot,subst,+).
 nr_(golem,subst,+).
 nr_(godfred,pers,+).
+nr_(gobi,subst,+).
 nr_(goa,subst,+).
 nr_(glasgov,subst,+).
 nr_(glagolic,subst,+).
@@ -3162,8 +3273,11 @@ nr_(ginevr,subst,+).
 nr_(gilgameŝ,subst,+).
 nr_(gilbert,pers,+).
 nr_(gibraltar,subst,+).
+nr_(gestun,subst,+).
+nr_(gestap,subst,+).
 nr_(gervaz,pers,+).
 nr_(gertrud,pers,+).
+nr_(germanik,subst,+).
 nr_(germani,subst,+).
 nr_(gerard,pers,+).
 nr_(georg,pers,*).
@@ -3277,7 +3391,9 @@ nr_(epiros,subst,+).
 nr_(epir,subst,+).
 nr_(epikur,pers,+).
 nr_(epifani,subst,'2').
+nr_(entent,subst,+).
 nr_(ene,pers,+).
+nr_(ems,subst,+).
 nr_(emilian,pers,+).
 nr_(emili,pers,*).
 nr_(emil,pers,+).
@@ -3299,6 +3415,7 @@ nr_(egipti,subst,+).
 nr_(ege,subst,'10').
 nr_(efez,subst,+).
 nr_(efes,subst,+).
+nr_(edvin,pers,+).
 nr_(edvard,pers,+).
 nr_(eduard,pers,+).
 nr_(edmund,pers,+).
@@ -3331,6 +3448,7 @@ nr_(doha,subst,+).
 nr_(doh,subst,+).
 nr_(dodoma,subst,+).
 nr_(dodom,subst,+).
+nr_(dnestr,subst,+).
 nr_(dnepr,subst,+).
 nr_(dirak,pers,+).
 nr_(dioskur,subst,+).
@@ -3351,6 +3469,7 @@ nr_(delavar,subst,+).
 nr_(dekameron,subst,+).
 nr_(dejm,subst,+).
 nr_(dedekind,pers,+).
+nr_(dedal,subst,+).
 nr_(decembr,subst,*).
 nr_(david,pers,+).
 nr_(darvin,pers,+).
@@ -3358,6 +3477,7 @@ nr_(darmapad,subst,+).
 nr_(darm,subst,+).
 nr_(dari,pers,+).
 nr_(daresalam,subst,+).
+nr_(dardanel,subst,+).
 nr_(danub,subst,'10').
 nr_(daniel,pers,+).
 nr_(dani,subst,+).
@@ -3370,6 +3490,7 @@ nr_(dalas,subst,'10').
 nr_(dakot,subst,+).
 nr_(dakar,subst,+).
 nr_(dak,subst,'10').
+nr_(dajdal,subst,+).
 nr_(dagobert,pers,+).
 nr_(ciril,pers,+).
 nr_(ciren,subst,+).
@@ -3477,6 +3598,8 @@ nr_(bern,subst,'10').
 nr_(berlin,subst,*).
 nr_(bering,pers,+).
 nr_(bergen,subst,'10').
+nr_(berenik,pers,+).
+nr_(berenic,pers,+).
 nr_(beovulf,subst,+).
 nr_(beograd,subst,'10').
 nr_(benjamen,pers,+).
@@ -3507,12 +3630,13 @@ nr_(barnab,pers,+).
 nr_(barejn,subst,'10').
 nr_(barcelon,subst,'10').
 nr_(barbud,subst,'10').
-nr_(barbaros,subst,+).
+nr_(barbaros,pers,+).
 nr_(barbad,subst,'10').
 nr_(barat,subst,'10').
 nr_(bankok,subst,'10').
 nr_(bangladeŝ,subst,'10').
 nr_(bangkok,subst,+).
+nr_(bangalor,subst,+).
 nr_(bang,subst,+).
 nr_(bandung,subst,+).
 nr_(banaĥ,pers,+).
@@ -3541,6 +3665,7 @@ nr_(aŭvernj,subst,+).
 nr_(aŭstronezi,subst,'10').
 nr_(aŭstri,subst,+).
 nr_(aŭstrali,subst,'8').
+nr_(aŭstralazi,subst,+).
 nr_(aŭrelian,pers,+).
 nr_(aŭgusten,pers,+).
 nr_(aŭgust,subst,*).
@@ -3569,6 +3694,8 @@ nr_(atalant,subst,+).
 nr_(asuncion,subst,+).
 nr_(asturi,subst,+).
 nr_(astan,subst,+).
+nr_(asklepios,subst,+).
+nr_(asklepi,subst,+).
 nr_(aski,subst,+).
 nr_(asiri,subst,'10').
 nr_(asen,subst,+).
@@ -3600,6 +3727,7 @@ nr_(april,subst,*).
 nr_(apolon,subst,'10').
 nr_(apol,subst,+).
 nr_(api,subst,+).
+nr_(apenin,subst,+).
 nr_(anunciaci,subst,*).
 nr_(antverpen,subst,'10').
 nr_(antoni,pers,+).
@@ -3613,6 +3741,8 @@ nr_(antananariv,subst,+).
 nr_(anselm,pers,+).
 nr_(ann,pers,*).
 nr_(ankar,subst,+).
+nr_(anik,pers,+).
+nr_(angur,subst,+).
 nr_(angol,subst,'10').
 nr_(angli,subst,+).
 nr_(angkor,subst,+).

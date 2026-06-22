@@ -15,6 +15,7 @@ v(tpr,intj,+).
 v(tin,intj,+).
 v(tiktak,intj,+).
 v(ta,intj,+).
+v(stop,intj,+).
 v(sss,intj,+).
 v(snuf,intj,+).
 v(sal,intj,+).
@@ -33,6 +34,7 @@ v(okej,intj,+).
 v(oj,intj,+).
 v(oh,intj,+).
 v('o kej',intj,+).
+v(muu,intj,+).
 v(mu,intj,+).
 v(miaŭ,intj,'1').
 v(mek,intj,+).
