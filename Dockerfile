@@ -16,7 +16,7 @@ FROM swipl:stable
 #
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    lynx xsltproc unzip curl ca-certificates openssh-client rsync \
+    lynx xsltproc unzip curl ca-certificates openssh-client rsync  \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash -u 1088 akrido
