@@ -3,6 +3,10 @@
 	  [ server/1,			% +Port
          daemon/0
 	  ]).
+
+% debug http-500 errors providing a stack trace inthe reply
+:- use_module(library(http/http_error)).
+
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 %:- use_module(library(http/http_server_files)).
@@ -22,6 +26,9 @@
 
 :- multifile http:location/3.
 :- dynamic   http:location/3.
+
+%%:- set_setting_default(http:max_workers, 8).
+%%:- set_setting(http:max_workers, 10).
 
 % TODO: is http/http_error autoloaded?
 % see http://www.swi-prolog.org/pldoc/man?section=http-debug
@@ -59,6 +66,8 @@ http:location(akrido,root(akrido),[]).
 :- http_handler(root(http_proxy), http_proxy,[]). % [authentication(ajaxid)]).
 % statikaj dosieroj por retpaĝa interfaco
 :- http_handler(akrido(.), http_reply_from_files(web(.),[]),[prefix]). % [authentication(ajaxid)]).
+% statistikaj informoj
+:- http_handler(root(statistiko), statistiko, []).
 
 help :-
     format('~`=t~51|~n'), 
@@ -78,7 +87,6 @@ server(Port) :-
 
 daemon :-
     http_daemon.
-
 
 analizo(Request) :-
 %%    ajax_auth(Request),
@@ -157,4 +165,9 @@ http_proxy(Request) :-
     set_stream(current_output,encoding(utf8)),
     copy_stream_data(StreamIn, current_output),
     close(StreamIn).
+
+statistiko(_) :-
+    statistics(stack,St),
+    St_MB is St / (1024 * 1024),
+    reply_json(stack{stack: St_MB}).
     

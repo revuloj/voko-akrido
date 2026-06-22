@@ -4,6 +4,7 @@ FROM ghcr.io/revuloj/voko-grundo/voko-grundo:${VERSION} as grundo
 
 #### staĝo 2: kreu procezujon surbase de Swi-Prolog
 FROM swipl:stable
+#FROM swipl:9.0.4
 
 # Kreu kaj lanĉu per:
 #   docker build -t voko-akrido .
@@ -66,9 +67,15 @@ RUN  ln -s voko/xsl xsl && ln -s voko/dtd dtd && ln -s voko/owl owl \
 
 USER akrido:users
 WORKDIR /home/akrido/pro
+#CMD ["swipl",\
+#    "-s","analizo-servo.pl","-g","debug(http(request))","-g","daemon","-t","halt(1)",\
+#    "--","--workers=10","--port=8081","--no-fork"]
+    
 CMD ["swipl",\
-    "-s","analizo-servo.pl","-g","daemon","-t","halt(1)",\
-    "--","--workers=10","--port=8081","--no-fork"]
+    "-s","analizo-servo.pl","-g","daemon","-t","halt(1)","--stack-limit=1g",\
+    "--","--workers=5", "--port=8081","--no-fork"]
+    
+    #--debug='http(request)'" ]
 
 #CMD ["swipl",\
 #    "-s","pro/analizo-servo.pl","-g","daemon","-t","halt(1)",\

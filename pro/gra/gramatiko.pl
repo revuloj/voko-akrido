@@ -56,7 +56,24 @@ analyze(Vorto,Ana,Spc,Pt) :-
 analyze_perf(Vrt,Ana,Spc) :-
   statistics(process_cputime,C1),
   statistics(inferences,I1),
-  analyze(Vrt,Ana,Spc),
+  once((analyze(Vrt,Ana,Spc);true)),
+  
+  % https://www.swi-prolog.org/pldoc/man?section=thmonitor
+  %thread_self(ThreadId),
+  %thread_statistics(ThreadId, local_highest, LocalPeak),
+  %thread_statistics(ThreadId, global_highest, GlobalPeak),
+  %thread_statistics(ThreadId, trail_highest, TrailPeak),
+  
+  % Gesamtverbrauch berechnen (in Megabyte umrechnen für bessere Lesbarkeit)
+  %GesamtBytes is LocalPeak + GlobalPeak + TrailPeak,
+  %GesamtMB is GesamtBytes / (1024 * 1024),
+  
+  %format('[MEZURO] Analizo finita.~n', []),
+  %format(' - Local Stack Peak:  ~D Bytes~n', [LocalPeak]),
+  %format(' - Global Stack Peak: ~D Bytes~n', [GlobalPeak]),
+  %format(' - Trail Stack Peak:  ~D Bytes~n', [TrailPeak]),
+  %format(' - Speicher-Peak Gesamt: ~2f MB~n', [GesamtMB]),
+
   statistics(process_cputime,C2),
   statistics(inferences,I2),
   I is I2-I1,
