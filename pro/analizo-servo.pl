@@ -126,7 +126,8 @@ analinioj(Request) :-
         ;
         Lines = JSON, Mode=komplete
         )),
-    concurrent_maplist(analizu_linion(Mode),Lines,Rezultoj),
+    %%concurrent_
+    maplist(analizu_linion(Mode),Lines,Rezultoj),
     exclude(malplena,Rezultoj,Nemalplenaj),
     reply_json(json(Nemalplenaj)).
 
