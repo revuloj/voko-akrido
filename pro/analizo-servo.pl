@@ -3,6 +3,11 @@
 	  [ server/1,			% +Port
          daemon/0
 	  ]).
+
+% sencimigi erarojn http-500 provizante stakliston en la respondo
+% vd. http://www.swi-prolog.org/pldoc/man?section=http-debug
+:- use_module(library(http/http_error)).
+
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 %:- use_module(library(http/http_server_files)).
@@ -22,9 +27,6 @@
 
 :- multifile http:location/3.
 :- dynamic   http:location/3.
-
-% TODO: is http/http_error autoloaded?
-% see http://www.swi-prolog.org/pldoc/man?section=http-debug
 
 :- use_module(library(debug)).
 
@@ -124,7 +126,7 @@ analinioj(Request) :-
         ;
         Lines = JSON, Mode=komplete
         )),
-        concurrent_maplist(analizu_linion(Mode),Lines,Rezultoj),
+    concurrent_maplist(analizu_linion(Mode),Lines,Rezultoj),
     exclude(malplena,Rezultoj,Nemalplenaj),
     reply_json(json(Nemalplenaj)).
 
@@ -137,7 +139,7 @@ analizu_linion(Format,Line) :-
 
 analizu_linion(Mode,N=Line,N=Rez) :-
     atom_codes(Line,Codes), %format('~w::',[N]),
-    analizu_tekston_liste(Codes,text,RList),
+    analizu_tekston_liste(Codes,text,RList),!,
     % redukto la rezulton al linioj kun kontrolendaj/eraraj vortoj 
     exclude(ana_ekskludo(Mode),RList,Rez).
 
