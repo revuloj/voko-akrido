@@ -61,7 +61,7 @@ ofc_sup('!','⁽⁻⁾').
 ofc_sup('+','⁽⁺⁾').
 ofc_sup(N,S) :- 
   atom_codes(N,C),
-  n_sup(C,Cs),
+  n_sup(C,Cs),!,
   atom_codes(S,Cs).
 
 n_sup(`3`,`³`).
