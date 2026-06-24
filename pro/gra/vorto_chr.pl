@@ -1,5 +1,11 @@
 /* -*- Mode: Prolog -*- */
 :- use_module( library(chr)).
+
+
+/**
+ * Provo difini la gramatikon per 'chr' - ne finita, kaj ne uzata ĝis nun
+ */
+
 /*
 r(san,adj).
 s(ec,adj,subst).

@@ -9,7 +9,7 @@
 :- discontiguous vorto/5, '<='/2.
 :- dynamic min_max_len/3.
 
-:- format('%# legi kaj transformi gramatikajn regulojn...~n').
+:- debug(gra_prep,'%# legi kaj transformi gramatikajn regulojn...',[]).
 :- consult(esceptoj).
 
 % ĉar ni ne rekte importas la vortaron, informu almenaŭ la sintakskontrolilon pri ĝia enhavo...
@@ -66,7 +66,7 @@
 */
 
 
-% PLIBONIGU: anstau uzi user: ebligu importi tion de regul_trf...
+% PLIBONIGU: anstatau uzi user: ebligu importi tion de regul_trf...
 :- op( 1120, xfx, user:(<=) ). % disigas regulo-kapon, de regulesprimo
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
 :- op( 150, fx, user:(&) ). % signas referencon al alia regulo
