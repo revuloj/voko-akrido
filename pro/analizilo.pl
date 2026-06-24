@@ -258,7 +258,7 @@ analizu_eron(_,n(N)) :-
 
 analizu_eron(_,Tekstero) :-
   format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
-  throw(Exc).
+  throw(error(nekonata_tekstparto,Exc)).
 
 
 %%%%%%%%%
@@ -310,7 +310,7 @@ analizu_eron2(_,n(N),_{takso:nombro,vorto:N1}) :-
 
 analizu_eron2(_,Tekstero,_{}) :-
   format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
-  throw(Exc).
+  throw(error(nekonata_tekstparto,Exc)).
 
 %%%%%%%
 
