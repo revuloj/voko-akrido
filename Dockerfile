@@ -64,6 +64,10 @@ RUN  ln -s voko/xsl xsl && ln -s voko/dtd dtd && ln -s voko/owl owl \
 
 USER akrido:users
 WORKDIR /home/akrido/pro
+
+# Ubuntu: ŝaltu UTF8-lokaĵaron
+ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
 CMD ["swipl",\
     "-s","analizo-servo.pl","-g","daemon","-t","halt(1)",\
     "--","--workers=10","--port=8081","--no-fork"]
