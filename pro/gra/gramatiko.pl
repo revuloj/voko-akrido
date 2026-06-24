@@ -41,7 +41,7 @@ analyze_pt(Vrt,Ana,Spc,Pt) :-
     (
       format(atom(Msg),'~s',[Vrt]),
       % https://www.swi-prolog.org/pldoc/man?section=exceptterm
-      throw(error(resource_error(analyze_pt),context(Msg)))
+      throw(error(resource_error(Msg),context(analyze_pt)))
     )
   ),
   once((
