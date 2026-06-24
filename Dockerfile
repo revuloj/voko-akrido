@@ -20,12 +20,12 @@ FROM ubuntu:noble
 RUN apt-get update && apt-get install -y --no-install-recommends \
     lynx xsltproc unzip curl ca-certificates openssh-client rsync \
 # en Ubunto ni devas aldone instali kaj agordi UTF-8      
-    locales \
+    swi-prolog-nox locales \
 	&& rm -rf /var/lib/apt/lists/* \
 # agordi lokaĵaron por UTF-8      
   && sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
-     dpkg-reconfigure --frontend=noninteractive locales && \
-     update-locale LANG=en_US.UTF-8
+    dpkg-reconfigure --frontend=noninteractive locales && \
+    update-locale LANG=en_US.UTF-8
 
 RUN useradd -ms /bin/bash -u 1088 akrido
 WORKDIR /home/akrido
