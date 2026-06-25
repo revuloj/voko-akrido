@@ -2,20 +2,18 @@
 ARG VERSION=latest
 FROM ghcr.io/revuloj/voko-grundo/voko-grundo:${VERSION} as grundo
 
-#### staĝo 2: kreu procezujon surbaze de Swi-Prolog
-# kun la swipl-debian-procezujo ni spertas iujn neklarigitajn http 503
+#xxx staĝo 2: kreu procezujon surbaze de Swi-Prolog
+# kun la swipl-debian-procezujo ni spertis cimon (stak-eraro kun http 503)
+# ĝi devus esti korektita en estontaj eldonoj 10.2.x, sed ni trovis, ke
+# ubuntu+swi-prolog-nox ankaŭ ŝparas 100MB das procezuja grandeco
 # FROM swipl:stable
+
+#### staĝo 2: kreu procezujon surbaze de Ubuntuo + Swi-Prolog
 FROM ubuntu:noble
 
 # Kreu kaj lanĉu per:
 #   docker build -t voko-akrido .
 #   docker run -p8081:8081 voko-akrido
-
-# FARENDA:
-#
-# Kiel aktualigi la rezultopaĝojn post analizo?
-# ĉu per rettranssendo (scp, rsync, git...?)
-#
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     lynx xsltproc unzip curl ca-certificates openssh-client rsync \

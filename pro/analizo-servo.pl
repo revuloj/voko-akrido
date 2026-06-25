@@ -6,10 +6,13 @@
 
 % sencimigi erarojn http-500 provizante stakliston en la respondo
 % vd. http://www.swi-prolog.org/pldoc/man?section=http-debug
-:- use_module(library(http/http_error)).
+% malŝaltu en normala kurado por ne doni ideojn al enrompistoj
+% :- use_module(library(http/http_error)).
+% :- use_module(library(http/http_log)).
 
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
+:- use_module(library(library(http/http_dyn_workers)).
 %:- use_module(library(http/http_server_files)).
 :- use_module(library(http/http_files)).
 :- use_module(library(http/http_parameters)). % reading post data
@@ -41,6 +44,13 @@
 :- initialization(help,main).
 %%%%%%%%%%%:- thread_initialization(thread_init).
 
+
+% limigas kune kun library(http/http_dyn_workers)
+% la paralelajn retservajn fadenojn, ordinare tio ili povas multiĝis ĝis 100
+% sed ni servas malmultajn uzantojn kaj tamen volas rapide kontroli uzante concurrent_maplist
+%%:- set_setting(http:max_worker, 8).
+:- set_setting_default(http:max_workers, 12).
+
 max_char(500000). % maksimuma longeco de analizenda teksto
     % pli bone mallongigu kaj postulu sendi alineojn anst. tutaj dokumentoj!
 
@@ -61,6 +71,10 @@ http:location(akrido,root(akrido),[]).
 :- http_handler(root(http_proxy), http_proxy,[]). % [authentication(ajaxid)]).
 % statikaj dosieroj por retpaĝa interfaco
 :- http_handler(akrido(.), http_reply_from_files(web(.),[]),[prefix]). % [authentication(ajaxid)]).
+% statistikaj informoj
+%:- http_handler(root(statistiko), statistiko, []).
+%:- http_handler(root(mutex_statistiko),mutex_statistiko, []).
+
 
 help :-
     format('~`=t~51|~n'), 
@@ -126,8 +140,7 @@ analinioj(Request) :-
         ;
         Lines = JSON, Mode=komplete
         )),
-    %%concurrent_
-    maplist(analizu_linion(Mode),Lines,Rezultoj),
+    concurrent_maplist(analizu_linion(Mode),Lines,Rezultoj),
     exclude(malplena,Rezultoj,Nemalplenaj),
     reply_json(json(Nemalplenaj)).
 
@@ -161,3 +174,14 @@ http_proxy(Request) :-
     copy_stream_data(StreamIn, current_output),
     close(StreamIn).
     
+
+%    statistiko(_) :-
+%        statistics(stack,St),
+%        St_MB is St / (1024 * 1024),
+%        prolog_flag(stack_limit,SL),
+%        reply_json(stack{stack: St_MB, limit: SL}).
+%    
+%    mutex_statistiko(_) :-
+%        format('Content-type: text/plain~n~n',[]),
+%        mutex_statistics.
+            

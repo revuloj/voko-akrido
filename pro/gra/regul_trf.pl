@@ -81,7 +81,8 @@ n_sup(`0`,`⁰`).
 n_sup(`(`,`⁽`).
 n_sup(`)`,`⁾`).
 n_sup([_],`ₓ`).
-n_sup([X],_) :- format(atom(Msg),'Ne valida ofc: ~d!',[X]), throw(error(nevalida_ofc,Msg)).
+n_sup([X],_) :- %format(atom(Msg),'Ne valida ofc: ~d!',[X]), 
+  throw(error(domain_error(ofc,X))).
 
 n_sup([],[]).
 n_sup([N|Rest],[Ns|Rs]) :- n_sup([N],[Ns]), n_sup(Rest,Rs).
@@ -297,10 +298,10 @@ term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
   debug(gra_prep,'%# ~k ...',[RuleHead]),
   rule_head(RuleHead,Vrt,Rez,Depth,PredHead),!,
   once((
-     rule_body(RuleHead,RuleBody,Vrt,Rez,Depth,PredBody)
-     ;  
-       format(atom(Exc),'transformeraro: ~w~n',[RuleHead]), 
-       throw(error(transform_eraro,Exc))
+    rule_body(RuleHead,RuleBody,Vrt,Rez,Depth,PredBody)
+    ;  
+    format(atom(Exc),'transformeraro: ~w~n',[RuleHead]), 
+    throw(error(syntax_error(transform_eraro),Exc))
   )),
   RuleTranslated = (PredHead :- PredBody),
   debug(gra_prep,'  ...bone!',[]).

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pid=$(docker inspect --format '{{.State.Pid}}' akrido-test)
+
+#sudo gdb \
+#  -ex "set sysroot /proc/$pid/root" \
+#  -p $pid
+
+docker exec -it -u0 akrido-test bash -c 'apt update && apt install -y gdb && gdb -p 1'

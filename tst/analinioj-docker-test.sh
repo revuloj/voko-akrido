@@ -4,6 +4,7 @@
 docker_image="${1:-voko-akrido:latest}"
 
 # lanĉi la test-procezujon
+docker kill akrido-test
 docker run -p 8081 --name akrido-test --rm -d ${docker_image}
 
 # atendi, ĝis ĝi ricevis retpordon
@@ -29,7 +30,8 @@ done
 echo ""; echo "Petante multfoje analizon per analinioj..."
 
 URL="http://$HPORT/analinioj"
-SURL="http://$HPORT/statistiko"
+# SURL="http://$HPORT/statistiko"
+# MURL="http://$HPORT/mutex_statistiko"
 
 JSON='{
   "92": "      nur divenebla, sentebla, analizebla):",
@@ -70,7 +72,7 @@ do
         -d "$JSON")
     
     echo "A#$i: HTTP $HTTP"
-    echo "A#$i: $(curl -s ${SURL})"
+    # echo "A#$i: $(curl -s ${SURL})"
   ) &
 done
 
@@ -90,10 +92,12 @@ do
         -d "$JSON")
     
     echo "B#$i: HTTP $HTTP"
-    echo "B#$i: $(curl -s ${SURL})"
+    # echo "B#$i: $(curl -s ${SURL})"
   ) &
 done
 
 wait
+
+echo "$(curl -s ${MURL})"
 
 echo "preta"
