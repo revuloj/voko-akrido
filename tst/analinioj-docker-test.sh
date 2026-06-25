@@ -69,8 +69,28 @@ do
         -H "Content-Type: application/json" \
         -d "$JSON")
     
-    echo "#$i: HTTP $HTTP"
-    echo "#$i: $(curl -s ${SURL})"
+    echo "A#$i: HTTP $HTTP"
+    echo "A#$i: $(curl -s ${SURL})"
+  ) &
+done
+
+sleep 10
+
+for i in {1..100}
+do
+  (
+    # -s: ne montru progreson
+    # -o /dev/null: ignoru la respondon
+    # -w "%{http_code}": eligu nur la http-kodon (e.g., 200, 503)
+    #HTTP=$(curl -s -o /dev/null -w "%{http_code}" -X POST "$URL" \
+    #    -H "Content-Type: application/json" \
+    #    -d "$JSON")
+    HTTP=$(curl -s -w "%{http_code}" -X POST "$URL" \
+        -H "Content-Type: application/json" \
+        -d "$JSON")
+    
+    echo "B#$i: HTTP $HTTP"
+    echo "B#$i: $(curl -s ${SURL})"
   ) &
 done
 

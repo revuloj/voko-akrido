@@ -10,9 +10,13 @@
 :- multifile '&'/1. %, gra_debug/1.
 :- dynamic vorto_gra:vorto/5.
 
+:- initialization(debug(gra_prep)).
+
 /**
-   transformas la regulojn de la gramatiko (vorto_gra) al interpretebla Prologo-lingvo.
-   Uziĝas term_expansion por tiu transformado.
+  transformas la regulojn de la gramatiko (vorto_gra) al interpretebla Prologo-lingvo.
+  Uziĝas term_expansion por tiu transformado.
+
+  vi povas ŝalti mesaĝojn dum preparo de la gramatiko per debug(gra_prep).
 */
 
 /*
@@ -61,7 +65,7 @@ ofc_sup('!','⁽⁻⁾').
 ofc_sup('+','⁽⁺⁾').
 ofc_sup(N,S) :- 
   atom_codes(N,C),
-  n_sup(C,Cs),
+  n_sup(C,Cs),!,
   atom_codes(S,Cs).
 
 n_sup(`3`,`³`).
@@ -77,7 +81,7 @@ n_sup(`0`,`⁰`).
 n_sup(`(`,`⁽`).
 n_sup(`)`,`⁾`).
 n_sup([_],`ₓ`).
-% n_sup([X],_) :- format(atom(Msg),'Ne valida ofc: ~d!',[X]), throw(Msg).
+n_sup([X],_) :- format(atom(Msg),'Ne valida ofc: ~d!',[X]), throw(error(nevalida_ofc,Msg)).
 
 n_sup([],[]).
 n_sup([N|Rest],[Ns|Rs]) :- n_sup([N],[Ns]), n_sup(Rest,Rs).
@@ -290,16 +294,16 @@ reduce_ofc_(_,_,_) :- throw("Nevalida sintakso ĉe indiko de oficialeco!?").
 %     ).
 
 term_expansion( RuleHead <= RuleBody , RuleTranslated ) :-
-  format('%# ~k ...',[RuleHead]),
-   rule_head(RuleHead,Vrt,Rez,Depth,PredHead),!,
-   once((
+  debug(gra_prep,'%# ~k ...',[RuleHead]),
+  rule_head(RuleHead,Vrt,Rez,Depth,PredHead),!,
+  once((
      rule_body(RuleHead,RuleBody,Vrt,Rez,Depth,PredBody)
      ;  
        format(atom(Exc),'transformeraro: ~w~n',[RuleHead]), 
-       throw(Exc)
-   )),
-   RuleTranslated = (PredHead :- PredBody),
-  format('bone!~n').
+       throw(error(transform_eraro,Exc))
+  )),
+  RuleTranslated = (PredHead :- PredBody),
+  debug(gra_prep,'  ...bone!',[]).
 % format('  ~w~n',[RuleTranslated]).
 
 % esceptojn ni difinas per simpla sageto: <- 

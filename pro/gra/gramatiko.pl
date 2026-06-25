@@ -32,18 +32,10 @@ analyze(Vrt,Ana,Spc) :-
 
 analyze_pt(Vrt,Ana,Spc,Pt) :-
   analyze_max_infer(MaxI),
-  catch(
-    call_with_inference_limit(
-      analyze(Vrt,Ana,Spc),
-      MaxI,
-      EI),
-    Exc,
-    (
-      format(atom(Msg),'~s',[Vrt]),
-      % https://www.swi-prolog.org/pldoc/man?section=exceptterm
-      throw(error(resource_error(Msg),context(analyze_pt)))
-    )
-  ),
+  call_with_inference_limit(
+    analyze(Vrt,Ana,Spc),
+    MaxI,
+    EI),
   once((
     EI = inference_limit_exceeded, fail
     ;
