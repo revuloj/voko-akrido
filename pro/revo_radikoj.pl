@@ -324,11 +324,10 @@ revo_art(Dosiero) :-
       % eltrovu evtl. mallongigo(j)n de la vorto
       revo_mlg(DOM,Mallongigoj),
 
-      % ne jam preta, teste... var - TIEL NI TROVOS NUR UNU var! sed foje enestas du!
-      once((
-        revo_var(DOM,VarRad,VOfc) %, format('DBG var: ~w: ~w~n',[Dosiero,VarRad])
-        ; true
-      ))
+      % trovu evtl. variaĵojn de la radiko
+      bagof(VarRad-VOfc,
+        revo_var(DOM,VarRad,VOfc), 
+        Var_oj)
           
       % format('~w (~w)~n',[Radiko,Speco]),
     ),
@@ -351,7 +350,10 @@ revo_art(Dosiero) :-
     assert_vorto(DOM,Radiko,Speco,Ofc)
   )),
   % registru evtl. var-iaĵon
-  (nonvar(VarRad) -> assert_vorto(DOM,VarRad,Speco,VOfc); true),
+  forall(
+    member(VR-VO,Var_oj),
+    assert_vorto(DOM,VR,Speco,VO)
+  ),
   % registru evtl. mallongigojn
   assert_mlg(Mallongigoj).
 
@@ -579,11 +581,11 @@ revo_mlg(DOM,Mallongigoj) :-
 revo_var(DOM,VarRad,Ofc) :-
   xpath(DOM,//art/kap/var/kap,Kap),
   xpath(Kap,rad(normalize_space),VarRad),
-  atom_length(VarRad,L), 
-  (L=<1 
-    -> throw(averto('ignoras unuliteran radikon')) % ne akceptu radikojn unuliterajn
-    ; true
-  ),
+  %atom_length(VarRad,L), 
+  %(L=<1 
+  %  -> throw(averto('ignoras unuliteran radikon')) % ne akceptu radikojn unuliterajn
+  %  ; true
+  %),
 
   % eltrovu la oficialecon
   once((
