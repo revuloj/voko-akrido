@@ -28,6 +28,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN useradd -ms /bin/bash -u 1088 akrido
 WORKDIR /home/akrido
 
+# utf-8-lokaĵaro por krei la vortaron
+ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANGUAGE=en_US.UTF-8
+
 ADD . ./
 
 COPY --from=grundo build/ /home/akrido/voko/
@@ -63,7 +66,7 @@ RUN  ln -s voko/xsl xsl && ln -s voko/dtd dtd && ln -s voko/owl owl \
 USER akrido:users
 WORKDIR /home/akrido/pro
 
-# Ubuntu: ŝaltu UTF8-lokaĵaron
+# Ubuntu: ŝaltu UTF8-lokaĵaron por la retservo
 ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 LANGUAGE=en_US.UTF-8
 
 CMD ["swipl",\
