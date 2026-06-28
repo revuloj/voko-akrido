@@ -482,6 +482,8 @@ nr('Puŝkin',subst,+).
 nr('Putin',subst,+).
 nr('Purim',subst,+).
 nr('Pune',subst,+).
+nr('Puertorik',subst,+).
+nr('Puerto-Rik',subst,+).
 nr('Ptolome',pers,+).
 nr('Ptoleme',pers,+).
 nr('Psiĥe',subst,+).
@@ -935,6 +937,7 @@ nr('Lenin',subst,+).
 nr('Len',subst,+).
 nr('Leman',subst,+).
 nr('Lelistad',subst,+).
+nr('Lejpcig',subst,+).
 nr('Lejbnic',subst,+).
 nr('Lebeg',pers,+).
 nr('Lebanon',subst,+).
@@ -1467,6 +1470,7 @@ nr('Esĥil',pers,+).
 nr('Estoni',subst,+).
 nr('Esperanti',subst,+).
 nr('Esperant',subst,*).
+nr('Eskulap',subst,+).
 nr('Esfahan',subst,+).
 nr('Eros',subst,+).
 nr('Ernest',pers,*).
@@ -1561,6 +1565,7 @@ nr('Dejm',subst,+).
 nr('Dedekind',pers,+).
 nr('Dedal',subst,+).
 nr('Decembr',subst,*).
+nr('Daŭh',subst,+).
 nr('David',pers,+).
 nr('Darvin',pers,+).
 nr('Darmapad',subst,+).
@@ -1619,6 +1624,7 @@ nr('Brusel',subst,'10').
 nr('Brunsvik',subst,+).
 nr('Brunn',subst,+).
 nr('Brunej',subst,'10').
+nr('Brun',subst,+).
 nr('Brun',pers,+).
 nr('Brn',subst,+).
 nr('Briti',subst,+).
@@ -1738,6 +1744,7 @@ nr('Balkani',subst,+).
 nr('Balkan',subst,'10').
 nr('Balduen',pers,+).
 nr('Bakĥ',subst,+).
+nr('Bakus',subst,+).
 nr('Baku',subst,+).
 nr('Baktri',subst,+).
 nr('Bakk',subst,+).
@@ -2392,6 +2399,8 @@ nr_(puŝkin,subst,+).
 nr_(putin,subst,+).
 nr_(purim,subst,+).
 nr_(pune,subst,+).
+nr_(puertorik,subst,+).
+nr_('puerto-Rik',subst,+).
 nr_(ptolome,pers,+).
 nr_(ptoleme,pers,+).
 nr_(psiĥe,subst,+).
@@ -2845,6 +2854,7 @@ nr_(lenin,subst,+).
 nr_(len,subst,+).
 nr_(leman,subst,+).
 nr_(lelistad,subst,+).
+nr_(lejpcig,subst,+).
 nr_(lejbnic,subst,+).
 nr_(lebeg,pers,+).
 nr_(lebanon,subst,+).
@@ -3377,6 +3387,7 @@ nr_(esĥil,pers,+).
 nr_(estoni,subst,+).
 nr_(esperanti,subst,+).
 nr_(esperant,subst,*).
+nr_(eskulap,subst,+).
 nr_(esfahan,subst,+).
 nr_(eros,subst,+).
 nr_(ernest,pers,*).
@@ -3471,6 +3482,7 @@ nr_(dejm,subst,+).
 nr_(dedekind,pers,+).
 nr_(dedal,subst,+).
 nr_(decembr,subst,*).
+nr_(daŭh,subst,+).
 nr_(david,pers,+).
 nr_(darvin,pers,+).
 nr_(darmapad,subst,+).
@@ -3529,6 +3541,7 @@ nr_(brusel,subst,'10').
 nr_(brunsvik,subst,+).
 nr_(brunn,subst,+).
 nr_(brunej,subst,'10').
+nr_(brun,subst,+).
 nr_(brun,pers,+).
 nr_(brn,subst,+).
 nr_(briti,subst,+).
@@ -3648,6 +3661,7 @@ nr_(balkani,subst,+).
 nr_(balkan,subst,'10').
 nr_(balduen,pers,+).
 nr_(bakĥ,subst,+).
+nr_(bakus,subst,+).
 nr_(baku,subst,+).
 nr_(baktri,subst,+).
 nr_(bakk,subst,+).
