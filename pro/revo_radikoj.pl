@@ -325,9 +325,13 @@ revo_art(Dosiero) :-
       revo_mlg(DOM,Mallongigoj),
 
       % trovu evtl. variaĵojn de la radiko
-      bagof(VarRad-VOfc,
-        revo_var(DOM,VarRad,VOfc), 
-        Var_oj)
+      once((
+        bagof(VarRad-VOfc,
+          revo_var(DOM,VarRad,VOfc), 
+          Var_oj)
+          ;
+          Var_oj = []
+      ))
           
       % format('~w (~w)~n',[Radiko,Speco]),
     ),
