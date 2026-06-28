@@ -201,6 +201,9 @@ skribu_nomojn :-
     close(Out)
   ).
 
+/**
+ * majusklaj nomoj
+ */
 skribu_nomojn_maj(Out) :-
   setof(
     Rad-(Ofc,Spec), % ordigu oficialecon antaŭ vortspeco por havi '' post la oficialaj!
@@ -216,6 +219,9 @@ skribu_nomojn_maj(Out) :-
     )
   ).
 
+/**
+ * minusklaj nomoj (por formi adjektivojn ktp.)
+ */
 skribu_nomojn_min(Out) :-
   setof(
     Rad-(Ofc,Spec), % ordigu oficialecon antaŭ vortspeco por havi '' post la oficialaj!
@@ -231,6 +237,9 @@ skribu_nomojn_min(Out) :-
     )
   ).
 
+/**
+ * vortoj markitaj evitindaj
+ */
 skribu_evitindajn :-
   evi_dosiero(Dos),
   format('skribas al ''~w''...~n',[Dos]),
@@ -246,6 +255,9 @@ skribu_evitindajn(Out) :-
     format(Out,'evi(''~w'',"~w").~n',[Art,Vort])
   ).
 
+/**
+ * mallongigoj
+ */
 skribu_mallongigojn :-
   mlg_dosiero(Dos),
   format('skribas al ''~w''...~n',[Dos]),
@@ -261,6 +273,10 @@ skribu_mallongigojn(Out) :-
     format(Out,'mlg(~q).~n',[Mlg])
   ).
 
+/**
+  * ni distingas bestojn (inkl. homojn) de aliaj substantivoj
+  * pro apartaj afiksoj bo-, -in, -ul
+ */
 load_voko_classes :-
   % ial dufoje legi tion ne funkcias fidinde, do ni
   % faros nur, se bestoj ne jam troviĝas...
@@ -302,8 +318,10 @@ revo_art(Dosiero) :-
   load_xml_file(Dosiero,DOM),
   catch(
     (
-      revo_rad(DOM,Radiko,Speco,Ofc),!, % enestu nur unu, 
+      % eltrovu la radikon, la vortspecon kaj oficialecon
+      revo_rad(DOM,Radiko,Speco,Ofc),!, % enestu nur unu radiko, 
                 % do ni ne plu serĉas aliajn radikojn //art/kap/rad 
+      % eltrovu evtl. mallongigo(j)n de la vorto
       revo_mlg(DOM,Mallongigoj),
 
       % ne jam preta, teste... var - TIEL NI TROVOS NUR UNU var! sed foje enestas du!
@@ -323,8 +341,18 @@ revo_art(Dosiero) :-
   ),
 
   % memoru la rezulton de la analizo kiel faktoj
-  assert_vorto(DOM,Radiko,Speco,Ofc),
+  once((
+    % foje verbo transitiva ne aperas kiel ĉefa derivaĵo, ekz. vundo -> vundi
+    % tiam ni eltrovos kaj registros la radikon kiel transitiva verbo
+    % PLIBONIGU, fakte ni devus tion rpieti por variaĵo(j)      
+    drv_vtr(DOM),
+    assert_vorto(DOM,Radiko,tr,Ofc)
+    ;
+    assert_vorto(DOM,Radiko,Speco,Ofc)
+  )),
+  % registru evtl. var-iaĵon
   (nonvar(VarRad) -> assert_vorto(DOM,VarRad,Speco,VOfc); true),
+  % registru evtl. mallongigojn
   assert_mlg(Mallongigoj).
 
 
@@ -451,6 +479,17 @@ revo_rad(DOM,Radiko,Speco,Ofc) :-
     revo_fin(Kap,Speco);
     throw_netrovita(Radiko)
   ). 
+
+% eltrovu transitivan verbon inter la derivaĵoj
+drv_vtr(DOM) :-
+  xpath(DOM,//drv(@mrk=Mrk),Drv),
+  % ĉu estas rekta verbo per finaĵo 'i' (sen prefiksoj, sufiksoj)
+  atomic_list_concat([_,'0i'],'.',Mrk),
+
+  % eltrovu la vortspecon de la radiko 
+  % per voko-klaso, gramatika etikedo aŭ finaĵo
+  revo_gra(Drv,tr).
+
 
 throw_netrovita(Radiko) :-
   once((
