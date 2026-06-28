@@ -12,7 +12,7 @@
 
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
-:- use_module(library(library(http/http_dyn_workers)).
+:- use_module(library(http/http_dyn_workers)).
 %:- use_module(library(http/http_server_files)).
 :- use_module(library(http/http_files)).
 :- use_module(library(http/http_parameters)). % reading post data
