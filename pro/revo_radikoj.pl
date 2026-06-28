@@ -67,6 +67,7 @@ mlg_dosiero('pro/revo/v_revo_mallongigoj.pl').
   @license GPL
  */
 
+:- set_prolog_flag(encoding,utf8).
 
 % %%%%%%%%%
 % bazaj predikatoj por traserĉi artikolojn pri radikoj kaj skribi ilin

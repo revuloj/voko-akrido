@@ -12,6 +12,7 @@
 revo_txt('../txt').
 skribo_pado('../html').
 
+:- set_prolog_flag(encoding,utf8).
 dosiero_max_infer(10000000000). % se 10 mrd. rezonoj ne sufiĉas por dosiero, ĉesu!
 concurrent(true).
 
