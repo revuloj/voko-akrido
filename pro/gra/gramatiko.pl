@@ -12,7 +12,8 @@
 %:- multifile '&'/1, gra_debug/1.
 %:- dynamic vorto_gra:vorto/5.
 
-analyze_max_infer(1000000). % 1 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru analizo
+analyze_max_infer(500_000).
+% analyze_max_infer(1_000_000). % 1 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru analizo
 % analyze_max_infer(10000000). % 10 mio: maksimume tiom da rezonpaŝoj (inferences) daŭru analizo
 
 /********************************************************************/
@@ -30,12 +31,28 @@ analyze(Vrt,Ana,Spc) :-
   atom_codes(Atom,Vrt),
   vorto(_,Spc,Atom,Ana,0).
 
+% analizo kun poentoj
+
+%analyze_pt(Vrt,_,_,_) :-
+%  var(Vrt),!,
+%  throw(error(instantiation_error('Vrt'),
+%    context('Vi devas doni vorton por analizo.'))).
+
 analyze_pt(Vrt,Ana,Spc,Pt) :-
   analyze_max_infer(MaxI),
-  call_with_inference_limit(
-    analyze(Vrt,Ana,Spc),
-    MaxI,
-    EI),
+  catch(
+    call_with_inference_limit(
+      analyze(Vrt,Ana,Spc),
+      MaxI,
+      EI),
+    Exc,
+    (
+      format(atom(Msg),'~s',[Vrt]),
+      message_to_string(Exc, ExcString),
+      % https://www.swi-prolog.org/pldoc/man?section=exceptterm
+      throw(error(resource_error(analyze_pt),context(Msg,ExcString)))
+    )
+  ),
   once((
     EI = inference_limit_exceeded, fail
     ;

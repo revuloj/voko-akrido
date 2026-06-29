@@ -1,5 +1,5 @@
 /* -*- Mode: Prolog -*- */
-:- use_module( library(chr)).
+:- use_module(library(chr)).
 /*
 r(san,adj).
 s(ec,adj,subst).

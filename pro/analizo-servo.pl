@@ -4,11 +4,15 @@
          daemon/0
 	  ]).
 
-% debug http-500 errors providing a stack trace inthe reply
-:- use_module(library(http/http_error)).
+% por sencimigi erarojn http-5xx la sekva modulo provizas
+% stak-listigon, malŝaltu en normala kurado por ne doni ideojn
+% al enrompistoj!
+% :- use_module(library(http/http_error)).
+% :- use_module(library(http/http_log)).
 
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
+:- use_module(library(http/http_dyn_workers)).
 %:- use_module(library(http/http_server_files)).
 :- use_module(library(http/http_files)).
 :- use_module(library(http/http_parameters)). % reading post data
@@ -27,8 +31,11 @@
 :- multifile http:location/3.
 :- dynamic   http:location/3.
 
-%%:- set_setting_default(http:max_workers, 8).
-%%:- set_setting(http:max_workers, 10).
+% limigas kune kun library(http/http_dyn_workers)
+% la paralelajn retservajn fadenojn, ordinare tio ili povas multiĝis ĝis 100
+% sed ni servas malmultajn uzantojn kaj tamen volas rapide kontroli uzante concurrent_maplist
+%%:- set_setting(http:max_worker, 8).
+:- set_setting_default(http:max_workers, 12).
 
 % TODO: is http/http_error autoloaded?
 % see http://www.swi-prolog.org/pldoc/man?section=http-debug
@@ -68,6 +75,7 @@ http:location(akrido,root(akrido),[]).
 :- http_handler(akrido(.), http_reply_from_files(web(.),[]),[prefix]). % [authentication(ajaxid)]).
 % statistikaj informoj
 :- http_handler(root(statistiko), statistiko, []).
+:- http_handler(root(mutex_statistiko),mutex_statistiko, []).
 
 help :-
     format('~`=t~51|~n'), 
@@ -145,9 +153,15 @@ analizu_linion(Format,Line) :-
 
 analizu_linion(Mode,N=Line,N=Rez) :-
     atom_codes(Line,Codes), %format('~w::',[N]),
-    analizu_tekston_liste(Codes,text,RList),
-    % redukto la rezulton al linioj kun kontrolendaj/eraraj vortoj 
-    exclude(ana_ekskludo(Mode),RList,Rez).
+    %catch_with_backtrace((
+        analizu_tekston_liste(Codes,text,RList),!,
+        % redukto la rezulton al linioj kun kontrolendaj/eraraj vortoj 
+        exclude(ana_ekskludo(Mode),RList,Rez)
+    %    ),
+    %    Exc,
+    %    Rez=[Exc]
+    %)
+    .
 
 % por ekskludi ĉiujn liniojn en la rezulto, kiuj ne entenas kontrolendajn aŭ eraroj/neanalizeblajn vortojn
 ana_ekskludo(kontrolendaj,X) :- memberchk(X.takso,[bona,signo,nombro,mlg]).
@@ -169,5 +183,11 @@ http_proxy(Request) :-
 statistiko(_) :-
     statistics(stack,St),
     St_MB is St / (1024 * 1024),
-    reply_json(stack{stack: St_MB}).
+    prolog_flag(stack_limit,SL),
+    reply_json(stack{stack: St_MB, limit: SL}).
+
+mutex_statistiko(_) :-
+    format('Content-type: text/plain~n~n',[]),
+    mutex_statistics.
+        
     

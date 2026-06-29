@@ -27,9 +27,14 @@ etikedo)
     echo "kaj puŝante tiun staton al la centra deponejo"
     git tag -f v${eldono} && git push && git push origin v${eldono} -f
     ;;
-kreo)
+kreo:swipl)
     echo "Kreante lokan procezujon (por docker) voko-araneo por eldono ${eldono}..."
     docker pull ghcr.io/revuloj/${procezujo}/${procezujo}:${eldono}
-    docker build --build-arg VERSION=${eldono} -t ${procezujo} .
+    docker build --build-arg VERSION=${eldono} -t ${procezujo}:swipl .
+    ;;
+kreo:ubuntu)
+    echo "Kreante lokan procezujon (por docker) voko-araneo por eldono ${eldono}..."
+    docker pull ghcr.io/revuloj/${procezujo}/${procezujo}:${eldono}
+    docker build --build-arg VERSION=${eldono} -t ${procezujo}:ubuntu -f Dockerfile.ubuntu .
     ;;
 esac

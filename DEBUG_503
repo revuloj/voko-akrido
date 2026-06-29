@@ -1,0 +1,12 @@
+docker run --cap-add=SYS_PTRACE -p 8081 --name akrido-test --rm -d voko-akrido
+
+strace -f -e trace=memory -p <PID_VON_SWIPL>
+
+suche:
+brk/mmap
+
+[pid  1234] mmap(NULL, 134217728, PROT_READ|PROT_WRITE, ...) = -1 ENOMEM (Out of memory)
+
+
+# too many files
+sudo strace -f -e trace=desc,network -p <PID> 2>&1 | grep EMFILE

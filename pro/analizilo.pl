@@ -257,8 +257,9 @@ analizu_eron(_,n(N)) :-
   skribu_nombron(n(N)).
 
 analizu_eron(_,Tekstero) :-
-  format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
-  throw(Exc).
+  %format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
+  throw(error(representation_error(nekonata_tekstparto),Tekstero)).
+
 
 
 %%%%%%%%%
@@ -309,8 +310,8 @@ analizu_eron2(_,n(N),_{takso:nombro,vorto:N1}) :-
   atom_codes(N1,N).
 
 analizu_eron2(_,Tekstero,_{}) :-
-  format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
-  throw(Exc).
+  %format(atom(Exc),'nekonata tekstparto ~w~n',[Tekstero]), 
+  throw(error(representation_error(nekonata_tekstparto),Tekstero)).
 
 %%%%%%%
 

@@ -1,9 +1,11 @@
 #!/bin/bash
 
-
 docker_image="${1:-voko-akrido:latest}"
+#requests=1
 
 # lanĉi la test-procezujon
+#docker run --cap-add=SYS_PTRACE -p 8081 --name akrido-test --rm -d ${docker_image}
+docker kill akrido-test
 docker run -p 8081 --name akrido-test --rm -d ${docker_image}
 
 # atendi, ĝis ĝi ricevis retpordon
@@ -30,6 +32,7 @@ echo ""; echo "Petante multfoje analizon per analinioj..."
 
 URL="http://$HPORT/analinioj"
 SURL="http://$HPORT/statistiko"
+MURL="http://$HPORT/mutex_statistiko"
 
 JSON='{
   "92": "      nur divenebla, sentebla, analizebla):",
@@ -69,11 +72,36 @@ do
         -H "Content-Type: application/json" \
         -d "$JSON")
     
-    echo "#$i: HTTP $HTTP"
-    echo "#$i: $(curl -s ${SURL})"
+    echo "A#$i: HTTP $HTTP"
+    echo "A#$i: $(curl -s ${SURL})"
+  ) &
+done
+
+echo "$(curl -s ${MURL})"
+
+sleep 10
+
+for i in {1..100}
+do
+  (
+    # -s: ne montru progreson
+    # -o /dev/null: ignoru la respondon
+    # -w "%{http_code}": eligu nur la http-kodon (e.g., 200, 503)
+    #HTTP=$(curl -s -o /dev/null -w "%{http_code}" -X POST "$URL" \
+    #    -H "Content-Type: application/json" \
+    #    -d "$JSON")
+    HTTP=$(curl -s -w "%{http_code}" -X POST "$URL" \
+        -H "Content-Type: application/json" \
+        -d "$JSON")
+    
+    echo "B#$i: HTTP $HTTP"
+    echo "B#$i: $(curl -s ${SURL})"
   ) &
 done
 
 wait
+
+echo "$(curl -s ${MURL})"
+
 
 echo "preta"
