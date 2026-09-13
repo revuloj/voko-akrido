@@ -165,9 +165,9 @@ drv_per_suf(Spc,Al,De,Speco) :-
 % la origina drv_per_suf kaŭzis problemojn, ekz. "popularig",
 % analiziĝis al pop/ul/ar/ig, sed s(ig,adj) ne estas en la unua
 % loko, ĉar la algoritmo ne plu serĉis alternativojn post trovi s(ig,subst)
-% do la nova ricevas nur la vorspecon Spc de la maldektra vorto kaj la 
-% sufikson mem, kaj rigardas, ĉu ekzistas taŭgan varianton kun la ĝusta
-% vorstpeco alaplikenda.
+% do la nova ricevas nur la vortspecon Spc de la maldektra vorto kaj la 
+% sufikson mem, kaj rigardas, ĉu ekzistas taŭga varianto kun la ĝusta
+% vortspeco aplikenda.
 drv_per_suf(Suf,Spc,Speco) :-
   s(Suf,Speco,De),
   subspc(Spc,De).

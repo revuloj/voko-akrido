@@ -1,5 +1,7 @@
 /* -*- Mode: Prolog -*- */
 % PLIBONIGU: anstau uzi user: ebligu importi tion de gramatiko...
+% prioritato de regulsignoj estu inter 1100 (;) kaj 1200 (:-)
+% vd. https://www.swi-prolog.org/pldoc/doc_for?object=op/3
 :- op( 1120, xfx, user:(<=) ). % disigas regulo-kapon, de regulesprimo
 :- op( 1120, xfx, user:(<-) ). % disigas regulo-kapon, de esceptesprimo
 :- op( 1110, xfy, user:(~>) ). % enkondukas kondichojn poste aplikatajn al sukcese aplikita regulo
