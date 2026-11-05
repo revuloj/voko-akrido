@@ -1,5 +1,8 @@
 name: analizo-de-la-tago
 
+permissions:
+  contents: read
+
 on:
   schedule:
   # ĉiunokte
